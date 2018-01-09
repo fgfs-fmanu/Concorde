@@ -144,6 +144,7 @@
   model.getNode("controls/lighting/external/taxi-turn[0]/on").alias(model.getNode("sim/multiplay/generic/int[16]"));
   model.getNode("controls/lighting/external/taxi-turn[1]/on").alias(model.getNode("sim/multiplay/generic/int[17]"));
 
+
   model.getNode("orientation/alpha-deg").alias(model.getNode("sim/multiplay/generic/float[0]"));
   model.getNode("systems/brakes/temperature-degc").alias(model.getNode("sim/multiplay/generic/float[1]"));
   model.getNode("gear/gear[4]/position-norm").alias(model.getNode("sim/multiplay/generic/float[2]"));
@@ -206,22 +207,7 @@
 <!-- Separated models -->
 <!-- ================ -->
 
-  <model>
-   <name>Instruments</name>
-   <path>Aircraft/Concorde/Models/Concorde_instruments.xml</path>
-  </model>
 
-  <model>
-   <name>Interior</name>
-   <path>Aircraft/Concorde/Models/Concorde_interior.xml</path>
-  </model>
-
-<!--
-  <model>
-   <name>Cockpit</name>
-   <path>Aircraft/Concorde/Models/Concorde_3d_cockpit.xml</path>
-  </model>
--->
 
   <model>
    <name>Exterior</name>
@@ -246,16 +232,14 @@
 
   <animation>
    <name>flightdeck</name>
-   <object-name>Cockpit</object-name>
+
    <object-name>Cube.001</object-name>
    <object-name>Pillar</object-name>
    <object-name>CeilingEdge</object-name>
-   <object-name>Dashboard</object-name>
+
    <object-name>RoofLight1</object-name>
    <object-name>RoofLight2</object-name>
-   <object-name>AvionicsLRack</object-name>
-   <object-name>AvionicsRRack</object-name>
-   <object-name>AvionicsRack</object-name>
+
    <object-name>RoofLight1</object-name>
    <object-name>RoofLight2</object-name>
    <object-name>UpperPanel</object-name>
@@ -265,13 +249,14 @@
    <object-name>TopConsoleRight</object-name>
    <object-name>CeilingPanel</object-name>
    <object-name>Dash lighting</object-name>
+   <object-name>MainPanel_1</object-name>
   </animation>
 
   <animation>
    <type>range</type>
    <object-name>flightdeck</object-name>
    <min-m>0</min-m>
-   <max-m>100</max-m>
+   <max-m>10</max-m>
   </animation>
 
 <!-- CAPTAIN -->
@@ -477,7 +462,6 @@
     </or>
    </condition>
   </animation>
-
 
 <!-- =================== -->
 <!-- External animations -->
@@ -1195,7 +1179,12 @@
      <ind>1.0</ind>
      <dep>0.0</dep>
    </entry>
-  </interpolation>
+  </interpolation>  <emission>
+   <red>0.66</red>
+   <green>0.68</green>
+   <blue>0.64</blue>
+   <factor-prop>systems/lighting/level/roof</factor-prop>
+  </emission>
   <axis>
    <x>0</x>
    <y>0</y>
@@ -2662,7 +2651,7 @@
 
  <effect>
    <inherits-from>Aircraft/Concorde/Models/Effects/interior</inherits-from>
-   <object-name>MainPanel_1</object-name>
+   
    <object-name>Cockpit</object-name>
    <object-name>Cube.001</object-name>
    <object-name>CeilingPanel</object-name>
@@ -2759,10 +2748,11 @@
     </action>
   </animation>
 
-
  <animation>
   <type>select</type>
   <object-name>windows</object-name>
+  <object-name>Front_1.001</object-name>
+  <object-name>Side.001</object-name>
   <condition>
   <and>
    <greater-than>
@@ -2781,6 +2771,8 @@
  <animation>
   <type>select</type>
   <object-name>Cabin</object-name>
+  <object-name>Front_1</object-name>
+  <object-name>Side</object-name>
   <condition>
 
    <less-than-equals>
@@ -3566,7 +3558,7 @@
 
  <animation>
   <type>spin</type>
-  <object-name>FanL.011</object-name>
+  <object-name>FanL.006</object-name>
   <property>engines/engine[2]/n1</property>
   <factor>1</factor>
   <center>
@@ -3583,7 +3575,7 @@
 
  <animation>
   <type>spin</type>
-  <object-name>FanL.008</object-name>
+  <object-name>FanL.007</object-name>
   <property>engines/engine[3]/n1</property>
   <factor>1</factor>
   <center>
