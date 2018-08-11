@@ -801,6 +801,12 @@ Autopilot.datumapexport = func( sign ) {
            elsif( me.is_lock_speed_pitch() ) {
                targetkt = me.itself["settings"].getChild("target-speed-kt").getValue();
                targetkt = targetkt + value;
+
+	       # safety minimum speed
+   	       if (targetkt<170) {
+                 targetkt=170
+               };
+
                me.autothrottlesystem.speed(targetkt);
            }
            elsif( me.is_lock_mach_pitch() ) {
@@ -975,6 +981,11 @@ Autopilot.targetwind = func {
            targetkt = targetkt + offsetkt;
        }
    }
+
+   # safety minimum speed
+   if (targetkt<170) {
+     targetkt=170
+   };
 
    # avoid infinite gliding (too much ground effect ?)
    me.autothrottlesystem.speed(targetkt);
@@ -1529,10 +1540,21 @@ Autopilot.modeglide = func {
 Autopilot.is_lock_glide = func {
    var altitudemode = me.itself["locks"].getChild("altitude").getValue();
    var result = constant.FALSE;
+   var ndefl = getprop("instrumentation/nav[0]/gs-needle-deflection-norm");
 
-   if( altitudemode == "gs1-hold" ) {
+#   if( altitudemode == "gs1-hold" and (ndefl<-0.2 or ndefl>0.2 ) ) {
+#       me.verticalspeed(0);
+#   }
+
+
+   if( altitudemode == "gs1-hold" and ndefl>-0.05 and ndefl<0.2  ) {
        result = constant.TRUE;
    }
+
+#   if( altitudemode == "gs1-hold") {
+#       result = constant.TRUE;
+#   }
+
 
    return result;
 }
@@ -1556,7 +1578,7 @@ Autopilot.is_glide = func {
    var altitudemode = me.itself["autoflight"].getChild("altitude").getValue();
    var result = constant.FALSE;
 
-   if( altitudemode == "gs1-hold" ) {
+   if( altitudemode == "gs1-hold") {
        result = constant.TRUE;
    }
 

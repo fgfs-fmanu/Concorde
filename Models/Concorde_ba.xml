@@ -145,7 +145,7 @@
   model.getNode("controls/lighting/external/taxi-turn[1]/on").alias(model.getNode("sim/multiplay/generic/int[17]"));
   model.getNode("controls/lighting/crew/roof").alias(model.getNode("sim/multiplay/generic/int[18]"));
 
-  setprop("sim/multiplay/generic/int[19]",1);
+<!--  setprop("sim/multiplay/generic/int[19]",1); -->
 
   model.getNode("orientation/alpha-deg").alias(model.getNode("sim/multiplay/generic/float[0]"));
   model.getNode("systems/brakes/temperature-degc").alias(model.getNode("sim/multiplay/generic/float[1]"));
@@ -235,7 +235,7 @@
   <animation>
    <name>flightdeck</name>
 
-   <object-name>Cube.001</object-name>
+   <object-name>Cockpit</object-name>
    <object-name>Pillar</object-name>
    <object-name>CeilingEdge</object-name>
 
@@ -259,6 +259,13 @@
    <object-name>flightdeck</object-name>
    <min-m>0</min-m>
    <max-m>10</max-m>
+  </animation>
+
+  <animation>
+   <type>range</type>
+   <object-name>Cockpit_dummy</object-name>
+   <min-m>9.99</min-m>
+   <max-m>100</max-m>
   </animation>
 
 
@@ -2639,12 +2646,7 @@
 
  <effect>
    <inherits-from>Aircraft/Concorde/Models/Effects/panel</inherits-from>
-   <object-name>MainPanel_1</object-name>
- </effect>
-
- <effect>
-   <inherits-from>Aircraft/Concorde/Models/Effects/ap_panel</inherits-from>
-   <object-name>UpperPanel</object-name>
+   <object-name>Cockpit</object-name>
  </effect>
 
  <effect>
@@ -2814,7 +2816,7 @@
       </and>
       <and>
 	<property>controls/lighting/crew/roof</property>
-	<property>sim/multiplay/generic/int[19]</property>
+<!--	<property>sim/multiplay/generic/int[19]</property> -->
       </and>
     </or>
   </condition>
@@ -3184,7 +3186,7 @@
   <name>sonicboom</name>
   <path>Aircraft/Concorde/Models/Effects/cone/cone.xml</path>
   <offsets>
-			<x-m>-25</x-m>
+			<x-m>-19</x-m>
 			<y-m>0</y-m>
 			<z-m>1</z-m>
 			<pitch-deg>0</pitch-deg>
