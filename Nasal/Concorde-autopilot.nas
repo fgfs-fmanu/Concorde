@@ -53,6 +53,7 @@ Autopilot.new = func {
 
                GOAROUNDDEG : 15.0,
 
+
 # If no pitch control, sudden swap to 10 deg causes a rebound, worsened by the ground effect.
 # Ignoring the glide slope at 200-300 ft, with a pitch of 10 degrees, would be simpler;
 # but the glide slope following is implicit until 100 ft (red autoland light).
@@ -83,6 +84,9 @@ Autopilot.init = func {
 
    me.reinitexport();
    me.apdiscexport();
+
+   setprop("/sim/messages/copilot", "");
+
 }
 
 Autopilot.reinitexport = func {
@@ -298,6 +302,15 @@ Autopilot.lockwaypointroll = func {
         # avoids strong roll
         if( distancenm < me.WPTNM ) {
 
+		wptn=getprop("/autopilot/route-manager/wp/id");
+		nwptn=getprop("/autopilot/route-manager/wp[1]/id");
+		nwptd=math.round(getprop("/autopilot/route-manager/wp[1]/dist"));
+		etan=getprop("/autopilot/route-manager/wp[1]/eta");
+		lwptd=math.round(getprop("/autopilot/route-manager/wp-last/dist"));
+
+
+
+
             # pop waypoint, enough soon to avoid banking on release
             # into the opposite direction of the next waypoint
             var rolldeg =  me.noinstrument["roll"].getValue();
@@ -305,6 +318,21 @@ Autopilot.lockwaypointroll = func {
                 if( me.is_lock_true() ) {
                     me.itself["route-manager"].getChild("input").setValue("@DELETE0");
                     me.resetprediction( "true-heading-hold1" );
+
+		    for( var i = 0; i < 3; i = i+1 ) {
+                    	cwpt=getprop("/instrumentation/ins[" ~ i ~ "]/control/waypoint");
+			if (cwpt>1){
+				setprop("/instrumentation/ins[" ~ i ~ "]/control/waypoint",cwpt-1);
+			};
+		    };
+
+		    msg="Over "~wptn~", next waypoint "~nwptn~", distance "~nwptd~", ETA "~etan~", "~lwptd~" nm to destination.";
+		    oldmsg=getprop("/sim/messages/copilot");
+		    if (substr(msg,1,20)!=substr(oldmsg,1,20) and nwptd>9){
+		    	setprop("/sim/messages/copilot", msg);
+		    };
+
+
                 }
             }
         }
@@ -688,6 +716,11 @@ Autopilot.datumapexport = func( sign ) {
 
        # plus/minus 6000 ft/min (real)
        # plus/minus 17 kt (real) : maxclimb
+
+#       if(maxcruise){
+#	   setprop("/autopilot/settings/vertical-speed-fpm",50);
+#       };
+
        if( me.is_lock_vertical() and !maxcruise ) {
            # 80 or 800 ft/min per second (real) : 10 or 100 ft/min per key
            # 0.7 or 2 kt per second (real) : 10 or 100 ft/min per key
@@ -1853,10 +1886,52 @@ if (getprop("/systems/electrical/outputs/specific")>20){
 
 # max climb mode (includes max cruise mode)
 Autopilot.maxclimb = func {
+   altft = me.get_altimeter().getChild("indicated-altitude-ft").getValue();
+   ceil=me.itself["autoflight"].getChild("altitude-select").getValue();
+   olddelta=getprop("/instrumentation/adc/output/delta_spd");
+   newdelta=getprop("/instrumentation/adc/output/vmo-kt")-getprop("/instrumentation/adc/output/airspeed-kt");
+   mcvspd=getprop("/instrumentation/gps/indicated-vertical-speed");
+   dd=abs(newdelta-olddelta);
+   vspd=getprop("/autopilot/settings/vertical-speed-fpm");
+   mode=getprop("/controls/autoflight/speed2");
+
+
    if( me.autothrottlesystem.is_maxclimb() ) {          
        if( me.is_engaged() ) {
            me.autothrottlesystem.maxclimb();
        }
+
+       if(olddelta != 0){
+	  if(newdelta>olddelta and newdelta>0 and mode=='maxclimb'){
+ 	    vspd=vspd-50;
+	  };
+
+	  if(newdelta<olddelta and newdelta<2){
+ 	    vspd=vspd+50;
+	  };
+
+          if(mode=='maxcruise'){
+	  	if (mcvspd>60){
+		  vspd=vspd-10;
+	  	};
+
+	  	if (mcvspd<40){
+		  vspd=vspd+10;
+	  	};
+	  };
+
+          if(mode=='maxcruise' and altft>ceil){
+		setprop("/autopilot/settings/target-altitude-ft",60000);
+		globals.Concorde.autopilotsystem.apaltitudeholdexport();
+	  };
+
+
+          setprop("/autopilot/settings/vertical-speed-fpm",vspd);
+       };
+
+       setprop("/instrumentation/adc/output/delta_spd",newdelta);
+       setprop("/instrumentation/adc/output/olddelta_spd",olddelta);
+
 
        # re-schedule the next call
        settimer(func { me.maxclimb(); }, me.MAXCLIMBSEC);

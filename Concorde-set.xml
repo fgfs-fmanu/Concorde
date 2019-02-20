@@ -2,7 +2,23 @@
 
 <PropertyList>
 
- <sim include="Nasal/Concorde-sim.xml">
+<payload>
+	<weight>
+		<name type="string">Crew + Pax</name>
+		<weight-lb alias="/fdm/jsbsim/inertia/pointmass-weight-lbs[0]"/>
+		<min-lb type="double">1300</min-lb>
+		<max-lb type="double">18380</max-lb>
+	</weight>
+
+	<weight>
+		<name type="string">Cargo</name>
+		<weight-lb alias="/fdm/jsbsim/inertia/pointmass-weight-lbs[1]"/>
+		<min-lb type="double">0</min-lb>
+		<max-lb type="double">14584.0</max-lb>
+	</weight>
+</payload>
+
+<sim include="Nasal/Concorde-sim.xml">
 
   <description>Concorde</description>
   <status>early-production</status>
@@ -14,6 +30,16 @@
   </rating>
   <aircraft-version>2.14</aircraft-version>
 
+  <tags>
+   <tag>BAC/Aerospatiale</tag>
+   <tag>passenger</tag>
+   <tag>supersonic</tag>
+   <tag>turbojet</tag>
+   <tag>four-engine</tag>
+   <tag>afterburner</tag>
+   <tag>1970s,1980s,1990s</tag>
+  </tags>	 
+	 
   <previews>
 	<preview>
 		<type>exterior</type>

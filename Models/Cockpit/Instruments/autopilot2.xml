@@ -41,8 +41,6 @@
     <object-name>VS</object-name>
     <object-name>AH</object-name>
     <object-name>AA</object-name>
-    <object-name>IH</object-name>
-    <object-name>IH</object-name>
     <object-name>AT1</object-name>
     <object-name>AT2</object-name>
     <object-name>FD1</object-name>
@@ -1429,9 +1427,34 @@
     <type>material</type>
     <object-name>CR</object-name>
     <condition>
-     
+    <and>     
      <greater-than><property>/systems/electrical/outputs/specific</property><value>20.0</value></greater-than>
+     <equals>
+       <property>/controls/autoflight/speed2</property>
+       <value>maxcruise</value>
+     </equals>
 
+    </and>
+    </condition>
+    <emission>
+      <red>0.5</red>
+      <green>0.5</green>
+      <blue>0</blue>
+    </emission>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>CR</object-name>
+    <condition>
+    <and>     
+     <greater-than><property>/systems/electrical/outputs/specific</property><value>20.0</value></greater-than>
+     <not-equals>
+       <property>/controls/autoflight/speed2</property>
+       <value>maxcruise</value>
+     </not-equals>
+
+    </and>
     </condition>
     <emission>
       <red>0.35</red>
@@ -1439,6 +1462,8 @@
       <blue>0.1</blue>   <factor-prop>/controls/lighting/instruments-norm</factor-prop>
     </emission>
   </animation>
+
+
   <!-- VS -->
   <animation>
     <type>material</type>
@@ -1637,7 +1662,14 @@
       <repeatable>false</repeatable>
       <binding>
         <command>nasal</command>
-        <script>globals.Concorde.autopilotsystem.apinsexport();</script>
+        <script>
+		wptcnt=getprop("/autopilot/route-manager/route/num");
+		rtmstate=getprop("/autopilot/route-manager/active");
+		if (wptcnt>0 and rtmstate==0){
+			setprop("/autopilot/route-manager/active",1);
+		};
+		globals.Concorde.autopilotsystem.apinsexport();
+	</script>
       </binding>
       <binding>
         <command>property-toggle</command>
@@ -1654,7 +1686,12 @@
       <repeatable>false</repeatable>
       <binding>
         <command>nasal</command>
-        <script>globals.Concorde.autopilotsystem.apheadingexport();</script>
+        <script>
+		if (getprop("controls/autoflight/autopilot[0]/engage") or getprop("controls/autoflight/autopilot[1]/engage")){
+		  setprop("/autopilot/route-manager/active",0);		
+		};
+		globals.Concorde.autopilotsystem.apheadingexport();
+	</script>
       </binding>
       <binding>
         <command>property-toggle</command>
@@ -1671,7 +1708,12 @@
       <repeatable>false</repeatable>
       <binding>
         <command>nasal</command>
-        <script>globals.Concorde.autopilotsystem.apheadingholdexport();</script>
+        <script>
+		if (getprop("controls/autoflight/autopilot[0]/engage") or getprop("controls/autoflight/autopilot[1]/engage")){
+		  setprop("/autopilot/route-manager/active",0);		
+		};
+	  	globals.Concorde.autopilotsystem.apheadingholdexport();
+	</script>
       </binding>
       <binding>
         <command>property-toggle</command>
@@ -1705,7 +1747,12 @@
       <repeatable>false</repeatable>
       <binding>
         <command>nasal</command>
-        <script>globals.Concorde.autopilotsystem.apvorlocexport();</script>
+        <script>
+		if (getprop("controls/autoflight/autopilot[0]/engage") or getprop("controls/autoflight/autopilot[1]/engage")){
+		  setprop("/autopilot/route-manager/active",0);		
+		};
+	  	globals.Concorde.autopilotsystem.apvorlocexport();
+	</script>
       </binding>
       <binding>
         <command>property-toggle</command>
@@ -1740,7 +1787,14 @@
       <repeatable>false</repeatable>
       <binding>
         <command>nasal</command>
-        <script>globals.Concorde.autopilotsystem.apmaxclimbexport();</script>
+        <script>
+		mode=getprop("/controls/autoflight/vertical");
+		if(mode=='altitude-acquire'){
+			globals.Concorde.autopilotsystem.apaltitudeexport();
+		};
+		globals.Concorde.autopilotsystem.apmaxclimbexport();
+		setprop("/instrumentation/adc/output/delta_spd",0);		
+	</script>
       </binding>
       <binding>
         <command>property-toggle</command>
@@ -1862,7 +1916,12 @@
       <repeatable>false</repeatable>
       <binding>
         <command>nasal</command>
-        <script>globals.Concorde.autopilotsystem.apaltitudeexport();</script>
+        <script>
+		mode=getprop("/controls/autoflight/speed2");
+		if(mode!='maxcruise' and mode!='maxclimb'){
+			globals.Concorde.autopilotsystem.apaltitudeexport();
+		};
+	</script>
       </binding>
       <binding>
         <command>property-toggle</command>
