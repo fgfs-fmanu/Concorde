@@ -15,7 +15,7 @@
    <name>Valve selector</name>
    <type>switch</type>
 
-   <layer include="concorde-switch-3rd.xml">
+<!--   <layer include="concorde-switch-3rd.xml">
     <name>auto</name>
     <condition>
      <property>/systems/pressurization/valve/ground-auto</property>
@@ -33,7 +33,7 @@
 
    <layer include="concorde-switch-off.xml">
     <name>shut 2</name>
-   </layer>
+   </layer>-->
 
    <transformations>
     <transformation>

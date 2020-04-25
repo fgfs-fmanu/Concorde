@@ -3,6 +3,49 @@
 <!-- - switch down.
      - makes the reading easier.
 -->
+<!--
+
+<PropertyList>
+
+<path>../../Models/Cockpit/Models/switch.ac</path>
+<effect>
+    <inherits-from>Aircraft/Concorde/Models/Effects/interior</inherits-from>
+    <object-name>Nut</object-name>
+    <object-name>Ball</object-name>
+    <object-name>Switch</object-name>
+</effect>
+
+<name>off</name>
+<animation>
+    <type>rotate</type>
+    <object-name>Switch</object-name>
+    <interpolation>
+      <entry>
+        <ind>0</ind>
+        <dep>-35</dep>
+      </entry>
+    <center>
+      <x-m>0</x-m>
+      <y-m>0</y-m>
+      <z-m>0</z-m>
+    </center>
+    <axis>
+      <x>1</x>
+      <y>0</y>
+      <z>0</z>
+    </axis>
+    </interpolation>
+</animation>
+
+</PropertyList>
+
+
+
+
+-->
+
+
+
 
 <PropertyList>
 
@@ -18,3 +61,4 @@
     <h>47</h>
 
 </PropertyList>
+

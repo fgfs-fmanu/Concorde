@@ -22,7 +22,7 @@
    <name>Heater selector</name>
    <type>switch</type>
 
-   <layer include="concorde-switch-3rd.xml">
+  <!-- <layer include="concorde-switch-3rd.xml">
     <name>auto</name>
     <condition>
      <property alias="../../../../../params/heater-auto"/>
@@ -38,7 +38,7 @@
 
    <layer include="concorde-switch-off.xml">
     <name>shut</name>
-   </layer>
+   </layer>-->
 
    <transformations>
     <transformation>

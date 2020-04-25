@@ -11,21 +11,7 @@
 
  <layers>
 
-  <layer>
-   <name>SSB selector</name>
-   <type>switch</type>
-
-   <layer include="concorde-switch-on.xml">
-    <name>close</name>
-    <condition>
-     <property>/controls/electric/ac/ssb</property>
-    </condition>
-   </layer>
-
-   <layer include="concorde-switch-off.xml">
-    <name>open</name>
-   </layer>
-  </layer>
+  
 
   <layer>
    <name>Title</name>

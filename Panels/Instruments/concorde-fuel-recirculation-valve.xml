@@ -21,7 +21,7 @@
    <name>Heater selector</name>
    <type>switch</type>
 
-   <layer include="concorde-switch-on.xml">
+   <!--<layer include="concorde-switch-on.xml">
     <name>open</name>
     <condition>
      <property alias="../../../../../params/valve-sel"/>
@@ -30,7 +30,7 @@
 
    <layer include="concorde-switch-off.xml">
     <name>shut</name>
-   </layer>
+   </layer>-->
 
    <transformations>
     <transformation>

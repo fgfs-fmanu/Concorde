@@ -382,12 +382,12 @@
     <contingency type="bool">false</contingency>
     <csd type="bool">true</csd>
     <csd-guard type="bool">true</csd-guard>
-    <hp-valve type="bool">true</hp-valve>
+    <hp-valve type="bool">false</hp-valve>
     <intake-auto type="bool">true</intake-auto>
     <intake-main type="bool">true</intake-main>               <!-- main hydraulics -->
     <intake-selector type="int">0</intake-selector>           <!-- auto A -->
     <master-bat type="bool">true</master-bat>                 <!-- battery A (like the old C++ electrical system) -->
-    <master-alt type="bool">true</master-alt>                 <!-- generator -->
+    <master-alt type="bool">false</master-alt>                 <!-- generator -->
     <rating>takeoff</rating>
     <rating-flight>climb</rating-flight>
     <reheat type="bool">false</reheat>
@@ -402,11 +402,11 @@
     <contingency type="bool">false</contingency>
     <csd type="bool">true</csd>
     <csd-guard type="bool">true</csd-guard>
-    <hp-valve type="bool">true</hp-valve>
+    <hp-valve type="bool">false</hp-valve>
     <intake-auto type="bool">true</intake-auto>
     <intake-main type="bool">true</intake-main>
     <intake-selector type="int">0</intake-selector>
-    <master-alt type="bool">true</master-alt>                 <!-- generator -->
+    <master-alt type="bool">false</master-alt>                 <!-- generator -->
     <rating>takeoff</rating>
     <rating-flight>climb</rating-flight>
     <reheat type="bool">false</reheat>
@@ -421,11 +421,11 @@
     <contingency type="bool">false</contingency>
     <csd type="bool">true</csd>
     <csd-guard type="bool">true</csd-guard>
-    <hp-valve type="bool">true</hp-valve>
+    <hp-valve type="bool">false</hp-valve>
     <intake-auto type="bool">true</intake-auto>
     <intake-main type="bool">true</intake-main>
     <intake-selector type="int">0</intake-selector>
-    <master-alt type="bool">true</master-alt>                 <!-- generator -->
+    <master-alt type="bool">false</master-alt>                 <!-- generator -->
     <rating>takeoff</rating>
     <rating-flight>climb</rating-flight>
     <reheat type="bool">false</reheat>
@@ -440,11 +440,11 @@
     <contingency type="bool">false</contingency>
     <csd type="bool">true</csd>
     <csd-guard type="bool">true</csd-guard>
-    <hp-valve type="bool">true</hp-valve>
+    <hp-valve type="bool">false</hp-valve>
     <intake-auto type="bool">true</intake-auto>
     <intake-main type="bool">true</intake-main>
     <intake-selector type="int">0</intake-selector>
-    <master-alt type="bool">true</master-alt>                 <!-- generator -->
+    <master-alt type="bool">false</master-alt>                 <!-- generator -->
     <n1-to-limit type="double">88.1</n1-to-limit>
     <n1-to-limiter type="bool">true</n1-to-limiter>           <!-- 88% -->
     <rating>takeoff</rating>
@@ -528,9 +528,9 @@
     <lp-valve type="bool">true</lp-valve>                     <!-- engine on -->
     <lp-valve-motor type="bool">true</lp-valve-motor>         <!-- motor 1 -->
     <lp-valve-guard type="bool">true</lp-valve-guard>
-    <pump n="0" type="bool">true</pump>
-    <pump n="1" type="bool">true</pump>
-    <pump n="2" type="bool">true</pump>
+    <pump n="0" type="bool">false</pump>
+    <pump n="1" type="bool">false</pump>
+    <pump n="2" type="bool">false</pump>
     <recirculation-valve type="bool">true</recirculation-valve>
    </tank>
    <tank n="1">
@@ -543,9 +543,9 @@
     <lp-valve type="bool">true</lp-valve>
     <lp-valve-motor type="bool">true</lp-valve-motor>
     <lp-valve-guard type="bool">true</lp-valve-guard>
-    <pump n="0" type="bool">true</pump>
-    <pump n="1" type="bool">true</pump>
-    <pump n="2" type="bool">true</pump>
+    <pump n="0" type="bool">false</pump>
+    <pump n="1" type="bool">false</pump>
+    <pump n="2" type="bool">false</pump>
     <recirculation-valve type="bool">true</recirculation-valve>
    </tank>
    <tank n="2">
@@ -558,9 +558,9 @@
     <lp-valve type="bool">true</lp-valve>
     <lp-valve-motor type="bool">true</lp-valve-motor>
     <lp-valve-guard type="bool">true</lp-valve-guard>
-    <pump n="0" type="bool">true</pump>
-    <pump n="1" type="bool">true</pump>
-    <pump n="2" type="bool">true</pump>
+    <pump n="0" type="bool">false</pump>
+    <pump n="1" type="bool">false</pump>
+    <pump n="2" type="bool">false</pump>
     <recirculation-valve type="bool">true</recirculation-valve>
    </tank>
    <tank n="3">
@@ -574,9 +574,9 @@
     <lp-valve type="bool">true</lp-valve>
     <lp-valve-motor type="bool">true</lp-valve-motor>
     <lp-valve-guard type="bool">true</lp-valve-guard>
-    <pump n="0" type="bool">true</pump>
-    <pump n="1" type="bool">true</pump>
-    <pump n="2" type="bool">true</pump>
+    <pump n="0" type="bool">false</pump>
+    <pump n="1" type="bool">false</pump>
+    <pump n="2" type="bool">false</pump>
     <recirculation-valve type="bool">true</recirculation-valve>
    </tank>
    <tank n="4">
@@ -588,8 +588,8 @@
     <inlet-static type="bool">false</inlet-static>            <!-- not in transit -->
     <inlet-valve type="bool">false</inlet-valve>
     <interconnect-valve type="bool">false</interconnect-valve>
-    <pump n="0" type="bool">true</pump>                       <!-- 5 to 1 -->
-    <pump n="1" type="bool">true</pump>                       <!-- 5 to 2 -->
+    <pump n="0" type="bool">false</pump>                       <!-- 5 to 1 -->
+    <pump n="1" type="bool">false</pump>                       <!-- 5 to 2 -->
    </tank>
    <tank n="5">
     <inlet-standby type="bool">false</inlet-standby>
@@ -606,8 +606,8 @@
     <inlet-static type="bool">false</inlet-static>
     <inlet-valve type="bool">false</inlet-valve>
     <interconnect-valve alias="/controls/fuel/tank[5]/interconnect-valve"/>
-    <pump n="0" type="bool">true</pump>                       <!-- 7 to 3 -->
-    <pump n="1" type="bool">true</pump>                       <!-- 7 to 4 -->
+    <pump n="0" type="bool">false</pump>                       <!-- 7 to 3 -->
+    <pump n="1" type="bool">false</pump>                       <!-- 7 to 4 -->
    </tank>
    <tank n="7">
     <inlet-standby type="bool">false</inlet-standby>
@@ -912,28 +912,28 @@
 
   <pneumatic>
    <engine n="0">
-    <bleed-valve type="bool">true</bleed-valve>               <!-- connected to engine -->
+    <bleed-valve type="bool">false</bleed-valve>               <!-- connected to engine -->
     <cross-bleed-valve type="bool">false</cross-bleed-valve>  <!-- no ground supply or adjacent engine -->
     <conditioning-valve type="bool">true</conditioning-valve> <!-- air conditioning -->
     <fuel-valve type="bool">true</fuel-valve>
     <fuel-valve-guard type="bool">true</fuel-valve-guard>
    </engine>
    <engine n="1">
-    <bleed-valve type="bool">true</bleed-valve>
+    <bleed-valve type="bool">false</bleed-valve>
     <cross-bleed-valve type="bool">false</cross-bleed-valve>
     <conditioning-valve type="bool">true</conditioning-valve>
     <fuel-valve type="bool">true</fuel-valve>
     <fuel-valve-guard type="bool">true</fuel-valve-guard>
    </engine>
    <engine n="2">
-    <bleed-valve type="bool">true</bleed-valve>
+    <bleed-valve type="bool">false</bleed-valve>
     <cross-bleed-valve type="bool">false</cross-bleed-valve>
     <conditioning-valve type="bool">true</conditioning-valve>
     <fuel-valve type="bool">true</fuel-valve>
     <fuel-valve-guard type="bool">true</fuel-valve-guard>
    </engine>
    <engine n="3">
-    <bleed-valve type="bool">true</bleed-valve>
+    <bleed-valve type="bool">false</bleed-valve>
     <cross-bleed-valve type="bool">false</cross-bleed-valve>
     <conditioning-valve type="bool">true</conditioning-valve>
     <fuel-valve type="bool">true</fuel-valve>

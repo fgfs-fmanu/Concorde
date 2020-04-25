@@ -843,7 +843,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
    <h>17</h>
   </instrument>
 
-  <instrument include="Instruments/concorde-fuel-pump-trim-right.xml">
+ <instrument include="Instruments/concorde-fuel-pump-trim-right.xml">
    <name>Pump 1 tank 9</name>
    <condition>
     <or>

@@ -12,7 +12,7 @@ OBJECT poly
 name "AFT"
 data 12
 AFT.mesh.002
-crease 40.0
+crease 60.0
 texture "misc-1.png"
 texrep 1 1
 numvert 8

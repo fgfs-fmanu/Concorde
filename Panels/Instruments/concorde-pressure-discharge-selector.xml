@@ -99,7 +99,7 @@
    <name>system 1</name>
    <type>switch</type>
 
-   <layer include="concorde-switch-3rd.xml">
+  <!-- <layer include="concorde-switch-3rd.xml">
     <name>normal</name>
     <condition>
      <property>/controls/pressurization/system[0]/discharge-normal</property>
@@ -115,7 +115,7 @@
 
    <layer include="concorde-switch-off.xml">
     <name>aft</name>
-   </layer>
+   </layer>-->
 
    <transformations>
     <transformation>
@@ -268,7 +268,7 @@
    <name>system 2</name>
    <type>switch</type>
 
-   <layer include="concorde-switch-3rd.xml">
+   <!--<layer include="concorde-switch-3rd.xml">
     <name>normal</name>
     <condition>
      <property>/controls/pressurization/system[1]/discharge-normal</property>
@@ -284,7 +284,7 @@
 
    <layer include="concorde-switch-off.xml">
     <name>aft</name>
-   </layer>
+   </layer>-->
 
    <transformations>
     <transformation>

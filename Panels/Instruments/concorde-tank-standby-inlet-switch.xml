@@ -28,7 +28,7 @@
    <name>tank 5</name>
    <type>switch</type>
 
-   <layer include="concorde-switch-off.xml">
+   <!--<layer include="concorde-switch-off.xml">
     <name>off</name>
     <condition>
      <not>
@@ -39,7 +39,7 @@
 
    <layer include="concorde-switch-on.xml">
     <name>on</name>
-   </layer>
+   </layer>-->
   </layer>
 
   <layer>
@@ -121,7 +121,7 @@
    <name>tank 6</name>
    <type>switch</type>
 
-   <layer include="concorde-switch-off.xml">
+   <!-- <layer include="concorde-switch-off.xml">
     <name>off</name>
     <condition>
      <not>
@@ -132,7 +132,7 @@
 
    <layer include="concorde-switch-on.xml">
     <name>on</name>
-   </layer>
+   </layer> -->
 
    <transformations>
     <transformation>
@@ -225,7 +225,7 @@
    <name>tank 1</name>
    <type>switch</type>
 
-   <layer include="concorde-switch-off.xml">
+   <!-- <layer include="concorde-switch-off.xml">
     <name>off</name>
     <condition>
      <not>
@@ -236,7 +236,7 @@
 
    <layer include="concorde-switch-on.xml">
     <name>on</name>
-   </layer>
+   </layer> -->
 
    <transformations>
     <transformation>
@@ -329,7 +329,7 @@
    <name>tank 2</name>
    <type>switch</type>
 
-   <layer include="concorde-switch-off.xml">
+   <!-- <layer include="concorde-switch-off.xml">
     <name>off</name>
     <condition>
      <not>
@@ -340,7 +340,7 @@
 
    <layer include="concorde-switch-on.xml">
     <name>on</name>
-   </layer>
+   </layer> -->
 
    <transformations>
     <transformation>
@@ -404,7 +404,7 @@
 
  <actions>
 
-  <action>
+  <!-- <action>
    <name>toggle tank 1</name>
    <button>0</button>
    <x>-22</x>
@@ -470,7 +470,7 @@
     <command>property-toggle</command>
     <property>/instrumentation/generic/click</property>
    </binding>
-  </action>
+  </action> -->
 
  </actions>
  

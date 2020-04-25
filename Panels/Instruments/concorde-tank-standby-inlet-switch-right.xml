@@ -29,7 +29,7 @@
    <name>tank 3</name>
    <type>switch</type>
 
-   <layer include="concorde-switch-off.xml">
+   <!--<layer include="concorde-switch-off.xml">
     <name>off</name>
     <condition>
      <not>
@@ -40,7 +40,7 @@
 
    <layer include="concorde-switch-on.xml">
     <name>on</name>
-   </layer>
+   </layer>-->
   </layer>
 
   <layer>
@@ -122,7 +122,7 @@
    <name>tank 4</name>
    <type>switch</type>
 
-   <layer include="concorde-switch-off.xml">
+   <!--<layer include="concorde-switch-off.xml">
     <name>off</name>
     <condition>
      <not>
@@ -133,7 +133,7 @@
 
    <layer include="concorde-switch-on.xml">
     <name>on</name>
-   </layer>
+   </layer>-->
 
    <transformations>
     <transformation>
@@ -226,7 +226,7 @@
    <name>tank 10</name>
    <type>switch</type>
 
-   <layer include="concorde-switch-off.xml">
+   <!--<layer include="concorde-switch-off.xml">
     <name>off</name>
     <condition>
      <not>
@@ -237,7 +237,7 @@
 
    <layer include="concorde-switch-on.xml">
     <name>on</name>
-   </layer>
+   </layer>-->
 
    <transformations>
     <transformation>
@@ -330,7 +330,7 @@
    <name>tank 7</name>
    <type>switch</type>
 
-   <layer include="concorde-switch-off.xml">
+   <!--<layer include="concorde-switch-off.xml">
     <name>off</name>
     <condition>
      <not>
@@ -341,7 +341,7 @@
 
    <layer include="concorde-switch-on.xml">
     <name>on</name>
-   </layer>
+   </layer>-->
 
    <transformations>
     <transformation>
@@ -434,7 +434,7 @@
    <name>tank 8</name>
    <type>switch</type>
 
-   <layer include="concorde-switch-off.xml">
+   <!--<layer include="concorde-switch-off.xml">
     <name>off</name>
     <condition>
      <not>
@@ -445,7 +445,7 @@
 
    <layer include="concorde-switch-on.xml">
     <name>on</name>
-   </layer>
+   </layer>-->
 
    <transformations>
     <transformation>
@@ -509,7 +509,7 @@
 
  <actions>
 
-  <action>
+  <!--<action>
    <name>toggle tank 1</name>
    <button>0</button>
    <x>-22</x>
@@ -592,7 +592,7 @@
     <command>property-toggle</command>
     <property>/instrumentation/generic/click</property>
    </binding>
-  </action>
+  </action>-->
 
  </actions>
  

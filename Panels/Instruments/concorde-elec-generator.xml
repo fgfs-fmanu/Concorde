@@ -19,7 +19,7 @@
    <name>Generator selector</name>
    <type>switch</type>
 
-   <layer include="concorde-switch-on.xml">
+   <!-- <layer include="concorde-switch-on.xml">
     <name>on</name>
     <condition>
      <property alias="../../../../../params/master-alt"/>
@@ -28,7 +28,7 @@
 
    <layer include="concorde-switch-3rd.xml">
     <name>off</name>
-   </layer>
+   </layer>-->
   </layer>
 
   <layer>

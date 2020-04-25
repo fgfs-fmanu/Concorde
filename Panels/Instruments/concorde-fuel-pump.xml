@@ -1,6 +1,8 @@
 <?xml version="1.0"?>
 
-<!-- Fuel pump switch -->
+<!-- Fuel pump switch 
+
+I put in coment switch layer and his action-->
 
 <PropertyList>
 
@@ -34,7 +36,7 @@
    </transformations>
   </layer>
 
-  <layer>
+  <!--<layer>
    <name>Fuel pump</name>
    <type>switch</type>
 
@@ -48,11 +50,11 @@
    <layer include="concorde-switch-off.xml">
     <name>off</name>
    </layer>
-  </layer>
+  </layer>-->
 
  </layers>
 
- <actions>
+ <!--<actions>
 
   <action>
    <name>Toggle pump</name>
@@ -71,6 +73,6 @@
    </binding>
   </action>
 
- </actions>
+ </actions>-->
  
 </PropertyList>

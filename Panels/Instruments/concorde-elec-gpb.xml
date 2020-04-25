@@ -15,7 +15,7 @@
    <name>GPB switch</name>
    <type>switch</type>
 
-   <layer include="concorde-switch-on.xml">
+   <!--<layer include="concorde-switch-on.xml">
     <name>close</name>
     <condition>
      <property>/controls/electric/ac/gpb</property>
@@ -24,7 +24,7 @@
 
    <layer include="concorde-switch-off.xml">
     <name>trip</name>
-   </layer>
+   </layer>-->
   </layer>
 
   <layer>

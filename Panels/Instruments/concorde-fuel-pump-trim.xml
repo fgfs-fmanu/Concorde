@@ -19,7 +19,7 @@
 
  <layers>
 
-  <layer>
+  <!--<layer>
    <name>Fuel pump</name>
    <type>switch</type>
 
@@ -51,7 +51,7 @@
      <offset>-3</offset>
     </transformation>
    </transformations>
-  </layer>
+  </layer>-->
 
   <layer>
    <name>Title on</name>
@@ -136,7 +136,7 @@
 
  </layers>
 
- <actions>
+ <!--<actions>
 
   <action>
    <name>Toggle pump</name>
@@ -172,6 +172,6 @@
    </binding>
   </action>
 
- </actions>
+ </actions>-->
  
 </PropertyList>

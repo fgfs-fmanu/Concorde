@@ -23,7 +23,7 @@
    <name>valve switch</name>
    <type>switch</type>
 
-   <layer include="concorde-switch-off.xml">
+   <!--<layer include="concorde-switch-off.xml">
     <name>off</name>
     <condition>
      <not>
@@ -34,7 +34,7 @@
 
    <layer include="concorde-switch-on.xml">
     <name>on</name>
-   </layer>
+   </layer>-->
   </layer>
 
   <layer>
@@ -95,7 +95,7 @@
    <name>valve 2 switch</name>
    <type>switch</type>
 
-   <layer include="concorde-switch-off.xml">
+   <!--<layer include="concorde-switch-off.xml">
     <name>off</name>
     <condition>
      <not>
@@ -106,7 +106,7 @@
 
    <layer include="concorde-switch-on.xml">
     <name>on</name>
-   </layer>
+   </layer>-->
 
    <transformations>
     <transformation>

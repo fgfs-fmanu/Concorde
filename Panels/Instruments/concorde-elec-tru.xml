@@ -15,21 +15,7 @@
 
  <layers>
 
-  <layer>
-   <name>TRU switch</name>
-   <type>switch</type>
-
-   <layer include="concorde-switch-on.xml">
-    <name>norm</name>
-    <condition>
-     <property alias="../../../../../params/tru-switch"/>
-    </condition>
-   </layer>
-
-   <layer include="concorde-switch-off.xml">
-    <name>isolate</name>
-   </layer>
-  </layer>
+  
 
   <layer>
    <name>Title on</name>

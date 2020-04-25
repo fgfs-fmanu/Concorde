@@ -17,17 +17,6 @@
    <name>System select</name>
    <type>switch</type>
 
-   <layer include="concorde-switch-on.xml">
-    <name>system 1</name>
-    <condition>
-      <property alias="../../../../../params/system-sel"/>
-    </condition>
-   </layer>
-
-   <layer include="concorde-switch-off.xml">
-    <name>system 2</name>
-   </layer>
-
    <transformations>
     <transformation>
      <type>y-shift</type>

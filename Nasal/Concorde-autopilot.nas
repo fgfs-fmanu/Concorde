@@ -1622,6 +1622,9 @@ Autopilot.is_glide = func {
 Autopilot.apglideexport = func {
 if (getprop("/systems/electrical/outputs/specific")>20){
    if( !me.is_glide() ) {
+       altitudeft = me.get_altimeter().getChild("indicated-altitude-ft").getValue();
+       me.apaltitude(altitudeft);
+
        me.apactivatemode("altitude","gs1-hold");
        me.apactivatemode2("heading","nav1-hold","");
        me.apsendnavexport();
@@ -1911,11 +1914,11 @@ Autopilot.maxclimb = func {
 	  };
 
           if(mode=='maxcruise'){
-	  	if (mcvspd>60){
+	  	if (mcvspd>70){
 		  vspd=vspd-10;
 	  	};
 
-	  	if (mcvspd<40){
+	  	if (mcvspd<50){
 		  vspd=vspd+10;
 	  	};
 	  };

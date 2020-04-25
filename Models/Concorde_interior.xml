@@ -1863,8 +1863,2131 @@
     <z-m>  0.260</z-m>
    </offsets>
   </model>
+<!-- ======== -->
+<!-- ENGINEERINSTRUMENTS -->
+<!-- ======== -->
+
+<!--<model>
+    <name>Engineer COG</name>
+    <path>Aircraft/Concorde/Models/Cockpit/Instruments/cog.xml</path>
+    <offsets>
+      <x-m>-21.825</x-m>
+      <y-m>0.55</y-m>
+      <z-m>1.223</z-m>
+     
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>-5</pitch-deg>
+    </offsets>
+	<size>
+       <x>0.5</x>
+       <y>0.2</y>
+       <z>1.5</z>
+	</size>
+  </model>-->
 
 
+
+
+
+
+
+
+
+
+
+
+
+<model>
+    <name>Fuel Pump 1 Tank 5 </name>
+    <path>Cockpit/Engineer/tank-5-pump-1.xml</path>
+    <overlay>
+      <params>
+        <pump-switch>/controls/fuel/tank[4]/pump[0]</pump-switch>
+      </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.977</x-m>
+      <y-m>0.555</y-m>
+      <z-m>1.214</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>-5</pitch-deg>
+    </offsets>
+  </model>
+
+<model>
+    <name>Fuel Pump 2 Tank 5 </name>
+    <path>Cockpit/Engineer/tank-5-pump-2.xml</path>
+    <overlay>
+      <params>
+        <pump-switch>/controls/fuel/tank[4]/pump[1]</pump-switch>
+      </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.896</x-m>
+      <y-m>0.555</y-m>
+      <z-m>1.214</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>-5</pitch-deg>
+    </offsets>
+  </model>
+
+
+<model>
+    <name>Fuel Pump 1 Tank 7 </name>
+    <path>Cockpit/Engineer/tank-7-pump-1.xml</path>
+    <overlay>
+      <params>
+        <pump-switch>/controls/fuel/tank[6]/pump[0]</pump-switch>
+      </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.641</x-m>
+      <y-m>0.555</y-m>
+      <z-m>1.214</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>-5</pitch-deg>
+    </offsets>
+  </model>
+
+<model>
+    <name>Fuel Pump 2 Tank 7 </name>
+    <path>Cockpit/Engineer/tank-7-pump-2.xml</path>
+    <overlay>
+      <params>
+        <pump-switch>/controls/fuel/tank[6]/pump[1]</pump-switch>
+      </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.559</x-m>
+      <y-m>0.555</y-m>
+      <z-m>1.214</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>-5</pitch-deg>
+    </offsets>
+  </model>
+
+
+
+
+
+
+
+
+
+<model>
+    <name>Fuel Pump 1 Tank 6 </name>
+    <path>Cockpit/Engineer/tank-6-pump-1.xml</path>
+    <overlay>
+      <params>
+        <pump-switch>/controls/fuel/tank[5]/pump[0]</pump-switch>
+      </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.978</x-m>
+      <y-m>0.555</y-m>
+      <z-m>1.16</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>-5</pitch-deg>
+    </offsets>
+  </model>
+
+<model>
+    <name>Fuel Pump 2 Tank 6 </name>
+    <path>Cockpit/Engineer/tank-6-pump-2.xml</path>
+    <overlay>
+      <params>
+        <pump-switch>/controls/fuel/tank[5]/pump[1]</pump-switch>
+      </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.897</x-m>
+      <y-m>0.555</y-m>
+      <z-m>1.16</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>-5</pitch-deg>
+    </offsets>
+  </model>
+
+
+<model>
+    <name>Fuel Pump 1 Tank 8 </name>
+    <path>Cockpit/Engineer/tank-8-pump-1.xml</path>
+    <overlay>
+      <params>
+        <pump-switch>/controls/fuel/tank[7]/pump[0]</pump-switch>
+      </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.641</x-m>
+      <y-m>0.555</y-m>
+      <z-m>1.16</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>-5</pitch-deg>
+    </offsets>
+  </model>
+
+<model>
+    <name>Fuel Pump 2 Tank 8 </name>
+    <path>Cockpit/Engineer/tank-8-pump-2.xml</path>
+    <overlay>
+      <params>
+        <pump-switch>/controls/fuel/tank[7]/pump[1]</pump-switch>
+      </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.559</x-m>
+      <y-m>0.555</y-m>
+      <z-m>1.16</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>-5</pitch-deg>
+    </offsets>
+  </model>
+
+
+<model>
+    <name>Fuel Pump 1 Tank 1 </name>
+    <path>Cockpit/Engineer/tank-1-pump-1.xml</path>
+    <overlay>
+      <params>
+        <pump-switch>/controls/fuel/tank[0]/pump[0]</pump-switch>
+      </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.987</x-m>
+      <y-m>0.554</y-m>
+      <z-m>1.065</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>-5</pitch-deg>
+    </offsets>
+  </model>
+
+<model>
+    <name>Fuel Pump 2 Tank 1 </name>
+    <path>Cockpit/Engineer/tank-1-pump-2.xml</path>
+    <overlay>
+      <params>
+        <pump-switch>/controls/fuel/tank[0]/pump[1]</pump-switch>
+      </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.959</x-m>
+      <y-m>0.554</y-m>
+      <z-m>1.065</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>-5</pitch-deg>
+    </offsets>
+  </model>
+
+<model>
+    <name>Fuel Pump 3 Tank 1 </name>
+    <path>Cockpit/Engineer/tank-1-pump-3.xml</path>
+    <overlay>
+      <params>
+        <pump-switch>/controls/fuel/tank[0]/pump[2]</pump-switch>
+      </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.931</x-m>
+      <y-m>0.554</y-m>
+      <z-m>1.065</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>-5</pitch-deg>
+    </offsets>
+  </model>
+
+
+
+
+
+
+
+
+
+
+
+
+<model>
+    <name>Fuel Pump 1 Tank 2 </name>
+    <path>Cockpit/Engineer/tank-2-pump-1.xml</path>
+    <overlay>
+      <params>
+        <pump-switch>/controls/fuel/tank[1]/pump[0]</pump-switch>
+      </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.897</x-m>
+      <y-m>0.554</y-m>
+      <z-m>1.065</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>-5</pitch-deg>
+    </offsets>
+  </model>
+
+<model>
+    <name>Fuel Pump 2 Tank 2 </name>
+    <path>Cockpit/Engineer/tank-2-pump-2.xml</path>
+    <overlay>
+      <params>
+        <pump-switch>/controls/fuel/tank[2]/pump[1]</pump-switch>
+      </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.870</x-m>
+      <y-m>0.554</y-m>
+      <z-m>1.065</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>-5</pitch-deg>
+    </offsets>
+  </model>
+
+<model>
+    <name>Fuel Pump 3 Tank 2 </name>
+    <path>Cockpit/Engineer/tank-2-pump-3.xml</path>
+    <overlay>
+      <params>
+        <pump-switch>/controls/fuel/tank[2]/pump[2]</pump-switch>
+      </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.841</x-m>
+      <y-m>0.554</y-m>
+      <z-m>1.065</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>-5</pitch-deg>
+    </offsets>
+  </model>
+
+
+
+
+
+
+
+
+
+
+
+
+<model>
+    <name>Fuel Pump 1 Tank 3 </name>
+    <path>Cockpit/Engineer/tank-3-pump-1.xml</path>
+    <overlay>
+      <params>
+        <pump-switch>/controls/fuel/tank[2]/pump[0]</pump-switch>
+      </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.703</x-m>
+      <y-m>0.554</y-m>
+      <z-m>1.065</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>-5</pitch-deg>
+    </offsets>
+  </model>
+
+<model>
+    <name>Fuel Pump 2 Tank 3 </name>
+    <path>Cockpit/Engineer/tank-3-pump-2.xml</path>
+    <overlay>
+      <params>
+        <pump-switch>/controls/fuel/tank[2]/pump[1]</pump-switch>
+      </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.675</x-m>
+      <y-m>0.554</y-m>
+      <z-m>1.065</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>-5</pitch-deg>
+    </offsets>
+  </model>
+
+<model>
+    <name>Fuel Pump 3 Tank 3 </name>
+    <path>Cockpit/Engineer/tank-3-pump-3.xml</path>
+    <overlay>
+      <params>
+        <pump-switch>/controls/fuel/tank[2]/pump[2]</pump-switch>
+      </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.646</x-m>
+      <y-m>0.554</y-m>
+      <z-m>1.065</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>-5</pitch-deg>
+    </offsets>
+  </model>
+
+
+
+
+
+
+
+
+
+
+
+<model>
+    <name>Fuel Pump 1 Tank 4 </name>
+    <path>Cockpit/Engineer/tank-4-pump-1.xml</path>
+    <overlay>
+      <params>
+        <pump-switch>/controls/fuel/tank[3]/pump[0]</pump-switch>
+      </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.612</x-m>
+      <y-m>0.554</y-m>
+      <z-m>1.065</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>-5</pitch-deg>
+    </offsets>
+  </model>
+
+<model>
+    <name>Fuel Pump 2 Tank 4 </name>
+    <path>Cockpit/Engineer/tank-4-pump-2.xml</path>
+    <overlay>
+      <params>
+        <pump-switch>/controls/fuel/tank[3]/pump[1]</pump-switch>
+      </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.584</x-m>
+      <y-m>0.554</y-m>
+      <z-m>1.065</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>-5</pitch-deg>
+    </offsets>
+  </model>
+
+<model>
+    <name>Fuel Pump 3 Tank 4 </name>
+    <path>Cockpit/Engineer/tank-4-pump-3.xml</path>
+    <overlay>
+      <params>
+        <pump-switch>/controls/fuel/tank[4]/pump[2]</pump-switch>
+      </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.556</x-m>
+      <y-m>0.554</y-m>
+      <z-m>1.065</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>-5</pitch-deg>
+    </offsets>
+  </model>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<model>
+    <name>Fuel Pump 1 Tank 5A </name>
+    <path>Cockpit/Engineer/tank-5A-pump-1.xml</path>
+    <overlay>
+      <params>
+        <pump-switch>/controls/fuel/tank[11]/pump[0]</pump-switch>
+      </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.863</x-m>
+      <y-m>0.533</y-m>
+      <z-m>1.352</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+
+
+
+<model>
+    <name>Fuel Pump 2 Tank 5A </name>
+    <path>Cockpit/Engineer/tank-5A-pump-2.xml</path>
+    <overlay>
+      <params>
+        <pump-switch>/controls/fuel/tank[11]/pump[1]</pump-switch>
+      </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.843</x-m>
+      <y-m>0.535</y-m>
+      <z-m>1.352</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+
+
+
+
+
+
+
+<model>
+    <name>Fuel Pump 1 Tank 7A </name>
+    <path>Cockpit/Engineer/tank-7A-pump-1.xml</path>
+    <overlay>
+      <params>
+        <pump-switch>/controls/fuel/tank[12]/pump[0]</pump-switch>
+      </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.675</x-m>
+      <y-m>0.535</y-m>
+      <z-m>1.352</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+
+
+
+<model>
+    <name>Fuel Pump 2 Tank 7A </name>
+    <path>Cockpit/Engineer/tank-7A-pump-2.xml</path>
+    <overlay>
+      <params>
+        <pump-switch>/controls/fuel/tank[12]/pump[1]</pump-switch>
+      </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.655</x-m>
+      <y-m>0.535</y-m>
+      <z-m>1.352</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+
+
+
+
+
+
+
+
+
+
+
+<model>
+    <name>Fuel Trim 1 Tank 9 </name>
+    <path>Cockpit/Engineer/tank-9-trim-1.xml</path>
+    <overlay>
+      <params>
+        <pump-switch>/controls/fuel/tank[8]/pump-on[0]</pump-switch>
+        <auto-switch>/controls/fuel/tank[8]/pump-auto[0]</auto-switch>
+      </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.818</x-m>
+      <y-m>0.490</y-m>
+      <z-m>1.426</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+<model>
+    <name>Fuel Trim 2 Tank 9 </name>
+    <path>Cockpit/Engineer/tank-9-trim-2.xml</path>
+    <overlay>
+      <params>
+        <pump-switch>/controls/fuel/tank[8]/pump-on[1]</pump-switch>
+        <auto-switch>/controls/fuel/tank[8]/pump-auto[1]</auto-switch>
+      </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.705</x-m>
+      <y-m>0.490</y-m>
+      <z-m>1.426</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+
+
+
+
+
+<model>
+    <name>Fuel Trim 1 Tank 10 </name>
+    <path>Cockpit/Engineer/tank-10-trim-1.xml</path>
+    <overlay>
+      <params>
+        <pump-switch>/controls/fuel/tank[9]/pump-on[0]</pump-switch>
+        <auto-switch>/controls/fuel/tank[9]/pump-auto[0]</auto-switch>
+      </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.818</x-m>
+      <y-m>0.535</y-m>
+      <z-m>1.337</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+
+<model>
+    <name>Fuel Trim 2 Tank 10 </name>
+    <path>Cockpit/Engineer/tank-10-trim-2.xml</path>
+    <overlay>
+      <params>
+        <pump-switch>/controls/fuel/tank[9]/pump-on[1]</pump-switch>
+        <auto-switch>/controls/fuel/tank[9]/pump-auto[1]</auto-switch>
+      </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.705</x-m>
+      <y-m>0.535</y-m>
+      <z-m>1.337</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+
+
+
+
+
+
+
+
+<model>
+    <name>Fuel Trim 2 Tank 11 </name>
+    <path>Cockpit/Engineer/tank-11-trim-2.xml</path>
+    <overlay>
+      <params>
+        <pump-switch>/controls/fuel/tank[10]/pump-blue-on</pump-switch>
+        <auto-switch>/controls/fuel/tank[10]/pump-blue-auto</auto-switch>
+      </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.744</x-m>
+      <y-m>0.544</y-m>
+      <z-m>1.014</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>-5</pitch-deg>
+    </offsets>
+  </model>
+
+
+<model>
+    <name>Fuel Trim 1 Tank 11 </name>
+    <path>Cockpit/Engineer/tank-11-trim-1.xml</path>
+    <overlay>
+      <params>
+        <pump-switch>/controls/fuel/tank[10]/pump-green-on</pump-switch>
+        <auto-switch>/controls/fuel/tank[10]/pump-green-auto</auto-switch>
+      </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.802</x-m>
+      <y-m>0.544</y-m>
+      <z-m>1.014</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>-5</pitch-deg>
+    </offsets>
+  </model>
+
+
+
+
+
+
+
+
+
+<model>
+<name>Fuel inletvalve Tank 5 </name>
+    <path>Cockpit/Engineer/tank-5-inletvalve.xml</path>
+    <overlay>
+      <params>
+        <inlet-valve>/controls/fuel/tank[4]/inlet-standby</inlet-valve>
+      </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.892</x-m>
+      <y-m>0.501</y-m>
+      <z-m>1.410</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+
+<model>
+<name>Fuel inletvalve Tank 6 </name>
+    <path>Cockpit/Engineer/tank-6-inletvalve.xml</path>
+    <overlay>
+      <params>
+        <inlet-valve>/controls/fuel/tank[5]/inlet-standby</inlet-valve>
+      </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.875</x-m>
+      <y-m>0.501</y-m>
+      <z-m>1.410</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+
+<model>
+<name>Fuel inletvalve Tank 1 </name>
+    <path>Cockpit/Engineer/tank-1-inletvalve.xml</path>
+    <overlay>
+      <params>
+        <inlet-valve>/controls/fuel/tank[0]/inlet-standby</inlet-valve>
+      </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.858</x-m>
+      <y-m>0.501</y-m>
+      <z-m>1.410</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+
+<model>
+<name>Fuel inletvalve Tank 2 </name>
+    <path>Cockpit/Engineer/tank-2-inletvalve.xml</path>
+    <overlay>
+      <params>
+        <inlet-valve>/controls/fuel/tank[1]/inlet-standby</inlet-valve>
+      </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.840</x-m>
+      <y-m>0.501</y-m>
+      <z-m>1.410</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+
+
+
+
+
+
+
+
+
+
+<model>
+<name>Fuel inletvalve Tank 3 </name>
+    <path>Cockpit/Engineer/tank-3-inletvalve.xml</path>
+    <overlay>
+      <params>
+        <inlet-valve>/controls/fuel/tank[2]/inlet-standby</inlet-valve>
+      </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.682</x-m>
+      <y-m>0.501</y-m>
+      <z-m>1.410</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+
+<model>
+<name>Fuel inletvalve Tank 4 </name>
+    <path>Cockpit/Engineer/tank-4-inletvalve.xml</path>
+    <overlay>
+      <params>
+        <inlet-valve>/controls/fuel/tank[3]/inlet-standby</inlet-valve>
+      </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.664</x-m>
+      <y-m>0.501</y-m>
+      <z-m>1.410</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+
+<model>
+<name>Fuel inletvalve Tank 10 </name>
+    <path>Cockpit/Engineer/tank-10-inletvalve.xml</path>
+    <overlay>
+      <params>
+        <inlet-valve>/controls/fuel/tank[9]/inlet-standby</inlet-valve>
+      </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.646</x-m>
+      <y-m>0.501</y-m>
+      <z-m>1.410</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+
+<model>
+<name>Fuel inletvalve Tank 7 </name>
+    <path>Cockpit/Engineer/tank-7-inletvalve.xml</path>
+    <overlay>
+      <params>
+        <inlet-valve>/controls/fuel/tank[6]/inlet-standby</inlet-valve>
+      </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.629</x-m>
+      <y-m>0.501</y-m>
+      <z-m>1.410</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+
+<model>
+<name>Fuel inletvalve Tank 8 </name>
+    <path>Cockpit/Engineer/tank-8-inletvalve.xml</path>
+    <overlay>
+      <params>
+        <inlet-valve>/controls/fuel/tank[7]/inlet-standby</inlet-valve>
+      </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.611</x-m>
+      <y-m>0.501</y-m>
+      <z-m>1.410</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+
+
+
+<model>
+<name>Fuel inletvalve 1 Tank 9 </name>
+    <path>Cockpit/Engineer/tank-9-inletvalve-1.xml</path>
+    <overlay>
+      <params>
+        <inlet-main>/controls/fuel/tank[8]/inlet-main[0]</inlet-main>
+  	<inlet-auto>/controls/fuel/tank[8]/inlet-auto[0]</inlet-auto>
+      </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.811</x-m>
+      <y-m>0.480</y-m>
+      <z-m>1.472</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+
+<model>
+<name>Fuel inletvalve 2 Tank 9 </name>
+    <path>Cockpit/Engineer/tank-9-inletvalve-2.xml</path>
+    <overlay>
+      <params>
+        <inlet-main>/controls/fuel/tank[8]/inlet-main[1]</inlet-main>
+  	<inlet-auto>/controls/fuel/tank[8]/inlet-auto[1]</inlet-auto>
+      </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.707</x-m>
+      <y-m>0.480</y-m>
+      <z-m>1.472</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+
+
+
+
+
+
+
+
+
+<model>
+    <name>Fuel inletvalve 1 Tank 11</name>
+    <path>Cockpit/Engineer/tank-11-inletvalve-1.xml</path>
+    <overlay>
+      <params>
+        <inlet-main>/controls/fuel/tank[10]/inlet-main[0]</inlet-main>
+  	<inlet-auto>/controls/fuel/tank[10]/inlet-auto[0]</inlet-auto>
+      </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.807</x-m>
+      <y-m>0.546</y-m>
+      <z-m>1.116</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>-5</pitch-deg>
+    </offsets>
+  </model>
+
+<model>
+    <name>Fuel inletvalve 2 Tank 11</name>
+    <path>Cockpit/Engineer/tank-11-inletvalve-2.xml</path>
+    <overlay>
+      <params>
+        <inlet-main>/controls/fuel/tank[10]/inlet-main[1]</inlet-main>
+  	<inlet-auto>/controls/fuel/tank[10]/inlet-auto[1]</inlet-auto>
+      </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.732</x-m>
+      <y-m>0.546</y-m>
+      <z-m>1.116</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>-5</pitch-deg>
+    </offsets>
+  </model>
+
+
+
+
+
+
+
+
+
+
+
+<model>
+    <name>Fuel inletvalve trans Tank 5</name>
+    <path>Cockpit/Engineer/tank-5-transvalve.xml</path>
+    <overlay>
+      <params>
+        <trans-valve>/controls/fuel/tank[11]/trans-valve</trans-valve>
+	</params>
+    </overlay>
+    <offsets>
+      <x-m>-21.884</x-m>
+      <y-m>0.552</y-m>
+      <z-m>1.267</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>-5</pitch-deg>
+    </offsets>
+  </model>
+
+	<model>
+    <name>Fuel inletvalve trans Tank 7</name>
+    <path>Cockpit/Engineer/tank-7-transvalve.xml</path>
+    <overlay>
+      <params>
+        <trans-valve>/controls/fuel/tank[12]/trans-valve</trans-valve>
+	</params>
+    </overlay>
+    <offsets>
+      <x-m>-21.653</x-m>
+      <y-m>0.552</y-m>
+      <z-m>1.267</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>-5</pitch-deg>
+    </offsets>
+  </model>
+
+
+
+
+
+
+<model>
+    <name>Fuel inletvalve trans Tank 5</name>
+    <path>Cockpit/Engineer/tank-5-transvalve.xml</path>
+    <overlay>
+      <params>
+        <trans-valve>/controls/fuel/tank[11]/trans-valve</trans-valve>
+	</params>
+    </overlay>
+    <offsets>
+      <x-m>-21.884</x-m>
+      <y-m>0.552</y-m>
+      <z-m>1.267</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>-5</pitch-deg>
+    </offsets>
+  </model>
+
+	<model>
+    <name>Fuel inletvalve trans Tank 7</name>
+    <path>Cockpit/Engineer/tank-7-transvalve.xml</path>
+    <overlay>
+      <params>
+        <trans-valve>/controls/fuel/tank[12]/trans-valve</trans-valve>
+	</params>
+    </overlay>
+    <offsets>
+      <x-m>-21.653</x-m>
+      <y-m>0.552</y-m>
+      <z-m>1.267</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>-5</pitch-deg>
+    </offsets>
+  </model>
+
+
+
+
+
+
+
+
+
+
+<model>
+    <name>Fuel intervalve Tank 5</name>
+    <path>Cockpit/Engineer/tank-5-intervalve.xml</path>
+    <overlay>
+      <params>
+        <connect-valve>/controls/fuel/tank[4]/interconnect-valve</connect-valve>
+	</params>
+    </overlay>
+    <offsets>
+      <x-m>-21.664</x-m>
+      <y-m>0.547</y-m>
+      <z-m>1.153</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>-5</pitch-deg>
+    </offsets>
+  </model>
+
+	<model>
+    <name>Fuel intervalve Tank 7</name>
+    <path>Cockpit/Engineer/tank-7-intervalve.xml</path>
+    <overlay>
+      <params>
+        <connect-valve>/controls/fuel/tank[6]/interconnect-valve</connect-valve>
+	</params>
+    </overlay>
+    <offsets>
+      <x-m>-21.875</x-m>
+      <y-m>0.547</y-m>
+      <z-m>1.153</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>-5</pitch-deg>
+    </offsets>
+  </model>
+
+<!-- ======== -->
+<!-- ELEC     -->
+<!-- ======== -->
+
+<model>
+    <name>Ground Service</name>
+    <path>Cockpit/Engineer/elec-ground-service.xml</path>
+    <offsets>
+      <x-m>-21.365</x-m>
+      <y-m>0.48</y-m>
+      <z-m>1.420</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+
+
+
+
+<model>
+    <name>Ground Service</name>
+    <path>Cockpit/Engineer/elec-ssb.xml</path>
+    <offsets>
+      <x-m>-21.350</x-m>
+      <y-m>0.518</y-m>
+      <z-m>1.338</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+
+<model>
+    <name>Generator 1</name>
+    <path>Cockpit/Engineer/elec-generator-1.xml</path>
+    <overlay>
+	<params>
+        <master-alt>/controls/engines/engine[0]/master-alt</master-alt>
+	</params>
+    </overlay>
+    <offsets>
+      <x-m>-21.495</x-m>
+      <y-m>0.485</y-m>
+      <z-m>1.450</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+
+
+
+<model>
+    <name>Generator 2</name>
+    <path>Cockpit/Engineer/elec-generator-2.xml</path>
+    <overlay>
+	<params>
+        <master-alt>/controls/engines/engine[1]/master-alt</master-alt>
+	</params>
+    </overlay>
+    <offsets>
+      <x-m>-21.443</x-m>
+      <y-m>0.475</y-m>
+      <z-m>1.450</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+
+
+
+<model>
+    <name>Generator 3</name>
+    <path>Cockpit/Engineer/elec-generator-3.xml</path>
+    <overlay>
+	<params>
+        <master-alt>/controls/engines/engine[2]/master-alt</master-alt>
+	</params>
+    </overlay>
+    <offsets>
+      <x-m>-21.33</x-m>
+      <y-m>0.46</y-m>
+      <z-m>1.450</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+
+
+<model>
+    <name>Generator 4</name>
+    <path>Cockpit/Engineer/elec-generator-4.xml</path>
+    <overlay>
+	<params>
+        <master-alt>/controls/engines/engine[3]/master-alt</master-alt>
+	</params>
+    </overlay>
+    <offsets>
+      <x-m>-21.276</x-m>
+      <y-m>0.455</y-m>
+      <z-m>1.450</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+
+
+
+
+
+
+
+
+
+<model>
+    <name>Battery Left</name>
+    <path>Cockpit/Engineer/batt-left.xml</path>
+    <overlay>
+   <params>
+  <master-bat>/controls/electric/dc/master-bat[0]</master-bat>
+  <ess-main-split>/controls/electrical/dc/esma</ess-main-split>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.434</x-m>
+      <y-m>0.540</y-m>
+      <z-m>1.101</z-m>
+      
+      <heading-deg>-95</heading-deg>
+     <pitch-deg>-5</pitch-deg>
+    </offsets>
+  </model>
+
+
+
+<model>
+    <name>Battery Right</name>
+    <path>Cockpit/Engineer/batt-right.xml</path>
+    <overlay>
+   <params>
+  <master-bat>/controls/electric/dc/master-bat[1]</master-bat>
+  <ess-main-split>/controls/electrical/dc/esma</ess-main-split>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.290</x-m>
+      <y-m>0.522</y-m>
+      <z-m>1.102</z-m>
+      
+      <heading-deg>-95</heading-deg>
+     <pitch-deg>-5</pitch-deg>
+    </offsets>
+  </model>
+
+
+
+
+
+
+
+<model>
+    <name>Tru Essential a</name>
+    <path>Cockpit/Engineer/elec-tru-1.xml</path>
+    <overlay>
+   <params>
+  <tru-switch>/controls/electric/dc/essential-a</tru-switch>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.449</x-m>
+      <y-m>0.544</y-m>
+      <z-m>1.164</z-m>
+      
+      <heading-deg>-95</heading-deg>
+     <pitch-deg>-5</pitch-deg>
+    </offsets>
+  </model>
+
+<model>
+    <name>Tru Main a</name>
+    <path>Cockpit/Engineer/elec-tru-2.xml</path>
+    <overlay>
+   <params>
+  <tru-switch>/controls/electric/dc/main-a</tru-switch>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.38</x-m>
+      <y-m>0.533</y-m>
+      <z-m>1.165</z-m>
+      
+      <heading-deg>-95</heading-deg>
+     <pitch-deg>-5</pitch-deg>
+    </offsets>
+  </model>
+
+<model>
+    <name>Tru Main b</name>
+    <path>Cockpit/Engineer/elec-tru-3.xml</path>
+    <overlay>
+   <params>
+  <tru-switch>/controls/electric/dc/main-b</tru-switch>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.300</x-m>
+      <y-m>0.527</y-m>
+      <z-m>1.165</z-m>
+      
+      <heading-deg>-95</heading-deg>
+     <pitch-deg>-5</pitch-deg>
+    </offsets>
+  </model>
+
+<model>
+    <name>Tru Essential b</name>
+    <path>Cockpit/Engineer/elec-tru-4.xml</path>
+    <overlay>
+   <params>
+  <tru-switch>/controls/electric/dc/essential-b</tru-switch>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.238</x-m>
+      <y-m>0.515</y-m>
+      <z-m>1.164</z-m>
+      
+      <heading-deg>-95</heading-deg>
+     <pitch-deg>-5</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  
+  
+  <model>
+    <name>Ac ESS Emerg 1</name>
+    <path>Cockpit/Engineer/elec-ac-ess-emerg-1.xml</path>
+    <overlay>
+   <params>
+  <emerg-switch>/controls/electric/ac/emergency/essential[0]</emerg-switch>
+  <essential-switch>/controls/electric/ac/essential[0]</essential-switch>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.469</x-m>
+      <y-m>0.55</y-m>
+      <z-m>1.225</z-m>
+      
+      <heading-deg>-95</heading-deg>
+     <pitch-deg>-5</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  <model>
+    <name>Ac ESS Emerg 2</name>
+    <path>Cockpit/Engineer/elec-ac-ess-emerg-2.xml</path>
+    <overlay>
+   <params>
+  <emerg-switch>/controls/electric/ac/emergency/essential[1]</emerg-switch>
+  <essential-switch>/controls/electric/ac/essential[1]</essential-switch>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.439</x-m>
+      <y-m>0.545</y-m>
+      <z-m>1.225</z-m>
+      
+      <heading-deg>-95</heading-deg>
+     <pitch-deg>-5</pitch-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <name>Ac ESS Emerg 3</name>
+    <path>Cockpit/Engineer/elec-ac-ess-emerg-3.xml</path>
+    <overlay>
+   <params>
+  <emerg-switch>/controls/electric/ac/emergency/essential[2]</emerg-switch>
+  <essential-switch>/controls/electric/ac/essential[2]</essential-switch>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.284</x-m>
+      <y-m>0.525</y-m>
+      <z-m>1.225</z-m>
+      
+      <heading-deg>-95</heading-deg>
+     <pitch-deg>-5</pitch-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <name>Ac ESS Emerg 4</name>
+    <path>Cockpit/Engineer/elec-ac-ess-emerg-4.xml</path>
+    <overlay>
+   <params>
+  <emerg-switch>/controls/electric/ac/emergency/essential[3]</emerg-switch>
+  <essential-switch>/controls/electric/ac/essential[3]</essential-switch>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.254</x-m>
+      <y-m>0.515</y-m>
+      <z-m>1.225</z-m>
+      
+      <heading-deg>-95</heading-deg>
+     <pitch-deg>-5</pitch-deg>
+    </offsets>
+  </model>
+
+
+<!-- ======== -->
+<!-- Air Bleed-->
+<!-- ======== -->
+
+<model>
+<name>Air Bleed 1 </name>
+    <path>Cockpit/Engineer/air-bleed-engine-1.xml</path>
+    <overlay>
+      <params>
+        <bleed-valve>/controls/pneumatic/engine[0]/bleed-valve</bleed-valve>
+      </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.950</x-m>
+      <y-m>0.355</y-m>
+      <z-m>1.746</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+<model>
+<name>Air  Cross Bleed 1 </name>
+    <path>Cockpit/Engineer/air-cross-bleed-engine-1.xml</path>
+    <overlay>
+      <params>
+        <cross-valve>/controls/pneumatic/engine[0]/cross-bleed-valve</cross-valve>
+      </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.937</x-m>
+      <y-m>0.376</y-m>
+      <z-m>1.701</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+
+
+
+
+
+
+<model>
+<name>Air Bleed 2 </name>
+    <path>Cockpit/Engineer/air-bleed-engine-2.xml</path>
+    <overlay>
+      <params>
+        <bleed-valve>/controls/pneumatic/engine[1]/bleed-valve</bleed-valve>
+      </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.877</x-m>
+      <y-m>0.355</y-m>
+      <z-m>1.746</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+<model>
+<name>Air  Cross Bleed 2 </name>
+    <path>Cockpit/Engineer/air-cross-bleed-engine-2.xml</path>
+    <overlay>
+      <params>
+        <cross-valve>/controls/pneumatic/engine[1]/cross-bleed-valve</cross-valve>
+      </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.920</x-m>
+      <y-m>0.376</y-m>
+      <z-m>1.701</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+
+
+
+
+<model>
+<name>Air Bleed 3 </name>
+    <path>Cockpit/Engineer/air-bleed-engine-3.xml</path>
+    <overlay>
+      <params>
+        <bleed-valve>/controls/pneumatic/engine[2]/bleed-valve</bleed-valve>
+      </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.837</x-m>
+      <y-m>0.355</y-m>
+      <z-m>1.746</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+<model>
+<name>Air  Cross Bleed 3 </name>
+    <path>Cockpit/Engineer/air-cross-bleed-engine-3.xml</path>
+    <overlay>
+      <params>
+        <cross-valve>/controls/pneumatic/engine[2]/cross-bleed-valve</cross-valve>
+      </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.824</x-m>
+      <y-m>0.375</y-m>
+      <z-m>1.701</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+
+
+
+
+
+<model>
+<name>Air Bleed 4 </name>
+    <path>Cockpit/Engineer/air-bleed-engine-4.xml</path>
+    <overlay>
+      <params>
+        <bleed-valve>/controls/pneumatic/engine[3]/bleed-valve</bleed-valve>
+      </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.764</x-m>
+      <y-m>0.355</y-m>
+      <z-m>1.746</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+<model>
+<name>Air  Cross Bleed 4 </name>
+    <path>Cockpit/Engineer/air-cross-bleed-engine-4.xml</path>
+    <overlay>
+      <params>
+        <cross-valve>/controls/pneumatic/engine[3]/cross-bleed-valve</cross-valve>
+      </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.807</x-m>
+      <y-m>0.376</y-m>
+      <z-m>1.701</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+<!-- ======== -->
+<!-- Starter -->
+<!-- ======== -->
+
+
+<model>
+    <name>Engine Starter 1</name>
+    <path>Cockpit/Engineer/engine-starter-1.xml</path>
+    <overlay>
+      <params>
+        <control-starter>/controls/engines/engine[0]/starter</control-starter>
+  	<control-relight>/systems/engines/engine[0]/relight</control-relight>
+  	<engine-relight>/systems/electrical/power/relight[0]</engine-relight>
+  	<air-pressure>/systems/air-bleed/power/cross[0]</air-pressure>
+	</params>
+    </overlay>
+    <offsets>
+      <x-m>-22.42</x-m>
+      <y-m>0.507</y-m>
+      <z-m>0.76</z-m>
+      
+      <heading-deg>-85</heading-deg>
+     <pitch-deg>-5</pitch-deg>
+    </offsets>
+  </model>
+
+
+<model>
+    <name>Engine Starter 2</name>
+    <path>Cockpit/Engineer/engine-starter-2.xml</path>
+    <overlay>
+      <params>
+        <control-starter>/controls/engines/engine[1]/starter</control-starter>
+  	<control-relight>/systems/engines/engine[1]/relight</control-relight>
+  	<engine-relight>/systems/electrical/power/relight[1]</engine-relight>
+  	<air-pressure>/systems/air-bleed/power/cross[1]</air-pressure>
+	</params>
+    </overlay>
+    <offsets>
+      <x-m>-22.38</x-m>
+      <y-m>0.510</y-m>
+      <z-m>0.76</z-m>
+      
+      <heading-deg>-85</heading-deg>
+     <pitch-deg>-5</pitch-deg>
+    </offsets>
+  </model>
+
+
+<model>
+    <name>Engine Starter 3</name>
+    <path>Cockpit/Engineer/engine-starter-3.xml</path>
+    <overlay>
+      <params>
+        <control-starter>/controls/engines/engine[2]/starter</control-starter>
+  	<control-relight>/systems/engines/engine[2]/relight</control-relight>
+  	<engine-relight>/systems/electrical/power/relight[2]</engine-relight>
+  	<air-pressure>/systems/air-bleed/power/cross[2]</air-pressure>
+	</params>
+    </overlay>
+    <offsets>
+      <x-m>-22.35</x-m>
+      <y-m>0.513</y-m>
+      <z-m>0.76</z-m>
+      
+      <heading-deg>-85</heading-deg>
+     <pitch-deg>-5</pitch-deg>
+    </offsets>
+  </model>
+
+
+<model>
+    <name>Engine Starter 4</name>
+    <path>Cockpit/Engineer/engine-starter-4.xml</path>
+    <overlay>
+      <params>
+        <control-starter>/controls/engines/engine[3]/starter</control-starter>
+  	<control-relight>/systems/engines/engine[3]/relight</control-relight>
+  	<engine-relight>/systems/electrical/power/relight[3]</engine-relight>
+  	<air-pressure>/systems/air-bleed/power/cross[3]</air-pressure>
+	</params>
+    </overlay>
+    <offsets>
+      <x-m>-22.315</x-m>
+      <y-m>0.516</y-m>
+      <z-m>0.76</z-m>
+      
+      <heading-deg>-85</heading-deg>
+     <pitch-deg>-5</pitch-deg>
+    </offsets>
+  </model>
+
+
+<!-- ======== -->
+<!-- Engineer foward -->
+<!-- ======== -->
+
+
+<model>
+    <name>N1 Engine 4 Limiter </name>
+    <path>Cockpit/Engineer/N1-engine-4-88-percent.xml</path>
+    <offsets>
+      <x-m>-22.180</x-m>
+      <y-m>0.505</y-m>
+      <z-m>1.372</z-m>
+      
+      <heading-deg>-83</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+
+<model>
+    <name>TO CG 54</name>
+    <path>Cockpit/Engineer/to-cg-54.xml</path>
+    <offsets>
+      <x-m>-22.257</x-m>
+      <y-m>0.500</y-m>
+      <z-m>1.372</z-m>
+      
+      <heading-deg>-83</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+
+
+
+<model>
+    <name>Engine Recurculation Valve 1</name>
+    <path>Cockpit/Engineer/recirculation-valve-1.xml</path>
+<overlay>
+<params>
+  <valve-sel>/controls/fuel/tank[0]/recirculation-valve</valve-sel>
+ </params>
+</overlay>
+    <offsets>
+      <x-m>-22.257</x-m>
+      <y-m>0.487</y-m>
+      <z-m>1.403</z-m>
+      
+      <heading-deg>-83</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+
+
+<model>
+    <name>Engine Recurculation Valve 2</name>
+    <path>Cockpit/Engineer/recirculation-valve-2.xml</path>
+<overlay>
+<params>
+  <valve-sel>/controls/fuel/tank[1]/recirculation-valve</valve-sel>
+ </params>
+</overlay>
+    <offsets>
+      <x-m>-22.230</x-m>
+      <y-m>0.489</y-m>
+      <z-m>1.403</z-m>
+      
+      <heading-deg>-83</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+
+
+<model>
+    <name>Engine Recurculation Valve 3</name>
+    <path>Cockpit/Engineer/recirculation-valve-3.xml</path>
+<overlay>
+<params>
+  <valve-sel>/controls/fuel/tank[2]/recirculation-valve</valve-sel>
+ </params>
+</overlay>
+    <offsets>
+      <x-m>-22.203</x-m>
+      <y-m>0.493</y-m>
+      <z-m>1.403</z-m>
+      
+      <heading-deg>-83</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+
+
+<model>
+    <name>Engine Recurculation Valve 4</name>
+    <path>Cockpit/Engineer/recirculation-valve-4.xml</path>
+<overlay>
+<params>
+  <valve-sel>/controls/fuel/tank[3]/recirculation-valve</valve-sel>
+ </params>
+</overlay>
+    <offsets>
+      <x-m>-22.176</x-m>
+      <y-m>0.494</y-m>
+      <z-m>1.403</z-m>
+      
+      <heading-deg>-83</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+
+
+
+
+
+
+
+<model>
+    <name>Engine Ground Idle 14 </name>
+    <path>Cockpit/Engineer/engine-ground-idle-14.xml</path>
+
+<params>
+  <engine-sel>/controls/engines/ground-idle14</engine-sel>
+ </params>
+    <offsets>
+      <x-m>-22.233</x-m>
+      <y-m>0.510</y-m>
+      <z-m>1.345</z-m>
+      
+      <heading-deg>-83</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+
+<model>
+    <name>Engine Ground Idle 23 </name>
+    <path>Cockpit/Engineer/engine-ground-idle-23.xml</path>
+
+<params>
+  <engine-sel>/controls/engines/ground-idle23</engine-sel>
+ </params>
+    <offsets>
+      <x-m>-22.199</x-m>
+      <y-m>0.515</y-m>
+      <z-m>1.345</z-m>
+      
+      <heading-deg>-83</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+
+
+
+
+
+
+
+
+
+<model>
+    <name>Fuel Heater 1</name>
+    <path>Cockpit/Engineer/fuel-heater-selector-1.xml</path>
+<overlay>
+<params>
+  <heater-sel>/controls/fuel/tank[0]/heater</heater-sel>
+  <heater-auto>/controls/fuel/tank[0]/heater-auto</heater-auto>
+ </params>
+</overlay>
+    <offsets>
+      <x-m>-22.257</x-m>
+      <y-m>0.474</y-m>
+      <z-m>1.433</z-m>
+      
+      <heading-deg>-83</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+
+
+<model>
+    <name>Fuel Heater 2</name>
+    <path>Cockpit/Engineer/fuel-heater-selector-2.xml</path>
+<overlay>
+<params>
+  <heater-sel>/controls/fuel/tank[1]/heater</heater-sel>
+  <heater-auto>/controls/fuel/tank[1]/heater-auto</heater-auto>
+ </params>
+</overlay>
+    <offsets>
+      <x-m>-22.230</x-m>
+      <y-m>0.475</y-m>
+      <z-m>1.433</z-m>
+      
+      <heading-deg>-83</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+
+
+<model>
+    <name>Fuel Heater 3</name>
+    <path>Cockpit/Engineer/fuel-heater-selector-3.xml</path>
+<overlay>
+<params>
+  <heater-sel>/controls/fuel/tank[2]/heater</heater-sel>
+  <heater-auto>/controls/fuel/tank[2]/heater-auto</heater-auto>
+ </params>
+</overlay>
+    <offsets>
+      <x-m>-22.203</x-m>
+      <y-m>0.479</y-m>
+      <z-m>1.433</z-m>
+      
+      <heading-deg>-83</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+
+
+<model>
+    <name>Fuel Heater 4</name>
+    <path>Cockpit/Engineer/fuel-heater-selector-4.xml</path>
+<overlay>
+<params>
+  <heater-sel>/controls/fuel/tank[3]/heater</heater-sel>
+  <heater-auto>/controls/fuel/tank[3]/heater-auto</heater-auto>
+ </params>
+</overlay>
+    <offsets>
+      <x-m>-22.176</x-m>
+      <y-m>0.482</y-m>
+      <z-m>1.433</z-m>
+      
+      <heading-deg>-83</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+
+
+
+
+
+
+
+
+
+
+
+<model>
+    <name>Secondary Air Doors 1</name>
+    <path>Cockpit/Engineer/secondary-air-doors-1.xml</path>
+<overlay>
+<params>
+  <air-door>/systems/engines/engine[0]/secondary-air-door</air-door>
+  <door-auto>/controls/engines/engine[0]/secondary-air-door</door-auto>
+ </params>
+</overlay>
+    <offsets>
+      <x-m>-22.137</x-m>
+      <y-m>0.48</y-m>
+      <z-m>1.443</z-m>
+      
+      <heading-deg>-83</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+
+
+<model>
+    <name>Secondary Air Doors 2</name>
+    <path>Cockpit/Engineer/secondary-air-doors-2.xml</path>
+<overlay>
+<params>
+  <air-door>/systems/engines/engine[1]/secondary-air-door</air-door>
+  <door-auto>/controls/engines/engine[1]/secondary-air-door</door-auto>
+ </params>
+</overlay>
+    <offsets>
+      <x-m>-22.115</x-m>
+      <y-m>0.484</y-m>
+      <z-m>1.443</z-m>
+      
+      <heading-deg>-83</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+
+
+<model>
+    <name>Secondary Air Doors 3</name>
+    <path>Cockpit/Engineer/secondary-air-doors-3.xml</path>
+<overlay>
+<params>
+  <air-door>/systems/engines/engine[2]/secondary-air-door</air-door>
+  <door-auto>/controls/engines/engine[2]/secondary-air-door</door-auto>
+ </params>
+</overlay>
+    <offsets>
+      <x-m>-22.086</x-m>
+      <y-m>0.487</y-m>
+      <z-m>1.443</z-m>
+      
+      <heading-deg>-83</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+
+
+<model>
+    <name>Secondary Air Doors 4</name>
+    <path>Cockpit/Engineer/secondary-air-doors-4.xml</path>
+<overlay>
+<params>
+  <air-door>/systems/engines/engine[3]/secondary-air-door</air-door>
+  <door-auto>/controls/engines/engine[3]/secondary-air-door</door-auto>
+ </params>
+</overlay>
+    <offsets>
+      <x-m>-22.060</x-m>
+      <y-m>0.49</y-m>
+      <z-m>1.443</z-m>
+      
+      <heading-deg>-83</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+
+
+<!-- ======== -->
+<!-- Pressurization -->
+<!-- ======== -->
+
+<model>
+<name>System Select </name>
+    <path>Cockpit/Engineer/pressure-system-select.xml</path>
+    <overlay>
+      <params>
+  	<system-sel>/controls/pressurization/system[0]/select</system-sel>
+ 	</params>
+    </overlay>
+    <offsets>
+      <x-m>-22.230</x-m>
+      <y-m>0.350</y-m>
+      <z-m>1.710</z-m>
+      
+      <heading-deg>-85</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+
+
+<model>
+<name>System Select bis</name>
+    <path>Cockpit/Engineer/pressure-system-select.xml</path>
+    <overlay>
+      <params>
+  	<system-sel>/controls/pressurization/system[0]/select</system-sel>
+ 	</params>
+    </overlay>
+    <offsets>
+      <x-m>-22.205</x-m>
+      <y-m>0.349</y-m>
+      <z-m>1.710</z-m>
+      
+      <heading-deg>-85</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+
+
+<model>
+<name>Discharge Valve  1</name>
+    <path>Cockpit/Engineer/pressure-discharge-valve-1.xml</path>
+    <overlay>
+    </overlay>
+    <offsets>
+      <x-m>-22.173</x-m>
+      <y-m>0.350</y-m>
+      <z-m>1.706</z-m>
+      
+      <heading-deg>-85</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+
+
+<model>
+<name>Discharge Valve  2</name>
+    <path>Cockpit/Engineer/pressure-discharge-valve-2.xml</path>
+    <overlay>
+    </overlay>
+    <offsets>
+      <x-m>-22.145</x-m>
+      <y-m>0.349</y-m>
+      <z-m>1.706</z-m>
+      
+      <heading-deg>-85</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+
+
+
+
+
+<model>
+<name>Relief Valve Selector </name>
+    <path>Cockpit/Engineer/pressure-relief-valve-selector.xml</path>
+    
+    <offsets>
+      <x-m>-22.257</x-m>
+      <y-m>0.365</y-m>
+      <z-m>1.665</z-m>
+      
+      <heading-deg>-85</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+  <!-- ======== -->
+<!-- Engineer Engines -->
+<!-- ======== -->
+  
+  
+  <model>
+    <name>Engine 1 EGT</name>
+    <path>Cockpit/Engineer/engine-egt-engineer.xml</path>
+    <overlay>
+      <params>
+        <egt>/engines/engine[0]/egt-degf</egt>
+      </params>
+    </overlay>
+    <offsets>
+      <x-m>-22.235</x-m>
+      <y-m>0.530</y-m>
+      <z-m>0.968</z-m>
+      
+      <heading-deg>-85</heading-deg>
+     <pitch-deg>0</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  
+  
+  
+  <model>
+    <name>Engine 2 EGT</name>
+    <path>Cockpit/Engineer/engine-egt-engineer.xml</path>
+    <overlay>
+      <params>
+        <egt>/engines/engine[1]/egt-degf</egt>
+      </params>
+    </overlay>
+    <offsets>
+      <x-m>-22.178</x-m>
+      <y-m>0.536</y-m>
+      <z-m>0.968</z-m>
+      
+      <heading-deg>-85</heading-deg>
+     <pitch-deg>0</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  <model>
+    <name>Engine 3 EGT</name>
+    <path>Cockpit/Engineer/engine-egt-engineer.xml</path>
+    <overlay>
+      <params>
+        <egt>/engines/engine[2]/egt-degf</egt>
+      </params>
+    </overlay>
+    <offsets>
+      <x-m>-22.121</x-m>
+      <y-m>0.541</y-m>
+      <z-m>0.968</z-m>
+      
+      <heading-deg>-85</heading-deg>
+     <pitch-deg>0</pitch-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <name>Engine 4 EGT</name>
+    <path>Cockpit/Engineer/engine-egt-engineer.xml</path>
+    <overlay>
+      <params>
+        <egt>/engines/engine[3]/egt-degf</egt>
+      </params>
+    </overlay>
+    <offsets>
+      <x-m>-22.064</x-m>
+      <y-m>0.547</y-m>
+      <z-m>0.968</z-m>
+      
+      <heading-deg>-85</heading-deg>
+     <pitch-deg>0</pitch-deg>
+    </offsets>
+  </model>
 
 <!-- ======== -->
 <!-- LIGHTING -->
@@ -2074,6 +4197,8 @@
     <z-m> 1.698</z-m>
    </top-left>
   </panel>
+
+
 
   <panel>
    <path>Aircraft/Concorde/Panels/Concorde-engineer-fuel.xml</path>
