@@ -1,2 +1,8 @@
-Retextured and debuged original FGADDONS Concorde for FlightGear from unknown author. 3D instruments based on https://github.com/godarklight/concorde
+I'm continuing the project of https://github.com/BAWV12/Concorde
+
+I changed flight dynamics.
+
+I'm making 3D Flight Engineer Panel.
+
+
 
