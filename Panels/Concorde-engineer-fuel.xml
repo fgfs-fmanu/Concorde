@@ -48,7 +48,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
 
  <instruments>
 
- <instrument include="Instruments/concorde-gauge_inst_v.xml">
+ <!--<instrument include="Instruments/concorde-gauge_inst_v.xml">
    <condition>
     <or>
      <and>
@@ -111,7 +111,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
    <y>542</y>
    <w>42</w>
    <h>110</h>
-  </instrument>
+  </instrument>-->
 
 <!-- auto trim -->
 

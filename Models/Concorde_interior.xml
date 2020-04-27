@@ -2794,6 +2794,40 @@
      <pitch-deg>-5</pitch-deg>
     </offsets>
   </model>
+  
+  <model>
+    <name>Fuel Tank 11 Jettison 2</name>
+    <path>Cockpit/Engineer/tank-11-jettison-2.xml</path>
+    <overlay>
+      <params>
+      </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.749</x-m>
+      <y-m>0.546</y-m>
+      <z-m>0.928</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>-5</pitch-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <name>Fuel Tank 11 Jettison 1</name>
+    <path>Cockpit/Engineer/tank-11-jettison-1.xml</path>
+    <overlay>
+      <params>
+      </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.80</x-m>
+      <y-m>0.546</y-m>
+      <z-m>0.928</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>-5</pitch-deg>
+    </offsets>
+  </model>
 
 
 
@@ -2924,6 +2958,20 @@
       
       <heading-deg>-90</heading-deg>
      <pitch-deg>-5</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  
+  <model>
+    <name>Captain COG</name>
+    <path>Aircraft/Concorde/Models/Cockpit/Engineer/cogengineer.xml</path>
+    <offsets>
+        <x-m>-21.825</x-m>
+      <y-m>0.557</y-m>
+      <z-m>1.225</z-m>
+      <heading-deg>-90</heading-deg>
+      <pitch-deg>-2</pitch-deg>
     </offsets>
   </model>
 
