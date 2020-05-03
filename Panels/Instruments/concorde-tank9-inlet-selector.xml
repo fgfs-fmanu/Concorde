@@ -221,7 +221,7 @@
    <name>motor 2</name>
    <type>switch</type>
 
-   <layer include="concorde-switch-3rd.xml">
+   <!--<layer include="concorde-switch-3rd.xml">
     <name>off</name>
     <condition>
      <property alias="../../../../../params/inlet-off"/>
@@ -236,10 +236,10 @@
      </not>
     </condition>
    </layer>
-
    <layer include="concorde-switch-on.xml">
     <name>override</name>
-   </layer>
+   </layer>-->
+
 
    <transformations>
     <transformation>

@@ -2748,6 +2748,47 @@
      <pitch-deg>25</pitch-deg>
     </offsets>
   </model>
+  
+  
+  
+  
+  <model>
+<name>Fuel inletoverride 1 Tank 9 </name>
+    <path>Cockpit/Engineer/tank-9-inletoverride-1.xml</path>
+    <overlay>
+      <params>
+        <inlet-override>/controls/fuel/tank[8]/inlet-override[0]</inlet-override>
+  <inlet-off>/controls/fuel/tank[8]/inlet-off[0]</inlet-off>
+      </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.787</x-m>
+      <y-m>0.480</y-m>
+      <z-m>1.472</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+
+<model>
+<name>Fuel inletoverride 2 Tank 9 </name>
+    <path>Cockpit/Engineer/tank-9-inletoverride-2.xml</path>
+    <overlay>
+      <params>
+        <inlet-override>/controls/fuel/tank[8]/inlet-override[1]</inlet-override>
+  <inlet-off>/controls/fuel/tank[8]/inlet-off[1]</inlet-off>
+      </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.731</x-m>
+      <y-m>0.480</y-m>
+      <z-m>1.472</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
 
 
 
@@ -2794,6 +2835,48 @@
      <pitch-deg>-5</pitch-deg>
     </offsets>
   </model>
+  
+  
+  <model>
+<name>Fuel inletoverride 1 Tank 11 </name>
+    <path>Cockpit/Engineer/tank-11-inletoverride-1.xml</path>
+    <overlay>
+      <params>
+        <inlet-override>/controls/fuel/tank[10]/inlet-override[0]</inlet-override>
+  <inlet-off>/controls/fuel/tank[10]/inlet-off[0]</inlet-off>
+      </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.785</x-m>
+      <y-m>0.546</y-m>
+      <z-m>1.116</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>-5</pitch-deg>
+    </offsets>
+  </model>
+
+<model>
+<name>Fuel inletoverride 2 Tank 11 </name>
+    <path>Cockpit/Engineer/tank-11-inletoverride-2.xml</path>
+    <overlay>
+      <params>
+        <inlet-override>/controls/fuel/tank[10]/inlet-override[1]</inlet-override>
+  <inlet-off>/controls/fuel/tank[10]/inlet-off[1]</inlet-off>
+      </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.755</x-m>
+      <y-m>0.546</y-m>
+      <z-m>1.116</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>-5</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  
   
   <model>
     <name>Fuel Tank 11 Jettison 2</name>
@@ -4031,6 +4114,237 @@
       <x-m>-22.064</x-m>
       <y-m>0.547</y-m>
       <z-m>0.968</z-m>
+      
+      <heading-deg>-85</heading-deg>
+     <pitch-deg>0</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  
+  
+  <model>
+    <name>Engine 1 Fuel Engineer</name>
+    <path>Aircraft/Concorde/Models/Cockpit/Engineer/engine-fuelengineer.xml</path>
+    <overlay>
+      <params>
+    <fuelflow>/engines/engine[0]/fuel-flow_pph</fuelflow>
+    <bug-select>/controls/engines/engine[0]/bug_pph</bug-select>
+  </params>
+    </overlay>
+     <offsets>
+      <x-m>-22.235</x-m>
+      <y-m>0.532</y-m>
+      <z-m>1.026</z-m>
+      
+      <heading-deg>-85</heading-deg>
+     <pitch-deg>0</pitch-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <name>Engine 2 Indicator Engineer</name>
+    <path>Aircraft/Concorde/Models/Cockpit/Engineer/engine-fuelengineer.xml</path>
+    <overlay>
+      <params>
+    <fuelflow>/engines/engine[1]/fuel-flow_pph</fuelflow>
+    <bug-select>/controls/engines/engine[1]/bug_pph</bug-select>
+  </params>
+    </overlay>
+     <offsets>
+      <x-m>-22.178</x-m>
+      <y-m>0.538</y-m>
+      <z-m>1.026</z-m>
+      
+      <heading-deg>-85</heading-deg>
+     <pitch-deg>0</pitch-deg>
+    </offsets>
+  </model>
+  <model>
+    <name>Engine 3 Indicator Engineer</name>
+    <path>Aircraft/Concorde/Models/Cockpit/Engineer/engine-fuelengineer.xml</path>
+    <overlay>
+      <params>
+    <fuelflow>/engines/engine[2]/fuel-flow_pph</fuelflow>
+    <bug-select>/controls/engines/engine[2]/bug_pph</bug-select>
+  </params>
+    </overlay>
+   <offsets>
+      <x-m>-22.121</x-m>
+      <y-m>0.543</y-m>
+      <z-m>1.026</z-m>
+      
+      <heading-deg>-85</heading-deg>
+     <pitch-deg>0</pitch-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <name>Engine 4 Indicator Engineer</name>
+   <path>Aircraft/Concorde/Models/Cockpit/Engineer/engine-fuelengineer.xml</path>
+    <overlay>
+      <params>
+    <fuelflow>/engines/engine[3]/fuel-flow_pph</fuelflow>
+    <bug-select>/controls/engines/engine[3]/bug_pph</bug-select>
+  </params>
+    </overlay>
+    <offsets>
+      <x-m>-22.064</x-m>
+      <y-m>0.549</y-m>
+      <z-m>1.026</z-m>
+      
+      <heading-deg>-85</heading-deg>
+     <pitch-deg>0</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  
+  
+  
+  
+  
+  <model>
+    <name>Engine 1 N1  Engineer</name>
+    <path>Aircraft/Concorde/Models/Cockpit/Engineer/engine-n1-engineer.xml</path>
+    <overlay>
+      <params>
+        <n1>/engines/engine[0]/n1</n1>
+      </params>
+    </overlay>
+     <offsets>
+      <x-m>-22.235</x-m>
+      <y-m>0.535</y-m>
+      <z-m>1.084</z-m>
+      
+      <heading-deg>-85</heading-deg>
+     <pitch-deg>0</pitch-deg>
+    </offsets>
+  </model>
+  <model>
+    <name>Engine 2 N1  Engineer</name>
+    <path>Aircraft/Concorde/Models/Cockpit/Engineer/engine-n1-engineer.xml</path>
+    <overlay>
+      <params>
+        <n1>/engines/engine[1]/n1</n1>
+      </params>
+    </overlay>
+   <offsets>
+      <x-m>-22.178</x-m>
+      <y-m>0.539</y-m>
+      <z-m>1.084</z-m>
+      
+      <heading-deg>-85</heading-deg>
+     <pitch-deg>0</pitch-deg>
+    </offsets>
+  </model>
+  <model>
+    <name>Engine 3 N1</name>
+    <path>Aircraft/Concorde/Models/Cockpit/Engineer/engine-n1-engineer.xml</path>
+    <overlay>
+      <params>
+        <n1>/engines/engine[2]/n1</n1>
+      </params>
+    </overlay>
+    <offsets>
+      <x-m>-22.121</x-m>
+      <y-m>0.544</y-m>
+      <z-m>1.084</z-m>
+      
+      <heading-deg>-85</heading-deg>
+     <pitch-deg>0</pitch-deg>
+    </offsets>
+  </model>
+  <model>
+    <name>Engine 4 N1  Engineer</name>
+    <path>Aircraft/Concorde/Models/Cockpit/Engineer/engine-n1-engineer.xml</path>
+    <overlay>
+      <params>
+        <n1>/engines/engine[3]/n1</n1>
+      </params>
+    </overlay>
+    <offsets>
+      <x-m>-22.064</x-m>
+      <y-m>0.550</y-m>
+      <z-m>1.084</z-m>
+      
+      <heading-deg>-85</heading-deg>
+     <pitch-deg>0</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <model>
+    <name>Engine 1 N2  Engineer</name>
+    <path>Aircraft/Concorde/Models/Cockpit/Engineer/engine-n2_1-engineer.xml</path>
+    <overlay>
+      <params>
+        <n2>/engines/engine[0]/n2</n2>
+      </params>
+    </overlay>
+     <offsets>
+      <x-m>-22.235</x-m>
+      <y-m>0.535</y-m>
+      <z-m>1.142</z-m>
+      
+      <heading-deg>-85</heading-deg>
+     <pitch-deg>0</pitch-deg>
+    </offsets>
+  </model>
+  <model>
+    <name>Engine 2 N2  Engineer</name>
+    <path>Aircraft/Concorde/Models/Cockpit/Engineer/engine-n2_2-engineer.xml</path>
+    <overlay>
+      <params>
+        <n2>/engines/engine[1]/n2</n2>
+      </params>
+    </overlay>
+   <offsets>
+      <x-m>-22.178</x-m>
+      <y-m>0.540</y-m>
+      <z-m>1.142</z-m>
+      
+      <heading-deg>-85</heading-deg>
+     <pitch-deg>0</pitch-deg>
+    </offsets>
+  </model>
+  <model>
+    <name>Engine 3 N2 Engineer</name>
+    <path>Aircraft/Concorde/Models/Cockpit/Engineer/engine-n2_3-engineer.xml</path>
+    <overlay>
+      <params>
+        <n2>/engines/engine[2]/n2</n2>
+      </params>
+    </overlay>
+    <offsets>
+      <x-m>-22.121</x-m>
+      <y-m>0.546</y-m>
+      <z-m>1.142</z-m>
+      
+      <heading-deg>-85</heading-deg>
+     <pitch-deg>0</pitch-deg>
+    </offsets>
+  </model>
+  <model>
+    <name>Engine 4 N2  Engineer</name>
+    <path>Aircraft/Concorde/Models/Cockpit/Engineer/engine-n2_4-engineer.xml</path>
+    <overlay>
+      <params>
+        <n2>/engines/engine[3]/n2</n2>
+      </params>
+    </overlay>
+    <offsets>
+      <x-m>-22.064</x-m>
+      <y-m>0.550</y-m>
+      <z-m>1.142</z-m>
       
       <heading-deg>-85</heading-deg>
      <pitch-deg>0</pitch-deg>
