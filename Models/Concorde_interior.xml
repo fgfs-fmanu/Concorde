@@ -1867,23 +1867,7 @@
 <!-- ENGINEERINSTRUMENTS -->
 <!-- ======== -->
 
-<!--<model>
-    <name>Engineer COG</name>
-    <path>Aircraft/Concorde/Models/Cockpit/Instruments/cog.xml</path>
-    <offsets>
-      <x-m>-21.825</x-m>
-      <y-m>0.55</y-m>
-      <z-m>1.223</z-m>
-     
-      <heading-deg>-90</heading-deg>
-     <pitch-deg>-5</pitch-deg>
-    </offsets>
-	<size>
-       <x>0.5</x>
-       <y>0.2</y>
-       <z>1.5</z>
-	</size>
-  </model>-->
+
 
 
 
@@ -2931,7 +2915,7 @@
 	</params>
     </overlay>
     <offsets>
-      <x-m>-21.884</x-m>
+      <x-m>-21.874</x-m>
       <y-m>0.552</y-m>
       <z-m>1.267</z-m>
       
@@ -2949,7 +2933,7 @@
 	</params>
     </overlay>
     <offsets>
-      <x-m>-21.653</x-m>
+      <x-m>-21.663</x-m>
       <y-m>0.552</y-m>
       <z-m>1.267</z-m>
       
@@ -2963,41 +2947,6 @@
 
 
 
-<model>
-    <name>Fuel inletvalve trans Tank 5</name>
-    <path>Cockpit/Engineer/tank-5-transvalve.xml</path>
-    <overlay>
-      <params>
-        <trans-valve>/controls/fuel/tank[11]/trans-valve</trans-valve>
-	</params>
-    </overlay>
-    <offsets>
-      <x-m>-21.884</x-m>
-      <y-m>0.552</y-m>
-      <z-m>1.267</z-m>
-      
-      <heading-deg>-90</heading-deg>
-     <pitch-deg>-5</pitch-deg>
-    </offsets>
-  </model>
-
-	<model>
-    <name>Fuel inletvalve trans Tank 7</name>
-    <path>Cockpit/Engineer/tank-7-transvalve.xml</path>
-    <overlay>
-      <params>
-        <trans-valve>/controls/fuel/tank[12]/trans-valve</trans-valve>
-	</params>
-    </overlay>
-    <offsets>
-      <x-m>-21.653</x-m>
-      <y-m>0.552</y-m>
-      <z-m>1.267</z-m>
-      
-      <heading-deg>-90</heading-deg>
-     <pitch-deg>-5</pitch-deg>
-    </offsets>
-  </model>
 
 
 
@@ -3017,7 +2966,7 @@
 	</params>
     </overlay>
     <offsets>
-      <x-m>-21.664</x-m>
+      <x-m>-21.674</x-m>
       <y-m>0.547</y-m>
       <z-m>1.153</z-m>
       
@@ -3025,6 +2974,9 @@
      <pitch-deg>-5</pitch-deg>
     </offsets>
   </model>
+  
+  
+  
 
 	<model>
     <name>Fuel intervalve Tank 7</name>
@@ -3035,7 +2987,7 @@
 	</params>
     </overlay>
     <offsets>
-      <x-m>-21.875</x-m>
+      <x-m>-21.865</x-m>
       <y-m>0.547</y-m>
       <z-m>1.153</z-m>
       
@@ -3043,6 +2995,185 @@
      <pitch-deg>-5</pitch-deg>
     </offsets>
   </model>
+  
+  
+  <model>
+    <name>Jettison Valve 1</name>
+    <path>Cockpit/Engineer/jettison-valve-1.xml</path>
+    <overlay>
+      <params>
+  <jettison-valve>/controls/fuel/tank[0]/jettison</jettison-valve>
+ </params>
+    </overlay>
+   <offsets>
+      <x-m>-21.595</x-m>
+      <y-m>0.466</y-m>
+      <z-m>1.502</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <name>Jettison Valve 2</name>
+    <path>Cockpit/Engineer/jettison-valve-2.xml</path>
+    <overlay>
+      <params>
+  <jettison-valve>/controls/fuel/tank[1]/jettison</jettison-valve>
+ </params>
+    </overlay>
+   <offsets>
+      <x-m>-21.595</x-m>
+      <y-m>0.48</y-m>
+      <z-m>1.473</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  
+  <model>
+    <name>Jettison Valve 3</name>
+    <path>Cockpit/Engineer/jettison-valve-3.xml</path>
+    <overlay>
+      <params>
+  <jettison-valve>/controls/fuel/tank[2]/jettison</jettison-valve>
+ </params>
+    </overlay>
+   <offsets>
+      <x-m>-21.552</x-m>
+      <y-m>0.48</y-m>
+      <z-m>1.473</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  
+  <model>
+    <name>Jettison Valve 4</name>
+    <path>Cockpit/Engineer/jettison-valve-4.xml</path>
+    <overlay>
+      <params>
+  <jettison-valve>/controls/fuel/tank[3]/jettison</jettison-valve>
+ </params>
+    </overlay>
+   <offsets>
+      <x-m>-21.552</x-m>
+      <y-m>0.466</y-m>
+      <z-m>1.502</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  <model>
+    <name>Trans Valve 1 4</name>
+    <path>Cockpit/Engineer/trans-14.xml</path>
+    <overlay>
+      
+    </overlay>
+    <offsets>
+      <x-m>-21.705</x-m>
+      <y-m>0.547</y-m>
+      <z-m>1.237</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>-5</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  
+  
+  
+  
+  <model>
+<name>Fuel Tank Inlet Selector </name>
+    <path>Cockpit/Engineer/tank-inlet-selector-7.xml</path>
+    <overlay>
+     <params>
+    <inlet-main>/controls/fuel/tank[6]/inlet-main[0]</inlet-main>
+  <inlet-auto>/controls/fuel/tank[6]/inlet-auto[0]</inlet-auto>
+  </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.683</x-m>
+      <y-m>0.547</y-m>
+      <z-m>1.239</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>-5</pitch-deg>
+    </offsets>
+  </model>
+  
+    <model>
+<name>Fuel Tank Inlet Selector bis </name>
+    <path>Cockpit/Engineer/tank-inlet-selector-5.xml</path>
+    <overlay>
+     <params>
+    <inlet-main>/controls/fuel/tank[4]/inlet-main[0]</inlet-main>
+  <inlet-auto>/controls/fuel/tank[4]/inlet-auto[0]</inlet-auto>
+  </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.858</x-m>
+      <y-m>0.547</y-m>
+      <z-m>1.239</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>-5</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  
+  
+   <model>
+<name>Fuel Tank Oride Selector </name>
+    <path>Cockpit/Engineer/tank-oride-selector-7.xml</path>
+    <overlay>
+     <params>
+    <inlet-override>/controls/fuel/tank[6]/inlet-override[0]</inlet-override>
+  <inlet-off>/controls/fuel/tank[6]/inlet-off[0]</inlet-off>
+  </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.683</x-m>
+      <y-m>0.547</y-m>
+      <z-m>1.202</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>-5</pitch-deg>
+    </offsets>
+  </model>
+  
+    <model>
+<name>Fuel Tank Oride Selector bis </name>
+    <path>Cockpit/Engineer/tank-oride-selector-5.xml</path>
+    <overlay>
+     <params>
+   <inlet-override>/controls/fuel/tank[4]/inlet-override[0]</inlet-override>
+  <inlet-off>/controls/fuel/tank[4]/inlet-off[0]</inlet-off>
+  </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.858</x-m>
+      <y-m>0.547</y-m>
+      <z-m>1.202</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>-5</pitch-deg>
+    </offsets>
+  </model>
+  
   
   
   
@@ -4041,6 +4172,82 @@
   <!-- ======== -->
 <!-- Engineer Engines -->
 <!-- ======== -->
+  
+  
+  
+  
+  <model>
+    <name>Engine 1 Nozzle Engineer</name>
+    <path>Aircraft/Concorde/Models/Cockpit/Engineer/engine-nozzleengineer.xml</path>
+    <overlay>
+      <params>
+        <nozzle>/engines/engine[0]/nozzle-pos-norm</nozzle>
+      </params>
+    </overlay>
+    <offsets>
+      <x-m>-22.235</x-m>
+      <y-m>0.530</y-m>
+      <z-m>0.910</z-m>
+      
+      <heading-deg>-85</heading-deg>
+     <pitch-deg>0</pitch-deg>
+    </offsets>
+  </model>
+  <model>
+    <name>Engine 2 Nozzle Engineer</name>
+    <path>Aircraft/Concorde/Models/Cockpit/Engineer/engine-nozzleengineer.xml</path>
+    <overlay>
+      <params>
+        <nozzle>/engines/engine[1]/nozzle-pos-norm</nozzle>
+      </params>
+    </overlay>
+    <offsets>
+      <x-m>-22.178</x-m>
+      <y-m>0.536</y-m>
+      <z-m>0.910</z-m>
+      
+      <heading-deg>-85</heading-deg>
+     <pitch-deg>0</pitch-deg>
+    </offsets>
+  </model>
+  <model>
+    <name>Engine 3 Nozzle Engineer</name>
+    <path>Aircraft/Concorde/Models/Cockpit/Engineer/engine-nozzleengineer.xml</path>
+    <overlay>
+      <params>
+        <nozzle>/engines/engine[2]/nozzle-pos-norm</nozzle>
+      </params>
+    </overlay>
+    <offsets>
+      <x-m>-22.121</x-m>
+      <y-m>0.541</y-m>
+      <z-m>0.910</z-m>
+      
+      <heading-deg>-85</heading-deg>
+     <pitch-deg>0</pitch-deg>
+    </offsets>
+  </model>
+  <model>
+    <name>Engine 4 Nozzle Engineer</name>
+    <path>Aircraft/Concorde/Models/Cockpit/Engineer/engine-nozzleengineer.xml</path>
+    <overlay>
+      <params>
+        <nozzle>/engines/engine[3]/nozzle-pos-norm</nozzle>
+      </params>
+    </overlay>
+    <offsets>
+      <x-m>-22.064</x-m>
+      <y-m>0.546</y-m>
+      <z-m>0.910</z-m>
+      
+      <heading-deg>-85</heading-deg>
+     <pitch-deg>0</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  
+  
   
   
   <model>

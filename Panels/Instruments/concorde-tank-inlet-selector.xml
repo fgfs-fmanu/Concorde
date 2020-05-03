@@ -23,7 +23,7 @@
    <name>motor</name>
    <type>switch</type>
 
-   <layer include="concorde-switch-3rd.xml">
+   <!--<layer include="concorde-switch-3rd.xml">
     <name>auto</name>
     <condition>
      <property alias="../../../../../params/inlet-auto"/>
@@ -41,7 +41,7 @@
 
    <layer include="concorde-switch-on.xml">
     <name>main</name>
-   </layer>
+   </layer>-->
 
    <transformations>
     <transformation>

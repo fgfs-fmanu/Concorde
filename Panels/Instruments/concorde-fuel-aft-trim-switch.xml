@@ -18,7 +18,7 @@
    <name>Aft switch</name>
    <type>switch</type>
 
-   <layer include="concorde-switch-on.xml">
+   <!--<layer include="concorde-switch-on.xml">
     <name>norm</name>
     <condition>
      <and>
@@ -34,9 +34,9 @@
 
    <layer include="concorde-switch-off.xml">
     <name>aft trim</name>
-   </layer>
-  </layer>
+   </layer>-->
 
+  </layer>
   <layer>
    <name>Title on</name>
    <type>text</type>
@@ -94,7 +94,7 @@
  </layers>
 
  <actions>
-
+<!--
   <action>
    <name>Toggle aft</name>
    <button>0</button>
@@ -114,7 +114,7 @@
     <command>property-toggle</command>
     <property>/instrumentation/generic/click</property>
    </binding>
-  </action>
+  </action>-->
 
  </actions>
  
