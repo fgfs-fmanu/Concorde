@@ -26,7 +26,7 @@
    <name>switch 1</name>
    <type>switch</type>
 
-   <layer include="concorde-switch-3rd.xml">
+   <!--<layer include="concorde-switch-3rd.xml">
     <name>3rd state</name>
     <condition>
      <property alias="../../../../../params/hyd-auto"/>
@@ -42,7 +42,8 @@
 
    <layer include="concorde-switch-on.xml">
     <name>on</name>
-   </layer>
+   </layer>-->
+   
    <transformations>
     <transformation>
      <type>x-shift</type>
@@ -177,7 +178,7 @@
    <name>switch 2</name>
    <type>switch</type>
 
-   <layer include="concorde-switch-3rd.xml">
+   <!--<layer include="concorde-switch-3rd.xml">
     <name>3rd state</name>
     <condition>
      <property alias="../../../../../params/hyd-auto2"/>
@@ -193,7 +194,7 @@
 
    <layer include="concorde-switch-on.xml">
     <name>on</name>
-   </layer>
+   </layer>-->
    <transformations>
     <transformation>
      <type>x-shift</type>
@@ -205,7 +206,7 @@
  </layers>
 
  <actions>
-
+<!--
   <action>
    <name>toggle auto 1</name>
    <button>0</button>
@@ -282,7 +283,7 @@
     <command>property-toggle</command>
     <property>/instrumentation/generic/click</property>
    </binding>
-  </action>
+  </action>-->
 
  </actions>
  

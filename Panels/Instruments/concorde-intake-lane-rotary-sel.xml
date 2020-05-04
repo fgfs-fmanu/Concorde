@@ -152,7 +152,7 @@
     </transformation>
    </transformations>
   </layer>
-
+<!--
   <layer>
    <name>knob rotation</name>
    <texture>
@@ -174,13 +174,13 @@
      <offset>-15</offset>
     </transformation>
    </transformations>
-  </layer>
+  </layer>-->
 
  </layers>
 
  <actions>
 
-  <action>
+ <!-- <action>
    <name>selector left</name>
    <button>0</button>
    <x>-43</x>
@@ -228,7 +228,7 @@
     <command>property-toggle</command>
     <property>/instrumentation/generic/click</property>
    </binding>
-  </action>
+  </action>-->
 
  </actions>
 
