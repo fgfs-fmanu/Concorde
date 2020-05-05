@@ -3074,6 +3074,64 @@
   </model>
   
   
+  
+  
+  
+  
+  
+  
+  <model>
+    <name>Jettison Master Valve 1</name>
+    <path>Cockpit/Engineer/fuel-jettison-master-valve-1.xml</path>
+    <overlay>
+      <params>
+  <on-switch>/controls/fuel/jettison/valve[0]/on</on-switch>
+  <shut-switch>/controls/fuel/jettison/valve[0]/shut</shut-switch>
+ </params>
+    </overlay>
+   <offsets>
+      <x-m>-21.618</x-m>
+      <y-m>0.490</y-m>
+      <z-m>1.448</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  
+  <model>
+    <name>Jettison Master Valve 2</name>
+    <path>Cockpit/Engineer/fuel-jettison-master-valve-2.xml</path>
+    <overlay>
+      <params>
+  <on-switch>/controls/fuel/jettison/valve[1]/on</on-switch>
+  <shut-switch>/controls/fuel/jettison/valve[1]/shut</shut-switch>
+ </params>
+    </overlay>
+   <offsets>
+      <x-m>-21.559</x-m>
+      <y-m>0.490</y-m>
+      <z-m>1.448</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   <model>
     <name>Trans Valve 1 4</name>
     <path>Cockpit/Engineer/trans-14.xml</path>
@@ -3089,6 +3147,8 @@
      <pitch-deg>-5</pitch-deg>
     </offsets>
   </model>
+  
+  
   
   
   
@@ -3693,6 +3753,92 @@
      <pitch-deg>25</pitch-deg>
     </offsets>
   </model>
+  
+  <!-- ======== -->
+<!-- Air Cond -->
+<!-- ======== -->
+  
+  
+  
+  
+  
+  <model>
+  <name>Air  Cond 1 </name>
+    <path>Cockpit/Engineer/air-cond-1.xml</path>
+    <overlay>
+      <params>
+  <cond-valve>/controls/pneumatic/engine[0]/conditioning-valve</cond-valve>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.940</x-m>
+      <y-m>0.396</y-m>
+      <z-m>1.657</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  <model>
+  <name>Air  Cond 2 </name>
+    <path>Cockpit/Engineer/air-cond-2.xml</path>
+    <overlay>
+      <params>
+  <cond-valve>/controls/pneumatic/engine[1]/conditioning-valve</cond-valve>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.890</x-m>
+      <y-m>0.396</y-m>
+      <z-m>1.657</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  <model>
+  <name>Air  Cond 3 </name>
+    <path>Cockpit/Engineer/air-cond-3.xml</path>
+    <overlay>
+      <params>
+  <cond-valve>/controls/pneumatic/engine[2]/conditioning-valve</cond-valve>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.829</x-m>
+      <y-m>0.396</y-m>
+      <z-m>1.657</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  
+  <model>
+  <name>Air  Cond 4 </name>
+    <path>Cockpit/Engineer/air-cond-4.xml</path>
+    <overlay>
+      <params>
+  <cond-valve>/controls/pneumatic/engine[3]/conditioning-valve</cond-valve>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.777</x-m>
+      <y-m>0.396</y-m>
+      <z-m>1.657</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+  
+  
 <!-- ======== -->
 <!-- Starter -->
 <!-- ======== -->

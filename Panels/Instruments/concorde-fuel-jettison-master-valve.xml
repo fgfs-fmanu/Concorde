@@ -37,7 +37,7 @@
    <name>Fuel pump</name>
    <type>switch</type>
 
-   <layer include="concorde-switch-3rd.xml">
+   <!--<layer include="concorde-switch-3rd.xml">
     <name>shut</name>
     <condition>
      <and>
@@ -56,7 +56,7 @@
 
    <layer include="concorde-switch-off.xml">
     <name>off</name>
-   </layer>
+   </layer>-->
   </layer>
 
   <layer>
@@ -94,7 +94,7 @@
 
  <actions>
 
-  <action>
+  <!--<action>
    <name>Toggle valve</name>
    <button>0</button>
    <x>-21</x>
@@ -126,7 +126,7 @@
     <command>property-toggle</command>
     <property>/instrumentation/generic/click</property>
    </binding>
-  </action>
+  </action>-->
 
  </actions>
  

@@ -20,7 +20,7 @@
    <name>valve</name>
    <type>switch</type>
 
-   <layer include="concorde-switch-3rd.xml">
+   <!--<layer include="concorde-switch-3rd.xml">
     <name>on</name>
     <condition>
      <property alias="../../../../../params/cond-valve"/>
@@ -33,7 +33,7 @@
 
    <layer include="concorde-switch-on.xml">
     <name>boost</name>
-   </layer>
+   </layer>-->
 
    <transformations>
     <transformation>
@@ -145,7 +145,6 @@
     <property>/instrumentation/generic/click</property>
    </binding>
   </action>
--->
 
   <action>
    <name>Toggle pump</name>
@@ -163,6 +162,7 @@
     <property>/instrumentation/generic/click</property>
    </binding>
   </action>
+-->
 
  </actions>
  
