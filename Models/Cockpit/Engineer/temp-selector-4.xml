@@ -1,0 +1,90 @@
+<?xml version="1.0"?>
+<PropertyList>
+  <path>../Models/air-cond.ac</path>
+<params>
+  <temp-select>controls/temperature/group[3]/temperature-selector</temp-select>
+ </params>
+<effect>
+	   <inherits-from>Aircraft/Concorde/Models/Effects/interior</inherits-from>
+	   <object-name>Frame</object-name>
+</effect>
+
+<animation>
+    <type>rotate</type>
+    <object-name>Knob</object-name>
+    <property>controls/temperature/group[3]/temperature-selector</property>
+     <factor>60</factor>
+    <center>
+      <x-m>0.000</x-m>
+      <y-m>-0.00</y-m>
+      <z-m>-0.00</z-m>
+    </center>
+    <axis>
+      <x>-1</x>
+      <y>0</y>
+      <z>0</z>
+    </axis>
+  </animation>
+  
+   <animation>
+    <type>pick</type>
+    <object-name>Knob</object-name>
+    <action>
+      <name>Up</name>
+      <button>3</button>
+      
+      <binding>
+        <command>property-adjust</command>
+        <property>controls/temperature/group[3]/temperature-selector</property>
+    <step>0.25</step>
+    <min>0</min>
+    <max>3</max>
+    <wrap>0</wrap>
+    <wrap>false</wrap>
+   </binding>
+   
+   
+   <binding>
+    <command>property-toggle</command>
+    <property>/instrumentation/generic/click</property>
+   </binding>
+    </action>
+    </animation>
+    
+    
+    <animation>
+    <type>pick</type>
+    <object-name>Knob</object-name>
+    <action>
+      <name>Dwn</name>
+      <button>4</button>
+      
+      <binding>
+      <command>property-adjust</command>
+       <property>controls/temperature/group[3]/temperature-selector</property>
+    <step>-0.25</step>
+    <min>0</min>
+    <max>3</max>
+    <wrap>0</wrap>
+    <wrap>false</wrap>
+   </binding>
+   
+   
+   
+   <binding>
+    <command>property-toggle</command>
+    <property>/instrumentation/generic/click</property>
+   </binding>
+    </action>
+    
+   
+    
+    </animation>
+
+  
+  
+
+  
+
+
+</PropertyList>

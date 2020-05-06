@@ -16,7 +16,7 @@
 
  <layers>
 
-  <layer include="concorde-gauge.xml"/>
+ <!-- <layer include="concorde-gauge.xml"/>-->
 
 <!-- AUTO SELECTOR -->
 
@@ -319,7 +319,7 @@
    </transformations>
   </layer>
 
-  <layer>
+  <!--<layer>
    <name>knob rotation</name>
    <texture>
     <path>Aircraft/Concorde/Panels/Instruments/Textures/navcom-radios.png</path>
@@ -355,13 +355,13 @@
     <offset>-4</offset>
     </transformation>
    </transformations>
-  </layer>
+  </layer>-->
 
  </layers>
 
  <actions>
 
-  <action>
+  <!--<action>
    <name>selector left</name>
    <button>0</button>
    <x>-50</x>
@@ -401,7 +401,7 @@
     <command>property-toggle</command>
     <property>/instrumentation/generic/click</property>
    </binding>
-  </action>
+  </action>-->
 
  </actions>
 

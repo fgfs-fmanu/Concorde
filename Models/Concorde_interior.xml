@@ -3839,6 +3839,84 @@
   </model>
   
   
+  
+  
+  
+  
+  
+  <model>
+  <name>Temp Selector  1 </name>
+    <path>Cockpit/Engineer/temp-selector-1.xml</path>
+    <overlay>
+      <params>
+  <temp-select>controls/temperature/group[0]/temperature-selector</temp-select>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.714</x-m>
+      <y-m>0.440</y-m>
+      <z-m>1.550</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+  
+  <model>
+  <name>Temp Selector  2 </name>
+    <path>Cockpit/Engineer/temp-selector-2.xml</path>
+    <overlay>
+      <params>
+  <temp-select>controls/temperature/group[1]/temperature-selector</temp-select>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.658</x-m>
+      <y-m>0.440</y-m>
+      <z-m>1.550</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+  
+  <model>
+  <name>Temp Selector  3 </name>
+    <path>Cockpit/Engineer/temp-selector-3.xml</path>
+    <overlay>
+      <params>
+  <temp-select>controls/temperature/group[2]/temperature-selector</temp-select>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.602</x-m>
+      <y-m>0.440</y-m>
+      <z-m>1.550</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+  
+  <model>
+  <name>Temp Selector  4 </name>
+    <path>Cockpit/Engineer/temp-selector-4.xml</path>
+    <overlay>
+      <params>
+  <temp-select>controls/temperature/group[3]/temperature-selector</temp-select>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.545</x-m>
+      <y-m>0.440</y-m>
+      <z-m>1.550</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+  
+  
 <!-- ======== -->
 <!-- Starter -->
 <!-- ======== -->
@@ -4167,6 +4245,34 @@
     </offsets>
   </model>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+<model>
+    <name>Ground Hydraulics</name>
+    <path>Cockpit/Engineer/hyd-ground-selector.xml</path>
+<overlay>
+
+</overlay>
+    <offsets>
+      <x-m>-22.360</x-m>
+      <y-m>0.396</y-m>
+      <z-m>1.590</z-m>
+      
+      <heading-deg>-85</heading-deg>
+     <pitch-deg>23</pitch-deg>
+    </offsets>
+  </model>
 
 
 

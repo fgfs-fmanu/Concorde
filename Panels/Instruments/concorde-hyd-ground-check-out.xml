@@ -12,7 +12,7 @@
 
  <layers>
 
-  <layer include="concorde-gauge.xml"/>
+<!--  <layer include="concorde-gauge.xml"/>-->
 
 <!-- TITLE -->
 
@@ -408,7 +408,7 @@
 
 <!-- knob -->
 
-  <layer>
+  <!--<layer>
    <name>knob rotation</name>
    <texture>
     <path>Aircraft/Concorde/Panels/Instruments/Textures/navcom-radios.png</path>
@@ -453,7 +453,7 @@
     <offset>1</offset>
     </transformation>
    </transformations>
-  </layer>
+  </layer>-->
 
 <!-- PUMP 1 -->
 
@@ -633,7 +633,7 @@
 
  <actions>
 
-  <action>
+  <!--<action>
    <name>selector left</name>
    <button>0</button>
    <x>-50</x>
@@ -673,7 +673,7 @@
     <command>property-toggle</command>
     <property>/instrumentation/generic/click</property>
    </binding>
-  </action>
+  </action>-->
   
   <action>
    <name>Toggle pump 1</name>
