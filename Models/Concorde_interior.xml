@@ -4266,8 +4266,40 @@
 </overlay>
     <offsets>
       <x-m>-22.360</x-m>
-      <y-m>0.396</y-m>
-      <z-m>1.590</z-m>
+      <y-m>0.397</y-m>
+      <z-m>1.585</z-m>
+      
+      <heading-deg>-85</heading-deg>
+     <pitch-deg>24</pitch-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <name>Ground Hydraulic Pump 1</name>
+    <path>Cockpit/Engineer/hyd-ground-pump-1.xml</path>
+<overlay>
+
+</overlay>
+    <offsets>
+      <x-m>-22.407</x-m>
+      <y-m>0.392</y-m>
+      <z-m>1.576</z-m>
+      
+      <heading-deg>-85</heading-deg>
+     <pitch-deg>23</pitch-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <name>Ground Hydraulic Pump 2</name>
+    <path>Cockpit/Engineer/hyd-ground-pump-2.xml</path>
+<overlay>
+
+</overlay>
+    <offsets>
+      <x-m>-22.313</x-m>
+      <y-m>0.400</y-m>
+      <z-m>1.574</z-m>
       
       <heading-deg>-85</heading-deg>
      <pitch-deg>23</pitch-deg>

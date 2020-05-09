@@ -461,7 +461,7 @@
    <name>Pump switch</name>
    <type>switch</type>
 
-   <layer include="concorde-switch-on.xml">
+  <!-- <layer include="concorde-switch-on.xml">
     <name>on</name>
     <condition>
      <property>/controls/hydraulic/ground/pump[0]/switch</property>
@@ -474,7 +474,7 @@
     <name>off</name>
     <w>20</w>
     <h>20</h>
-   </layer>
+   </layer>-->
    
    <transformations>
     <transformation>
@@ -548,7 +548,7 @@
    <name>Pump switch</name>
    <type>switch</type>
 
-   <layer include="concorde-switch-on.xml">
+   <!--<layer include="concorde-switch-on.xml">
     <name>on</name>
     <condition>
      <property>/controls/hydraulic/ground/pump[1]/switch</property>
@@ -561,7 +561,7 @@
     <name>off</name>
     <w>20</w>
     <h>20</h>
-   </layer>
+   </layer>-->
    
    <transformations>
     <transformation>
@@ -675,7 +675,7 @@
    </binding>
   </action>-->
   
-  <action>
+  <!--<action>
    <name>Toggle pump 1</name>
    <button>0</button>
    <x>-111</x>
@@ -690,9 +690,9 @@
     <command>property-toggle</command>
     <property>/instrumentation/generic/click</property>
    </binding>
-  </action>
+  </action>-->
   
-  <action>
+  <!--<action>
    <name>Toggle pump 2</name>
    <button>0</button>
    <x>91</x>
@@ -707,7 +707,7 @@
     <command>property-toggle</command>
     <property>/instrumentation/generic/click</property>
    </binding>
-  </action>
+  </action>-->
 
  </actions>
 
