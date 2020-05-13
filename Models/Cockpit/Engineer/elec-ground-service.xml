@@ -37,6 +37,7 @@
   <animation>
     <type>pick</type>
     <object-name>Switch</object-name>
+  
     <action>
       <name>Captain INS Switch</name>
       <button>0</button>

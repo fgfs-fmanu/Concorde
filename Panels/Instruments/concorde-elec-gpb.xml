@@ -85,7 +85,7 @@
 
  <actions>
 
-  <action>
+  <!--<action>
    <name>Toggle GPB</name>
    <button>0</button>
    <x>-21</x>
@@ -100,7 +100,7 @@
     <command>property-toggle</command>
     <property>/instrumentation/generic/click</property>
    </binding>
-  </action>
+  </action>-->
 
  </actions>
  
