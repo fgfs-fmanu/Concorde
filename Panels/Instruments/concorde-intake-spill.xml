@@ -16,7 +16,7 @@
 
  <layers>
 
-  <layer>
+  <!--<layer>
    <name>background</name>
    <texture>
     <path>Aircraft/Concorde/Panels/Instruments/Textures/concorde-black-knob.png</path>
@@ -52,7 +52,7 @@
      <offset>-6</offset>
     </transformation>
    </transformations>
-  </layer>
+  </layer>-->
 
   <layer>
    <name>Title</name>

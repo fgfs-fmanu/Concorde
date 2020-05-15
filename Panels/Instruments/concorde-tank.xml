@@ -16,7 +16,7 @@
  </params>
 
  <layers>
-
+<!-- 
   <layer>
    <name>background</name>
    <texture>
@@ -199,7 +199,7 @@
      <offset>-4</offset>
     </transformation>
    </transformations>
-  </layer>
+  </layer>-->
 
  </layers>
 

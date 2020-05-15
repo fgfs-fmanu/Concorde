@@ -1,0 +1,108 @@
+<?xml version="1.0"?>
+<PropertyList>
+  <path>../Models/percentneedle.ac</path>
+  <params>
+    <ramp-position>/systems/engines/engine[0]/ramp-percent</ramp-position>
+   </params>
+
+<effect>
+    <inherits-from>Aircraft/Concorde/Models/Effects/interior</inherits-from>
+    <object-name>Frame</object-name>
+
+</effect>
+
+<effect>
+    <inherits-from>Aircraft/Concorde/Models/Effects/flash</inherits-from>
+    <object-name>Guage</object-name>
+    <object-name>Needle</object-name>
+
+</effect>
+
+
+  <animation>
+    <condition>
+        <less-than>
+          <property>/systems/electrical/outputs/specific</property>
+          <value>20.0</value>
+        </less-than></condition>
+
+    <type>rotate</type>
+    <object-name>Needle</object-name>
+    <expression>
+        <value>-30</value>
+    </expression>
+    <center>
+      <x-m>0</x-m>
+      <y-m>0</y-m>
+      <z-m>0</z-m>
+    </center>
+    <axis>
+      <x>-1</x>
+      <y>0</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <condition><not>
+        <less-than>
+          <property>/systems/electrical/outputs/specific</property>
+          <value>20.0</value>
+        </less-than>
+    </not></condition>
+
+    <type>rotate</type>
+    <object-name>Needle</object-name>
+    <expression>
+    <sum>
+      <product>
+      <property>/systems/engines/engine[0]/ramp-percent</property>
+        <value>2.4</value>
+      </product>
+      <value>30</value></sum>
+    </expression>
+    <center>
+      <x-m>0</x-m>
+      <y-m>0</y-m>
+      <z-m>0</z-m>
+    </center>
+    <axis>
+      <x>-1</x>
+      <y>0</y>
+      <z>0</z>
+    </axis>
+  </animation>
+  
+  <!--Default Lighting-->
+  <animation>
+    <type>material</type>
+    <object-name>Guage</object-name>
+    <object-name>Needle</object-name>
+
+  <condition>
+  <and>
+    <property>controls/lighting/instrument-lights</property>
+        <greater-than>
+          <property>/systems/electrical/outputs/specific</property>
+          <value>20.0</value>
+        </greater-than>
+  </and>
+  </condition>
+  <emission>
+   <red>0.7</red>
+   <green>0.2</green>
+   <blue>0.2</blue>
+   <factor-prop>/controls/lighting/instruments-norm</factor-prop>
+  </emission>
+  </animation>
+  <animation>
+    <type>material</type>
+    <object-name>Frame</object-name>
+  <emission>
+     <red>0.2</red>
+     <green>0.2</green>
+     <blue>0.2</blue>
+  </emission>
+ </animation>
+
+</PropertyList>

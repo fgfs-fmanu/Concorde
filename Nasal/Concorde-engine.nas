@@ -800,8 +800,8 @@ Bucket = {};
 Bucket.new = func {
    var obj = { parents : [Bucket,System],
 
-               TRANSITSEC : 6.0,                                   # reverser transit in 6 s
-               BUCKETSEC : 1.0,                                    # refresh rate
+               TRANSITSEC : 1.0,                                   # reverser transit in 6 s
+               BUCKETSEC : 0.1,                                    # refresh rate
 
                AEROBRAKEDEG : 180.0,                               # guess of force (90 deg is no thrust)
                REVERSERDEG : 73.0,

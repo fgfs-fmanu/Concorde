@@ -26,7 +26,7 @@ Fuel.new = func {
 
                presets : 0,                                                  # saved state
 
-               PUMPSEC : 1.0,
+               PUMPSEC : 0.03,
 
 # at Mach 2, trim tank 10 only feeds 2 supply tanks 5 and 7 : 45200 lb/h, or 6.3 lb/s per tank.
                PUMPLBPSEC : 25,                                              # 25 lb/s for 1 pump.

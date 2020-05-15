@@ -1869,9 +1869,239 @@
 
 
 
-
-
-
+<model>
+    <name>Fuel Tank 9 </name>
+    <path>Cockpit/Engineer/tank-12.xml</path>
+    <overlay>
+      <params>
+    <lbs-select>/consumables/fuel/tank[8]/level-gal_us</lbs-select>
+  </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.761</x-m>
+      <y-m>0.490</y-m>
+      <z-m>1.426</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <name>Fuel Tank 10 </name>
+    <path>Cockpit/Engineer/tank-12.xml</path>
+    <overlay>
+      <params>
+    <lbs-select>/consumables/fuel/tank[9]/level-gal_us</lbs-select>
+  </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.761</x-m>
+      <y-m>0.535</y-m>
+      <z-m>1.337</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  <model>
+    <name>Fuel Tank 5 </name>
+    <path>Cockpit/Engineer/tank-10.xml</path>
+    <overlay>
+      <params>
+    <lbs-select>/consumables/fuel/tank[4]/level-gal_us</lbs-select>
+  </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.936</x-m>
+      <y-m>0.555</y-m>
+      <z-m>1.214</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>-5</pitch-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <name>Fuel Tank 7 </name>
+    <path>Cockpit/Engineer/tank-10.xml</path>
+    <overlay>
+      <params>
+    <lbs-select>/consumables/fuel/tank[6]/level-gal_us</lbs-select>
+  </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.600</x-m>
+      <y-m>0.555</y-m>
+      <z-m>1.214</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>-5</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  
+  <model>
+    <name>Fuel Tank 6 </name>
+    <path>Cockpit/Engineer/tank-12.xml</path>
+    <overlay>
+      <params>
+    <lbs-select>/consumables/fuel/tank[5]/level-gal_us</lbs-select>
+  </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.936</x-m>
+      <y-m>0.555</y-m>
+      <z-m>1.16</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>-5</pitch-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <name>Fuel Tank 8 </name>
+    <path>Cockpit/Engineer/tank-12.xml</path>
+    <overlay>
+      <params>
+    <lbs-select>/consumables/fuel/tank[7]/level-gal_us</lbs-select>
+  </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.600</x-m>
+      <y-m>0.555</y-m>
+      <z-m>1.16</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>-5</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  <model>
+    <name>Fuel Tank 11 </name>
+    <path>Cockpit/Engineer/tank-12.xml</path>
+    <overlay>
+      <params>
+    <lbs-select>/consumables/fuel/tank[10]/level-gal_us</lbs-select>
+  </params>
+    </overlay>
+    <offsets>
+        <x-m>-21.773</x-m>
+      <y-m>0.544</y-m>
+      <z-m>1.064</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>-5</pitch-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <name>Fuel Tank 7A </name>
+    <path>Cockpit/Engineer/tank-5.xml</path>
+    <overlay>
+      <params>
+    <lbs-select>/consumables/fuel/tank[12]/level-gal_us</lbs-select>
+  </params>
+    </overlay>
+     <offsets>
+      <x-m>-21.615</x-m>
+      <y-m>0.535</y-m>
+      <z-m>1.352</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+<model>
+    <name>Fuel Tank 5A </name>
+    <path>Cockpit/Engineer/tank-5.xml</path>
+    <overlay>
+      <params>
+    <lbs-select>/consumables/fuel/tank[11]/level-gal_us</lbs-select>
+  </params>
+    </overlay>
+     <offsets>
+      <x-m>-21.900</x-m>
+      <y-m>0.535</y-m>
+      <z-m>1.352</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <name>Fuel Tank 1 </name>
+    <path>Cockpit/Engineer/tank-5.xml</path>
+    <overlay>
+      <params>
+    <lbs-select>/consumables/fuel/tank[0]/level-gal_us</lbs-select>
+  </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.975</x-m>
+      <y-m>0.550</y-m>
+      <z-m>1.113</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>-5</pitch-deg>
+    </offsets>
+  </model>
+<model>
+    <name>Fuel Tank 2 </name>
+    <path>Cockpit/Engineer/tank-5.xml</path>
+    <overlay>
+      <params>
+    <lbs-select>/consumables/fuel/tank[1]/level-gal_us</lbs-select>
+  </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.885</x-m>
+      <y-m>0.550</y-m>
+      <z-m>1.113</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>-5</pitch-deg>
+    </offsets>
+  </model>
+  <model>
+    <name>Fuel Tank 3 </name>
+    <path>Cockpit/Engineer/tank-5.xml</path>
+    <overlay>
+      <params>
+    <lbs-select>/consumables/fuel/tank[2]/level-gal_us</lbs-select>
+  </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.653</x-m>
+      <y-m>0.554</y-m>
+      <z-m>1.113</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>-5</pitch-deg>
+    </offsets>
+  </model>
+  <model>
+    <name>Fuel Tank 4 </name>
+    <path>Cockpit/Engineer/tank-5.xml</path>
+    <overlay>
+      <params>
+    <lbs-select>/consumables/fuel/tank[3]/level-gal_us</lbs-select>
+  </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.562</x-m>
+      <y-m>0.554</y-m>
+      <z-m>1.113</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>-5</pitch-deg>
+    </offsets>
+  </model>
 
 
 
@@ -4393,6 +4623,81 @@
      <pitch-deg>25</pitch-deg>
     </offsets>
   </model>
+  
+  
+  
+  
+  
+  
+  
+  <model>
+    <name>Secondary Nozzle 1</name>
+    <path>Cockpit/Engineer/secondary-nozzle-1.xml</path>
+<overlay>
+<params>
+    <bucket-pos>/systems/engines/engine[0]/bucket-deg</bucket-pos>
+   </params>
+</overlay>
+    <offsets>
+      <x-m>-22.145</x-m>
+      <y-m>0.495</y-m>
+      <z-m>1.405</z-m>
+      
+      <heading-deg>-83</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+  <model>
+    <name>Secondary Nozzle 2</name>
+    <path>Cockpit/Engineer/secondary-nozzle-2.xml</path>
+<overlay>
+<params>
+    <bucket-pos>/systems/engines/engine[1]/bucket-deg</bucket-pos>
+   </params>
+</overlay>
+    <offsets>
+      <x-m>-22.117</x-m>
+      <y-m>0.497</y-m>
+      <z-m>1.405</z-m>
+      
+      <heading-deg>-83</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+  <model>
+    <name>Secondary Nozzle 3</name>
+    <path>Cockpit/Engineer/secondary-nozzle-3.xml</path>
+<overlay>
+<params>
+    <bucket-pos>/systems/engines/engine[2]/bucket-deg</bucket-pos>
+   </params>
+</overlay>
+    <offsets>
+      <x-m>-22.089</x-m>
+      <y-m>0.499</y-m>
+      <z-m>1.405</z-m>
+      
+      <heading-deg>-83</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+  <model>
+    <name>Secondary Nozzle 4</name>
+    <path>Cockpit/Engineer/secondary-nozzle-4.xml</path>
+<overlay>
+<params>
+    <bucket-pos>/systems/engines/engine[3]/bucket-deg</bucket-pos>
+   </params>
+</overlay>
+    <offsets>
+      <x-m>-22.061</x-m>
+      <y-m>0.502</y-m>
+      <z-m>1.405</z-m>
+      
+      <heading-deg>-83</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
 
 
 <!-- ======== -->
@@ -4958,6 +5263,170 @@
       <heading-deg>-85</heading-deg>
      <pitch-deg>0</pitch-deg>
      <roll-deg>-75</roll-deg>
+    </offsets>
+  </model>
+  
+  
+  
+  
+  
+  <model>
+    <name>Intake Ramp 1</name>
+    <path>Cockpit/Engineer/ramp-1.xml</path>
+   <overlay>
+   <params>
+  <ramp-position>/systems/engines/engine[0]/ramp-percent</ramp-position>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-22.412</x-m>
+      <y-m>0.515</y-m>
+      <z-m>1.01</z-m>
+      
+      <heading-deg>-85</heading-deg>
+     <pitch-deg>0</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  
+  <model>
+    <name>Intake Ramp 2</name>
+    <path>Cockpit/Engineer/ramp-2.xml</path>
+   <overlay>
+   <params>
+  <ramp-position>/systems/engines/engine[1]/ramp-percent</ramp-position>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-22.381</x-m>
+      <y-m>0.518</y-m>
+      <z-m>1.01</z-m>
+      
+      <heading-deg>-85</heading-deg>
+     <pitch-deg>0</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  
+  <model>
+    <name>Intake Ramp 3</name>
+    <path>Cockpit/Engineer/ramp-3.xml</path>
+   <overlay>
+   <params>
+  <ramp-position>/systems/engines/engine[2]/ramp-percent</ramp-position>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-22.349</x-m>
+      <y-m>0.520</y-m>
+      <z-m>1.01</z-m>
+      
+      <heading-deg>-85</heading-deg>
+     <pitch-deg>0</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  <model>
+    <name>Intake Ramp 4</name>
+    <path>Cockpit/Engineer/ramp-4.xml</path>
+   <overlay>
+   <params>
+  <ramp-position>/systems/engines/engine[3]/ramp-percent</ramp-position>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-22.316</x-m>
+      <y-m>0.523</y-m>
+      <z-m>1.01</z-m>
+      
+      <heading-deg>-85</heading-deg>
+     <pitch-deg>0</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  
+  
+  
+  
+  
+  <model>
+    <name>Intake Spill 1</name>
+    <path>Cockpit/Engineer/spill-1.xml</path>
+   <overlay>
+   <params>
+  <door-position>/systems/engines/engine[0]/spill-percent</door-position>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-22.412</x-m>
+      <y-m>0.515</y-m>
+      <z-m>0.95</z-m>
+      
+      <heading-deg>-85</heading-deg>
+     <pitch-deg>0</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  
+  <model>
+    <name>Intake Spill 2</name>
+    <path>Cockpit/Engineer/spill-2.xml</path>
+   <overlay>
+   <params>
+  <door-position>/systems/engines/engine[1]/spill-percent</door-position>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-22.381</x-m>
+      <y-m>0.518</y-m>
+      <z-m>0.95</z-m>
+      
+      <heading-deg>-85</heading-deg>
+     <pitch-deg>0</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  
+  <model>
+    <name>Intake Spill 3</name>
+    <path>Cockpit/Engineer/spill-3.xml</path>
+   <overlay>
+   <params>
+  <door-position>/systems/engines/engine[2]/spill-percent</door-position>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-22.349</x-m>
+      <y-m>0.520</y-m>
+      <z-m>0.95</z-m>
+      
+      <heading-deg>-85</heading-deg>
+     <pitch-deg>0</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  <model>
+    <name>Intake Spill 4</name>
+    <path>Cockpit/Engineer/spill-4.xml</path>
+   <overlay>
+   <params>
+  <door-position>/systems/engines/engine[3]/spill-percent</door-position>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-22.316</x-m>
+      <y-m>0.522</y-m>
+      <z-m>0.95</z-m>
+      
+      <heading-deg>-85</heading-deg>
+     <pitch-deg>0</pitch-deg>
     </offsets>
   </model>
   
