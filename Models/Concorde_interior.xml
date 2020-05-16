@@ -1953,7 +1953,7 @@
   </params>
     </overlay>
     <offsets>
-      <x-m>-21.936</x-m>
+      <x-m>-21.937</x-m>
       <y-m>0.555</y-m>
       <z-m>1.16</z-m>
       
@@ -1971,7 +1971,7 @@
   </params>
     </overlay>
     <offsets>
-      <x-m>-21.600</x-m>
+      <x-m>-21.599</x-m>
       <y-m>0.555</y-m>
       <z-m>1.16</z-m>
       
@@ -3474,6 +3474,17 @@
         <x-m>-21.825</x-m>
       <y-m>0.557</y-m>
       <z-m>1.225</z-m>
+      <heading-deg>-90</heading-deg>
+      <pitch-deg>-2</pitch-deg>
+    </offsets>
+  </model>
+  <model>
+    <name>Fuel Remaining Indicator</name>
+    <path>Aircraft/Concorde/Models/Cockpit/Engineer/fuel-remain-engineer.xml</path>
+    <offsets>
+        <x-m>-21.780</x-m>
+      <y-m>0.557</y-m>
+      <z-m>1.165</z-m>
       <heading-deg>-90</heading-deg>
       <pitch-deg>-2</pitch-deg>
     </offsets>

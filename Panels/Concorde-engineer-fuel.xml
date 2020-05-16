@@ -210,7 +210,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
 
 <!-- totals -->
 
- <instrument include="Instruments/concorde-gauge_inst.xml">
+ <!--<instrument include="Instruments/concorde-gauge_inst.xml">
    <condition>
     <or>
      <and>
@@ -237,7 +237,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
    <y>475</y>
    <w>70</w>
    <h>28</h>
-  </instrument>
+  </instrument>-->
 
   <instrument include="Instruments/concorde-kg.xml">
    <name>Fuel Total</name>

@@ -15,7 +15,7 @@
 
 
 
-  <layer>
+  <!--<layer>
    <name>background</name>
    <texture>
     <path>Aircraft/Concorde/Panels/Instruments/Textures/concorde-black-bg.png</path>
@@ -106,7 +106,7 @@
       <type>number-value</type>
       <property>instrumentation/fuel/total-lbs</property>
       <format>%6.0f</format>
-      <scale>0.45359</scale>            <!-- kg -->
+      <scale>0.45359</scale>            
      </chunk>
     </chunks>
     <transformations>
@@ -197,7 +197,7 @@
      <offset>-10</offset>
     </transformation>
    </transformations>
-  </layer>
+  </layer>-->
 
  </layers>
 
