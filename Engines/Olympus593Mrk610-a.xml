@@ -94,9 +94,8 @@
 
        Adjust the TSFC to get 20500 kg/h on average, at Mach 2.02 between 50000-57800 ft
       (60 ft/min during 2h10).
-  -->
-
-  <milthrust> 31350 </milthrust>
+      
+      <milthrust> 31350 </milthrust>
   <maxthrust> 31350 </maxthrust>
   <bypassratio> 5.0 </bypassratio>
   <tsfc> 1.190 </tsfc>
@@ -105,6 +104,20 @@
   <idlen2> 60.0 </idlen2>
   <maxn1> 102.0 </maxn1>
   <maxn2> 106.0 </maxn2>
+  <augmented> 1 </augmented>
+  <augmethod> 0 </augmethod>
+  <injected> 0 </injected>
+  -->
+
+  <milthrust> 31349 </milthrust>
+  <maxthrust> 31370 </maxthrust>
+  <bypassratio> 5.0 </bypassratio>
+  <tsfc> 1.190 </tsfc>
+  <atsfc> 1.338 </atsfc>
+  <idlen1> 38.0 </idlen1>
+  <idlen2> 61.0 </idlen2>
+  <maxn1> 102.0 </maxn1>
+  <maxn2> 106.3 </maxn2>
   <augmented> 1 </augmented>
   <augmethod> 0 </augmethod>
   <injected> 0 </injected>

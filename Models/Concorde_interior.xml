@@ -4805,7 +4805,53 @@
 <!-- Engineer Engines -->
 <!-- ======== -->
   
+  <model>
+    <name>Altimeter  Engineer</name>
+    <path>Aircraft/Concorde/Models/Cockpit/Engineer/altimeter-engineer.xml</path>
+    <overlay>
+    </overlay>
+    <offsets>
+      <x-m>-22.124</x-m>
+      <y-m>0.553</y-m>
+      <z-m>1.261</z-m>
+      
+      <heading-deg>-84</heading-deg>
+     <pitch-deg>0</pitch-deg>
+    </offsets>
+  </model>
   
+  <model>
+    <name>Thermometer  Engineer</name>
+    <path>Aircraft/Concorde/Models/Cockpit/Engineer/thermometer-engineer.xml</path>
+    <overlay>
+    </overlay>
+    <offsets>
+      <x-m>-22.181</x-m>
+      <y-m>0.547</y-m>
+      <z-m>1.261</z-m>
+      
+      <heading-deg>-84</heading-deg>
+     <pitch-deg>0</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  
+  
+  <model>
+    <name>Machmeter  Engineer</name>
+    <path>Aircraft/Concorde/Models/Cockpit/Engineer/machmeter-engineer.xml</path>
+    <overlay>
+    </overlay>
+    <offsets>
+      <x-m>-22.238</x-m>
+      <y-m>0.541</y-m>
+      <z-m>1.261</z-m>
+      
+      <heading-deg>-84</heading-deg>
+     <pitch-deg>0</pitch-deg>
+    </offsets>
+  </model>
   
   
   <model>
