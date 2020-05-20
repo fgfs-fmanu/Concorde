@@ -73,7 +73,7 @@
     <div>
     <prod>
     <property>/engines/engine[3]/thrust_lb</property>
-    <value>3</value>
+    <value>4</value>
     </prod>
     <prod>
     <property>/systems/engines/engine[3]/bucket-deg</property>
