@@ -53,7 +53,7 @@
     <action>
       <name>Captain INS Switch</name>
       <button>0</button>
-      <repeatable>true</repeatable>
+      <repeatable>false</repeatable>
       <binding>
         <command>property-toggle</command>
         <property>/controls/electrical/dc/esma</property>
@@ -127,7 +127,7 @@
     <action>
       <name>Auto-trim</name>
       <button>1</button>
-      <repeatable>true</repeatable>
+      <repeatable>false</repeatable>
       <binding>
         <command>property-toggle</command>
         <property>/controls/electric/dc/master-bat[1]</property>

@@ -4854,167 +4854,18 @@
   </model>
   
   
-  <model>
-    <name>Engine 1 Nozzle Engineer</name>
-    <path>Aircraft/Concorde/Models/Cockpit/Engineer/engine-nozzleengineer.xml</path>
-    <overlay>
-      <params>
-        <nozzle>/engines/engine[0]/nozzle-pos-norm</nozzle>
-      </params>
-    </overlay>
-    <offsets>
-      <x-m>-22.235</x-m>
-      <y-m>0.530</y-m>
-      <z-m>0.910</z-m>
-      
-      <heading-deg>-85</heading-deg>
-     <pitch-deg>0</pitch-deg>
-    </offsets>
-  </model>
-  <model>
-    <name>Engine 2 Nozzle Engineer</name>
-    <path>Aircraft/Concorde/Models/Cockpit/Engineer/engine-nozzleengineer.xml</path>
-    <overlay>
-      <params>
-        <nozzle>/engines/engine[1]/nozzle-pos-norm</nozzle>
-      </params>
-    </overlay>
-    <offsets>
-      <x-m>-22.178</x-m>
-      <y-m>0.536</y-m>
-      <z-m>0.910</z-m>
-      
-      <heading-deg>-85</heading-deg>
-     <pitch-deg>0</pitch-deg>
-    </offsets>
-  </model>
-  <model>
-    <name>Engine 3 Nozzle Engineer</name>
-    <path>Aircraft/Concorde/Models/Cockpit/Engineer/engine-nozzleengineer.xml</path>
-    <overlay>
-      <params>
-        <nozzle>/engines/engine[2]/nozzle-pos-norm</nozzle>
-      </params>
-    </overlay>
-    <offsets>
-      <x-m>-22.121</x-m>
-      <y-m>0.541</y-m>
-      <z-m>0.910</z-m>
-      
-      <heading-deg>-85</heading-deg>
-     <pitch-deg>0</pitch-deg>
-    </offsets>
-  </model>
-  <model>
-    <name>Engine 4 Nozzle Engineer</name>
-    <path>Aircraft/Concorde/Models/Cockpit/Engineer/engine-nozzleengineer.xml</path>
-    <overlay>
-      <params>
-        <nozzle>/engines/engine[3]/nozzle-pos-norm</nozzle>
-      </params>
-    </overlay>
-    <offsets>
-      <x-m>-22.064</x-m>
-      <y-m>0.546</y-m>
-      <z-m>0.910</z-m>
-      
-      <heading-deg>-85</heading-deg>
-     <pitch-deg>0</pitch-deg>
-    </offsets>
-  </model>
-  
   
   
   
   
   
   <model>
-    <name>Engine 1 EGT</name>
-    <path>Cockpit/Engineer/engine-egt-engineer.xml</path>
+    <name>Engine 1 P7</name>
+    <path>Aircraft/Concorde/Models/Cockpit/Engineer/p7-1.xml</path>
     <overlay>
       <params>
-        <egt>/engines/engine[0]/egt-degf</egt>
-      </params>
-    </overlay>
-    <offsets>
-      <x-m>-22.235</x-m>
-      <y-m>0.530</y-m>
-      <z-m>0.968</z-m>
-      
-      <heading-deg>-85</heading-deg>
-     <pitch-deg>0</pitch-deg>
-    </offsets>
-  </model>
-  
-  
-  
-  
-  
-  <model>
-    <name>Engine 2 EGT</name>
-    <path>Cockpit/Engineer/engine-egt-engineer.xml</path>
-    <overlay>
-      <params>
-        <egt>/engines/engine[1]/egt-degf</egt>
-      </params>
-    </overlay>
-    <offsets>
-      <x-m>-22.178</x-m>
-      <y-m>0.536</y-m>
-      <z-m>0.968</z-m>
-      
-      <heading-deg>-85</heading-deg>
-     <pitch-deg>0</pitch-deg>
-    </offsets>
-  </model>
-  
-  
-  <model>
-    <name>Engine 3 EGT</name>
-    <path>Cockpit/Engineer/engine-egt-engineer.xml</path>
-    <overlay>
-      <params>
-        <egt>/engines/engine[2]/egt-degf</egt>
-      </params>
-    </overlay>
-    <offsets>
-      <x-m>-22.121</x-m>
-      <y-m>0.541</y-m>
-      <z-m>0.968</z-m>
-      
-      <heading-deg>-85</heading-deg>
-     <pitch-deg>0</pitch-deg>
-    </offsets>
-  </model>
-  
-  <model>
-    <name>Engine 4 EGT</name>
-    <path>Cockpit/Engineer/engine-egt-engineer.xml</path>
-    <overlay>
-      <params>
-        <egt>/engines/engine[3]/egt-degf</egt>
-      </params>
-    </overlay>
-    <offsets>
-      <x-m>-22.064</x-m>
-      <y-m>0.547</y-m>
-      <z-m>0.968</z-m>
-      
-      <heading-deg>-85</heading-deg>
-     <pitch-deg>0</pitch-deg>
-    </offsets>
-  </model>
-  
-  
-  
-  
-  <model>
-    <name>Engine 1 Fuel Engineer</name>
-    <path>Aircraft/Concorde/Models/Cockpit/Engineer/engine-fuelengineer.xml</path>
-    <overlay>
-      <params>
-    <fuelflow>/engines/engine[0]/fuel-flow_pph</fuelflow>
-    <bug-select>/controls/engines/engine[0]/bug_pph</bug-select>
+    <thrustlb>/engines/engine[0]/thrust_lb</thrustlb>
+    <bucket-pos>/systems/engines/engine[0]/bucket-deg</bucket-pos>
   </params>
     </overlay>
      <offsets>
@@ -5028,12 +4879,12 @@
   </model>
   
   <model>
-    <name>Engine 2 Indicator Engineer</name>
-    <path>Aircraft/Concorde/Models/Cockpit/Engineer/engine-fuelengineer.xml</path>
+   <name>Engine 2 P7</name>
+    <path>Aircraft/Concorde/Models/Cockpit/Engineer/p7-2.xml</path>
     <overlay>
       <params>
-    <fuelflow>/engines/engine[1]/fuel-flow_pph</fuelflow>
-    <bug-select>/controls/engines/engine[1]/bug_pph</bug-select>
+    <thrustlb>/engines/engine[1]/thrust_lb</thrustlb>
+    <bucket-pos>/systems/engines/engine[1]/bucket-deg</bucket-pos>
   </params>
     </overlay>
      <offsets>
@@ -5046,12 +4897,12 @@
     </offsets>
   </model>
   <model>
-    <name>Engine 3 Indicator Engineer</name>
-    <path>Aircraft/Concorde/Models/Cockpit/Engineer/engine-fuelengineer.xml</path>
+    <name>Engine 3 P7</name>
+    <path>Aircraft/Concorde/Models/Cockpit/Engineer/p7-3.xml</path>
     <overlay>
       <params>
-    <fuelflow>/engines/engine[2]/fuel-flow_pph</fuelflow>
-    <bug-select>/controls/engines/engine[2]/bug_pph</bug-select>
+    <thrustlb>/engines/engine[2]/thrust_lb</thrustlb>
+    <bucket-pos>/systems/engines/engine[2]/bucket-deg</bucket-pos>
   </params>
     </overlay>
    <offsets>
@@ -5065,12 +4916,12 @@
   </model>
   
   <model>
-    <name>Engine 4 Indicator Engineer</name>
-   <path>Aircraft/Concorde/Models/Cockpit/Engineer/engine-fuelengineer.xml</path>
+    <name>Engine 4 P7</name>
+    <path>Aircraft/Concorde/Models/Cockpit/Engineer/p7-4.xml</path>
     <overlay>
       <params>
-    <fuelflow>/engines/engine[3]/fuel-flow_pph</fuelflow>
-    <bug-select>/controls/engines/engine[3]/bug_pph</bug-select>
+    <thrustlb>/engines/engine[3]/thrust_lb</thrustlb>
+    <bucket-pos>/systems/engines/engine[3]/bucket-deg</bucket-pos>
   </params>
     </overlay>
     <offsets>
@@ -5090,11 +4941,11 @@
   
   
   <model>
-    <name>Engine 1 N1  Engineer</name>
-    <path>Aircraft/Concorde/Models/Cockpit/Engineer/engine-n1-engineer.xml</path>
+    <name>Engine 1 Oil content </name>
+    <path>Aircraft/Concorde/Models/Cockpit/Engineer/oiltempcontent-1.xml</path>
     <overlay>
       <params>
-        <n1>/engines/engine[0]/n1</n1>
+        <oil-select>/engines/engine[0]/oil-pressure-psi</oil-select>
       </params>
     </overlay>
      <offsets>
@@ -5107,11 +4958,11 @@
     </offsets>
   </model>
   <model>
-    <name>Engine 2 N1  Engineer</name>
-    <path>Aircraft/Concorde/Models/Cockpit/Engineer/engine-n1-engineer.xml</path>
+    <name>Engine 2 Oil content </name>
+    <path>Aircraft/Concorde/Models/Cockpit/Engineer/oiltempcontent-2.xml</path>
     <overlay>
       <params>
-        <n1>/engines/engine[1]/n1</n1>
+        <oil-select>/engines/engine[1]/oil-pressure-psi</oil-select>
       </params>
     </overlay>
    <offsets>
@@ -5124,11 +4975,11 @@
     </offsets>
   </model>
   <model>
-    <name>Engine 3 N1</name>
-    <path>Aircraft/Concorde/Models/Cockpit/Engineer/engine-n1-engineer.xml</path>
+    <name>Engine 3 Oil content </name>
+    <path>Aircraft/Concorde/Models/Cockpit/Engineer/oiltempcontent-3.xml</path>
     <overlay>
       <params>
-        <n1>/engines/engine[2]/n1</n1>
+        <oil-select>/engines/engine[2]/oil-pressure-psi</oil-select>
       </params>
     </overlay>
     <offsets>
@@ -5141,11 +4992,11 @@
     </offsets>
   </model>
   <model>
-    <name>Engine 4 N1  Engineer</name>
-    <path>Aircraft/Concorde/Models/Cockpit/Engineer/engine-n1-engineer.xml</path>
+    <name>Engine 4 Oil content </name>
+    <path>Aircraft/Concorde/Models/Cockpit/Engineer/oiltempcontent-4.xml</path>
     <overlay>
       <params>
-        <n1>/engines/engine[3]/n1</n1>
+        <oil-select>/engines/engine[3]/oil-pressure-psi</oil-select>
       </params>
     </overlay>
     <offsets>
@@ -5160,6 +5011,77 @@
   
   
   
+  <model>
+    <name>Engine 1 TCA FUEL </name>
+    <path>Aircraft/Concorde/Models/Cockpit/Engineer/tcafuel-1.xml</path>
+    <overlay>
+      <params>
+    <egt>/engines/engine[0]/egt-degf</egt>
+  </params>
+    </overlay>
+     <offsets>
+      <x-m>-22.235</x-m>
+      <y-m>0.534</y-m>
+      <z-m>1.2</z-m>
+      
+      <heading-deg>-85</heading-deg>
+     <pitch-deg>0</pitch-deg>
+    </offsets>
+  </model>
+  <model>
+    <name>Engine 2 TCA FUEL </name>
+    <path>Aircraft/Concorde/Models/Cockpit/Engineer/tcafuel-2.xml</path>
+    <overlay>
+      <params>
+    <egt>/engines/engine[1]/egt-degf</egt>
+  </params>
+    </overlay>
+   <offsets>
+      <x-m>-22.178</x-m>
+      <y-m>0.539</y-m>
+      <z-m>1.2</z-m>
+      
+      <heading-deg>-85</heading-deg>
+     <pitch-deg>0</pitch-deg>
+    </offsets>
+  </model>
+  <model>
+    <name>Engine 3 TCA FUEL </name>
+    <path>Aircraft/Concorde/Models/Cockpit/Engineer/tcafuel-3.xml</path>
+    <overlay>
+      <params>
+    <egt>/engines/engine[2]/egt-degf</egt>
+  </params>
+    </overlay>
+    <offsets>
+      <x-m>-22.121</x-m>
+      <y-m>0.545</y-m>
+      <z-m>1.2</z-m>
+      
+      <heading-deg>-85</heading-deg>
+     <pitch-deg>0</pitch-deg>
+    </offsets>
+  </model>
+  <model>
+    <name>Engine 4 TCA FUEL </name>
+    <path>Aircraft/Concorde/Models/Cockpit/Engineer/tcafuel-4.xml</path>
+    <overlay>
+      <params>
+    <egt>/engines/engine[3]/egt-degf</egt>
+  </params>
+    </overlay>
+    <offsets>
+      <x-m>-22.064</x-m>
+      <y-m>0.551</y-m>
+      <z-m>1.200</z-m>
+      
+      <heading-deg>-85</heading-deg>
+     <pitch-deg>0</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  
   
   
   
@@ -5168,11 +5090,11 @@
   
   
   <model>
-    <name>Engine 1 N2  Engineer</name>
-    <path>Aircraft/Concorde/Models/Cockpit/Engineer/engine-n2_1-engineer.xml</path>
+    <name>Engine 1 Oil temp </name>
+    <path>Aircraft/Concorde/Models/Cockpit/Engineer/oil-pressure-1.xml</path>
     <overlay>
       <params>
-        <n2>/engines/engine[0]/n2</n2>
+        <oil-select>/engines/engine[0]/oil-pressure-psi</oil-select>
       </params>
     </overlay>
      <offsets>
@@ -5185,11 +5107,11 @@
     </offsets>
   </model>
   <model>
-    <name>Engine 2 N2  Engineer</name>
-    <path>Aircraft/Concorde/Models/Cockpit/Engineer/engine-n2_2-engineer.xml</path>
+    <name>Engine 2 Oil temp</name>
+    <path>Aircraft/Concorde/Models/Cockpit/Engineer/oil-pressure-2.xml</path>
     <overlay>
       <params>
-        <n2>/engines/engine[1]/n2</n2>
+        <oil-select>/engines/engine[1]/oil-pressure-psi</oil-select>
       </params>
     </overlay>
    <offsets>
@@ -5202,11 +5124,11 @@
     </offsets>
   </model>
   <model>
-    <name>Engine 3 N2 Engineer</name>
-    <path>Aircraft/Concorde/Models/Cockpit/Engineer/engine-n2_3-engineer.xml</path>
+    <name>Engine 3 Oil temp </name>
+    <path>Aircraft/Concorde/Models/Cockpit/Engineer/oil-pressure-3.xml</path>
     <overlay>
       <params>
-        <n2>/engines/engine[2]/n2</n2>
+        <oil-select>/engines/engine[2]/oil-pressure-psi</oil-select>
       </params>
     </overlay>
     <offsets>
@@ -5219,11 +5141,11 @@
     </offsets>
   </model>
   <model>
-    <name>Engine 4 N2  Engineer</name>
-    <path>Aircraft/Concorde/Models/Cockpit/Engineer/engine-n2_4-engineer.xml</path>
+    <name>Engine 4 Oil temp</name>
+    <path>Aircraft/Concorde/Models/Cockpit/Engineer/oil-pressure-4.xml</path>
     <overlay>
       <params>
-        <n2>/engines/engine[3]/n2</n2>
+        <oil-select>/engines/engine[3]/oil-pressure-psi</oil-select>
       </params>
     </overlay>
     <offsets>

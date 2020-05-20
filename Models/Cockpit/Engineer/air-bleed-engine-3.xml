@@ -43,7 +43,7 @@
     <action>
       <name>Captain INS Switch</name>
       <button>0</button>
-      <repeatable>true</repeatable>
+      <repeatable>false</repeatable>
       <binding>
         <command>property-toggle</command>
         <property>/controls/pneumatic/engine[2]/bleed-valve</property>

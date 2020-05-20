@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
 <PropertyList>
-  <path>../Models/engine-indicatorengineer.ac</path>
+  <path>../Models/p7.ac</path>
 
   <params>
-    <fuelflow>/engines/engine[0]/fuel-flow_pph</fuelflow>
-    <bug-select>/controls/engines/engine[0]/bug_pph</bug-select>
+    <thrustlb>/engines/engine[0]/thrust_lb</thrustlb>
+    <bucket-pos>/systems/engines/engine[0]/bucket-deg</bucket-pos>
   </params>
 
 <effect>
@@ -69,8 +69,18 @@
 
     <type>rotate</type>
     <object-name>Needle</object-name>
-    <property alias="/params/fuelflow"/>
-    <factor>0.00272155</factor>
+    <expression>
+    <div>
+    <prod>
+    <property>/engines/engine[0]/thrust_lb</property>
+    <value>3</value>
+    </prod>
+    <prod>
+    <property>/systems/engines/engine[0]/bucket-deg</property>
+    <value>31.17</value>
+    </prod>
+    </div>
+    </expression>
     <center>
       <x-m>0</x-m>
       <y-m>0</y-m>
@@ -82,141 +92,10 @@
       <z>0</z>
     </axis>
   </animation>
-  <animation>
-    <type>rotate</type>
-    <object-name>FuelBug</object-name>
-    <property alias="/params/bug-select"/>
-    <factor>0.00272155</factor>
-    <center>
-      <x-m>0</x-m>
-      <y-m>0</y-m>
-      <z-m>0</z-m>
-    </center>
-    <axis>
-      <x>-1</x>
-      <y>0</y>
-      <z>0</z>
-    </axis>
-  </animation>
-  <!--Bug Numbers-->
-  <animation>
-    <type>rotate</type>
-    <object-name>Set1</object-name>
-    <expression>
-      <prod>
-        <sum>
-          <floor>
-            <div>
-              <div>
-                <property alias="/params/bug-select"/>
-                <value>2204.624</value>
-              </div>
-              <value>10</value>
-            </div>
-          </floor>
-          <max>
-            <prod>
-              <difference>
-                <div>
-                  <property alias="/params/bug-select"/>
-                  <value>2204.624</value>
-                </div>
-                <value>9.9</value>
-                <prod>
-                  <floor>
-                    <div>
-                      <div>
-                        <property alias="/params/bug-select"/>
-                        <value>2204.624</value>
-                      </div>
-                      <value>10</value>
-                    </div>
-                  </floor>
-                  <value>10</value>
-                </prod>
-              </difference>
-              <value>10</value>
-            </prod>
-            <value>0</value>
-          </max>
-        </sum>
-        <value>36</value>
-      </prod>
-    </expression>
-    <center>
-      <x-m>-0.0020</x-m>
-      <y-m>-0.0425</y-m>
-      <z-m>0.012</z-m>
-    </center>
-    <axis>
-      <x>0</x>
-      <y>1</y>
-      <z>0</z>
-    </axis>
-  </animation>
-  <animation>
-    <type>rotate</type>
-    <object-name>Set2</object-name>
-    <expression>
-      <prod>
-        <sum>
-          <floor>
-            <div>
-              <property alias="/params/bug-select"/>
-              <value>2204.624</value>
-            </div>
-          </floor>
-          <max>
-            <prod>
-              <difference>
-                <div>
-                  <property alias="/params/bug-select"/>
-                  <value>2204.624</value>
-                </div>
-                <value>.9</value>
-                <floor>
-                  <div>
-                    <property alias="/params/bug-select"/>
-                    <value>2204.624</value>
-                  </div>
-                </floor>
-              </difference>
-              <value>10</value>
-            </prod>
-            <value>0</value>
-          </max>
-        </sum>
-        <value>36</value>
-      </prod>
-    </expression>
-    <center>
-      <x-m>-0.0020</x-m>
-      <y-m>0</y-m>
-      <z-m>0.012</z-m>
-    </center>
-    <axis>
-      <x>0</x>
-      <y>1</y>
-      <z>0</z>
-    </axis>
-  </animation>
-  <animation>
-    <type>rotate</type>
-    <object-name>Set3</object-name>
-    <property alias="/params/bug-select"/>
-    <factor>0.163293151122</factor>
-    <center>
-      <x-m>-0.0020</x-m>
-      <y-m>0.0043</y-m>
-      <z-m>0.012</z-m>
-    </center>
-    <axis>
-      <x>0</x>
-      <y>1</y>
-      <z>0</z>
-    </axis>
-  </animation>
-  <!--Flow Numbers-->
+  
+  				
+  
+ <!--Flow Numbers-->
   <animation>
     <condition><not>
         <less-than>
@@ -233,9 +112,12 @@
           <floor>
             <div>
               <div>
-                <property alias="/params/fuelflow"/>
-                <value>2204.624</value>
-              </div>
+                  <property>/engines/engine[0]/thrust_lb</property>
+    				<prod>
+    				<property>/systems/engines/engine[0]/bucket-deg</property>
+   				<value>31.17</value>
+    			</prod>
+                </div>
               <value>10</value>
             </div>
           </floor>
@@ -243,17 +125,23 @@
             <prod>
               <difference>
                 <div>
-                  <property alias="/params/fuelflow"/>
-                  <value>2204.624</value>
+                  <property>/engines/engine[0]/thrust_lb</property>
+    				<prod>
+    				<property>/systems/engines/engine[0]/bucket-deg</property>
+   				<value>31.17</value>
+    			</prod>
                 </div>
                 <value>9.9</value>
                 <prod>
                   <floor>
                     <div>
                       <div>
-                        <property alias="/params/fuelflow"/>
-                        <value>2204.624</value>
-                      </div>
+                  <property>/engines/engine[0]/thrust_lb</property>
+    				<prod>
+    				<property>/systems/engines/engine[0]/bucket-deg</property>
+   				<value>31.17</value>
+    			</prod>
+                </div>
                       <value>10</value>
                     </div>
                   </floor>
@@ -270,7 +158,7 @@
     </expression>
     <center>
       <x-m>-0.0061</x-m>
-      <y-m>-0.0425</y-m>
+      <y-m>-0.05</y-m>
       <z-m>-0.011</z-m>
     </center>
     <axis>
@@ -294,23 +182,32 @@
         <sum>
           <floor>
             <div>
-              <property alias="/params/fuelflow"/>
-              <value>2204.624</value>
-            </div>
+                  <property>/engines/engine[0]/thrust_lb</property>
+    				<prod>
+    				<property>/systems/engines/engine[0]/bucket-deg</property>
+   				<value>31.17</value>
+    			</prod>
+                </div>
           </floor>
           <max>
             <prod>
               <difference>
                 <div>
-                  <property alias="/params/fuelflow"/>
-                  <value>2204.624</value>
+                  <property>/engines/engine[0]/thrust_lb</property>
+    				<prod>
+    				<property>/systems/engines/engine[0]/bucket-deg</property>
+   				<value>31.17</value>
+    			</prod>
                 </div>
                 <value>.9</value>
                 <floor>
                   <div>
-                    <property alias="/params/fuelflow"/>
-                    <value>2204.624</value>
-                  </div>
+                  <property>/engines/engine[0]/thrust_lb</property>
+    				<prod>
+    				<property>/systems/engines/engine[0]/bucket-deg</property>
+   				<value>31.17</value>
+    			</prod>
+                </div>
                 </floor>
               </difference>
               <value>10</value>
@@ -342,8 +239,18 @@
 
     <type>rotate</type>
     <object-name>Num3</object-name>
-    <property alias="/params/fuelflow"/>
-    <factor>0.163293151122</factor>
+    <expression>
+    <prod>
+    <div>
+    <property>/engines/engine[0]/thrust_lb</property>
+    <prod>
+    <property>/systems/engines/engine[0]/bucket-deg</property>
+   	<value>31.17</value>
+    </prod>
+    </div>
+    <value>360</value>
+    </prod>
+    </expression>
     <center>
       <x-m>-0.0061</x-m>
       <y-m>0.0042</y-m>
@@ -354,7 +261,7 @@
       <y>1</y>
       <z>0</z>
     </axis>
-  </animation>
+  </animation>-->
   <!-- Adjustment wheel -->
   <animation>
     <type>pick</type>

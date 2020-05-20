@@ -58,7 +58,7 @@
     <action>
       <name>Captain INS Switch</name>
       <button>0</button>
-      <repeatable>true</repeatable>
+      <repeatable>false</repeatable>
       <binding>
         <command>property-toggle</command>
         <property>/controls/engines/engine[3]/starter</property>
@@ -119,7 +119,7 @@
       <name>Relight</name>
 	
       <button>1</button>
-      <repeatable>true</repeatable>
+      <repeatable>false</repeatable>
       <binding>
         <command>property-toggle</command>
         <property>/systems/engines/engine[3]/relight</property>
