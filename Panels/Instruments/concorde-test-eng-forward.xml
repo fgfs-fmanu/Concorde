@@ -14,36 +14,7 @@
 
  <layers>
 
-  <layer>
-   <name>Lighting selector</name>
-   <type>switch</type>
-
-   <layer include="concorde-switch-3rd.xml">
-    <name>high</name>
-    <condition>
-     <and>
-      <not>
-       <property>/controls/lighting/crew/engineer/forward/low</property>
-      </not>
-      <not>
-       <property>/controls/lighting/crew/engineer/forward/test</property>
-      </not>
-     </and>
-    </condition>
-   </layer>
-
-   <layer include="concorde-switch-off.xml">
-    <name>test</name>
-    <condition>
-     <property>/controls/lighting/crew/engineer/forward/test</property>
-    </condition>
-   </layer>
-
-   <layer include="concorde-switch-on.xml">
-    <name>low</name>
-   </layer>
-  </layer>
-
+ 
   <layer>
    <name>Title on</name>
    <type>text</type>

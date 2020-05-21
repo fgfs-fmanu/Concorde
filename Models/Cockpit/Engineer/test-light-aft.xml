@@ -1,0 +1,153 @@
+<?xml version="1.0"?>
+<PropertyList>
+   <params>
+  <master-bat>/controls/lighting/crew/engineer/aft/low</master-bat>
+  <ess-main-split>/controls/lighting/crew/engineer/aft/test</ess-main-split>
+ </params>
+  <path>../Models/switch.ac</path>
+
+<effect>
+    <inherits-from>Aircraft/Concorde/Models/Effects/interior</inherits-from>
+    <object-name>Nut</object-name>
+    <object-name>Ball</object-name>
+    <object-name>Switch</object-name>
+</effect>
+
+  <animation>
+
+    <type>rotate</type>
+    <object-name>Switch</object-name>
+    <property>/controls/lighting/crew/engineer/aft/test</property>
+	<condition>
+    <not>
+    <property>/controls/lighting/crew/engineer/aft/low</property>
+    </not>
+  	</condition>
+      <interpolation>
+      <entry>
+        <ind>1</ind>
+        <dep>35</dep>
+      </entry>
+      <entry>
+        <ind>0</ind>
+        <dep>0</dep>
+      </entry>
+    </interpolation>
+    <center>
+      <x-m>0</x-m>
+      <y-m>0</y-m>
+      <z-m>0</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>Switch</object-name>
+	<condition>
+	<not>
+    <property>/controls/lighting/crew/engineer/aft/low</property>
+    </not>
+  	</condition>
+  	
+	
+    <action>
+      <name>Captain INS Switch</name>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-toggle</command>
+        <property>/controls/lighting/crew/engineer/aft/test</property>
+        <step>1</step>
+        <min>0</min>
+        <max>1</max>
+        <wrap>true</wrap>
+      </binding>
+     <binding>
+        <command>property-toggle</command>
+        <property>/instrumentation/generic/click</property>
+      </binding>
+    </action>
+
+</animation>
+
+
+
+
+
+
+
+
+
+
+
+<animation>
+    <type>rotate</type>
+    <object-name>Switch</object-name>
+    <property>/controls/lighting/crew/engineer/aft/low</property>
+
+	<condition>
+	<not>
+    <property>/controls/lighting/crew/engineer/aft/test</property>
+	</not>
+  </condition>
+    <interpolation>
+	<entry>
+        <ind>1</ind>
+        <dep>-35</dep>
+      </entry>
+      <entry>
+        <ind>0</ind>
+        <dep>0</dep>
+      </entry>
+      
+    </interpolation>
+    <center>
+      <x-m>0</x-m>
+      <y-m>0</y-m>
+      <z-m>0</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+
+
+
+  <animation>
+    <type>pick</type>
+    <object-name>Switch</object-name>
+	<condition>
+	<not>
+    <property>/controls/lighting/crew/engineer/aft/test</property>
+	</not>
+  </condition>
+    <action>
+      <name>Auto-trim</name>
+      <button>1</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-toggle</command>
+        <property>/controls/lighting/crew/engineer/aft/low</property>
+        <step>1</step>
+        <min>0</min>
+        <max>1</max>
+        <wrap>true</wrap>
+      </binding>
+     <binding>
+        <command>property-toggle</command>
+        <property>/instrumentation/generic/click</property>
+      </binding>
+    </action>
+  </animation>
+
+
+</PropertyList>

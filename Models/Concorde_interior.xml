@@ -3837,6 +3837,63 @@
      <pitch-deg>-5</pitch-deg>
     </offsets>
   </model>
+<model>
+    <name>Test Light Aft</name>
+    <path>Cockpit/Engineer/test-light-aft.xml</path>
+    <overlay>
+   <params>
+  <master-bat>/controls/lighting/crew/engineer/aft/low</master-bat>
+  <ess-main-split>/controls/lighting/crew/engineer/aft/test</ess-main-split>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.26</x-m>
+      <y-m>0.515</y-m>
+      <z-m>1.014</z-m>
+      
+      <heading-deg>-95</heading-deg>
+     <pitch-deg>-5</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  <model>
+    <name>Test Light Center</name>
+    <path>Cockpit/Engineer/test-light-center.xml</path>
+    <overlay>
+   <params>
+  <master-bat>/controls/lighting/crew/engineer/center/low</master-bat>
+  <ess-main-split>/controls/lighting/crew/engineer/center/test</ess-main-split>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.429</x-m>
+      <y-m>0.540</y-m>
+      <z-m>1.015</z-m>
+      
+      <heading-deg>-95</heading-deg>
+     <pitch-deg>-5</pitch-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <name>Test Light Forward</name>
+    <path>Cockpit/Engineer/test-light-forward.xml</path>
+    <overlay>
+   <params>
+  <master-bat>/controls/lighting/crew/engineer/forward/low</master-bat>
+  <ess-main-split>/controls/lighting/crew/engineer/forward/test</ess-main-split>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-22.298</x-m>
+      <y-m>0.430</y-m>
+      <z-m>1.511</z-m>
+      
+      <heading-deg>-83</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
 
 
 <!-- ======== -->
