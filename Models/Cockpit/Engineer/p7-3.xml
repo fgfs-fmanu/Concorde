@@ -4,7 +4,7 @@
 
   <params>
     <thrustlb>/engines/engine[2]/thrust_lb</thrustlb>
-    <bucket-pos>/systems/engines/engine[2]/bucket-deg</bucket-pos>
+    <nozzle>/engines/engine[2]/nozzle-pos-norm</nozzle>
   </params>
 
 <effect>
@@ -73,12 +73,15 @@
     <div>
     <prod>
     <property>/engines/engine[2]/thrust_lb</property>
-    <value>4</value>
+    <value>3</value>
     </prod>
     <prod>
-    <property>/systems/engines/engine[2]/bucket-deg</property>
-    <value>31.17</value>
-    </prod>
+   	<sum>
+   	<value>0.8</value>
+   	<prod><property>/engines/engine[2]/nozzle-pos-norm</property><value>0.2</value></prod>
+   	</sum>
+   	<prod><value>1788</value><value>0.5</value></prod>
+   	</prod>
     </div>
     </expression>
     <center>
@@ -114,8 +117,11 @@
               <div>
                   <property>/engines/engine[2]/thrust_lb</property>
     				<prod>
-    				<property>/systems/engines/engine[2]/bucket-deg</property>
-   				<value>31.17</value>
+    				<sum>
+    				<value>0.8</value>
+    				<prod><property>/engines/engine[2]/nozzle-pos-norm</property><value>0.2</value></prod>
+    				</sum>
+   				<prod><value>1788</value><value>0.5</value></prod>
     			</prod>
                 </div>
               <value>10</value>
@@ -127,8 +133,11 @@
                 <div>
                   <property>/engines/engine[2]/thrust_lb</property>
     				<prod>
-    				<property>/systems/engines/engine[2]/bucket-deg</property>
-   				<value>31.17</value>
+    				<sum>
+    				<value>0.8</value>
+    				<prod><property>/engines/engine[2]/nozzle-pos-norm</property><value>0.2</value></prod>
+    				</sum>
+   				<prod><value>1788</value><value>0.5</value></prod>
     			</prod>
                 </div>
                 <value>9.9</value>
@@ -138,8 +147,11 @@
                       <div>
                   <property>/engines/engine[2]/thrust_lb</property>
     				<prod>
-    				<property>/systems/engines/engine[2]/bucket-deg</property>
-   				<value>31.17</value>
+    				<sum>
+    				<value>0.8</value>
+    				<prod><property>/engines/engine[2]/nozzle-pos-norm</property><value>0.2</value></prod>
+    				</sum>
+   				<prod><value>1788</value><value>0.5</value></prod>
     			</prod>
                 </div>
                       <value>10</value>
@@ -184,8 +196,11 @@
             <div>
                   <property>/engines/engine[2]/thrust_lb</property>
     				<prod>
-    				<property>/systems/engines/engine[2]/bucket-deg</property>
-   				<value>31.17</value>
+    				<sum>
+    				<value>0.8</value>
+    				<prod><property>/engines/engine[2]/nozzle-pos-norm</property><value>0.2</value></prod>
+    				</sum>
+   				<prod><value>1788</value><value>0.5</value></prod>
     			</prod>
                 </div>
           </floor>
@@ -195,8 +210,11 @@
                 <div>
                   <property>/engines/engine[2]/thrust_lb</property>
     				<prod>
-    				<property>/systems/engines/engine[2]/bucket-deg</property>
-   				<value>31.17</value>
+    				<sum>
+    				<value>0.8</value>
+    				<prod><property>/engines/engine[2]/nozzle-pos-norm</property><value>0.2</value></prod>
+    				</sum>
+   				<prod><value>1788</value><value>0.5</value></prod>
     			</prod>
                 </div>
                 <value>.9</value>
@@ -204,8 +222,11 @@
                   <div>
                   <property>/engines/engine[2]/thrust_lb</property>
     				<prod>
-    				<property>/systems/engines/engine[2]/bucket-deg</property>
-   				<value>31.17</value>
+    				<sum>
+    				<value>0.8</value>
+    				<prod><property>/engines/engine[2]/nozzle-pos-norm</property><value>0.2</value></prod>
+    				</sum>
+   				<prod><value>1788</value><value>0.5</value></prod>
     			</prod>
                 </div>
                 </floor>
@@ -244,9 +265,12 @@
     <div>
     <property>/engines/engine[2]/thrust_lb</property>
     <prod>
-    <property>/systems/engines/engine[2]/bucket-deg</property>
-   	<value>31.17</value>
-    </prod>
+   	<sum>
+   	<value>0.8</value>
+   	<prod><property>/engines/engine[2]/nozzle-pos-norm</property><value>0.2</value></prod>
+   	</sum>
+   	<prod><value>1788</value><value>0.5</value></prod>
+   	</prod>
     </div>
     <value>360</value>
     </prod>

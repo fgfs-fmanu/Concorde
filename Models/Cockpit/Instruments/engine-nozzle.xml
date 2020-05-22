@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <PropertyList>
-  <path>../Models/enginenozzle.ac</path>
+  <path>../Models/enginenozzle4.ac</path>
   <params>
-    <nozzle>/engines/engine[0]/nozzle-pos-norm</nozzle>
+    <nozzle>/engines/engine[3]/nozzle-pos-norm</nozzle>
   </params>
 
 <effect>
@@ -15,9 +15,6 @@
     <inherits-from>Aircraft/Concorde/Models/Effects/flash</inherits-from>
     <object-name>Guage</object-name>
     <object-name>Needle</object-name>
-    <object-name>Num1</object-name>
-    <object-name>Num2</object-name>
-    <object-name>Num3</object-name>
 
 </effect>
 
@@ -42,8 +39,17 @@
 
     <type>rotate</type>
     <object-name>Needle</object-name>
-    <property alias="/params/nozzle"/>
-    <factor>225</factor>
+    <expression>
+    <prod>
+     <sum>
+    <value>0.8</value>
+    <prod><property alias="/params/nozzle"/><value>0.2</value></prod>
+    </sum>
+    
+    
+    <value>225</value>
+    </prod>
+    </expression>
     <center>
       <x-m>0</x-m>
       <y-m>0</y-m>
@@ -70,15 +76,27 @@
       <prod>
         <sum>
           <floor>
-            <property alias="/params/nozzle"/>
+             <sum>
+   			 <value>0.8</value>
+   			 <prod><property alias="/params/nozzle"/><value>0.2</value></prod>
+    		</sum>
+    
           </floor>
           <max>
             <prod>
               <difference>
-                <property alias="/params/nozzle"/>
+                 <sum>
+   				 <value>0.6</value>
+    			<prod><property alias="/params/nozzle"/><value>0.4</value></prod>
+    			</sum>
+    
                 <value>0.99</value>
                 <floor>
-                  <property alias="/params/nozzle"/>
+                   <sum>
+   				 <value>0.6</value>
+  				  <prod><property alias="/params/nozzle"/><value>0.4</value></prod>
+   				 </sum>
+    
                 </floor>
               </difference>
               <value>100</value>
@@ -107,8 +125,8 @@
           <value>20.0</value>
         </less-than>
     </not></condition>
-
-    <type>rotate</type>
+ 
+   <type>rotate</type>
     <object-name>Num2</object-name>
     <expression>
       <prod>
@@ -116,7 +134,11 @@
           <div>
             <floor>
               <prod>
-                <property alias="/params/nozzle"/>
+                 <sum>
+    <value>0.8</value>
+    <prod><property alias="/params/nozzle"/><value>0.2</value></prod>
+    </sum>
+    
                 <value>10</value>
               </prod>
             </floor>
@@ -125,12 +147,20 @@
           <max>
             <prod>
               <difference>
-                <property alias="/params/nozzle"/>
+                 <sum>
+    <value>0.8</value>
+    <prod><property alias="/params/nozzle"/><value>0.2</value></prod>
+    </sum>
+    
                 <value>0.09</value>
                 <div>
                   <floor>
                     <prod>
-                      <property alias="/params/nozzle"/>
+                       <sum>
+    <value>0.8</value>
+    <prod><property alias="/params/nozzle"/><value>0.2</value></prod>
+    </sum>
+    
                       <value>10</value>
                     </prod>
                   </floor>
@@ -166,8 +196,17 @@
 
     <type>rotate</type>
     <object-name>Num3</object-name>
-    <property alias="/params/nozzle"/>
-    <factor>3600</factor>
+    <expression>
+    <prod>
+     <sum>
+    <value>0.8</value>
+    <prod><property alias="/params/nozzle"/><value>0.2</value></prod>
+    </sum>
+    <value>3600</value>
+    </prod>
+    </expression>
+    
+    
     <center>
       <x-m>-0.00720</x-m>
       <y-m>0.005</y-m>
@@ -187,7 +226,6 @@
     <object-name>Num1</object-name>
     <object-name>Num2</object-name>
     <object-name>Num3</object-name>
-
   <condition>
   <and>
     <property>controls/lighting/instrument-lights</property>

@@ -9,41 +9,7 @@
 
  <layers>
 
-  <layer>
-   <name>Valve selector</name>
-   <type>switch</type>
-
-   <layer include="concorde-switch-3rd.xml">
-    <name>auto</name>
-    <condition>
-     <property>/controls/engines/schedule-auto</property>
-    </condition>
-   </layer>
-
-   <layer include="concorde-switch-on.xml">
-    <name>high</name>
-    <condition>
-     <not>
-      <property>/controls/engines/schedule-low</property>
-     </not>
-    </condition>
-   </layer>
-
-   <layer include="concorde-switch-off.xml">
-    <name>low</name>
-   </layer>
-
-   <transformations>
-    <transformation>
-     <type>x-shift</type>
-     <offset>-34</offset>
-    </transformation>
-    <transformation>
-     <type>y-shift</type>
-     <offset>-3</offset>
-    </transformation>
-   </transformations>
-  </layer>
+  
 
   <layer>
    <name>Title on</name>
@@ -126,39 +92,7 @@
 
  <actions>
 
-  <action>
-   <name>Toggle auto</name>
-   <button>1</button>
-   <x>-55</x>
-   <y>-21</y>
-   <w>42</w>
-   <h>42</h>
-   <binding>
-    <command>property-toggle</command>
-    <property>/controls/engines/schedule-auto</property>
-   </binding>
-   <binding>
-    <command>property-toggle</command>
-    <property>/instrumentation/generic/click</property>
-   </binding>
-  </action>
-
-  <action>
-   <name>Toggle low / high</name>
-   <button>0</button>
-   <x>-55</x>
-   <y>-21</y>
-   <w>42</w>
-   <h>42</h>
-   <binding>
-    <command>property-toggle</command>
-    <property>/controls/engines/schedule-low</property>
-   </binding>
-   <binding>
-    <command>property-toggle</command>
-    <property>/instrumentation/generic/click</property>
-   </binding>
-  </action>
+ 
 
  </actions>
  

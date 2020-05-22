@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <PropertyList>
-  <path>../Models/percentneedle.ac</path>
+  <path>../Models/angleneedle.ac</path>
   <params>
     <bucket-pos>/systems/engines/engine[1]/bucket-deg</bucket-pos>
    </params>

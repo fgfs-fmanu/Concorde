@@ -1228,7 +1228,7 @@
   </model>
   <model>
     <name>Engine 4 Nozzle</name>
-    <path>Aircraft/Concorde/Models/Cockpit/Instruments/engine-nozzle4.xml</path>
+    <path>Aircraft/Concorde/Models/Cockpit/Instruments/engine-nozzle.xml</path>
     <overlay>
       <params>
         <nozzle>/engines/engine[3]/nozzle-pos-norm</nozzle>
@@ -4692,6 +4692,36 @@
     </offsets>
   </model>
   
+  <model>
+    <name>Engine Schedule</name>
+    <path>Cockpit/Engineer/engine-schedule.xml</path>
+<overlay>
+</overlay>
+    <offsets>
+      <x-m>-22.093</x-m>
+      <y-m>0.465</y-m>
+      <z-m>1.488</z-m>
+      
+      <heading-deg>-83</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+  <model>
+    <name>Engine Schedule Rotary</name>
+    <path>Cockpit/Engineer/engine-schedule-rotary.xml</path>
+<overlay>
+</overlay>
+    <offsets>
+      <x-m>-22.132</x-m>
+      <y-m>0.462</y-m>
+      <z-m>1.495</z-m>
+     
+      <heading-deg>-83</heading-deg>
+     <pitch-deg>25</pitch-deg>
+     
+    </offsets>
+  </model>
+  
   
   
   
@@ -4922,7 +4952,7 @@
     <overlay>
       <params>
     <thrustlb>/engines/engine[0]/thrust_lb</thrustlb>
-    <bucket-pos>/systems/engines/engine[0]/bucket-deg</bucket-pos>
+    <nozzle>/engines/engine[0]/nozzle-pos-norm</nozzle>
   </params>
     </overlay>
      <offsets>
@@ -4941,7 +4971,7 @@
     <overlay>
       <params>
     <thrustlb>/engines/engine[1]/thrust_lb</thrustlb>
-    <bucket-pos>/systems/engines/engine[1]/bucket-deg</bucket-pos>
+    <nozzle>/engines/engine[1]/nozzle-pos-norm</nozzle>
   </params>
     </overlay>
      <offsets>
@@ -4959,7 +4989,7 @@
     <overlay>
       <params>
     <thrustlb>/engines/engine[2]/thrust_lb</thrustlb>
-    <bucket-pos>/systems/engines/engine[2]/bucket-deg</bucket-pos>
+    <nozzle>/engines/engine[2]/nozzle-pos-norm</nozzle>
   </params>
     </overlay>
    <offsets>
@@ -4978,7 +5008,7 @@
     <overlay>
       <params>
     <thrustlb>/engines/engine[3]/thrust_lb</thrustlb>
-    <bucket-pos>/systems/engines/engine[3]/bucket-deg</bucket-pos>
+    <nozzle>/engines/engine[3]/nozzle-pos-norm</nozzle>
   </params>
     </overlay>
     <offsets>
