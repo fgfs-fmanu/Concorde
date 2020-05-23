@@ -282,7 +282,7 @@
 <!-- autopilot -->
 
   <autoflight>
-   <altitude-select>10000</altitude-select>
+   <altitude-select>60000</altitude-select>
    <speed-select>250</speed-select>
    <autopilot n="0">
     <heading-select>283</heading-select>                                    <!-- magnetic -->

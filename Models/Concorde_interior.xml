@@ -5580,6 +5580,58 @@
      <pitch-deg>0</pitch-deg>
     </offsets>
   </model>
+  
+  <!-- ======== -->
+<!-- ENGINEER LIGHTING -->
+<!-- ======== -->
+  
+  
+  
+  <model>
+    <name>Light Engineer Spot</name>
+    <path>Cockpit/Engineer/light-engineer-spot.xml</path>
+   
+    <offsets>
+      <x-m>-22.511</x-m>
+      <y-m>0.520</y-m>
+      <z-m>0.92</z-m>
+      
+      <heading-deg>-85</heading-deg>
+     <pitch-deg>0</pitch-deg>
+     <roll-deg>-75</roll-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <name>Light Engineer Flood</name>
+    <path>Cockpit/Engineer/light-engineer-flood.xml</path>
+   
+    <offsets>
+      <x-m>-22.511</x-m>
+      <y-m>0.520</y-m>
+      <z-m>0.845</z-m>
+      
+      <heading-deg>-85</heading-deg>
+     <pitch-deg>0</pitch-deg>
+     <roll-deg>-75</roll-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <name>Light Engineer</name>
+    <path>Cockpit/Engineer/light-engineer.xml</path>
+   
+    <offsets>
+      <x-m>-22.567</x-m>
+      <y-m>0.520</y-m>
+      <z-m>0.745</z-m>
+      
+      <heading-deg>-85</heading-deg>
+     <pitch-deg>0</pitch-deg>
+     <roll-deg>-75</roll-deg>
+    </offsets>
+  </model>
+  
 
 <!-- ======== -->
 <!-- LIGHTING -->
