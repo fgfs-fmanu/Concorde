@@ -3536,7 +3536,7 @@
       <y-m>0.485</y-m>
       <z-m>1.450</z-m>
       
-      <heading-deg>-90</heading-deg>
+      <heading-deg>-95</heading-deg>
      <pitch-deg>25</pitch-deg>
     </offsets>
   </model>
@@ -3556,7 +3556,7 @@
       <y-m>0.475</y-m>
       <z-m>1.450</z-m>
       
-      <heading-deg>-90</heading-deg>
+      <heading-deg>-95</heading-deg>
      <pitch-deg>25</pitch-deg>
     </offsets>
   </model>
@@ -3576,7 +3576,7 @@
       <y-m>0.46</y-m>
       <z-m>1.450</z-m>
       
-      <heading-deg>-90</heading-deg>
+      <heading-deg>-95</heading-deg>
      <pitch-deg>25</pitch-deg>
     </offsets>
   </model>
@@ -3595,12 +3595,71 @@
       <y-m>0.455</y-m>
       <z-m>1.450</z-m>
       
-      <heading-deg>-90</heading-deg>
+      <heading-deg>-95</heading-deg>
      <pitch-deg>25</pitch-deg>
     </offsets>
   </model>
 
-
+<model>
+    <name>Watts 1</name>
+    <path>Cockpit/Engineer/watt-1.xml</path>
+    <overlay>
+    </overlay>
+    <offsets>
+      <x-m>-21.465</x-m>
+      <y-m>0.469</y-m>
+      <z-m>1.480</z-m>
+      
+      <heading-deg>-95</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  <model>
+    <name>Watts 2</name>
+    <path>Cockpit/Engineer/watt-2.xml</path>
+    <overlay>
+    </overlay>
+    <offsets>
+      <x-m>-21.410</x-m>
+      <y-m>0.46</y-m>
+      <z-m>1.480</z-m>
+      
+      <heading-deg>-95</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <name>Watts 3</name>
+    <path>Cockpit/Engineer/watt-3.xml</path>
+    <overlay>
+    </overlay>
+    <offsets>
+      <x-m>-21.310</x-m>
+      <y-m>0.448</y-m>
+      <z-m>1.480</z-m>
+      
+      <heading-deg>-95</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <name>Watts 4</name>
+    <path>Cockpit/Engineer/watt-4.xml</path>
+    <overlay>
+    </overlay>
+    <offsets>
+      <x-m>-21.255</x-m>
+      <y-m>0.44</y-m>
+      <z-m>1.480</z-m>
+      
+      <heading-deg>-95</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
 
 
 
@@ -3679,6 +3738,22 @@
       <heading-deg>-95</heading-deg>
      <pitch-deg>-5</pitch-deg>
      <roll-deg>-45</roll-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <name>AC Selector</name>
+    <path>Cockpit/Engineer/freq.xml</path>
+   <overlay>
+   
+    </overlay>
+    <offsets>
+      <x-m>-21.349</x-m>
+      <y-m>0.520</y-m>
+      <z-m>1.052</z-m>
+      
+      <heading-deg>-95</heading-deg>
+     <pitch-deg>-5</pitch-deg>
     </offsets>
   </model>
 

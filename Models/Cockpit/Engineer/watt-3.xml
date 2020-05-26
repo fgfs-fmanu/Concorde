@@ -1,0 +1,97 @@
+<?xml version="1.0"?>
+<PropertyList>
+  <path>../Models/powergauge.ac</path>
+  
+
+ 
+<effect>
+    <inherits-from>Aircraft/Concorde/Models/Effects/interior</inherits-from>
+    <object-name>Circle</object-name>
+    <object-name>Guage</object-name>
+    <object-name>Needle</object-name>
+
+</effect>
+
+<effect>
+    <inherits-from>Aircraft/Concorde/Models/Effects/flash</inherits-from>
+    <object-name>Circle</object-name>
+    <object-name>Guage</object-name>
+    <object-name>Needle</object-name>
+
+</effect>
+
+  
+
+  <animation>
+    
+
+    <type>rotate</type>
+    <object-name>Needle</object-name>
+    <property>/systems/electrical/outputs/probe/ac-generator[2]</property>
+    <interpolation>
+      <entry>
+        <ind>-1</ind>
+        <dep>47</dep>
+      </entry>
+      <entry>
+        <ind>88</ind>
+        <dep>25</dep>
+      </entry>
+      <entry>
+        <ind>177</ind>
+        <dep>17</dep>
+      </entry>
+      <entry>
+        <ind>265</ind>
+        <dep>-3</dep>
+      </entry>
+      <entry>
+        <ind>353</ind>
+        <dep>-23</dep>
+      </entry>
+      <entry>
+        <ind>442</ind>
+        <dep>-43</dep>
+      </entry>
+    </interpolation>
+    <center>
+      <x-m>0</x-m>
+      <y-m>0</y-m>
+      <z-m>-0.0123</z-m>
+    </center>
+    <axis>
+      <x>1</x>
+      <y>0</y>
+      <z>0</z>
+    </axis>
+  </animation>
+  
+  
+  
+  
+    
+  <!--Default Lighting-->
+  <animation>
+    <type>material</type>
+    <object-name>Guage</object-name>
+    <object-name>Needle</object-name>
+
+  <condition>
+  <and>
+    <property>controls/lighting/instrument-lights</property>
+        <greater-than>
+          <property>/systems/electrical/outputs/specific</property>
+          <value>20.0</value>
+        </greater-than>
+  </and>
+  </condition>
+  <emission>
+   <red>0.7</red>
+   <green>0.2</green>
+   <blue>0.2</blue>
+   <factor-prop>/controls/lighting/instruments-norm</factor-prop>
+  </emission>
+  </animation>
+  
+
+</PropertyList>

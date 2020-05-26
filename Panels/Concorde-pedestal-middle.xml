@@ -58,7 +58,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
     <or>
      <and>
       <property>/sim/current-view/internal</property>
-      <property>/systems/seat/captain</property>
+      <property>/systems/seat/all</property>
       <less-than>
        <property>/sim/current-view/goal-heading-offset-deg</property>
        <value>325</value>
@@ -87,7 +87,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
     <or>
      <and>
       <property>/sim/current-view/internal</property>
-      <property>/systems/seat/captain</property>
+      <property>/systems/seat/all</property>
       <less-than>
        <property>/sim/current-view/goal-heading-offset-deg</property>
        <value>320</value>
@@ -119,7 +119,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
     <or>
      <and>
       <property>/sim/current-view/internal</property>
-      <property>/systems/seat/captain</property>
+      <property>/systems/seat/all</property>
       <less-than>
        <property>/sim/current-view/goal-heading-offset-deg</property>
        <value>320</value>
