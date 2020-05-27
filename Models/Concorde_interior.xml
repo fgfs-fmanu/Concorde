@@ -3702,7 +3702,7 @@
       <y-m>0.522</y-m>
       <z-m>1.102</z-m>
       
-      <heading-deg>-95</heading-deg>
+      <heading-deg>-100</heading-deg>
      <pitch-deg>-5</pitch-deg>
     </offsets>
   </model>
@@ -3718,7 +3718,7 @@
       <y-m>0.540</y-m>
       <z-m>1.052</z-m>
       
-      <heading-deg>-95</heading-deg>
+      <heading-deg>-100</heading-deg>
      <pitch-deg>-5</pitch-deg>
      <roll-deg>-90</roll-deg>
     </offsets>
@@ -3735,22 +3735,57 @@
       <y-m>0.520</y-m>
       <z-m>1.052</z-m>
       
-      <heading-deg>-95</heading-deg>
+      <heading-deg>-100</heading-deg>
      <pitch-deg>-5</pitch-deg>
      <roll-deg>-45</roll-deg>
     </offsets>
   </model>
   
   <model>
-    <name>AC Selector</name>
+    <name>Frequency</name>
     <path>Cockpit/Engineer/freq.xml</path>
    <overlay>
    
     </overlay>
     <offsets>
       <x-m>-21.349</x-m>
-      <y-m>0.520</y-m>
+      <y-m>0.528</y-m>
       <z-m>1.052</z-m>
+      
+      <heading-deg>-100</heading-deg>
+     <pitch-deg>-5</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  <model>
+    <name>DC Volts</name>
+    <path>Cockpit/Engineer/dcvolts.xml</path>
+   <overlay>
+   
+    </overlay>
+    <offsets>
+      <x-m>-21.471</x-m>
+      <y-m>0.545</y-m>
+      <z-m>1.052</z-m>
+      
+      
+      <heading-deg>-100</heading-deg>
+     <pitch-deg>-5</pitch-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <name>AC Volts</name>
+    <path>Cockpit/Engineer/acvolts.xml</path>
+   <overlay>
+   
+    </overlay>
+    <offsets>
+      <x-m>-21.248</x-m>
+      <y-m>0.505</y-m>
+      <z-m>1.052</z-m>
+      
       
       <heading-deg>-95</heading-deg>
      <pitch-deg>-5</pitch-deg>
