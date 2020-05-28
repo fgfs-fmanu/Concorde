@@ -3706,6 +3706,45 @@
      <pitch-deg>-5</pitch-deg>
     </offsets>
   </model>
+  
+  
+  
+  <model>
+    <name>Battery Left Amps 1</name>
+    <path>Cockpit/Engineer/battamps-1.xml</path>
+    <overlay>
+   <params>
+  <load-amps>/systems/electrical/suppliers/battery-amps[0]</load-amps>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.394</x-m>
+      <y-m>0.535</y-m>
+      <z-m>1.101</z-m>
+      
+      <heading-deg>-95</heading-deg>
+     <pitch-deg>-5</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  <model>
+    <name>Battery Left Amps 2</name>
+    <path>Cockpit/Engineer/battamps-2.xml</path>
+    <overlay>
+   <params>
+  <load-amps>/systems/electrical/suppliers/battery-amps[1]</load-amps>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.330</x-m>
+      <y-m>0.527</y-m>
+      <z-m>1.101</z-m>
+      
+      <heading-deg>-95</heading-deg>
+     <pitch-deg>-5</pitch-deg>
+    </offsets>
+  </model>
 
 <model>
     <name>DC Selector</name>
@@ -3947,6 +3986,91 @@
      <pitch-deg>-5</pitch-deg>
     </offsets>
   </model>
+  
+  
+  
+  
+  
+  <model>
+    <name>TRU Amps 1</name>
+    <path>Cockpit/Engineer/truamps-1.xml</path>
+    <overlay>
+   <params>
+  <load-volts>/systems/electrical/outputs/probe/ac-main[0]</load-volts>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.468</x-m>
+      <y-m>0.550</y-m>
+      <z-m>1.195</z-m>
+      
+      <heading-deg>-97</heading-deg>
+     <pitch-deg>-1</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  <model>
+    <name>TRU Amps 2</name>
+    <path>Cockpit/Engineer/truamps-2.xml</path>
+    <overlay>
+   <params>
+  <load-volts>/systems/electrical/outputs/probe/ac-main[1]</load-volts>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.403</x-m>
+      <y-m>0.54</y-m>
+      <z-m>1.195</z-m>
+      
+      <heading-deg>-97</heading-deg>
+     <pitch-deg>-1</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  <model>
+    <name>TRU Amps 3</name>
+    <path>Cockpit/Engineer/truamps-3.xml</path>
+    <overlay>
+   <params>
+  <load-volts>/systems/electrical/outputs/probe/ac-main[2]</load-volts>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.330</x-m>
+      <y-m>0.530</y-m>
+      <z-m>1.195</z-m>
+      
+      <heading-deg>-97</heading-deg>
+     <pitch-deg>-1</pitch-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <name>TRU Amps 4</name>
+    <path>Cockpit/Engineer/truamps-4.xml</path>
+    <overlay>
+   <params>
+  <load-volts>/systems/electrical/outputs/probe/ac-main[3]</load-volts>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.268</x-m>
+      <y-m>0.520</y-m>
+      <z-m>1.195</z-m>
+      
+      <heading-deg>-97</heading-deg>
+     <pitch-deg>-1</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  
+  
+  
+  
+  
 <model>
     <name>Test Light Aft</name>
     <path>Cockpit/Engineer/test-light-aft.xml</path>
