@@ -4067,6 +4067,25 @@
   
   
   
+  <model>
+    <name>Emerg Gen</name>
+    <path>Cockpit/Engineer/emerggen.xml</path>
+    <overlay>
+   <params>
+  <load-volts>/systems/electrical/outputs/probe/ac-main1</load-volts>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.366</x-m>
+      <y-m>0.535</y-m>
+      <z-m>1.255</z-m>
+      
+      <heading-deg>-97</heading-deg>
+     <pitch-deg>-1</pitch-deg>
+    </offsets>
+  </model>
+  
+  
   
   
   

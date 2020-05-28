@@ -1,0 +1,94 @@
+<?xml version="1.0"?>
+<PropertyList>
+  <path>../Models/emerggen.ac</path>
+  <params>
+  <load-volts>/systems/electrical/outputs/probe/ac-main1</load-volts>
+ </params>
+
+<effect>
+    <inherits-from>Aircraft/Concorde/Models/Effects/interior</inherits-from>
+    <object-name>Circle</object-name>
+    <object-name>Guage</object-name>
+    <object-name>Needle</object-name>
+
+</effect>
+
+<effect>
+    <inherits-from>Aircraft/Concorde/Models/Effects/flash</inherits-from>
+    <object-name>Circle</object-name>
+    <object-name>Guage</object-name>
+    <object-name>Needle</object-name>
+    <object-name>Text</object-name>
+
+
+</effect>
+
+  
+
+  <animation>
+    
+
+    <type>rotate</type>
+    <object-name>Needle</object-name>
+    
+    <property>/systems/electrical/outputs/probe/ac-main1</property>
+    <interpolation>
+      <entry>
+        <ind>0</ind>
+        <dep>100</dep>
+      </entry>
+      <entry>
+        <ind>45</ind>
+        <dep>45</dep>
+      </entry>
+      <entry>
+        <ind>90</ind>
+        <dep>-10</dep>
+      </entry>
+      <entry>
+        <ind>135</ind>
+        <dep>-100</dep>
+      </entry>
+     
+    </interpolation>
+    <center>
+      <x-m>0</x-m>
+      <y-m>0</y-m>
+      <z-m>0</z-m>
+    </center>
+    <axis>
+      <x>1</x>
+      <y>0</y>
+      <z>0</z>
+    </axis>
+  </animation>
+  
+  
+  
+  
+    
+  <!--Default Lighting-->
+  <animation>
+    <type>material</type>
+    <object-name>Guage</object-name>
+    <object-name>Needle</object-name>
+
+  <condition>
+  <and>
+    <property>controls/lighting/instrument-lights</property>
+        <greater-than>
+          <property>/systems/electrical/outputs/specific</property>
+          <value>20.0</value>
+        </greater-than>
+  </and>
+  </condition>
+  <emission>
+   <red>0.7</red>
+   <green>0.2</green>
+   <blue>0.2</blue>
+   <factor-prop>/controls/lighting/instruments-norm</factor-prop>
+  </emission>
+  </animation>
+ 
+
+</PropertyList>
