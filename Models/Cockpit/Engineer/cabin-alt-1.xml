@@ -1,0 +1,356 @@
+<?xml version="1.0"?>
+<PropertyList>
+  <path>../Models/pressurisation.ac</path>
+
+  <params>
+    <datum-sel>/systems/pressurization/system[0]/datum-mbar</datum-sel>
+  <cabin-sel>/systems/pressurization/system[0]/cabin-alt-ft</cabin-sel>
+  <rate-sel>/systems/pressurization/system[0]/mbar-per-min</rate-sel>
+  <altitude-sel>/systems/pressurization/system[0]/max-diff-ft</altitude-sel>
+  </params>
+
+<effect>
+    <inherits-from>Aircraft/Concorde/Models/Effects/interior</inherits-from>
+    <object-name>Cube</object-name>
+    <object-name>A</object-name>
+    <object-name>B</object-name>
+    <object-name>R</object-name>
+</effect>
+
+<effect>
+    <inherits-from>Aircraft/Concorde/Models/Effects/flash</inherits-from>
+    <object-name>Guage</object-name>
+    <object-name>Needle</object-name>
+</effect>
+
+
+
+
+ 
+
+  <animation>
+    <type>rotate</type>
+    <object-name>FuelAdjust</object-name>
+    <object-name>FuelAdjust.001</object-name>
+    <property alias="/params/bug-select"/>
+    <factor>0.1</factor>
+    <center>
+      <x-m>0.00855</x-m>
+      <y-m>0.02084</y-m>
+      <z-m>-0.02499</z-m>
+    </center>
+    <axis>
+      <x>-1</x>
+      <y>0</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    
+
+    <type>rotate</type>
+    <object-name>Needle</object-name>
+    <expression>
+    <prod>
+    <sum>
+    <property>/systems/pressurization/system[0]/datum-mbar</property>
+    <value>-1005</value>
+    </sum>
+    <value>0.35</value>
+    </prod>
+    </expression>
+    <center>
+      <x-m>0</x-m>
+      <y-m>0</y-m>
+      <z-m>0</z-m>
+    </center>
+    <axis>
+      <x>-1</x>
+      <y>0</y>
+      <z>0</z>
+    </axis>
+  </animation>
+  
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>Guage</object-name>
+    <expression>
+    <sum>
+    <prod>
+    <sum>
+    <property>/systems/pressurization/system[0]/cabin-alt-ft</property>
+    <value>-6100</value>
+    </sum>
+    <value>-0.0115</value>
+    </prod>
+    <prod>
+    <sum>
+    <property>/systems/pressurization/system[0]/datum-mbar</property>
+    <value>-1005</value>
+    </sum>
+    <value>0.36</value>
+    </prod>
+    </sum>
+    </expression>
+    <center>
+      <x-m>0</x-m>
+      <y-m>0</y-m>
+      <z-m>0</z-m>
+    </center>
+    <axis>
+      <x>-1</x>
+      <y>0</y>
+      <z>0</z>
+    </axis>
+  </animation>
+  <!--Bug Numbers-->
+  
+  <!-- Adjustment wheel -->
+  <animation>
+    <type>pick</type>
+    <object-name>A</object-name>
+    <action>
+      <name>A Adjust Up</name>
+      <button>3</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>/systems/pressurization/system[0]/cabin-alt-ft</property>
+        <step>100</step>
+    	<min>-3000</min>
+    	<max>20000</max>
+        <wrap>false</wrap>
+      </binding>
+    </action>
+    <action>
+      <name>A Adjust Down</name>
+      <button>4</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>/systems/pressurization/system[0]/cabin-alt-ft</property>
+        <step>-100</step>
+    <min>-3000</min>
+    <max>20000</max>
+        <wrap>false</wrap>
+      </binding>
+    </action>
+  </animation>
+  
+  
+  
+  
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>A</object-name>
+    <expression>
+    <prod>
+    <property>/systems/pressurization/system[0]/cabin-alt-ft</property>
+    <value>-0.02</value>
+    </prod>
+    </expression>
+    <center>
+      <x-m>0</x-m>
+      <y-m>-0.0265</y-m>
+      <z-m>-0.0252</z-m>
+    </center>
+    <axis>
+      <x>-1</x>
+      <y>0</y>
+      <z>0</z>
+    </axis>
+  </animation>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <animation>
+    <type>pick</type>
+    <object-name>B</object-name>
+    <action>
+      <name>B Adjust Up</name>
+      <button>3</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>/systems/pressurization/system[0]/datum-mbar</property>
+        <step>1</step>
+    <min>950</min>
+    <max>1100</max>
+        <wrap>false</wrap>
+      </binding>
+      <binding>
+    <command>nasal</command>
+    <script>globals.Concorde.pressuresystem.altitudeselectorexport();</script>
+   </binding>
+    </action>
+    <action>
+      <name>B Adjust Down</name>
+      <button>4</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>/systems/pressurization/system[0]/datum-mbar</property>
+        <step>-1</step>
+    <min>950</min>
+    <max>1100</max>
+        <wrap>false</wrap>
+      </binding>
+      <binding>
+    <command>nasal</command>
+    <script>globals.Concorde.pressuresystem.altitudeselectorexport();</script>
+   </binding>
+    </action>
+  </animation>
+  
+  
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>B</object-name>
+    <expression>
+    <prod>
+    <property>/systems/pressurization/system[0]/datum-mbar</property>
+    <value>-2</value>
+    </prod>
+    </expression>
+    <center>
+      <x-m>0</x-m>
+      <y-m>0.0264</y-m>
+      <z-m>-0.0251</z-m>
+    </center>
+    <axis>
+      <x>-1</x>
+      <y>0</y>
+      <z>0</z>
+    </axis>
+  </animation>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <animation>
+    <type>pick</type>
+    <object-name>R</object-name>
+    <action>
+      <name>R Adjust Up</name>
+      <button>3</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>/systems/pressurization/system[0]/mbar-per-min</property>
+        <step>-1</step>
+    <min>0</min>
+    <max>36</max>
+        <wrap>false</wrap>
+      </binding>
+    </action>
+    <action>
+      <name>R Adjust Down</name>
+      <button>4</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>/systems/pressurization/system[0]/mbar-per-min</property>
+        <step>1</step>
+    <min>0</min>
+    <max>36</max>
+        <wrap>false</wrap>
+      </binding>
+    </action>
+  </animation>
+  
+  
+   <animation>
+    <type>rotate</type>
+    <object-name>R</object-name>
+    <expression>
+    <prod>
+    <property>/systems/pressurization/system[0]/mbar-per-min</property>
+    <value>-20</value>
+    </prod>
+    </expression>
+    <center>
+      <x-m>0</x-m>
+      <y-m>0.0264</y-m>
+      <z-m>0.0250</z-m>
+    </center>
+    <axis>
+      <x>-1</x>
+      <y>0</y>
+      <z>0</z>
+    </axis>
+  </animation>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <!--Default Lighting-->
+  <animation>
+    <type>material</type>
+    <object-name>Guage</object-name>
+    <object-name>Needle</object-name>
+  <condition>
+  <and>
+    <property>controls/lighting/instrument-lights</property>
+        <greater-than>
+          <property>/systems/electrical/outputs/specific</property>
+          <value>20.0</value>
+        </greater-than>
+  </and>
+  </condition>
+  <emission>
+   <red>0.7</red>
+   <green>0.2</green>
+   <blue>0.2</blue>
+   <factor-prop>/controls/lighting/instruments-norm</factor-prop>
+  </emission>
+  </animation>
+  <animation>
+    <type>material</type>
+    <object-name>Frame</object-name>
+  <emission>
+     <red>0.2</red>
+     <green>0.2</green>
+     <blue>0.2</blue>
+  </emission>
+ </animation>
+
+</PropertyList>

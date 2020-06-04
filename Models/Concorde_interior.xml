@@ -4963,11 +4963,62 @@
     <name>Engine Schedule Rotary</name>
     <path>Cockpit/Engineer/engine-schedule-rotary.xml</path>
 <overlay>
+
 </overlay>
     <offsets>
       <x-m>-22.132</x-m>
       <y-m>0.462</y-m>
       <z-m>1.495</z-m>
+     
+      <heading-deg>-83</heading-deg>
+     <pitch-deg>25</pitch-deg>
+     
+    </offsets>
+  </model>
+  
+  
+  
+  
+  <model>
+  <name>Pressurisation Selector 1</name>
+    <path>Cockpit/Engineer/cabin-alt-1.xml</path>
+<overlay>
+<params>
+    <datum-sel>/systems/pressurization/system[0]/datum-mbar</datum-sel>
+  <cabin-sel>/systems/pressurization/system[0]/cabin-alt-ft</cabin-sel>
+  <rate-sel>/systems/pressurization/system[0]/mbar-per-min</rate-sel>
+  <altitude-sel>/systems/pressurization/system[0]/max-diff-ft</altitude-sel>
+  </params>
+</overlay>
+    <offsets>
+      <x-m>-22.23</x-m>
+      <y-m>0.41</y-m>
+      <z-m>1.575</z-m>
+     
+      <heading-deg>-83</heading-deg>
+     <pitch-deg>25</pitch-deg>
+     
+    </offsets>
+  </model>
+  
+  
+  
+  
+   <model>
+  <name>Pressurisation Selector 2</name>
+    <path>Cockpit/Engineer/cabin-alt-2.xml</path>
+<overlay>
+<params>
+    <datum-sel>/systems/pressurization/system[1]/datum-mbar</datum-sel>
+  <cabin-sel>/systems/pressurization/system[1]/cabin-alt-ft</cabin-sel>
+  <rate-sel>/systems/pressurization/system[1]/mbar-per-min</rate-sel>
+  <altitude-sel>/systems/pressurization/system[1]/max-diff-ft</altitude-sel>
+  </params>
+</overlay>
+    <offsets>
+      <x-m>-22.097</x-m>
+      <y-m>0.425</y-m>
+      <z-m>1.574</z-m>
      
       <heading-deg>-83</heading-deg>
      <pitch-deg>25</pitch-deg>

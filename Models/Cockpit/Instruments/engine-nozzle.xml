@@ -3,6 +3,7 @@
   <path>../Models/enginenozzle4.ac</path>
   <params>
     <nozzle>/engines/engine[3]/nozzle-pos-norm</nozzle>
+    <reheat>/engines/engine[3]/nozzle-pos-norm</reheat>
   </params>
 
 <effect>
