@@ -5641,6 +5641,81 @@
   
   
   <model>
+    <name>Intake Error 1</name>
+    <path>Cockpit/Engineer/intakeerror-1.xml</path>
+   <overlay>
+   <params>
+  <pressure-ratio>/systems/engines/engine[0]/intake-ratio-error</pressure-ratio>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-22.412</x-m>
+      <y-m>0.503</y-m>
+      <z-m>1.332</z-m>
+      
+      <heading-deg>-83</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <name>Intake Error 2</name>
+    <path>Cockpit/Engineer/intakeerror-2.xml</path>
+   <overlay>
+   <params>
+  <pressure-ratio>/systems/engines/engine[1]/intake-ratio-error</pressure-ratio>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-22.381</x-m>
+      <y-m>0.506</y-m>
+      <z-m>1.332</z-m>
+      
+      <heading-deg>-83</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <name>Intake Error 3</name>
+    <path>Cockpit/Engineer/intakeerror-3.xml</path>
+   <overlay>
+   <params>
+  <pressure-ratio>/systems/engines/engine[2]/intake-ratio-error</pressure-ratio>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-22.349</x-m>
+      <y-m>0.510</y-m>
+      <z-m>1.332</z-m>
+      
+      <heading-deg>-83</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <name>Intake Error 4</name>
+    <path>Cockpit/Engineer/intakeerror-4.xml</path>
+   <overlay>
+   <params>
+  <pressure-ratio>/systems/engines/engine[3]/intake-ratio-error</pressure-ratio>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-22.316</x-m>
+      <y-m>0.513</y-m>
+      <z-m>1.332</z-m>
+      
+      <heading-deg>-83</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  
+  
+  <model>
     <name>Intake Ramp 1</name>
     <path>Cockpit/Engineer/ramp-1.xml</path>
    <overlay>
