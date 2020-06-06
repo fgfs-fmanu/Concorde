@@ -103,6 +103,61 @@
       <z>0</z>
     </axis>
   </animation>
+  
+  <animation>
+    <condition>
+    <and>
+    <and>
+  <greater-than>
+    <property>/instrumentation/mach-indicator[0]/indicated-mach</property>
+          <value>1</value>
+        </greater-than>
+        <less-than>
+        <property>/instrumentation/mach-indicator[0]/indicated-mach</property>
+          <value>1.01</value>
+        </less-than>
+  </and>
+      <not>
+      <or>
+	<not><property alias="/params/serviceable"/></not>
+	<property alias="/params/standby-ctrl"/>
+	<property alias="/params/failure-flag"/>
+        <less-than>
+          <property>/systems/electrical/outputs/specific</property>
+          <value>20.0</value>
+        </less-than>
+      </or>
+      </not>
+      </and>
+    </condition>    
+
+    <type>rotate</type>
+    <object-name>AltNeedle</object-name>
+    <expression>
+    <prod>
+    <value>60</value>
+    <sin>
+    <prod>
+    <value>314.1592654</value>
+    <sum>
+    <property>/instrumentation/mach-indicator[0]/indicated-mach</property>
+    <value>-1</value>
+    </sum>
+    </prod>
+    </sin>
+    </prod>
+    </expression>
+    <center>
+      <x-m>0</x-m>
+      <y-m>0</y-m>
+      <z-m>0</z-m>
+    </center>
+    <axis>
+      <x>-1</x>
+      <y>0</y>
+      <z>0</z>
+    </axis>
+  </animation>
   <!-- ALTIMETER ALTITUDE MATHS -->
   <animation>
     <type>rotate</type>
@@ -262,6 +317,144 @@
         <abs>
           <property alias="/params/altitude"/>
         </abs>
+        <value>3.6</value>
+      </prod>
+    </expression>
+    <center>
+      <x-m>-0.006883</x-m>
+      <y-m>0.01178</y-m>
+      <z-m>0.0041</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+  
+  <!--Mach 1-->
+  
+  
+  <animation>
+    <type>rotate</type>
+    <condition>
+    <and>
+  <greater-than>
+    <property>/instrumentation/mach-indicator[0]/indicated-mach</property>
+          <value>1</value>
+        </greater-than>
+        <less-than>
+        <property>/instrumentation/mach-indicator[0]/indicated-mach</property>
+          <value>1.01</value>
+        </less-than>
+  </and>
+    </condition>    
+    <object-name>alt100</object-name>
+    <expression>
+      <prod>
+        <sum>
+          <floor>
+            <div>
+              <prod>
+    			<value>150</value>
+    			<sin>
+   				 <prod>
+   				 <value>314.1592654</value>
+    			<sum>
+    			<property>/instrumentation/mach-indicator[0]/indicated-mach</property>
+    			<value>-1</value>
+    			</sum>
+    			</prod>
+    			</sin>
+    			</prod>
+              <value>100</value>
+            </div>
+          </floor>
+          <max>
+            <div>
+              <difference>
+                <prod>
+    			<value>150</value>
+    			<sin>
+   				 <prod>
+   				 <value>314.1592654</value>
+    			<sum>
+    			<property>/instrumentation/mach-indicator[0]/indicated-mach</property>
+    			<value>-1</value>
+    			</sum>
+    			</prod>
+    			</sin>
+    			</prod>
+                <value>80</value>
+                <prod>
+                  <floor>
+                    <div>
+                      <prod>
+    				<value>150</value>
+    				<sin>
+   					 <prod>
+   				 	<value>314.1592654</value>
+    				<sum>
+    				<property>/instrumentation/mach-indicator[0]/indicated-mach</property>
+    				<value>-1</value>
+    				</sum>
+    				</prod>
+    				</sin>
+    				</prod>
+                      <value>100</value>
+                    </div>
+                  </floor>
+                  <value>100</value>
+                </prod>
+              </difference>
+              <value>20</value>
+            </div>
+            <value>0</value>
+          </max>
+        </sum>
+        <value>36</value>
+      </prod>
+    </expression>
+    <center>
+      <x-m>-0.01688</x-m>
+      <y-m>0.003776</y-m>
+      <z-m>0.0041</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+  <animation>
+  <condition>
+    <and>
+  <greater-than>
+    <property>/instrumentation/mach-indicator[0]/indicated-mach</property>
+          <value>1</value>
+        </greater-than>
+        <less-than>
+        <property>/instrumentation/mach-indicator[0]/indicated-mach</property>
+          <value>1.01</value>
+        </less-than>
+  </and>
+    </condition> 
+    <type>rotate</type>
+    <object-name>alt10</object-name>
+    <expression>
+      <prod>
+        <prod>
+    		<value>150</value>
+    		<sin>
+   			<prod>
+   			 <value>314.1592654</value>
+    		<sum>
+    		<property>/instrumentation/mach-indicator[0]/indicated-mach</property>
+    		<value>-1</value>
+    		</sum>
+    		</prod>
+    		</sin>
+    		</prod>
         <value>3.6</value>
       </prod>
     </expression>

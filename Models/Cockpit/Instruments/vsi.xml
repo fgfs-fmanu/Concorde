@@ -132,6 +132,47 @@
       <z>1</z>
     </axis>
   </animation>
+  
+  
+  
+  
+  <animation>
+  <type>translate</type>
+  <condition>
+  <and>
+  <greater-than>
+    <property>/instrumentation/mach-indicator[0]/indicated-mach</property>
+          <value>1</value>
+        </greater-than>
+        <less-than>
+        <property>/instrumentation/mach-indicator[0]/indicated-mach</property>
+          <value>1.01</value>
+        </less-than>
+  </and>
+  </condition>
+    <object-name>Current</object-name>
+    <expression>
+    <prod>
+    <value>0.0443</value>
+    <sin>
+    <prod>
+    <value>628.3185307</value>
+    <sum>
+    <property>/instrumentation/mach-indicator[0]/indicated-mach</property>
+    <value>-1</value>
+    </sum>
+    </prod>
+    </sin>
+    </prod>
+    </expression>
+    <axis>
+      <x>0</x>
+      <y>0</y>
+      <z>1</z>
+    </axis>
+  </animation>
+  
+  
   <!--Default Lighting-->
   <animation>
     <type>material</type>
