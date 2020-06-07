@@ -48,7 +48,9 @@
 
     <type>translate</type>
     <object-name>Current</object-name>
+   
     <property alias="/params/vertical-speed-fps"/>
+    
     <interpolation>
       <entry>
         <ind>100</ind>
@@ -136,33 +138,47 @@
   
   
   
-  <animation>
-  <type>translate</type>
-  <condition>
-  <and>
-  <greater-than>
-    <property>/instrumentation/mach-indicator[0]/indicated-mach</property>
-          <value>1</value>
-        </greater-than>
+<animation>
+  <condition> 
+  <not>
+      <or>
+	<not><property alias="/params/serviceable"/></not>
         <less-than>
-        <property>/instrumentation/mach-indicator[0]/indicated-mach</property>
-          <value>1.01</value>
+          <property>/systems/electrical/outputs/specific</property>
+          <value>20.0</value>
         </less-than>
-  </and>
-  </condition>
+      </or>
+    </not>
+    
+    </condition> 
+    
+  <type>translate</type>
+  	<object-name>Set</object-name>
     <object-name>Current</object-name>
     <expression>
     <prod>
-    <value>0.0443</value>
-    <sin>
-    <prod>
-    <value>628.3185307</value>
     <sum>
-    <property>/instrumentation/mach-indicator[0]/indicated-mach</property>
-    <value>-1</value>
-    </sum>
-    </prod>
-    </sin>
+     <property>/instrumentation/mach-indicator[0]/indicated-mach</property>
+     <value>-1.005</value>
+     </sum>
+    <prod>
+    <value>-20</value>
+     <exp>
+     <div>
+     <prod>
+     <sum>
+     <property>/instrumentation/mach-indicator[0]/indicated-mach</property>
+     <value>-1.005</value>
+     </sum>
+     <sum>
+      <property>/instrumentation/mach-indicator[0]/indicated-mach</property>
+      <value>-1.005</value>
+       </sum>
+      </prod>
+      <value>-0.00001</value>
+      </div>
+      </exp>
+      </prod>
     </prod>
     </expression>
     <axis>
