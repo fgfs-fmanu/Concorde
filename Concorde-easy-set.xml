@@ -79,9 +79,9 @@
   <aero>Concorde</aero>
 
   <systems>
-   <path>Aircraft/Concorde/Systems-easy/Concorde-systems.xml</path>
+   <path>Aircraft/Concorde/Systems/Concorde-systems.xml</path>
    <autopilot>
-    <path>Aircraft/Concorde/Systems-easy/Concorde-autopilot.xml</path>
+    <path>Aircraft/Concorde/Systems/Concorde-autopilot.xml</path>
    </autopilot>
    <property-rule n="101">
     <path>Aircraft/Concorde/Systems/als/Concorde-lights.xml</path>
@@ -89,7 +89,7 @@
   </systems> 
 
   <instrumentation>
-   <path>Aircraft/Concorde/Systems-easy/Concorde-instrumentation.xml</path>
+   <path>Aircraft/Concorde/Systems/Concorde-instrumentation.xml</path>
   </instrumentation>
   
   <sound>
@@ -204,10 +204,10 @@
   <jetway-hood-deg type="float">0.0</jetway-hood-deg>
  </aircraft>
 
- <autopilot include="Systems-easy/Concorde-init-autopilot.xml"/>
+ <autopilot include="Systems/Concorde-init-autopilot.xml"/>
 
  <consumables>
-  <fuel include="Systems-easy/Concorde-init-fuel.xml"/>                  <!-- required by nasal -->
+  <fuel include="Systems/Concorde-init-fuel.xml"/>                  <!-- required by nasal -->
  </consumables>
 
  <limits include="Nasal/Concorde-limits.xml"/>
@@ -259,7 +259,7 @@
 <!-- customization -->
 <!-- ============= -->
 
- <controls include="Systems-easy/Concorde-init-controls.xml">
+ <controls include="Systems/Concorde-init-controls-easy.xml">
 
 <!-- audio -->
 
@@ -384,10 +384,10 @@
   </seat>
  </controls>
 
- <systems include="Systems-easy/Concorde-init-systems.xml">
+ <systems include="Systems/Concorde-init-systems.xml">
  </systems>
 
- <instrumentation include="Systems-easy/Concorde-init-instrumentation.xml">
+ <instrumentation include="Systems/Concorde-init-instrumentation.xml">
 
 <!-- ADF 2 -->
 
