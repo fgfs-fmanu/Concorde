@@ -4390,7 +4390,77 @@
   </model>
   
   
+  <model>
+  <name>Temp Selector  1 </name>
+    <path>Cockpit/Engineer/tcvalve-1.xml</path>
+    <overlay>
+      <params>
+    <valve-select>/systems/temperature/group[0]/temperature-valve</valve-select>
+   </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.967</x-m>
+      <y-m>0.450</y-m>
+      <z-m>1.535</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
   
+  <model>
+  <name>Temp Selector  2 </name>
+    <path>Cockpit/Engineer/tcvalve-2.xml</path>
+    <overlay>
+      <params>
+    <valve-select>/systems/temperature/group[1]/temperature-valve</valve-select>
+   </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.915</x-m>
+      <y-m>0.450</y-m>
+      <z-m>1.535</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+  
+  <model>
+  <name>Temp Selector  3 </name>
+    <path>Cockpit/Engineer/tcvalve-3.xml</path>
+    <overlay>
+      <params>
+    <valve-select>/systems/temperature/group[2]/temperature-valve</valve-select>
+   </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.853</x-m>
+      <y-m>0.450</y-m>
+      <z-m>1.535</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+  
+  <model>
+  <name>Temp Selector  4 </name>
+    <path>Cockpit/Engineer/tcvalve-4.xml</path>
+    <overlay>
+      <params>
+    <valve-select>/systems/temperature/group[3]/temperature-valve</valve-select>
+   </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.802</x-m>
+      <y-m>0.450</y-m>
+      <z-m>1.535</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
   
   
   
