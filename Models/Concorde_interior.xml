@@ -3307,7 +3307,21 @@
   
   
   
-  
+  <model>
+    <name>Fuel Temperature Selector</name>
+    <path>Cockpit/Engineer/fuel-temperature-selector.xml</path>
+    <overlay>
+      
+    </overlay>
+   <offsets>
+      <x-m>-21.66</x-m>
+      <y-m>0.490</y-m>
+      <z-m>1.455</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
   
   
   <model>
@@ -4624,6 +4638,91 @@
       <x-m>-22.315</x-m>
       <y-m>0.516</y-m>
       <z-m>0.76</z-m>
+      
+      <heading-deg>-85</heading-deg>
+     <pitch-deg>-5</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  <model>
+    <name>Engine Relight Selector</name>
+    <path>Cockpit/Engineer/engine-relight-selector.xml</path>
+    <overlay>
+    <params>
+  <selector>/controls/adc/system[0]/selector</selector>
+ </params>
+ </overlay>
+    <offsets>
+      <x-m>-22.319</x-m>
+      <y-m>0.516</y-m>
+      <z-m>0.655</z-m>
+      
+      <heading-deg>-85</heading-deg>
+     <pitch-deg>-5</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  
+  <!-- ======== -->
+<!-- Engineer foward foot-->
+<!-- ======== -->
+  
+  
+  
+  
+  
+  
+  
+  <model>
+    <name>INS 1 Mode</name>
+    <path>Cockpit/Engineer/ins-1-mode.xml</path>
+    <overlay>
+    <params>
+  <mode-ctrl>/instrumentation/ins[0]/msu/mode</mode-ctrl>
+ </params>
+ </overlay>
+    <offsets>
+      <x-m>-22.401</x-m>
+      <y-m>0.506</y-m>
+      <z-m>0.593</z-m>
+      
+      <heading-deg>-85</heading-deg>
+     <pitch-deg>-5</pitch-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <name>INS 2 Mode</name>
+    <path>Cockpit/Engineer/ins-2-mode.xml</path>
+    <overlay>
+    <params>
+  <mode-ctrl>/instrumentation/ins[1]/msu/mode</mode-ctrl>
+ </params>
+ </overlay>
+    <offsets>
+      <x-m>-22.268</x-m>
+      <y-m>0.524</y-m>
+      <z-m>0.729</z-m>
+      
+      <heading-deg>-85</heading-deg>
+     <pitch-deg>-5</pitch-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <name>INS 3 Mode</name>
+    <path>Cockpit/Engineer/ins-3-mode.xml</path>
+    <overlay>
+    <params>
+  <mode-ctrl>/instrumentation/ins[2]/msu/mode</mode-ctrl>
+ </params>
+ </overlay>
+    <offsets>
+      <x-m>-22.132</x-m>
+      <y-m>0.534</y-m>
+      <z-m>0.729</z-m>
       
       <heading-deg>-85</heading-deg>
      <pitch-deg>-5</pitch-deg>
