@@ -14,21 +14,7 @@
 
  <layers>
 
-  <layer>
-   <name>ADC switch</name>
-   <type>switch</type>
-
-   <layer include="concorde-switch-on.xml">
-    <name>on</name>
-    <condition>
-     <property alias="../../../../../params/adc-switch"/>
-    </condition>
-   </layer>
-
-   <layer include="concorde-switch-off.xml">
-    <name>off</name>
-   </layer>
-  </layer>
+  
 
   <layer>
    <name>Title on</name>
@@ -120,22 +106,7 @@
 
  <actions>
 
-  <action>
-   <name>Toggle ADC</name>
-   <button>0</button>
-   <x>-21</x>
-   <y>-21</y>
-   <w>42</w>
-   <h>42</h>
-   <binding>
-    <command>property-toggle</command>
-    <property alias="../../../../params/adc-switch"/>
-   </binding>
-   <binding>
-    <command>property-toggle</command>
-    <property>/instrumentation/generic/click</property>
-   </binding>
-  </action>
+  
 
  </actions>
  

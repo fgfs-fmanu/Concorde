@@ -4161,6 +4161,46 @@
      <pitch-deg>25</pitch-deg>
     </offsets>
   </model>
+  
+  
+  
+  
+  
+  <model>
+    <name>Compass DG Mag 1</name>
+    <path>Cockpit/Engineer/compass-dg-mag-1.xml</path>
+    <overlay>
+   <params>
+  <mode-sel>/instrumentation/compass[0]/mode-dg</mode-sel>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.485</x-m>
+      <y-m>0.531</y-m>
+      <z-m>0.676</z-m>
+      
+      <heading-deg>-95</heading-deg>
+     <pitch-deg>-5</pitch-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <name>Compass DG Mag 2</name>
+    <path>Cockpit/Engineer/compass-dg-mag-2.xml</path>
+    <overlay>
+   <params>
+  <mode-sel>/instrumentation/compass[1]/mode-dg</mode-sel>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.442</x-m>
+      <y-m>0.527</y-m>
+      <z-m>0.676</z-m>
+      
+      <heading-deg>-95</heading-deg>
+     <pitch-deg>-5</pitch-deg>
+    </offsets>
+  </model>
 
 
 <!-- ======== -->
@@ -6745,6 +6785,97 @@
     <y-m> 0.077</y-m>
     <z-m> 0.818</z-m>
    </offsets>
+  </model>
+  
+  
+  <model>
+    <name>Test Light Center</name>
+    <path>Cockpit/Instruments/test-light-center.xml</path>
+    <overlay>
+   <params>
+  <master-bat>/controls/lighting/crew/center/low</master-bat>
+  <ess-main-split>/controls/lighting/crew/center/test</ess-main-split>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-22.683</x-m>
+    <y-m>0.143</y-m>
+    <z-m>0.817</z-m>
+      
+      <pitch-deg>-90</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  
+  <model>
+    <name>ADC Switch 1</name>
+    <path>Cockpit/Instruments/adc-switch-1.xml</path>
+    <overlay>
+   <params>
+  <adc-switch>/controls/adc/system[0]/switch</adc-switch>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-22.683</x-m>
+    <y-m>-0.07</y-m>
+    <z-m>0.817</z-m>
+      
+      <pitch-deg>-90</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  <model>
+    <name>ADC Selector 1</name>
+    <path>Cockpit/Instruments/adc-selector-1.xml</path>
+    <overlay>
+   <params>
+  <selector>/controls/adc/system[0]/selector</selector>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-22.683</x-m>
+    <y-m>-0.02</y-m>
+    <z-m>0.817</z-m>
+      
+      <pitch-deg>-90</pitch-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <name>ADC Selector 2</name>
+    <path>Cockpit/Instruments/adc-selector-2.xml</path>
+    <overlay>
+   <params>
+  <selector>/controls/adc/system[1]/selector</selector>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-22.683</x-m>
+    <y-m>0.032</y-m>
+    <z-m>0.817</z-m>
+      
+      <pitch-deg>-90</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+   <model>
+    <name>ADC Switch 2</name>
+    <path>Cockpit/Instruments/adc-switch-2.xml</path>
+    <overlay>
+   <params>
+  <adc-switch>/controls/adc/system[1]/switch</adc-switch>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-22.683</x-m>
+    <y-m>0.08</y-m>
+    <z-m>0.817</z-m>
+      
+      <pitch-deg>-90</pitch-deg>
+    </offsets>
   </model>
 
 <!-- CONSOLES -->

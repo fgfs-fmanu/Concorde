@@ -38,7 +38,7 @@ var searchCmd_default = func {
 	# print("WXR running");
 	if (me.map.getRange() == nil) return;
 
-	printlog(_MP_dbg_lvl, "Doing query: "~name);
+	logprint(_MP_dbg_lvl, "Doing query: "~name);
 	var results = [];
 	foreach (var n; props.globals.getNode("/instrumentation/wxradar",1).getChildren("storm")) {
 		

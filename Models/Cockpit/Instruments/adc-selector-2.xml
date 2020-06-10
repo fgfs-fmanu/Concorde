@@ -1,0 +1,96 @@
+<?xml version="1.0"?>
+<PropertyList>
+  <path>../Models/afcslighting.ac</path>
+  
+  <params>
+  <selector>/controls/adc/system[1]/selector</selector>
+ </params>
+<effect>
+	   <inherits-from>Aircraft/Concorde/Models/Effects/interior</inherits-from>
+	   <object-name>Frame</object-name>
+</effect>
+
+<animation>
+    <type>rotate</type>
+    <object-name>Knob</object-name>
+    <expression>
+    <sum>
+   <prod>
+    <property>/controls/adc/system[1]/selector</property>
+     <value>30</value>
+     </prod>
+     <value>90</value>
+     </sum>
+     </expression>
+    <center>
+      <x-m>0.01298</x-m>
+      <y-m>0</y-m>
+      <z-m>-0.00222</z-m>
+    </center>
+    <axis>
+      <x>-1</x>
+      <y>0</y>
+      <z>0</z>
+    </axis>
+  </animation>
+  
+   <animation>
+    <type>pick</type>
+    <object-name>Knob</object-name>
+    <action>
+      <name>Up</name>
+      <button>3</button>
+      
+      <binding>
+        <command>property-adjust</command>
+        <property>/controls/adc/system[1]/selector</property>
+    <step>1</step>
+    <min>-3</min>
+     <max>1</max>
+    <wrap>false</wrap>
+   </binding>
+   
+   
+   
+   <binding>
+    <command>property-toggle</command>
+    <property>/instrumentation/generic/click</property>
+   </binding>
+    </action>
+    </animation>
+    
+    
+    <animation>
+    <type>pick</type>
+    <object-name>Knob</object-name>
+    <action>
+      <name>Dwn</name>
+      <button>4</button>
+      
+      <binding>
+      <command>property-adjust</command>
+       <property>/controls/adc/system[1]/selector</property>
+    <step>-1</step>
+    <min>-3</min>
+     <max>1</max>
+    <wrap>false</wrap>
+   </binding>
+   
+   
+   <binding>
+    <command>property-toggle</command>
+    <property>/instrumentation/generic/click</property>
+   </binding>
+    </action>
+    
+   
+    
+    </animation>
+
+  
+  
+
+  
+
+
+</PropertyList>

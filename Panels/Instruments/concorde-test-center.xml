@@ -14,46 +14,8 @@
 
  <layers>
 
-  <layer>
-   <name>Lighting selector</name>
-   <type>switch</type>
+  
 
-   <layer include="concorde-switch-3rd.xml">
-    <name>high</name>
-    <condition>
-     <and>
-      <not>
-       <property>/controls/lighting/crew/center/low</property>
-      </not>
-      <not>
-       <property>/controls/lighting/crew/center/test</property>
-      </not>
-     </and>
-    </condition>
-   </layer>
-
-   <layer include="concorde-switch-off.xml">
-    <name>test</name>
-    <condition>
-     <property>/controls/lighting/crew/center/test</property>
-    </condition>
-   </layer>
-
-   <layer include="concorde-switch-on.xml">
-    <name>low</name>
-   </layer>
-
-   <transformations>
-    <transformation>
-     <type>x-shift</type>
-     <offset>-34</offset>
-    </transformation>
-    <transformation>
-     <type>y-shift</type>
-     <offset>-3</offset>
-    </transformation>
-   </transformations>
-  </layer>
 
   <layer>
    <name>Title on</name>
@@ -167,44 +129,7 @@
 
  <actions>
 
-  <action>
-   <name>Test</name>
-   <button>0</button>
-   <x>-55</x>
-   <y>-21</y>
-   <w>42</w>
-   <h>42</h>
-   <binding>
-    <command>property-toggle</command>
-    <property>/controls/lighting/crew/center/test</property>
-   </binding>
-   <binding>
-    <command>property-toggle</command>
-    <property>/instrumentation/generic/click</property>
-   </binding>
-  </action>
-
-  <action>
-   <name>Low</name>
-   <button>1</button>
-   <condition>
-    <not>
-     <property>/controls/lighting/crew/center/test</property>
-    </not>
-   </condition>
-   <x>-55</x>
-   <y>-21</y>
-   <w>42</w>
-   <h>42</h>
-   <binding>
-    <command>property-toggle</command>
-    <property>/controls/lighting/crew/center/low</property>
-   </binding>
-   <binding>
-    <command>property-toggle</command>
-    <property>/instrumentation/generic/click</property>
-   </binding>
-  </action>
+  
 
  </actions>
  
