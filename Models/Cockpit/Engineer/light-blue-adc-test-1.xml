@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<PropertyList>
+  <path>../Models/light_test.ac</path>
+  
+<params>
+  <selector>/controls/adc/system[0]/selector</selector>
+ </params>
+ 
+<effect>
+    <inherits-from>Aircraft/Concorde/Models/Effects/interior</inherits-from>
+    <object-name>Frame</object-name>
+    <object-name>On</object-name>
+    <object-name>Text</object-name>
+</effect>
+
+
+  <animation>
+    <type>material</type>
+    <object-name>On</object-name>
+    <!--<condition>
+     <or>
+     <less-than>
+    <property>/systems/electrical/outputs/bulb</property>
+    <value>20.0</value>
+   </less-than>
+      <and>
+       <not>
+    <property>/controls/lighting/crew/center/low</property>
+   </not>     bug -->
+       <equals>
+        <property>/controls/adc/system[0]/selector</property>
+        <value>0</value>
+       </equals>
+      </and>
+     </or>
+    </condition>-->
+
+    <emission>
+      <red>0</red>
+      <green>0</green>
+      <blue>1</blue>
+    </emission>
+  </animation>
+  <animation>
+    <type>material</type>
+    <object-name>Frame</object-name>
+  <emission>
+     <red>0.2</red>
+     <green>0.2</green>
+     <blue>0.2</blue>
+  </emission>
+</animation>
+</PropertyList>

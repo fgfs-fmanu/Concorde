@@ -1,0 +1,92 @@
+<?xml version="1.0"?>
+<PropertyList>
+  <path>../Models/light_test.ac</path>
+  
+<params>
+  <selector>/controls/adc/system[0]/selector</selector>
+ </params>
+ 
+<effect>
+    <inherits-from>Aircraft/Concorde/Models/Effects/interior</inherits-from>
+    <object-name>Frame</object-name>
+    <object-name>On</object-name>
+    <object-name>Off</object-name>
+    <object-name>Text</object-name>
+</effect>
+
+
+  <animation>
+    <type>select</type>
+    <object-name>On</object-name>
+   <condition> 
+      <and>
+     <greater-than>
+    <property>/systems/electrical/outputs/bulb</property>
+    <value>20.0</value>
+   </greater-than>
+   <or>
+    <property>/controls/lighting/crew/center/test</property> <!-- bug -->
+       <not-equals>
+        <property>/controls/adc/system[0]/selector</property>
+        <value>0</value>
+       </not-equals>
+       </or>
+       </and>
+    </condition>
+  </animation>
+  
+  <animation>
+    <type>select</type>
+    <object-name>Off</object-name>
+   <condition> 
+   <not>
+      <and>
+     <greater-than>
+    <property>/systems/electrical/outputs/bulb</property>
+    <value>20.0</value>
+   </greater-than>
+   <or>
+    <property>/controls/lighting/crew/center/test</property> <!-- bug -->
+       <not-equals>
+        <property>/controls/adc/system[0]/selector</property>
+        <value>0</value>
+       </not-equals>
+       </or>
+       </and>
+       </not>
+    </condition>
+  </animation>
+
+</PropertyList>
+
+
+
+   
+   
+   
+     
+     
+   
+    
+     
+        
+       
+      
+    
+    
+
+
+
+   
+   
+   
+     
+     
+   
+    
+     
+        
+       
+      
+    
+    

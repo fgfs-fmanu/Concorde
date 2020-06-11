@@ -4703,6 +4703,8 @@
     </offsets>
   </model>
   
+ 
+  
   
   
   <!-- ======== -->
@@ -6872,6 +6874,34 @@
     <offsets>
       <x-m>-22.683</x-m>
     <y-m>0.08</y-m>
+    <z-m>0.817</z-m>
+      
+      <pitch-deg>-90</pitch-deg>
+    </offsets>
+  </model>
+  
+   <model>
+    <name>Light Blue Test 1</name>
+    <path>Cockpit/Instruments/light-blue-adc-test-1.xml</path>
+    <overlay>
+ </overlay>
+    <offsets>
+      <x-m>-22.710</x-m>
+    <y-m>-0.02</y-m>
+    <z-m>0.817</z-m>
+      
+      <pitch-deg>-90</pitch-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <name>Light Blue Test 2</name>
+    <path>Cockpit/Instruments/light-blue-adc-test-2.xml</path>
+    <overlay>
+ </overlay>
+    <offsets>
+      <x-m>-22.710</x-m>
+    <y-m>0.022</y-m>
     <z-m>0.817</z-m>
       
       <pitch-deg>-90</pitch-deg>
