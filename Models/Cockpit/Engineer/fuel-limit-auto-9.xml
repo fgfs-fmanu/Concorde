@@ -1,0 +1,322 @@
+<?xml version="1.0"?>
+<PropertyList>
+  <!--<property>/controls/fuel/tank[8]/limit-kg</property>-->
+  <!--<property>/consumables/fuel/tank[0]/level-lbs</property>-->
+  <path>../Models/auto_fuel_limit.ac</path>
+  
+   <params>
+  <load-limit>/controls/fuel/tank[8]/limit-kg</load-limit>
+ </params>
+
+<effect>
+    <inherits-from>Aircraft/Concorde/Models/Effects/interior</inherits-from>
+    <object-name>Frame</object-name>
+
+</effect>
+
+<effect>
+    <inherits-from>Aircraft/Concorde/Models/Effects/flash</inherits-from>
+    <object-name>Num1</object-name>
+    <object-name>Num2</object-name>
+    <object-name>Num3</object-name>
+    <object-name>Num4</object-name>
+    <object-name>Num5</object-name>
+    <object-name>Guage</object-name>
+    <object-name>Cylinder</object-name>
+    <object-name>Frame</object-name>
+
+</effect>
+
+  <animation>
+    
+
+    <type>rotate</type>
+    <object-name>Num1</object-name>
+    <expression>
+      <prod>
+        <sum>
+          <floor>
+            <div>
+              <prod>
+                <property>/controls/fuel/tank[8]/limit-kg</property>
+              </prod>
+              <value>10000</value>
+            </div>
+          </floor>
+          <max>
+            <div>
+              <difference>
+                <prod>
+                  <property>/controls/fuel/tank[8]/limit-kg</property>
+                 
+                </prod>
+                <value>9900</value>
+                <prod>
+                  <floor>
+                    <div>
+                      <prod>
+                        <property>/controls/fuel/tank[8]/limit-kg</property>
+                       
+                      </prod>
+                      <value>10000</value>
+                    </div>
+                  </floor>
+                  <value>10000</value>
+                </prod>
+              </difference>
+              <value>100</value>
+            </div>
+            <value>0</value>
+          </max>
+        </sum>
+        <value>36</value>
+      </prod>
+    </expression>
+    <center>
+      <x-m>-0.005</x-m>
+      <y-m>0.02118</y-m>
+      <z-m>0.0</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+  <animation>
+   
+
+    <type>rotate</type>
+    <object-name>Num2</object-name>
+    <expression>
+      <prod>
+        <sum>
+          <floor>
+            <div>
+              <prod>
+                <property>/controls/fuel/tank[8]/limit-kg</property>
+              </prod>
+              <value>1000</value>
+            </div>
+          </floor>
+          <max>
+            <div>
+              <difference>
+                <prod>
+                  <property>/controls/fuel/tank[8]/limit-kg</property>
+                 
+                </prod>
+                <value>900</value>
+                <prod>
+                  <floor>
+                    <div>
+                      <prod>
+                        <property>/controls/fuel/tank[8]/limit-kg</property>
+                       
+                      </prod>
+                      <value>1000</value>
+                    </div>
+                  </floor>
+                  <value>1000</value>
+                </prod>
+              </difference>
+              <value>100</value>
+            </div>
+            <value>0</value>
+          </max>
+        </sum>
+        <value>36</value>
+      </prod>
+    </expression>
+    <center>
+      <x-m>-0.005</x-m>
+      <y-m>0.02118</y-m>
+      <z-m>0.0</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+  <animation>
+     
+
+    <type>rotate</type>
+    <object-name>Num3</object-name>
+    <object-name>Num4</object-name>
+    <object-name>Num5</object-name>
+    <property>/controls/fuel/tank[8]/limit-kg</property>
+    <factor>0.36</factor>
+    <center>
+      <x-m>-0.005</x-m>
+      <y-m>0.02118</y-m>
+      <z-m>0.0</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+  
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>Cylinder</object-name>
+    <expression>
+   <prod>
+    <property>/controls/fuel/tank[8]/limit-kg</property>
+     <value>0.1</value>
+     </prod>
+     </expression>
+    <center>
+      <x-m>0</x-m>
+      <y-m>0.01986</y-m>
+      <z-m>0</z-m>
+    </center>
+    <axis>
+      <x>-1</x>
+      <y>0</y>
+      <z>0</z>
+    </axis>
+  </animation>
+  
+   <animation>
+    <type>pick</type>
+    <object-name>Cylinder</object-name>
+    <action>
+      <name>Up</name>
+      <button>3</button>
+      
+      <binding>
+        <command>property-adjust</command>
+        <property>/controls/fuel/tank[8]/limit-kg</property>
+    <step>100</step>
+    <min>0</min>
+     <max>30000</max>
+    <wrap>false</wrap>
+   </binding>
+   
+   
+   
+   <binding>
+    <command>property-toggle</command>
+    <property>/instrumentation/generic/click</property>
+   </binding>
+    </action>
+    </animation>
+    
+    
+    <animation>
+    <type>pick</type>
+    <object-name>Cylinder</object-name>
+    <action>
+      <name>Dwn</name>
+      <button>4</button>
+      
+      <binding>
+      <command>property-adjust</command>
+       <property>/controls/fuel/tank[8]/limit-kg</property>
+    <step>-100</step>
+    <min>0</min>
+     <max>30000</max>
+    <wrap>false</wrap>
+   </binding>
+   <binding>
+    <command>property-toggle</command>
+    <property>/instrumentation/generic/click</property>
+   </binding>
+    </action>
+    </animation>
+   
+   <animation>
+    <type>pick</type>
+    <object-name>Cylinder</object-name>
+    <action>
+      <name>Up</name>
+      <button>0</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>/controls/fuel/tank[8]/limit-kg</property>
+    <step>1000</step>
+    <min>0</min>
+     <max>30000</max>
+     
+    <wrap>false</wrap>
+   </binding>
+   
+   
+   
+   <binding>
+    <command>property-toggle</command>
+    <property>/instrumentation/generic/click</property>
+   </binding>
+    </action>
+    </animation>
+    
+    
+    <animation>
+    <type>pick</type>
+    <object-name>Cylinder</object-name>
+    <action>
+      <name>Dwn</name>
+      <button>1</button>
+      <repeatable>true</repeatable>
+      <binding>
+      <command>property-adjust</command>
+       <property>/controls/fuel/tank[8]/limit-kg</property>
+    <step>-1000</step>
+    <min>0</min>
+     <max>30000</max>
+     
+    <wrap>false</wrap>
+   </binding>
+   
+   
+   <binding>
+    <command>property-toggle</command>
+    <property>/instrumentation/generic/click</property>
+   </binding>
+    </action>
+    
+   
+    
+    </animation>
+  <!--Default Lighting-->
+  <animation>
+    <type>material</type>
+    <object-name>Num1</object-name>
+    <object-name>Num2</object-name>
+    <object-name>Num3</object-name>
+    <object-name>Num4</object-name>
+    <object-name>Num5</object-name>
+    <object-name>Guage</object-name>
+  <condition>
+  <and>
+    <property>controls/lighting/instrument-lights</property>
+        <greater-than>
+          <property>/systems/electrical/outputs/specific</property>
+          <value>20.0</value>
+        </greater-than> 
+ </and>
+  </condition>
+  <emission>
+   <red>0.7</red>
+   <green>0.2</green>
+   <blue>0.2</blue>
+   <factor-prop>/controls/lighting/instruments-norm</factor-prop>
+  </emission>
+  </animation>
+  <animation>
+    <type>material</type>
+    <object-name>Frame</object-name>
+    <object-name>Cylinder</object-name>
+  <emission>
+     <red>0.2</red>
+     <green>0.2</green>
+     <blue>0.2</blue>
+  </emission>
+ </animation>
+</PropertyList>

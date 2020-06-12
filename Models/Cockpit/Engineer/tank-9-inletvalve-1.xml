@@ -17,19 +17,32 @@
 
     <type>rotate</type>
     <object-name>Switch</object-name>
+    <expression>
+    
+    <prod>
+    <value>-35</value>
+    
+    <prod>
+    <sum>
+    <value>-1</value>
+    <prod>
     <property>/controls/fuel/tank[8]/inlet-main[0]</property>
-	
-  
-    <interpolation>
-      <entry>
-        <ind>0</ind>
-        <dep>35</dep>
-      </entry>
-      <entry>
-        <ind>1</ind>
-        <dep>-35</dep>
-      </entry>
-    </interpolation>
+	<value>2</value>
+    </prod>
+    </sum>
+    
+    <sum>
+    <value>1</value>
+    <prod>
+    <property>/controls/fuel/tank[8]/inlet-auto[0]</property>
+    <value>-1</value>
+    </prod>
+    </sum>
+    </prod>
+    
+    </prod>
+    
+  </expression>
     <center>
       <x-m>0</x-m>
       <y-m>0</y-m>
@@ -77,73 +90,6 @@
 
 
 
-
-
-
-
-<animation>
-    <type>rotate</type>
-    <object-name>Switch</object-name>
-    <property>/controls/fuel/tank[8]/inlet-auto[0]</property>
-
-	<condition>
-    <property>/controls/fuel/tank[8]/inlet-main[0]</property>
-  </condition>
-    <interpolation>
-	<entry>
-        <ind>1</ind>
-        <dep>35</dep>
-      </entry>
-      <entry>
-        <ind>0</ind>
-        <dep>0</dep>
-      </entry>
-      
-    </interpolation>
-    <center>
-      <x-m>0</x-m>
-      <y-m>0</y-m>
-      <z-m>0</z-m>
-    </center>
-    <axis>
-      <x>0</x>
-      <y>1</y>
-      <z>0</z>
-    </axis>
-  </animation>
-
-<animation>
-    <type>rotate</type>
-    <object-name>Switch</object-name>
-    <property>/controls/fuel/tank[8]/inlet-auto[0]</property>
-
-	<condition>
-    <not>
-    <property>/controls/fuel/tank[8]/inlet-main[0]</property>
-    </not>
-  </condition>
-    <interpolation>
-	<entry>
-        <ind>1</ind>
-        <dep>-35</dep>
-      </entry>
-      <entry>
-        <ind>0</ind>
-        <dep>0</dep>
-      </entry>
-      
-    </interpolation>
-    <center>
-      <x-m>0</x-m>
-      <y-m>0</y-m>
-      <z-m>0</z-m>
-    </center>
-    <axis>
-      <x>0</x>
-      <y>1</y>
-      <z>0</z>
-    </axis>
-  </animation>
 
 
   <animation>

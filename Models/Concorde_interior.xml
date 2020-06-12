@@ -2105,7 +2105,42 @@
 
 
 
-
+<model>
+    <name>Fuel Auto 9 </name>
+    <path>Cockpit/Engineer/fuel-limit-auto-9.xml</path>
+    <overlay>
+      <params>
+  <load-limit>/controls/fuel/tank[8]/limit-kg</load-limit>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.733</x-m>
+      <y-m>0.525</y-m>
+      <z-m>1.381</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  <model>
+    <name>Fuel Auto 11 </name>
+    <path>Cockpit/Engineer/fuel-limit-auto-11.xml</path>
+    <overlay>
+      <params>
+  <load-limit>/controls/fuel/tank[10]/limit-kg</load-limit>
+ </params>
+    </overlay>
+   <offsets>
+        <x-m>-21.773</x-m>
+      <y-m>0.554</y-m>
+      <z-m>0.974</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>-5</pitch-deg>
+    </offsets>
+  </model>
 
 
 
