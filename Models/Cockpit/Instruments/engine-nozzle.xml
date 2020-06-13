@@ -1,9 +1,8 @@
 <?xml version="1.0"?>
 <PropertyList>
-  <path>../Models/enginenozzle4.ac</path>
+  <path>../Models/enginenozzle.ac</path>
   <params>
     <nozzle>/engines/engine[3]/nozzle-pos-norm</nozzle>
-    <reheat>/engines/engine[3]/nozzle-pos-norm</reheat>
   </params>
 
 <effect>
@@ -218,6 +217,31 @@
       <y>1</y>
       <z>0</z>
     </axis>
+  </animation>
+  
+  
+   <animation>
+    <type>select</type>
+    <object-name>LightOn</object-name>
+    <condition>
+     <and>
+      <property alias="/params/rh"/>
+      <greater-than>
+          <property>/systems/electrical/outputs/specific</property>
+          <value>20.0</value>
+      </greater-than>
+     </and>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>LightOff</object-name>
+    <condition>
+      <not>
+      <property alias="/params/rh"/>
+      </not>
+    </condition>
   </animation>
   <!--Default Lighting-->
   <animation>

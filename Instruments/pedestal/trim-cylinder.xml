@@ -8,6 +8,7 @@
    <object-name>TrimCylinder</object-name>
    <object-name>PitchTrimIndex</object-name>
    <object-name>PitchTrimWheel</object-name>
+   <object-name>PitchTrimWheelIndex</object-name>
    <object-name>YawTrimWheel</object-name>
    <object-name>RollTrimWheel</object-name>
 </effect>
@@ -19,6 +20,7 @@
    <object-name>PitchTrimWheel</object-name>
    <object-name>YawTrimWheel</object-name>
    <object-name>RollTrimWheel</object-name>
+   <object-name>PitchTrimWheelIndex</object-name>
   </animation>
 
   <animation>
@@ -41,6 +43,23 @@
     <x-m>0.0</x-m>
     <y-m>0.0</y-m>
     <z-m>0.0</z-m>
+   </center>
+   <axis>
+    <x>0.0</x>
+    <y>1.0</y>
+    <z>0.0</z>
+   </axis>
+  </animation>
+  
+  <animation>
+   <type>rotate</type>
+   <object-name>PitchTrimWheelIndex</object-name>
+   <property>controls/flight/elevator-trim</property>
+   <factor>80</factor>
+   <center>
+    <x-m>0.0466</x-m>
+    <y-m>0</y-m>
+    <z-m>-0.03052</z-m>
    </center>
    <axis>
     <x>0.0</x>
