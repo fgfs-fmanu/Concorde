@@ -20,7 +20,7 @@
 
 <sim include="Nasal/Concorde-sim.xml">
 
-  <description type="string">Concorde (cold start)</description>
+  <description type="string">Concorde</description>
   <status>early-production</status>
   <rating>
       <FDM type="int">4</FDM>
@@ -243,6 +243,15 @@
    <file>Aircraft/Concorde/Models/Instruments/ND/canvas/WXR.nas</file>
    <file>Aircraft/Concorde/Models/Instruments/ND/canvas/tablet.nas</file>
   </Concorde>
+  <dual_control_tools>
+      <file>Aircraft/Generic/DualControl/dual-control-tools.nas</file>
+    </dual_control_tools>
+    <aircraft_dual_control>
+      <file>dual_control/dual_control.nas</file>
+    </aircraft_dual_control>
+    <dual_control>
+      <file>Aircraft/Generic/DualControl/pilot-dual-control.nas</file>
+    </dual_control>
   <tyresmoke>
     <file>Aircraft/Concorde/Nasal/Concorde-tyre.nas</file>
   </tyresmoke>

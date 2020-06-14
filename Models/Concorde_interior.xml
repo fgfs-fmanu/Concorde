@@ -3521,7 +3521,7 @@
   
   
   <model>
-    <name>Captain COG</name>
+    <name>Engineer COG</name>
     <path>Aircraft/Concorde/Models/Cockpit/Engineer/cogengineer.xml</path>
     <offsets>
         <x-m>-21.825</x-m>
@@ -3529,6 +3529,18 @@
       <z-m>1.225</z-m>
       <heading-deg>-90</heading-deg>
       <pitch-deg>-2</pitch-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <name>Engineer COG</name>
+    <path>Aircraft/Concorde/Models/Cockpit/Engineer/cogchannelengineer.xml</path>
+    <offsets>
+        <x-m>-21.777</x-m>
+      <y-m>0.565</y-m>
+      <z-m>1.225</z-m>
+      <heading-deg>-90</heading-deg>
+      <pitch-deg>-1</pitch-deg>
     </offsets>
   </model>
   <model>

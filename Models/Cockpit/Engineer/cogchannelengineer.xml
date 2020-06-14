@@ -1,0 +1,147 @@
+<?xml version="1.0"?>
+<PropertyList>
+  <path>../Models/cgchannel.ac</path>
+
+ <params>
+  <serviceable>/instrumentation/cg[0]/percent</serviceable>
+ </params>
+
+<effect>
+    <inherits-from>Aircraft/Concorde/Models/Effects/interior</inherits-from>
+    <object-name>Frame</object-name>
+    <object-name>AlarmOn</object-name>
+    <object-name>AlarmOff</object-name>
+</effect>
+
+<effect>
+    <inherits-from>Aircraft/Concorde/Models/Effects/flash</inherits-from>
+    <object-name>CG</object-name>
+    <object-name>FWD</object-name>
+    <object-name>AFT</object-name>
+    <object-name>Guage</object-name>
+    <object-name>FF</object-name>
+</effect>
+
+
+<animation>
+    <type>select</type>
+    <object-name>FF</object-name>
+    <condition>
+      <or>
+	<not><property alias="/params/serviceable"/></not>
+        <less-than>
+          <property>/systems/electrical/outputs/specific</property>
+          <value>20.0</value>
+        </less-than>
+      </or>
+    </condition>    
+  </animation>
+  
+  <animation>
+    <object-name>COG1</object-name>
+    <type>select</type>
+    <condition>
+      <greater-than>
+        <property>/instrumentation/cg[0]/percent</property>
+        <value>10</value>
+      </greater-than>
+    </condition>
+  </animation>
+  <animation>
+    <object-name>COG2</object-name>
+    <type>select</type>
+    <condition>
+      <greater-than>
+        <property>/instrumentation/cg[0]/percent</property>
+        <value>1</value>
+      </greater-than>
+    </condition>
+  </animation>
+  <animation>
+    <object-name>COG3</object-name>
+    <type>select</type>
+    <condition>
+      <greater-than>
+        <property>/instrumentation/cg[0]/percent</property>
+        <value>0.1</value>
+      </greater-than>
+    </condition>
+  </animation>
+  
+  <animation>
+    <type>textranslate</type>
+    <object-name>COG1</object-name>
+    <property>/instrumentation/cg[0]/percent</property>
+    <bias>0.01</bias>
+    <factor>0.01</factor>
+    <step>10</step>
+    <axis>
+      <x>1</x>
+      <y>0</y>
+    </axis>
+  </animation>
+  <animation>
+    <type>textranslate</type>
+    <object-name>COG2</object-name>
+    <property>/instrumentation/cg[0]/percent</property>
+    <bias>0.01</bias>
+    <factor>0.1</factor>
+    <step>1</step>
+    <axis>
+      <x>1</x>
+      <y>0</y>
+    </axis>
+  </animation>
+  <animation>
+    <type>textranslate</type>
+    <object-name>COG3</object-name>
+    <property>/instrumentation/cg[0]/percent</property>
+    <bias>0.01</bias>
+    <factor>1</factor>
+    <step>0.1</step>
+    <axis>
+      <x>1</x>
+      <y>0</y>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>material</type>
+    <object-name>CG1</object-name>
+    <object-name>CG2</object-name>
+    <object-name>CG3</object-name>
+    <object-name>CG4</object-name>
+    <object-name>KG1</object-name>
+    <object-name>KG2</object-name>
+    <object-name>KG3</object-name>
+  <condition>
+  <and>
+    <property>controls/lighting/instrument-lights</property>
+        <greater-than>
+          <property>/systems/electrical/outputs/specific</property>
+          <value>20.0</value>
+        </greater-than>
+  </and>
+  </condition>
+  <emission>
+   <red>0.7</red>
+   <green>0.2</green>
+   <blue>0.2</blue>
+   <factor-prop>/controls/lighting/instruments-norm</factor-prop>
+  </emission>
+  </animation>
+  <animation>
+    <type>material</type>
+    <object-name>Cube</object-name>
+    <object-name>Cylinder</object-name>
+    <object-name>Cylinder.001</object-name>
+    <object-name>Cylinder.002</object-name>
+    <object-name>Cylinder.003</object-name>
+    <object-name>Cylinder.004</object-name>
+  <emission>
+     <red>0.2</red>
+     <green>0.2</green>
+     <blue>0.2</blue>
+  </emission>
+ </animation>
+</PropertyList>
