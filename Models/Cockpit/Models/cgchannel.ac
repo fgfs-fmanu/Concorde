@@ -1,18 +1,19 @@
 AC3Db
 MATERIAL "Off" rgb 0.500 0.500 0.000  amb 0.083 0.083 0.083  emis 0.000 0.000 0.000  spec 0.300 0.300 0.300  shi 128 trans 0.000
 MATERIAL "Fail.010" rgb 0.800 0.800 0.800  amb 0.400 0.400 0.400  emis 0.200 0.200 0.200  spec 0.000 0.000 0.000  shi 32 trans 0.000
-MATERIAL "Digits.001" rgb 1.000 1.000 1.000  amb 1.000 1.000 1.000  emis 0.333 0.333 0.333  spec 0.000 0.000 0.000  shi 0 trans 0.000
+MATERIAL "Digits.000" rgb 1.000 1.000 1.000  amb 1.000 1.000 1.000  emis 0.333 0.333 0.333  spec 0.000 0.000 0.000  shi 0 trans 0.000
 MATERIAL "Material.001" rgb 0.025 0.050 0.050  amb 0.083 0.083 0.083  emis 0.000 0.000 0.000  spec 0.400 0.400 0.400  shi 12 trans 0.000
 MATERIAL "Material.003" rgb 0.640 0.640 0.640  amb 1.000 1.000 1.000  emis 0.000 0.000 0.000  spec 0.500 0.500 0.500  shi 12 trans 0.000
 MATERIAL "Material.004" rgb 0.640 0.640 0.640  amb 1.000 1.000 1.000  emis 0.000 0.000 0.000  spec 0.500 0.500 0.500  shi 12 trans 0.000
 MATERIAL "Material.006" rgb 0.640 0.640 0.640  amb 1.000 1.000 1.000  emis 0.000 0.000 0.000  spec 0.500 0.500 0.500  shi 12 trans 0.000
 MATERIAL "Material.002" rgb 0.640 0.640 0.640  amb 1.000 1.000 1.000  emis 0.000 0.000 0.000  spec 0.500 0.500 0.500  shi 12 trans 0.000
+MATERIAL "Digits.001" rgb 1.000 1.000 1.000  amb 1.000 1.000 1.000  emis 0.333 0.333 0.333  spec 0.000 0.000 0.000  shi 0 trans 0.000
 MATERIAL "Material.007" rgb 0.400 0.200 0.000  amb 1.000 1.000 1.000  emis 0.000 0.000 0.000  spec 0.500 0.500 0.500  shi 12 trans 0.000
 MATERIAL "On" rgb 0.500 0.250 0.000  amb 0.083 0.083 0.083  emis 1.000 1.000 1.000  spec 0.300 0.300 0.300  shi 128 trans 0.000
 MATERIAL "Off.001" rgb 0.500 0.500 0.000  amb 0.083 0.083 0.083  emis 0.000 0.000 0.000  spec 0.300 0.300 0.300  shi 128 trans 0.000
 OBJECT world
 name "Blender_exporter_v2.26__cgchannel.ac"
-kids 33
+kids 34
 OBJECT poly
 name "010"
 data 7
@@ -1622,7 +1623,7 @@ kids 0
 OBJECT poly
 name "COG1"
 data 15
-Speed1.mesh.001
+Speed1.mesh.000
 crease 40.0
 texture "digits.png"
 texrep 1 1
@@ -1643,7 +1644,7 @@ kids 0
 OBJECT poly
 name "COG2"
 data 15
-Speed2.mesh.001
+Speed2.mesh.000
 crease 40.0
 texture "digits.png"
 texrep 1 1
@@ -1664,7 +1665,7 @@ kids 0
 OBJECT poly
 name "COG3"
 data 15
-Speed3.mesh.001
+Speed3.mesh.000
 crease 40.0
 texture "digits.png"
 texrep 1 1
@@ -3915,6 +3916,27 @@ refs 32
 62 0.35462 0.443191
 kids 0
 OBJECT poly
+name "FF"
+data 19
+MilesFrame.mesh.002
+crease 40.0
+texture "digits.png"
+texrep 1 1
+numvert 4
+0.00975 -0.00713 -0.00373
+0.00975 -0.00713 0.02454
+0.00975 0.00427 -0.00373
+0.00975 0.00427 0.02454
+numsurf 1
+SURF 0X20
+mat 8
+refs 4
+3 0.220082 0.727545
+1 0.220082 0.569409
+0 0.24105 0.569409
+2 0.24105 0.727545
+kids 0
+OBJECT poly
 name "KG1"
 data 13
 Num1.mesh.004
@@ -4898,35 +4920,35 @@ numvert 8
 0.00919 0.04088 0.00574
 numsurf 5
 SURF 0X20
-mat 8
+mat 9
 refs 4
 0 0 1
 4 0 1
 5 0 0
 1 0 0
 SURF 0X20
-mat 8
+mat 9
 refs 4
 3 1 1
 0 0 1
 4 0 1
 7 1 1
 SURF 0X20
-mat 8
+mat 9
 refs 4
 5 0 0
 1 0 0
 2 1 0
 6 1 0
 SURF 0X20
-mat 8
+mat 9
 refs 4
 6 1 0
 2 1 0
 3 1 1
 7 1 1
 SURF 0X20
-mat 8
+mat 9
 refs 4
 6 1 0
 7 1 1
@@ -4951,35 +4973,35 @@ numvert 8
 0.00919 0.04088 0.00574
 numsurf 5
 SURF 0X20
-mat 9
+mat 10
 refs 4
 0 0 1
 4 0 1
 5 0 0
 1 0 0
 SURF 0X20
-mat 9
+mat 10
 refs 4
 3 1 1
 0 0 1
 4 0 1
 7 1 1
 SURF 0X20
-mat 9
+mat 10
 refs 4
 5 0 0
 1 0 0
 2 1 0
 6 1 0
 SURF 0X20
-mat 9
+mat 10
 refs 4
 6 1 0
 2 1 0
 3 1 1
 7 1 1
 SURF 0X20
-mat 9
+mat 10
 refs 4
 6 1 0
 7 1 1
@@ -5004,35 +5026,35 @@ numvert 8
 0.00947 0.01865 0.0296
 numsurf 5
 SURF 0X20
-mat 10
+mat 11
 refs 4
 0 0 1
 4 0 1
 5 0 0
 1 0 0
 SURF 0X20
-mat 10
+mat 11
 refs 4
 3 1 1
 0 0 1
 4 0 1
 7 1 1
 SURF 0X20
-mat 10
+mat 11
 refs 4
 5 0 0
 1 0 0
 2 1 0
 6 1 0
 SURF 0X20
-mat 10
+mat 11
 refs 4
 6 1 0
 2 1 0
 3 1 1
 7 1 1
 SURF 0X20
-mat 10
+mat 11
 refs 4
 6 1 0
 7 1 1
@@ -5057,35 +5079,35 @@ numvert 8
 0.00947 0.01242 0.0296
 numsurf 5
 SURF 0X20
-mat 10
+mat 11
 refs 4
 0 0 1
 4 0 1
 5 0 0
 1 0 0
 SURF 0X20
-mat 10
+mat 11
 refs 4
 3 1 1
 0 0 1
 4 0 1
 7 1 1
 SURF 0X20
-mat 10
+mat 11
 refs 4
 5 0 0
 1 0 0
 2 1 0
 6 1 0
 SURF 0X20
-mat 10
+mat 11
 refs 4
 6 1 0
 2 1 0
 3 1 1
 7 1 1
 SURF 0X20
-mat 10
+mat 11
 refs 4
 6 1 0
 7 1 1
@@ -5110,35 +5132,35 @@ numvert 8
 0.00947 0.01865 0.02239
 numsurf 5
 SURF 0X20
-mat 10
+mat 11
 refs 4
 0 0 1
 4 0 1
 5 0 0
 1 0 0
 SURF 0X20
-mat 10
+mat 11
 refs 4
 3 1 1
 0 0 1
 4 0 1
 7 1 1
 SURF 0X20
-mat 10
+mat 11
 refs 4
 5 0 0
 1 0 0
 2 1 0
 6 1 0
 SURF 0X20
-mat 10
+mat 11
 refs 4
 6 1 0
 2 1 0
 3 1 1
 7 1 1
 SURF 0X20
-mat 10
+mat 11
 refs 4
 6 1 0
 7 1 1
@@ -5163,35 +5185,35 @@ numvert 8
 0.00947 0.01242 0.02239
 numsurf 5
 SURF 0X20
-mat 10
+mat 11
 refs 4
 0 0 1
 4 0 1
 5 0 0
 1 0 0
 SURF 0X20
-mat 10
+mat 11
 refs 4
 3 1 1
 0 0 1
 4 0 1
 7 1 1
 SURF 0X20
-mat 10
+mat 11
 refs 4
 5 0 0
 1 0 0
 2 1 0
 6 1 0
 SURF 0X20
-mat 10
+mat 11
 refs 4
 6 1 0
 2 1 0
 3 1 1
 7 1 1
 SURF 0X20
-mat 10
+mat 11
 refs 4
 6 1 0
 7 1 1
@@ -5216,35 +5238,35 @@ numvert 8
 0.00947 0.01242 0.01517
 numsurf 5
 SURF 0X20
-mat 10
+mat 11
 refs 4
 0 0 1
 4 0 1
 5 0 0
 1 0 0
 SURF 0X20
-mat 10
+mat 11
 refs 4
 3 1 1
 0 0 1
 4 0 1
 7 1 1
 SURF 0X20
-mat 10
+mat 11
 refs 4
 5 0 0
 1 0 0
 2 1 0
 6 1 0
 SURF 0X20
-mat 10
+mat 11
 refs 4
 6 1 0
 2 1 0
 3 1 1
 7 1 1
 SURF 0X20
-mat 10
+mat 11
 refs 4
 6 1 0
 7 1 1
@@ -5269,35 +5291,35 @@ numvert 8
 0.00947 0.01865 0.01517
 numsurf 5
 SURF 0X20
-mat 10
+mat 11
 refs 4
 0 0 1
 4 0 1
 5 0 0
 1 0 0
 SURF 0X20
-mat 10
+mat 11
 refs 4
 3 1 1
 0 0 1
 4 0 1
 7 1 1
 SURF 0X20
-mat 10
+mat 11
 refs 4
 5 0 0
 1 0 0
 2 1 0
 6 1 0
 SURF 0X20
-mat 10
+mat 11
 refs 4
 6 1 0
 2 1 0
 3 1 1
 7 1 1
 SURF 0X20
-mat 10
+mat 11
 refs 4
 6 1 0
 7 1 1
@@ -5322,35 +5344,35 @@ numvert 8
 0.00947 0.01865 0.00788
 numsurf 5
 SURF 0X20
-mat 10
+mat 11
 refs 4
 0 0 1
 4 0 1
 5 0 0
 1 0 0
 SURF 0X20
-mat 10
+mat 11
 refs 4
 3 1 1
 0 0 1
 4 0 1
 7 1 1
 SURF 0X20
-mat 10
+mat 11
 refs 4
 5 0 0
 1 0 0
 2 1 0
 6 1 0
 SURF 0X20
-mat 10
+mat 11
 refs 4
 6 1 0
 2 1 0
 3 1 1
 7 1 1
 SURF 0X20
-mat 10
+mat 11
 refs 4
 6 1 0
 7 1 1
@@ -5375,35 +5397,35 @@ numvert 8
 0.00947 0.01242 0.00788
 numsurf 5
 SURF 0X20
-mat 10
+mat 11
 refs 4
 0 0 1
 4 0 1
 5 0 0
 1 0 0
 SURF 0X20
-mat 10
+mat 11
 refs 4
 3 1 1
 0 0 1
 4 0 1
 7 1 1
 SURF 0X20
-mat 10
+mat 11
 refs 4
 5 0 0
 1 0 0
 2 1 0
 6 1 0
 SURF 0X20
-mat 10
+mat 11
 refs 4
 6 1 0
 2 1 0
 3 1 1
 7 1 1
 SURF 0X20
-mat 10
+mat 11
 refs 4
 6 1 0
 7 1 1
@@ -5428,35 +5450,35 @@ numvert 8
 0.00947 0.01242 0.00073
 numsurf 5
 SURF 0X20
-mat 10
+mat 11
 refs 4
 0 0 1
 4 0 1
 5 0 0
 1 0 0
 SURF 0X20
-mat 10
+mat 11
 refs 4
 3 1 1
 0 0 1
 4 0 1
 7 1 1
 SURF 0X20
-mat 10
+mat 11
 refs 4
 5 0 0
 1 0 0
 2 1 0
 6 1 0
 SURF 0X20
-mat 10
+mat 11
 refs 4
 6 1 0
 2 1 0
 3 1 1
 7 1 1
 SURF 0X20
-mat 10
+mat 11
 refs 4
 6 1 0
 7 1 1
@@ -5481,35 +5503,35 @@ numvert 8
 0.00947 0.01865 0.00073
 numsurf 5
 SURF 0X20
-mat 10
+mat 11
 refs 4
 0 0 1
 4 0 1
 5 0 0
 1 0 0
 SURF 0X20
-mat 10
+mat 11
 refs 4
 3 1 1
 0 0 1
 4 0 1
 7 1 1
 SURF 0X20
-mat 10
+mat 11
 refs 4
 5 0 0
 1 0 0
 2 1 0
 6 1 0
 SURF 0X20
-mat 10
+mat 11
 refs 4
 6 1 0
 2 1 0
 3 1 1
 7 1 1
 SURF 0X20
-mat 10
+mat 11
 refs 4
 6 1 0
 7 1 1
