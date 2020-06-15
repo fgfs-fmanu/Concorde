@@ -1,0 +1,333 @@
+<?xml version="1.0"?>
+<PropertyList>
+  
+  <path>../Models/light_feedtank.ac</path>
+<params>
+  <lbs-select>/consumables/fuel/tank[0]/level-lbs</lbs-select>
+  <low-level-select>/consumables/fuel/tank[0]/low-level-lbs</low-level-select>
+  <under-full-select>/consumables/fuel/tank[0]/under-full-lb</under-full-select>
+  <trim-select>/controls/fuel/tank[0]/aft-trim</trim-select>
+  <over-full-select>/consumables/fuel/tank[0]/over-full-lb</over-full-select>
+ </params>
+ 
+<effect>
+    <inherits-from>Aircraft/Concorde/Models/Effects/interior</inherits-from>
+    <object-name>FrameO</object-name>
+    <object-name>OnO</object-name>
+    <object-name>TextO</object-name>
+    <object-name>FrameU</object-name>
+    <object-name>OnU</object-name>
+    <object-name>TextU</object-name>
+    <object-name>FrameL</object-name>
+    <object-name>OnL</object-name>
+    <object-name>TextL</object-name>
+</effect>
+
+
+
+<animation>
+  <type>select</type>
+    <object-name>OnL</object-name>    
+    <condition>
+     <and>
+     
+     <greater-than>
+    <property>/systems/electrical/outputs/bulb</property>
+    <value>20.0</value>
+   </greater-than>
+   
+      <or>
+    <property>/controls/lighting/crew/engineer/center/test</property>
+     <!-- bug -->
+       <greater-than>
+        <property n="1" alias="/params/low-level-select"/>
+        <property alias="/params/lbs-select"/>
+       </greater-than>
+      </or>
+      
+      <not>
+    <property>/controls/lighting/crew/engineer/center/low</property>
+    </not>
+    
+     </and>
+    </condition>
+  </animation>
+  
+  
+  <animation>
+    <type>material</type>
+    <object-name>OffL</object-name>
+     <condition>
+     <and>
+     
+     <greater-than>
+    <property>/systems/electrical/outputs/bulb</property>
+    <value>20.0</value>
+   </greater-than>
+   
+      <or>
+    <property>/controls/lighting/crew/engineer/center/test</property>
+     <!-- bug -->
+       <greater-than>
+        <property n="1" alias="/params/low-level-select"/>
+        <property alias="/params/lbs-select"/>
+       </greater-than>
+      </or>
+      
+     
+    <property>/controls/lighting/crew/engineer/center/low</property>
+   
+    
+     </and>
+    </condition>
+
+    <emission>
+      <red>0.5</red>
+      <green>0</green>
+      <blue>0</blue>
+    </emission>
+  </animation>
+
+
+  <animation>
+  <type>select</type>
+    <object-name>OffL</object-name>    
+    <condition>
+    <not>
+     <and>
+     
+     <greater-than>
+    <property>/systems/electrical/outputs/bulb</property>
+    <value>20.0</value>
+   </greater-than>
+   
+      <or>
+    <property>/controls/lighting/crew/engineer/center/test</property>
+     <!-- bug -->
+       <greater-than>
+        <property n="1" alias="/params/low-level-select"/>
+        <property alias="/params/lbs-select"/>
+       </greater-than>
+      </or>
+      
+      <not>
+    <property>/controls/lighting/crew/engineer/center/low</property>
+    </not>
+    
+     </and>
+     </not>
+    </condition>
+  </animation>
+  
+  
+  
+  
+  <animation>
+    <type>select</type>
+    <object-name>OnU</object-name>
+    <condition>
+     <and>
+     <greater-than>
+    <property>/systems/electrical/outputs/bulb</property>
+    <value>20.0</value>
+   </greater-than>
+      <or>
+       
+    <property>/controls/lighting/crew/engineer/center/test</property>
+     <!-- bug -->
+     <not>
+       <or>       
+        <property alias="/params/trim-select"/>
+        <greater-than>
+         <property alias="/params/lbs-select"/>
+         <property n="1" alias="/params/under-full-select"/>
+        </greater-than>        
+       </or>
+       </not>
+      </or>
+      <not>
+    <property>/controls/lighting/crew/engineer/center/low</property>
+    </not>
+     </and>
+    </condition>
+
+  </animation>
+  
+  <animation>
+    <type>material</type>
+    <object-name>OffU</object-name>
+     <condition>
+     <and>
+     <greater-than>
+    <property>/systems/electrical/outputs/bulb</property>
+    <value>20.0</value>
+   </greater-than>
+      <or>
+       
+    <property>/controls/lighting/crew/engineer/center/test</property>
+     <!-- bug -->
+     <not>
+       <or>       
+        <property alias="/params/trim-select"/>
+        <greater-than>
+         <property alias="/params/lbs-select"/>
+         <property n="1" alias="/params/under-full-select"/>
+        </greater-than>        
+       </or>
+       </not>
+      </or>
+    <property>/controls/lighting/crew/engineer/center/low</property>
+    
+     </and>
+    </condition>
+
+    <emission>
+      <red>0.5</red>
+      <green>0.5</green>
+      <blue>0</blue>
+    </emission>
+  </animation>
+  
+  
+  <animation>
+    <type>select</type>
+    <object-name>OffU</object-name>
+    <condition>
+    <not>
+       <and>
+     <greater-than>
+    <property>/systems/electrical/outputs/bulb</property>
+    <value>20.0</value>
+   </greater-than>
+      <or>
+       
+    <property>/controls/lighting/crew/engineer/center/test</property>
+     <!-- bug -->
+      <not>
+       <or>
+        <property alias="/params/trim-select"/>
+        <greater-than>
+         <property alias="/params/lbs-select"/>
+         <property n="1" alias="/params/under-full-select"/>
+        </greater-than>        
+      </or>
+      </not>
+      </or>
+      <not>
+    <property>/controls/lighting/crew/engineer/center/low</property>
+    </not>
+     </and>
+     
+     </not>
+    </condition>
+
+  </animation>
+  
+   <animation>
+    <type>select</type>
+    <object-name>OnO</object-name>
+    <condition>
+       <and>
+     <greater-than>
+    <property>/systems/electrical/outputs/bulb</property>
+    <value>20.0</value>
+   </greater-than>
+      <or>
+       
+    <property>/controls/lighting/crew/engineer/center/test</property>
+     <!-- bug -->
+      <greater-than>
+        <property alias="/params/lbs-select"/>
+        <property n="1" alias="/params/over-full-select"/>
+       </greater-than>
+      </or>
+      
+      <not>
+    <property>/controls/lighting/crew/engineer/center/low</property>
+    </not>
+     </and>
+     
+    </condition>
+
+ 
+  </animation>
+  
+  
+  <animation>
+    <type>material</type>
+    <object-name>OffO</object-name>
+    <condition>
+       <and>
+     <greater-than>
+    <property>/systems/electrical/outputs/bulb</property>
+    <value>20.0</value>
+   </greater-than>
+      <or>
+       
+    <property>/controls/lighting/crew/engineer/center/test</property>
+     <!-- bug -->
+      <greater-than>
+        <property alias="/params/lbs-select"/>
+        <property n="1" alias="/params/over-full-select"/>
+       </greater-than>
+      </or>
+      
+      
+    <property>/controls/lighting/crew/engineer/center/low</property>
+    
+     </and>
+     
+    </condition>
+
+    <emission>
+      <red>0.5</red>
+      <green>0.5</green>
+      <blue>0</blue>
+    </emission>
+  </animation>
+  
+  <animation>
+    <type>select</type>
+    <object-name>OffO</object-name>
+    <condition>
+    <not>
+       <and>
+     <greater-than>
+    <property>/systems/electrical/outputs/bulb</property>
+    <value>20.0</value>
+   </greater-than>
+      <or>
+       
+    <property>/controls/lighting/crew/engineer/center/test</property>
+     <!-- bug -->
+      <greater-than>
+        <property alias="/params/lbs-select"/>
+        <property n="1" alias="/params/over-full-select"/>
+       </greater-than>
+      </or>
+      
+      <not>
+    <property>/controls/lighting/crew/engineer/center/low</property>
+    </not>
+    
+     </and>
+     </not>
+    </condition>
+
+    
+  </animation>
+  
+ 
+  
+  <animation>
+    <type>material</type>
+    <object-name>Frame0</object-name>
+    <object-name>FrameU</object-name>
+    <object-name>FrameL</object-name>
+  <emission>
+     <red>0.2</red>
+     <green>0.2</green>
+     <blue>0.2</blue>
+  </emission>
+</animation>
+</PropertyList>

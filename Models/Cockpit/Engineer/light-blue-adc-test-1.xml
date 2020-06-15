@@ -16,8 +16,8 @@
 
   <animation>
     <type>material</type>
-    <object-name>On</object-name>
-    <!--<condition>
+    <object-name>OnO</object-name>
+    <condition>
      <or>
      <less-than>
     <property>/systems/electrical/outputs/bulb</property>
@@ -26,14 +26,14 @@
       <and>
        <not>
     <property>/controls/lighting/crew/center/low</property>
-   </not>     bug -->
+   </not>     <!--bug -->
        <equals>
         <property>/controls/adc/system[0]/selector</property>
         <value>0</value>
        </equals>
       </and>
      </or>
-    </condition>-->
+    </condition>
 
     <emission>
       <red>0</red>

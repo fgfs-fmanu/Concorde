@@ -1,9 +1,6 @@
 <?xml version="1.0"?>
 <PropertyList>
-   <params>
-  <master-bat>/controls/lighting/crew/engineer/aft/low</master-bat>
-  <ess-main-split>/controls/lighting/crew/engineer/aft/test</ess-main-split>
- </params>
+  
   <path>../Models/switch.ac</path>
 
 <effect>

@@ -176,15 +176,49 @@
 
 <!-- FDM ops -->
 
-<text> Takeoff (408000 lb) :
-            nose 5 deg, afterburner, V1 165 kt,
+<text> 
+Start Engines:
+-Menu Concorde/Ground/Elec+AirBleed
+-Stewart Ctrl+W : Ground Service On
+-Engineer Gound Service on Close
+
+For 2 engines:
+-Air Bleed+ Air Cross Bleed: On
+-Turn on Feed Pumps : 2 engines
+-Engine Starter: Start
+-HP valve: Open
+Remove:
+-Engineer Gound Service on Close
+-Stewart Ctrl+W : Ground Service On
+-Menu Concorde/Ground/Elec+AirBleed
+
+
+
+Taxi with two engines. On Hold Short:
+-Maintain Cross Bleed Between engines
+-Feed Pumps On on all engines
+-Engine start on remaining engines
+-Hp Valve: Open
+
+After starting all engines:
+-Cross Bleed: Off
+-CG switch : 54% if full fuel
+
+
+
+Takeoff (408000 lb) :
+            nose 5 deg, afterburner, 
+            Engine 4 N1 Limiter 88%: Normal, at 60kt            
+            V1 165 kt,
             VR 195 kt, pitch 13.5 deg at rotation, V2 220 kt.
             trim before engaging autopilot.
  Subsonic cruise :
+ 			Autopilot: Max Climb.
             Mach 0.95, at FL260 (full load).
  Acceleration :
             afterburner at Mach 0.93.
             climb with full throttle.
+            Transfer fuel to Aft.
             air intakes starts closing at Mach 1.3.
             stop afterburner at Mach 1.7.
  Supersonic cruise :

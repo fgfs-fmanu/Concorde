@@ -2106,7 +2106,94 @@
      <pitch-deg>-5</pitch-deg>
     </offsets>
   </model>
-
+<model>
+    <name>Fuel Tank 1 Light </name>
+    <path>Cockpit/Engineer/light-tank.xml</path>
+    <overlay>
+      <params>
+    <lbs-select>/consumables/fuel/tank[0]/level-lbs</lbs-select>
+  <low-level-select>/consumables/fuel/tank[0]/low-level-lbs</low-level-select>
+  <under-full-select>/consumables/fuel/tank[0]/under-full-lb</under-full-select>
+  <trim-select>/controls/fuel/tank[0]/aft-trim</trim-select>
+  <over-full-select>/consumables/fuel/tank[0]/over-full-lb</over-full-select>
+  </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.93</x-m>
+      <y-m>0.552</y-m>
+      <z-m>1.11</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>-5</pitch-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <name>Fuel Tank 2 Light </name>
+    <path>Cockpit/Engineer/light-tank.xml</path>
+    <overlay>
+      <params>
+    <lbs-select>/consumables/fuel/tank[1]/level-lbs</lbs-select>
+  <low-level-select>/consumables/fuel/tank[1]/low-level-lbs</low-level-select>
+  <under-full-select>/consumables/fuel/tank[1]/under-full-lb</under-full-select>
+  <trim-select>/controls/fuel/tank[1]/aft-trim</trim-select>
+  <over-full-select>/consumables/fuel/tank[1]/over-full-lb</over-full-select>
+  </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.84</x-m>
+      <y-m>0.552</y-m>
+      <z-m>1.11</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>-5</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  <model>
+    <name>Fuel Tank 3 Light </name>
+    <path>Cockpit/Engineer/light-tank.xml</path>
+    <overlay>
+      <params>
+    <lbs-select>/consumables/fuel/tank[2]/level-lbs</lbs-select>
+  <low-level-select>/consumables/fuel/tank[2]/low-level-lbs</low-level-select>
+  <under-full-select>/consumables/fuel/tank[2]/under-full-lb</under-full-select>
+  <trim-select>/controls/fuel/tank[2]/aft-trim</trim-select>
+  <over-full-select>/consumables/fuel/tank[2]/over-full-lb</over-full-select>
+  </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.695</x-m>
+      <y-m>0.552</y-m>
+      <z-m>1.11</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>-5</pitch-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <name>Fuel Tank 4 Light </name>
+    <path>Cockpit/Engineer/light-tank.xml</path>
+    <overlay>
+      <params>
+    <lbs-select>/consumables/fuel/tank[3]/level-lbs</lbs-select>
+  <low-level-select>/consumables/fuel/tank[3]/low-level-lbs</low-level-select>
+  <under-full-select>/consumables/fuel/tank[3]/under-full-lb</under-full-select>
+  <trim-select>/controls/fuel/tank[3]/aft-trim</trim-select>
+  <over-full-select>/consumables/fuel/tank[3]/over-full-lb</over-full-select>
+  </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.605</x-m>
+      <y-m>0.552</y-m>
+      <z-m>1.11</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>-5</pitch-deg>
+    </offsets>
+  </model>
 
 
 <model>
@@ -4159,10 +4246,7 @@
     <name>Test Light Aft</name>
     <path>Cockpit/Engineer/test-light-aft.xml</path>
     <overlay>
-   <params>
-  <master-bat>/controls/lighting/crew/engineer/aft/low</master-bat>
-  <ess-main-split>/controls/lighting/crew/engineer/aft/test</ess-main-split>
- </params>
+   
     </overlay>
     <offsets>
       <x-m>-21.26</x-m>
@@ -4179,10 +4263,7 @@
     <name>Test Light Center</name>
     <path>Cockpit/Engineer/test-light-center.xml</path>
     <overlay>
-   <params>
-  <master-bat>/controls/lighting/crew/engineer/center/low</master-bat>
-  <ess-main-split>/controls/lighting/crew/engineer/center/test</ess-main-split>
- </params>
+  
     </overlay>
     <offsets>
       <x-m>-21.429</x-m>
@@ -4198,10 +4279,7 @@
     <name>Test Light Forward</name>
     <path>Cockpit/Engineer/test-light-forward.xml</path>
     <overlay>
-   <params>
-  <master-bat>/controls/lighting/crew/engineer/forward/low</master-bat>
-  <ess-main-split>/controls/lighting/crew/engineer/forward/test</ess-main-split>
- </params>
+  
     </overlay>
     <offsets>
       <x-m>-22.298</x-m>
@@ -6960,7 +7038,7 @@
  </overlay>
     <offsets>
       <x-m>-22.710</x-m>
-      <y-m>0.022</y-m>
+      <y-m>-0.02</y-m>
     <z-m>0.817</z-m>
       
       <pitch-deg>-90</pitch-deg>
@@ -6977,7 +7055,7 @@
  </overlay>
     <offsets>
       <x-m>-22.710</x-m>
-    <y-m>-0.02</y-m>    
+    <y-m>0.022</y-m>    
     <z-m>0.817</z-m>
       
       <pitch-deg>-90</pitch-deg>

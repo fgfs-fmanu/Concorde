@@ -1357,5 +1357,823 @@
   </action>
  </animation>
 
+<!-- Buttons -->
+
+<animation>
+  <type>translate</type>
+  <object-name>Button0</object-name>
+  <property>/instrumentation/ins[0]/control/B0</property>
+  <interpolation>
+   <entry>
+    <ind>0.0</ind>
+    <dep>0</dep>
+   </entry>
+   <entry>
+    <ind>1.0</ind>
+    <dep>-0.001</dep>
+   </entry>
+  </interpolation>
+  <center>
+   <x-m>0.0</x-m>
+   <y-m>0.0</y-m>
+   <z-m>0.0</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>0</y>
+   <z>1</z>
+  </axis>
+ </animation>
+
+
+
+ <animation>
+  <type>pick</type>
+  <object-name>Button0</object-name>
+  <action>
+   <button>0</button>
+   <binding>
+    <command>property-assign</command>
+    <property>/instrumentation/ins[0]/control/B0</property>
+    <value>1</value>
+    <repeatable>true</repeatable>
+   </binding>
+   <mod-up>
+    <binding>
+     <command>property-assign</command>
+     <property>/instrumentation/ins[0]/control/B0</property>
+     <value>0</value>
+    </binding>
+    <binding>
+     <command>property-toggle</command>
+     <property>/instrumentation/generic/click</property>
+    </binding>
+   </mod-up>
+  </action>
+ </animation>
+ 
+ <animation>
+  <type>translate</type>
+  <object-name>Button1</object-name>
+  <property>/instrumentation/ins[0]/control/B1</property>
+  <interpolation>
+   <entry>
+    <ind>0.0</ind>
+    <dep>0</dep>
+   </entry>
+   <entry>
+    <ind>1.0</ind>
+    <dep>-0.001</dep>
+   </entry>
+  </interpolation>
+  <center>
+   <x-m>0.0</x-m>
+   <y-m>0.0</y-m>
+   <z-m>0.0</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>0</y>
+   <z>1</z>
+  </axis>
+ </animation>
+
+
+
+ <animation>
+  <type>pick</type>
+  <object-name>Button1</object-name>
+  <action>
+   <button>0</button>
+   <binding>
+    <command>property-assign</command>
+    <property>/instrumentation/ins[0]/control/B1</property>
+    <value>1</value>
+    <repeatable>true</repeatable>
+   </binding>
+   <mod-up>
+    <binding>
+     <command>property-assign</command>
+     <property>/instrumentation/ins[0]/control/B1</property>
+     <value>0</value>
+    </binding>
+    <binding>
+     <command>property-toggle</command>
+     <property>/instrumentation/generic/click</property>
+    </binding>
+   </mod-up>
+  </action>
+ </animation>
+ 
+ 
+ <animation>
+  <type>translate</type>
+  <object-name>Button2</object-name>
+  <property>/instrumentation/ins[0]/control/B2</property>
+  <interpolation>
+   <entry>
+    <ind>0.0</ind>
+    <dep>0</dep>
+   </entry>
+   <entry>
+    <ind>1.0</ind>
+    <dep>-0.001</dep>
+   </entry>
+  </interpolation>
+  <center>
+   <x-m>0.0</x-m>
+   <y-m>0.0</y-m>
+   <z-m>0.0</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>0</y>
+   <z>1</z>
+  </axis>
+ </animation>
+
+
+
+ <animation>
+  <type>pick</type>
+  <object-name>Button2</object-name>
+  <action>
+   <button>0</button>
+   <binding>
+    <command>property-assign</command>
+    <property>/instrumentation/ins[0]/control/B2</property>
+    <value>1</value>
+    <repeatable>true</repeatable>
+   </binding>
+   <mod-up>
+    <binding>
+     <command>property-assign</command>
+     <property>/instrumentation/ins[0]/control/B2</property>
+     <value>0</value>
+    </binding>
+    <binding>
+     <command>property-toggle</command>
+     <property>/instrumentation/generic/click</property>
+    </binding>
+   </mod-up>
+  </action>
+ </animation>
+ 
+ <animation>
+  <type>translate</type>
+  <object-name>Button3</object-name>
+  <property>/instrumentation/ins[0]/control/B3</property>
+  <interpolation>
+   <entry>
+    <ind>0.0</ind>
+    <dep>0</dep>
+   </entry>
+   <entry>
+    <ind>1.0</ind>
+    <dep>-0.001</dep>
+   </entry>
+  </interpolation>
+  <center>
+   <x-m>0.0</x-m>
+   <y-m>0.0</y-m>
+   <z-m>0.0</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>0</y>
+   <z>1</z>
+  </axis>
+ </animation>
+
+
+
+ <animation>
+  <type>pick</type>
+  <object-name>Button3</object-name>
+  <action>
+   <button>0</button>
+   <binding>
+    <command>property-assign</command>
+    <property>/instrumentation/ins[0]/control/B3</property>
+    <value>1</value>
+    <repeatable>true</repeatable>
+   </binding>
+   <mod-up>
+    <binding>
+     <command>property-assign</command>
+     <property>/instrumentation/ins[0]/control/B3</property>
+     <value>0</value>
+    </binding>
+    <binding>
+     <command>property-toggle</command>
+     <property>/instrumentation/generic/click</property>
+    </binding>
+   </mod-up>
+  </action>
+ </animation>
+ 
+ <animation>
+  <type>translate</type>
+  <object-name>Button4</object-name>
+  <property>/instrumentation/ins[0]/control/B4</property>
+  <interpolation>
+   <entry>
+    <ind>0.0</ind>
+    <dep>0</dep>
+   </entry>
+   <entry>
+    <ind>1.0</ind>
+    <dep>-0.001</dep>
+   </entry>
+  </interpolation>
+  <center>
+   <x-m>0.0</x-m>
+   <y-m>0.0</y-m>
+   <z-m>0.0</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>0</y>
+   <z>1</z>
+  </axis>
+ </animation>
+
+
+
+ <animation>
+  <type>pick</type>
+  <object-name>Button4</object-name>
+  <action>
+   <button>0</button>
+   <binding>
+    <command>property-assign</command>
+    <property>/instrumentation/ins[0]/control/B4</property>
+    <value>1</value>
+    <repeatable>true</repeatable>
+   </binding>
+   <mod-up>
+    <binding>
+     <command>property-assign</command>
+     <property>/instrumentation/ins[0]/control/B4</property>
+     <value>0</value>
+    </binding>
+    <binding>
+     <command>property-toggle</command>
+     <property>/instrumentation/generic/click</property>
+    </binding>
+   </mod-up>
+  </action>
+ </animation>
+ 
+ 
+ 
+ <animation>
+  <type>translate</type>
+  <object-name>Button5</object-name>
+  <property>/instrumentation/ins[0]/control/B5</property>
+  <interpolation>
+   <entry>
+    <ind>0.0</ind>
+    <dep>0</dep>
+   </entry>
+   <entry>
+    <ind>1.0</ind>
+    <dep>-0.001</dep>
+   </entry>
+  </interpolation>
+  <center>
+   <x-m>0.0</x-m>
+   <y-m>0.0</y-m>
+   <z-m>0.0</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>0</y>
+   <z>1</z>
+  </axis>
+ </animation>
+
+
+
+ <animation>
+  <type>pick</type>
+  <object-name>Button5</object-name>
+  <action>
+   <button>0</button>
+   <binding>
+    <command>property-assign</command>
+    <property>/instrumentation/ins[0]/control/B5</property>
+    <value>1</value>
+    <repeatable>true</repeatable>
+   </binding>
+   <mod-up>
+    <binding>
+     <command>property-assign</command>
+     <property>/instrumentation/ins[0]/control/B5</property>
+     <value>0</value>
+    </binding>
+    <binding>
+     <command>property-toggle</command>
+     <property>/instrumentation/generic/click</property>
+    </binding>
+   </mod-up>
+  </action>
+ </animation>
+ 
+ <animation>
+  <type>translate</type>
+  <object-name>Button6</object-name>
+  <property>/instrumentation/ins[0]/control/B6</property>
+  <interpolation>
+   <entry>
+    <ind>0.0</ind>
+    <dep>0</dep>
+   </entry>
+   <entry>
+    <ind>1.0</ind>
+    <dep>-0.001</dep>
+   </entry>
+  </interpolation>
+  <center>
+   <x-m>0.0</x-m>
+   <y-m>0.0</y-m>
+   <z-m>0.0</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>0</y>
+   <z>1</z>
+  </axis>
+ </animation>
+
+
+
+ <animation>
+  <type>pick</type>
+  <object-name>Button6</object-name>
+  <action>
+   <button>0</button>
+   <binding>
+    <command>property-assign</command>
+    <property>/instrumentation/ins[0]/control/B6</property>
+    <value>1</value>
+    <repeatable>true</repeatable>
+   </binding>
+   <mod-up>
+    <binding>
+     <command>property-assign</command>
+     <property>/instrumentation/ins[0]/control/B6</property>
+     <value>0</value>
+    </binding>
+    <binding>
+     <command>property-toggle</command>
+     <property>/instrumentation/generic/click</property>
+    </binding>
+   </mod-up>
+  </action>
+ </animation>
+ 
+ <animation>
+  <type>translate</type>
+  <object-name>Button7</object-name>
+  <property>/instrumentation/ins[0]/control/B7</property>
+  <interpolation>
+   <entry>
+    <ind>0.0</ind>
+    <dep>0</dep>
+   </entry>
+   <entry>
+    <ind>1.0</ind>
+    <dep>-0.001</dep>
+   </entry>
+  </interpolation>
+  <center>
+   <x-m>0.0</x-m>
+   <y-m>0.0</y-m>
+   <z-m>0.0</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>0</y>
+   <z>1</z>
+  </axis>
+ </animation>
+
+
+
+ <animation>
+  <type>pick</type>
+  <object-name>Button7</object-name>
+  <action>
+   <button>0</button>
+   <binding>
+    <command>property-assign</command>
+    <property>/instrumentation/ins[0]/control/B7</property>
+    <value>1</value>
+    <repeatable>true</repeatable>
+   </binding>
+   <mod-up>
+    <binding>
+     <command>property-assign</command>
+     <property>/instrumentation/ins[0]/control/B7</property>
+     <value>0</value>
+    </binding>
+    <binding>
+     <command>property-toggle</command>
+     <property>/instrumentation/generic/click</property>
+    </binding>
+   </mod-up>
+  </action>
+ </animation>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <animation>
+  <type>translate</type>
+  <object-name>Button8</object-name>
+  <property>/instrumentation/ins[0]/control/B8</property>
+  <interpolation>
+   <entry>
+    <ind>0.0</ind>
+    <dep>0</dep>
+   </entry>
+   <entry>
+    <ind>1.0</ind>
+    <dep>-0.001</dep>
+   </entry>
+  </interpolation>
+  <center>
+   <x-m>0.0</x-m>
+   <y-m>0.0</y-m>
+   <z-m>0.0</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>0</y>
+   <z>1</z>
+  </axis>
+ </animation>
+
+
+
+ <animation>
+  <type>pick</type>
+  <object-name>Button8</object-name>
+  <action>
+   <button>0</button>
+   <binding>
+    <command>property-assign</command>
+    <property>/instrumentation/ins[0]/control/B8</property>
+    <value>1</value>
+    <repeatable>true</repeatable>
+   </binding>
+   <mod-up>
+    <binding>
+     <command>property-assign</command>
+     <property>/instrumentation/ins[0]/control/B8</property>
+     <value>0</value>
+    </binding>
+    <binding>
+     <command>property-toggle</command>
+     <property>/instrumentation/generic/click</property>
+    </binding>
+   </mod-up>
+  </action>
+ </animation>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <animation>
+  <type>translate</type>
+  <object-name>Button9</object-name>
+  <property>/instrumentation/ins[0]/control/B9</property>
+  <interpolation>
+   <entry>
+    <ind>0.0</ind>
+    <dep>0</dep>
+   </entry>
+   <entry>
+    <ind>1.0</ind>
+    <dep>-0.001</dep>
+   </entry>
+  </interpolation>
+  <center>
+   <x-m>0.0</x-m>
+   <y-m>0.0</y-m>
+   <z-m>0.0</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>0</y>
+   <z>1</z>
+  </axis>
+ </animation>
+
+
+
+ <animation>
+  <type>pick</type>
+  <object-name>Button9</object-name>
+  <action>
+   <button>0</button>
+   <binding>
+    <command>property-assign</command>
+    <property>/instrumentation/ins[0]/control/B9</property>
+    <value>1</value>
+    <repeatable>true</repeatable>
+   </binding>
+   <mod-up>
+    <binding>
+     <command>property-assign</command>
+     <property>/instrumentation/ins[0]/control/B9</property>
+     <value>0</value>
+    </binding>
+    <binding>
+     <command>property-toggle</command>
+     <property>/instrumentation/generic/click</property>
+    </binding>
+   </mod-up>
+  </action>
+ </animation>
+ 
+ 
+ <animation>
+  <type>translate</type>
+  <object-name>ClearButton</object-name>
+  <property>/instrumentation/ins[0]/control/Clear</property>
+  <interpolation>
+   <entry>
+    <ind>0.0</ind>
+    <dep>0</dep>
+   </entry>
+   <entry>
+    <ind>1.0</ind>
+    <dep>-0.001</dep>
+   </entry>
+  </interpolation>
+  <center>
+   <x-m>0.0</x-m>
+   <y-m>0.0</y-m>
+   <z-m>0.0</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>0</y>
+   <z>1</z>
+  </axis>
+ </animation>
+
+
+
+ <animation>
+  <type>pick</type>
+  <object-name>ClearButton</object-name>
+  <action>
+   <button>0</button>
+   <binding>
+    <command>property-assign</command>
+    <property>/instrumentation/ins[0]/control/Clear</property>
+    <value>1</value>
+    <repeatable>true</repeatable>
+   </binding>
+   <mod-up>
+    <binding>
+     <command>property-assign</command>
+     <property>/instrumentation/ins[0]/control/Clear</property>
+     <value>0</value>
+    </binding>
+    <binding>
+     <command>property-toggle</command>
+     <property>/instrumentation/generic/click</property>
+    </binding>
+   </mod-up>
+  </action>
+ </animation>
+ 
+ <animation>
+  <type>translate</type>
+  <object-name>ClearButton</object-name>
+  <property>/instrumentation/ins[0]/control/Clear</property>
+  <interpolation>
+   <entry>
+    <ind>0.0</ind>
+    <dep>0</dep>
+   </entry>
+   <entry>
+    <ind>1.0</ind>
+    <dep>-0.001</dep>
+   </entry>
+  </interpolation>
+  <center>
+   <x-m>0.0</x-m>
+   <y-m>0.0</y-m>
+   <z-m>0.0</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>0</y>
+   <z>1</z>
+  </axis>
+ </animation>
+
+
+
+ <animation>
+  <type>pick</type>
+  <object-name>ClearButton</object-name>
+  <action>
+   <button>0</button>
+   <binding>
+    <command>property-assign</command>
+    <property>/instrumentation/ins[0]/control/Clear</property>
+    <value>1</value>
+    <repeatable>true</repeatable>
+   </binding>
+   <mod-up>
+    <binding>
+     <command>property-assign</command>
+     <property>/instrumentation/ins[0]/control/Clear</property>
+     <value>0</value>
+    </binding>
+    <binding>
+     <command>property-toggle</command>
+     <property>/instrumentation/generic/click</property>
+    </binding>
+   </mod-up>
+  </action>
+ </animation>
+ 
+ 
+ 
+ <animation>
+  <type>translate</type>
+  <object-name>InsertButton</object-name>
+  <property>/instrumentation/ins[0]/control/Insert</property>
+  <interpolation>
+   <entry>
+    <ind>0.0</ind>
+    <dep>0</dep>
+   </entry>
+   <entry>
+    <ind>1.0</ind>
+    <dep>-0.001</dep>
+   </entry>
+  </interpolation>
+  <center>
+   <x-m>0.0</x-m>
+   <y-m>0.0</y-m>
+   <z-m>0.0</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>0</y>
+   <z>1</z>
+  </axis>
+ </animation>
+
+
+
+ <animation>
+  <type>pick</type>
+  <object-name>InsertButton</object-name>
+  <action>
+   <button>0</button>
+   <binding>
+    <command>property-assign</command>
+    <property>/instrumentation/ins[0]/control/Insert</property>
+    <value>1</value>
+    <repeatable>true</repeatable>
+   </binding>
+   <mod-up>
+    <binding>
+     <command>property-assign</command>
+     <property>/instrumentation/ins[0]/control/Insert</property>
+     <value>0</value>
+    </binding>
+    <binding>
+     <command>property-toggle</command>
+     <property>/instrumentation/generic/click</property>
+    </binding>
+   </mod-up>
+  </action>
+ </animation>
+ 
+ 
+ <animation>
+  <type>translate</type>
+  <object-name>HoldButton</object-name>
+  <property>/instrumentation/ins[0]/control/Hold</property>
+  <interpolation>
+   <entry>
+    <ind>0.0</ind>
+    <dep>0</dep>
+   </entry>
+   <entry>
+    <ind>1.0</ind>
+    <dep>-0.001</dep>
+   </entry>
+  </interpolation>
+  <center>
+   <x-m>0.0</x-m>
+   <y-m>0.0</y-m>
+   <z-m>0.0</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>0</y>
+   <z>1</z>
+  </axis>
+ </animation>
+
+
+
+ <animation>
+  <type>pick</type>
+  <object-name>HoldButton</object-name>
+  <action>
+   <button>0</button>
+   <binding>
+    <command>property-assign</command>
+    <property>/instrumentation/ins[0]/control/Hold</property>
+    <value>1</value>
+    <repeatable>true</repeatable>
+   </binding>
+   <mod-up>
+    <binding>
+     <command>property-assign</command>
+     <property>/instrumentation/ins[0]/control/Hold</property>
+     <value>0</value>
+    </binding>
+    <binding>
+     <command>property-toggle</command>
+     <property>/instrumentation/generic/click</property>
+    </binding>
+   </mod-up>
+  </action>
+ </animation>
+ 
+ <animation>
+  <type>translate</type>
+  <object-name>WaypointChange</object-name>
+  <property>/instrumentation/ins[0]/control/WaypointChange</property>
+  <interpolation>
+   <entry>
+    <ind>0.0</ind>
+    <dep>0</dep>
+   </entry>
+   <entry>
+    <ind>1.0</ind>
+    <dep>-0.001</dep>
+   </entry>
+  </interpolation>
+  <center>
+   <x-m>0.0</x-m>
+   <y-m>0.0</y-m>
+   <z-m>0.0</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>0</y>
+   <z>1</z>
+  </axis>
+ </animation>
+
+
+
+ <animation>
+  <type>pick</type>
+  <object-name>WaypointChange</object-name>
+  <action>
+   <button>0</button>
+   <binding>
+    <command>property-assign</command>
+    <property>/instrumentation/ins[0]/control/WaypointChange</property>
+    <value>1</value>
+    <repeatable>true</repeatable>
+   </binding>
+   <mod-up>
+    <binding>
+     <command>property-assign</command>
+     <property>/instrumentation/ins[0]/control/WaypointChange</property>
+     <value>0</value>
+    </binding>
+    <binding>
+     <command>property-toggle</command>
+     <property>/instrumentation/generic/click</property>
+    </binding>
+   </mod-up>
+  </action>
+ </animation>
+
 
 </PropertyList>
