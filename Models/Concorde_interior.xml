@@ -1871,7 +1871,28 @@
 <!-- ENGINEERINSTRUMENTS -->
 <!-- ======== -->
 
-
+<model>
+    <name>Fuel Tank 9 Overfull </name>
+    <path>Cockpit/Engineer/tank-o-full9.xml</path>
+    <overlay>
+      <params>
+    <lbs-select>/consumables/fuel/tank[8]/level-lbs</lbs-select>
+  <over-full-select>/consumables/fuel/tank[8]/over-full-lb</over-full-select>
+  </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.761</x-m>
+      <y-m>0.477</y-m>
+      <z-m>1.472</z-m>
+      
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>22</pitch-deg>
+      
+     
+      
+    </offsets>
+  </model>
 
 <model>
     <name>Fuel Tank 9 </name>
@@ -1883,8 +1904,8 @@
     </overlay>
     <offsets>
       <x-m>-21.761</x-m>
-      <y-m>0.490</y-m>
-      <z-m>1.426</z-m>
+      <y-m>0.500</y-m>
+      <z-m>1.416</z-m>
       
       <heading-deg>-90</heading-deg>
      <pitch-deg>25</pitch-deg>
@@ -1901,13 +1922,36 @@
     </overlay>
     <offsets>
       <x-m>-21.761</x-m>
-      <y-m>0.535</y-m>
+      <y-m>0.54</y-m>
       <z-m>1.337</z-m>
       
       <heading-deg>-90</heading-deg>
      <pitch-deg>25</pitch-deg>
     </offsets>
   </model>
+  
+  
+  
+  
+  <model>
+    <name>Fuel Tank 5 Overfull </name>
+    <path>Cockpit/Engineer/tank-o-full.xml</path>
+    <overlay>
+      <params>
+    <lbs-select>/consumables/fuel/tank[4]/level-lbs</lbs-select>
+  <over-full-select>/consumables/fuel/tank[4]/over-full-lb</over-full-select>
+  </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.936</x-m>
+      <y-m>0.555</y-m>
+      <z-m>1.262</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>-5</pitch-deg>
+    </offsets>
+  </model>
+  
   
   
   <model>
@@ -1922,6 +1966,26 @@
       <x-m>-21.936</x-m>
       <y-m>0.555</y-m>
       <z-m>1.214</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>-5</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+   <model>
+    <name>Fuel Tank 7 Overfull </name>
+    <path>Cockpit/Engineer/tank-o-full.xml</path>
+    <overlay>
+      <params>
+    <lbs-select>/consumables/fuel/tank[6]/level-lbs</lbs-select>
+  <over-full-select>/consumables/fuel/tank[6]/over-full-lb</over-full-select>
+  </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.602</x-m>
+      <y-m>0.555</y-m>
+      <z-m>1.262</z-m>
       
       <heading-deg>-90</heading-deg>
      <pitch-deg>-5</pitch-deg>
@@ -1997,6 +2061,26 @@
         <x-m>-21.773</x-m>
       <y-m>0.544</y-m>
       <z-m>1.064</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>-5</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  <model>
+    <name>Fuel Tank 11 Overfull </name>
+    <path>Cockpit/Engineer/tank-o-full.xml</path>
+    <overlay>
+      <params>
+    <lbs-select>/consumables/fuel/tank[10]/level-lbs</lbs-select>
+  <over-full-select>/consumables/fuel/tank[10]/over-full-lb</over-full-select>
+  </params>
+    </overlay>
+    <offsets>
+        <x-m>-21.773</x-m>
+      <y-m>0.554</y-m>
+      <z-m>1.012</z-m>
       
       <heading-deg>-90</heading-deg>
      <pitch-deg>-5</pitch-deg>

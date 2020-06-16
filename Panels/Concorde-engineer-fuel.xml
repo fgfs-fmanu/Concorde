@@ -299,38 +299,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
 
 <!-- main tanks left -->
 
-  <instrument include="Instruments/concorde-yellow-fuel-o-full.xml">
-   <name>Tank 5 over full</name>
-   <condition>
-    <or>
-     <and>
-      <property>/sim/current-view/internal</property>
-      <property>/systems/seat/engineer</property>
-      <less-than>
-       <property>/sim/current-view/goal-heading-offset-deg</property>
-       <value>320</value>
-      </less-than>
-      <greater-than>
-       <property>/sim/current-view/goal-heading-offset-deg</property>
-       <value>250</value>
-      </greater-than>
-      <less-than>
-       <property>/sim/current-view/goal-pitch-offset-deg</property>
-       <value>5</value>
-      </less-than>
-     </and>
-     <property>/controls/seat/all</property>
-    </or>
-   </condition>
-   <params>
-    <lbs-select>/consumables/fuel/tank[4]/level-lbs</lbs-select>
-    <over-full-select>/consumables/fuel/tank[4]/over-full-lb</over-full-select>
-   </params>
-   <x>32</x>
-   <y>585</y>
-   <w>28</w>
-   <h>14</h>
-  </instrument>
+  
 
   <instrument include="Instruments/concorde-conn-fuel-trans-valve.xml">
    <name>Transfert valve tank 5A</name>
@@ -1165,67 +1134,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
    <h>60</h>
   </instrument>
 
-  <instrument include="Instruments/concorde-yellow-fuel-o-full.xml">
-   <name>Tank 7 over full</name>
-   <condition>
-    <or>
-     <and>
-      <property>/sim/current-view/internal</property>
-      <property>/systems/seat/engineer</property>
-      <less-than>
-       <property>/sim/current-view/goal-heading-offset-deg</property>
-       <value>285</value>
-      </less-than>
-      <greater-than>
-       <property>/sim/current-view/goal-heading-offset-deg</property>
-       <value>215</value>
-      </greater-than>
-      <less-than>
-       <property>/sim/current-view/goal-pitch-offset-deg</property>
-       <value>5</value>
-      </less-than>
-     </and>
-     <property>/controls/seat/all</property>
-    </or>
-   </condition>
-   <params>
-    <lbs-select>/consumables/fuel/tank[6]/level-lbs</lbs-select>
-    <over-full-select>/consumables/fuel/tank[6]/over-full-lb</over-full-select>
-   </params>
-   <x>397</x>
-   <y>585</y>
-   <w>28</w>
-   <h>14</h>
-  </instrument>
-
-  <instrument include="Instruments/concorde-title-hyd-pumps.xml">
-   <name>Pumps</name>
-   <condition>
-    <or>
-     <and>
-      <property>/sim/current-view/internal</property>
-      <property>/systems/seat/engineer</property>
-      <less-than>
-       <property>/sim/current-view/goal-heading-offset-deg</property>
-       <value>280</value>
-      </less-than>
-      <greater-than>
-       <property>/sim/current-view/goal-heading-offset-deg</property>
-       <value>210</value>
-      </greater-than>
-      <less-than>
-       <property>/sim/current-view/goal-pitch-offset-deg</property>
-       <value>0</value>
-      </less-than>
-     </and>
-     <property>/controls/seat/all</property>
-    </or>
-   </condition>
-   <x>432</x>
-   <y>563</y>
-   <w>40</w>
-   <h>20</h>
-  </instrument>
+  
 
   <instrument include="Instruments/concorde-yellow-fuel-pressure.xml">
    <name>Low pressure pump 1 tank 7</name>
@@ -2789,38 +2698,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
    <h>52</h>
   </instrument>
 
-  <instrument include="Instruments/concorde-yellow-fuel-o-full.xml">
-   <name>Tank 11 over full</name>
-   <condition>
-    <or>
-     <and>
-      <property>/sim/current-view/internal</property>
-      <property>/systems/seat/engineer</property>
-      <less-than>
-       <property>/sim/current-view/goal-heading-offset-deg</property>
-       <value>310</value>
-      </less-than>
-      <greater-than>
-       <property>/sim/current-view/goal-heading-offset-deg</property>
-       <value>225</value>
-      </greater-than>
-      <less-than>
-       <property>/sim/current-view/goal-pitch-offset-deg</property>
-       <value>-15</value>
-      </less-than>
-     </and>
-     <property>/controls/seat/all</property>
-    </or>
-   </condition>
-   <params>
-    <lbs-select>/consumables/fuel/tank[10]/level-lbs</lbs-select>
-    <over-full-select>/consumables/fuel/tank[10]/over-full-lb</over-full-select>
-   </params>
-   <x>216</x>
-   <y>315</y>
-   <w>28</w>
-   <h>14</h>
-  </instrument>
+ 
 
   <instrument include="Instruments/concorde-fuel-pump-trim-blue.xml">
    <name>Blue pump tank 11</name>

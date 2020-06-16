@@ -750,34 +750,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
    <h>51</h>
   </instrument>
 
-  <instrument include="Instruments/concorde-yellow-fuel-o-full-vert.xml">
-   <name>Tank 9 over full</name>
-   <condition>
-    <or>
-     <and>
-      <property>/sim/current-view/internal</property>
-      <property>/systems/seat/engineer</property>
-      <less-than>
-       <property>/sim/current-view/goal-heading-offset-deg</property>
-       <value>300</value>
-      </less-than>
-      <greater-than>
-       <property>/sim/current-view/goal-heading-offset-deg</property>
-       <value>235</value>
-      </greater-than>
-      <greater-than>
-       <property>/sim/current-view/goal-pitch-offset-deg</property>
-       <value>-30</value>
-      </greater-than>
-     </and>
-     <property>/controls/seat/all</property>
-    </or>
-   </condition>
-   <x>270</x>
-   <y>195</y>
-   <w>14</w>
-   <h>28</h>
-  </instrument>
+  
 
   <instrument include="Instruments/concorde-tank9-inlet-selector2.xml">
    <name>Inlet 2 valve selector</name>
