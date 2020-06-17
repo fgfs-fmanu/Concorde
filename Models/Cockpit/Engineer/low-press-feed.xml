@@ -1,0 +1,132 @@
+<?xml version="1.0"?>
+<PropertyList>
+  
+  <path>../Models/light_lowpress.ac</path>
+<params>
+  <pump-switch>/controls/fuel/tank[0]/pump[0]</pump-switch>
+ </params>
+ 
+<effect>
+    <inherits-from>Aircraft/Concorde/Models/Effects/interior</inherits-from>
+    <object-name>Frame</object-name>
+    <object-name>On</object-name>
+    <object-name>Text</object-name>
+</effect>
+
+
+
+
+  
+   <animation>
+    <type>select</type>
+    <object-name>On</object-name>
+    <condition>
+       <and>
+     <greater-than>
+    <property>/systems/electrical/outputs/bulb</property>
+    <value>20.0</value>
+   </greater-than>
+   <not>
+      <and>
+       
+    <not>
+    <property>/controls/lighting/crew/engineer/center/test</property>
+    </not>
+     <!-- bug -->
+    
+         <property alias="/params/pump-switch"/>
+        
+      </and>
+      </not>
+      <not>
+    <property>/controls/lighting/crew/engineer/center/low</property>
+    </not>
+     </and>
+     
+    </condition>
+
+ 
+  </animation>
+  
+  
+  <animation>
+    <type>material</type>
+    <object-name>Off</object-name>
+     <condition>
+       <and>
+     <greater-than>
+    <property>/systems/electrical/outputs/bulb</property>
+    <value>20.0</value>
+   </greater-than>
+      <not>
+      <and>
+       
+    <not>
+    <property>/controls/lighting/crew/engineer/center/test</property>
+    </not>
+     <!-- bug -->
+    
+         <property alias="/params/pump-switch"/>
+        
+      </and>
+      </not>
+      
+      
+    <property>/controls/lighting/crew/engineer/center/low</property>
+    
+     </and>
+     
+    </condition>
+
+    <emission>
+      <red>0.5</red>
+      <green>0.5</green>
+      <blue>0</blue>
+    </emission>
+  </animation>
+  
+  <animation>
+    <type>select</type>
+    <object-name>Off</object-name>
+    <condition>
+    <not>
+        <and>
+     <greater-than>
+    <property>/systems/electrical/outputs/bulb</property>
+    <value>20.0</value>
+   </greater-than>
+       <not>
+      <and>
+        <not>
+    <property>/controls/lighting/crew/engineer/center/test</property>
+    </not>
+     <!-- bug -->
+    
+         <property alias="/params/pump-switch"/>
+        
+      </and>
+      </not>
+      
+      <not>
+    <property>/controls/lighting/crew/engineer/center/low</property>
+    </not>
+     </and>
+     
+     </not>
+    </condition>
+
+    
+  </animation>
+  
+ 
+  
+  <animation>
+    <type>material</type>
+    <object-name>Frame</object-name>
+  <emission>
+     <red>0.2</red>
+     <green>0.2</green>
+     <blue>0.2</blue>
+  </emission>
+</animation>
+</PropertyList>

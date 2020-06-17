@@ -13,7 +13,7 @@
     <object-name>Switch</object-name>
 </effect>
 
-  <animation>
+ <animation>
 
     <type>rotate</type>
     <object-name>Switch</object-name>
@@ -83,8 +83,6 @@
     </action>
 
 </animation>
-
-
 
 
 

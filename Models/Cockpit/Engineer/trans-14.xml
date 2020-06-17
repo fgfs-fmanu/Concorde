@@ -50,18 +50,9 @@
         <max>1</max>
         <wrap>true</wrap>
       </binding>
-     <binding>
-        <command>property-toggle</command>
-        <property>/instrumentation/generic/click</property>
-      </binding>
-    </action>
-    <action>
-      <name>Captain INS Switch</name>
-      <button>0</button>
-      <repeatable>false</repeatable>
       <binding>
         <command>property-toggle</command>
-        <property>/controls/fuel/tank[3]/aft-trim</property>
+        <property>/controls/fuel/tank[0]/aft-trim</property>
         <step>1</step>
         <min>0</min>
         <max>1</max>
@@ -72,7 +63,7 @@
         <property>/instrumentation/generic/click</property>
       </binding>
     </action>
-  </animation>
+    </animation>
 
 
 </PropertyList>
