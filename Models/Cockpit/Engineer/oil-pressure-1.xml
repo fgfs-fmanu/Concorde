@@ -22,14 +22,19 @@
 <animation>
     <type>select</type>
     <object-name>AlarmOn</object-name>
-    <condition>
+     <condition>
      <and>
+     
       <or>
+      
         <greater-than>
        <property>/engines/engine[0]/oil-pressure-psi</property>
-       <value>15</value>
+       <value>65</value>
       </greater-than>
+      <property>/controls/lighting/crew/engineer/forward/test</property>
+      
       </or>
+      
       <greater-than>
           <property>/systems/electrical/outputs/specific</property>
           <value>20.0</value>
@@ -41,21 +46,26 @@
   <animation>
     <type>select</type>
     <object-name>AlarmOff</object-name>
-    <condition>
+     <condition>
+    <not>
      <and>
+     
       <or>
-      <not>
+      
         <greater-than>
        <property>/engines/engine[0]/oil-pressure-psi</property>
-       <value>15</value>
+       <value>65</value>
       </greater-than>
-      </not>
+      <property>/controls/lighting/crew/engineer/forward/test</property>
+      
       </or>
+      
       <greater-than>
           <property>/systems/electrical/outputs/specific</property>
           <value>20.0</value>
       </greater-than>
      </and>
+     </not>
     </condition>
   </animation>
   

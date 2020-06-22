@@ -20,7 +20,7 @@ Autothrottle.new = func {
                SPEEDACQUIRESEC : 2.0,
 
                MAXMACH : 2.02,
-               CRUISEMACH : 2.0,
+               CRUISEMACH : 2.00,
 
                LIGHTKT : 10.0,
 

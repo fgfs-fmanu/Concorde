@@ -1,0 +1,993 @@
+<?xml version="1.0"?>
+<PropertyList>
+  
+  <path>../Models/light_enginewarning.ac</path>
+
+ 
+<effect>
+    <inherits-from>Aircraft/Concorde/Models/Effects/interior</inherits-from>
+    
+    <object-name>FrameEH1</object-name>
+    <object-name>OffEH1</object-name>
+    <object-name>OnEH1</object-name>
+    <object-name>TextEH1</object-name>
+    <object-name>FrameFF1</object-name>
+    <object-name>OnFF1</object-name>
+    <object-name>OffFF1</object-name>
+    <object-name>TextFF1</object-name>
+    <object-name>FrameNC1</object-name>
+    <object-name>OnNC1</object-name>
+    <object-name>OffNC1</object-name>
+    <object-name>TextNC1</object-name>
+    <object-name>FrameR1</object-name>
+    <object-name>OnR1</object-name>
+    <object-name>OffR1</object-name>
+    <object-name>TextR1</object-name>
+    <object-name>FrameSP1</object-name>
+    <object-name>OnSP1</object-name>
+    <object-name>OffSP1</object-name>
+    <object-name>TextSP1</object-name>
+    <object-name>FrameWD1</object-name>
+    <object-name>OnWD1</object-name>
+    <object-name>OffWD1</object-name>
+    <object-name>TextWD1</object-name>
+    
+    <object-name>FrameEH2</object-name>
+    <object-name>OnEH2</object-name>
+    <object-name>OffEH2</object-name>
+    <object-name>TextEH2</object-name>
+    <object-name>FrameFF2</object-name>
+    <object-name>OnFF2</object-name>
+    <object-name>OffFF2</object-name>
+    <object-name>TextFF2</object-name>
+    <object-name>FrameNC2</object-name>
+    <object-name>OnNC2</object-name>
+    <object-name>OffNC2</object-name>
+    <object-name>TextNC2</object-name>
+    <object-name>FrameR2</object-name>
+    <object-name>OnR2</object-name>
+    <object-name>OffR2</object-name>
+    <object-name>TextR2</object-name>
+    <object-name>FrameSP2</object-name>
+    <object-name>OnSP2</object-name>
+    <object-name>OffSP2</object-name>
+    <object-name>TextSP2</object-name>
+    <object-name>FrameWD2</object-name>
+    <object-name>OnWD2</object-name>
+    <object-name>OffWD2</object-name>
+    <object-name>TextWD2</object-name>
+    
+    <object-name>FrameEH3</object-name>
+    <object-name>OnEH3</object-name>
+    <object-name>OffEH3</object-name>
+    <object-name>TextEH3</object-name>
+    <object-name>FrameFF3</object-name>
+    <object-name>OnFF3</object-name>
+    <object-name>OffFF3</object-name>
+    <object-name>TextFF3</object-name>
+    <object-name>FrameNC3</object-name>
+    <object-name>OnNC3</object-name>
+    <object-name>OffNC3</object-name>
+    <object-name>TextNC3</object-name>
+    <object-name>FrameR3</object-name>
+    <object-name>OnR3</object-name>
+    <object-name>OffR3</object-name>
+    <object-name>TextR3</object-name>
+    <object-name>FrameSP3</object-name>
+    <object-name>OnSP3</object-name>
+    <object-name>OffSP3</object-name>
+    <object-name>TextSP3</object-name>
+    <object-name>FrameWD3</object-name>
+    <object-name>OnWD3</object-name>
+    <object-name>OffWD3</object-name>
+    <object-name>TextWD3</object-name>
+    
+    <object-name>FrameEH4</object-name>
+    <object-name>OnEH4</object-name>
+    <object-name>OffEH4</object-name>
+    <object-name>TextEH4</object-name>
+    <object-name>FrameFF4</object-name>
+    <object-name>OnFF4</object-name>
+    <object-name>OffFF4</object-name>
+    <object-name>TextFF4</object-name>
+    <object-name>FrameNC4</object-name>
+    <object-name>OnNC4</object-name>
+    <object-name>OffNC4</object-name>
+    <object-name>TextNC4</object-name>
+    <object-name>FrameR4</object-name>
+    <object-name>OnR4</object-name>
+    <object-name>OffR4</object-name>
+    <object-name>TextR4</object-name>
+    <object-name>FrameSP4</object-name>
+    <object-name>OnSP4</object-name>
+    <object-name>OffSP4</object-name>
+    <object-name>TextSP4</object-name>
+    <object-name>FrameWD4</object-name>
+    <object-name>OnWD4</object-name>
+    <object-name>OffWD4</object-name>
+    <object-name>TextWD4</object-name>
+</effect>
+
+
+
+  
+  
+  
+ 
+<animation>
+  <type>select</type>
+    <object-name>OnEH1</object-name>    
+    <condition>
+     <and>
+     
+     <greater-than>
+    <property>/systems/electrical/outputs/bulb</property>
+    <value>20.0</value>
+   </greater-than>
+   
+      <or>
+    <property>/controls/lighting/crew/engineer/forward/test</property>
+     <!-- bug -->
+       <greater-than>
+            <property>/engines/engine[0]/egt-degf</property>
+            <value>1600</value>
+          </greater-than>
+      </or>
+      
+      <not>
+    <property>/controls/lighting/crew/engineer/forward/low</property>
+    </not>
+    
+     </and>
+    </condition>
+  </animation>
+  
+  
+  <animation>
+    <type>material</type>
+    <object-name>OffEH1</object-name>
+     <condition>
+     <and>
+     
+     <greater-than>
+    <property>/systems/electrical/outputs/bulb</property>
+    <value>20.0</value>
+   </greater-than>
+   
+      <or>
+    <property>/controls/lighting/crew/engineer/forward/test</property>
+     <!-- bug -->
+       <greater-than>
+            <property>/engines/engine[0]/egt-degf</property>
+            <value>1600</value>
+          </greater-than>
+      </or>
+      
+     
+    <property>/controls/lighting/crew/engineer/forward/low</property>
+   
+    
+     </and>
+    </condition>
+
+    <emission>
+      <red>0.5</red>
+      <green>0</green>
+      <blue>0</blue>
+    </emission>
+  </animation>
+
+
+  <animation>
+  <type>select</type>
+    <object-name>OffEH1</object-name>    
+    <condition>
+    <not>
+     <and>
+     
+     <greater-than>
+    <property>/systems/electrical/outputs/bulb</property>
+    <value>20.0</value>
+   </greater-than>
+   
+      <or>
+    <property>/controls/lighting/crew/engineer/forward/test</property>
+     <!-- bug -->
+       <greater-than>
+            <property>/engines/engine[0]/egt-degf</property>
+            <value>1600</value>
+          </greater-than>
+      </or>
+      
+      <not>
+    <property>/controls/lighting/crew/engineer/forward/low</property>
+    </not>
+    
+     </and>
+     </not>
+    </condition>
+  </animation>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <animation>
+  <type>select</type>
+    <object-name>OnEH2</object-name>    
+    <condition>
+     <and>
+     
+     <greater-than>
+    <property>/systems/electrical/outputs/bulb</property>
+    <value>20.0</value>
+   </greater-than>
+   
+      <or>
+    <property>/controls/lighting/crew/engineer/forward/test</property>
+     <!-- bug -->
+       <greater-than>
+            <property>/engines/engine[1]/egt-degf</property>
+            <value>1600</value>
+          </greater-than>
+      </or>
+      
+      <not>
+    <property>/controls/lighting/crew/engineer/forward/low</property>
+    </not>
+    
+     </and>
+    </condition>
+  </animation>
+  
+  
+  <animation>
+    <type>material</type>
+    <object-name>OffEH2</object-name>
+     <condition>
+     <and>
+     
+     <greater-than>
+    <property>/systems/electrical/outputs/bulb</property>
+    <value>20.0</value>
+   </greater-than>
+   
+      <or>
+    <property>/controls/lighting/crew/engineer/forward/test</property>
+     <!-- bug -->
+       <greater-than>
+            <property>/engines/engine[1]/egt-degf</property>
+            <value>1600</value>
+          </greater-than>
+      </or>
+      
+     
+    <property>/controls/lighting/crew/engineer/forward/low</property>
+   
+    
+     </and>
+    </condition>
+
+    <emission>
+      <red>0.5</red>
+      <green>0</green>
+      <blue>0</blue>
+    </emission>
+  </animation>
+
+
+  <animation>
+  <type>select</type>
+    <object-name>OffEH2</object-name>    
+    <condition>
+    <not>
+     <and>
+     
+     <greater-than>
+    <property>/systems/electrical/outputs/bulb</property>
+    <value>20.0</value>
+   </greater-than>
+   
+      <or>
+    <property>/controls/lighting/crew/engineer/forward/test</property>
+     <!-- bug -->
+       <greater-than>
+            <property>/engines/engine[1]/egt-degf</property>
+            <value>1600</value>
+          </greater-than>
+      </or>
+      
+      <not>
+    <property>/controls/lighting/crew/engineer/forward/low</property>
+    </not>
+    
+     </and>
+     </not>
+    </condition>
+  </animation>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <animation>
+  <type>select</type>
+    <object-name>OnEH3</object-name>    
+    <condition>
+     <and>
+     
+     <greater-than>
+    <property>/systems/electrical/outputs/bulb</property>
+    <value>20.0</value>
+   </greater-than>
+   
+      <or>
+    <property>/controls/lighting/crew/engineer/forward/test</property>
+     <!-- bug -->
+       <greater-than>
+            <property>/engines/engine[2]/egt-degf</property>
+            <value>1600</value>
+          </greater-than>
+      </or>
+      
+      <not>
+    <property>/controls/lighting/crew/engineer/forward/low</property>
+    </not>
+    
+     </and>
+    </condition>
+  </animation>
+  
+  
+  <animation>
+    <type>material</type>
+    <object-name>OffEH3</object-name>
+     <condition>
+     <and>
+     
+     <greater-than>
+    <property>/systems/electrical/outputs/bulb</property>
+    <value>20.0</value>
+   </greater-than>
+   
+      <or>
+    <property>/controls/lighting/crew/engineer/forward/test</property>
+     <!-- bug -->
+       <greater-than>
+            <property>/engines/engine[2]/egt-degf</property>
+            <value>1600</value>
+          </greater-than>
+      </or>
+      
+     
+    <property>/controls/lighting/crew/engineer/forward/low</property>
+   
+    
+     </and>
+    </condition>
+
+    <emission>
+      <red>0.5</red>
+      <green>0</green>
+      <blue>0</blue>
+    </emission>
+  </animation>
+
+
+  <animation>
+  <type>select</type>
+    <object-name>OffEH3</object-name>    
+    <condition>
+    <not>
+     <and>
+     
+     <greater-than>
+    <property>/systems/electrical/outputs/bulb</property>
+    <value>20.0</value>
+   </greater-than>
+   
+      <or>
+    <property>/controls/lighting/crew/engineer/forward/test</property>
+     <!-- bug -->
+       <greater-than>
+            <property>/engines/engine[2]/egt-degf</property>
+            <value>1600</value>
+          </greater-than>
+      </or>
+      
+      <not>
+    <property>/controls/lighting/crew/engineer/forward/low</property>
+    </not>
+    
+     </and>
+     </not>
+    </condition>
+  </animation>
+  
+  
+  
+  
+  
+  
+  <animation>
+  <type>select</type>
+    <object-name>OnEH4</object-name>    
+    <condition>
+     <and>
+     
+     <greater-than>
+    <property>/systems/electrical/outputs/bulb</property>
+    <value>20.0</value>
+   </greater-than>
+   
+      <or>
+    <property>/controls/lighting/crew/engineer/forward/test</property>
+     <!-- bug -->
+       <greater-than>
+            <property>/engines/engine[3]/egt-degf</property>
+            <value>1600</value>
+          </greater-than>
+      </or>
+      
+      <not>
+    <property>/controls/lighting/crew/engineer/forward/low</property>
+    </not>
+    
+     </and>
+    </condition>
+  </animation>
+  
+  
+  <animation>
+    <type>material</type>
+    <object-name>OffEH4</object-name>
+     <condition>
+     <and>
+     
+     <greater-than>
+    <property>/systems/electrical/outputs/bulb</property>
+    <value>20.0</value>
+   </greater-than>
+   
+      <or>
+    <property>/controls/lighting/crew/engineer/forward/test</property>
+     <!-- bug -->
+       <greater-than>
+            <property>/engines/engine[3]/egt-degf</property>
+            <value>1600</value>
+          </greater-than>
+      </or>
+      
+     
+    <property>/controls/lighting/crew/engineer/forward/low</property>
+   
+    
+     </and>
+    </condition>
+
+    <emission>
+      <red>0.5</red>
+      <green>0</green>
+      <blue>0</blue>
+    </emission>
+  </animation>
+
+
+  <animation>
+  <type>select</type>
+    <object-name>OffEH4</object-name>    
+    <condition>
+    <not>
+     <and>
+     
+     <greater-than>
+    <property>/systems/electrical/outputs/bulb</property>
+    <value>20.0</value>
+   </greater-than>
+   
+      <or>
+    <property>/controls/lighting/crew/engineer/forward/test</property>
+     <!-- bug -->
+       <greater-than>
+            <property>/engines/engine[3]/egt-degf</property>
+            <value>1600</value>
+          </greater-than>
+      </or>
+      
+      <not>
+    <property>/controls/lighting/crew/engineer/forward/low</property>
+    </not>
+    
+     </and>
+     </not>
+    </condition>
+  </animation>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <animation>
+    <type>select</type>
+    <object-name>OnSP1</object-name>
+    <condition>
+     <and>
+     <greater-than>
+    <property>/systems/electrical/outputs/bulb</property>
+    <value>20.0</value>
+   </greater-than>
+   
+      <or>
+    <property>/controls/lighting/crew/engineer/forward/test</property>
+     <!-- bug -->
+     <property>/engines/engine[0]/starter</property>
+     <property>/systems/engines/engine[0]/relight</property>
+      </or>
+      
+      <not>
+      
+    <property>/controls/lighting/crew/engineer/forward/low</property>
+    </not>
+     </and>
+    </condition>
+
+  </animation>
+  
+  <animation>
+    <type>material</type>
+    <object-name>OffSP1</object-name>
+     <condition>
+     <and>
+     <greater-than>
+    <property>/systems/electrical/outputs/bulb</property>
+    <value>20.0</value>
+   </greater-than>
+       <or>
+    <property>/controls/lighting/crew/engineer/forward/test</property>
+     <!-- bug -->
+     <property>/engines/engine[0]/starter</property>
+     <property>/systems/engines/engine[0]/relight</property>
+      </or>
+      
+    <property>/controls/lighting/crew/engineer/forward/low</property>
+    
+     </and>
+    </condition>
+
+    <emission>
+      <red>0.5</red>
+      <green>0.5</green>
+      <blue>0</blue>
+    </emission>
+  </animation>
+  
+  
+  <animation>
+    <type>select</type>
+    <object-name>OffSP1</object-name>
+    <condition>
+    <not>
+       <and>
+     <greater-than>
+    <property>/systems/electrical/outputs/bulb</property>
+    <value>20.0</value>
+   </greater-than>
+   
+       <or>
+    <property>/controls/lighting/crew/engineer/forward/test</property>
+     <!-- bug -->
+     <property>/engines/engine[0]/starter</property>
+     <property>/systems/engines/engine[0]/relight</property>
+      </or>
+      
+      <not>
+    <property>/controls/lighting/crew/engineer/forward/low</property>
+    </not>
+     </and>
+     
+     </not>
+    </condition>
+
+  </animation>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+   
+  
+  <animation>
+    <type>select</type>
+    <object-name>OnSP2</object-name>
+    <condition>
+     <and>
+     <greater-than>
+    <property>/systems/electrical/outputs/bulb</property>
+    <value>20.0</value>
+   </greater-than>
+   
+      <or>
+    <property>/controls/lighting/crew/engineer/forward/test</property>
+     <!-- bug -->
+     <property>/engines/engine[1]/starter</property>
+     <property>/systems/engines/engine[1]/relight</property>
+      </or>
+      
+      <not>
+      
+    <property>/controls/lighting/crew/engineer/forward/low</property>
+    </not>
+     </and>
+    </condition>
+
+  </animation>
+  
+  <animation>
+    <type>material</type>
+    <object-name>OffSP2</object-name>
+     <condition>
+     <and>
+     <greater-than>
+    <property>/systems/electrical/outputs/bulb</property>
+    <value>20.0</value>
+   </greater-than>
+       <or>
+    <property>/controls/lighting/crew/engineer/forward/test</property>
+     <!-- bug -->
+     <property>/engines/engine[1]/starter</property>
+     <property>/systems/engines/engine[1]/relight</property>
+      </or>
+      
+    <property>/controls/lighting/crew/engineer/forward/low</property>
+    
+     </and>
+    </condition>
+
+    <emission>
+      <red>0.5</red>
+      <green>0.5</green>
+      <blue>0</blue>
+    </emission>
+  </animation>
+  
+  
+  <animation>
+    <type>select</type>
+    <object-name>OffSP2</object-name>
+    <condition>
+    <not>
+       <and>
+     <greater-than>
+    <property>/systems/electrical/outputs/bulb</property>
+    <value>20.0</value>
+   </greater-than>
+   
+       <or>
+    <property>/controls/lighting/crew/engineer/forward/test</property>
+     <!-- bug -->
+     <property>/engines/engine[1]/starter</property>
+     <property>/systems/engines/engine[1]/relight</property>
+      </or>
+      
+      <not>
+    <property>/controls/lighting/crew/engineer/forward/low</property>
+    </not>
+     </and>
+     
+     </not>
+    </condition>
+
+  </animation>
+  
+  
+  
+  
+  
+  
+  
+   
+  
+  <animation>
+    <type>select</type>
+    <object-name>OnSP3</object-name>
+    <condition>
+     <and>
+     <greater-than>
+    <property>/systems/electrical/outputs/bulb</property>
+    <value>20.0</value>
+   </greater-than>
+   
+      <or>
+    <property>/controls/lighting/crew/engineer/forward/test</property>
+     <!-- bug -->
+     <property>/engines/engine[2]/starter</property>
+     <property>/systems/engines/engine[2]/relight</property>
+      </or>
+      
+      <not>
+      
+    <property>/controls/lighting/crew/engineer/forward/low</property>
+    </not>
+     </and>
+    </condition>
+
+  </animation>
+  
+  <animation>
+    <type>material</type>
+    <object-name>OffSP3</object-name>
+     <condition>
+     <and>
+     <greater-than>
+    <property>/systems/electrical/outputs/bulb</property>
+    <value>20.0</value>
+   </greater-than>
+       <or>
+    <property>/controls/lighting/crew/engineer/forward/test</property>
+     <!-- bug -->
+     <property>/engines/engine[2]/starter</property>
+     <property>/systems/engines/engine[2]/relight</property>
+      </or>
+      
+    <property>/controls/lighting/crew/engineer/forward/low</property>
+    
+     </and>
+    </condition>
+
+    <emission>
+      <red>0.5</red>
+      <green>0.5</green>
+      <blue>0</blue>
+    </emission>
+  </animation>
+  
+  
+  <animation>
+    <type>select</type>
+    <object-name>OffSP3</object-name>
+    <condition>
+    <not>
+       <and>
+     <greater-than>
+    <property>/systems/electrical/outputs/bulb</property>
+    <value>20.0</value>
+   </greater-than>
+   
+       <or>
+    <property>/controls/lighting/crew/engineer/forward/test</property>
+     <!-- bug -->
+     <property>/engines/engine[2]/starter</property>
+     <property>/systems/engines/engine[2]/relight</property>
+      </or>
+      
+      <not>
+    <property>/controls/lighting/crew/engineer/forward/low</property>
+    </not>
+     </and>
+     
+     </not>
+    </condition>
+
+  </animation>
+  
+  
+  
+  
+  
+  
+  
+   
+  
+  <animation>
+    <type>select</type>
+    <object-name>OnSP4</object-name>
+    <condition>
+     <and>
+     <greater-than>
+    <property>/systems/electrical/outputs/bulb</property>
+    <value>20.0</value>
+   </greater-than>
+   
+      <or>
+    <property>/controls/lighting/crew/engineer/forward/test</property>
+     <!-- bug -->
+     <property>/engines/engine[3]/starter</property>
+     <property>/systems/engines/engine[3]/relight</property>
+      </or>
+      
+      <not>
+      
+    <property>/controls/lighting/crew/engineer/forward/low</property>
+    </not>
+     </and>
+    </condition>
+
+  </animation>
+  
+  <animation>
+    <type>material</type>
+    <object-name>OffSP4</object-name>
+     <condition>
+     <and>
+     <greater-than>
+    <property>/systems/electrical/outputs/bulb</property>
+    <value>20.0</value>
+   </greater-than>
+       <or>
+    <property>/controls/lighting/crew/engineer/forward/test</property>
+     <!-- bug -->
+     <property>/engines/engine[3]/starter</property>
+     <property>/systems/engines/engine[3]/relight</property>
+      </or>
+      
+    <property>/controls/lighting/crew/engineer/forward/low</property>
+    
+     </and>
+    </condition>
+
+    <emission>
+      <red>0.5</red>
+      <green>0.5</green>
+      <blue>0</blue>
+    </emission>
+  </animation>
+  
+  
+  <animation>
+    <type>select</type>
+    <object-name>OffSP4</object-name>
+    <condition>
+    <not>
+       <and>
+     <greater-than>
+    <property>/systems/electrical/outputs/bulb</property>
+    <value>20.0</value>
+   </greater-than>
+   
+       <or>
+    <property>/controls/lighting/crew/engineer/forward/test</property>
+     <!-- bug -->
+     <property>/engines/engine[3]/starter</property>
+     <property>/systems/engines/engine[3]/relight</property>
+      </or>
+      
+      <not>
+    <property>/controls/lighting/crew/engineer/forward/low</property>
+    </not>
+     </and>
+     
+     </not>
+    </condition>
+
+  </animation>
+  
+  
+  
+  
+  
+  
+  
+   <animation>
+    <type>select</type>
+    <object-name>OnFF1</object-name>
+    <object-name>OnNC1</object-name>
+    <object-name>OnR1</object-name>
+    <object-name>OnWD1</object-name>
+    
+    <object-name>OnFF2</object-name>
+    <object-name>OnNC2</object-name>
+    <object-name>OnR2</object-name>
+    <object-name>OnWD2</object-name>
+    
+    <object-name>OnFF3</object-name>
+    <object-name>OnNC3</object-name>
+    <object-name>OnR3</object-name>
+    <object-name>OnWD3</object-name>
+    
+    <object-name>OnFF4</object-name>
+    <object-name>OnNC4</object-name>
+    <object-name>OnR4</object-name>
+    <object-name>OnWD4</object-name>
+    <condition>
+       <and>
+     <greater-than>
+    <property>/systems/electrical/outputs/bulb</property>
+    <value>20.0</value>
+   </greater-than>
+       
+    <property>/controls/lighting/crew/engineer/forward/test</property>
+     <!-- bug -->
+     
+     </and>
+     
+    </condition>
+
+ 
+  </animation>
+  
+  <animation>
+    <type>select</type>
+    <object-name>OffFF1</object-name>
+    <object-name>OffNC1</object-name>
+    <object-name>OffR1</object-name>
+    <object-name>OffWD1</object-name>
+    
+    <object-name>OffFF2</object-name>
+    <object-name>OffNC2</object-name>
+    <object-name>OffR2</object-name>
+    <object-name>OffWD2</object-name>
+    
+    <object-name>OffFF2</object-name>
+    <object-name>OffNC2</object-name>
+    <object-name>OffR2</object-name>
+    <object-name>OffWD2</object-name>
+    
+    <object-name>OffFF3</object-name>
+    <object-name>OffNC3</object-name>
+    <object-name>OffR3</object-name>
+    <object-name>OffWD3</object-name>
+    
+    <object-name>OffFF4</object-name>
+    <object-name>OffNC4</object-name>
+    <object-name>OffR4</object-name>
+    <object-name>OffWD4</object-name>
+    <condition>
+    <not>
+      <and>
+     <greater-than>
+    <property>/systems/electrical/outputs/bulb</property>
+    <value>20.0</value>
+   </greater-than>
+       
+    <property>/controls/lighting/crew/engineer/forward/test</property>
+     <!-- bug -->
+     
+     </and>
+     </not>
+    </condition>
+
+    
+  </animation>
+  
+  
+ 
+  
+  <animation>
+    <type>material</type>
+    <object-name>FrameEH1</object-name>
+    <object-name>FrameFF1</object-name>
+    <object-name>FrameSP1</object-name>
+    <object-name>FrameNC1</object-name>
+    <object-name>FrameR1</object-name>
+    <object-name>FrameWD1</object-name>
+  <emission>
+     <red>0.2</red>
+     <green>0.2</green>
+     <blue>0.2</blue>
+  </emission>
+</animation>
+
+</PropertyList>

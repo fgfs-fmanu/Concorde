@@ -5993,6 +5993,22 @@
      
     </offsets>
   </model>
+  <model>
+     <name>Engine Warning</name>
+    <path>Cockpit/Engineer/light-engine.xml</path>
+<overlay>
+
+</overlay>
+    <offsets>
+      <x-m>-22.22</x-m>
+      <y-m>0.442</y-m>
+      <z-m>1.5</z-m>
+     
+      <heading-deg>-83</heading-deg>
+     <pitch-deg>25</pitch-deg>
+     
+    </offsets>
+  </model>
   
   
   

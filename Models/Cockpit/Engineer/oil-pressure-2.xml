@@ -27,8 +27,9 @@
       <or>
         <greater-than>
        <property>/engines/engine[1]/oil-pressure-psi</property>
-       <value>15</value>
+       <value>65</value>
       </greater-than>
+      <property>/controls/lighting/crew/engineer/forward/test</property>
       </or>
       <greater-than>
           <property>/systems/electrical/outputs/specific</property>
@@ -41,21 +42,26 @@
   <animation>
     <type>select</type>
     <object-name>AlarmOff</object-name>
-    <condition>
+     <condition>
+    <not>
      <and>
+     
       <or>
-      <not>
+      
         <greater-than>
        <property>/engines/engine[1]/oil-pressure-psi</property>
-       <value>15</value>
+       <value>65</value>
       </greater-than>
-      </not>
+      <property>/controls/lighting/crew/engineer/forward/test</property>
+      
       </or>
+      
       <greater-than>
           <property>/systems/electrical/outputs/specific</property>
           <value>20.0</value>
       </greater-than>
      </and>
+     </not>
     </condition>
   </animation>
   

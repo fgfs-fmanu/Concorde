@@ -28,11 +28,16 @@
     <type>select</type>
     <object-name>Alarm1On</object-name>
     <condition>
-     <and>
-      <not>
-    <property>/controls/lighting/crew/engineer/center/test</property>
-   </not>
-      <greater-than>
+    <and>
+    <or>
+        
+          <greater-than>
+            <property>/engines/engine[2]/egt-degf</property>
+            <value>1520</value>
+          </greater-than>      
+       <property>/controls/lighting/crew/engineer/forward/test</property>
+       </or>
+       <greater-than>
           <property>/systems/electrical/outputs/specific</property>
           <value>20.0</value>
       </greater-than>
@@ -44,13 +49,22 @@
     <type>select</type>
     <object-name>Alarm1Off</object-name>
     <condition>
+    <not>
     <and>
-       <property>/controls/lighting/crew/engineer/center/test</property>
+    <or>
+        
+          <greater-than>
+            <property>/engines/engine[2]/egt-degf</property>
+            <value>1520</value>
+          </greater-than>      
+       <property>/controls/lighting/crew/engineer/forward/test</property>
+       </or>
        <greater-than>
           <property>/systems/electrical/outputs/specific</property>
           <value>20.0</value>
       </greater-than>
      </and>
+     </not>
     </condition>
   </animation>
   
@@ -58,11 +72,16 @@
     <type>select</type>
     <object-name>Alarm2On</object-name>
     <condition>
-     <and>
-      <not>
-    <property>/controls/lighting/crew/engineer/center/test</property>
-   </not>
-      <greater-than>
+    <and>
+    <or>
+        
+          <greater-than>
+            <property>/engines/engine[2]/egt-degf</property>
+            <value>1520</value>
+          </greater-than>      
+       <property>/controls/lighting/crew/engineer/forward/test</property>
+       </or>
+       <greater-than>
           <property>/systems/electrical/outputs/specific</property>
           <value>20.0</value>
       </greater-than>
@@ -74,13 +93,22 @@
     <type>select</type>
     <object-name>Alarm2Off</object-name>
     <condition>
+    <not>
     <and>
-       <property>/controls/lighting/crew/engineer/center/test</property>
+    <or>
+        
+          <greater-than>
+            <property>/engines/engine[2]/egt-degf</property>
+            <value>1520</value>
+          </greater-than>      
+       <property>/controls/lighting/crew/engineer/forward/test</property>
+       </or>
        <greater-than>
           <property>/systems/electrical/outputs/specific</property>
           <value>20.0</value>
       </greater-than>
      </and>
+     </not>
     </condition>
   </animation>
 
@@ -107,7 +135,7 @@
       <z>0</z>
     </axis>
   </animation>
- <animation>
+<animation>
     <condition><not>
         <less-than>
           <property>/systems/electrical/outputs/specific</property>
@@ -116,8 +144,7 @@
     </not></condition>
     <type>rotate</type>
     <object-name>Needle2</object-name>
-  
-          <expression>
+    <expression>
           <value>120</value>
           </expression>
     <center>
@@ -132,7 +159,7 @@
     </axis>
   </animation>
   
- 
+  
 
     
  
