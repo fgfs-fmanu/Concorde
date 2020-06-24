@@ -4179,6 +4179,24 @@
   
   
   
+   <model>
+    <name>Trim auto secure</name>
+    <path>Cockpit/Engineer/trim-auto.xml</path>
+    <overlay>
+      <forward-switch>/controls/fuel/pumps/auto-forward</forward-switch>
+  <off-switch>/controls/fuel/pumps/auto-off</off-switch>
+  <switch-guard>/controls/fuel/pumps/auto-guard</switch-guard>
+    </overlay>
+    <offsets>
+      <x-m>-21.73</x-m>
+      <y-m>0.547</y-m>
+      <z-m>1.237</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>-5</pitch-deg>
+    </offsets>
+  </model>
+  
   
   <model>
     <name>Trans Valve 1 4</name>
@@ -4195,6 +4213,10 @@
      <pitch-deg>-5</pitch-deg>
     </offsets>
   </model>
+  
+  
+  
+ 
   
   
   
