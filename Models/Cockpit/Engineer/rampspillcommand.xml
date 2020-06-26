@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<PropertyList>
+  <params>
+  
+ </params>
+  <path>../Models/switch_secure.ac</path>
+
+<effect>
+    <inherits-from>Aircraft/Concorde/Models/Effects/interior</inherits-from>
+    <object-name>Nut</object-name>
+    <object-name>Ball</object-name>
+    <object-name>Switch</object-name>
+    <object-name>Secure</object-name>
+</effect>
+
+  
+
+  
+
+
+
+
+
+
+<animation>
+
+    <type>select</type>
+  
+    <object-name>Secure</object-name>
+    <object-name>Nut</object-name>
+    
+    <condition>
+   <greater-than>
+    <value>2</value>
+    <value>25</value>
+   </greater-than>
+  </condition>
+
+  </animation>
+
+
+  
+  
+  
+  
+ 
+
+
+</PropertyList>

@@ -1,10 +1,9 @@
 <?xml version="1.0"?>
 <PropertyList>
   <params>
-    <forward-switch>/controls/fuel/pumps/auto-forward</forward-switch>
-  <off-switch>/controls/fuel/pumps/auto-off</off-switch>
-  <switch-guard>/controls/fuel/pumps/auto-guard</switch-guard>
-  </params>
+  <btb-switch>/controls/electric/ac/btb[0]</btb-switch>
+  <btb-guard>/controls/electric/ac/btb-guard[0]</btb-guard>
+ </params>
   <path>../Models/switch_secure.ac</path>
 
 <effect>
@@ -22,25 +21,16 @@
     <expression>
     
     <prod>
-    <value>-35</value>
+    <value>35</value>
     
-    <prod>
-    <sum>
-    <value>-1</value>
-    <prod>
-    <property>/controls/fuel/pumps/auto-forward</property>
-	<value>2</value>
-    </prod>
-    </sum>
     
     <sum>
     <value>1</value>
     <prod>
-    <property>/controls/fuel/pumps/auto-off</property>
+    <property alias="/params/btb-switch"/>
     <value>-1</value>
     </prod>
     </sum>
-    </prod>
     
     </prod>
     
@@ -58,33 +48,7 @@
 
   </animation>
 
-  <animation>
-    <type>pick</type>
-    <object-name>Switch</object-name>
-	<condition>
-	<not>
-    <property>/controls/fuel/pumps/auto-off</property>
-	</not>
-  	</condition>
-    <action>
-      <name>Captain INS Switch</name>
-      <button>0</button>
-      <repeatable>false</repeatable>
-      <binding>
-        <command>property-toggle</command>
-        <property>/controls/fuel/pumps/auto-forward</property>
-        <step>1</step>
-        <min>0</min>
-        <max>1</max>
-        <wrap>true</wrap>
-      </binding>
-     <binding>
-        <command>property-toggle</command>
-        <property>/instrumentation/generic/click</property>
-      </binding>
-    </action>
-
-</animation>
+  
 
 
 
@@ -99,7 +63,7 @@
     <object-name>Switch</object-name>
     <condition>
     <not>
-    <property>/controls/fuel/pumps/auto-guard</property>
+    <property alias="/params/btb-guard"/>
     </not>
   	</condition>
     <action>
@@ -108,7 +72,7 @@
       <repeatable>false</repeatable>
       <binding>
         <command>property-toggle</command>
-        <property>/controls/fuel/pumps/auto-off</property>
+        <property alias="/params/btb-switch"/>
         <step>1</step>
         <min>0</min>
         <max>1</max>
@@ -122,7 +86,28 @@
   </animation>
   
   
+  <animation>
+
+    <type>rotate</type>
   
+    <object-name>Secure</object-name>
+    <object-name>Nut</object-name>
+    
+    <expression>
+    <value>180</value>
+    </expression>
+    <center>
+      <x-m>0</x-m>
+      <y-m>0</y-m>
+      <z-m>0</z-m>
+    </center>
+    <axis>
+      <x>1</x>
+      <y>0</y>
+      <z>0</z>
+    </axis>
+
+  </animation>
   
   <animation>
 
@@ -130,7 +115,7 @@
   
     <object-name>Secure</object-name>
     
-    <property>/controls/fuel/pumps/auto-guard</property>
+    <property alias="/params/btb-guard"/>
     <interpolation>
    <entry>
     <ind> 1</ind>
@@ -158,7 +143,7 @@
     <type>pick</type>
     <object-name>Secure</object-name>
     <condition>
-    <property>/controls/fuel/pumps/auto-off</property>
+    <property alias="/params/btb-switch"/>
   	</condition>
     <action>
       <name>Auto-trim</name>
@@ -166,7 +151,7 @@
       <repeatable>false</repeatable>
       <binding>
         <command>property-toggle</command>
-        <property>/controls/fuel/pumps/auto-guard</property>
+        <property alias="/params/btb-guard"/>
         <step>1</step>
         <min>0</min>
         <max>1</max>
