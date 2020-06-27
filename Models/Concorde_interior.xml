@@ -6230,6 +6230,21 @@
      <pitch-deg>25</pitch-deg>
     </offsets>
   </model>
+  
+  <model>
+    <name>Engine Schedule Light</name>
+    <path>Cockpit/Engineer/light-ecs.xml</path>
+<overlay>
+</overlay>
+    <offsets>
+      <x-m>-22.09</x-m>
+      <y-m>0.445</y-m>
+      <z-m>1.516</z-m>
+      
+      <heading-deg>-83</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
   <model>
     <name>Engine Schedule Rotary</name>
     <path>Cockpit/Engineer/engine-schedule-rotary.xml</path>

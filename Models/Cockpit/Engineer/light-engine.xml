@@ -983,6 +983,27 @@
     <object-name>FrameNC1</object-name>
     <object-name>FrameR1</object-name>
     <object-name>FrameWD1</object-name>
+    
+    <object-name>FrameEH2</object-name>
+    <object-name>FrameFF2</object-name>
+    <object-name>FrameSP2</object-name>
+    <object-name>FrameNC2</object-name>
+    <object-name>FrameR2</object-name>
+    <object-name>FrameWD2</object-name>
+    
+    <object-name>FrameEH3</object-name>
+    <object-name>FrameFF3</object-name>
+    <object-name>FrameSP3</object-name>
+    <object-name>FrameNC3</object-name>
+    <object-name>FrameR3</object-name>
+    <object-name>FrameWD3</object-name>
+    
+    <object-name>FrameEH4</object-name>
+    <object-name>FrameFF4</object-name>
+    <object-name>FrameSP4</object-name>
+    <object-name>FrameNC4</object-name>
+    <object-name>FrameR4</object-name>
+    <object-name>FrameWD4</object-name>
   <emission>
      <red>0.2</red>
      <green>0.2</green>
