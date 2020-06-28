@@ -1,7 +1,6 @@
 <?xml version="1.0"?>
 <PropertyList>
- 
- 
+   
   <path>../Models/switch.ac</path>
 
 <effect>
@@ -31,11 +30,11 @@
         <dep>0</dep>
       </entry>
     </interpolation>
-    <forward>
+    <center>
       <x-m>0</x-m>
       <y-m>0</y-m>
       <z-m>0</z-m>
-    </forward>
+    </center>
     <axis>
       <x>0</x>
       <y>1</y>
@@ -105,11 +104,11 @@
       </entry>
       
     </interpolation>
-    <forward>
+    <center>
       <x-m>0</x-m>
       <y-m>0</y-m>
       <z-m>0</z-m>
-    </forward>
+    </center>
     <axis>
       <x>0</x>
       <y>1</y>

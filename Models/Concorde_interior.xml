@@ -4534,7 +4534,119 @@
   </model>
 
 
-
+<model>
+    <name>LPress Green Left</name>
+    <path>Cockpit/Engineer/low-press-hyd.xml</path>
+    <overlay>
+    <params>
+  <pressure-psi>/systems/hydraulic/sensors/green-left</pressure-psi>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.450</x-m>
+      <y-m>0.390</y-m>
+      <z-m>1.648</z-m>
+      
+      <heading-deg>-98</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  <model>
+    <name>LPress Green Right</name>
+    <path>Cockpit/Engineer/low-press-hyd.xml</path>
+    <overlay>
+    <params>
+  <pressure-psi>/systems/hydraulic/sensors/green-right</pressure-psi>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.408</x-m>
+      <y-m>0.385</y-m>
+      <z-m>1.648</z-m>
+      
+      <heading-deg>-98</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  
+  <model>
+    <name>LPress Yellow Left</name>
+    <path>Cockpit/Engineer/low-press-hyd.xml</path>
+    <overlay>
+    <params>
+  <pressure-psi>/systems/hydraulic/sensors/yellow-left</pressure-psi>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.379</x-m>
+      <y-m>0.380</y-m>
+      <z-m>1.648</z-m>
+      
+      <heading-deg>-98</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  <model>
+    <name>LPress Yellow Right</name>
+    <path>Cockpit/Engineer/low-press-hyd.xml</path>
+    <overlay>
+    <params>
+  <pressure-psi>/systems/hydraulic/sensors/yellow-right</pressure-psi>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.314</x-m>
+      <y-m>0.372</y-m>
+      <z-m>1.648</z-m>
+      
+      <heading-deg>-98</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  <model>
+    <name>LPress Blue Left</name>
+    <path>Cockpit/Engineer/low-press-hyd.xml</path>
+    <overlay>
+    <params>
+  <pressure-psi>/systems/hydraulic/sensors/blue-left</pressure-psi>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.273</x-m>
+      <y-m>0.368</y-m>
+      <z-m>1.648</z-m>
+      
+      <heading-deg>-98</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  <model>
+    <name>LPress Blue Right</name>
+    <path>Cockpit/Engineer/low-press-hyd.xml</path>
+    <overlay>
+    <params>
+  <pressure-psi>/systems/hydraulic/sensors/blue-right</pressure-psi>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.235</x-m>
+      <y-m>0.363</y-m>
+      <z-m>1.648</z-m>
+      
+      <heading-deg>-98</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
 
 
 
@@ -7506,7 +7618,20 @@
   <!-- ======== -->
 <!-- ENGINEER LIGHTING -->
 <!-- ======== -->
-  
+  <model>
+   <name>Panel spotlight</name>
+   <path>Aircraft/Concorde/Instruments/light/engineer-spotlight.xml</path>
+   <offsets>
+    <x-m>-21.950</x-m>
+      <y-m>0.325</y-m>
+      <z-m>1.796</z-m>
+    
+   
+      <pitch-deg>10</pitch-deg>
+      <heading-deg>-95</heading-deg>
+   </offsets>
+  </model>
+
   
   
   <model>

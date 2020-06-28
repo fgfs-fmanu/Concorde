@@ -48,7 +48,10 @@
     <max>1</max>
     <wrap>false</wrap>
    </binding>
-   
+   <binding>
+    <command>nasal</command>
+    <script>globals.Concorde.lightingsystem.floodexport();</script>
+   </binding>
    
    
    <binding>
@@ -75,7 +78,10 @@
     <wrap>false</wrap>
    </binding>
    
-   
+   <binding>
+    <command>nasal</command>
+    <script>globals.Concorde.lightingsystem.floodexport();</script>
+   </binding>
    
    <binding>
     <command>property-toggle</command>

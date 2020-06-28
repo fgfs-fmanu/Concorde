@@ -2733,7 +2733,7 @@ refs 4
 5 0 0
 kids 0
 OBJECT poly
-name "OffSP1"
+name "OffST1"
 data 3
 Off
 crease 40.0
@@ -2786,7 +2786,7 @@ refs 4
 5 0 0
 kids 0
 OBJECT poly
-name "OffSP2"
+name "OffST2"
 data 7
 Off.007
 crease 40.0
@@ -2839,7 +2839,7 @@ refs 4
 5 0 0
 kids 0
 OBJECT poly
-name "OffSP3"
+name "OffST3"
 data 7
 Off.016
 crease 40.0
@@ -2892,7 +2892,7 @@ refs 4
 5 0 0
 kids 0
 OBJECT poly
-name "OffSP4"
+name "OffST4"
 data 7
 Off.019
 crease 40.0
@@ -4005,7 +4005,7 @@ refs 4
 5 0 0
 kids 0
 OBJECT poly
-name "OnSP1"
+name "OnST1"
 data 2
 On
 crease 40.0
@@ -4058,7 +4058,7 @@ refs 4
 5 0 0
 kids 0
 OBJECT poly
-name "OnSP2"
+name "OnST2"
 data 6
 On.007
 crease 40.0
@@ -4111,7 +4111,7 @@ refs 4
 5 0 0
 kids 0
 OBJECT poly
-name "OnSP3"
+name "OnST3"
 data 6
 On.016
 crease 40.0
@@ -4164,7 +4164,7 @@ refs 4
 5 0 0
 kids 0
 OBJECT poly
-name "OnSP4"
+name "OnST4"
 data 6
 On.019
 crease 40.0
@@ -100377,7 +100377,7 @@ refs 4
 594 0 0
 kids 0
 OBJECT poly
-name "TextSP1"
+name "TextST1"
 data 8
 Mesh.001
 crease 40.0
@@ -110569,7 +110569,7 @@ refs 4
 1790 0 0
 kids 0
 OBJECT poly
-name "TextSP2"
+name "TextST2"
 data 8
 Mesh.032
 crease 40.0
@@ -120761,7 +120761,7 @@ refs 4
 1790 0 0
 kids 0
 OBJECT poly
-name "TextSP3"
+name "TextST3"
 data 8
 Mesh.039
 crease 40.0
@@ -130953,7 +130953,7 @@ refs 4
 1790 0 0
 kids 0
 OBJECT poly
-name "TextSP4"
+name "TextST4"
 data 8
 Mesh.044
 crease 40.0

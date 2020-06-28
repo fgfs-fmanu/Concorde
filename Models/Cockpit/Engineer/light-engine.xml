@@ -23,10 +23,10 @@
     <object-name>OnR1</object-name>
     <object-name>OffR1</object-name>
     <object-name>TextR1</object-name>
-    <object-name>FrameSP1</object-name>
-    <object-name>OnSP1</object-name>
-    <object-name>OffSP1</object-name>
-    <object-name>TextSP1</object-name>
+    <object-name>FrameST1</object-name>
+    <object-name>OnST1</object-name>
+    <object-name>OffST1</object-name>
+    <object-name>TextST1</object-name>
     <object-name>FrameWD1</object-name>
     <object-name>OnWD1</object-name>
     <object-name>OffWD1</object-name>
@@ -48,10 +48,10 @@
     <object-name>OnR2</object-name>
     <object-name>OffR2</object-name>
     <object-name>TextR2</object-name>
-    <object-name>FrameSP2</object-name>
-    <object-name>OnSP2</object-name>
-    <object-name>OffSP2</object-name>
-    <object-name>TextSP2</object-name>
+    <object-name>FrameST2</object-name>
+    <object-name>OnST2</object-name>
+    <object-name>OffST2</object-name>
+    <object-name>TextST2</object-name>
     <object-name>FrameWD2</object-name>
     <object-name>OnWD2</object-name>
     <object-name>OffWD2</object-name>
@@ -73,10 +73,10 @@
     <object-name>OnR3</object-name>
     <object-name>OffR3</object-name>
     <object-name>TextR3</object-name>
-    <object-name>FrameSP3</object-name>
-    <object-name>OnSP3</object-name>
-    <object-name>OffSP3</object-name>
-    <object-name>TextSP3</object-name>
+    <object-name>FrameST3</object-name>
+    <object-name>OnST3</object-name>
+    <object-name>OffST3</object-name>
+    <object-name>TextST3</object-name>
     <object-name>FrameWD3</object-name>
     <object-name>OnWD3</object-name>
     <object-name>OffWD3</object-name>
@@ -98,10 +98,10 @@
     <object-name>OnR4</object-name>
     <object-name>OffR4</object-name>
     <object-name>TextR4</object-name>
-    <object-name>FrameSP4</object-name>
-    <object-name>OnSP4</object-name>
-    <object-name>OffSP4</object-name>
-    <object-name>TextSP4</object-name>
+    <object-name>FrameST4</object-name>
+    <object-name>OnST4</object-name>
+    <object-name>OffST4</object-name>
+    <object-name>TextST4</object-name>
     <object-name>FrameWD4</object-name>
     <object-name>OnWD4</object-name>
     <object-name>OffWD4</object-name>
@@ -528,7 +528,7 @@
   
   <animation>
     <type>select</type>
-    <object-name>OnSP1</object-name>
+    <object-name>OnST1</object-name>
     <condition>
      <and>
      <greater-than>
@@ -554,7 +554,7 @@
   
   <animation>
     <type>material</type>
-    <object-name>OffSP1</object-name>
+    <object-name>OffST1</object-name>
      <condition>
      <and>
      <greater-than>
@@ -583,7 +583,7 @@
   
   <animation>
     <type>select</type>
-    <object-name>OffSP1</object-name>
+    <object-name>OffST1</object-name>
     <condition>
     <not>
        <and>
@@ -621,7 +621,7 @@
   
   <animation>
     <type>select</type>
-    <object-name>OnSP2</object-name>
+    <object-name>OnST2</object-name>
     <condition>
      <and>
      <greater-than>
@@ -647,7 +647,7 @@
   
   <animation>
     <type>material</type>
-    <object-name>OffSP2</object-name>
+    <object-name>OffST2</object-name>
      <condition>
      <and>
      <greater-than>
@@ -676,7 +676,7 @@
   
   <animation>
     <type>select</type>
-    <object-name>OffSP2</object-name>
+    <object-name>OffST2</object-name>
     <condition>
     <not>
        <and>
@@ -712,7 +712,7 @@
   
   <animation>
     <type>select</type>
-    <object-name>OnSP3</object-name>
+    <object-name>OnST3</object-name>
     <condition>
      <and>
      <greater-than>
@@ -738,7 +738,7 @@
   
   <animation>
     <type>material</type>
-    <object-name>OffSP3</object-name>
+    <object-name>OffST3</object-name>
      <condition>
      <and>
      <greater-than>
@@ -767,7 +767,7 @@
   
   <animation>
     <type>select</type>
-    <object-name>OffSP3</object-name>
+    <object-name>OffST3</object-name>
     <condition>
     <not>
        <and>
@@ -803,7 +803,7 @@
   
   <animation>
     <type>select</type>
-    <object-name>OnSP4</object-name>
+    <object-name>OnST4</object-name>
     <condition>
      <and>
      <greater-than>
@@ -829,7 +829,7 @@
   
   <animation>
     <type>material</type>
-    <object-name>OffSP4</object-name>
+    <object-name>OffST4</object-name>
      <condition>
      <and>
      <greater-than>
@@ -858,7 +858,7 @@
   
   <animation>
     <type>select</type>
-    <object-name>OffSP4</object-name>
+    <object-name>OffST4</object-name>
     <condition>
     <not>
        <and>
@@ -979,28 +979,28 @@
     <type>material</type>
     <object-name>FrameEH1</object-name>
     <object-name>FrameFF1</object-name>
-    <object-name>FrameSP1</object-name>
+    <object-name>FrameST1</object-name>
     <object-name>FrameNC1</object-name>
     <object-name>FrameR1</object-name>
     <object-name>FrameWD1</object-name>
     
     <object-name>FrameEH2</object-name>
     <object-name>FrameFF2</object-name>
-    <object-name>FrameSP2</object-name>
+    <object-name>FrameST2</object-name>
     <object-name>FrameNC2</object-name>
     <object-name>FrameR2</object-name>
     <object-name>FrameWD2</object-name>
     
     <object-name>FrameEH3</object-name>
     <object-name>FrameFF3</object-name>
-    <object-name>FrameSP3</object-name>
+    <object-name>FrameST3</object-name>
     <object-name>FrameNC3</object-name>
     <object-name>FrameR3</object-name>
     <object-name>FrameWD3</object-name>
     
     <object-name>FrameEH4</object-name>
     <object-name>FrameFF4</object-name>
-    <object-name>FrameSP4</object-name>
+    <object-name>FrameST4</object-name>
     <object-name>FrameNC4</object-name>
     <object-name>FrameR4</object-name>
     <object-name>FrameWD4</object-name>
