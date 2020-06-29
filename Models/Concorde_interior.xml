@@ -4773,7 +4773,66 @@
     </offsets>
   </model>
 
-
+<model>
+    <name>Gen 1</name>
+    <path>Cockpit/Engineer/gen1.xml</path>
+    <overlay>
+    </overlay>
+    <offsets>
+      <x-m>-21.46</x-m>
+      <y-m>0.495</y-m>
+      <z-m>1.415</z-m>
+      
+      <heading-deg>-97</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  <model>
+    <name>Gen 2</name>
+    <path>Cockpit/Engineer/gen2.xml</path>
+    <overlay>
+    </overlay>
+    <offsets>
+      <x-m>-21.405</x-m>
+      <y-m>0.488</y-m>
+      <z-m>1.415</z-m>
+      
+      <heading-deg>-97</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <name>Gen 3</name>
+    <path>Cockpit/Engineer/gen3.xml</path>
+    <overlay>
+    </overlay>
+    <offsets>
+      <x-m>-21.290</x-m>
+      <y-m>0.472</y-m>
+      <z-m>1.415</z-m>
+      
+      <heading-deg>-97</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <name>Gen 4</name>
+    <path>Cockpit/Engineer/gen4.xml</path>
+    <overlay>
+    </overlay>
+    <offsets>
+      <x-m>-21.237</x-m>
+      <y-m>0.465</y-m>
+      <z-m>1.415</z-m>
+      
+      <heading-deg>-97</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
 
 
 

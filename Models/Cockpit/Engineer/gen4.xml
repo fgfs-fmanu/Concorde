@@ -1,0 +1,126 @@
+<?xml version="1.0"?>
+<PropertyList>
+  
+  <path>../Models/light_gen4.ac</path>
+<params>
+  <master-alt>/controls/engines/engine[3]/master-alt</master-alt>
+ </params>
+ 
+<effect>
+    <inherits-from>Aircraft/Concorde/Models/Effects/interior</inherits-from>
+    <object-name>Frame</object-name>
+    <object-name>On</object-name>
+    <object-name>Text</object-name>
+</effect>
+
+
+
+
+  
+   <animation>
+    <type>select</type>
+    <object-name>On</object-name>
+    <condition>
+       <and>
+     <greater-than>
+    <property>/systems/electrical/outputs/bulb</property>
+    <value>20.0</value>
+   </greater-than>
+      <or>
+       
+    <property>/controls/lighting/crew/engineer/aft/test</property>
+     <!-- bug -->
+     <less-than>
+
+      <property alias="/params/master-alt"/>
+        <value>30</value>  
+       </less-than>
+      </or>
+      
+      <not>
+    <property>/controls/lighting/crew/engineer/aft/low</property>
+    </not>
+     </and>
+     
+    </condition>
+
+ 
+  </animation>
+  
+  
+  <animation>
+    <type>material</type>
+    <object-name>Off</object-name>
+     <condition>
+       <and>
+     <greater-than>
+    <property>/systems/electrical/outputs/bulb</property>
+    <value>20.0</value>
+   </greater-than>
+      <or>
+       
+    <property>/controls/lighting/crew/engineer/aft/test</property>
+     <!-- bug -->
+      <less-than>
+      <property alias="/params/master-alt"/>
+        <value>30</value>  
+       </less-than>
+      </or>
+      
+      
+    <property>/controls/lighting/crew/engineer/aft/low</property>
+    
+     </and>
+     
+    </condition>
+
+    <emission>
+      <red>0.5</red>
+      <green>0.25</green>
+      <blue>0</blue>
+    </emission>
+  </animation>
+  
+  <animation>
+    <type>select</type>
+    <object-name>Off</object-name>
+    <condition>
+    <not>
+        <and>
+     <greater-than>
+    <property>/systems/electrical/outputs/bulb</property>
+    <value>20.0</value>
+   </greater-than>
+      <or>
+       
+    <property>/controls/lighting/crew/engineer/aft/test</property>
+     <!-- bug -->
+     <less-than>
+      <property alias="/params/master-alt"/>
+        <value>30</value>  
+       </less-than>
+      </or>
+      
+      <not>
+    <property>/controls/lighting/crew/engineer/aft/low</property>
+    </not>
+     </and>
+     
+     </not>
+    </condition>
+
+    
+  </animation>
+  
+ 
+  
+  <animation>
+    <type>material</type>
+    <object-name>Frame</object-name>
+  <emission>
+     <red>0.2</red>
+     <green>0.2</green>
+     <blue>0.2</blue>
+  </emission>
+</animation>
+</PropertyList>
