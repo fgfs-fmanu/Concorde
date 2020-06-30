@@ -4347,6 +4347,20 @@
 <!-- ======== -->
 
 <model>
+    <name>Ground Power Aviable</name>
+    <path>Cockpit/Engineer/gnd-power-aviable.xml</path>
+    <offsets>
+      <x-m>-21.365</x-m>
+      <y-m>0.47</y-m>
+      <z-m>1.445</z-m>
+      
+      <heading-deg>-98</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+
+
+<model>
     <name>Ground Service</name>
     <path>Cockpit/Engineer/elec-ground-service.xml</path>
     <offsets>
@@ -4452,7 +4466,78 @@
     </offsets>
   </model>
 
-
+<model>
+    <name>AC Main Bus 1</name>
+    <path>Cockpit/Engineer/ac-main-bus.xml</path>
+    <overlay>
+	<params>
+  <probe-volt>/systems/electrical/outputs/probe/ac-main[0]</probe-volt>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.487</x-m>
+      <y-m>0.508</y-m>
+      <z-m>1.395</z-m>
+      
+      <heading-deg>-97</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <name>AC Main Bus 2</name>
+    <path>Cockpit/Engineer/ac-main-bus.xml</path>
+    <overlay>
+	<params>
+  <probe-volt>/systems/electrical/outputs/probe/ac-main[1]</probe-volt>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.431</x-m>
+      <y-m>0.502</y-m>
+      <z-m>1.395</z-m>
+      
+      <heading-deg>-97</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+  
+   <model>
+    <name>AC Main Bus 3</name>
+    <path>Cockpit/Engineer/ac-main-bus.xml</path>
+    <overlay>
+	<params>
+  <probe-volt>/systems/electrical/outputs/probe/ac-main[2]</probe-volt>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.32</x-m>
+      <y-m>0.486</y-m>
+      <z-m>1.395</z-m>
+      
+      <heading-deg>-97</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  <model>
+    <name>AC Main Bus 4</name>
+    <path>Cockpit/Engineer/ac-main-bus.xml</path>
+    <overlay>
+	<params>
+  <probe-volt>/systems/electrical/outputs/probe/ac-main[3]</probe-volt>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.265</x-m>
+      <y-m>0.476</y-m>
+      <z-m>1.395</z-m>
+      
+      <heading-deg>-97</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
 
 
 <model>
@@ -5081,6 +5166,89 @@
   
   
   
+  
+  
+  <model>
+    <name>Ac ESS Bus 1</name>
+    <path>Cockpit/Engineer/ac-ess-bus.xml</path>
+    <overlay>
+   <params>
+  <probe-volt>/systems/electrical/outputs/probe/ac-essential[0]</probe-volt>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.469</x-m>
+      <y-m>0.549</y-m>
+      <z-m>1.244</z-m>
+      
+      <heading-deg>-97</heading-deg>
+     <pitch-deg>-5</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+   <model>
+    <name>Ac ESS Bus 2</name>
+    <path>Cockpit/Engineer/ac-ess-bus.xml</path>
+    <overlay>
+   <params>
+  <probe-volt>/systems/electrical/outputs/probe/ac-essential[1]</probe-volt>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.439</x-m>
+      <y-m>0.545</y-m>
+      <z-m>1.244</z-m>
+      
+      <heading-deg>-97</heading-deg>
+     <pitch-deg>-5</pitch-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <name>Ac ESS Bus 3</name>
+    <path>Cockpit/Engineer/ac-ess-bus.xml</path>
+    <overlay>
+   <params>
+  <probe-volt>/systems/electrical/outputs/probe/ac-essential[2]</probe-volt>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.284</x-m>
+      <y-m>0.525</y-m>
+      <z-m>1.244</z-m>
+      
+      <heading-deg>-97</heading-deg>
+     <pitch-deg>-5</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  
+   <model>
+    <name>Ac ESS Bus 4</name>
+    <path>Cockpit/Engineer/ac-ess-bus.xml</path>
+    <overlay>
+   <params>
+  <probe-volt>/systems/electrical/outputs/probe/ac-essential[3]</probe-volt>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.254</x-m>
+      <y-m>0.521</y-m>
+      <z-m>1.244</z-m>
+      
+      <heading-deg>-97</heading-deg>
+     <pitch-deg>-5</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  
+  
+  
+  
+  
   <model>
     <name>Ac ESS Emerg 1</name>
     <path>Cockpit/Engineer/elec-ac-ess-emerg-1.xml</path>
@@ -5112,7 +5280,7 @@
     </overlay>
     <offsets>
       <x-m>-21.439</x-m>
-      <y-m>0.545</y-m>
+      <y-m>0.546</y-m>
       <z-m>1.225</z-m>
       
       <heading-deg>-95</heading-deg>
@@ -5150,7 +5318,7 @@
     </overlay>
     <offsets>
       <x-m>-21.254</x-m>
-      <y-m>0.515</y-m>
+      <y-m>0.521</y-m>
       <z-m>1.225</z-m>
       
       <heading-deg>-95</heading-deg>
