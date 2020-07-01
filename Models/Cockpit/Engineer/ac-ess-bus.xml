@@ -52,18 +52,19 @@
     <object-name>Off</object-name>
      <condition>
        <and>
-     <equals>
-        <property alias="/params/probe-volt"/>
-        <value>0.0</value>
-       </equals>
+       <greater-than>
+    <property>/systems/electrical/outputs/bulb</property>
+    <value>20.0</value>
+   </greater-than>
+     
       <or>
        
     <property>/controls/lighting/crew/engineer/aft/test</property>
      <!-- bug -->
-      <greater-than>
-      <property>/systems/electrical/ground-service/volts</property>
-      <value>0.0</value>
-     </greater-than>
+      <equals>
+        <property alias="/params/probe-volt"/>
+        <value>0.0</value>
+       </equals>
       </or>
       
       

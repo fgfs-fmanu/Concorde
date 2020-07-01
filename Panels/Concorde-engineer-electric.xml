@@ -212,34 +212,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
    <h>30</h>
   </instrument>
 
-  <instrument include="Instruments/concorde-red-elec-o-heat.xml">
-   <name>Emergency Generator Overheat</name>
-   <condition>
-    <or>
-     <and>
-      <property>/sim/current-view/internal</property>
-      <property>/systems/seat/engineer</property>
-      <less-than>
-       <property>/sim/current-view/goal-heading-offset-deg</property>
-       <value>270</value>
-      </less-than>
-      <greater-than>
-       <property>/sim/current-view/goal-heading-offset-deg</property>
-       <value>200</value>
-      </greater-than>
-      <less-than>
-       <property>/sim/current-view/goal-pitch-offset-deg</property>
-       <value>5</value>
-      </less-than>
-     </and>
-     <property>/controls/seat/all</property>
-    </or>
-   </condition>
-   <x>135</x>
-   <y>620</y>
-   <w>44</w>
-   <h>22</h>
-  </instrument>
+  
 
   <instrument include="Instruments/concorde-elec-emerg-wattmeter.xml">
    <name>Load Emergency Generator</name>
@@ -331,34 +304,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
    <h>80</h>
   </instrument>
 
-  <instrument include="Instruments/concorde-yellow-elec-fail.xml">
-   <name>Emergency Generator Fail</name>
-   <condition>
-    <or>
-     <and>
-      <property>/sim/current-view/internal</property>
-      <property>/systems/seat/engineer</property>
-      <less-than>
-       <property>/sim/current-view/goal-heading-offset-deg</property>
-       <value>265</value>
-      </less-than>
-      <greater-than>
-       <property>/sim/current-view/goal-heading-offset-deg</property>
-       <value>195</value>
-      </greater-than>
-      <less-than>
-       <property>/sim/current-view/goal-pitch-offset-deg</property>
-       <value>0</value>
-      </less-than>
-     </and>
-     <property>/controls/seat/all</property>
-    </or>
-   </condition>
-   <x>197</x>
-   <y>558</y>
-   <w>44</w>
-   <h>22</h>
-  </instrument>
+  
 
   <instrument include="Instruments/concorde-elec-emerg-generator.xml">
    <name>Emergency Generator Selector</name>
@@ -852,34 +798,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
    <h>20</h>
   </instrument>
 
-  <instrument include="Instruments/concorde-yellow-elec-o-heat.xml">
-   <name>TRU 1 Overheat</name>
-   <condition>
-    <or>
-     <and>
-      <property>/sim/current-view/internal</property>
-      <property>/systems/seat/engineer</property>
-       <less-than>
-       <property>/sim/current-view/goal-heading-offset-deg</property>
-       <value>275</value>
-      </less-than>
-      <greater-than>
-       <property>/sim/current-view/goal-heading-offset-deg</property>
-       <value>205</value>
-      </greater-than>
-      <less-than>
-       <property>/sim/current-view/goal-pitch-offset-deg</property>
-       <value>-5</value>
-      </less-than>
-     </and>
-     <property>/controls/seat/all</property>
-    </or>
-   </condition>
-   <x>30</x>
-   <y>460</y>
-   <w>44</w>
-   <h>22</h>
-  </instrument>
+  
 
   <instrument include="Instruments/concorde-elec-tru.xml">
    <name>TRU 1 switch</name>
@@ -913,34 +832,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
    <h>60</h>
   </instrument>
 
-  <instrument include="Instruments/concorde-yellow-elec-o-heat.xml">
-   <name>TRU 2 Overheat</name>
-   <condition>
-    <or>
-     <and>
-      <property>/sim/current-view/internal</property>
-      <property>/systems/seat/engineer</property>
-      <less-than>
-       <property>/sim/current-view/goal-heading-offset-deg</property>
-       <value>270</value>
-      </less-than>
-      <greater-than>
-       <property>/sim/current-view/goal-heading-offset-deg</property>
-       <value>200</value>
-      </greater-than>
-      <less-than>
-       <property>/sim/current-view/goal-pitch-offset-deg</property>
-       <value>-5</value>
-      </less-than>
-     </and>
-     <property>/controls/seat/all</property>
-    </or>
-   </condition>
-   <x>140</x>
-   <y>460</y>
-   <w>44</w>
-   <h>22</h>
-  </instrument>
+  
 
   <instrument include="Instruments/concorde-elec-tru.xml">
    <name>TRU 2 switch</name>
@@ -974,34 +866,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
    <h>60</h>
   </instrument>
 
-  <instrument include="Instruments/concorde-yellow-elec-o-heat.xml">
-   <name>TRU 3 Overheat</name>
-   <condition>
-    <or>
-     <and>
-      <property>/sim/current-view/internal</property>
-      <property>/systems/seat/engineer</property>
-      <less-than>
-       <property>/sim/current-view/goal-heading-offset-deg</property>
-       <value>265</value>
-      </less-than>
-      <greater-than>
-       <property>/sim/current-view/goal-heading-offset-deg</property>
-       <value>195</value>
-      </greater-than>
-      <less-than>
-       <property>/sim/current-view/goal-pitch-offset-deg</property>
-       <value>-5</value>
-      </less-than>
-     </and>
-     <property>/controls/seat/all</property>
-    </or>
-   </condition>
-   <x>260</x>
-   <y>460</y>
-   <w>44</w>
-   <h>22</h>
-  </instrument>
+  
 
   <instrument include="Instruments/concorde-elec-tru.xml">
    <name>TRU 3 switch</name>
@@ -1035,34 +900,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
    <h>60</h>
   </instrument>
 
-  <instrument include="Instruments/concorde-yellow-elec-o-heat.xml">
-   <name>TRU 4 Overheat</name>
-   <condition>
-    <or>
-     <and>
-      <property>/sim/current-view/internal</property>
-      <property>/systems/seat/engineer</property>
-      <less-than>
-       <property>/sim/current-view/goal-heading-offset-deg</property>
-       <value>260</value>
-      </less-than>
-      <greater-than>
-       <property>/sim/current-view/goal-heading-offset-deg</property>
-       <value>190</value>
-      </greater-than>
-      <less-than>
-       <property>/sim/current-view/goal-pitch-offset-deg</property>
-       <value>0</value>
-      </less-than>
-     </and>
-     <property>/controls/seat/all</property>
-    </or>
-   </condition>
-   <x>360</x>
-   <y>460</y>
-   <w>44</w>
-   <h>22</h>
-  </instrument>
+  
 
   <instrument include="Instruments/concorde-elec-tru.xml">
    <name>TRU 4 switch</name>
