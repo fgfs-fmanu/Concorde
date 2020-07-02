@@ -1,9 +1,12 @@
 <?xml version="1.0"?>
 <PropertyList>
   
-  <path>../Models/light_acess.ac</path>
+  <path>../Models/light_battisolate.ac</path>
 
- 
+ <params>
+  <master-bat>/controls/electric/dc/master-bat[0]</master-bat>
+ </params>
+
 <effect>
     <inherits-from>Aircraft/Concorde/Models/Effects/interior</inherits-from>
     <object-name>Frame</object-name>
@@ -28,7 +31,9 @@
        
     <property>/controls/lighting/crew/engineer/aft/test</property>
      <!-- bug -->
-    <property>/controls/electric/ac/emergency/generator/selected</property>
+     <not>
+      <property alias="/params/master-bat"/>
+      </not>
       </or>
       
       <not>
@@ -56,7 +61,9 @@
        
     <property>/controls/lighting/crew/engineer/aft/test</property>
      <!-- bug -->
-     <property>/controls/electric/ac/emergency/generator/selected</property>
+    <not>
+      <property alias="/params/master-bat"/>
+      </not>
       </or>
       
       
@@ -87,7 +94,9 @@
        
     <property>/controls/lighting/crew/engineer/aft/test</property>
      <!-- bug -->
-    <property>/controls/electric/ac/emergency/generator/selected</property>
+  <not>
+      <property alias="/params/master-bat"/>
+      </not>
       </or>
       
       <not>

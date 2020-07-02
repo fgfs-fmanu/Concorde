@@ -1,9 +1,10 @@
 <?xml version="1.0"?>
 <PropertyList>
   
-  <path>../Models/light_acess.ac</path>
+  <path>../Models/light_dcbus.ac</path>
 
  
+
 <effect>
     <inherits-from>Aircraft/Concorde/Models/Effects/interior</inherits-from>
     <object-name>Frame</object-name>
@@ -28,7 +29,16 @@
        
     <property>/controls/lighting/crew/engineer/aft/test</property>
      <!-- bug -->
-    <property>/controls/electric/ac/emergency/generator/selected</property>
+     <and>
+      <less-than>
+        <property>/systems/electrical/outputs/probe/dc-main-a</property>
+        <value>25.0</value>
+       </less-than>
+       <less-than>
+        <property>/systems/electrical/outputs/probe/dc-main-b</property>
+        <value>25.0</value>
+       </less-than>
+       </and>
       </or>
       
       <not>
@@ -56,7 +66,16 @@
        
     <property>/controls/lighting/crew/engineer/aft/test</property>
      <!-- bug -->
-     <property>/controls/electric/ac/emergency/generator/selected</property>
+     <and>
+      <less-than>
+        <property>/systems/electrical/outputs/probe/dc-main-a</property>
+        <value>25.0</value>
+       </less-than>
+       <less-than>
+        <property>/systems/electrical/outputs/probe/dc-main-b</property>
+        <value>25.0</value>
+       </less-than>
+       </and>
       </or>
       
       
@@ -87,7 +106,16 @@
        
     <property>/controls/lighting/crew/engineer/aft/test</property>
      <!-- bug -->
-    <property>/controls/electric/ac/emergency/generator/selected</property>
+  <and>
+      <less-than>
+        <property>/systems/electrical/outputs/probe/dc-main-a</property>
+        <value>25.0</value>
+       </less-than>
+       <less-than>
+        <property>/systems/electrical/outputs/probe/dc-main-b</property>
+        <value>25.0</value>
+       </less-than>
+       </and>
       </or>
       
       <not>

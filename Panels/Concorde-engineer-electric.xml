@@ -246,34 +246,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
    <h>60</h>
   </instrument>
 
-  <instrument include="Instruments/concorde-blue-elec-emerg.xml">
-   <name>Emergency Generator Selected</name>
-   <condition>
-    <or>
-     <and>
-      <property>/sim/current-view/internal</property>
-      <property>/systems/seat/engineer</property>
-      <less-than>
-       <property>/sim/current-view/goal-heading-offset-deg</property>
-       <value>260</value>
-      </less-than>
-      <greater-than>
-       <property>/sim/current-view/goal-heading-offset-deg</property>
-       <value>195</value>
-      </greater-than>
-      <less-than>
-       <property>/sim/current-view/goal-pitch-offset-deg</property>
-       <value>5</value>
-      </less-than>
-     </and>
-     <property>/controls/seat/all</property>
-    </or>
-   </condition>
-   <x>260</x>
-   <y>620</y>
-   <w>44</w>
-   <h>22</h>
-  </instrument>
+ 
 
   <instrument include="Instruments/concorde-elec-emerg-isolation.xml">
    <name>Emergency Generator Isolation</name>
@@ -965,98 +938,9 @@ override those by providing <w>..</w> and <h>..</h> properties with the
 
 <!-- DC LIGHTS -->
 
-  <instrument include="Instruments/concorde-red-elec-dc-ess-bus.xml">
-   <name>Alarm on DC Essential A</name>
-   <condition>
-    <or>
-     <and>
-      <property>/sim/current-view/internal</property>
-      <property>/systems/seat/engineer</property>
-      <less-than>
-       <property>/sim/current-view/goal-heading-offset-deg</property>
-       <value>275</value>
-      </less-than>
-      <greater-than>
-       <property>/sim/current-view/goal-heading-offset-deg</property>
-       <value>200</value>
-      </greater-than>
-      <less-than>
-       <property>/sim/current-view/goal-pitch-offset-deg</property>
-       <value>-5</value>
-      </less-than>
-     </and>
-     <property>/controls/seat/all</property>
-    </or>
-   </condition>
-   <params>
-    <probe-volt>/systems/electrical/outputs/probe/dc-essential-a</probe-volt>
-   </params>
-   <x>30</x>
-   <y>420</y>
-   <w>44</w>
-   <h>22</h>
-  </instrument>
+  
 
-  <instrument include="Instruments/concorde-red-elec-dc-main-bus.xml">
-   <name>Alarm on DC Main A or B</name>
-   <condition>
-    <or>
-     <and>
-      <property>/sim/current-view/internal</property>
-      <property>/systems/seat/engineer</property>
-      <less-than>
-       <property>/sim/current-view/goal-heading-offset-deg</property>
-       <value>270</value>
-      </less-than>
-      <greater-than>
-       <property>/sim/current-view/goal-heading-offset-deg</property>
-       <value>195</value>
-      </greater-than>
-      <less-than>
-       <property>/sim/current-view/goal-pitch-offset-deg</property>
-       <value>-5</value>
-      </less-than>
-     </and>
-     <property>/controls/seat/all</property>
-    </or>
-   </condition>
-   <x>207</x>
-   <y>420</y>
-   <w>44</w>
-   <h>22</h>
-  </instrument>
-
-  <instrument include="Instruments/concorde-red-elec-dc-ess-bus.xml">
-   <name>Alarm on DC Essential B</name>
-   <condition>
-    <or>
-     <and>
-      <property>/sim/current-view/internal</property>
-      <property>/systems/seat/engineer</property>
-      <less-than>
-       <property>/sim/current-view/goal-heading-offset-deg</property>
-       <value>260</value>
-      </less-than>
-      <greater-than>
-       <property>/sim/current-view/goal-heading-offset-deg</property>
-       <value>190</value>
-      </greater-than>
-      <less-than>
-       <property>/sim/current-view/goal-pitch-offset-deg</property>
-       <value>-5</value>
-      </less-than>
-     </and>
-     <property>/controls/seat/all</property>
-    </or>
-   </condition>
-   <params>
-    <probe-volt>/systems/electrical/outputs/probe/dc-essential-b</probe-volt>
-   </params>
-   <x>360</x>
-   <y>420</y>
-   <w>44</w>
-   <h>22</h>
-  </instrument>
+ 
 
 <!-- DC BUS -->
 
@@ -1324,69 +1208,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
 
 <!-- BATTERY ISOLATION -->
 
-  <instrument include="Instruments/concorde-amber-elec-batt-isolate.xml">
-   <name>Fault on Battery A Isolate</name>
-   <condition>
-    <or>
-     <and>
-      <property>/sim/current-view/internal</property>
-      <property>/systems/seat/engineer</property>
-      <less-than>
-       <property>/sim/current-view/goal-heading-offset-deg</property>
-       <value>280</value>
-      </less-than>
-      <greater-than>
-       <property>/sim/current-view/goal-heading-offset-deg</property>
-       <value>200</value>
-      </greater-than>
-      <less-than>
-       <property>/sim/current-view/goal-pitch-offset-deg</property>
-       <value>-10</value>
-      </less-than>
-     </and>
-     <property>/controls/seat/all</property>
-    </or>
-   </condition>
-   <params>
-    <master-bat>/controls/electric/dc/master-bat[0]</master-bat>
-   </params>
-   <x>35</x>
-   <y>335</y>
-   <w>44</w>
-   <h>22</h>
-  </instrument>
-
-  <instrument include="Instruments/concorde-amber-elec-batt-isolate.xml">
-   <name>Fault on Battery B Isolate</name>
-   <condition>
-    <or>
-     <and>
-      <property>/sim/current-view/internal</property>
-      <property>/systems/seat/engineer</property>
-      <less-than>
-       <property>/sim/current-view/goal-heading-offset-deg</property>
-       <value>260</value>
-      </less-than>
-      <greater-than>
-       <property>/sim/current-view/goal-heading-offset-deg</property>
-       <value>190</value>
-      </greater-than>
-      <less-than>
-       <property>/sim/current-view/goal-pitch-offset-deg</property>
-       <value>-5</value>
-      </less-than>
-     </and>
-     <property>/controls/seat/all</property>
-    </or>
-   </condition>
-   <params>
-    <master-bat>/controls/electric/dc/master-bat[1]</master-bat>
-   </params>
-   <x>400</x>
-   <y>335</y>
-   <w>44</w>
-   <h>22</h>
-  </instrument>
+  
 
 <!-- VOLTMETERS -->
 

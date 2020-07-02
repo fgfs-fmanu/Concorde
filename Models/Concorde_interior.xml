@@ -5095,7 +5095,7 @@
     </overlay>
     <offsets>
      <x-m>-21.47</x-m>
-      <y-m>0.544</y-m>
+      <y-m>0.546</y-m>
       <z-m>1.164</z-m>
       
       
@@ -5112,7 +5112,7 @@
     </overlay>
     <offsets>
      <x-m>-21.403</x-m>
-      <y-m>0.533</y-m>
+      <y-m>0.535</y-m>
       <z-m>1.165</z-m>
       
       
@@ -5129,7 +5129,7 @@
     </overlay>
     <offsets>
      <x-m>-21.329</x-m>
-      <y-m>0.527</y-m>
+      <y-m>0.53</y-m>
       <z-m>1.165</z-m>
       
       
@@ -5146,12 +5146,114 @@
     </overlay>
     <offsets>
      <x-m>-21.267</x-m>
-      <y-m>0.515</y-m>
+      <y-m>0.517</y-m>
       <z-m>1.164</z-m>
       
       
       <heading-deg>-99</heading-deg>
+     <pitch-deg>-3</pitch-deg>
+    </offsets>
+  </model>
+
+
+<model>
+    <name>DC Ess Bus A</name>
+    <path>Cockpit/Engineer/dc-ess-bus.xml</path>
+   <overlay>
+   <params>
+  <probe-volt>/systems/electrical/outputs/probe/dc-essential-a</probe-volt>
+ </params>
+    </overlay>
+    <offsets>
+     <x-m>-21.47</x-m>
+      <y-m>0.547</y-m>
+      <z-m>1.137</z-m>
+      
+      
+      <heading-deg>-99</heading-deg>
      <pitch-deg>-5</pitch-deg>
+    </offsets>
+  </model>
+  
+   <model>
+    <name>DC Main Bus</name>
+    <path>Cockpit/Engineer/dc-main-bus.xml</path>
+   <overlay>
+   
+    </overlay>
+    <offsets>
+     <x-m>-21.369</x-m>
+      <y-m>0.533</y-m>
+      <z-m>1.137</z-m>
+      
+      
+      <heading-deg>-99</heading-deg>
+     <pitch-deg>-3</pitch-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <name>DC Ess Bus B</name>
+    <path>Cockpit/Engineer/dc-ess-bus.xml</path>
+   <overlay>
+   <params>
+  <probe-volt>/systems/electrical/outputs/probe/dc-essential-b</probe-volt>
+ </params>
+    </overlay>
+    <offsets>
+     <x-m>-21.267</x-m>
+      <y-m>0.52</y-m>
+      <z-m>1.137</z-m>
+      
+      
+      <heading-deg>-99</heading-deg>
+     <pitch-deg>-3</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  
+  
+  
+  
+  
+  <model>
+    <name>Batt Isolate 1</name>
+    <path>Cockpit/Engineer/batt-isolate.xml</path>
+   <overlay>
+   <params>
+  <master-bat>/controls/electric/dc/master-bat[0]</master-bat>
+ </params>
+    </overlay>
+    <offsets>
+     <x-m>-21.47</x-m>
+      <y-m>0.545</y-m>
+      <z-m>1.083</z-m>
+      
+      
+      <heading-deg>-99</heading-deg>
+     <pitch-deg>-5</pitch-deg>
+    </offsets>
+  </model>
+  
+   
+  
+  <model>
+    <name>Batt Isolate 2</name>
+    <path>Cockpit/Engineer/batt-isolate.xml</path>
+   <overlay>
+   <params>
+  <master-bat>/controls/electric/dc/master-bat[1]</master-bat>
+ </params>
+    </overlay>
+    <offsets>
+     <x-m>-21.243</x-m>
+      <y-m>0.516</y-m>
+      <z-m>1.083</z-m>
+      
+      
+      <heading-deg>-99</heading-deg>
+     <pitch-deg>-3</pitch-deg>
     </offsets>
   </model>
 
@@ -5481,6 +5583,24 @@
     <offsets>
      <x-m>-21.409</x-m>
       <y-m>0.540</y-m>
+      <z-m>1.265</z-m>
+      
+      
+      <heading-deg>-99</heading-deg>
+     <pitch-deg>-5</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  <model>
+    <name>Red OHeat </name>
+    <path>Cockpit/Engineer/light-selected.xml</path>
+   <overlay>
+   
+    </overlay>
+    <offsets>
+     <x-m>-21.32</x-m>
+      <y-m>0.530</y-m>
       <z-m>1.265</z-m>
       
       
