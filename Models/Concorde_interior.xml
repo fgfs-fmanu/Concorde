@@ -4617,6 +4617,197 @@
      <pitch-deg>25</pitch-deg>
     </offsets>
   </model>
+  
+  
+ <model>
+    <name>Hyd Light Green</name>
+    <path>Cockpit/Engineer/light-hyd.xml</path>
+    <overlay>
+   
+    </overlay>
+    <offsets>
+      <x-m>-21.430</x-m>
+      <y-m>0.328</y-m>
+      <z-m>1.778</z-m>
+      
+      <heading-deg>-99</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model> 
+  
+  
+  
+  
+  <model>
+    <name>Hyd Light Yellow</name>
+    <path>Cockpit/Engineer/light-hyd.xml</path>
+    <overlay>
+   
+    </overlay>
+    <offsets>
+      <x-m>-21.340</x-m>
+      <y-m>0.316</y-m>
+      <z-m>1.778</z-m>
+      
+      <heading-deg>-99</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model> 
+  
+  
+  <model>
+    <name>Hyd Light Yellow</name>
+    <path>Cockpit/Engineer/light-hyd.xml</path>
+    <overlay>
+   
+    </overlay>
+    <offsets>
+      <x-m>-21.252</x-m>
+      <y-m>0.305</y-m>
+      <z-m>1.778</z-m>
+      
+      <heading-deg>-99</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model> 
+  
+  
+  
+  
+  
+  
+  
+  
+
+<model>
+    <name>LPress Green 1 Switch</name>
+    <path>Cockpit/Engineer/hyd-pump-green.xml</path>
+    <overlay>
+   <params>
+  <onload-pump>/controls/hydraulic/circuit[0]/onload[0]</onload-pump>
+  <shut-pump>/controls/hydraulic/circuit[0]/valve[0]</shut-pump>
+  <guard-pump>/controls/hydraulic/circuit[0]/guard[0]</guard-pump>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.450</x-m>
+      <y-m>0.378</y-m>
+      <z-m>1.678</z-m>
+      
+      <heading-deg>-99</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  <model>
+    <name>LPress Green 2 Switch</name>
+    <path>Cockpit/Engineer/hyd-pump-green.xml</path>
+    <overlay>
+   <params>
+  <onload-pump>/controls/hydraulic/circuit[0]/onload[1]</onload-pump>
+  <shut-pump>/controls/hydraulic/circuit[0]/valve[1]</shut-pump>
+  <guard-pump>/controls/hydraulic/circuit[0]/guard[1]</guard-pump>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.408</x-m>
+      <y-m>0.373</y-m>
+      <z-m>1.678</z-m>
+      
+      <heading-deg>-99</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  <model>
+    <name>LPress Yellow 1 Switch</name>
+    <path>Cockpit/Engineer/hyd-pump-yellow.xml</path>
+    <overlay>
+   <params>
+  <onload-pump>/controls/hydraulic/circuit[1]/onload[0]</onload-pump>
+  <shut-pump>/controls/hydraulic/circuit[1]/valve[0]</shut-pump>
+  <guard-pump>/controls/hydraulic/circuit[1]/guard[0]</guard-pump>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.379</x-m>
+      <y-m>0.368</y-m>
+      <z-m>1.678</z-m>
+      
+      <heading-deg>-99</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  <model>
+    <name>LPress Yellow 2 Switch</name>
+    <path>Cockpit/Engineer/hyd-pump-yellow.xml</path>
+    <overlay>
+   <params>
+  <onload-pump>/controls/hydraulic/circuit[1]/onload[1]</onload-pump>
+  <shut-pump>/controls/hydraulic/circuit[1]/valve[1]</shut-pump>
+  <guard-pump>/controls/hydraulic/circuit[1]/guard[1]</guard-pump>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.314</x-m>
+      <y-m>0.360</y-m>
+      <z-m>1.678</z-m>
+      
+      <heading-deg>-99</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  
+  <model>
+    <name>LPress Blue 1 Switch</name>
+    <path>Cockpit/Engineer/hyd-pump-blue.xml</path>
+    <overlay>
+   <params>
+  <onload-pump>/controls/hydraulic/circuit[2]/onload[0]</onload-pump>
+  <shut-pump>/controls/hydraulic/circuit[2]/valve[0]</shut-pump>
+  <guard-pump>/controls/hydraulic/circuit[2]/guard[0]</guard-pump>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.273</x-m>
+      <y-m>0.355</y-m>
+      <z-m>1.678</z-m>
+      
+      <heading-deg>-99</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  <model>
+    <name>LPress Blue 2 Switch</name>
+    <path>Cockpit/Engineer/hyd-pump-blue.xml</path>
+    <overlay>
+   <params>
+  <onload-pump>/controls/hydraulic/circuit[2]/onload[1]</onload-pump>
+  <shut-pump>/controls/hydraulic/circuit[2]/valve[1]</shut-pump>
+  <guard-pump>/controls/hydraulic/circuit[2]/guard[1]</guard-pump>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.235</x-m>
+      <y-m>0.350</y-m>
+      <z-m>1.678</z-m>
+      
+      <heading-deg>-99</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+
+
+
+
 
 
 <model>
@@ -5095,7 +5286,7 @@
     </overlay>
     <offsets>
      <x-m>-21.47</x-m>
-      <y-m>0.546</y-m>
+      <y-m>0.547</y-m>
       <z-m>1.164</z-m>
       
       
@@ -5112,7 +5303,7 @@
     </overlay>
     <offsets>
      <x-m>-21.403</x-m>
-      <y-m>0.535</y-m>
+      <y-m>0.538</y-m>
       <z-m>1.165</z-m>
       
       
@@ -5129,7 +5320,7 @@
     </overlay>
     <offsets>
      <x-m>-21.329</x-m>
-      <y-m>0.53</y-m>
+      <y-m>0.528</y-m>
       <z-m>1.165</z-m>
       
       
@@ -5146,7 +5337,7 @@
     </overlay>
     <offsets>
      <x-m>-21.267</x-m>
-      <y-m>0.517</y-m>
+      <y-m>0.520</y-m>
       <z-m>1.164</z-m>
       
       
