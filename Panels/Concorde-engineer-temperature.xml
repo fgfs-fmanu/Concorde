@@ -576,34 +576,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
    <h>70</h>
   </instrument>
 
-  <instrument include="Instruments/concorde-yellow-temp-comparator.xml">
-   <name>Group 3 and 4 comparator</name>
-   <condition>
-    <or>
-     <and>
-      <property>/sim/current-view/internal</property>
-      <property>/systems/seat/engineer</property>
-      <less-than>
-       <property>/sim/current-view/goal-heading-offset-deg</property>
-       <value>275</value>
-      </less-than>
-      <greater-than>
-       <property>/sim/current-view/goal-heading-offset-deg</property>
-       <value>205</value>
-      </greater-than>
-      <greater-than>
-       <property>/sim/current-view/goal-pitch-offset-deg</property>
-       <value>-10</value>
-      </greater-than>
-     </and>
-     <property>/controls/seat/all</property>
-    </or>
-   </condition>
-   <x>300</x>
-   <y>237</y>
-   <w>42</w>
-   <h>21</h>
-  </instrument>
+  
 
 <!-- TEMPERATURE -->
 

@@ -4680,7 +4680,7 @@
   
 
 <model>
-    <name>LPress Green 1 Switch</name>
+    <name>Hyd Green 1 Switch</name>
     <path>Cockpit/Engineer/hyd-pump-green.xml</path>
     <overlay>
    <params>
@@ -4701,7 +4701,7 @@
   
   
   <model>
-    <name>LPress Green 2 Switch</name>
+    <name>Hyd Green 2 Switch</name>
     <path>Cockpit/Engineer/hyd-pump-green.xml</path>
     <overlay>
    <params>
@@ -4722,7 +4722,7 @@
   
   
   <model>
-    <name>LPress Yellow 1 Switch</name>
+    <name>Hyd Yellow 1 Switch</name>
     <path>Cockpit/Engineer/hyd-pump-yellow.xml</path>
     <overlay>
    <params>
@@ -4743,7 +4743,7 @@
   
   
   <model>
-    <name>LPress Yellow 2 Switch</name>
+    <name>Hyd Yellow 2 Switch</name>
     <path>Cockpit/Engineer/hyd-pump-yellow.xml</path>
     <overlay>
    <params>
@@ -4765,7 +4765,7 @@
   
   
   <model>
-    <name>LPress Blue 1 Switch</name>
+    <name>Hyd Blue 1 Switch</name>
     <path>Cockpit/Engineer/hyd-pump-blue.xml</path>
     <overlay>
    <params>
@@ -4786,7 +4786,7 @@
   
   
   <model>
-    <name>LPress Blue 2 Switch</name>
+    <name>Hyd Blue 2 Switch</name>
     <path>Cockpit/Engineer/hyd-pump-blue.xml</path>
     <overlay>
    <params>
@@ -6324,6 +6324,21 @@
     </offsets>
   </model>
   
+  <model>
+    <name>Temp Comparator</name>
+    <path>Cockpit/Engineer/temp-comparator.xml</path>
+    <overlay>
+    
+    </overlay>
+    <offsets>
+      <x-m>-21.545</x-m>
+      <y-m>0.400</y-m>
+      <z-m>1.638</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
   
   
   

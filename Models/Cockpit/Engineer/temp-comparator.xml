@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <PropertyList>
   
-  <path>../Models/light_selected.ac</path>
+  <path>../Models/light_comparator.ac</path>
 
  
 <effect>
@@ -14,6 +14,7 @@
 
 
 
+  
   
    <animation>
     <type>select</type>
@@ -28,7 +29,13 @@
        
     <property>/controls/lighting/crew/engineer/aft/test</property>
      <!-- bug -->
-     <property>/controls/electric/ac/emergency/generator/selected</property>
+     <and>
+     <not-equals>
+         <property>/systems/temperature/group[2]/duct-degc</property>
+         <property>/systems/temperature/group[3]/duct-degc</property>
+        </not-equals>
+        <property>/controls/temperature/group[2]/on</property>
+        </and>
       </or>
       
       <not>
@@ -55,7 +62,13 @@
        
     <property>/controls/lighting/crew/engineer/aft/test</property>
      <!-- bug -->
-      <property>/controls/electric/ac/emergency/generator/selected</property>
+       <and>
+     <not-equals>
+         <property>/systems/temperature/group[2]/duct-degc</property>
+         <property>/systems/temperature/group[3]/duct-degc</property>
+        </not-equals>
+        <property>/controls/temperature/group[2]/on</property>
+        </and>
       </or>
       
       
@@ -86,7 +99,13 @@
        
     <property>/controls/lighting/crew/engineer/aft/test</property>
      <!-- bug -->
-    <property>/controls/electric/ac/emergency/generator/selected</property>
+      <and>
+     <not-equals>
+         <property>/systems/temperature/group[2]/duct-degc</property>
+         <property>/systems/temperature/group[3]/duct-degc</property>
+        </not-equals>
+        <property>/controls/temperature/group[2]/on</property>
+        </and>
       </or>
       
       <not>
@@ -100,8 +119,6 @@
     
   </animation>
   
-
-    
   
   
   
