@@ -6324,6 +6324,80 @@
     </offsets>
   </model>
   
+  
+  
+  
+  <model>
+    <name>Leak 1</name>
+    <path>Cockpit/Engineer/yellow-leak.xml</path>
+    <overlay>
+    
+    </overlay>
+    <offsets>
+      <x-m>-21.714</x-m>
+      <y-m>0.348</y-m>
+      <z-m>1.761</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  <model>
+    <name>Leak 2</name>
+    <path>Cockpit/Engineer/yellow-leak.xml</path>
+    <overlay>
+    
+    </overlay>
+    <offsets>
+      <x-m>-21.657</x-m>
+      <y-m>0.348</y-m>
+      <z-m>1.761</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  
+  
+  
+   <model>
+    <name>Leak 3</name>
+    <path>Cockpit/Engineer/yellow-leak.xml</path>
+    <overlay>
+    
+    </overlay>
+    <offsets>
+      <x-m>-21.600</x-m>
+      <y-m>0.348</y-m>
+      <z-m>1.761</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  
+   <model>
+    <name>Leak 4</name>
+    <path>Cockpit/Engineer/yellow-leak.xml</path>
+    <overlay>
+    
+    </overlay>
+    <offsets>
+      <x-m>-21.544</x-m>
+      <y-m>0.348</y-m>
+      <z-m>1.761</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+  
   <model>
     <name>Temp Comparator</name>
     <path>Cockpit/Engineer/temp-comparator.xml</path>
