@@ -1,0 +1,125 @@
+<?xml version="1.0"?>
+<PropertyList>
+  
+  <path>../Models/light_overpress.ac</path>
+<params>
+  <pressure-psi>/systems/air-bleed/engine[0]/cross-psi</pressure-psi>
+ </params>
+ 
+<effect>
+    <inherits-from>Aircraft/Concorde/Models/Effects/interior</inherits-from>
+    <object-name>Frame</object-name>
+    <object-name>On</object-name>
+    <object-name>Text</object-name>
+</effect>
+
+
+
+
+  
+   <animation>
+    <type>select</type>
+    <object-name>On</object-name>
+    <condition>
+       <and>
+     <greater-than>
+    <property>/systems/electrical/outputs/bulb</property>
+    <value>20.0</value>
+   </greater-than>
+      <or>
+       
+    <property>/controls/lighting/crew/engineer/center/test</property>
+     <!-- bug -->
+     <greater-than>
+        <property alias="/params/pressure-psi"/>
+        <value>85.0</value>
+       </greater-than>
+      </or>
+      
+      <not>
+    <property>/controls/lighting/crew/engineer/center/low</property>
+    </not>
+     </and>
+     
+    </condition>
+
+ 
+  </animation>
+  
+  
+  <animation>
+    <type>material</type>
+    <object-name>Off</object-name>
+     <condition>
+       <and>
+     <greater-than>
+    <property>/systems/electrical/outputs/bulb</property>
+    <value>20.0</value>
+   </greater-than>
+      <or>
+       
+    <property>/controls/lighting/crew/engineer/center/test</property>
+     <!-- bug -->
+      <greater-than>
+        <property alias="/params/pressure-psi"/>
+        <value>85.0</value>
+       </greater-than>
+      </or>
+      
+      
+    <property>/controls/lighting/crew/engineer/center/low</property>
+    
+     </and>
+     
+    </condition>
+
+    <emission>
+      <red>0.5</red>
+      <green>0.25</green>
+      <blue>0</blue>
+    </emission>
+  </animation>
+  
+  <animation>
+    <type>select</type>
+    <object-name>Off</object-name>
+    <condition>
+    <not>
+        <and>
+     <greater-than>
+    <property>/systems/electrical/outputs/bulb</property>
+    <value>20.0</value>
+   </greater-than>
+      <or>
+       
+    <property>/controls/lighting/crew/engineer/center/test</property>
+     <!-- bug -->
+    <greater-than>
+        <property alias="/params/pressure-psi"/>
+        <value>85.0</value>
+       </greater-than>
+      </or>
+      
+      <not>
+    <property>/controls/lighting/crew/engineer/center/low</property>
+    </not>
+     </and>
+     
+     </not>
+    </condition>
+
+    
+  </animation>
+  
+ 
+  
+  <animation>
+    <type>material</type>
+    <object-name>Frame</object-name>
+  <emission>
+     <red>0.2</red>
+     <green>0.2</green>
+     <blue>0.2</blue>
+  </emission>
+</animation>
+</PropertyList>

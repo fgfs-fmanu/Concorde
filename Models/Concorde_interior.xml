@@ -6084,6 +6084,82 @@
     </offsets>
   </model>
   
+  <model>
+  <name>Air Bleed Overpress 1 </name>
+    <path>Cockpit/Engineer/air-bleed-pressure.xml</path>
+    <overlay>
+      <params>
+  <pressure-psi>/systems/air-bleed/engine[0]/cross-psi</pressure-psi>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.966</x-m>
+      <y-m>0.384</y-m>
+      <z-m>1.679</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  
+  <model>
+  <name>Air Bleed Overpress 2 </name>
+    <path>Cockpit/Engineer/air-bleed-pressure.xml</path>
+    <overlay>
+      <params>
+  <pressure-psi>/systems/air-bleed/engine[1]/cross-psi</pressure-psi>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.890</x-m>
+      <y-m>0.384</y-m>
+      <z-m>1.679</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  <model>
+  <name>Air Bleed Overpress 3 </name>
+    <path>Cockpit/Engineer/air-bleed-pressure.xml</path>
+    <overlay>
+      <params>
+  <pressure-psi>/systems/air-bleed/engine[2]/cross-psi</pressure-psi>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.853</x-m>
+      <y-m>0.384</y-m>
+      <z-m>1.679</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  <model>
+  <name>Air Bleed Overpress 4 </name>
+    <path>Cockpit/Engineer/air-bleed-pressure.xml</path>
+    <overlay>
+      <params>
+  <pressure-psi>/systems/air-bleed/engine[3]/cross-psi</pressure-psi>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.778</x-m>
+      <y-m>0.384</y-m>
+      <z-m>1.679</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+  
   <!-- ======== -->
 <!-- Air Cond -->
 <!-- ======== -->
