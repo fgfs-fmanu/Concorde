@@ -1470,34 +1470,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
 
 <!-- RAM AIR -->
 
-  <instrument include="Instruments/concorde-amber-air-prim-exch.xml">
-   <name>Alarm primary exchanger 1</name>
-   <condition>
-    <or>
-     <and>
-      <property>/sim/current-view/internal</property>
-      <property>/systems/seat/engineer</property>
-      <less-than>
-       <property>/sim/current-view/goal-heading-offset-deg</property>
-       <value>330</value>
-      </less-than>
-      <greater-than>
-       <property>/sim/current-view/goal-heading-offset-deg</property>
-       <value>260</value>
-      </greater-than>
-      <greater-than>
-       <property>/sim/current-view/goal-pitch-offset-deg</property>
-       <value>-10</value>
-      </greater-than>
-     </and>
-     <property>/controls/seat/all</property>
-    </or>
-   </condition>
-   <x>-30</x>
-   <y>120</y>
-   <w>42</w>
-   <h>21</h>
-  </instrument>
+  
 
   <instrument include="Instruments/concorde-connection.xml">
    <name>RAM air 1</name>
@@ -1531,34 +1504,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
    <h>15</h>
   </instrument>
 
-  <instrument include="Instruments/concorde-amber-air-prim-exch.xml">
-   <name>Alarm primary exchanger 2</name>
-   <condition>
-    <or>
-     <and>
-      <property>/sim/current-view/internal</property>
-      <property>/systems/seat/engineer</property>
-      <less-than>
-       <property>/sim/current-view/goal-heading-offset-deg</property>
-       <value>320</value>
-      </less-than>
-      <greater-than>
-       <property>/sim/current-view/goal-heading-offset-deg</property>
-       <value>255</value>
-      </greater-than>
-      <greater-than>
-       <property>/sim/current-view/goal-pitch-offset-deg</property>
-       <value>-15</value>
-      </greater-than>
-     </and>
-     <property>/controls/seat/all</property>
-    </or>
-   </condition>
-   <x>65</x>
-   <y>120</y>
-   <w>42</w>
-   <h>21</h>
-  </instrument>
+  
 
   <instrument include="Instruments/concorde-connection.xml">
    <name>RAM air 2</name>
@@ -1592,34 +1538,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
    <h>15</h>
   </instrument>
 
-  <instrument include="Instruments/concorde-amber-air-prim-exch.xml">
-   <name>Alarm primary exchanger 3</name>
-   <condition>
-    <or>
-     <and>
-      <property>/sim/current-view/internal</property>
-      <property>/systems/seat/engineer</property>
-      <less-than>
-       <property>/sim/current-view/goal-heading-offset-deg</property>
-       <value>315</value>
-      </less-than>
-      <greater-than>
-       <property>/sim/current-view/goal-heading-offset-deg</property>
-       <value>245</value>
-      </greater-than>
-      <greater-than>
-       <property>/sim/current-view/goal-pitch-offset-deg</property>
-       <value>-10</value>
-      </greater-than>
-     </and>
-     <property>/controls/seat/all</property>
-    </or>
-   </condition>
-   <x>180</x>
-   <y>120</y>
-   <w>42</w>
-   <h>21</h>
-  </instrument>
+  
 
   <instrument include="Instruments/concorde-connection.xml">
    <name>RAM air 3</name>
@@ -1653,34 +1572,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
    <h>15</h>
   </instrument>
 
-  <instrument include="Instruments/concorde-amber-air-prim-exch.xml">
-   <name>Alarm primary exchanger 4</name>
-   <condition>
-    <or>
-     <and>
-      <property>/sim/current-view/internal</property>
-      <property>/systems/seat/engineer</property>
-      <less-than>
-       <property>/sim/current-view/goal-heading-offset-deg</property>
-       <value>305</value>
-      </less-than>
-      <greater-than>
-       <property>/sim/current-view/goal-heading-offset-deg</property>
-       <value>240</value>
-      </greater-than>
-      <greater-than>
-       <property>/sim/current-view/goal-pitch-offset-deg</property>
-       <value>-10</value>
-      </greater-than>
-     </and>
-     <property>/controls/seat/all</property>
-    </or>
-   </condition>
-   <x>275</x>
-   <y>120</y>
-   <w>42</w>
-   <h>21</h>
-  </instrument>
+  
 
   <instrument include="Instruments/concorde-connection.xml">
    <name>RAM air 4</name>
@@ -1716,152 +1608,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
 
 <!-- SECONDARY EXCHANGER -->
 
-  <instrument include="Instruments/concorde-amber-air-sec-exch.xml">
-   <name>Alarm secondary exchanger 1</name>
-   <condition>
-    <or>
-     <and>
-      <property>/sim/current-view/internal</property>
-      <property>/systems/seat/engineer</property>
-      <less-than>
-       <property>/sim/current-view/goal-heading-offset-deg</property>
-       <value>325</value>
-      </less-than>
-      <greater-than>
-       <property>/sim/current-view/goal-heading-offset-deg</property>
-       <value>260</value>
-      </greater-than>
-      <greater-than>
-       <property>/sim/current-view/goal-pitch-offset-deg</property>
-       <value>-15</value>
-      </greater-than>
-     </and>
-     <property>/controls/seat/all</property>
-    </or>
-   </condition>
-   <x>-30</x>
-   <y>76</y>
-   <w>42</w>
-   <h>21</h>
-  </instrument>
-
-  <instrument include="Instruments/concorde-amber-air-sec-exch.xml">
-   <name>Alarm secondary exchanger 2</name>
-   <condition>
-    <or>
-     <and>
-      <property>/sim/current-view/internal</property>
-      <property>/systems/seat/engineer</property>
-      <less-than>
-       <property>/sim/current-view/goal-heading-offset-deg</property>
-       <value>320</value>
-      </less-than>
-      <greater-than>
-       <property>/sim/current-view/goal-heading-offset-deg</property>
-       <value>255</value>
-      </greater-than>
-      <greater-than>
-       <property>/sim/current-view/goal-pitch-offset-deg</property>
-       <value>-15</value>
-      </greater-than>
-     </and>
-     <property>/controls/seat/all</property>
-    </or>
-   </condition>
-   <x>65</x>
-   <y>76</y>
-   <w>42</w>
-   <h>21</h>
-  </instrument>
-
-  <instrument include="Instruments/concorde-amber-air-sec-exch.xml">
-   <name>Alarm secondary exchanger 3</name>
-   <condition>
-    <or>
-     <and>
-      <property>/sim/current-view/internal</property>
-      <property>/systems/seat/engineer</property>
-      <less-than>
-       <property>/sim/current-view/goal-heading-offset-deg</property>
-       <value>310</value>
-      </less-than>
-      <greater-than>
-       <property>/sim/current-view/goal-heading-offset-deg</property>
-       <value>245</value>
-      </greater-than>
-      <greater-than>
-       <property>/sim/current-view/goal-pitch-offset-deg</property>
-       <value>-15</value>
-      </greater-than>
-     </and>
-     <property>/controls/seat/all</property>
-    </or>
-   </condition>
-   <x>180</x>
-   <y>76</y>
-   <w>42</w>
-   <h>21</h>
-  </instrument>
-
-  <instrument include="Instruments/concorde-amber-air-sec-exch.xml">
-   <name>Alarm secondary exchanger 4</name>
-   <condition>
-    <or>
-     <and>
-      <property>/sim/current-view/internal</property>
-      <property>/systems/seat/engineer</property>
-      <less-than>
-       <property>/sim/current-view/goal-heading-offset-deg</property>
-       <value>305</value>
-      </less-than>
-      <greater-than>
-       <property>/sim/current-view/goal-heading-offset-deg</property>
-       <value>240</value>
-      </greater-than>
-      <greater-than>
-       <property>/sim/current-view/goal-pitch-offset-deg</property>
-       <value>-15</value>
-      </greater-than>
-     </and>
-     <property>/controls/seat/all</property>
-    </or>
-   </condition>
-   <x>275</x>
-   <y>76</y>
-   <w>42</w>
-   <h>21</h>
-  </instrument>
-
-<!-- FUEL VALVE -->
-
-  <instrument include="Instruments/concorde-yellow-air-fuel-exch.xml">
-   <name>Warning fuel exchanger 1</name>
-   <condition>
-    <or>
-     <and>
-      <property>/sim/current-view/internal</property>
-      <property>/systems/seat/engineer</property>
-      <less-than>
-       <property>/sim/current-view/goal-heading-offset-deg</property>
-       <value>325</value>
-      </less-than>
-      <greater-than>
-       <property>/sim/current-view/goal-heading-offset-deg</property>
-       <value>260</value>
-      </greater-than>
-      <greater-than>
-       <property>/sim/current-view/goal-pitch-offset-deg</property>
-       <value>-20</value>
-      </greater-than>
-     </and>
-     <property>/controls/seat/all</property>
-    </or>
-   </condition>
-   <x>-30</x>
-   <y>42</y>
-   <w>42</w>
-   <h>21</h>
-  </instrument>
+ 
 
   <instrument include="Instruments/concorde-connection.xml">
    <name>Fuel valve 1</name>
@@ -1895,34 +1642,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
    <h>15</h>
   </instrument>
 
-  <instrument include="Instruments/concorde-yellow-air-fuel-exch.xml">
-   <name>Warning fuel exchanger 2</name>
-   <condition>
-    <or>
-     <and>
-      <property>/sim/current-view/internal</property>
-      <property>/systems/seat/engineer</property>
-      <less-than>
-       <property>/sim/current-view/goal-heading-offset-deg</property>
-       <value>320</value>
-      </less-than>
-      <greater-than>
-       <property>/sim/current-view/goal-heading-offset-deg</property>
-       <value>255</value>
-      </greater-than>
-      <greater-than>
-       <property>/sim/current-view/goal-pitch-offset-deg</property>
-       <value>-20</value>
-      </greater-than>
-     </and>
-     <property>/controls/seat/all</property>
-    </or>
-   </condition>
-   <x>65</x>
-   <y>42</y>
-   <w>42</w>
-   <h>21</h>
-  </instrument>
+  
 
   <instrument include="Instruments/concorde-connection.xml">
    <name>Fuel valve 2</name>
@@ -1956,35 +1676,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
    <h>15</h>
   </instrument>
 
-  <instrument include="Instruments/concorde-yellow-air-fuel-exch.xml">
-   <name>Warning fuel exchanger 3</name>
-   <condition>
-    <or>
-     <and>
-      <property>/sim/current-view/internal</property>
-      <property>/systems/seat/engineer</property>
-      <less-than>
-       <property>/sim/current-view/goal-heading-offset-deg</property>
-       <value>315</value>
-      </less-than>
-      <greater-than>
-       <property>/sim/current-view/goal-heading-offset-deg</property>
-       <value>245</value>
-      </greater-than>
-      <greater-than>
-       <property>/sim/current-view/goal-pitch-offset-deg</property>
-       <value>-20</value>
-      </greater-than>
-     </and>
-     <property>/controls/seat/all</property>
-    </or>
-   </condition>
-   <x>180</x>
-   <y>42</y>
-   <w>42</w>
-   <h>21</h>
-  </instrument>
-
+ 
   <instrument include="Instruments/concorde-connection.xml">
    <name>Fuel valve 3</name>
    <condition>
@@ -2017,34 +1709,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
    <h>15</h>
   </instrument>
 
-  <instrument include="Instruments/concorde-yellow-air-fuel-exch.xml">
-   <name>Warning fuel exchanger 4</name>
-   <condition>
-    <or>
-     <and>
-      <property>/sim/current-view/internal</property>
-      <property>/systems/seat/engineer</property>
-      <less-than>
-       <property>/sim/current-view/goal-heading-offset-deg</property>
-       <value>305</value>
-      </less-than>
-      <greater-than>
-       <property>/sim/current-view/goal-heading-offset-deg</property>
-       <value>240</value>
-      </greater-than>
-      <greater-than>
-       <property>/sim/current-view/goal-pitch-offset-deg</property>
-       <value>-15</value>
-      </greater-than>
-     </and>
-     <property>/controls/seat/all</property>
-    </or>
-   </condition>
-   <x>275</x>
-   <y>42</y>
-   <w>42</w>
-   <h>21</h>
-  </instrument>
+  
 
   <instrument include="Instruments/concorde-connection.xml">
    <name>Fuel valve 4</name>
@@ -2080,37 +1745,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
 
 <!-- DUCT -->
 
-  <instrument include="Instruments/concorde-amber-air-duct.xml">
-   <name>Alarm duct 1</name>
-   <condition>
-    <or>
-     <and>
-      <property>/sim/current-view/internal</property>
-      <property>/systems/seat/engineer</property>
-      <less-than>
-       <property>/sim/current-view/goal-heading-offset-deg</property>
-       <value>325</value>
-      </less-than>
-      <greater-than>
-       <property>/sim/current-view/goal-heading-offset-deg</property>
-       <value>260</value>
-      </greater-than>
-      <greater-than>
-       <property>/sim/current-view/goal-pitch-offset-deg</property>
-       <value>-20</value>
-      </greater-than>
-     </and>
-     <property>/controls/seat/all</property>
-    </or>
-   </condition>
-   <param>
-    <duct-select>/systems/temperature/group[0]/duct-degc</duct-select>
-   </param>
-   <x>-30</x>
-   <y>8</y>
-   <w>42</w>
-   <h>21</h>
-  </instrument>
+ 
 
   <instrument include="Instruments/concorde-air-fuel-valve.xml">
    <name>Fuel valve 1 selector</name>
@@ -2145,37 +1780,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
    <h>75</h>
   </instrument>
 
-  <instrument include="Instruments/concorde-amber-air-duct.xml">
-   <name>Alarm duct 2</name>
-   <condition>
-    <or>
-     <and>
-      <property>/sim/current-view/internal</property>
-      <property>/systems/seat/engineer</property>
-      <less-than>
-       <property>/sim/current-view/goal-heading-offset-deg</property>
-       <value>320</value>
-      </less-than>
-      <greater-than>
-       <property>/sim/current-view/goal-heading-offset-deg</property>
-       <value>255</value>
-      </greater-than>
-      <greater-than>
-       <property>/sim/current-view/goal-pitch-offset-deg</property>
-       <value>-20</value>
-      </greater-than>
-     </and>
-     <property>/controls/seat/all</property>
-    </or>
-   </condition>
-   <param>
-    <duct-select>/systems/temperature/group[1]/duct-degc</duct-select>
-   </param>
-   <x>65</x>
-   <y>8</y>
-   <w>42</w>
-   <h>21</h>
-  </instrument>
+ 
 
   <instrument include="Instruments/concorde-air-fuel-valve.xml">
    <name>Fuel valve 2 selector</name>
@@ -2210,37 +1815,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
    <h>75</h>
   </instrument>
 
-  <instrument include="Instruments/concorde-amber-air-duct.xml">
-   <name>Alarm duct 3</name>
-   <condition>
-    <or>
-     <and>
-      <property>/sim/current-view/internal</property>
-      <property>/systems/seat/engineer</property>
-      <less-than>
-       <property>/sim/current-view/goal-heading-offset-deg</property>
-       <value>310</value>
-      </less-than>
-      <greater-than>
-       <property>/sim/current-view/goal-heading-offset-deg</property>
-       <value>245</value>
-      </greater-than>
-      <greater-than>
-       <property>/sim/current-view/goal-pitch-offset-deg</property>
-       <value>-20</value>
-      </greater-than>
-     </and>
-     <property>/controls/seat/all</property>
-    </or>
-   </condition>
-   <param>
-    <duct-select>/systems/temperature/group[2]/duct-degc</duct-select>
-   </param>
-   <x>180</x>
-   <y>8</y>
-   <w>42</w>
-   <h>21</h>
-  </instrument>
+  
 
   <instrument include="Instruments/concorde-air-fuel-valve.xml">
    <name>Fuel valve 3 selector</name>
@@ -2275,37 +1850,6 @@ override those by providing <w>..</w> and <h>..</h> properties with the
    <h>75</h>
   </instrument>
 
-  <instrument include="Instruments/concorde-amber-air-duct.xml">
-   <name>Alarm duct 4</name>
-   <condition>
-    <or>
-     <and>
-      <property>/sim/current-view/internal</property>
-      <property>/systems/seat/engineer</property>
-      <less-than>
-       <property>/sim/current-view/goal-heading-offset-deg</property>
-       <value>305</value>
-      </less-than>
-      <greater-than>
-       <property>/sim/current-view/goal-heading-offset-deg</property>
-       <value>240</value>
-      </greater-than>
-      <greater-than>
-       <property>/sim/current-view/goal-pitch-offset-deg</property>
-       <value>-20</value>
-      </greater-than>
-     </and>
-     <property>/controls/seat/all</property>
-    </or>
-   </condition>
-   <param>
-    <duct-select>/systems/temperature/group[3]/duct-degc</duct-select>
-   </param>
-   <x>275</x>
-   <y>8</y>
-   <w>42</w>
-   <h>21</h>
-  </instrument>
 
   <instrument include="Instruments/concorde-air-fuel-valve.xml">
    <name>Fuel valve 4 selector</name>

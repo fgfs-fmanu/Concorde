@@ -1,0 +1,203 @@
+<?xml version="1.0"?>
+<PropertyList>
+  
+  <path>../Models/light_exchanger.ac</path>
+ <params>
+  <duct-select>/systems/temperature/group[0]/duct-degc</duct-select>
+ </params>
+ 
+<effect>
+    <inherits-from>Aircraft/Concorde/Models/Effects/interior</inherits-from>
+    
+    <object-name>FrameP</object-name>
+    <object-name>OffP</object-name>
+    <object-name>OnP</object-name>
+    <object-name>TextP</object-name>
+    <object-name>FrameS</object-name>
+    <object-name>OnS</object-name>
+    <object-name>OffS</object-name>
+    <object-name>TextS</object-name>
+    <object-name>FrameF</object-name>
+    <object-name>OnF</object-name>
+    <object-name>OffF</object-name>
+    <object-name>TextF</object-name>
+    
+    <object-name>FrameD</object-name>
+    <object-name>OnD</object-name>
+    <object-name>OffD</object-name>
+    <object-name>TextD</object-name>
+    
+    
+</effect>
+
+ <animation>
+    <type>select</type>
+    <object-name>OnD</object-name>
+    <condition>
+       <and>
+     <greater-than>
+    <property>/systems/electrical/outputs/bulb</property>
+    <value>20.0</value>
+   </greater-than>
+      <or>
+       
+    <property>/controls/lighting/crew/engineer/center/test</property>
+     <!-- bug -->
+     <greater-than>
+        <property alias="/params/duct-select"/>
+        <value>120</value>
+       </greater-than>
+      </or>
+      
+      <not>
+    <property>/controls/lighting/crew/engineer/center/low</property>
+    </not>
+     </and>
+     
+    </condition>
+
+ 
+  </animation>
+  
+  
+  <animation>
+    <type>material</type>
+    <object-name>OffD</object-name>
+     <condition>
+       <and>
+     <greater-than>
+    <property>/systems/electrical/outputs/bulb</property>
+    <value>20.0</value>
+   </greater-than>
+      <or>
+       
+    <property>/controls/lighting/crew/engineer/center/test</property>
+     <!-- bug -->
+      <greater-than>
+        <property alias="/params/duct-select"/>
+        <value>120</value>
+       </greater-than>
+      </or>
+      
+      
+    <property>/controls/lighting/crew/engineer/center/low</property>
+    
+     </and>
+     
+    </condition>
+
+    <emission>
+      <red>0.5</red>
+      <green>0.25</green>
+      <blue>0</blue>
+    </emission>
+  </animation>
+  
+  <animation>
+    <type>select</type>
+    <object-name>OffD</object-name>
+    <condition>
+    <not>
+        <and>
+     <greater-than>
+    <property>/systems/electrical/outputs/bulb</property>
+    <value>20.0</value>
+   </greater-than>
+      <or>
+       
+    <property>/controls/lighting/crew/engineer/center/test</property>
+     <!-- bug -->
+    <greater-than>
+        <property alias="/params/duct-select"/>
+        <value>120</value>
+       </greater-than>
+      </or>
+      
+      <not>
+    <property>/controls/lighting/crew/engineer/center/low</property>
+    </not>
+     </and>
+     
+     </not>
+    </condition>
+
+    
+  </animation>
+
+  
+  
+  
+ 
+<animation>
+  <type>select</type>
+    <object-name>OnP</object-name> 
+    <object-name>OnS</object-name>    
+    <object-name>OnF</object-name>     
+    <condition>
+     <and>
+     
+     <greater-than>
+    <property>/systems/electrical/outputs/bulb</property>
+    <value>20.0</value>
+   </greater-than>
+   
+     
+    <property>/controls/lighting/crew/engineer/center/test</property>
+     <!-- bug -->
+    
+    
+    
+     </and>
+    </condition>
+  </animation>
+  
+  
+ 
+
+
+  <animation>
+  <type>select</type>
+    <object-name>OffP</object-name> 
+    <object-name>OffS</object-name>    
+    <object-name>OffF</object-name>     
+    <condition>
+    <not>
+      <and>
+     
+     <greater-than>
+    <property>/systems/electrical/outputs/bulb</property>
+    <value>20.0</value>
+   </greater-than>
+   
+     
+    <property>/controls/lighting/crew/engineer/center/test</property>
+     <!-- bug -->
+    
+    
+    
+     </and>
+     </not>
+    </condition>
+  </animation>
+  
+  
+  
+  
+ 
+  
+ 
+  
+  <animation>
+    <type>material</type>
+    <object-name>FrameP</object-name>
+    <object-name>FrameS</object-name>
+    <object-name>FrameF</object-name>
+    <object-name>FrameD</object-name>
+  <emission>
+     <red>0.2</red>
+     <green>0.2</green>
+     <blue>0.2</blue>
+  </emission>
+</animation>
+
+</PropertyList>

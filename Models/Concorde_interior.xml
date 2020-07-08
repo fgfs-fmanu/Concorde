@@ -6165,6 +6165,82 @@
 <!-- ======== -->
   
   
+  <model>
+  <name>Light Air Exchanger 1</name>
+    <path>Cockpit/Engineer/light-air-exch.xml</path>
+    <overlay>
+     <params>
+  <duct-select>/systems/temperature/group[0]/duct-degc</duct-select>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.965</x-m>
+      <y-m>0.424</y-m>
+      <z-m>1.587</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  <model>
+  <name>Light Air Exchanger 2</name>
+    <path>Cockpit/Engineer/light-air-exch.xml</path>
+    <overlay>
+     <params>
+  <duct-select>/systems/temperature/group[1]/duct-degc</duct-select>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.915</x-m>
+      <y-m>0.424</y-m>
+      <z-m>1.587</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  <model>
+  <name>Light Air Exchanger 3</name>
+    <path>Cockpit/Engineer/light-air-exch.xml</path>
+    <overlay>
+     <params>
+  <duct-select>/systems/temperature/group[2]/duct-degc</duct-select>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.853</x-m>
+      <y-m>0.424</y-m>
+      <z-m>1.587</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  <model>
+  <name>Light Air Exchanger 4</name>
+    <path>Cockpit/Engineer/light-air-exch.xml</path>
+    <overlay>
+     <params>
+  <duct-select>/systems/temperature/group[3]/duct-degc</duct-select>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.803</x-m>
+      <y-m>0.424</y-m>
+      <z-m>1.587</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+  
+  
  
   
   
