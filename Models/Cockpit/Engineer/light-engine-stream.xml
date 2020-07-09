@@ -1,0 +1,312 @@
+<?xml version="1.0"?>
+<PropertyList>
+  
+  <path>../Models/light_engine_stream.ac</path>
+<params>
+  <level-select>/consumables/fuel/tank[13]/level-lbs</level-select>
+  <pump-switch>/controls/fuel/tank[0]/pump[0]</pump-switch>
+  <pump2-switch>/controls/fuel/tank[0]/pump[1]</pump2-switch>
+  <pump3-switch>/controls/fuel/tank[0]/pump[2]</pump3-switch>
+ </params>
+ 
+<effect>
+    <inherits-from>Aircraft/Concorde/Models/Effects/interior</inherits-from>
+    
+    <object-name>FrameA</object-name>
+    <object-name>OffA</object-name>
+    <object-name>OnA</object-name>
+    <object-name>TextA</object-name>
+    <object-name>FrameL</object-name>
+    <object-name>OnL</object-name>
+    <object-name>OffL</object-name>
+    <object-name>TextL</object-name>
+    
+    
+    <object-name>FrameP</object-name>
+    <object-name>OnP</object-name>
+    <object-name>OffP</object-name>
+    <object-name>TextP</object-name>
+    
+    
+</effect>
+
+ <animation>
+    <type>select</type>
+    <object-name>OnP</object-name>
+    <condition>
+       <and>
+     <greater-than>
+    <property>/systems/electrical/outputs/bulb</property>
+    <value>20.0</value>
+   </greater-than>
+      <or>
+       
+    <property>/controls/lighting/crew/engineer/center/test</property>
+     <!-- bug -->
+     <less-than>
+        <property alias="/params/level-select"/>
+        <value>30.0</value>
+       </less-than>
+      </or>
+      
+      <not>
+    <property>/controls/lighting/crew/engineer/center/low</property>
+    </not>
+     </and>
+     
+    </condition>
+
+ 
+  </animation>
+  
+  
+  <animation>
+    <type>material</type>
+    <object-name>OffP</object-name>
+     <condition>
+       <and>
+     <greater-than>
+    <property>/systems/electrical/outputs/bulb</property>
+    <value>20.0</value>
+   </greater-than>
+      <or>
+       
+    <property>/controls/lighting/crew/engineer/center/test</property>
+     <!-- bug -->
+      <less-than>
+        <property alias="/params/level-select"/>
+        <value>30.0</value>
+       </less-than>
+      </or>
+      
+      
+    <property>/controls/lighting/crew/engineer/center/low</property>
+    
+     </and>
+     
+    </condition>
+
+    <emission>
+      <red>0.5</red>
+      <green>0.25</green>
+      <blue>0</blue>
+    </emission>
+  </animation>
+  
+  <animation>
+    <type>select</type>
+    <object-name>OffP</object-name>
+    <condition>
+    <not>
+        <and>
+     <greater-than>
+    <property>/systems/electrical/outputs/bulb</property>
+    <value>20.0</value>
+   </greater-than>
+      <or>
+       
+    <property>/controls/lighting/crew/engineer/center/test</property>
+     <!-- bug -->
+    <less-than>
+        <property alias="/params/level-select"/>
+        <value>30.0</value>
+       </less-than>
+      </or>
+      
+      <not>
+    <property>/controls/lighting/crew/engineer/center/low</property>
+    </not>
+     </and>
+     
+     </not>
+    </condition>
+
+    
+  </animation>
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <animation>
+    <type>select</type>
+    <object-name>OnA</object-name>
+    <condition>
+       <and>
+     <greater-than>
+    <property>/systems/electrical/outputs/bulb</property>
+    <value>20.0</value>
+   </greater-than>
+      <or>
+       
+    <property>/controls/lighting/crew/engineer/center/test</property>
+     <!-- bug -->
+      <not>
+     <or>
+      <property alias="/params/pump-switch"/>
+        <property alias="/params/pump2-switch"/>
+        <property alias="/params/pump3-switch"/>
+      </or>
+      </not>
+      </or>
+      
+      <not>
+    <property>/controls/lighting/crew/engineer/center/low</property>
+    </not>
+     </and>
+     
+    </condition>
+
+ 
+  </animation>
+  
+  
+  <animation>
+    <type>material</type>
+    <object-name>OffA</object-name>
+     <condition>
+       <and>
+     <greater-than>
+    <property>/systems/electrical/outputs/bulb</property>
+    <value>20.0</value>
+   </greater-than>
+      <or>
+       
+    <property>/controls/lighting/crew/engineer/center/test</property>
+     <!-- bug -->
+     <not>
+     <or>
+      <property alias="/params/pump-switch"/>
+        <property alias="/params/pump2-switch"/>
+        <property alias="/params/pump3-switch"/>
+      </or>
+      </not>
+      </or>
+      
+      
+    <property>/controls/lighting/crew/engineer/center/low</property>
+    
+     </and>
+     
+    </condition>
+
+    <emission>
+      <red>0.5</red>
+      <green>0.5</green>
+      <blue>0</blue>
+    </emission>
+  </animation>
+  
+  <animation>
+    <type>select</type>
+    <object-name>OffA</object-name>
+    <condition>
+    <not>
+        <and>
+     <greater-than>
+    <property>/systems/electrical/outputs/bulb</property>
+    <value>20.0</value>
+   </greater-than>
+      <or>
+       
+    <property>/controls/lighting/crew/engineer/center/test</property>
+     <!-- bug -->
+      <not>
+     <or>
+      <property alias="/params/pump-switch"/>
+        <property alias="/params/pump2-switch"/>
+        <property alias="/params/pump3-switch"/>
+      </or>
+      </not>
+      </or>
+      
+      <not>
+    <property>/controls/lighting/crew/engineer/center/low</property>
+    </not>
+     </and>
+     
+     </not>
+    </condition>
+
+    
+  </animation>
+  
+  
+  
+ 
+<animation>
+  <type>select</type>
+    <object-name>OnL</object-name>    
+    <condition>
+     <and>
+     
+     <greater-than>
+    <property>/systems/electrical/outputs/bulb</property>
+    <value>20.0</value>
+   </greater-than>
+   
+     
+    <property>/controls/lighting/crew/engineer/center/test</property>
+     <!-- bug -->
+    
+    
+    
+     </and>
+    </condition>
+  </animation>
+  
+  
+ 
+
+
+  <animation>
+  <type>select</type>
+    <object-name>OffL</object-name>      
+    <condition>
+    <not>
+      <and>
+     
+     <greater-than>
+    <property>/systems/electrical/outputs/bulb</property>
+    <value>20.0</value>
+   </greater-than>
+   
+     
+    <property>/controls/lighting/crew/engineer/center/test</property>
+     <!-- bug -->
+    
+    
+    
+     </and>
+     </not>
+    </condition>
+  </animation>
+  
+  
+  
+  
+ 
+  
+ 
+  
+  <animation>
+    <type>material</type>
+    <object-name>FrameA</object-name>
+    <object-name>FrameL</object-name>
+    <object-name>FrameP</object-name>
+  <emission>
+     <red>0.2</red>
+     <green>0.2</green>
+     <blue>0.2</blue>
+  </emission>
+</animation>
+
+</PropertyList>

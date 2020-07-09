@@ -3244,6 +3244,93 @@
 
 
 
+<model>
+    <name>Fuel Tank 1 Stream</name>
+    <path>Cockpit/Engineer/light-engine-stream.xml</path>
+    <overlay>
+   <params>
+  <level-select>/consumables/fuel/tank[13]/level-lbs</level-select>
+  <pump-switch>/controls/fuel/tank[0]/pump[0]</pump-switch>
+  <pump2-switch>/controls/fuel/tank[0]/pump[1]</pump2-switch>
+  <pump3-switch>/controls/fuel/tank[0]/pump[2]</pump3-switch>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.987</x-m>
+      <y-m>0.55</y-m>
+      <z-m>0.945</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>-5</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  <model>
+    <name>Fuel Tank 2 Stream</name>
+    <path>Cockpit/Engineer/light-engine-stream.xml</path>
+    <overlay>
+   <params>
+  <level-select>/consumables/fuel/tank[14]/level-lbs</level-select>
+  <pump-switch>/controls/fuel/tank[1]/pump[0]</pump-switch>
+  <pump2-switch>/controls/fuel/tank[1]/pump[1]</pump2-switch>
+  <pump3-switch>/controls/fuel/tank[1]/pump[2]</pump3-switch>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.845</x-m>
+      <y-m>0.55</y-m>
+      <z-m>0.945</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>-5</pitch-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <name>Fuel Tank 3 Stream</name>
+    <path>Cockpit/Engineer/light-engine-stream.xml</path>
+    <overlay>
+   <params>
+  <level-select>/consumables/fuel/tank[15]/level-lbs</level-select>
+  <pump-switch>/controls/fuel/tank[2]/pump[0]</pump-switch>
+  <pump2-switch>/controls/fuel/tank[2]/pump[1]</pump2-switch>
+  <pump3-switch>/controls/fuel/tank[2]/pump[2]</pump3-switch>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.703</x-m>
+      <y-m>0.55</y-m>
+      <z-m>0.945</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>-5</pitch-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <name>Fuel Tank 4 Stream</name>
+    <path>Cockpit/Engineer/light-engine-stream.xml</path>
+    <overlay>
+   <params>
+  <level-select>/consumables/fuel/tank[16]/level-lbs</level-select>
+  <pump-switch>/controls/fuel/tank[3]/pump[0]</pump-switch>
+  <pump2-switch>/controls/fuel/tank[3]/pump[1]</pump2-switch>
+  <pump3-switch>/controls/fuel/tank[3]/pump[2]</pump3-switch>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.561</x-m>
+      <y-m>0.55</y-m>
+      <z-m>0.945</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>-5</pitch-deg>
+    </offsets>
+  </model>
+
+
+
 
 
 
