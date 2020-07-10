@@ -62,7 +62,31 @@
     </emission>
   </animation>
 
-
+ <animation>
+  <type>translate</type>
+  <object-name>Button</object-name>
+  <property>/instrumentation/takeoff-monitor/armed</property>
+  <interpolation>
+   <entry>
+    <ind>0.0</ind>
+    <dep>0</dep>
+   </entry>
+   <entry>
+    <ind>1.0</ind>
+    <dep>-0.01</dep>
+   </entry>
+  </interpolation>
+  <center>
+   <x-m>0.0</x-m>
+   <y-m>0.0</y-m>
+   <z-m>0.0</z-m>
+  </center>
+  <axis>
+   <x>1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
     <animation>
     <type>pick</type>
     <object-name>Button</object-name>

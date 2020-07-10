@@ -7478,6 +7478,63 @@
      <pitch-deg>25</pitch-deg>
     </offsets>
   </model>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <model>
+    <name>Reverse Arm</name>
+    <path>Cockpit/Engineer/reverse-arm.xml</path>
+<overlay>
+</overlay>
+    <offsets>
+      <x-m>-22.16</x-m>
+      <y-m>0.515</y-m>
+      <z-m>1.375</z-m>
+      
+      <heading-deg>-83</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <name>Open</name>
+    <path>Cockpit/Engineer/blue-open.xml</path>
+<overlay>
+</overlay>
+    <offsets>
+      <x-m>-22.13</x-m>
+      <y-m>0.513</y-m>
+      <z-m>1.37</z-m>
+      
+      <heading-deg>-83</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  
+  <model>
+    <name>Nozzle</name>
+    <path>Cockpit/Engineer/yellow-nozzle.xml</path>
+<overlay>
+</overlay>
+    <offsets>
+      <x-m>-22.102</x-m>
+      <y-m>0.518</y-m>
+      <z-m>1.368</z-m>
+      
+      <heading-deg>-83</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+  
+  
 
 
 <!-- ======== -->
