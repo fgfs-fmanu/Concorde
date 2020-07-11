@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <PropertyList>
   <params>
-    <inlet-override>/controls/fuel/tank[11]/inlet-override[1]</inlet-override>
-  <inlet-off>/controls/fuel/tank[11]/inlet-off[1]</inlet-off>
+    <inlet-override>/controls/fuel/tank[10]/inlet-override[1]</inlet-override>
+  <inlet-off>/controls/fuel/tank[10]/inlet-off[1]</inlet-off>
   </params>
   <path>../Models/switch.ac</path>
 
@@ -26,7 +26,7 @@
     <sum>
     <value>-1</value>
     <prod>
-    <property>/controls/fuel/tank[11]/inlet-override[1]</property>
+    <property>/controls/fuel/tank[10]/inlet-override[1]</property>
 	<value>2</value>
     </prod>
     </sum>
@@ -34,7 +34,7 @@
     <sum>
     <value>1</value>
     <prod>
-    <property>/controls/fuel/tank[11]/inlet-off[1]</property>
+    <property>/controls/fuel/tank[10]/inlet-off[1]</property>
     <value>-1</value>
     </prod>
     </sum>
@@ -61,7 +61,7 @@
     <object-name>Switch</object-name>
 	<condition>
 	<not>
-    <property>/controls/fuel/tank[11]/inlet-off[1]</property>
+    <property>/controls/fuel/tank[10]/inlet-off[1]</property>
 	</not>
   	</condition>
     <action>
@@ -70,7 +70,7 @@
       <repeatable>false</repeatable>
       <binding>
         <command>property-toggle</command>
-        <property>/controls/fuel/tank[11]/inlet-override[1]</property>
+        <property>/controls/fuel/tank[10]/inlet-override[1]</property>
         <step>1</step>
         <min>0</min>
         <max>1</max>
@@ -101,7 +101,7 @@
       <repeatable>false</repeatable>
       <binding>
         <command>property-toggle</command>
-        <property>/controls/fuel/tank[11]/inlet-off[1]</property>
+        <property>/controls/fuel/tank[10]/inlet-off[1]</property>
         <step>1</step>
         <min>0</min>
         <max>1</max>

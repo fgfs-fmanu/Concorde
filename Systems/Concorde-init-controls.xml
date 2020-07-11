@@ -358,7 +358,7 @@
     <inverter-blue type="bool">true</inverter-blue>           <!-- inverter powered -->
     <inverter-green type="bool">true</inverter-green>
     <master-bat n="0" alias="/controls/engines/engine[0]/master-bat"/>
-    <master-bat n="1" type="bool">true</master-bat>           <!-- battery B -->
+    <master-bat n="1" type="bool">false</master-bat>           <!-- battery B -->
     <main-a type="bool">true</main-a>                         <!-- AC essential to DC main (TRU) -->
     <main-b type="bool">true</main-b>
     <essential-a type="bool">true</essential-a>               <!-- AC essential to DC essential (TRU) -->
@@ -386,7 +386,7 @@
     <intake-auto type="bool">true</intake-auto>
     <intake-main type="bool">true</intake-main>               <!-- main hydraulics -->
     <intake-selector type="int">0</intake-selector>           <!-- auto A -->
-    <master-bat type="bool">true</master-bat>                 <!-- battery A (like the old C++ electrical system) -->
+    <master-bat type="bool">false</master-bat>                 <!-- battery A (like the old C++ electrical system) -->
     <master-alt type="bool">false</master-alt>                 <!-- generator -->
     <rating>takeoff</rating>
     <rating-flight>climb</rating-flight>
@@ -521,8 +521,8 @@
     <aft-trim type="bool">false</aft-trim>
     <aft-trim-disabled type="bool">true</aft-trim-disabled>
     <cross-feed-valve type="bool">false</cross-feed-valve>
-    <heater type="bool">true</heater>
-    <heater-auto type="bool">true</heater-auto>
+    <heater type="bool">false</heater>
+    <heater-auto type="bool">false</heater-auto>
     <inlet-standby type="bool">false</inlet-standby>
     <jettison type="bool">false</jettison>
     <lp-valve type="bool">true</lp-valve>                     <!-- engine on -->
@@ -536,8 +536,8 @@
    <tank n="1">
     <aft-trim type="bool">false</aft-trim>                    <!-- always -->
     <cross-feed-valve type="bool">false</cross-feed-valve>
-    <heater type="bool">true</heater>
-    <heater-auto type="bool">true</heater-auto>
+    <heater type="bool">false</heater>
+    <heater-auto type="bool">false</heater-auto>
     <inlet-standby type="bool">false</inlet-standby>
     <jettison type="bool">false</jettison>
     <lp-valve type="bool">true</lp-valve>
@@ -551,8 +551,8 @@
    <tank n="2">
     <aft-trim type="bool">false</aft-trim>                    <!-- always -->
     <cross-feed-valve type="bool">false</cross-feed-valve>
-    <heater type="bool">true</heater>
-    <heater-auto type="bool">true</heater-auto>
+    <heater type="bool">false</heater>
+    <heater-auto type="bool">false</heater-auto>
     <inlet-standby type="bool">false</inlet-standby>
     <jettison type="bool">false</jettison>
     <lp-valve type="bool">true</lp-valve>
@@ -567,8 +567,8 @@
     <aft-trim type="bool">false</aft-trim>
     <aft-trim-disabled type="bool">true</aft-trim-disabled>
     <cross-feed-valve type="bool">false</cross-feed-valve>
-    <heater type="bool">true</heater>
-    <heater-auto type="bool">true</heater-auto>
+    <heater type="bool">false</heater>
+    <heater-auto type="bool">false</heater-auto>
     <inlet-standby type="bool">false</inlet-standby>
     <jettison type="bool">false</jettison>
     <lp-valve type="bool">true</lp-valve>
@@ -620,8 +620,8 @@
     <inlet-auto n="1" type="bool">false</inlet-auto>
     <inlet-main n="0" type="bool">false</inlet-main>
     <inlet-main n="1" type="bool">false</inlet-main>
-    <inlet-off n="0" type="bool">true</inlet-off>             <!-- shut -->
-    <inlet-off n="1" type="bool">true</inlet-off>
+    <inlet-off n="0" type="bool">false</inlet-off>             <!-- shut -->
+    <inlet-off n="1" type="bool">false</inlet-off>
     <inlet-override n="0" type="bool">false</inlet-override>  <!-- main selector -->
     <inlet-override n="1" type="bool">false</inlet-override>
     <inlet-static n="0" type="bool">false</inlet-static>
@@ -651,8 +651,8 @@
     <inlet-auto n="1" type="bool">false</inlet-auto>
     <inlet-main n="0" type="bool">false</inlet-main>          <!-- shut -->
     <inlet-main n="1" type="bool">false</inlet-main>
-    <inlet-off n="0" type="bool">true</inlet-off>             <!-- main selector -->
-    <inlet-off n="1" type="bool">true</inlet-off>
+    <inlet-off n="0" type="bool">false</inlet-off>             <!-- main selector -->
+    <inlet-off n="1" type="bool">false</inlet-off>
     <inlet-override n="0" type="bool">false</inlet-override>
     <inlet-override n="1" type="bool">false</inlet-override>
     <inlet-static n="0" type="bool">false</inlet-static>
@@ -770,8 +770,8 @@
     <ground type="bool">false</ground>
     <guard n="0" type="bool">true</guard>
     <guard n="1" type="bool">true</guard>
-    <onload n="0" type="bool">true</onload>
-    <onload n="1" type="bool">true</onload>
+    <onload n="0" type="bool">false</onload>
+    <onload n="1" type="bool">false</onload>
     <valve n="0" type="bool">true</valve>
     <valve n="1" type="bool">true</valve>
    </circuit>
@@ -780,8 +780,8 @@
     <ground n="1" type="bool">false</ground>
     <guard n="0" type="bool">true</guard>
     <guard n="1" type="bool">true</guard>
-    <onload n="0" type="bool">true</onload>
-    <onload n="1" type="bool">true</onload>
+    <onload n="0" type="bool">false</onload>
+    <onload n="1" type="bool">false</onload>
     <valve n="0" type="bool">true</valve>
     <valve n="1" type="bool">true</valve>
    </circuit>
@@ -789,8 +789,8 @@
     <ground type="bool">false</ground>
     <guard n="0" type="bool">true</guard>
     <guard n="1" type="bool">true</guard>
-    <onload n="0" type="bool">true</onload>
-    <onload n="1" type="bool">true</onload>
+    <onload n="0" type="bool">false</onload>
+    <onload n="1" type="bool">false</onload>
     <valve n="0" type="bool">true</valve>
     <valve n="1" type="bool">true</valve>
    </circuit>
@@ -914,28 +914,28 @@
    <engine n="0">
     <bleed-valve type="bool">false</bleed-valve>               <!-- connected to engine -->
     <cross-bleed-valve type="bool">false</cross-bleed-valve>  <!-- no ground supply or adjacent engine -->
-    <conditioning-valve type="bool">true</conditioning-valve> <!-- air conditioning -->
+    <conditioning-valve type="bool">false</conditioning-valve> <!-- air conditioning -->
     <fuel-valve type="bool">true</fuel-valve>
     <fuel-valve-guard type="bool">true</fuel-valve-guard>
    </engine>
    <engine n="1">
     <bleed-valve type="bool">false</bleed-valve>
     <cross-bleed-valve type="bool">false</cross-bleed-valve>
-    <conditioning-valve type="bool">true</conditioning-valve>
+    <conditioning-valve type="bool">false</conditioning-valve>
     <fuel-valve type="bool">true</fuel-valve>
     <fuel-valve-guard type="bool">true</fuel-valve-guard>
    </engine>
    <engine n="2">
     <bleed-valve type="bool">false</bleed-valve>
     <cross-bleed-valve type="bool">false</cross-bleed-valve>
-    <conditioning-valve type="bool">true</conditioning-valve>
+    <conditioning-valve type="bool">false</conditioning-valve>
     <fuel-valve type="bool">true</fuel-valve>
     <fuel-valve-guard type="bool">true</fuel-valve-guard>
    </engine>
    <engine n="3">
     <bleed-valve type="bool">false</bleed-valve>
     <cross-bleed-valve type="bool">false</cross-bleed-valve>
-    <conditioning-valve type="bool">true</conditioning-valve>
+    <conditioning-valve type="bool">false</conditioning-valve>
     <fuel-valve type="bool">true</fuel-valve>
     <fuel-valve-guard type="bool">true</fuel-valve-guard>
    </engine>

@@ -7355,7 +7355,39 @@
   </model>
   
   
+  <model>
+  <name>Alt Excess</name>
+    <path>Cockpit/Engineer/cabin-altexcess.xml</path>
+<overlay>
+
+</overlay>
+    <offsets>
+      <x-m>-22.26</x-m>
+      <y-m>0.38</y-m>
+      <z-m>1.634</z-m>
+     
+      <heading-deg>-83</heading-deg>
+     <pitch-deg>25</pitch-deg>
+     
+    </offsets>
+  </model>
   
+  <model>
+  <name>Cabin Overpress</name>
+    <path>Cockpit/Engineer/cabin-overpress.xml</path>
+<overlay>
+
+</overlay>
+    <offsets>
+      <x-m>-22.07</x-m>
+      <y-m>0.40</y-m>
+      <z-m>1.634</z-m>
+     
+      <heading-deg>-83</heading-deg>
+     <pitch-deg>25</pitch-deg>
+     
+    </offsets>
+  </model>
   
   <model>
   <name>Pressurisation Selector 1</name>
@@ -8068,6 +8100,47 @@
       <heading-deg>-85</heading-deg>
      <pitch-deg>0</pitch-deg>
      <roll-deg>-75</roll-deg>
+    </offsets>
+  </model>
+  
+  
+  
+  
+  
+  
+  
+  
+ 
+  
+   <model>
+    <name>Brakes FWD 4</name>
+    <path>Cockpit/Engineer/brakes-fwd.xml</path>
+   <overlay>
+   
+    </overlay>
+    <offsets>
+      <x-m>-22.316</x-m>
+      <y-m>0.474</y-m>
+      <z-m>1.433</z-m>
+      
+      <heading-deg>-83</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <name>Brakes REAR 4</name>
+    <path>Cockpit/Engineer/brakes-rear.xml</path>
+   <overlay>
+   
+    </overlay>
+    <offsets>
+      <x-m>-22.316</x-m>
+      <y-m>0.487</y-m>
+      <z-m>1.403</z-m>
+      
+      <heading-deg>-83</heading-deg>
+     <pitch-deg>25</pitch-deg>
     </offsets>
   </model>
   
