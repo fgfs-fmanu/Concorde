@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+<PropertyList>
+  
+  <path>../Models/light_lane.ac</path>
+
+ 
+<effect>
+    <inherits-from>Aircraft/Concorde/Models/Effects/interior</inherits-from>
+    <object-name>Frame</object-name>
+    <object-name>On</object-name>
+    <object-name>Text</object-name>
+</effect>
+
+
+
+
+  
+
+  
+   <animation>
+    <type>select</type>
+    <object-name>On</object-name>
+    <condition>
+       <and>
+     <greater-than>
+    <property>/systems/electrical/outputs/bulb</property>
+    <value>20.0</value>
+   </greater-than>
+      
+       
+    <property>/controls/lighting/crew/engineer/forward/test</property>
+     <!-- bug -->
+     
+      
+    
+     </and>
+     
+    </condition>
+
+ 
+  </animation>
+  
+  
+  
+  
+  <animation>
+    <type>select</type>
+    <object-name>Off</object-name>
+    <condition>
+    <not>
+       <and>
+     <greater-than>
+    <property>/systems/electrical/outputs/bulb</property>
+    <value>20.0</value>
+   </greater-than>
+      
+       
+    <property>/controls/lighting/crew/engineer/forward/test</property>
+     <!-- bug -->
+     
+      
+    
+     </and>
+     
+     </not>
+    </condition>
+
+    
+  </animation>
+  
+
+    
+  
+  
+  
+ 
+  
+  <animation>
+    <type>material</type>
+    <object-name>Frame</object-name>
+  <emission>
+     <red>0.2</red>
+     <green>0.2</green>
+     <blue>0.2</blue>
+  </emission>
+</animation>
+</PropertyList>

@@ -1,0 +1,228 @@
+<?xml version="1.0"?>
+<PropertyList>
+  
+  <path>../Models/light_intake_ab.ac</path>
+
+ <params>
+  <lane-selecta>/systems/engines/engine[0]/intake-lane[0]</lane-selecta>
+  <lane-selectb>/systems/engines/engine[0]/intake-lane[1]</lane-selectb>
+ </params>
+<effect>
+    <inherits-from>Aircraft/Concorde/Models/Effects/interior</inherits-from>
+    <object-name>OnB</object-name>
+     <object-name>OffB</object-name>
+    <object-name>OnA</object-name>
+     <object-name>OffA</object-name>
+</effect>
+
+
+
+
+  
+
+  
+   <animation>
+    <type>select</type>
+    <object-name>OnA</object-name>
+    <condition>
+       <and>
+     <greater-than>
+    <property>/systems/electrical/outputs/bulb</property>
+    <value>20.0</value>
+   </greater-than>
+      <or>
+       
+    <property>/controls/lighting/crew/engineer/forward/test</property>
+     <!-- bug -->
+     <property alias="/params/lane-selecta"/>
+      </or>
+      
+      <not>
+    <property>/controls/lighting/crew/engineer/forward/low</property>
+    </not>
+     </and>
+     
+    </condition>
+
+ 
+  </animation>
+  
+  
+  <animation>
+    <type>material</type>
+    <object-name>OffA</object-name>
+     <condition>
+       <and>
+     <greater-than>
+    <property>/systems/electrical/outputs/bulb</property>
+    <value>20.0</value>
+   </greater-than>
+      <or>
+       
+    <property>/controls/lighting/crew/engineer/forward/test</property>
+     <!-- bug -->
+     <property alias="/params/lane-selecta"/>
+      </or>
+      
+      
+    <property>/controls/lighting/crew/engineer/forward/low</property>
+    
+     </and>
+     
+    </condition>
+
+    <emission>
+      <red>0.5</red>
+      <green>0.5</green>
+      <blue>0.5</blue>
+    </emission>
+  </animation>
+  
+  <animation>
+    <type>select</type>
+    <object-name>OffA</object-name>
+    <condition>
+    <not>
+        <and>
+     <greater-than>
+    <property>/systems/electrical/outputs/bulb</property>
+    <value>20.0</value>
+   </greater-than>
+      <or>
+       
+    <property>/controls/lighting/crew/engineer/forward/test</property>
+     <!-- bug -->
+    
+        <property alias="/params/lane-selecta"/>
+      
+      </or>
+      
+      <not>
+    <property>/controls/lighting/crew/engineer/forward/low</property>
+    </not>
+     </and>
+     
+     </not>
+    </condition>
+
+    
+  </animation>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <animation>
+    <type>select</type>
+    <object-name>OnB</object-name>
+    <condition>
+       <and>
+     <greater-than>
+    <property>/systems/electrical/outputs/bulb</property>
+    <value>20.0</value>
+   </greater-than>
+      <or>
+       
+    <property>/controls/lighting/crew/engineer/forward/test</property>
+     <!-- bug -->
+     <property alias="/params/lane-selectb"/>
+      </or>
+      
+      <not>
+    <property>/controls/lighting/crew/engineer/forward/low</property>
+    </not>
+     </and>
+     
+    </condition>
+
+ 
+  </animation>
+  
+  
+  <animation>
+    <type>material</type>
+    <object-name>OffB</object-name>
+     <condition>
+       <and>
+     <greater-than>
+    <property>/systems/electrical/outputs/bulb</property>
+    <value>20.0</value>
+   </greater-than>
+      <or>
+       
+    <property>/controls/lighting/crew/engineer/forward/test</property>
+     <!-- bug -->
+     <property alias="/params/lane-selectb"/>
+      </or>
+      
+      
+    <property>/controls/lighting/crew/engineer/forward/low</property>
+    
+     </and>
+     
+    </condition>
+
+    <emission>
+      <red>0.5</red>
+      <green>0.5</green>
+      <blue>0.5</blue>
+    </emission>
+  </animation>
+  
+  <animation>
+    <type>select</type>
+    <object-name>OffB</object-name>
+    <condition>
+    <not>
+        <and>
+     <greater-than>
+    <property>/systems/electrical/outputs/bulb</property>
+    <value>20.0</value>
+   </greater-than>
+      <or>
+       
+    <property>/controls/lighting/crew/engineer/forward/test</property>
+     <!-- bug -->
+  
+        <property alias="/params/lane-selectb"/>
+       
+      </or>
+      
+      <not>
+    <property>/controls/lighting/crew/engineer/forward/low</property>
+    </not>
+     </and>
+     
+     </not>
+    </condition>
+
+    
+  </animation>
+  
+
+    
+  
+  
+  
+ 
+  
+  
+</PropertyList>

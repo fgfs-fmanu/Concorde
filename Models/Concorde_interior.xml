@@ -8017,6 +8017,458 @@
   </model>
   
   
+  <!-- <model>
+    <name>Brakes FWD 4</name>
+    <path>Cockpit/Engineer/brakes-fwd.xml</path>
+   <overlay>
+   
+    </overlay>
+    <offsets>
+      <x-m>-22.316</x-m>
+      <y-m>0.474</y-m>
+      <z-m>1.433</z-m>
+      
+      <heading-deg>-83</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <name>Brakes REAR 4</name>
+    <path>Cockpit/Engineer/brakes-rear.xml</path>
+   <overlay>
+   
+    </overlay>
+    <offsets>
+      <x-m>-22.316</x-m>
+      <y-m>0.487</y-m>
+      <z-m>1.403</z-m>
+      
+      <heading-deg>-83</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>-->
+  
+  
+  
+  
+  <model>
+    <name>Alpha</name>
+    <path>Cockpit/Engineer/intake-alpha.xml</path>
+   <overlay>
+  
+    </overlay>
+    <offsets>
+      <x-m>-22.38</x-m>
+      <y-m>0.52</y-m>
+      <z-m>1.262</z-m>
+      
+      <heading-deg>-85</heading-deg>
+     <pitch-deg>0</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  
+  <model>
+    <name>Intake Red</name>
+    <path>Cockpit/Engineer/intake-red.xml</path>
+   <overlay>
+    </overlay>
+    <offsets>
+      <x-m>-22.345</x-m>
+      <y-m>0.523</y-m>
+      <z-m>1.262</z-m>
+      
+      <heading-deg>-85</heading-deg>
+     <pitch-deg>0</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  <model>
+    <name>N1 Sig 1</name>
+    <path>Cockpit/Engineer/intake-n1.xml</path>
+   <overlay>
+  
+    </overlay>
+    <offsets>
+      <x-m>-22.41</x-m>
+      <y-m>0.517</y-m>
+      <z-m>1.247</z-m>
+      
+      <heading-deg>-85</heading-deg>
+     <pitch-deg>0</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  <model>
+    <name>N1 Sig 2</name>
+    <path>Cockpit/Engineer/intake-n1.xml</path>
+   <overlay>
+  
+    </overlay>
+    <offsets>
+      <x-m>-22.38</x-m>
+      <y-m>0.520</y-m>
+      <z-m>1.247</z-m>
+      
+      <heading-deg>-85</heading-deg>
+     <pitch-deg>0</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  <model>
+    <name>N1 Sig 3</name>
+    <path>Cockpit/Engineer/intake-n1.xml</path>
+   <overlay>
+  
+    </overlay>
+    <offsets>
+      <x-m>-22.345</x-m>
+      <y-m>0.523</y-m>
+      <z-m>1.247</z-m>
+      
+      <heading-deg>-85</heading-deg>
+     <pitch-deg>0</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  
+  <model>
+    <name>N1 Sig 4</name>
+    <path>Cockpit/Engineer/intake-n1.xml</path>
+   <overlay>
+    </overlay>
+    <offsets>
+      <x-m>-22.315</x-m>
+      <y-m>0.526</y-m>
+      <z-m>1.247</z-m>
+      
+      <heading-deg>-85</heading-deg>
+     <pitch-deg>0</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  <model>
+    <name>Intake Red 1</name>
+    <path>Cockpit/Engineer/intake-rampspill.xml</path>
+   <overlay>
+   <params>
+  <pressure-psi>/systems/hydraulic/sensors/intake[0]</pressure-psi>
+ </params>
+  
+    </overlay>
+    <offsets>
+      <x-m>-22.41</x-m>
+      <y-m>0.517</y-m>
+      <z-m>1.232</z-m>
+      
+      <heading-deg>-85</heading-deg>
+     <pitch-deg>0</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  <model>
+    <name>Intake Red 2</name>
+    <path>Cockpit/Engineer/intake-rampspill.xml</path>
+   <overlay>
+  <params>
+  <pressure-psi>/systems/hydraulic/sensors/intake[1]</pressure-psi>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-22.38</x-m>
+      <y-m>0.520</y-m>
+      <z-m>1.232</z-m>
+      
+      <heading-deg>-85</heading-deg>
+     <pitch-deg>0</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  <model>
+    <name>Intake Red 3</name>
+    <path>Cockpit/Engineer/intake-rampspill.xml</path>
+   <overlay>
+  <params>
+  <pressure-psi>/systems/hydraulic/sensors/intake[2]</pressure-psi>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-22.345</x-m>
+      <y-m>0.523</y-m>
+      <z-m>1.232</z-m>
+      
+      <heading-deg>-85</heading-deg>
+     <pitch-deg>0</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  
+  <model>
+    <name>Intake Red 4</name>
+    <path>Cockpit/Engineer/intake-rampspill.xml</path>
+   <overlay>
+   <params>
+  <pressure-psi>/systems/hydraulic/sensors/intake[3]</pressure-psi>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-22.315</x-m>
+      <y-m>0.526</y-m>
+      <z-m>1.232</z-m>
+      
+      <heading-deg>-85</heading-deg>
+     <pitch-deg>0</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <model>
+    <name>Intake ab 1</name>
+    <path>Cockpit/Engineer/intake-ab.xml</path>
+   <overlay>
+   <params>
+  <lane-selecta>/systems/engines/engine[0]/intake-lane[0]</lane-selecta>
+  <lane-selectb>/systems/engines/engine[0]/intake-lane[1]</lane-selectb>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-22.415</x-m>
+      <y-m>0.519</y-m>
+      <z-m>1.195</z-m>
+      
+      <heading-deg>-85</heading-deg>
+     <pitch-deg>0</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  
+  <model>
+    <name>Intake ab 2</name>
+    <path>Cockpit/Engineer/intake-ab.xml</path>
+   <overlay>
+   <params>
+<lane-selecta>/systems/engines/engine[1]/intake-lane[0]</lane-selecta>
+  <lane-selectb>/systems/engines/engine[1]/intake-lane[1]</lane-selectb>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-22.383</x-m>
+      <y-m>0.522</y-m>
+      <z-m>1.195</z-m>
+      
+      <heading-deg>-85</heading-deg>
+     <pitch-deg>0</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  
+  <model>
+    <name>Intake ab 3</name>
+    <path>Cockpit/Engineer/intake-ab.xml</path>
+   <overlay>
+   <params>
+  <lane-selecta>/systems/engines/engine[2]/intake-lane[0]</lane-selecta>
+  <lane-selectb>/systems/engines/engine[2]/intake-lane[1]</lane-selectb>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-22.349</x-m>
+      <y-m>0.525</y-m>
+      <z-m>1.195</z-m>
+      
+      <heading-deg>-85</heading-deg>
+     <pitch-deg>0</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  <model>
+    <name>Intake ab 4</name>
+    <path>Cockpit/Engineer/intake-ab.xml</path>
+   <overlay>
+   <params>
+  <lane-selecta>/systems/engines/engine[3]/intake-lane[0]</lane-selecta>
+  <lane-selectb>/systems/engines/engine[3]/intake-lane[1]</lane-selectb>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-22.319</x-m>
+      <y-m>0.528</y-m>
+      <z-m>1.195</z-m>
+      
+      <heading-deg>-85</heading-deg>
+     <pitch-deg>0</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <model>
+    <name>Intake Lane a 1</name>
+    <path>Cockpit/Engineer/intake-lane.xml</path>
+   <overlay>
+    </overlay>
+    <offsets>
+      <x-m>-22.42</x-m>
+      <y-m>0.517</y-m>
+      <z-m>1.175</z-m>
+      
+      <heading-deg>-85</heading-deg>
+     <pitch-deg>0</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  
+  <model>
+    <name>Intake Lane b 1</name>
+    <path>Cockpit/Engineer/intake-lane.xml</path>
+   <overlay>
+    </overlay>
+    <offsets>
+      <x-m>-22.41</x-m>
+      <y-m>0.518</y-m>
+      <z-m>1.175</z-m>
+      
+      <heading-deg>-85</heading-deg>
+     <pitch-deg>0</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  
+  <model>
+    <name>Intake Lane a 2</name>
+    <path>Cockpit/Engineer/intake-lane.xml</path>
+   <overlay>
+    </overlay>
+    <offsets>
+      <x-m>-22.388</x-m>
+      <y-m>0.519</y-m>
+      <z-m>1.175</z-m>
+      
+      <heading-deg>-85</heading-deg>
+     <pitch-deg>0</pitch-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <name>Intake Lane b 2</name>
+    <path>Cockpit/Engineer/intake-lane.xml</path>
+   <overlay>
+    </overlay>
+    <offsets>
+      <x-m>-22.378</x-m>
+      <y-m>0.520</y-m>
+      <z-m>1.175</z-m>
+      
+      <heading-deg>-85</heading-deg>
+     <pitch-deg>0</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  
+  <model>
+    <name>Intake Lane a 3</name>
+    <path>Cockpit/Engineer/intake-lane.xml</path>
+   <overlay>
+    </overlay>
+    <offsets>
+      <x-m>-22.354</x-m>
+      <y-m>0.521</y-m>
+      <z-m>1.175</z-m>
+      
+      <heading-deg>-85</heading-deg>
+     <pitch-deg>0</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+   <model>
+    <name>Intake Lane b 3</name>
+    <path>Cockpit/Engineer/intake-lane.xml</path>
+   <overlay>
+    </overlay>
+    <offsets>
+      <x-m>-22.344</x-m>
+      <y-m>0.522</y-m>
+      <z-m>1.175</z-m>
+      
+      <heading-deg>-85</heading-deg>
+     <pitch-deg>0</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  <model>
+    <name>Intake Lane a 4</name>
+    <path>Cockpit/Engineer/intake-lane.xml</path>
+   <overlay>
+    </overlay>
+    <offsets>
+      <x-m>-22.324</x-m>
+      <y-m>0.525</y-m>
+     <z-m>1.175</z-m>
+      
+      <heading-deg>-85</heading-deg>
+     <pitch-deg>0</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+   <model>
+    <name>Intake Lane b 4</name>
+    <path>Cockpit/Engineer/intake-lane.xml</path>
+   <overlay>
+    </overlay>
+    <offsets>
+      <x-m>-22.314</x-m>
+      <y-m>0.526</y-m>
+      <z-m>1.175</z-m>
+      
+      <heading-deg>-85</heading-deg>
+     <pitch-deg>0</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   
   
   
@@ -8110,39 +8562,111 @@
   
   
   
- 
   
-   <model>
-    <name>Brakes FWD 4</name>
-    <path>Cockpit/Engineer/brakes-fwd.xml</path>
-   <overlay>
-   
-    </overlay>
-    <offsets>
-      <x-m>-22.316</x-m>
-      <y-m>0.474</y-m>
-      <z-m>1.433</z-m>
-      
-      <heading-deg>-83</heading-deg>
-     <pitch-deg>25</pitch-deg>
-    </offsets>
-  </model>
+  
+  
+  
+  
   
   <model>
-    <name>Brakes REAR 4</name>
-    <path>Cockpit/Engineer/brakes-rear.xml</path>
+    <name>Intake Hyd 1</name>
+    <path>Cockpit/Engineer/intake-hyd.xml</path>
    <overlay>
-   
+   <params>
+  <pressure-psi>/systems/hydraulic/power/green</pressure-psi>
+  <pressure-psi2>/systems/hydraulic/power/yellow</pressure-psi2>
+  <intake-main>/systems/engines/engine[0]/intake-main</intake-main>
+  <intake-standby>/systems/engines/engine[0]/intake-standby</intake-standby>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-22.415</x-m>
+      <y-m>0.516</y-m>
+      <z-m>1.112</z-m>
+      
+      <heading-deg>-85</heading-deg>
+     <pitch-deg>0</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  
+  <model>
+    <name>Intake Hyd 2</name>
+    <path>Cockpit/Engineer/intake-hyd.xml</path>
+   <overlay>
+   <params>
+  <pressure-psi>/systems/hydraulic/power/green</pressure-psi>
+  <pressure-psi2>/systems/hydraulic/power/yellow</pressure-psi2>
+  <intake-main>/systems/engines/engine[1]/intake-main</intake-main>
+  <intake-standby>/systems/engines/engine[1]/intake-standby</intake-standby>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-22.383</x-m>
+      <y-m>0.519</y-m>
+      <z-m>1.112</z-m>
+      
+      <heading-deg>-85</heading-deg>
+     <pitch-deg>0</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  
+  <model>
+    <name>Intake Hyd 3</name>
+    <path>Cockpit/Engineer/intake-hyd.xml</path>
+   <overlay>
+   <params>
+  <pressure-psi>/systems/hydraulic/power/green</pressure-psi>
+  <pressure-psi2>/systems/hydraulic/power/yellow</pressure-psi2>
+  <intake-main>/systems/engines/engine[2]/intake-main</intake-main>
+  <intake-standby>/systems/engines/engine[2]/intake-standby</intake-standby>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-22.346</x-m>
+      <y-m>0.522</y-m>
+      <z-m>1.112</z-m>
+      
+      <heading-deg>-85</heading-deg>
+     <pitch-deg>0</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  <model>
+    <name>Intake Hyd 4</name>
+    <path>Cockpit/Engineer/intake-hyd.xml</path>
+   <overlay>
+   <params>
+  <pressure-psi>/systems/hydraulic/power/green</pressure-psi>
+  <pressure-psi2>/systems/hydraulic/power/yellow</pressure-psi2>
+  <intake-main>/systems/engines/engine[3]/intake-main</intake-main>
+  <intake-standby>/systems/engines/engine[3]/intake-standby</intake-standby>
+ </params>
     </overlay>
     <offsets>
       <x-m>-22.316</x-m>
-      <y-m>0.487</y-m>
-      <z-m>1.403</z-m>
+      <y-m>0.525</y-m>
+      <z-m>1.112</z-m>
       
-      <heading-deg>-83</heading-deg>
-     <pitch-deg>25</pitch-deg>
+      <heading-deg>-85</heading-deg>
+     <pitch-deg>0</pitch-deg>
     </offsets>
   </model>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+ 
+  
   
   
   

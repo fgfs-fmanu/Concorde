@@ -1,0 +1,159 @@
+<?xml version="1.0"?>
+<PropertyList>
+  
+  <path>../Models/light_intake_hyd.ac</path>
+
+  <params>
+  <pressure-psi>/systems/hydraulic/power/green</pressure-psi>
+  <pressure-psi2>/systems/hydraulic/power/yellow</pressure-psi2>
+  <intake-main>/systems/engines/engine[0]/intake-main</intake-main>
+  <intake-standby>/systems/engines/engine[0]/intake-standby</intake-standby>
+ </params>
+<effect>
+    <inherits-from>Aircraft/Concorde/Models/Effects/interior</inherits-from>
+    <object-name>Frame</object-name>
+    <object-name>On</object-name>
+    <object-name>Text</object-name>
+</effect>
+
+
+
+
+  
+
+  
+   <animation>
+    <type>select</type>
+    <object-name>On</object-name>
+    <condition>
+       <and>
+     <greater-than>
+    <property>/systems/electrical/outputs/bulb</property>
+    <value>20.0</value>
+   </greater-than>
+      <or>
+       
+    <property>/controls/lighting/crew/engineer/forward/test</property>
+     <!-- bug -->
+     <and>
+        <not>
+         <property alias="/params/pressure-psi"/>
+        </not>
+        <property alias="/params/intake-main"/>
+       </and>
+       <and>
+        <not>
+         <property alias="/params/pressure-psi2"/>
+        </not>
+        <property alias="/params/intake-standby"/>
+       </and>
+      </or>
+      
+      <not>
+    <property>/controls/lighting/crew/engineer/forward/low</property>
+    </not>
+     </and>
+     
+    </condition>
+
+ 
+  </animation>
+  
+  
+  <animation>
+    <type>material</type>
+    <object-name>Off</object-name>
+     <condition>
+       <and>
+     <greater-than>
+    <property>/systems/electrical/outputs/bulb</property>
+    <value>20.0</value>
+   </greater-than>
+      <or>
+       
+    <property>/controls/lighting/crew/engineer/forward/test</property>
+     <!-- bug -->
+      <and>
+        <not>
+         <property alias="/params/pressure-psi"/>
+        </not>
+        <property alias="/params/intake-main"/>
+       </and>
+       <and>
+        <not>
+         <property alias="/params/pressure-psi2"/>
+        </not>
+        <property alias="/params/intake-standby"/>
+       </and>
+      </or>
+      
+      
+    <property>/controls/lighting/crew/engineer/forward/low</property>
+    
+     </and>
+     
+    </condition>
+
+    <emission>
+      <red>0.5</red>
+      <green>0.5</green>
+      <blue>0.5</blue>
+    </emission>
+  </animation>
+  
+  <animation>
+    <type>select</type>
+    <object-name>Off</object-name>
+    <condition>
+    <not>
+        <and>
+     <greater-than>
+    <property>/systems/electrical/outputs/bulb</property>
+    <value>20.0</value>
+   </greater-than>
+      <or>
+       
+    <property>/controls/lighting/crew/engineer/forward/test</property>
+     <!-- bug -->
+      <and>
+        <not>
+         <property alias="/params/pressure-psi"/>
+        </not>
+        <property alias="/params/intake-main"/>
+       </and>
+       <and>
+        <not>
+         <property alias="/params/pressure-psi2"/>
+        </not>
+        <property alias="/params/intake-standby"/>
+       </and>
+      </or>
+      
+      <not>
+    <property>/controls/lighting/crew/engineer/forward/low</property>
+    </not>
+     </and>
+     
+     </not>
+    </condition>
+
+    
+  </animation>
+  
+
+    
+  
+  
+  
+ 
+  
+  <animation>
+    <type>material</type>
+    <object-name>Frame</object-name>
+  <emission>
+     <red>0.2</red>
+     <green>0.2</green>
+     <blue>0.2</blue>
+  </emission>
+</animation>
+</PropertyList>
