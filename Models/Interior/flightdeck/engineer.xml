@@ -37,6 +37,8 @@
  <animation>
   <type>material</type>
   <object-name>EngineerPanel</object-name>
+   <object-name>Plane</object-name>
+   <object-name>Plane.001</object-name>
   <emission>
    <red>0.83</red>
    <green>0.74</green>
