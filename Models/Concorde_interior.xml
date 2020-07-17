@@ -1870,6 +1870,210 @@
 <!-- ======== -->
 <!-- ENGINEERINSTRUMENTS -->
 <!-- ======== -->
+<model>
+    <name>Flow Lights 1</name>
+    <path>Cockpit/Engineer/red-flow.xml</path>
+    <overlay>
+    </overlay>
+    <offsets>
+      <x-m>-21.962</x-m>
+      <y-m>0.465</y-m>
+      <z-m>1.48</z-m>
+      
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>22</pitch-deg>
+      
+     
+      
+    </offsets>
+  </model>
+
+
+<model>
+    <name>Flow Light 2</name>
+    <path>Cockpit/Engineer/red-flow.xml</path>
+    <overlay>
+    </overlay>
+    <offsets>
+      <x-m>-21.950</x-m>
+      <y-m>0.465</y-m>
+      <z-m>1.48</z-m>
+      
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>22</pitch-deg>
+      
+     
+      
+    </offsets>
+  </model>
+  
+  
+  <model>
+    <name>Flow Light 3</name>
+    <path>Cockpit/Engineer/red-flow.xml</path>
+    <overlay>
+    </overlay>
+    <offsets>
+      <x-m>-21.875</x-m>
+      <y-m>0.465</y-m>
+      <z-m>1.48</z-m>
+      
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>22</pitch-deg>
+      
+     
+      
+    </offsets>
+  </model>
+
+
+
+<model>
+<name>Fan 2 </name>
+    <path>Cockpit/Engineer/switch-nothing.xml</path>
+    <overlay>
+    </overlay>
+    <offsets>
+      <x-m>-21.967</x-m>
+      <y-m>0.484</y-m>
+      <z-m>1.45</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  <model>
+<name>Fan 1 3 </name>
+    <path>Cockpit/Engineer/switch-nothing.xml</path>
+    <overlay>
+    </overlay>
+    <offsets>
+      <x-m>-21.950</x-m>
+      <y-m>0.484</y-m>
+      <z-m>1.45</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  
+   <model>
+<name>Fwd Supply </name>
+    <path>Cockpit/Engineer/switch-nothing.xml</path>
+    <overlay>
+    </overlay>
+    <offsets>
+      <x-m>-21.910</x-m>
+      <y-m>0.484</y-m>
+      <z-m>1.45</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+  
+  <model>
+<name>Rear Extract LH </name>
+    <path>Cockpit/Engineer/switch-nothing.xml</path>
+    <overlay>
+    </overlay>
+    <offsets>
+      <x-m>-21.88</x-m>
+      <y-m>0.485</y-m>
+      <z-m>1.445</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+  
+   <model>
+<name>Rear Extract RH </name>
+    <path>Cockpit/Engineer/switch-nothing.xml</path>
+    <overlay>
+    </overlay>
+    <offsets>
+      <x-m>-21.865</x-m>
+      <y-m>0.485</y-m>
+      <z-m>1.445</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+  
+   <model>
+<name>Rear Extract Standby </name>
+    <path>Cockpit/Engineer/switch-nothing.xml</path>
+    <overlay>
+    </overlay>
+    <offsets>
+      <x-m>-21.85</x-m>
+      <y-m>0.485</y-m>
+      <z-m>1.445</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+
+<model>
+    <name>Cooling Flow </name>
+    <path>Cockpit/Engineer/coolingflow.xml</path>
+    <overlay>
+      <params>
+    <lbs-select>/consumables/fuel/tank[11]/level-gal_us</lbs-select>
+  </params>
+    </overlay>
+     <offsets>
+      <x-m>-21.940</x-m>
+       <y-m>0.515</y-m>
+      <z-m>1.39</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  <model>
+<name>Fwd Emerg Relief </name>
+    <path>Cockpit/Engineer/switch-nothing.xml</path>
+    <overlay>
+    </overlay>
+    <offsets>
+      <x-m>-21.98</x-m>
+      <y-m>0.512</y-m>
+      <z-m>1.39</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+  
+  <model>
+  
+  <name>Fuel LP Protection </name>
+    <path>Cockpit/Engineer/switch-nothing.xml</path>
+    <overlay>
+    </overlay>
+    <offsets>
+      <x-m>-21.942</x-m>
+      <y-m>0.545</y-m>
+      <z-m>1.32</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+  
 
 <model>
     <name>Fuel Tank 9 Overfull </name>
