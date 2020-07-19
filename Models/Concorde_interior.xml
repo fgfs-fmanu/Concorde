@@ -2050,7 +2050,7 @@
     </overlay>
     <offsets>
       <x-m>-21.98</x-m>
-      <y-m>0.512</y-m>
+      <y-m>0.511</y-m>
       <z-m>1.39</z-m>
       
       <heading-deg>-90</heading-deg>
@@ -2669,7 +2669,7 @@
     </overlay>
     <offsets>
       <x-m>-21.977</x-m>
-      <y-m>0.549</y-m>
+      <y-m>0.551</y-m>
       <z-m>1.234</z-m>
       
       <heading-deg>-90</heading-deg>
@@ -2688,7 +2688,7 @@
     </overlay>
     <offsets>
       <x-m>-21.977</x-m>
-      <y-m>0.549</y-m>
+      <y-m>0.551</y-m>
       <z-m>1.214</z-m>
       
       <heading-deg>-90</heading-deg>
@@ -2708,7 +2708,7 @@
     </overlay>
     <offsets>
      <x-m>-21.896</x-m>
-      <y-m>0.549</y-m>
+      <y-m>0.551</y-m>
       <z-m>1.234</z-m>
       
       <heading-deg>-90</heading-deg>
@@ -2748,7 +2748,7 @@
     </overlay>
     <offsets>
     <x-m>-21.641</x-m>
-      <y-m>0.549</y-m>
+      <y-m>0.551</y-m>
       <z-m>1.234</z-m>
       
       <heading-deg>-90</heading-deg>
@@ -2787,7 +2787,7 @@
     </overlay>
     <offsets>
     <x-m>-21.559</x-m>
-      <y-m>0.549</y-m>
+      <y-m>0.551</y-m>
       <z-m>1.234</z-m>
       
       <heading-deg>-90</heading-deg>
@@ -2831,7 +2831,7 @@
     </overlay>
     <offsets>
    	<x-m>-21.978</x-m>
-      <y-m>0.549</y-m>
+      <y-m>0.551</y-m>
       <z-m>1.18</z-m>
       
       <heading-deg>-90</heading-deg>
@@ -2870,7 +2870,7 @@
     </overlay>
     <offsets>
    	<x-m>-21.897</x-m>
-      <y-m>0.549</y-m>
+      <y-m>0.551</y-m>
       <z-m>1.18</z-m>
       
       <heading-deg>-90</heading-deg>
@@ -2910,7 +2910,7 @@
     </overlay>
     <offsets>
    	<x-m>-21.641</x-m>
-      <y-m>0.548</y-m>
+      <y-m>0.551</y-m>
       <z-m>1.18</z-m>
       
       <heading-deg>-90</heading-deg>
@@ -2947,7 +2947,7 @@
     </overlay>
     <offsets>
    	<x-m>-21.559</x-m>
-      <y-m>0.549</y-m>
+      <y-m>0.551</y-m>
       <z-m>1.18</z-m>
       
       <heading-deg>-90</heading-deg>
@@ -6814,7 +6814,7 @@
     </overlay>
     <offsets>
       <x-m>-21.545</x-m>
-      <y-m>0.403</y-m>
+      <y-m>0.397</y-m>
       <z-m>1.638</z-m>
       
       <heading-deg>-90</heading-deg>
@@ -7086,8 +7086,8 @@
     <name>N1 Engine 4 Limiter </name>
     <path>Cockpit/Engineer/N1-engine-4-88-percent.xml</path>
     <offsets>
-      <x-m>-22.180</x-m>
-      <y-m>0.505</y-m>
+      <x-m>-22.178</x-m>
+      <y-m>0.499</y-m>
       <z-m>1.372</z-m>
       
       <heading-deg>-83</heading-deg>
@@ -7099,8 +7099,8 @@
     <name>TO CG 54</name>
     <path>Cockpit/Engineer/to-cg-54.xml</path>
     <offsets>
-      <x-m>-22.257</x-m>
-      <y-m>0.500</y-m>
+      <x-m>-22.255</x-m>
+      <y-m>0.494</y-m>
       <z-m>1.372</z-m>
       
       <heading-deg>-83</heading-deg>
@@ -7119,8 +7119,8 @@
  </params>
 </overlay>
     <offsets>
-      <x-m>-22.257</x-m>
-      <y-m>0.487</y-m>
+      <x-m>-22.255</x-m>
+      <y-m>0.481</y-m>
       <z-m>1.403</z-m>
       
       <heading-deg>-83</heading-deg>
@@ -7138,8 +7138,8 @@
  </params>
 </overlay>
     <offsets>
-      <x-m>-22.230</x-m>
-      <y-m>0.489</y-m>
+      <x-m>-22.228</x-m>
+      <y-m>0.483</y-m>
       <z-m>1.403</z-m>
       
       <heading-deg>-83</heading-deg>
@@ -7157,8 +7157,8 @@
  </params>
 </overlay>
     <offsets>
-      <x-m>-22.203</x-m>
-      <y-m>0.493</y-m>
+      <x-m>-22.201</x-m>
+      <y-m>0.487</y-m>
       <z-m>1.403</z-m>
       
       <heading-deg>-83</heading-deg>
@@ -7176,8 +7176,8 @@
  </params>
 </overlay>
     <offsets>
-      <x-m>-22.176</x-m>
-      <y-m>0.494</y-m>
+      <x-m>-22.174</x-m>
+      <y-m>0.488</y-m>
       <z-m>1.403</z-m>
       
       <heading-deg>-83</heading-deg>
@@ -7199,8 +7199,8 @@
   <engine-sel>/controls/engines/ground-idle14</engine-sel>
  </params>
     <offsets>
-      <x-m>-22.233</x-m>
-      <y-m>0.510</y-m>
+      <x-m>-22.231</x-m>
+      <y-m>0.504</y-m>
       <z-m>1.345</z-m>
       
       <heading-deg>-83</heading-deg>
@@ -7216,8 +7216,8 @@
   <engine-sel>/controls/engines/ground-idle23</engine-sel>
  </params>
     <offsets>
-      <x-m>-22.199</x-m>
-      <y-m>0.515</y-m>
+      <x-m>-22.197</x-m>
+      <y-m>0.509</y-m>
       <z-m>1.345</z-m>
       
       <heading-deg>-83</heading-deg>
@@ -7243,8 +7243,8 @@
  </params>
 </overlay>
     <offsets>
-      <x-m>-22.257</x-m>
-      <y-m>0.474</y-m>
+      <x-m>-22.253</x-m>
+      <y-m>0.468</y-m>
       <z-m>1.433</z-m>
       
       <heading-deg>-83</heading-deg>
@@ -7263,8 +7263,8 @@
  </params>
 </overlay>
     <offsets>
-      <x-m>-22.230</x-m>
-      <y-m>0.475</y-m>
+      <x-m>-22.226</x-m>
+      <y-m>0.469</y-m>
       <z-m>1.433</z-m>
       
       <heading-deg>-83</heading-deg>
@@ -7283,8 +7283,8 @@
  </params>
 </overlay>
     <offsets>
-      <x-m>-22.203</x-m>
-      <y-m>0.479</y-m>
+      <x-m>-22.199</x-m>
+      <y-m>0.473</y-m>
       <z-m>1.433</z-m>
       
       <heading-deg>-83</heading-deg>
@@ -7303,8 +7303,8 @@
  </params>
 </overlay>
     <offsets>
-      <x-m>-22.176</x-m>
-      <y-m>0.482</y-m>
+      <x-m>-22.172</x-m>
+      <y-m>0.476</y-m>
       <z-m>1.433</z-m>
       
       <heading-deg>-83</heading-deg>
@@ -7332,8 +7332,8 @@
 
 </overlay>
     <offsets>
-      <x-m>-22.380</x-m>
-      <y-m>0.380</y-m>
+      <x-m>-22.353</x-m>
+      <y-m>0.382</y-m>
       <z-m>1.615</z-m>
       
       <heading-deg>-85</heading-deg>
@@ -7348,8 +7348,8 @@
 
 </overlay>
     <offsets>
-      <x-m>-22.427</x-m>
-      <y-m>0.373</y-m>
+      <x-m>-22.403</x-m>
+      <y-m>0.375</y-m>
       <z-m>1.606</z-m>
       
       <heading-deg>-85</heading-deg>
@@ -7364,8 +7364,8 @@
 
 </overlay>
     <offsets>
-      <x-m>-22.333</x-m>
-      <y-m>0.383</y-m>
+      <x-m>-22.311</x-m>
+      <y-m>0.385</y-m>
       <z-m>1.606</z-m>
       
       <heading-deg>-85</heading-deg>
@@ -7392,8 +7392,8 @@
  </params>
 </overlay>
     <offsets>
-      <x-m>-22.137</x-m>
-      <y-m>0.48</y-m>
+      <x-m>-22.135</x-m>
+      <y-m>0.474</y-m>
       <z-m>1.443</z-m>
       
       <heading-deg>-83</heading-deg>
@@ -7412,8 +7412,8 @@
  </params>
 </overlay>
     <offsets>
-      <x-m>-22.115</x-m>
-      <y-m>0.484</y-m>
+      <x-m>-22.113</x-m>
+      <y-m>0.478</y-m>
       <z-m>1.443</z-m>
       
       <heading-deg>-83</heading-deg>
@@ -7432,8 +7432,8 @@
  </params>
 </overlay>
     <offsets>
-      <x-m>-22.086</x-m>
-      <y-m>0.487</y-m>
+      <x-m>-22.084</x-m>
+      <y-m>0.481</y-m>
       <z-m>1.443</z-m>
       
       <heading-deg>-83</heading-deg>
@@ -7452,8 +7452,8 @@
  </params>
 </overlay>
     <offsets>
-      <x-m>-22.060</x-m>
-      <y-m>0.49</y-m>
+      <x-m>-22.058</x-m>
+      <y-m>0.483</y-m>
       <z-m>1.443</z-m>
       
       <heading-deg>-83</heading-deg>
@@ -7467,8 +7467,8 @@
 <overlay>
 </overlay>
     <offsets>
-      <x-m>-22.093</x-m>
-      <y-m>0.465</y-m>
+      <x-m>-22.091</x-m>
+      <y-m>0.459</y-m>
       <z-m>1.488</z-m>
       
       <heading-deg>-83</heading-deg>
@@ -7482,8 +7482,8 @@
 <overlay>
 </overlay>
     <offsets>
-      <x-m>-22.09</x-m>
-      <y-m>0.445</y-m>
+      <x-m>-22.086</x-m>
+      <y-m>0.441</y-m>
       <z-m>1.516</z-m>
       
       <heading-deg>-83</heading-deg>
@@ -7497,8 +7497,8 @@
 
 </overlay>
     <offsets>
-      <x-m>-22.132</x-m>
-      <y-m>0.462</y-m>
+      <x-m>-22.128</x-m>
+      <y-m>0.456</y-m>
       <z-m>1.495</z-m>
      
       <heading-deg>-83</heading-deg>
@@ -7620,8 +7620,8 @@
    </params>
 </overlay>
     <offsets>
-      <x-m>-22.145</x-m>
-      <y-m>0.495</y-m>
+      <x-m>-22.146</x-m>
+      <y-m>0.489</y-m>
       <z-m>1.405</z-m>
       
       <heading-deg>-83</heading-deg>
@@ -7638,7 +7638,7 @@
 </overlay>
     <offsets>
       <x-m>-22.117</x-m>
-      <y-m>0.497</y-m>
+      <y-m>0.491</y-m>
       <z-m>1.405</z-m>
       
       <heading-deg>-83</heading-deg>
@@ -7654,8 +7654,8 @@
    </params>
 </overlay>
     <offsets>
-      <x-m>-22.089</x-m>
-      <y-m>0.499</y-m>
+      <x-m>-22.088</x-m>
+      <y-m>0.492</y-m>
       <z-m>1.405</z-m>
       
       <heading-deg>-83</heading-deg>
@@ -7671,8 +7671,8 @@
    </params>
 </overlay>
     <offsets>
-      <x-m>-22.061</x-m>
-      <y-m>0.502</y-m>
+      <x-m>-22.059</x-m>
+      <y-m>0.496</y-m>
       <z-m>1.405</z-m>
       
       <heading-deg>-83</heading-deg>
@@ -7694,8 +7694,8 @@
 <overlay>
 </overlay>
     <offsets>
-      <x-m>-22.16</x-m>
-      <y-m>0.515</y-m>
+      <x-m>-22.158</x-m>
+      <y-m>0.509</y-m>
       <z-m>1.375</z-m>
       
       <heading-deg>-83</heading-deg>
@@ -7709,8 +7709,8 @@
 <overlay>
 </overlay>
     <offsets>
-      <x-m>-22.13</x-m>
-      <y-m>0.513</y-m>
+      <x-m>-22.128</x-m>
+      <y-m>0.507</y-m>
       <z-m>1.37</z-m>
       
       <heading-deg>-83</heading-deg>
@@ -7726,8 +7726,8 @@
 <overlay>
 </overlay>
     <offsets>
-      <x-m>-22.102</x-m>
-      <y-m>0.518</y-m>
+      <x-m>-22.10</x-m>
+      <y-m>0.512</y-m>
       <z-m>1.368</z-m>
       
       <heading-deg>-83</heading-deg>
@@ -7752,7 +7752,7 @@
     </overlay>
     <offsets>
       <x-m>-22.230</x-m>
-      <y-m>0.350</y-m>
+      <y-m>0.346</y-m>
       <z-m>1.710</z-m>
       
       <heading-deg>-85</heading-deg>
@@ -7839,8 +7839,8 @@
     </overlay>
     <offsets>
       <x-m>-22.124</x-m>
-      <y-m>0.553</y-m>
-      <z-m>1.261</z-m>
+      <y-m>0.551</y-m>
+      <z-m>1.241</z-m>
       
       <heading-deg>-84</heading-deg>
      <pitch-deg>0</pitch-deg>
@@ -7854,8 +7854,8 @@
     </overlay>
     <offsets>
       <x-m>-22.181</x-m>
-      <y-m>0.547</y-m>
-      <z-m>1.261</z-m>
+      <y-m>0.545</y-m>
+      <z-m>1.241</z-m>
       
       <heading-deg>-84</heading-deg>
      <pitch-deg>0</pitch-deg>
@@ -7872,8 +7872,8 @@
     </overlay>
     <offsets>
       <x-m>-22.238</x-m>
-      <y-m>0.541</y-m>
-      <z-m>1.261</z-m>
+      <y-m>0.539</y-m>
+      <z-m>1.241</z-m>
       
       <heading-deg>-84</heading-deg>
      <pitch-deg>0</pitch-deg>
@@ -7897,8 +7897,8 @@
     </overlay>
      <offsets>
       <x-m>-22.235</x-m>
-      <y-m>0.532</y-m>
-      <z-m>1.026</z-m>
+      <y-m>0.53</y-m>
+      <z-m>1.006</z-m>
       
       <heading-deg>-85</heading-deg>
      <pitch-deg>0</pitch-deg>
@@ -7916,8 +7916,8 @@
     </overlay>
      <offsets>
       <x-m>-22.178</x-m>
-      <y-m>0.538</y-m>
-      <z-m>1.026</z-m>
+      <y-m>0.536</y-m>
+      <z-m>1.006</z-m>
       
       <heading-deg>-85</heading-deg>
      <pitch-deg>0</pitch-deg>
@@ -7934,8 +7934,8 @@
     </overlay>
    <offsets>
       <x-m>-22.121</x-m>
-      <y-m>0.543</y-m>
-      <z-m>1.026</z-m>
+      <y-m>0.541</y-m>
+      <z-m>1.006</z-m>
       
       <heading-deg>-85</heading-deg>
      <pitch-deg>0</pitch-deg>
@@ -7953,8 +7953,8 @@
     </overlay>
     <offsets>
       <x-m>-22.064</x-m>
-      <y-m>0.549</y-m>
-      <z-m>1.026</z-m>
+      <y-m>0.546</y-m>
+      <z-m>1.006</z-m>
       
       <heading-deg>-85</heading-deg>
      <pitch-deg>0</pitch-deg>
@@ -7977,8 +7977,8 @@
     </overlay>
      <offsets>
       <x-m>-22.235</x-m>
-      <y-m>0.535</y-m>
-      <z-m>1.084</z-m>
+      <y-m>0.533</y-m>
+      <z-m>1.064</z-m>
       
       <heading-deg>-85</heading-deg>
      <pitch-deg>0</pitch-deg>
@@ -7994,8 +7994,8 @@
     </overlay>
    <offsets>
       <x-m>-22.178</x-m>
-      <y-m>0.539</y-m>
-      <z-m>1.084</z-m>
+      <y-m>0.537</y-m>
+      <z-m>1.064</z-m>
       
       <heading-deg>-85</heading-deg>
      <pitch-deg>0</pitch-deg>
@@ -8011,8 +8011,8 @@
     </overlay>
     <offsets>
       <x-m>-22.121</x-m>
-      <y-m>0.544</y-m>
-      <z-m>1.084</z-m>
+      <y-m>0.542</y-m>
+      <z-m>1.064</z-m>
       
       <heading-deg>-85</heading-deg>
      <pitch-deg>0</pitch-deg>
@@ -8028,8 +8028,8 @@
     </overlay>
     <offsets>
       <x-m>-22.064</x-m>
-      <y-m>0.550</y-m>
-      <z-m>1.084</z-m>
+      <y-m>0.546</y-m>
+      <z-m>1.064</z-m>
       
       <heading-deg>-85</heading-deg>
      <pitch-deg>0</pitch-deg>
@@ -8048,8 +8048,8 @@
     </overlay>
      <offsets>
       <x-m>-22.235</x-m>
-      <y-m>0.534</y-m>
-      <z-m>1.2</z-m>
+      <y-m>0.532</y-m>
+      <z-m>1.18</z-m>
       
       <heading-deg>-85</heading-deg>
      <pitch-deg>0</pitch-deg>
@@ -8065,8 +8065,8 @@
     </overlay>
    <offsets>
       <x-m>-22.178</x-m>
-      <y-m>0.539</y-m>
-      <z-m>1.2</z-m>
+      <y-m>0.537</y-m>
+      <z-m>1.18</z-m>
       
       <heading-deg>-85</heading-deg>
      <pitch-deg>0</pitch-deg>
@@ -8082,8 +8082,8 @@
     </overlay>
     <offsets>
       <x-m>-22.121</x-m>
-      <y-m>0.545</y-m>
-      <z-m>1.2</z-m>
+      <y-m>0.543</y-m>
+      <z-m>1.18</z-m>
       
       <heading-deg>-85</heading-deg>
      <pitch-deg>0</pitch-deg>
@@ -8099,8 +8099,8 @@
     </overlay>
     <offsets>
       <x-m>-22.064</x-m>
-      <y-m>0.551</y-m>
-      <z-m>1.200</z-m>
+      <y-m>0.549</y-m>
+      <z-m>1.180</z-m>
       
       <heading-deg>-85</heading-deg>
      <pitch-deg>0</pitch-deg>
@@ -8117,7 +8117,7 @@
   
   
   <model>
-    <name>Engine 1 Oil temp </name>
+    <name>Engine 1 Oil pressure </name>
     <path>Aircraft/Concorde/Models/Cockpit/Engineer/oil-pressure-1.xml</path>
     <overlay>
       <params>
@@ -8126,15 +8126,15 @@
     </overlay>
      <offsets>
       <x-m>-22.235</x-m>
-      <y-m>0.535</y-m>
-      <z-m>1.142</z-m>
+      <y-m>0.533</y-m>
+      <z-m>1.122</z-m>
       
       <heading-deg>-85</heading-deg>
      <pitch-deg>0</pitch-deg>
     </offsets>
   </model>
   <model>
-    <name>Engine 2 Oil temp</name>
+    <name>Engine 2 Oil pressure</name>
     <path>Aircraft/Concorde/Models/Cockpit/Engineer/oil-pressure-2.xml</path>
     <overlay>
       <params>
@@ -8143,15 +8143,15 @@
     </overlay>
    <offsets>
       <x-m>-22.178</x-m>
-      <y-m>0.540</y-m>
-      <z-m>1.142</z-m>
+      <y-m>0.538</y-m>
+      <z-m>1.122</z-m>
       
       <heading-deg>-85</heading-deg>
      <pitch-deg>0</pitch-deg>
     </offsets>
   </model>
   <model>
-    <name>Engine 3 Oil temp </name>
+    <name>Engine 3 Oil pressure </name>
     <path>Aircraft/Concorde/Models/Cockpit/Engineer/oil-pressure-3.xml</path>
     <overlay>
       <params>
@@ -8160,15 +8160,15 @@
     </overlay>
     <offsets>
       <x-m>-22.121</x-m>
-      <y-m>0.546</y-m>
-      <z-m>1.142</z-m>
+      <y-m>0.544</y-m>
+      <z-m>1.122</z-m>
       
       <heading-deg>-85</heading-deg>
      <pitch-deg>0</pitch-deg>
     </offsets>
   </model>
   <model>
-    <name>Engine 4 Oil temp</name>
+    <name>Engine 4 Oil pressure</name>
     <path>Aircraft/Concorde/Models/Cockpit/Engineer/oil-pressure-4.xml</path>
     <overlay>
       <params>
@@ -8177,8 +8177,8 @@
     </overlay>
     <offsets>
       <x-m>-22.064</x-m>
-      <y-m>0.550</y-m>
-      <z-m>1.142</z-m>
+      <y-m>0.549</y-m>
+      <z-m>1.122</z-m>
       
       <heading-deg>-85</heading-deg>
      <pitch-deg>0</pitch-deg>

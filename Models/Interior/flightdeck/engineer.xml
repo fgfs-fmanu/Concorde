@@ -38,7 +38,11 @@
   <type>material</type>
   <object-name>EngineerPanel</object-name>
    <object-name>Plane</object-name>
-   <object-name>Plane.001</object-name>
+   <object-name>Plane.001</object-name>   
+   <object-name>Plane.002</object-name>
+   <object-name>Plane.003</object-name>   
+   <object-name>Plane.004</object-name>   
+   <object-name>Plane.005</object-name>
   <emission>
    <red>0.83</red>
    <green>0.74</green>
