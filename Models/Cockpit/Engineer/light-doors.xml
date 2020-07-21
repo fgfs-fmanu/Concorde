@@ -1,0 +1,225 @@
+<?xml version="1.0"?>
+<PropertyList>
+  
+  <path>../Models/light_doors.ac</path>
+
+ 
+<effect>
+    <inherits-from>Aircraft/Concorde/Models/Effects/interior</inherits-from>
+    
+    <object-name>FrameFRL</object-name>
+    <object-name>OffFRL</object-name>
+    <object-name>OnFRL</object-name>
+    <object-name>FrameFR</object-name>
+    <object-name>OffFR</object-name>
+    <object-name>OnFR</object-name>
+    <object-name>TextFR</object-name>
+    <object-name>FrameUC</object-name>
+    <object-name>OnUC</object-name>
+    <object-name>OffUC</object-name>
+    <object-name>TextUC</object-name>
+    
+    
+    <object-name>FrameCL</object-name>
+    <object-name>OnCL</object-name>
+    <object-name>OffCL</object-name>
+    <object-name>TextCL</object-name>
+    <object-name>FrameCR</object-name>
+    <object-name>OnCR</object-name>
+    <object-name>OffCR</object-name>
+    <object-name>TextCR</object-name>
+    <object-name>FrameMH</object-name>
+    <object-name>OnMH</object-name>
+    <object-name>OffMH</object-name>
+    <object-name>TextMH</object-name>
+    
+    
+    <object-name>FrameRL</object-name>
+    <object-name>OnRL</object-name>
+    <object-name>OffRL</object-name>
+    <object-name>TextRL</object-name>
+    <object-name>FrameRR</object-name>
+    <object-name>OnRR</object-name>
+    <object-name>OffRR</object-name>
+    <object-name>TextRR</object-name>
+    <object-name>FrameLC</object-name>
+    <object-name>OnLC</object-name>
+    <object-name>OffLC</object-name>
+    <object-name>TextLC</object-name>
+</effect>
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+   
+  
+  <animation>
+    <type>select</type>
+    <object-name>OnMH</object-name>
+    <condition>
+     <and>
+     <greater-than>
+    <property>/systems/electrical/outputs/bulb</property>
+    <value>20.0</value>
+   </greater-than>
+   
+       <or>
+    <property>/controls/doors/push</property>
+     <!-- bug -->
+  <property>/systems/air-bleed/ground-service/door</property>
+        <property>/systems/temperature/ground-service/door</property>
+        <property>/systems/electrical/ground-service/door</property>
+      </or>
+      
+      
+     </and>
+    </condition>
+
+  </animation>
+  
+ 
+  
+  
+  <animation>
+    <type>select</type>
+    <object-name>OffMH</object-name>
+    <condition>
+    <not>
+       <and>
+     <greater-than>
+    <property>/systems/electrical/outputs/bulb</property>
+    <value>20.0</value>
+   </greater-than>
+   
+       <or>
+    <property>/controls/doors/push</property>
+     <!-- bug -->
+  <property>/systems/air-bleed/ground-service/door</property>
+        <property>/systems/temperature/ground-service/door</property>
+        <property>/systems/electrical/ground-service/door</property>
+      </or>
+      
+      
+     </and>
+     
+     </not>
+    </condition>
+
+  </animation>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+   <animation>
+    <type>select</type>
+    <object-name>OnFRL</object-name>
+    <object-name>OnFR</object-name>
+    <object-name>OnUC</object-name>
+    
+    
+   
+    <object-name>OnCL</object-name>
+    <object-name>OnCR</object-name>
+    
+    
+    <object-name>OnRL</object-name>
+    <object-name>OnRR</object-name>
+    <object-name>OnLC</object-name>
+    <condition>
+       <and>
+     <greater-than>
+    <property>/systems/electrical/outputs/bulb</property>
+    <value>20.0</value>
+   </greater-than>
+       
+    <property>/controls/doors/push</property>
+     <!-- bug -->
+     
+     </and>
+     
+    </condition>
+
+ 
+  </animation>
+  
+  <animation>
+    <type>select</type>
+    <object-name>OffFRL</object-name>
+    <object-name>OffFR</object-name>
+    <object-name>OffUC</object-name>
+    
+    
+   
+    <object-name>OffCL</object-name>
+    <object-name>OffCR</object-name>
+    
+    
+    <object-name>OffRL</object-name>
+    <object-name>OffRR</object-name>
+    <object-name>OffLC</object-name>
+    <condition>
+    <not>
+      <and>
+     <greater-than>
+    <property>/systems/electrical/outputs/bulb</property>
+    <value>20.0</value>
+   </greater-than>
+       
+    <property>/controls/doors/push</property>
+     <!-- bug -->
+     
+     </and>
+     </not>
+    </condition>
+
+    
+  </animation>
+  
+  
+ 
+  
+  <animation>
+    <type>material</type>
+    <object-name>FrameFRL</object-name>
+    <object-name>FrameFR</object-name>
+    <object-name>FrameUC</object-name>
+    
+    
+   
+    <object-name>FrameCL</object-name>
+    <object-name>FrameCR</object-name>
+    <object-name>FrameMH</object-name>
+    
+    
+    <object-name>FrameRL</object-name>
+    <object-name>FrameRR</object-name>
+    <object-name>FrameLC</object-name>
+  <emission>
+     <red>0.2</red>
+     <green>0.2</green>
+     <blue>0.2</blue>
+  </emission>
+</animation>
+
+</PropertyList>

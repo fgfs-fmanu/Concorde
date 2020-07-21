@@ -4735,7 +4735,7 @@
       <y-m>0.508</y-m>
       <z-m>1.395</z-m>
       
-      <heading-deg>-99</heading-deg>
+      <heading-deg>-97</heading-deg>
      <pitch-deg>25</pitch-deg>
     </offsets>
   </model>
@@ -4753,7 +4753,7 @@
       <y-m>0.500</y-m>
       <z-m>1.395</z-m>
       
-      <heading-deg>-99</heading-deg>
+      <heading-deg>-97</heading-deg>
      <pitch-deg>25</pitch-deg>
     </offsets>
   </model>
@@ -4768,10 +4768,10 @@
     </overlay>
     <offsets>
       <x-m>-21.32</x-m>
-      <y-m>0.488</y-m>
+      <y-m>0.486</y-m>
       <z-m>1.395</z-m>
       
-      <heading-deg>-99</heading-deg>
+      <heading-deg>-97</heading-deg>
      <pitch-deg>25</pitch-deg>
     </offsets>
   </model>
@@ -4790,7 +4790,7 @@
       <y-m>0.477</y-m>
       <z-m>1.395</z-m>
       
-      <heading-deg>-99</heading-deg>
+      <heading-deg>-97</heading-deg>
      <pitch-deg>25</pitch-deg>
     </offsets>
   </model>
@@ -7071,6 +7071,22 @@
       <x-m>-22.132</x-m>
       <y-m>0.534</y-m>
       <z-m>0.729</z-m>
+      
+      <heading-deg>-85</heading-deg>
+     <pitch-deg>-5</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  <model>
+    <name>Light Dors</name>
+    <path>Cockpit/Engineer/light-doors.xml</path>
+    <overlay>
+ </overlay>
+    <offsets>
+      <x-m>-22.113</x-m>
+      <y-m>0.532</y-m>
+      <z-m>0.81</z-m>
       
       <heading-deg>-85</heading-deg>
      <pitch-deg>-5</pitch-deg>
