@@ -3419,6 +3419,81 @@
 
 
 <model>
+    <name>Fuel Tank 1 Crossfeed</name>
+    <path>Cockpit/Engineer/crossfeed-rotary.xml</path>
+    <overlay>
+      <params>
+  <engine-select>/controls/fuel/tank[0]/cross-feed-valve</engine-select>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.942</x-m>
+      <y-m>0.552</y-m>
+      <z-m>0.996</z-m>
+      
+      <heading-deg>-90</heading-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <name>Fuel Tank 2 Crossfeed</name>
+    <path>Cockpit/Engineer/crossfeed-rotary.xml</path>
+    <overlay>
+      <params>
+  <engine-select>/controls/fuel/tank[1]/cross-feed-valve</engine-select>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.881</x-m>
+      <y-m>0.552</y-m>
+      <z-m>0.996</z-m>
+      
+      <heading-deg>-90</heading-deg>
+    </offsets>
+  </model>
+  
+   <model>
+    <name>Fuel Tank 3 Crossfeed</name>
+    <path>Cockpit/Engineer/crossfeed-rotary.xml</path>
+    <overlay>
+      <params>
+  <engine-select>/controls/fuel/tank[2]/cross-feed-valve</engine-select>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.67</x-m>
+      <y-m>0.552</y-m>
+      <z-m>0.996</z-m>
+      
+      <heading-deg>-90</heading-deg>
+    </offsets>
+  </model>
+
+ <model>
+    <name>Fuel Tank 4 Crossfeed</name>
+    <path>Cockpit/Engineer/crossfeed-rotary.xml</path>
+    <overlay>
+      <params>
+  <engine-select>/controls/fuel/tank[3]/cross-feed-valve</engine-select>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.607</x-m>
+      <y-m>0.552</y-m>
+      <z-m>0.996</z-m>
+      
+      <heading-deg>-90</heading-deg>
+    </offsets>
+  </model>
+
+
+
+
+
+
+
+
+<model>
     <name>Fuel Tank 1 Stream</name>
     <path>Cockpit/Engineer/light-engine-stream.xml</path>
     <overlay>

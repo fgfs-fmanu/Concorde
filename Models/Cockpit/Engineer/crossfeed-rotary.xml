@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<PropertyList>
+  <path>../Models/crossfeedrotary.ac</path>
+  
+  
+   <params>
+  <engine-select>/controls/fuel/tank[0]/cross-feed-valve</engine-select>
+ </params>
+
+<effect>
+	   <inherits-from>Aircraft/Concorde/Models/Effects/interior</inherits-from>
+	   <object-name>Frame</object-name>
+</effect>
+
+
+
+<animation>
+    <type>rotate</type>
+    <object-name>Knob</object-name>
+    <expression>
+    <prod>
+    <property alias="/params/engine-select"/>
+     <value>90</value>
+     </prod>
+     </expression>
+    <center>
+      <x-m>0.01298</x-m>
+      <y-m>0</y-m>
+      <z-m>-0.00222</z-m>
+    </center>
+    <axis>
+      <x>-1</x>
+      <y>0</y>
+      <z>0</z>
+    </axis>
+  </animation>
+  
+   <animation>
+    <type>pick</type>
+    <object-name>Knob</object-name>
+    <action>
+      <name>Up</name>
+      <button>0</button>
+      
+      <binding>
+        <command>property-adjust</command>
+        <property alias="/params/engine-select"/>
+    <step>1</step>
+    <min>-1</min>
+    <max>1</max>
+    <wrap>true</wrap>
+   </binding>
+   
+   
+   
+   <binding>
+    <command>property-toggle</command>
+    <property>/instrumentation/generic/click</property>
+   </binding>
+    </action>
+    </animation>
+    
+    
+   
+
+  
+
+
+</PropertyList>

@@ -2230,37 +2230,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
 
 <!-- engine cross feed -->
 
-  <instrument include="Instruments/concorde-fuel-cross-feed-selector.xml">
-   <name>Cross feed engine 1</name>
-   <condition>
-    <or>
-     <and>
-      <property>/sim/current-view/internal</property>
-      <property>/systems/seat/engineer</property>
-      <less-than>
-       <property>/sim/current-view/goal-heading-offset-deg</property>
-       <value>330</value>
-      </less-than>
-      <greater-than>
-       <property>/sim/current-view/goal-heading-offset-deg</property>
-       <value>240</value>
-      </greater-than>
-      <less-than>
-       <property>/sim/current-view/goal-pitch-offset-deg</property>
-       <value>-15</value>
-      </less-than>
-     </and>
-     <property>/controls/seat/all</property>
-    </or>
-   </condition>
-   <params>
-    <engine-select>/controls/fuel/tank[0]/cross-feed-valve</engine-select>
-   </params>
-   <x>28</x>
-   <y>290</y>
-   <w>25</w>
-   <h>25</h>
-  </instrument>
+
 
   <instrument include="Instruments/concorde-title-fuel-crossfeed.xml">
    <name>Crossfeed</name>
@@ -2291,37 +2261,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
    <h>20</h>
   </instrument>
 
-  <instrument include="Instruments/concorde-fuel-cross-feed-selector.xml">
-   <name>Cross feed engine 2</name>
-   <condition>
-    <or>
-     <and>
-      <property>/sim/current-view/internal</property>
-      <property>/systems/seat/engineer</property>
-      <less-than>
-       <property>/sim/current-view/goal-heading-offset-deg</property>
-       <value>325</value>
-      </less-than>
-      <greater-than>
-       <property>/sim/current-view/goal-heading-offset-deg</property>
-       <value>235</value>
-      </greater-than>
-      <less-than>
-       <property>/sim/current-view/goal-pitch-offset-deg</property>
-       <value>-20</value>
-      </less-than>
-     </and>
-     <property>/controls/seat/all</property>
-    </or>
-   </condition>
-   <params>
-    <engine-select>/controls/fuel/tank[1]/cross-feed-valve</engine-select>
-   </params>
-   <x>97</x>
-   <y>290</y>
-   <w>25</w>
-   <h>25</h>
-  </instrument>
+ 
 
   <instrument include="Instruments/concorde-connection-vertical.xml">
    <name>engine 1 cross feed valve</name>
@@ -2387,37 +2327,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
    <h>10</h>
   </instrument>
 
-  <instrument include="Instruments/concorde-fuel-cross-feed-selector.xml">
-   <name>Cross feed engine 3</name>
-   <condition>
-    <or>
-     <and>
-      <property>/sim/current-view/internal</property>
-      <property>/systems/seat/engineer</property>
-      <less-than>
-       <property>/sim/current-view/goal-heading-offset-deg</property>
-       <value>300</value>
-      </less-than>
-      <greater-than>
-       <property>/sim/current-view/goal-heading-offset-deg</property>
-       <value>215</value>
-      </greater-than>
-      <less-than>
-       <property>/sim/current-view/goal-pitch-offset-deg</property>
-       <value>-20</value>
-      </less-than>
-     </and>
-     <property>/controls/seat/all</property>
-    </or>
-   </condition>
-   <params>
-    <engine-select>/controls/fuel/tank[2]/cross-feed-valve</engine-select>
-   </params>
-   <x>333</x>
-   <y>290</y>
-   <w>25</w>
-   <h>25</h>
-  </instrument>
+  
 
   <instrument include="Instruments/concorde-title-fuel-crossfeed.xml">
    <name>Crossfeed</name>
@@ -2448,37 +2358,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
    <h>20</h>
   </instrument>
 
-  <instrument include="Instruments/concorde-fuel-cross-feed-selector.xml">
-   <name>Cross feed engine 4</name>
-   <condition>
-    <or>
-     <and>
-      <property>/sim/current-view/internal</property>
-      <property>/systems/seat/engineer</property>
-      <less-than>
-       <property>/sim/current-view/goal-heading-offset-deg</property>
-       <value>295</value>
-      </less-than>
-      <greater-than>
-       <property>/sim/current-view/goal-heading-offset-deg</property>
-       <value>205</value>
-      </greater-than>
-      <less-than>
-       <property>/sim/current-view/goal-pitch-offset-deg</property>
-       <value>-15</value>
-      </less-than>
-     </and>
-     <property>/controls/seat/all</property>
-    </or>
-   </condition>
-   <params>
-    <engine-select>/controls/fuel/tank[3]/cross-feed-valve</engine-select>
-   </params>
-   <x>402</x>
-   <y>290</y>
-   <w>25</w>
-   <h>25</h>
-  </instrument>
+ 
 
   <instrument include="Instruments/concorde-connection-vertical.xml">
    <name>engine 3 cross feed valve</name>
