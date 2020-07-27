@@ -3415,7 +3415,89 @@
 
 
 
-
+<model>
+    <name>Fuel Tank 1 LP Valve Selector</name>
+    <path>Cockpit/Engineer/lp-valve-selector.xml</path>
+    <overlay>
+      <params>
+  <select-valve>/controls/fuel/tank[0]/lp-valve</select-valve>
+  <select-motor>/controls/fuel/tank[0]/lp-valve-motor</select-motor>
+  <guard-valve>/controls/fuel/tank[0]/lp-valve-guard</guard-valve>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.998</x-m>
+      <y-m>0.548</y-m>
+      <z-m>1</z-m>
+      
+      <heading-deg>-90</heading-deg>
+    </offsets>
+  </model>
+  
+  
+  <model>
+    <name>Fuel Tank 2 LP Valve Selector</name>
+    <path>Cockpit/Engineer/lp-valve-selector.xml</path>
+    <overlay>
+      <params>
+  <select-valve>/controls/fuel/tank[1]/lp-valve</select-valve>
+  <select-motor>/controls/fuel/tank[1]/lp-valve-motor</select-motor>
+  <guard-valve>/controls/fuel/tank[1]/lp-valve-guard</guard-valve>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.835</x-m>
+      <y-m>0.548</y-m>
+      <z-m>1</z-m>
+      
+      <heading-deg>-90</heading-deg>
+    </offsets>
+  </model>
+  
+  
+  <model>
+    <name>Fuel Tank 3 LP Valve Selector</name>
+    <path>Cockpit/Engineer/lp-valve-selector.xml</path>
+    <overlay>
+      <params>
+  <select-valve>/controls/fuel/tank[2]/lp-valve</select-valve>
+  <select-motor>/controls/fuel/tank[2]/lp-valve-motor</select-motor>
+  <guard-valve>/controls/fuel/tank[2]/lp-valve-guard</guard-valve>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.712</x-m>
+      <y-m>0.548</y-m>
+      <z-m>1</z-m>
+      
+      <heading-deg>-90</heading-deg>
+    </offsets>
+  </model>
+  
+  
+  <model>
+    <name>Fuel Tank 4 LP Valve Selector</name>
+    <path>Cockpit/Engineer/lp-valve-selector.xml</path>
+    <overlay>
+      <params>
+  <select-valve>/controls/fuel/tank[3]/lp-valve</select-valve>
+  <select-motor>/controls/fuel/tank[3]/lp-valve-motor</select-motor>
+  <guard-valve>/controls/fuel/tank[3]/lp-valve-guard</guard-valve>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.548</x-m>
+      <y-m>0.548</y-m>
+      <z-m>1</z-m>
+      
+      <heading-deg>-90</heading-deg>
+    </offsets>
+  </model>
+  
+  
+  
+  
+  
 
 
 <model>
@@ -7833,6 +7915,23 @@
 <!-- ======== -->
 <!-- Pressurization -->
 <!-- ======== -->
+
+
+
+<model>
+<name>Emerg Depress</name>
+    <path>Cockpit/Engineer/emerg-depress.xml</path>
+    <overlay>
+    </overlay>
+    <offsets>
+      <x-m>-22.065</x-m>
+      <y-m>0.351</y-m>
+      <z-m>1.734</z-m>
+      
+      <heading-deg>-85</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
 
 <model>
 <name>System Select </name>

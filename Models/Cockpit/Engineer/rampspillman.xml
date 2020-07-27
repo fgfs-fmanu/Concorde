@@ -3,7 +3,7 @@
   <params>
   
  </params>
-  <path>../Models/switch_secure.ac</path>
+  <path>../Models/switch_secure_red.ac</path>
 
 <effect>
     <inherits-from>Aircraft/Concorde/Models/Effects/interior</inherits-from>
