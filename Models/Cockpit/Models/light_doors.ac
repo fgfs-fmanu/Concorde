@@ -319,7 +319,7 @@ refs 4
 5 0.802944 0.675972
 kids 0
 OBJECT poly
-name "FrameLOC"
+name "FrameLC"
 data 9
 Frame.004
 crease 40.0
@@ -921,7 +921,7 @@ refs 4
 5 0 0
 kids 0
 OBJECT poly
-name "OffLOC"
+name "OffLC"
 data 7
 Off.004
 crease 40.0
@@ -1398,7 +1398,7 @@ refs 4
 5 0 0
 kids 0
 OBJECT poly
-name "OnLOC"
+name "OnLC"
 data 6
 On.004
 crease 40.0
@@ -11223,7 +11223,7 @@ refs 3
 248 0 0
 kids 0
 OBJECT poly
-name "TextLOC"
+name "TextLC"
 data 4
 Defa
 crease 40.0
