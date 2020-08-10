@@ -48,9 +48,7 @@
 
     <type>translate</type>
     <object-name>Current</object-name>
-   
     <property alias="/params/vertical-speed-fps"/>
-    
     <interpolation>
       <entry>
         <ind>100</ind>

@@ -8684,7 +8684,37 @@
   
   
   
+  <model>
+    <name>Brakes Temp </name>
+    <path>Cockpit/Engineer/brakes-temp.xml</path>
+   <overlay>
+   
+    </overlay>
+    <offsets>
+      <x-m>-22.356</x-m>
+      <y-m>0.467</y-m>
+      <z-m>1.414</z-m>
+      
+      <heading-deg>-85</heading-deg>
+     <pitch-deg>24</pitch-deg>
+    </offsets>
+  </model>
   
+  <model>
+    <name>Brakes Temp Test</name>
+    <path>Cockpit/Engineer/test-brakes-temp.xml</path>
+   <overlay>
+   
+    </overlay>
+    <offsets>
+      <x-m>-22.33</x-m>
+      <y-m>0.483</y-m>
+      <z-m>1.385</z-m>
+      
+      <heading-deg>-85</heading-deg>
+     <pitch-deg>24</pitch-deg>
+    </offsets>
+  </model>
   
   
   
