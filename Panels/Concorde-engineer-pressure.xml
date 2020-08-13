@@ -736,34 +736,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
    <h>120</h>
   </instrument>
 
-  <instrument include="Instruments/concorde-pressure-cabin-rate.xml">
-   <name>Cabin rate of climb</name>
-   <condition>
-    <or>
-     <and>
-      <property>/sim/current-view/internal</property>
-      <property>/systems/seat/engineer</property>
-      <less-than>
-       <property>/sim/current-view/goal-heading-offset-deg</property>
-       <value>345</value>
-      </less-than>
-      <greater-than>
-       <property>/sim/current-view/goal-heading-offset-deg</property>
-       <value>280</value>
-      </greater-than>
-      <greater-than>
-       <property>/sim/current-view/goal-pitch-offset-deg</property>
-       <value>-20</value>
-      </greater-than>
-     </and>
-     <property>/controls/seat/all</property>
-    </or>
-   </condition>
-   <x>455</x>
-   <y>447</y>
-   <w>90</w>
-   <h>90</h>
-  </instrument>
+ 
 
   <instrument include="Instruments/concorde-pressure-altitude-sel.xml">
    <name>System altitude selector 2</name>
