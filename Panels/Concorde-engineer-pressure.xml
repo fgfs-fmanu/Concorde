@@ -662,34 +662,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
    <h>110</h>
   </instrument>
 
-  <instrument include="Instruments/concorde-pressure-discharge.xml">
-   <name>Discharge valve position indicator</name>
-   <condition>
-    <or>
-     <and>
-      <property>/sim/current-view/internal</property>
-      <property>/systems/seat/engineer</property>
-      <less-than>
-       <property>/sim/current-view/goal-heading-offset-deg</property>
-       <value>345</value>
-      </less-than>
-      <greater-than>
-       <property>/sim/current-view/goal-heading-offset-deg</property>
-       <value>275</value>
-      </greater-than>
-      <greater-than>
-       <property>/sim/current-view/goal-pitch-offset-deg</property>
-       <value>-15</value>
-      </greater-than>
-     </and>
-     <property>/controls/seat/all</property>
-    </or>
-   </condition>
-   <x>455</x>
-   <y>585</y>
-   <w>95</w>
-   <h>190</h>
-  </instrument>
+  
 
 <!-- CABIN ALTITUDE -->
 

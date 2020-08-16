@@ -1,0 +1,197 @@
+<?xml version="1.0"?>
+<PropertyList>
+  <path>../Models/discharge.ac</path>
+
+
+<effect>
+    <inherits-from>Aircraft/Concorde/Models/Effects/interior</inherits-from>
+    <object-name>Frame</object-name>
+
+</effect>
+
+<effect>
+    <inherits-from>Aircraft/Concorde/Models/Effects/flash</inherits-from>
+    <object-name>Cube</object-name>
+    <object-name>FF1</object-name>
+    <object-name>FF2</object-name>
+    <object-name>FF3</object-name>
+    <object-name>FF4</object-name>
+    <object-name>Level1</object-name>
+    <object-name>Level2</object-name>
+    <object-name>Level3</object-name>
+    <object-name>Level4</object-name>
+
+</effect>
+
+<animation>
+    <type>select</type>
+    <object-name>FF1</object-name>    
+    <object-name>FF2</object-name>    
+    <object-name>FF3</object-name>    
+    <object-name>FF4</object-name>
+    <condition>
+      <or>
+	<not><property>/instrumentation/differential-pressure/serviceable</property></not>
+        <less-than>
+          <property>/systems/electrical/outputs/specific</property>
+          <value>20.0</value>
+        </less-than>
+      </or>
+    </condition>    
+  </animation>
+
+ 
+
+  <animation>
+    <condition><and><not>
+        <less-than>
+        
+          <property>/systems/electrical/outputs/specific</property>
+          <value>20.0</value>
+        </less-than>
+    </not>
+    
+    <property>/instrumentation/differential-pressure/serviceable</property></and>
+    </condition>    
+
+    <type>textranslate</type>
+    <object-name>Level1</object-name>
+     <property>/systems/pressurization/system[0]/discharge-fwd-percent</property>   
+  <interpolation> <!-- index must increase, because of lookup ! -->
+      <entry><ind>  0</ind><dep>   0.0</dep></entry>
+      <entry><ind>  10</ind><dep>   -0.125</dep></entry>
+      <entry><ind>  20</ind><dep>   -0.22</dep></entry>
+      <entry><ind> 30</ind><dep> -0.28</dep></entry>      
+      <entry><ind>90</ind><dep>-0.40</dep></entry>
+      <entry><ind>100</ind><dep>-0.46</dep></entry>
+     </interpolation>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+  </axis>
+ </animation>
+ 
+ 
+ 
+  <animation>
+    <condition><and><not>
+        <less-than>
+        
+          <property>/systems/electrical/outputs/specific</property>
+          <value>20.0</value>
+        </less-than>
+    </not>
+    
+    <property>/instrumentation/differential-pressure/serviceable</property></and>
+    </condition>    
+
+    <type>textranslate</type>
+    <object-name>Level2</object-name>
+     <property>/systems/pressurization/system[0]/discharge-aft-percent</property>   
+  <interpolation> <!-- index must increase, because of lookup ! -->
+      <entry><ind>  0</ind><dep>   0.0</dep></entry>
+      <entry><ind>  10</ind><dep>   -0.125</dep></entry>
+      <entry><ind>  20</ind><dep>   -0.22</dep></entry>
+      <entry><ind> 30</ind><dep> -0.28</dep></entry>      
+      <entry><ind>90</ind><dep>-0.40</dep></entry>
+      <entry><ind>100</ind><dep>-0.46</dep></entry>
+     </interpolation>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+  </axis>
+ </animation>
+ 
+ 
+ <animation>
+    <condition><and><not>
+        <less-than>
+        
+          <property>/systems/electrical/outputs/specific</property>
+          <value>20.0</value>
+        </less-than>
+    </not>
+    
+    <property>/instrumentation/differential-pressure/serviceable</property></and>
+    </condition>    
+
+    <type>textranslate</type>
+    <object-name>Level3</object-name>
+     <property>/systems/pressurization/system[1]/discharge-fwd-percent</property>       
+  <interpolation> <!-- index must increase, because of lookup ! -->
+      <entry><ind>  0</ind><dep>   0.0</dep></entry>
+      <entry><ind>  10</ind><dep>   -0.125</dep></entry>
+      <entry><ind>  20</ind><dep>   -0.22</dep></entry>
+      <entry><ind> 30</ind><dep> -0.28</dep></entry>      
+      <entry><ind>90</ind><dep>-0.40</dep></entry>
+      <entry><ind>100</ind><dep>-0.46</dep></entry>
+     </interpolation>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+  </axis>
+ </animation>
+ 
+ 
+ 
+  <animation>
+    <condition><and><not>
+        <less-than>
+        
+          <property>/systems/electrical/outputs/specific</property>
+          <value>20.0</value>
+        </less-than>
+    </not>
+    
+    <property>/instrumentation/differential-pressure/serviceable</property></and>
+    </condition>    
+
+    <type>textranslate</type>
+    <object-name>Level4</object-name>
+     <property>/systems/pressurization/system[1]/discharge-aft-percent</property>  
+  <interpolation> <!-- index must increase, because of lookup ! -->
+      <entry><ind>  0</ind><dep>   0.0</dep></entry>
+      <entry><ind>  10</ind><dep>   -0.125</dep></entry>
+      <entry><ind>  20</ind><dep>   -0.22</dep></entry>
+      <entry><ind> 30</ind><dep> -0.28</dep></entry>      
+      <entry><ind>90</ind><dep>-0.40</dep></entry>
+      <entry><ind>100</ind><dep>-0.46</dep></entry>
+     </interpolation>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+  </axis>
+ </animation>
+  <!--Default Lighting-->
+  <animation>
+    <type>material</type>
+    <object-name>Cube</object-name>
+  <emission>
+     <red>0.2</red>
+     <green>0.2</green>
+     <blue>0.2</blue>
+  </emission>
+ </animation>
+  <animation>
+    <type>material</type>
+    <object-name>Level1</object-name>
+    <object-name>Level2</object-name>
+    <object-name>Level3</object-name>
+    <object-name>Level4</object-name>
+  <condition>
+  <and>
+    <property>controls/lighting/instrument-lights</property>
+        <greater-than>
+          <property>/systems/electrical/outputs/specific</property>
+          <value>20.0</value>
+        </greater-than>
+  </and>
+  </condition>
+  <emission>
+   <red>0.7</red>
+   <green>0.2</green>
+   <blue>0.2</blue>
+   <factor-prop>/controls/lighting/instruments-norm</factor-prop>
+  </emission>
+  </animation>
+</PropertyList>

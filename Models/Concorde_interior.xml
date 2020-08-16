@@ -8303,6 +8303,19 @@
   </model>
   
   <model>
+    <name>Engineer Cabin Discharge</name>
+    <path>Aircraft/Concorde/Models/Cockpit/Engineer/cabin-discharge.xml</path>
+    <offsets>
+      <x-m>-22.16</x-m>
+      <y-m>0.386</y-m>
+      <z-m>1.640</z-m>
+      
+      <heading-deg>-85</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+  
+  <model>
     <name>Engineer Cabin Vario</name>
     <path>Aircraft/Concorde/Models/Cockpit/Engineer/cabin-vario.xml</path>
     <offsets>
