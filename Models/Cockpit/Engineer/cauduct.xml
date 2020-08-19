@@ -1,0 +1,122 @@
+<?xml version="1.0"?>
+<PropertyList>
+  <path>../Models/cauduct.ac</path>
+  <params>
+  <inlet-select>/systems/temperature/group[0]/inlet-degc</inlet-select>
+  <duct-select>/systems/temperature/group[0]/duct-degc</duct-select>
+ </params>
+
+<effect>
+    <inherits-from>Aircraft/Concorde/Models/Effects/interior</inherits-from>
+    <object-name>Frame</object-name>
+
+</effect>
+
+<effect>
+    <inherits-from>Aircraft/Concorde/Models/Effects/flash</inherits-from>
+    <object-name>Guage</object-name>
+    <object-name>Needle1</object-name>
+    <object-name>Needle2</object-name>
+</effect>
+ <animation>
+    <type>select</type>
+    <object-name>FF</object-name>
+    <condition>
+        <less-than>
+          <property>/systems/electrical/outputs/specific</property>
+          <value>20.0</value>
+        </less-than>
+    </condition>    
+  </animation>
+
+
+ 
+
+  <animation>
+    <condition><not>
+        <less-than>
+          <property>/systems/electrical/outputs/specific</property>
+          <value>20.0</value>
+        </less-than>
+    </not></condition>
+
+    <type>rotate</type>
+    <object-name>Needle1</object-name>        
+   <property alias="/params/inlet-select"/>
+      <interpolation>
+      <entry><ind>  50</ind><dep>15</dep></entry>
+      <entry><ind>  220</ind><dep>175</dep></entry>
+     </interpolation>  
+    <center>
+      <x-m>0</x-m>
+      <y-m>0</y-m>
+      <z-m>0.00</z-m>
+    </center>
+    <axis>
+      <x>-1</x>
+      <y>0</y>
+      <z>0</z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <condition><not>
+        <less-than>
+          <property>/systems/electrical/outputs/specific</property>
+          <value>20.0</value>
+        </less-than>
+    </not></condition>
+
+    <type>rotate</type>
+    <object-name>Needle2</object-name>    
+    <property alias="/params/duct-select"/>
+    <interpolation>
+      <entry><ind>  -50</ind><dep>-15</dep></entry>
+      <entry><ind>  120</ind><dep>-175</dep></entry>
+     </interpolation>  
+    <center>
+      <x-m>0</x-m>
+      <y-m>0</y-m>
+      <z-m>0.00</z-m>
+    </center>
+    <axis>
+      <x>-1</x>
+      <y>0</y>
+      <z>0</z>
+    </axis>
+  </animation>
+ 
+  <!--Default Lighting-->
+  <animation>
+    <type>material</type>
+    <object-name>Guage</object-name>
+    <object-name>Needle1</object-name>
+    <object-name>Needle2</object-name>
+
+  <condition>
+  <and>
+    <property>controls/lighting/instrument-lights</property>
+        <greater-than>
+          <property>/systems/electrical/outputs/specific</property>
+          <value>20.0</value>
+        </greater-than>
+  </and>
+  </condition>
+  <emission>
+   <red>0.7</red>
+   <green>0.2</green>
+   <blue>0.2</blue>
+   <factor-prop>/controls/lighting/instruments-norm</factor-prop>
+  </emission>
+  </animation>
+  <animation>
+    <type>material</type>
+    <object-name>Frame</object-name>
+  <emission>
+     <red>0.2</red>
+     <green>0.2</green>
+     <blue>0.2</blue>
+  </emission>
+ </animation>
+
+</PropertyList>

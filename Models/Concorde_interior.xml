@@ -7157,6 +7157,163 @@
     </offsets>
   </model>
   
+  
+  
+  
+   <model>
+    <name>Air Cau Duct 1</name>
+    <path>Cockpit/Engineer/cauduct.xml</path>
+    <overlay>
+    <params>
+  <inlet-select>/systems/temperature/group[0]/inlet-degc</inlet-select>
+  <duct-select>/systems/temperature/group[0]/duct-degc</duct-select>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.714</x-m>
+      <y-m>0.363</y-m>
+      <z-m>1.729</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <name>Air Cau Duct 2</name>
+    <path>Cockpit/Engineer/cauduct.xml</path>
+    <overlay>
+    <params>
+  <inlet-select>/systems/temperature/group[1]/inlet-degc</inlet-select>
+  <duct-select>/systems/temperature/group[1]/duct-degc</duct-select>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.657</x-m>
+      <y-m>0.363</y-m>
+      <z-m>1.729</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  <model>
+    <name>Air Cau Duct 3</name>
+    <path>Cockpit/Engineer/cauduct.xml</path>
+    <overlay>
+    <params>
+  <inlet-select>/systems/temperature/group[2]/inlet-degc</inlet-select>
+  <duct-select>/systems/temperature/group[2]/duct-degc</duct-select>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.6</x-m>
+      <y-m>0.363</y-m>
+      <z-m>1.729</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <name>Air Cau Duct 4</name>
+    <path>Cockpit/Engineer/cauduct.xml</path>
+    <overlay>
+    <params>
+  <inlet-select>/systems/temperature/group[3]/inlet-degc</inlet-select>
+  <duct-select>/systems/temperature/group[3]/duct-degc</duct-select>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.543</x-m>
+      <y-m>0.363</y-m>
+      <z-m>1.729</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  <model>
+    <name>Air Mass Flow 1</name>
+    <path>Cockpit/Engineer/massflow.xml</path>
+    <overlay>
+    <params>
+  <flow-select>/systems/temperature/group[0]/flow-kgph</flow-select>
+ </params>
+    </overlay>
+    <offsets>
+       <x-m>-21.714</x-m>
+      <y-m>0.385</y-m>
+      <z-m>1.678</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <name>Air Mass Flow 2</name>
+    <path>Cockpit/Engineer/massflow.xml</path>
+    <overlay>
+    <params>
+  <flow-select>/systems/temperature/group[1]/flow-kgph</flow-select>
+ </params>
+    </overlay>
+    <offsets>
+       <x-m>-21.657</x-m>
+      <y-m>0.385</y-m>
+      <z-m>1.678</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <name>Air Mass Flow 3</name>
+    <path>Cockpit/Engineer/massflow.xml</path>
+    <overlay>
+    <params>
+  <flow-select>/systems/temperature/group[2]/flow-kgph</flow-select>
+ </params>
+    </overlay>
+    <offsets>
+       <x-m>-21.6</x-m>
+      <y-m>0.385</y-m>
+      <z-m>1.678</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <name>Air Mass Flow 4</name>
+    <path>Cockpit/Engineer/massflow.xml</path>
+    <overlay>
+    <params>
+  <flow-select>/systems/temperature/group[3]/flow-kgph</flow-select>
+ </params>
+    </overlay>
+    <offsets>
+       <x-m>-21.543</x-m>
+      <y-m>0.385</y-m>
+      <z-m>1.678</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  
+  
+  
   <model>
     <name>Temp Comparator</name>
     <path>Cockpit/Engineer/temp-comparator.xml</path>

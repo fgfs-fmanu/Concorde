@@ -1506,8 +1506,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
 <!-- DUCT -->
 
  
-
-  <instrument include="Instruments/concorde-air-fuel-valve.xml">
+<instrument include="Instruments/concorde-air-fuel-valve.xml">
    <name>Fuel valve 1 selector</name>
    <condition>
     <or>
@@ -1516,11 +1515,11 @@ override those by providing <w>..</w> and <h>..</h> properties with the
       <property>/systems/seat/engineer</property>
       <less-than>
        <property>/sim/current-view/goal-heading-offset-deg</property>
-       <value>320</value>
+       <value>315</value>
       </less-than>
       <greater-than>
        <property>/sim/current-view/goal-heading-offset-deg</property>
-       <value>255</value>
+       <value>250</value>
       </greater-than>
       <greater-than>
        <property>/sim/current-view/goal-pitch-offset-deg</property>
@@ -1534,11 +1533,12 @@ override those by providing <w>..</w> and <h>..</h> properties with the
     <valve-switch>/controls/pneumatic/engine[0]/fuel-valve</valve-switch>
     <valve-guard>/controls/pneumatic/engine[0]/fuel-valve-guard</valve-guard>
    </params>
-   <x>25</x>
+   <x>120</x>
    <y>-10</y>
    <w>50</w>
    <h>75</h>
   </instrument>
+ 
 
  
 
