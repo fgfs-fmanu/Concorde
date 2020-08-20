@@ -7330,6 +7330,63 @@
     </offsets>
   </model>
   
+  
+  <model>
+    <name>Cabin Temp Deck</name>
+    <path>Cockpit/Engineer/cabintemp.xml</path>
+    <overlay>
+    <params>
+  <temp-degc>/systems/temperature/flight-deck-degc</temp-degc>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.718</x-m>
+      <y-m>0.420</y-m>
+      <z-m>1.601</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  <model>
+    <name>Cabin Temp Forward</name>
+    <path>Cockpit/Engineer/cabintemp.xml</path>
+    <overlay>
+    <params>
+  <temp-degc>/systems/temperature/cabin-fwd-degc</temp-degc>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.633</x-m>
+      <y-m>0.420</y-m>
+      <z-m>1.601</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  <model>
+    <name>Cabin Temp Rear</name>
+    <path>Cockpit/Engineer/cabintemp.xml</path>
+    <overlay>
+    <params>
+  <temp-degc>/systems/temperature/cabin-rear-degc</temp-degc>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.547</x-m>
+      <y-m>0.420</y-m>
+      <z-m>1.601</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+  
   <model>
     <name>Temp Group 1 Switch</name>
     <path>Cockpit/Engineer/temp-group-switch.xml</path>

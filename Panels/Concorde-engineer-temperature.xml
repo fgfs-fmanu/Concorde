@@ -210,38 +210,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
 
 <!-- TEMPERATURE -->
 
-  <instrument include="Instruments/concorde-temp-cabin.xml">
-   <name>Flight deck temperature</name>
-   <condition>
-    <or>
-     <and>
-      <property>/sim/current-view/internal</property>
-      <property>/systems/seat/engineer</property>
-      <less-than>
-       <property>/sim/current-view/goal-heading-offset-deg</property>
-       <value>300</value>
-      </less-than>
-      <greater-than>
-       <property>/sim/current-view/goal-heading-offset-deg</property>
-       <value>230</value>
-      </greater-than>
-      <greater-than>
-       <property>/sim/current-view/goal-pitch-offset-deg</property>
-       <value>-15</value>
-      </greater-than>
-     </and>
-     <property>/controls/seat/all</property>
-    </or>
-   </condition>
-   <params>
-    <eng-num>/systems/engines/engine[0]/engine-num</eng-num>
-    <temp-degc>/systems/temperature/flight-deck-degc</temp-degc>
-   </params>
-   <x>-10</x>
-   <y>160</y>
-   <w>75</w>
-   <h>75</h>
-  </instrument>
+  
 
   <instrument include="Instruments/concorde-temp-group-switch.xml">
    <name>Group 1 switch</name>
@@ -277,38 +246,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
    <h>70</h>
   </instrument>
 
-  <instrument include="Instruments/concorde-temp-cabin.xml">
-   <name>Forward cabin temperature</name>
-   <condition>
-    <or>
-     <and>
-      <property>/sim/current-view/internal</property>
-      <property>/systems/seat/engineer</property>
-      <less-than>
-       <property>/sim/current-view/goal-heading-offset-deg</property>
-       <value>290</value>
-      </less-than>
-      <greater-than>
-       <property>/sim/current-view/goal-heading-offset-deg</property>
-       <value>220</value>
-      </greater-than>
-      <greater-than>
-       <property>/sim/current-view/goal-pitch-offset-deg</property>
-       <value>-15</value>
-      </greater-than>
-     </and>
-     <property>/controls/seat/all</property>
-    </or>
-   </condition>
-   <params>
-    <eng-num>/systems/engines/engine[1]/engine-num</eng-num>
-    <temp-degc>/systems/temperature/cabin-fwd-degc</temp-degc>
-   </params>
-   <x>145</x>
-   <y>160</y>
-   <w>75</w>
-   <h>75</h>
-  </instrument>
+ 
 
   <instrument include="Instruments/concorde-temp-group-switch.xml">
    <name>Group 2 switch</name>
@@ -344,38 +282,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
    <h>70</h>
   </instrument>
 
-  <instrument include="Instruments/concorde-temp-cabin.xml">
-   <name>Rear cabin temperature</name>
-   <condition>
-    <or>
-     <and>
-      <property>/sim/current-view/internal</property>
-      <property>/systems/seat/engineer</property>
-      <less-than>
-       <property>/sim/current-view/goal-heading-offset-deg</property>
-       <value>275</value>
-      </less-than>
-      <greater-than>
-       <property>/sim/current-view/goal-heading-offset-deg</property>
-       <value>210</value>
-      </greater-than>
-      <greater-than>
-       <property>/sim/current-view/goal-pitch-offset-deg</property>
-       <value>-15</value>
-      </greater-than>
-     </and>
-     <property>/controls/seat/all</property>
-    </or>
-   </condition>
-   <params>
-    <eng-num>/systems/engines/engine[2]/engine-num</eng-num>
-    <temp-degc>/systems/temperature/cabin-rear-degc</temp-degc>
-   </params>
-   <x>300</x>
-   <y>160</y>
-   <w>75</w>
-   <h>75</h>
-  </instrument>
+ 
 
 <!-- TEMPERATURE SELECTOR -->
 
