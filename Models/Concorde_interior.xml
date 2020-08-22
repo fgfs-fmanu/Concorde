@@ -4445,6 +4445,22 @@
   </model>
   
   
+   <model>
+    <name>Fuel Temperature </name>
+    <path>Cockpit/Engineer/fueltemp.xml</path>
+    <overlay>
+    </overlay>
+   <offsets>
+      <x-m>-21.661</x-m>
+      <y-m>0.468</y-m>
+      <z-m>1.492</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+  
+  
   <model>
     <name>Jettison Valve 1</name>
     <path>Cockpit/Engineer/jettison-valve-1.xml</path>

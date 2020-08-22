@@ -78,34 +78,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
 
 <!-- fuel temperature -->
 
-  <instrument include="Instruments/concorde-fuel-temperature.xml">
-   <name>Fuel temperature</name>
-   <condition>
-    <or>
-     <and>
-      <property>/sim/current-view/internal</property>
-      <property>/systems/seat/engineer</property>
-      <less-than>
-       <property>/sim/current-view/goal-heading-offset-deg</property>
-       <value>285</value>
-      </less-than>
-      <greater-than>
-       <property>/sim/current-view/goal-heading-offset-deg</property>
-       <value>220</value>
-      </greater-than>
-      <greater-than>
-       <property>/sim/current-view/goal-pitch-offset-deg</property>
-       <value>-20</value>
-      </greater-than>
-     </and>
-     <property>/controls/seat/all</property>
-    </or>
-   </condition>
-   <x>415</x>
-   <y>220</y>
-   <w>75</w>
-   <h>75</h>
-  </instrument>
+  
 
 
   <instrument include="Instruments/concorde-fuel-temperature-sel.xml">
