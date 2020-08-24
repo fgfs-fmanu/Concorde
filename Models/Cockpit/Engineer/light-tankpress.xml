@@ -1,0 +1,197 @@
+<?xml version="1.0"?>
+<PropertyList>
+  
+  <path>../Models/light_tankpress.ac</path>
+<params>
+  <pressure-psi>/systems/hydraulic/sensors/green-left</pressure-psi>
+ </params>
+ 
+<effect>
+    <inherits-from>Aircraft/Concorde/Models/Effects/interior</inherits-from>
+    <object-name>Frame</object-name>
+    <object-name>On</object-name>
+    <object-name>Text</object-name>
+</effect>
+
+
+
+
+  
+   <animation>
+    <type>select</type>
+    <object-name>On</object-name>
+    <condition>
+       <and>
+     <greater-than>
+    <property>/systems/electrical/outputs/bulb</property>
+    <value>20.0</value>
+   </greater-than>
+      <or>
+       
+    <property>/controls/lighting/crew/engineer/forward/test</property>
+     <!-- bug -->
+     <not>
+      <greater-than>
+        <property>/instrumentation/tank-pressure/differential-psi</property>
+        <value>-1.75</value>
+       </greater-than>
+       <or>
+        <greater-than>
+         <property>/instrumentation/tank-pressure/differential-psi</property>
+         <value>-0.8</value>
+        </greater-than>
+        <not>
+         <property>/instrumentation/tank-pressure/falling</property>
+        </not>
+       </or>
+       <or>
+        <less-than-equals>
+         <property>/instrumentation/tank-pressure/differential-psi</property>
+         <value>1.5</value>
+        </less-than-equals>
+        <not>
+         <property>/instrumentation/tank-pressure/raising</property>
+        </not>
+       </or>
+       <less-than-equals>
+        <property>/instrumentation/tank-pressure/differential-psi</property>
+        <value>4.0</value>
+       </less-than-equals>
+       </not>
+      </or>
+      
+      <not>
+    <property>/controls/lighting/crew/engineer/forward/low</property>
+    </not>
+     </and>
+     
+    </condition>
+
+ 
+  </animation>
+  
+  
+  <animation>
+    <type>material</type>
+    <object-name>Off</object-name>
+     <condition>
+       <and>
+     <greater-than>
+    <property>/systems/electrical/outputs/bulb</property>
+    <value>20.0</value>
+   </greater-than>
+      <or>
+       
+    <property>/controls/lighting/crew/engineer/forward/test</property>
+     <!-- bug -->
+       <not>
+      <greater-than>
+        <property>/instrumentation/tank-pressure/differential-psi</property>
+        <value>-1.75</value>
+       </greater-than>
+       <or>
+        <greater-than>
+         <property>/instrumentation/tank-pressure/differential-psi</property>
+         <value>-0.8</value>
+        </greater-than>
+        <not>
+         <property>/instrumentation/tank-pressure/falling</property>
+        </not>
+       </or>
+       <or>
+        <less-than-equals>
+         <property>/instrumentation/tank-pressure/differential-psi</property>
+         <value>1.5</value>
+        </less-than-equals>
+        <not>
+         <property>/instrumentation/tank-pressure/raising</property>
+        </not>
+       </or>
+       <less-than-equals>
+        <property>/instrumentation/tank-pressure/differential-psi</property>
+        <value>4.0</value>
+       </less-than-equals>
+       </not>
+      </or>
+      
+      
+    <property>/controls/lighting/crew/engineer/forward/low</property>
+    
+     </and>
+     
+    </condition>
+
+    <emission>
+      <red>0.5</red>
+      <green>0.5</green>
+      <blue>0</blue>
+    </emission>
+  </animation>
+  
+  <animation>
+    <type>select</type>
+    <object-name>Off</object-name>
+    <condition>
+    <not>
+        <and>
+     <greater-than>
+    <property>/systems/electrical/outputs/bulb</property>
+    <value>20.0</value>
+   </greater-than>
+      <or>
+       
+    <property>/controls/lighting/crew/engineer/forward/test</property>
+     <!-- bug -->
+      <not>
+      <greater-than>
+        <property>/instrumentation/tank-pressure/differential-psi</property>
+        <value>-1.75</value>
+       </greater-than>
+       <or>
+        <greater-than>
+         <property>/instrumentation/tank-pressure/differential-psi</property>
+         <value>-0.8</value>
+        </greater-than>
+        <not>
+         <property>/instrumentation/tank-pressure/falling</property>
+        </not>
+       </or>
+       <or>
+        <less-than-equals>
+         <property>/instrumentation/tank-pressure/differential-psi</property>
+         <value>1.5</value>
+        </less-than-equals>
+        <not>
+         <property>/instrumentation/tank-pressure/raising</property>
+        </not>
+       </or>
+       <less-than-equals>
+        <property>/instrumentation/tank-pressure/differential-psi</property>
+        <value>4.0</value>
+       </less-than-equals>
+       </not>
+      </or>
+      
+      <not>
+    <property>/controls/lighting/crew/engineer/forward/low</property>
+    </not>
+     </and>
+     
+     </not>
+    </condition>
+
+    
+  </animation>
+  
+ 
+  
+  <animation>
+    <type>material</type>
+    <object-name>Frame</object-name>
+  <emission>
+     <red>0.2</red>
+     <green>0.2</green>
+     <blue>0.2</blue>
+  </emission>
+</animation>
+</PropertyList>
