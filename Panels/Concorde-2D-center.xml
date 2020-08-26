@@ -369,13 +369,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
 
 <!-- PEDESTAL -->
 
-  <instrument include="Instruments/concorde-temperature.xml">
-   <name>OAT/TMO temperatures</name>
-   <x>790</x>
-   <y>690</y>
-   <w>120</w>
-   <h>100</h>
-  </instrument>
+  
 
   <instrument include="Instruments/concorde-controls.xml">
    <name>Control Position Indicators</name>

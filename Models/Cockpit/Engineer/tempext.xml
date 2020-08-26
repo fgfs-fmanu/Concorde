@@ -1,0 +1,534 @@
+<?xml version="1.0"?>
+<PropertyList>
+  <path>../Models/tempext.ac</path>
+   <params>
+  <failure-flag>/instrumentation/temperature[0]/failure-flag</failure-flag>
+  <isa-failure-flag>/instrumentation/temperature[0]/isa-failure-flag</isa-failure-flag>
+  <tmo-sel>/instrumentation/temperature[0]/indicated-tmo-degc</tmo-sel>
+  <static-sel>/instrumentation/temperature[0]/indicated-static-degc</static-sel>
+  <isa-sel>/instrumentation/temperature[0]/isa-degc</isa-sel>
+ </params>
+
+<effect>
+    <inherits-from>Aircraft/Concorde/Models/Effects/interior</inherits-from>
+    <object-name>Frame</object-name>
+    <object-name>Gauge</object-name>
+    <object-name>NumISA1</object-name>
+    <object-name>NumISA2</object-name>
+    <object-name>NumISA3</object-name>
+    <object-name>NumSTAT1</object-name>
+    <object-name>NumSTAT2</object-name>
+    <object-name>NumSTAT3</object-name>
+    <object-name>NumTOT1</object-name>
+    <object-name>NumTOT2</object-name>
+    <object-name>NumTOT3</object-name>
+    <object-name>Text</object-name>
+
+</effect>
+
+<effect>
+    <inherits-from>Aircraft/Concorde/Models/Effects/flash</inherits-from>
+    <object-name>NumISA1</object-name>
+    <object-name>NumISA2</object-name>
+    <object-name>NumISA3</object-name>
+    <object-name>NumSTAT1</object-name>
+    <object-name>NumSTAT2</object-name>
+    <object-name>NumSTAT3</object-name>
+    <object-name>NumTOT1</object-name>
+    <object-name>NumTOT2</object-name>
+    <object-name>NumTOT3</object-name>
+    <object-name>Text</object-name>
+
+</effect>
+
+
+  
+
+ 
+  <!--Numbers-->
+  
+  <animation>
+    <condition>
+    <not>
+     <property alias="/params/failure-flag"/>
+    </not>
+   </condition>
+
+
+    <type>rotate</type>
+    <object-name>NumTOT1</object-name>
+    <expression>
+      <prod>
+        <sum>
+          <floor>
+            <div>
+              <property alias="/params/tmo-sel"/>
+              <value>100</value>
+            </div>
+          </floor>
+          <max>
+            <difference>
+              <property alias="/params/tmo-sel"/>
+              <value>99</value>
+              <prod>
+                <floor>
+                  <div>
+              <property alias="/params/tmo-sel"/>
+                      
+                    <value>100</value>
+                  </div>
+                </floor>
+                <value>100</value>
+              </prod>
+            </difference>
+            <value>0</value>
+          </max>
+        </sum>
+        <value>36</value>
+      </prod>
+    </expression>
+    <center>
+      <x-m>-0.00390</x-m>
+      <y-m>0.0000</y-m>
+      <z-m>0.02959</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+  <animation>
+     <condition>
+    <not>
+     <property alias="/params/failure-flag"/>
+    </not>
+   </condition>
+    
+    
+    
+     <type>rotate</type>
+    <object-name>NumTOT2</object-name>
+    <expression>
+      <prod>
+        <sum>
+          <floor>
+            <div>
+              <abs>
+              <property alias="/params/tmo-sel"/>
+              </abs>
+              <value>10</value>
+            </div>
+          </floor>
+          <max>
+            <difference>
+              <abs>
+              <property alias="/params/tmo-sel"/>
+              </abs>
+              <value>9</value>
+              <prod>
+                <floor>
+                  <div>
+                        <abs>
+              <property alias="/params/tmo-sel"/>
+              </abs>
+                    <value>10</value>
+                  </div>
+                </floor>
+                <value>10</value>
+              </prod>
+            </difference>
+            <value>0</value>
+          </max>
+        </sum>
+        <value>36</value>
+      </prod>
+    </expression>
+   <center>
+      <x-m>-0.00390</x-m>
+      <y-m>0.0000</y-m>
+      <z-m>0.02959</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+  <animation>
+    <condition>
+    <not>
+     <property alias="/params/failure-flag"/>
+    </not>
+   </condition>
+
+
+    <type>rotate</type>
+    <object-name>NumTOT3</object-name>
+    <expression>
+    <prod>
+          <abs>
+              <property alias="/params/tmo-sel"/>
+              </abs>
+      <value>36</value>
+      </prod>
+    </expression>
+    <center>
+      <x-m>-0.00390</x-m>
+      <y-m>0.0000</y-m>
+      <z-m>0.02959</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+   <animation>
+     <condition>
+    <not>
+     <property alias="/params/failure-flag"/>
+    </not>
+   </condition>
+
+
+    <type>rotate</type>
+    <object-name>NumSTAT1</object-name>
+    <expression>
+      <prod>
+        <sum>
+          <floor>
+            <div>
+              <property alias="/params/static-sel"/>
+              <value>100</value>
+            </div>
+          </floor>
+          <max>
+            <difference>
+              <property alias="/params/static-sel"/>
+              <value>99</value>
+              <prod>
+                <floor>
+                  <div>
+              <property alias="/params/static-sel"/>
+                    <value>100</value>
+                  </div>
+                </floor>
+                <value>100</value>
+              </prod>
+            </difference>
+            <value>0</value>
+          </max>
+        </sum>
+        <value>36</value>
+      </prod>
+    </expression>
+     <center>
+      <x-m>-0.00390</x-m>
+      <y-m>0.0000</y-m>
+      <z-m>0.00087</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+  <animation>
+     <condition>
+    <not>
+     <property alias="/params/failure-flag"/>
+    </not>
+   </condition>
+    
+    
+    
+     <type>rotate</type>
+    <object-name>NumSTAT2</object-name>
+    <expression>
+      <prod>
+        <sum>
+          <floor>
+            <div>
+              <abs>
+              <property alias="/params/static-sel"/>
+              </abs>
+              <value>10</value>
+            </div>
+          </floor>
+          <max>
+            <difference>
+              <abs>
+              <property alias="/params/static-sel"/>
+              </abs>
+              <value>9</value>
+              <prod>
+                <floor>
+                  <div>
+                        <abs>
+              <property alias="/params/static-sel"/>
+              </abs>
+                    <value>10</value>
+                  </div>
+                </floor>
+                <value>10</value>
+              </prod>
+            </difference>
+            <value>0</value>
+          </max>
+        </sum>
+        <value>36</value>
+      </prod>
+    </expression>
+     <center>
+      <x-m>-0.00390</x-m>
+      <y-m>0.0000</y-m>
+      <z-m>0.00087</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+  <animation>
+     <condition>
+    <not>
+     <property alias="/params/failure-flag"/>
+    </not>
+   </condition>
+
+
+    <type>rotate</type>
+    <object-name>NumSTAT3</object-name>
+    <expression>
+    <prod>
+          <abs>
+              <property alias="/params/static-sel"/>
+              </abs>
+      <value>36</value>
+      </prod>
+    </expression>
+    <center>
+      <x-m>-0.00390</x-m>
+      <y-m>0.0000</y-m>
+      <z-m>0.00087</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <animation>
+     <condition>
+    <not>
+     <property alias="/params/isa-failure-flag"/>
+    </not>
+   </condition>
+
+
+    <type>rotate</type>
+    <object-name>NumISA1</object-name>
+    <expression>
+      <prod>
+        <sum>
+          <floor>
+            <div>
+              <property alias="/params/isa-sel"/>
+              <value>100</value>
+            </div>
+          </floor>
+          <max>
+            <difference>
+              <property alias="/params/isa-sel"/>
+              <value>99</value>
+              <prod>
+                <floor>
+                  <div>
+              <property alias="/params/isa-sel"/>
+                    <value>100</value>
+                  </div>
+                </floor>
+                <value>100</value>
+              </prod>
+            </difference>
+            <value>0</value>
+          </max>
+        </sum>
+        <value>36</value>
+      </prod>
+    </expression>
+    <center>
+      <x-m>-0.00390</x-m>
+      <y-m>0.0000</y-m>
+      <z-m>-0.02735</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+  <animation>
+    <condition>
+    <not>
+     <property alias="/params/isa-failure-flag"/>
+    </not>
+   </condition>
+    
+    
+    
+     <type>rotate</type>
+    <object-name>NumISA2</object-name>
+    <expression>
+      <prod>
+        <sum>
+          <floor>
+            <div>
+              <abs>
+              <property alias="/params/isa-sel"/>
+              </abs>
+              <value>10</value>
+            </div>
+          </floor>
+          <max>
+            <difference>
+              <abs>
+              <property alias="/params/isa-sel"/>
+              </abs>
+              <value>9</value>
+              <prod>
+                <floor>
+                  <div>
+                        <abs>
+              <property alias="/params/isa-sel"/>
+              </abs>
+                    <value>10</value>
+                  </div>
+                </floor>
+                <value>10</value>
+              </prod>
+            </difference>
+            <value>0</value>
+          </max>
+        </sum>
+        <value>36</value>
+      </prod>
+    </expression>
+    <center>
+      <x-m>-0.00390</x-m>
+      <y-m>0.0000</y-m>
+      <z-m>-0.02735</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+  <animation>
+     <condition>
+    <not>
+     <property alias="/params/isa-failure-flag"/>
+    </not>
+   </condition>
+
+
+    <type>rotate</type>
+    <object-name>NumISA3</object-name>
+    <expression>
+    <prod>
+          <abs>
+              <property alias="/params/isa-sel"/>
+              </abs>
+      <value>36</value>
+      </prod>
+    </expression>
+    <center>
+      <x-m>-0.00390</x-m>
+      <y-m>0.0000</y-m>
+      <z-m>-0.02735</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <!--Default Lighting-->
+  <animation>
+    <type>material</type>
+    <object-name>NumISA1</object-name>
+    <object-name>NumISA2</object-name>
+    <object-name>NumISA3</object-name>
+    <object-name>NumSTAT1</object-name>
+    <object-name>NumSTAT2</object-name>
+    <object-name>NumSTAT3</object-name>
+    <object-name>NumTOT1</object-name>
+    <object-name>NumTOT2</object-name>
+    <object-name>NumTOT3</object-name>
+    <object-name>Text</object-name>
+
+  <condition>
+  <and>
+    <property>controls/lighting/instrument-lights</property>
+        <greater-than>
+          <property>/systems/electrical/outputs/specific</property>
+          <value>20.0</value>
+        </greater-than>
+  </and>
+  </condition>
+  <emission>
+   <red>0.7</red>
+   <green>0.2</green>
+   <blue>0.2</blue>
+   <factor-prop>/controls/lighting/instruments-norm</factor-prop>
+  </emission>
+  </animation>
+  <animation>
+    <type>material</type>
+    <object-name>Frame</object-name>
+  <emission>
+     <red>0.2</red>
+     <green>0.2</green>
+     <blue>0.2</blue>
+  </emission>
+ </animation>
+
+</PropertyList>

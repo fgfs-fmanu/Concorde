@@ -183,6 +183,9 @@
       <pitch-deg>-10</pitch-deg>
     </offsets>
   </model>
+  
+  
+  
 
 
     <model>
@@ -1798,6 +1801,8 @@
     <z-m> 0.27484</z-m>
    </offsets>
   </model>
+  
+  
 
 
 <!-- ENGINEER -->
@@ -6477,6 +6482,18 @@
   </model>
 
 
+<model>
+    <name>Exterior Temperature Engineer</name>
+    <path>Aircraft/Concorde/Models/Cockpit/Engineer/tempext.xml</path>
+    <offsets>
+      <x-m>-21.419</x-m>
+      <y-m>0.508</y-m>
+      <z-m>0.928</z-m>
+      
+      <heading-deg>-79</heading-deg>
+    </offsets>
+  </model>
+
 <!-- ======== -->
 <!-- Air Bleed-->
 <!-- ======== -->
@@ -10844,6 +10861,29 @@
      <isa-sel>/instrumentation/temperature[1]/isa-degc</isa-sel>
     </params>
    </overlay>
+  </model>
+  
+  <model>
+    <name>Exterior Temperature Captain</name>
+    <path>Aircraft/Concorde/Models/Cockpit/Engineer/tempext.xml</path>
+    <offsets>
+      <x-m>-23.563</x-m>
+      <y-m>-0.155</y-m>
+      <z-m>0.832</z-m>
+      <pitch-deg>-90</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  <model>
+    <name>Exterior Temperature Copilot</name>
+    <path>Aircraft/Concorde/Models/Cockpit/Engineer/tempext.xml</path>
+    <offsets>
+      <x-m>-23.563</x-m>
+      <y-m>0.155</y-m>
+      <z-m>0.832</z-m>
+      <pitch-deg>-90</pitch-deg>
+    </offsets>
   </model>
 
   <model>
