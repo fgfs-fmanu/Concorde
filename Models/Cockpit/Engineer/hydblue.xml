@@ -1,0 +1,99 @@
+<?xml version="1.0"?>
+<PropertyList>
+  <path>../Models/hydblue.ac</path>
+  <params>
+  <level-gal_us>/systems/hydraulic/sensors/blue-gal_us</level-gal_us>
+ </params>
+
+<effect>
+    <inherits-from>Aircraft/Concorde/Models/Effects/interior</inherits-from>
+    <object-name>Frame</object-name>
+
+</effect>
+
+<effect>
+    <inherits-from>Aircraft/Concorde/Models/Effects/flash</inherits-from>
+    <object-name>Frame</object-name>
+    <object-name>Guage</object-name>
+    <object-name>Needle</object-name>    
+    <object-name>Cylinder</object-name>
+
+</effect>
+
+
+  <animation>
+    <type>select</type>
+    <object-name>FF</object-name>
+    <condition>
+        <less-than>
+          <property>/systems/electrical/outputs/specific</property>
+          <value>20.0</value>
+        </less-than>
+    </condition>    
+  </animation>
+
+  <animation>
+    <condition><not>
+        <less-than>
+          <property>/systems/electrical/outputs/specific</property>
+          <value>20.0</value>
+        </less-than>
+    </not></condition>
+
+    <type>rotate</type>
+    <object-name>Needle</object-name>
+    <expression>
+      <product>
+      <property alias="/params/level-gal_us"/>
+        <value>30</value>
+      </product>
+    </expression>
+    <center>
+      <x-m>0</x-m>
+      <y-m>0</y-m>
+      <z-m>0</z-m>
+    </center>
+    <axis>
+      <x>-1</x>
+      <y>0</y>
+      <z>0</z>
+    </axis>
+  </animation>
+  <!--Numbers-->
+ 
+
+   
+  <!--Default Lighting-->
+  <animation>
+    <type>material</type>
+    <object-name>Guage</object-name>
+    <object-name>Needle</object-name>
+    <object-name>Cylinder</object-name>
+
+  <condition>
+  <and>
+    <property>controls/lighting/instrument-lights</property>
+        <greater-than>
+          <property>/systems/electrical/outputs/specific</property>
+          <value>20.0</value>
+        </greater-than>
+  </and>
+  </condition>
+  <emission>
+   <red>0.7</red>
+   <green>0.2</green>
+   <blue>0.2</blue>
+   <factor-prop>/controls/lighting/instruments-norm</factor-prop>
+  </emission>
+  </animation>
+  <animation>
+    <type>material</type>
+    <object-name>Guage</object-name>
+  <emission>
+     <red>0.2</red>
+     <green>0.2</green>
+     <blue>0.2</blue>
+  </emission>
+ </animation>
+
+</PropertyList>

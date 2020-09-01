@@ -5061,7 +5061,7 @@
     </overlay>
     <offsets>
       <x-m>-21.430</x-m>
-      <y-m>0.326</y-m>
+      <y-m>0.324</y-m>
       <z-m>1.778</z-m>
       
       <heading-deg>-99</heading-deg>
@@ -5080,7 +5080,7 @@
     </overlay>
     <offsets>
       <x-m>-21.340</x-m>
-      <y-m>0.310</y-m>
+      <y-m>0.311</y-m>
       <z-m>1.778</z-m>
       
       <heading-deg>-99</heading-deg>
@@ -5090,14 +5090,14 @@
   
   
   <model>
-    <name>Hyd Light Yellow</name>
+    <name>Hyd Light Blue</name>
     <path>Cockpit/Engineer/light-hyd.xml</path>
     <overlay>
    
     </overlay>
     <offsets>
       <x-m>-21.252</x-m>
-      <y-m>0.299</y-m>
+      <y-m>0.300</y-m>
       <z-m>1.778</z-m>
       
       <heading-deg>-99</heading-deg>
@@ -5105,6 +5105,70 @@
     </offsets>
   </model> 
   
+  
+  
+  
+  
+  
+  
+  
+  <model>
+    <name>Hyd Tank Green</name>
+    <path>Cockpit/Engineer/hydgreen.xml</path>
+    <overlay>
+     <params>
+  <level-gal_us>/systems/hydraulic/sensors/green-gal_us</level-gal_us>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.430</x-m>
+      <y-m>0.344</y-m>
+      <z-m>1.738</z-m>
+      
+      <heading-deg>-99</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model> 
+  
+  
+  
+  
+  <model>
+    <name>Hyd Tank Yellow</name>
+    <path>Cockpit/Engineer/hydyellow.xml</path>
+    <overlay>
+     <params>
+  <level-gal_us>/systems/hydraulic/sensors/yellow-gal_us</level-gal_us>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.340</x-m>
+      <y-m>0.332</y-m>
+      <z-m>1.738</z-m>
+      
+      <heading-deg>-99</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model> 
+  
+  
+  <model>
+    <name>Hyd Tank Blue</name>
+    <path>Cockpit/Engineer/hydblue.xml</path>
+    <overlay>
+     <params>
+  <level-gal_us>/systems/hydraulic/sensors/blue-gal_us</level-gal_us>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.252</x-m>
+      <y-m>0.321</y-m>
+      <z-m>1.738</z-m>
+      
+      <heading-deg>-99</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model> 
   
   
   
@@ -6441,7 +6505,21 @@
     </offsets>
   </model>
   
+   <model>
+    <name>MWS Cancel</name>
+    <path>Cockpit/Engineer/mws-cancel.xml</path>
+    <overlay>
   
+    </overlay>
+    <offsets>
+      <x-m>-21.406</x-m>
+      <y-m>0.531</y-m>
+      <z-m>1.015</z-m>
+      
+      <heading-deg>-95</heading-deg>
+     <pitch-deg>-5</pitch-deg>
+    </offsets>
+  </model>
   
   
   
