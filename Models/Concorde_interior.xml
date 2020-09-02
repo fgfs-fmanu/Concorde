@@ -5176,6 +5176,77 @@
   
   
   
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <model>
+    <name>Press Green</name>
+    <path>Cockpit/Engineer/hydpress.xml</path>
+    <overlay>
+     <params>
+  <pressure-psi>/systems/hydraulic/sensors/green</pressure-psi>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.430</x-m>
+      <y-m>0.405</y-m>
+      <z-m>1.605</z-m>
+      
+      <heading-deg>-98</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model> 
+  
+  
+  
+  
+  <model>
+    <name>Press Yellow</name>
+    <path>Cockpit/Engineer/hydpress.xml</path>
+    <overlay>
+     <params>
+  <pressure-psi>/systems/hydraulic/sensors/yellow</pressure-psi>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.340</x-m>
+      <y-m>0.393</y-m>
+      <z-m>1.605</z-m>
+      
+      <heading-deg>-98</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model> 
+  
+  
+  <model>
+    <name>Press Blue</name>
+    <path>Cockpit/Engineer/hydpress.xml</path>
+    <overlay>
+     <params>
+  <pressure-psi>/systems/hydraulic/sensors/blue</pressure-psi>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.252</x-m>
+      <y-m>0.382</y-m>
+      <z-m>1.605</z-m>
+      
+      <heading-deg>-98</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model> 
+  
+  
+  
+  
+  
 
 <model>
     <name>Hyd Green 1 Switch</name>
