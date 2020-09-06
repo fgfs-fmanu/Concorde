@@ -424,7 +424,7 @@ ConstantSpeedDrive.schedule = func {
        # not real
        inletdegc = me.dependency["engine-sys"][i].getChild("csd-inlet-degc").getValue();
        if( csd ) {
-           inletdegc = egtdegc / 3.3;
+           inletdegc = egtdegc / 6;
        }
        # scale until 0 deg C
        else {
@@ -438,7 +438,7 @@ ConstantSpeedDrive.schedule = func {
        # not real
        diffdegc = me.dependency["engine-sys"][i].getChild("csd-diff-degc").getValue();
        if( csd ) {
-           diffdegc = egtdegc / 17.0;
+           diffdegc = egtdegc / 40.0;
        }
        # scale until 0 deg C
        else {

@@ -5569,7 +5569,83 @@
     </offsets>
   </model>
   
+  <model>
+    <name>CSD Oil Elec 1</name>
+    <path>Cockpit/Engineer/csdoilelec.xml</path>
+    <overlay>
+    <params>
+  <inlet-select>/systems/engines/engine[0]/csd-inlet-degc</inlet-select>
+  <diff-select>/systems/engines/engine[0]/csd-diff-degc</diff-select>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.456</x-m>
+      <y-m>0.433</y-m>
+      <z-m>1.55</z-m>
+      
+      <heading-deg>-97</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
   
+  
+  
+  <model>
+    <name>CSD Oil Elec 2</name>
+    <path>Cockpit/Engineer/csdoilelec.xml</path>
+    <overlay>
+    <params>
+  <inlet-select>/systems/engines/engine[1]/csd-inlet-degc</inlet-select>
+  <diff-select>/systems/engines/engine[1]/csd-diff-degc</diff-select>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.393</x-m>
+      <y-m>0.425</y-m>
+      <z-m>1.55</z-m>
+      
+      <heading-deg>-97</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <name>CSD Oil Elec 3</name>
+    <path>Cockpit/Engineer/csdoilelec.xml</path>
+    <overlay>
+    <params>
+  <inlet-select>/systems/engines/engine[2]/csd-inlet-degc</inlet-select>
+  <diff-select>/systems/engines/engine[2]/csd-diff-degc</diff-select>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.333</x-m>
+      <y-m>0.413</y-m>
+      <z-m>1.55</z-m>
+      
+      <heading-deg>-97</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <name>CSD Oil Elec 4</name>
+    <path>Cockpit/Engineer/csdoilelec.xml</path>
+    <overlay>
+    <params>
+  <inlet-select>/systems/engines/engine[3]/csd-inlet-degc</inlet-select>
+  <diff-select>/systems/engines/engine[3]/csd-diff-degc</diff-select>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.268</x-m>
+      <y-m>0.406</y-m>
+      <z-m>1.55</z-m>
+      
+      <heading-deg>-97</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
   
   
   
@@ -5637,6 +5713,10 @@
      <pitch-deg>25</pitch-deg>
     </offsets>
   </model>
+
+
+
+
 
 
 <model>
