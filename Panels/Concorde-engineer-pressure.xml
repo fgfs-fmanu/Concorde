@@ -85,34 +85,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
    <h>85</h>
   </instrument>
 
-  <instrument include="Instruments/concorde-brakes-emerg-accu.xml">
-   <name>Emergency/parking brakes accumulator pressure</name>
-   <condition>
-    <or>
-     <and>
-      <property>/sim/current-view/internal</property>
-      <property>/systems/seat/engineer</property>
-      <less-than>
-       <property>/sim/current-view/goal-heading-offset-deg</property>
-       <value>355</value>
-      </less-than>
-      <greater-than>
-       <property>/sim/current-view/goal-heading-offset-deg</property>
-       <value>295</value>
-      </greater-than>
-      <greater-than>
-       <property>/sim/current-view/goal-pitch-offset-deg</property>
-       <value>-25</value>
-      </greater-than>
-     </and>
-     <property>/controls/seat/all</property>
-    </or>
-   </condition>
-   <x>15</x>
-   <y>285</y>
-   <w>70</w>
-   <h>70</h>
-  </instrument>
+  
 
 <!-- BRAKES TEMPERATURE -->
 
