@@ -1,0 +1,124 @@
+<?xml version="1.0"?>
+<PropertyList>
+  <path>../Models/clock_engineer.ac</path>
+
+ 
+
+<effect>
+    <inherits-from>Aircraft/Concorde/Models/Effects/interior</inherits-from>
+    <object-name>Frame</object-name>
+    <object-name>AlarmOn</object-name>
+    <object-name>AlarmOff</object-name>
+</effect>
+
+<effect>
+    <inherits-from>Aircraft/Concorde/Models/Effects/flash</inherits-from>
+  
+</effect>
+
+
+<animation>
+    <type>select</type>
+    <object-name>FF</object-name>
+    <condition>
+      <or>
+	<not><property>/instrumentation/clock/serviceable</property></not>
+        <less-than>
+          <property>/systems/electrical/outputs/specific</property>
+          <value>20.0</value>
+        </less-than>
+      </or>
+    </condition>    
+  </animation>
+  
+  <animation>
+    <object-name>T1</object-name>
+   <type>textranslate</type>
+    <property>/instrumentation/clock/indicated-hour</property>
+    <bias>0.01</bias>
+    <factor>0.01</factor>
+    <step>10</step>
+    <axis>
+      <x>1</x>
+      <y>0</y>
+    </axis>
+  </animation>
+  
+  <animation>
+    <object-name>T2</object-name>
+    <type>textranslate</type>
+    <property>/instrumentation/clock/indicated-hour</property>
+    <bias>0.01</bias>
+    <factor>0.1</factor>
+    <step>1</step>
+    <axis>
+      <x>1</x>
+      <y>0</y>
+    </axis>
+  </animation>
+  
+  <animation>
+    <object-name>T3</object-name>
+    <type>textranslate</type>
+    <property>/instrumentation/clock/indicated-min</property>
+    <bias>0.01</bias>
+    <factor>0.01</factor>
+    <step>10</step>
+    <axis>
+      <x>1</x>
+      <y>0</y>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>textranslate</type>
+    <object-name>T4</object-name>
+    <property>/instrumentation/clock/indicated-min</property>
+    <bias>0.01</bias>
+    <factor>0.1</factor>
+    <step>1</step>
+    <axis>
+      <x>1</x>
+      <y>0</y>
+    </axis>
+  </animation>
+ 
+  
+  <animation>
+    <type>material</type>
+    <object-name>T1</object-name>
+    <object-name>T2</object-name>
+    <object-name>T3</object-name>
+    <object-name>T4</object-name>
+    <object-name>C1</object-name>
+    <object-name>C2</object-name>
+    <object-name>C3</object-name>
+    <object-name>C4</object-name>
+  <condition>
+  <and>
+    <property>controls/lighting/instrument-lights</property>
+        <greater-than>
+          <property>/systems/electrical/outputs/specific</property>
+          <value>20.0</value>
+        </greater-than>
+  </and>
+  </condition>
+  <emission>
+   <red>0.7</red>
+   <green>0.2</green>
+   <blue>0.2</blue>
+   <factor-prop>/controls/lighting/instruments-norm</factor-prop>
+  </emission>
+  </animation>
+  <animation>
+    <type>material</type>
+    <object-name>Cube</object-name>
+    <object-name>Cylinder</object-name>
+    <object-name>stdbsw</object-name>
+  <emission>
+     <red>0.2</red>
+     <green>0.2</green>
+     <blue>0.2</blue>
+  </emission>
+ </animation>
+</PropertyList>

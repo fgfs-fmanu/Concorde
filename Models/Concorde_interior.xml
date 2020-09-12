@@ -198,6 +198,8 @@
       <pitch-deg>-10</pitch-deg>
     </offsets>
   </model>
+  
+  
 
 
   <model>
@@ -4594,7 +4596,7 @@
  </params>
     </overlay>
    <offsets>
-      <x-m>-21.559</x-m>
+      <x-m>-21.565</x-m>
       <y-m>0.484</y-m>
       <z-m>1.448</z-m>
       
@@ -9239,6 +9241,20 @@
       
       <heading-deg>-85</heading-deg>
      <pitch-deg>0</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  <model>
+    <name> Clock Engineer</name>
+    <path>Aircraft/Concorde/Models/Cockpit/Engineer/clock_engineer.xml</path>
+    <offsets>
+      <x-m>-22.396</x-m>
+      <y-m>0.417</y-m>
+      <z-m>1.533</z-m>
+      
+      <heading-deg>-85</heading-deg>
+     <pitch-deg>24</pitch-deg>
     </offsets>
   </model>
   
