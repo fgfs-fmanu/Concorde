@@ -1,0 +1,501 @@
+AC3Db
+MATERIAL "Material.001" rgb 0.640 0.640 0.640  amb 1.000 1.000 1.000  emis 0.000 0.000 0.000  spec 0.500 0.500 0.500  shi 12 trans 0.000
+MATERIAL "Material.002" rgb 0.640 0.640 0.640  amb 1.000 1.000 1.000  emis 0.000 0.000 0.000  spec 0.500 0.500 0.500  shi 12 trans 0.000
+MATERIAL "Material.003" rgb 0.640 0.640 0.640  amb 1.000 1.000 1.000  emis 0.000 0.000 0.000  spec 0.500 0.500 0.500  shi 12 trans 0.000
+MATERIAL "Material.004" rgb 0.640 0.640 0.640  amb 1.000 1.000 1.000  emis 0.000 0.000 0.000  spec 0.500 0.500 0.500  shi 12 trans 0.000
+MATERIAL "Material.005" rgb 0.640 0.640 0.640  amb 1.000 1.000 1.000  emis 0.000 0.000 0.000  spec 0.500 0.500 0.500  shi 12 trans 0.000
+MATERIAL "Frame" rgb 0.000 0.000 0.000  amb 0.000 0.000 0.000  emis 0.000 0.000 0.000  spec 0.300 0.300 0.300  shi 128 trans 0.000
+MATERIAL "Material.006" rgb 0.640 0.640 0.640  amb 1.000 1.000 1.000  emis 0.000 0.000 0.000  spec 0.500 0.500 0.500  shi 12 trans 0.000
+MATERIAL "Material.007" rgb 0.640 0.640 0.640  amb 1.000 1.000 1.000  emis 0.000 0.000 0.000  spec 0.500 0.500 0.500  shi 12 trans 0.000
+MATERIAL "Material.008" rgb 0.640 0.640 0.640  amb 1.000 1.000 1.000  emis 0.000 0.000 0.000  spec 0.500 0.500 0.500  shi 12 trans 0.000
+MATERIAL "Material.009" rgb 0.640 0.640 0.640  amb 1.000 1.000 1.000  emis 0.000 0.000 0.000  spec 0.500 0.500 0.500  shi 12 trans 0.000
+MATERIAL "Material.010" rgb 0.640 0.640 0.640  amb 1.000 1.000 1.000  emis 0.000 0.000 0.000  spec 0.500 0.500 0.500  shi 12 trans 0.000
+MATERIAL "Material.011" rgb 0.640 0.640 0.640  amb 1.000 1.000 1.000  emis 0.000 0.000 0.000  spec 0.500 0.500 0.500  shi 12 trans 0.000
+MATERIAL "Material.012" rgb 0.640 0.640 0.640  amb 1.000 1.000 1.000  emis 0.000 0.000 0.000  spec 0.500 0.500 0.500  shi 12 trans 0.000
+MATERIAL "Material.013" rgb 0.640 0.640 0.640  amb 1.000 1.000 1.000  emis 0.000 0.000 0.000  spec 0.500 0.500 0.500  shi 12 trans 0.000
+MATERIAL "Material.014" rgb 0.640 0.640 0.640  amb 1.000 1.000 1.000  emis 0.000 0.000 0.000  spec 0.500 0.500 0.500  shi 12 trans 0.000
+MATERIAL "Material.015" rgb 0.640 0.640 0.640  amb 1.000 1.000 1.000  emis 0.000 0.000 0.000  spec 0.500 0.500 0.500  shi 12 trans 0.000
+MATERIAL "Material.016" rgb 0.640 0.640 0.640  amb 1.000 1.000 1.000  emis 0.000 0.000 0.000  spec 0.500 0.500 0.500  shi 12 trans 0.000
+MATERIAL "Material.017" rgb 0.640 0.640 0.640  amb 1.000 1.000 1.000  emis 0.000 0.000 0.000  spec 0.500 0.500 0.500  shi 12 trans 0.000
+MATERIAL "Material.018" rgb 0.640 0.640 0.640  amb 1.000 1.000 1.000  emis 0.000 0.000 0.000  spec 0.500 0.500 0.500  shi 12 trans 0.000
+MATERIAL "Material.019" rgb 0.640 0.640 0.640  amb 1.000 1.000 1.000  emis 0.000 0.000 0.000  spec 0.500 0.500 0.500  shi 12 trans 0.000
+OBJECT world
+name "Blender_exporter_v2.26__mi.ac"
+kids 20
+OBJECT poly
+name "Aft"
+data 9
+Plane.035
+crease 40.0
+texture "concorde-white-aft.png"
+texrep 1 1
+numvert 4
+0.00361 -0.00281 0.00597
+0.00361 -0.0028 -0.00597
+0.00361 0.00879 0.00597
+0.00361 0.00879 -0.00597
+numsurf 1
+SURF 0X0
+mat 0
+refs 4
+0 0 0
+1 1 0
+3 1 1
+2 0 1
+kids 0
+OBJECT poly
+name "Black"
+data 9
+Plane.026
+crease 40.0
+texture "concorde-black-bg.png"
+texrep 1 1
+numvert 4
+0.00361 -0.00281 0.00597
+0.00361 -0.0028 -0.00597
+0.00361 0.00879 0.00597
+0.00361 0.00879 -0.00597
+numsurf 1
+SURF 0X0
+mat 1
+refs 4
+0 0 0
+1 1 0
+3 1 1
+2 0 1
+kids 0
+OBJECT poly
+name "BR"
+data 5
+Plane
+crease 40.0
+texture "concorde-bar-bottom-right-bg.png"
+texrep 1 1
+numvert 4
+0.00361 -0.00281 0.00597
+0.00361 -0.0028 -0.00597
+0.00361 0.00879 0.00597
+0.00361 0.00879 -0.00597
+numsurf 1
+SURF 0X0
+mat 2
+refs 4
+0 0 0
+1 1 0
+3 1 1
+2 0 1
+kids 0
+OBJECT poly
+name "Down"
+data 9
+Plane.027
+crease 40.0
+texture "concorde-black-down.png"
+texrep 1 1
+numvert 4
+0.00361 -0.00281 0.00597
+0.00361 -0.0028 -0.00597
+0.00361 0.00879 0.00597
+0.00361 0.00879 -0.00597
+numsurf 1
+SURF 0X0
+mat 3
+refs 4
+0 0 0
+1 1 0
+3 1 1
+2 0 1
+kids 0
+OBJECT poly
+name "Five"
+data 9
+Plane.025
+crease 40.0
+texture "concorde-black-5-deg.png"
+texrep 1 1
+numvert 4
+0.00361 -0.00281 0.00597
+0.00361 -0.0028 -0.00597
+0.00361 0.00879 0.00597
+0.00361 0.00879 -0.00597
+numsurf 1
+SURF 0X0
+mat 4
+refs 4
+0 0 0
+1 1 0
+3 1 1
+2 0 1
+kids 0
+OBJECT poly
+name "Frame"
+data 5
+Frame
+crease 40.0
+texture "flaps.png"
+texrep 1 1
+numvert 12
+-0.00521 -0.00319 0.00659
+-0.00521 -0.00319 -0.00659
+-0.00521 0.00937 -0.00659
+-0.00521 0.00937 0.00659
+0.00372 -0.00321 0.00659
+0.00372 -0.0032 -0.00659
+0.00372 0.00937 -0.00659
+0.00372 0.00937 0.00659
+0.00372 -0.00231 0.00582
+0.00372 -0.00231 -0.00582
+0.00372 0.00849 -0.00582
+0.00372 0.00848 0.00582
+numsurf 8
+SURF 0X20
+mat 5
+refs 4
+0 0.734494 0.913333
+4 0.714302 0.90399
+5 0.714302 0.735813
+1 0.734494 0.72647
+SURF 0X20
+mat 5
+refs 4
+3 0.756242 0.858832
+0 0.756242 0.72647
+4 0.77799 0.733088
+7 0.77799 0.852213
+SURF 0X20
+mat 5
+refs 4
+5 0.756242 0.852213
+1 0.734494 0.858832
+2 0.734494 0.72647
+6 0.756242 0.733088
+SURF 0X20
+mat 5
+refs 4
+6 0.694109 0.735813
+2 0.714302 0.72647
+3 0.714302 0.913333
+7 0.694109 0.90399
+SURF 0X20
+mat 5
+refs 4
+7 0.59293 0.972466
+11 0.607798 0.96446
+10 0.607797 0.683977
+6 0.59293 0.675972
+SURF 0X20
+mat 5
+refs 4
+7 0.59293 0.972466
+4 0.802944 0.972465
+8 0.788076 0.96446
+11 0.607798 0.96446
+SURF 0X20
+mat 5
+refs 4
+5 0.802944 0.675972
+4 0.802944 0.972465
+8 0.788076 0.96446
+9 0.788076 0.683977
+SURF 0X20
+mat 5
+refs 4
+6 0.59293 0.675972
+10 0.607797 0.683977
+9 0.788076 0.683977
+5 0.802944 0.675972
+kids 0
+OBJECT poly
+name "H"
+data 9
+Plane.021
+crease 40.0
+texture "concorde-bar-horizontal-bg.png"
+texrep 1 1
+numvert 4
+0.00361 -0.00281 0.00597
+0.00361 -0.0028 -0.00597
+0.00361 0.00879 0.00597
+0.00361 0.00879 -0.00597
+numsurf 1
+SURF 0X0
+mat 6
+refs 4
+0 0 0
+1 1 0
+3 1 1
+2 0 1
+kids 0
+OBJECT poly
+name "HB"
+data 9
+Plane.033
+crease 40.0
+texture "concorde-hatched-bg.png"
+texrep 1 1
+numvert 4
+0.00361 -0.00281 0.00597
+0.00361 -0.0028 -0.00597
+0.00361 0.00879 0.00597
+0.00361 0.00879 -0.00597
+numsurf 1
+SURF 0X0
+mat 7
+refs 4
+0 0 0
+1 1 0
+3 1 1
+2 0 1
+kids 0
+OBJECT poly
+name "HY"
+data 9
+Plane.034
+crease 40.0
+texture "concorde-hatched-yellow-bg.png"
+texrep 1 1
+numvert 4
+0.00361 -0.00281 0.00597
+0.00361 -0.0028 -0.00597
+0.00361 0.00879 0.00597
+0.00361 0.00879 -0.00597
+numsurf 1
+SURF 0X0
+mat 8
+refs 4
+0 0 0
+1 1 0
+3 1 1
+2 0 1
+kids 0
+OBJECT poly
+name "Norm"
+data 9
+Plane.028
+crease 40.0
+texture "concorde-black-norm.png"
+texrep 1 1
+numvert 4
+0.00361 -0.00281 0.00597
+0.00361 -0.0028 -0.00597
+0.00361 0.00879 0.00597
+0.00361 0.00879 -0.00597
+numsurf 1
+SURF 0X0
+mat 9
+refs 4
+0 0 0
+1 1 0
+3 1 1
+2 0 1
+kids 0
+OBJECT poly
+name "Off"
+data 9
+Plane.029
+crease 40.0
+texture "concorde-black-off.png"
+texrep 1 1
+numvert 4
+0.00361 -0.00281 0.00597
+0.00361 -0.0028 -0.00597
+0.00361 0.00879 0.00597
+0.00361 0.00879 -0.00597
+numsurf 1
+SURF 0X0
+mat 10
+refs 4
+0 0 0
+1 1 0
+3 1 1
+2 0 1
+kids 0
+OBJECT poly
+name "Open"
+data 9
+Plane.030
+crease 40.0
+texture "concorde-black-open.png"
+texrep 1 1
+numvert 4
+0.00361 -0.00281 0.00597
+0.00361 -0.0028 -0.00597
+0.00361 0.00879 0.00597
+0.00361 0.00879 -0.00597
+numsurf 1
+SURF 0X0
+mat 11
+refs 4
+0 0 0
+1 1 0
+3 1 1
+2 0 1
+kids 0
+OBJECT poly
+name "Shut"
+data 9
+Plane.031
+crease 40.0
+texture "concorde-black-shut.png"
+texrep 1 1
+numvert 4
+0.00361 -0.00281 0.00597
+0.00361 -0.0028 -0.00597
+0.00361 0.00879 0.00597
+0.00361 0.00879 -0.00597
+numsurf 1
+SURF 0X0
+mat 12
+refs 4
+0 0 0
+1 1 0
+3 1 1
+2 0 1
+kids 0
+OBJECT poly
+name "TL"
+data 9
+Plane.022
+crease 40.0
+texture "concorde-bar-top-left-bg.png"
+texrep 1 1
+numvert 4
+0.00361 -0.00281 0.00597
+0.00361 -0.0028 -0.00597
+0.00361 0.00879 0.00597
+0.00361 0.00879 -0.00597
+numsurf 1
+SURF 0X0
+mat 13
+refs 4
+0 0 0
+1 1 0
+3 1 1
+2 0 1
+kids 0
+OBJECT poly
+name "TR"
+data 9
+Plane.023
+crease 40.0
+texture "concorde-bar-top-right-bg.png"
+texrep 1 1
+numvert 4
+0.00361 -0.00281 0.00597
+0.00361 -0.0028 -0.00597
+0.00361 0.00879 0.00597
+0.00361 0.00879 -0.00597
+numsurf 1
+SURF 0X0
+mat 14
+refs 4
+0 0 0
+1 1 0
+3 1 1
+2 0 1
+kids 0
+OBJECT poly
+name "Up"
+data 9
+Plane.032
+crease 40.0
+texture "concorde-black-up.png"
+texrep 1 1
+numvert 4
+0.00361 -0.00281 0.00597
+0.00361 -0.0028 -0.00597
+0.00361 0.00879 0.00597
+0.00361 0.00879 -0.00597
+numsurf 1
+SURF 0X0
+mat 15
+refs 4
+0 0 0
+1 1 0
+3 1 1
+2 0 1
+kids 0
+OBJECT poly
+name "V"
+data 9
+Plane.024
+crease 40.0
+texture "concorde-bar-vertical-bg.png"
+texrep 1 1
+numvert 4
+0.00361 -0.00281 0.00597
+0.00361 -0.0028 -0.00597
+0.00361 0.00879 0.00597
+0.00361 0.00879 -0.00597
+numsurf 1
+SURF 0X0
+mat 16
+refs 4
+0 0 0
+1 1 0
+3 1 1
+2 0 1
+kids 0
+OBJECT poly
+name "WOn"
+data 9
+Plane.036
+crease 40.0
+texture "concorde-white-on.png"
+texrep 1 1
+numvert 4
+0.00361 -0.00281 0.00597
+0.00361 -0.0028 -0.00597
+0.00361 0.00879 0.00597
+0.00361 0.00879 -0.00597
+numsurf 1
+SURF 0X0
+mat 17
+refs 4
+0 0 0
+1 1 0
+3 1 1
+2 0 1
+kids 0
+OBJECT poly
+name "WOpen"
+data 9
+Plane.037
+crease 40.0
+texture "concorde-white-open.png"
+texrep 1 1
+numvert 4
+0.00361 -0.00281 0.00597
+0.00361 -0.0028 -0.00597
+0.00361 0.00879 0.00597
+0.00361 0.00879 -0.00597
+numsurf 1
+SURF 0X0
+mat 18
+refs 4
+0 0 0
+1 1 0
+3 1 1
+2 0 1
+kids 0
+OBJECT poly
+name "WShut"
+data 9
+Plane.038
+crease 40.0
+texture "concorde-white-shut.png"
+texrep 1 1
+numvert 4
+0.00361 -0.00281 0.00597
+0.00361 -0.0028 -0.00597
+0.00361 0.00879 0.00597
+0.00361 0.00879 -0.00597
+numsurf 1
+SURF 0X0
+mat 19
+refs 4
+0 0 0
+1 1 0
+3 1 1
+2 0 1
+kids 0

@@ -1,29 +1,8 @@
 AC3Db
 MATERIAL "Label.003" rgb 1.000 1.000 1.000  amb 1.000 1.000 1.000  emis 0.100 0.100 0.100  spec 0.300 0.300 0.300  shi 32 trans 0.000
 OBJECT world
-name "Blender_exporter_v2.19__nosevisor-status.ac"
-kids 8
-OBJECT poly
-name "NoseLabel"
-data 14
-NoseLabel.mesh
-crease 40.0
-texture "nosevisor-status.png"
-texrep 1 1
-numvert 4
-0.004 -0.0102 0.0162
-0.004 -0.0238 0.0162
-0.004 -0.0238 0.0018
-0.004 -0.0102 0.0018
-numsurf 1
-SURF 0X20
-mat 0
-refs 4
-3 0.328125 1
-0 0 1
-1 0 0.65625
-2 0.328125 0.65625
-kids 0
+name "Blender_exporter_v2.26__nosevisor-status.ac"
+kids 4
 OBJECT poly
 name "NoseLabel2"
 data 15
@@ -44,48 +23,6 @@ refs 4
 0 0.328125 0.328125
 1 0.328125 0
 2 0.65625 0
-kids 0
-OBJECT poly
-name "NoseLabelTransit"
-data 21
-NoseLabelTransit.mesh
-crease 40.0
-texture "nosevisor-status.png"
-texrep 1 1
-numvert 4
-0.0041 -0.0102 0.0162
-0.0041 -0.0238 0.0162
-0.0041 -0.0238 0.0018
-0.0041 -0.0102 0.0018
-numsurf 1
-SURF 0X20
-mat 0
-refs 4
-3 0.65625 0.671875
-0 0.328125 0.671875
-1 0.328125 0.34375
-2 0.65625 0.34375
-kids 0
-OBJECT poly
-name "VisorLabel"
-data 15
-VisorLabel.mesh
-crease 40.0
-texture "nosevisor-status.png"
-texrep 1 1
-numvert 4
-0.004 0.0238 0.0162
-0.004 0.0102 0.0162
-0.004 0.0102 0.0018
-0.004 0.0238 0.0018
-numsurf 1
-SURF 0X20
-mat 0
-refs 4
-3 0.328125 1
-0 0 1
-1 0 0.65625
-2 0.328125 0.65625
 kids 0
 OBJECT poly
 name "VisorLabel2"
@@ -149,25 +86,4 @@ refs 4
 0 0.664062 0.992188
 1 0.664062 0.664062
 2 0.992188 0.664062
-kids 0
-OBJECT poly
-name "VisorLabelTransit"
-data 22
-VisorLabelTransit.mesh
-crease 40.0
-texture "nosevisor-status.png"
-texrep 1 1
-numvert 4
-0.0041 0.0238 0.0162
-0.0041 0.0102 0.0162
-0.0041 0.0102 0.0018
-0.0041 0.0238 0.0018
-numsurf 1
-SURF 0X20
-mat 0
-refs 4
-3 0.65625 0.671875
-0 0.328125 0.671875
-1 0.328125 0.34375
-2 0.65625 0.34375
 kids 0

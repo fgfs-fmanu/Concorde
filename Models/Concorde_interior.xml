@@ -1644,6 +1644,28 @@
       <pitch-deg>-10</pitch-deg>
     </offsets>
   </model>
+  
+  <model>
+    <name>Nose Visor Status 2</name>
+    <path>Aircraft/Concorde/Models/Cockpit/Instruments/visor-mi.xml</path>
+    <offsets>
+      <x-m>-23.829</x-m>
+      <y-m>0.261</y-m>
+      <z-m>1.226</z-m>
+      <pitch-deg>-10</pitch-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <name>Nose Status 2</name>
+    <path>Aircraft/Concorde/Models/Cockpit/Instruments/nose-mi.xml</path>
+    <offsets>
+      <x-m>-23.825</x-m>
+      <y-m>0.261</y-m>
+      <z-m>1.192</z-m>
+      <pitch-deg>-10</pitch-deg>
+    </offsets>
+  </model>
 
   <model>
     <name>AoA Meter</name>
