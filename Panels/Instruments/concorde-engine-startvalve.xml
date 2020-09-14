@@ -17,58 +17,7 @@
 
  <layers>
 
-  <layer>
-   <name>valve</name>
-   <type>switch</type>
-
-   <layer>
-    <name>undefined</name>
-    <condition>
-     <not>
-      <property alias="../../../../../../params/defined-status"/>
-     </not>
-    </condition>
-    <texture>
-     <path>Aircraft/Concorde/Panels/Instruments/Textures/concorde-hatched-bg.png</path>
-    </texture>
-    <w>28</w>
-    <h>28</h>
-   </layer>
-
-   <layer>
-    <name>shut</name>
-    <condition>
-     <or>
-      <not>
-       <property alias="../../../../../../../params/starter"/>
-      </not>
-      <property alias="../../../../../../params/control-cutoff"/>
-     </or>
-    </condition>
-    <texture>
-     <path>Aircraft/Concorde/Panels/Instruments/Textures/concorde-black-shut.png</path>
-     <x1>0.0</x1>
-     <y1>0.0</y1>
-     <x2>1.0</x2>
-     <y2>1.0</y2>
-    </texture>
-    <w>28</w>
-    <h>28</h>
-   </layer>
-
-   <layer>
-    <name>open</name>
-    <texture>
-    <path>Aircraft/Concorde/Panels/Instruments/Textures/concorde-white-open.png</path>
-     <x1>0.0</x1>
-     <y1>0.0</y1>
-     <x2>1.0</x2>
-     <y2>1.0</y2>
-    </texture>
-    <w>28</w>
-    <h>28</h>
-   </layer>
-  </layer>
+  
 
   <layer>
    <name>Title engine number</name>
@@ -147,7 +96,7 @@
    <transformations>
     <transformation>
      <type>x-shift</type>
-     <offset>-2</offset>
+     <offset>7</offset>
     </transformation>
     <transformation>
      <type>y-shift</type>

@@ -7809,6 +7809,97 @@
 <!-- Starter -->
 <!-- ======== -->
 
+<model>
+    <name>Engine Starter Mi 1</name>
+    <path>Cockpit/Engineer/mi-engine-starter.xml</path>
+    <overlay>
+     <params>
+  <starter>/engines/engine[0]/starter</starter>
+  <control-cutoff>/controls/engines/engine[0]/cutoff</control-cutoff>
+  <defined-status>/systems/electrical/power/specific</defined-status>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-22.42</x-m>
+      <y-m>0.507</y-m>
+      <z-m>0.815</z-m>
+      
+      <heading-deg>-85</heading-deg>
+     <pitch-deg>-5</pitch-deg>
+    </offsets>
+  </model>
+
+
+<model>
+    <name>Engine Starter Mi 2</name>
+    <path>Cockpit/Engineer/mi-engine-starter.xml</path>
+    <overlay>
+     <params>
+  <starter>/engines/engine[1]/starter</starter>
+  <control-cutoff>/controls/engines/engine[1]/cutoff</control-cutoff>
+  <defined-status>/systems/electrical/power/specific</defined-status>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-22.38</x-m>
+      <y-m>0.510</y-m>
+      <z-m>0.815</z-m>
+      
+      <heading-deg>-85</heading-deg>
+     <pitch-deg>-5</pitch-deg>
+    </offsets>
+  </model>
+
+
+<model>
+    <name>Engine Starter Mi 3</name>
+    <path>Cockpit/Engineer/mi-engine-starter.xml</path>
+    <overlay>
+     <params>
+  <starter>/engines/engine[2]/starter</starter>
+  <control-cutoff>/controls/engines/engine[2]/cutoff</control-cutoff>
+  <defined-status>/systems/electrical/power/specific</defined-status>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-22.35</x-m>
+      <y-m>0.513</y-m>
+      <z-m>0.815</z-m>
+      
+      <heading-deg>-85</heading-deg>
+     <pitch-deg>-5</pitch-deg>
+    </offsets>
+  </model>
+
+
+<model>
+    <name>Engine Starter Mi 4</name>
+    <path>Cockpit/Engineer/mi-engine-starter.xml</path>
+    <overlay>
+      <params>
+  <starter>/engines/engine[3]/starter</starter>
+  <control-cutoff>/controls/engines/engine[3]/cutoff</control-cutoff>
+  <defined-status>/systems/electrical/power/specific</defined-status>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-22.315</x-m>
+      <y-m>0.516</y-m>
+      <z-m>0.815</z-m>
+      
+      <heading-deg>-85</heading-deg>
+     <pitch-deg>-5</pitch-deg>
+    </offsets>
+  </model>
+
+
+
+
+
+
+
+
+
 
 <model>
     <name>Engine Starter 1</name>
