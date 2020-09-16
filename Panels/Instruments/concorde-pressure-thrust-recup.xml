@@ -11,74 +11,7 @@
 
  <layers>
 
-  <layer>
-   <name>valve</name>
-   <type>switch</type>
-
-   <layer>
-    <name>close</name>
-    <condition>
-     <and>
-      <not>
-       <property>/systems/pressurization/valve/thrust</property>
-      </not>
-      <not>
-       <property>/systems/pressurization/valve/thrust-recuperator</property>
-      </not>
-      <property>/systems/electrical/power/specific</property>
-     </and>
-    </condition>
-    <texture>
-     <path>Aircraft/Concorde/Panels/Instruments/Textures/concorde-black-off.png</path>
-     <x1>0.0</x1>
-     <y1>0.0</y1>
-     <x2>1.0</x2>
-     <y2>1.0</y2>
-    </texture>
-    <w>28</w>
-    <h>28</h>
-   </layer>
-
-   <layer>
-    <name>open</name>
-    <condition>
-     <and>
-      <property>/systems/pressurization/valve/thrust</property>
-      <property>/systems/pressurization/valve/thrust-recuperator</property>
-      <property>/systems/electrical/power/specific</property>
-     </and>
-    </condition>
-    <texture>
-     <path>Aircraft/Concorde/Panels/Instruments/Textures/concorde-white-on.png</path>
-     <x1>0.0</x1>
-     <y1>0.0</y1>
-     <x2>1.0</x2>
-     <y2>1.0</y2>
-    </texture>
-    <w>28</w>
-    <h>28</h>
-   </layer>
-
-   <layer>
-    <name>undefined</name>
-    <texture>
-     <path>Aircraft/Concorde/Panels/Instruments/Textures/concorde-hatched-bg.png</path>
-     <x1>0.0</x1>
-     <y1>0.0</y1>
-     <x2>1.0</x2>
-     <y2>1.0</y2>
-    </texture>
-    <w>28</w>
-    <h>28</h>
-   </layer>
-
-   <transformations>
-    <transformation>
-     <type>x-shift</type>
-     <offset>-10</offset>
-    </transformation>
-   </transformations>
-  </layer>
+  
 
   <layer>
    <name>Title</name>

@@ -11,53 +11,7 @@
 
  <layers>
 
-  <layer>
-   <name>vents</name>
-   <type>switch</type>
-
-   <layer>
-    <name>undefined</name>
-    <condition>
-     <not>
-      <property>/systems/electrical/power/specific</property>
-     </not>
-    </condition>
-    <texture>
-     <path>Aircraft/Concorde/Panels/Instruments/Textures/concorde-hatched-bg.png</path>
-    </texture>
-    <w>28</w>
-    <h>28</h>
-   </layer>
-
-   <layer>
-    <name>open</name>
-    <condition>
-     <property>/systems/pressurization/valve/air-vents</property>
-    </condition>
-    <texture>
-     <path>Aircraft/Concorde/Panels/Instruments/Textures/concorde-white-open.png</path>
-     <x1>0.0</x1>
-     <y1>0.0</y1>
-     <x2>1.0</x2>
-     <y2>1.0</y2>
-    </texture>
-    <w>28</w>
-    <h>28</h>
-   </layer>
-
-   <layer>
-    <name>shut</name>
-    <texture>
-     <path>Aircraft/Concorde/Panels/Instruments/Textures/concorde-black-shut.png</path>
-     <x1>0.0</x1>
-     <y1>0.0</y1>
-     <x2>1.0</x2>
-     <y2>1.0</y2>
-    </texture>
-    <w>28</w>
-    <h>28</h>
-   </layer>
-  </layer>
+  
 
   <layer>
    <name>Title</name>
