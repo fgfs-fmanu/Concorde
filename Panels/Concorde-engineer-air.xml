@@ -468,69 +468,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
 
 <!-- CROSS BLEED -->
 
-  <instrument include="Instruments/concorde-connection.xml">
-   <name>Cross bleed valve 1</name>
-   <condition>
-    <or>
-     <and>
-      <property>/sim/current-view/internal</property>
-      <property>/systems/seat/engineer</property>
-      <less-than>
-       <property>/sim/current-view/goal-heading-offset-deg</property>
-       <value>330</value>
-      </less-than>
-      <greater-than>
-       <property>/sim/current-view/goal-heading-offset-deg</property>
-       <value>260</value>
-      </greater-than>
-      <greater-than>
-       <property>/sim/current-view/goal-pitch-offset-deg</property>
-       <value>0</value>
-      </greater-than>
-     </and>
-     <property>/controls/seat/all</property>
-    </or>
-   </condition>
-   <params>
-    <connect-status>/controls/pneumatic/engine[0]/cross-bleed-valve</connect-status>
-   </params>
-   <x>25</x>
-   <y>325</y>
-   <w>15</w>
-   <h>15</h>
-  </instrument>
-
-  <instrument include="Instruments/concorde-connection.xml">
-   <name>Cross bleed valve 2</name>
-   <condition>
-    <or>
-     <and>
-      <property>/sim/current-view/internal</property>
-      <property>/systems/seat/engineer</property>
-      <less-than>
-       <property>/sim/current-view/goal-heading-offset-deg</property>
-       <value>325</value>
-      </less-than>
-      <greater-than>
-       <property>/sim/current-view/goal-heading-offset-deg</property>
-       <value>255</value>
-      </greater-than>
-      <greater-than>
-       <property>/sim/current-view/goal-pitch-offset-deg</property>
-       <value>0</value>
-      </greater-than>
-     </and>
-     <property>/controls/seat/all</property>
-    </or>
-   </condition>
-   <params>
-    <connect-status>/controls/pneumatic/engine[1]/cross-bleed-valve</connect-status>
-   </params>
-   <x>55</x>
-   <y>325</y>
-   <w>15</w>
-   <h>15</h>
-  </instrument>
+  
 
   <instrument include="Instruments/concorde-title-air-cross-bleed.xml">
    <name>Cross bleed</name>
@@ -594,69 +532,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
    <h>45</h>
   </instrument>
 
-  <instrument include="Instruments/concorde-connection.xml">
-   <name>Cross bleed valve 3</name>
-   <condition>
-    <or>
-     <and>
-      <property>/sim/current-view/internal</property>
-      <property>/systems/seat/engineer</property>
-      <less-than>
-       <property>/sim/current-view/goal-heading-offset-deg</property>
-       <value>315</value>
-      </less-than>
-      <greater-than>
-       <property>/sim/current-view/goal-heading-offset-deg</property>
-       <value>240</value>
-      </greater-than>
-      <greater-than>
-       <property>/sim/current-view/goal-pitch-offset-deg</property>
-       <value>0</value>
-      </greater-than>
-     </and>
-     <property>/controls/seat/all</property>
-    </or>
-   </condition>
-   <params>
-    <connect-status>/controls/pneumatic/engine[2]/cross-bleed-valve</connect-status>
-   </params>
-   <x>235</x>
-   <y>325</y>
-   <w>15</w>
-   <h>15</h>
-  </instrument>
-
-  <instrument include="Instruments/concorde-connection.xml">
-   <name>Cross bleed valve 4</name>
-   <condition>
-    <or>
-     <and>
-      <property>/sim/current-view/internal</property>
-      <property>/systems/seat/engineer</property>
-      <less-than>
-       <property>/sim/current-view/goal-heading-offset-deg</property>
-       <value>310</value>
-      </less-than>
-      <greater-than>
-       <property>/sim/current-view/goal-heading-offset-deg</property>
-       <value>235</value>
-      </greater-than>
-      <greater-than>
-       <property>/sim/current-view/goal-pitch-offset-deg</property>
-       <value>0</value>
-      </greater-than>
-     </and>
-     <property>/controls/seat/all</property>
-    </or>
-   </condition>
-   <params>
-    <connect-status>/controls/pneumatic/engine[3]/cross-bleed-valve</connect-status>
-   </params>
-   <x>265</x>
-   <y>325</y>
-   <w>15</w>
-   <h>15</h>
-  </instrument>
+ 
 
   <instrument include="Instruments/concorde-title-air-cross-bleed.xml">
    <name>Cross bleed</name>

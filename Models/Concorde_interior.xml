@@ -1651,7 +1651,7 @@
     <offsets>
       <x-m>-23.829</x-m>
       <y-m>0.261</y-m>
-      <z-m>1.226</z-m>
+      <z-m>1.228</z-m>
       <pitch-deg>-10</pitch-deg>
     </offsets>
   </model>
@@ -1660,9 +1660,9 @@
     <name>Nose Status 2</name>
     <path>Aircraft/Concorde/Models/Cockpit/Instruments/nose-mi.xml</path>
     <offsets>
-      <x-m>-23.825</x-m>
+      <x-m>-23.823</x-m>
       <y-m>0.261</y-m>
-      <z-m>1.192</z-m>
+      <z-m>1.194</z-m>
       <pitch-deg>-10</pitch-deg>
     </offsets>
   </model>
@@ -6824,7 +6824,181 @@
      <pitch-deg>25</pitch-deg>
     </offsets>
   </model>
+
+
+
+
 <model>
+<name>Air Bleed Mi 1 </name>
+    <path>Cockpit/Engineer/mi-air-bleed.xml</path>
+    <overlay>
+      <params>
+<running-status>/engines/engine[0]/running</running-status>
+  <bleed-valve>/controls/pneumatic/engine[0]/bleed-valve</bleed-valve>
+  <defined-status>/systems/electrical/power/specific</defined-status>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.965</x-m>
+      <y-m>0.349</y-m>
+      <z-m>1.743</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+  <model>
+  <name>Air Bleed Mi 2 </name>
+    <path>Cockpit/Engineer/mi-air-bleed.xml</path>
+    <overlay>
+      <params>
+<running-status>/engines/engine[1]/running</running-status>
+  <bleed-valve>/controls/pneumatic/engine[1]/bleed-valve</bleed-valve>
+  <defined-status>/systems/electrical/power/specific</defined-status>
+ </params>
+    </overlay>
+    <offsets>
+     <x-m>-21.892</x-m>
+      <y-m>0.349</y-m>
+      <z-m>1.743</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+  <model>
+  <name>Air Bleed Mi 3 </name>
+    <path>Cockpit/Engineer/mi-air-bleed.xml</path>
+    <overlay>
+      <params>
+<running-status>/engines/engine[2]/running</running-status>
+  <bleed-valve>/controls/pneumatic/engine[2]/bleed-valve</bleed-valve>
+  <defined-status>/systems/electrical/power/specific</defined-status>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.852</x-m>
+      <y-m>0.349</y-m>
+      <z-m>1.743</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+  <model>
+  <name>Air Bleed Mi 4 </name>
+    <path>Cockpit/Engineer/mi-air-bleed.xml</path>
+    <overlay>
+      <params>
+<running-status>/engines/engine[3]/running</running-status>
+  <bleed-valve>/controls/pneumatic/engine[3]/bleed-valve</bleed-valve>
+  <defined-status>/systems/electrical/power/specific</defined-status>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.780</x-m>
+      <y-m>0.349</y-m>
+      <z-m>1.743</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  
+  
+<model>
+<name>Air  Cross Bleed Mi 1 </name>
+    <path>Cockpit/Engineer/mi-horizontal-valve.xml</path>
+    <overlay>
+      <params>
+        <connect-status>/controls/pneumatic/engine[0]/cross-bleed-valve</connect-status>        
+  		<defined-status>/systems/electrical/power/specific</defined-status>
+      </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.937</x-m>
+      <y-m>0.359</y-m>
+      <z-m>1.716</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+
+
+
+
+<model>
+<name>Air  Cross Bleed Mi 2 </name>
+    <path>Cockpit/Engineer/mi-horizontal-valve.xml</path>
+    <overlay>
+      <params>
+        <connect-status>/controls/pneumatic/engine[1]/cross-bleed-valve</connect-status>        
+  		<defined-status>/systems/electrical/power/specific</defined-status>
+      </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.920</x-m>
+      <y-m>0.359</y-m>
+      <z-m>1.716</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+
+
+<model>
+<name>Air  Cross Bleed Mi 3 </name>
+    <path>Cockpit/Engineer/mi-horizontal-valve.xml</path>
+    <overlay>
+      <params>
+        <connect-status>/controls/pneumatic/engine[2]/cross-bleed-valve</connect-status>        
+  		<defined-status>/systems/electrical/power/specific</defined-status>
+      </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.824</x-m>
+      <y-m>0.359</y-m>
+      <z-m>1.716</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+
+
+
+<model>
+<name>Air  Cross Bleed Mi 4 </name>
+    <path>Cockpit/Engineer/mi-horizontal-valve.xml</path>
+    <overlay>
+      <params>
+        <connect-status>/controls/pneumatic/engine[3]/cross-bleed-valve</connect-status>        
+  		<defined-status>/systems/electrical/power/specific</defined-status>
+      </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.807</x-m>
+      <y-m>0.359</y-m>
+      <z-m>1.716</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+
+
+
+
+
+
+
+<model>
+
+
 
 <name>Air Bleed 1 </name>
     <path>Cockpit/Engineer/air-bleed-engine-1.xml</path>
