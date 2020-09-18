@@ -6919,7 +6919,7 @@
     </overlay>
     <offsets>
       <x-m>-21.937</x-m>
-      <y-m>0.359</y-m>
+      <y-m>0.361</y-m>
       <z-m>1.716</z-m>
       
       <heading-deg>-90</heading-deg>
@@ -6941,7 +6941,7 @@
     </overlay>
     <offsets>
       <x-m>-21.920</x-m>
-      <y-m>0.359</y-m>
+      <y-m>0.361</y-m>
       <z-m>1.716</z-m>
       
       <heading-deg>-90</heading-deg>
@@ -6961,7 +6961,7 @@
     </overlay>
     <offsets>
       <x-m>-21.824</x-m>
-      <y-m>0.359</y-m>
+      <y-m>0.361</y-m>
       <z-m>1.716</z-m>
       
       <heading-deg>-90</heading-deg>
@@ -6982,7 +6982,7 @@
     </overlay>
     <offsets>
       <x-m>-21.807</x-m>
-      <y-m>0.359</y-m>
+      <y-m>0.361</y-m>
       <z-m>1.716</z-m>
       
       <heading-deg>-90</heading-deg>
@@ -7308,6 +7308,351 @@
   </model>
   
   
+  
+  
+  
+  
+  
+  
+  
+   <model>
+  <name>Air  Cond Mi 1 </name>
+    <path>Cockpit/Engineer/mi-vertical-valve.xml</path>
+    <overlay>
+      <params>
+  <connect-status>/controls/pneumatic/engine[0]/conditioning-valve</connect-status>        
+  		<defined-status>/systems/electrical/power/specific</defined-status>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.963</x-m>
+      <y-m>0.391</y-m>
+      <z-m>1.652</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  <model>
+  <name>Air  Cond Mi 2 </name>
+    <path>Cockpit/Engineer/mi-vertical-valve.xml</path>
+    <overlay>
+      <params>
+  <connect-status>/controls/pneumatic/engine[1]/conditioning-valve</connect-status>        
+  		<defined-status>/systems/electrical/power/specific</defined-status>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.913</x-m>
+      <y-m>0.391</y-m>
+      <z-m>1.652</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  <model>
+  <name>Air  Cond Mi 3 </name>
+    <path>Cockpit/Engineer/mi-vertical-valve.xml</path>
+    <overlay>
+      <params>
+  <connect-status>/controls/pneumatic/engine[2]/conditioning-valve</connect-status>        
+  		<defined-status>/systems/electrical/power/specific</defined-status>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.852</x-m>
+      <y-m>0.391</y-m>
+      <z-m>1.652</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  
+  <model>
+  <name>Air  Cond Mi 4 </name>
+    <path>Cockpit/Engineer/mi-vertical-valve.xml</path>
+    <overlay>
+      <params>
+  <connect-status>/controls/pneumatic/engine[3]/conditioning-valve</connect-status>        
+  		<defined-status>/systems/electrical/power/specific</defined-status>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.802</x-m>
+      <y-m>0.391</y-m>
+      <z-m>1.652</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+   <model>
+  <name>Jet Pump Mi 1 </name>
+    <path>Cockpit/Engineer/mi-horizontal-valve.xml</path>
+    <overlay>
+      <params>
+  <connect-status>/systems/air-bleed/engine[0]/jet-pump</connect-status>        
+  		<defined-status>/systems/electrical/power/specific</defined-status>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.940</x-m>
+      <y-m>0.401</y-m>
+      <z-m>1.629</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  <model>
+  <name>Jet Pump Mi 2 </name>
+    <path>Cockpit/Engineer/mi-horizontal-valve.xml</path>
+    <overlay>
+      <params>
+  <connect-status>/systems/air-bleed/engine[1]/jet-pump</connect-status>        
+  		<defined-status>/systems/electrical/power/specific</defined-status>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.890</x-m>
+      <y-m>0.401</y-m>
+      <z-m>1.629</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  <model>
+  <name>Jet Pump Mi 3 </name>
+    <path>Cockpit/Engineer/mi-horizontal-valve.xml</path>
+    <overlay>
+      <params>
+  <connect-status>/systems/air-bleed/engine[2]/jet-pump</connect-status>        
+  		<defined-status>/systems/electrical/power/specific</defined-status>
+ </params>
+    </overlay>
+    <offsets>
+     <x-m>-21.829</x-m>
+      <y-m>0.401</y-m>
+      <z-m>1.629</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  
+  <model>
+  <name>Jet Pump Mi 4 </name>
+    <path>Cockpit/Engineer/mi-horizontal-valve.xml</path>
+    <overlay>
+      <params>
+  <connect-status>/systems/air-bleed/engine[3]/jet-pump</connect-status>        
+  		<defined-status>/systems/electrical/power/specific</defined-status>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.777</x-m>
+      <y-m>0.401</y-m>
+      <z-m>1.629</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  
+  
+  
+   <model>
+  <name>Ram Air Mi 1 </name>
+    <path>Cockpit/Engineer/mi-horizontal-valve.xml</path>
+    <overlay>
+      <params>
+  <connect-status>/systems/air-bleed/engine[0]/ram-air</connect-status>        
+  		<defined-status>/systems/electrical/power/specific</defined-status>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.940</x-m>
+      <y-m>0.411</y-m>
+      <z-m>1.61</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  <model>
+  <name>Ram Air Mi 2 </name>
+    <path>Cockpit/Engineer/mi-horizontal-valve.xml</path>
+    <overlay>
+      <params>
+  <connect-status>/systems/air-bleed/engine[1]/ram-air</connect-status>        
+  		<defined-status>/systems/electrical/power/specific</defined-status>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.890</x-m>
+      <y-m>0.411</y-m>
+      <z-m>1.61</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  <model>
+  <name>Ram Air Mi 3 </name>
+    <path>Cockpit/Engineer/mi-horizontal-valve.xml</path>
+    <overlay>
+      <params>
+  <connect-status>/systems/air-bleed/engine[2]/ram-air</connect-status>        
+  		<defined-status>/systems/electrical/power/specific</defined-status>
+ </params>
+    </overlay>
+    <offsets>
+     <x-m>-21.829</x-m>
+      <y-m>0.411</y-m>
+      <z-m>1.61</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  
+  <model>
+  <name>Ram Air Mi 4 </name>
+    <path>Cockpit/Engineer/mi-horizontal-valve.xml</path>
+    <overlay>
+      <params>
+  <connect-status>/systems/air-bleed/engine[3]/ram-air</connect-status>        
+  		<defined-status>/systems/electrical/power/specific</defined-status>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.777</x-m>
+      <y-m>0.411</y-m>
+      <z-m>1.61</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  
+  
+  
+  <model>
+  <name>Fuel Valve Mi 1 </name>
+    <path>Cockpit/Engineer/mi-horizontal-valve.xml</path>
+    <overlay>
+      <params>
+  <connect-status>/systems/air-bleed/engine[0]/ram-air</connect-status>        
+  		<defined-status>/systems/electrical/power/specific</defined-status>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.944</x-m>
+      <y-m>0.428</y-m>
+      <z-m>1.573</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  <model>
+  <name>Fuel Valve Mi 2 </name>
+    <path>Cockpit/Engineer/mi-horizontal-valve.xml</path>
+    <overlay>
+      <params>
+  <connect-status>/systems/air-bleed/engine[1]/ram-air</connect-status>        
+  		<defined-status>/systems/electrical/power/specific</defined-status>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.894</x-m>
+      <y-m>0.428</y-m>
+      <z-m>1.573</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  <model>
+  <name>Fuel Valve Mi 3 </name>
+    <path>Cockpit/Engineer/mi-horizontal-valve.xml</path>
+    <overlay>
+      <params>
+  <connect-status>/systems/air-bleed/engine[2]/ram-air</connect-status>        
+  		<defined-status>/systems/electrical/power/specific</defined-status>
+ </params>
+    </overlay>
+    <offsets>
+     <x-m>-21.833</x-m>
+      <y-m>0.428</y-m>
+      <z-m>1.573</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  
+  <model>
+  <name>Fuel Valve Mi 4 </name>
+    <path>Cockpit/Engineer/mi-horizontal-valve.xml</path>
+    <overlay>
+      <params>
+  <connect-status>/systems/air-bleed/engine[3]/ram-air</connect-status>        
+  		<defined-status>/systems/electrical/power/specific</defined-status>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.781</x-m>
+      <y-m>0.428</y-m>
+      <z-m>1.573</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+  
+  
  
   
   
@@ -7387,6 +7732,23 @@
      <pitch-deg>25</pitch-deg>
     </offsets>
   </model>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   
   
    <model>
