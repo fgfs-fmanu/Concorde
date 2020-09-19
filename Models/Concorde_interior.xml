@@ -8946,6 +8946,92 @@
 
 
 
+<model>
+    <name>Secondary Air Doors Mi 1</name>
+    <path>Cockpit/Engineer/mi-open-valve.xml</path>
+<overlay>
+<params>
+  <open-status>/systems/engines/engine[0]/secondary-air-door</open-status>        
+  		<defined-status>/systems/electrical/power/specific</defined-status>
+ </params>
+</overlay>
+    <offsets>
+      <x-m>-22.135</x-m>
+      <y-m>0.466</y-m>
+      <z-m>1.464</z-m>
+      
+      <heading-deg>-83</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+
+
+<model>
+    <name>Secondary Air Doors Mi 2</name>
+    <path>Cockpit/Engineer/mi-open-valve.xml</path>
+<overlay>
+<params>
+   <open-status>/systems/engines/engine[1]/secondary-air-door</open-status>        
+  	<defined-status>/systems/electrical/power/specific</defined-status>
+ </params>
+</overlay>
+    <offsets>
+      <x-m>-22.113</x-m>
+      <y-m>0.468</y-m>
+      <z-m>1.464</z-m>
+      
+      <heading-deg>-83</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+
+
+<model>
+    <name>Secondary Air Doors Mi 3</name>
+    <path>Cockpit/Engineer/mi-open-valve.xml</path>
+<overlay>
+<params>
+ <open-status>/systems/engines/engine[2]/secondary-air-door</open-status>        
+  	<defined-status>/systems/electrical/power/specific</defined-status>
+ </params>
+</overlay>
+    <offsets>
+      <x-m>-22.084</x-m>
+      <y-m>0.471</y-m>
+      <z-m>1.464</z-m>
+      
+      <heading-deg>-83</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+
+
+<model>
+    <name>Secondary Air Doors Mi 4</name>
+    <path>Cockpit/Engineer/mi-open-valve.xml</path>
+<overlay>
+<params>
+   <open-status>/systems/engines/engine[3]/secondary-air-door</open-status>        
+  	<defined-status>/systems/electrical/power/specific</defined-status>
+ </params>
+</overlay>
+    <offsets>
+      <x-m>-22.058</x-m>
+      <y-m>0.473</y-m>
+      <z-m>1.464</z-m>
+      
+      <heading-deg>-83</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+
+
+
+
+
+
+
+
 
 
 <model>
