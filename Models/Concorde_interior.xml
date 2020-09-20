@@ -8259,8 +8259,56 @@
     </overlay>
     <offsets>
       <x-m>-21.605</x-m>
-      <y-m>0.396</y-m>
-      <z-m>1.637</z-m>
+      <y-m>0.4</y-m>
+      <z-m>1.63</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <name>Temp Rear Mi</name>
+    <path>Cockpit/Engineer/mi-temp-cabin-rear.xml</path>
+    <overlay>
+    </overlay>
+    <offsets>
+      <x-m>-21.633</x-m>
+      <y-m>0.399</y-m>
+      <z-m>1.636</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  <model>
+    <name>Temp FWD Mi</name>
+    <path>Cockpit/Engineer/mi-temp-cabin-fwd.xml</path>
+    <overlay>
+    </overlay>
+    <offsets>
+      <x-m>-21.665</x-m>
+      <y-m>0.399</y-m>
+      <z-m>1.636</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  
+  <model>
+    <name>Temp Flight Deck M</name>
+    <path>Cockpit/Engineer/mi-temp-flight-deck.xml</path>
+    <overlay>
+    </overlay>
+    <offsets>
+      <x-m>-21.696</x-m>
+      <y-m>0.399</y-m>
+      <z-m>1.636</z-m>
       
       <heading-deg>-90</heading-deg>
      <pitch-deg>25</pitch-deg>

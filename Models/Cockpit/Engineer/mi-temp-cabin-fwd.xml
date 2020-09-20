@@ -1,0 +1,157 @@
+<?xml version="1.0"?>
+<PropertyList>
+  
+  <path>../Models/mi.ac</path>
+  
+ <params>
+  <connect1-status>/controls/temperature/group[0]/on</connect1-status>
+  <connect2-status>/controls/temperature/group[1]/on</connect2-status>
+  <connect3-status>/controls/temperature/group[2]/on</connect3-status>
+  <defined-status>/systems/electrical/power/specific</defined-status>
+ </params>
+ 
+<effect>
+    <inherits-from>Aircraft/Concorde/Models/Effects/interior</inherits-from>
+    
+    <object-name>Frame</object-name>
+    <object-name>Aft</object-name>
+    <object-name>Black</object-name>
+    <object-name>BR</object-name>
+    <object-name>Down</object-name>
+    <object-name>Five</object-name>
+    <object-name>H</object-name>
+    <object-name>HB</object-name>
+    <object-name>HY</object-name>
+    <object-name>Norm</object-name>
+    <object-name>Off</object-name>
+    <object-name>Open</object-name>
+    <object-name>Shut</object-name>
+    <object-name>TL</object-name>
+    <object-name>TR</object-name>
+    <object-name>Up</object-name>
+    <object-name>V</object-name>
+    <object-name>WOn</object-name>
+    <object-name>WOpen</object-name>
+    <object-name>WShut</object-name>
+    
+    
+</effect>
+
+
+
+  
+  
+  
+ 
+
+  
+  <animation>
+  <type>select</type>  
+    <object-name>TR</object-name>
+   <condition>
+    <and>
+    <property alias="/params/connect1-status"/>
+    <property alias="/params/connect2-status"/>
+   <property alias="/params/defined-status"/>
+       </and>
+    </condition>
+  </animation>
+  
+  <animation>
+  <type>select</type> 
+    <object-name>TL</object-name>
+    <condition>
+    <and>
+      <not>
+       <property alias="/params/connect1-status"/>
+      </not>
+       <property alias="/params/connect2-status"/>
+     <property alias="/params/defined-status"/>
+     </and>
+    </condition>
+  </animation>
+  
+  <animation>
+  <type>select</type>
+    <object-name>HB</object-name>    
+    <condition>
+    <not>
+      <and>
+    <property alias="/params/connect2-status"/>
+   <property alias="/params/defined-status"/>
+       </and>
+      </not>
+    </condition>
+  </animation>
+  
+  
+ 
+
+
+  <animation>
+  <type>select</type>  
+    <object-name>WShut</object-name>
+    <object-name>Open</object-name>
+    <object-name>Off</object-name>  
+    <object-name>H</object-name>
+    <object-name>Down</object-name>   
+    <object-name>Up</object-name>    
+    <object-name>Aft</object-name>
+    <object-name>Black</object-name>
+    <object-name>BR</object-name>
+    <object-name>Five</object-name>
+    <object-name>HY</object-name>
+    <object-name>Norm</object-name>
+    <object-name>Shut</object-name> 
+    <object-name>V</object-name>    
+    <object-name>WOpen</object-name>
+    <object-name>WOn</object-name>
+    <condition>
+   
+    <equals>
+       <property>/sim/flaps/setting[1]</property>
+       <property>/sim/flaps/setting[0]</property>
+      </equals>
+     <!-- bug -->
+   
+     
+    </condition>
+  </animation>
+  
+  
+  
+  
+ 
+  
+ 
+  
+  <animation>
+    <type>material</type>
+    <object-name>Frame</object-name>
+    <object-name>Aft</object-name>
+    <object-name>Black</object-name>
+    <object-name>BR</object-name>
+    <object-name>Down</object-name>
+    <object-name>Five</object-name>
+    <object-name>H</object-name>
+    <object-name>HB</object-name>
+    <object-name>HY</object-name>
+    <object-name>Norm</object-name>
+    <object-name>Off</object-name>
+    <object-name>Open</object-name>
+    <object-name>Shut</object-name>
+    <object-name>TL</object-name>
+    <object-name>TR</object-name>
+    <object-name>Up</object-name>
+    <object-name>V</object-name>
+    <object-name>WOn</object-name>
+    <object-name>WOpen</object-name>
+    <object-name>WShut</object-name>
+  <emission>
+     <red>0.2</red>
+     <green>0.2</green>
+     <blue>0.2</blue>
+  </emission>
+</animation>
+
+</PropertyList>
