@@ -3996,6 +3996,125 @@
 
 
 
+<model>
+  <name>Air  Cond Mi 1 </name>
+    <path>Cockpit/Engineer/mi-wopen-valve.xml</path>
+    <overlay>
+      <params>
+  <open-status>/controls/fuel/tank[0]/inlet-standby</open-status>        
+  		<defined-status>/systems/electrical/power/specific</defined-status>
+ </params>
+    </overlay>
+    <offsets>
+    <x-m>-21.858</x-m>
+      <y-m>0.495</y-m>
+      <z-m>1.427</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+  
+  <model>
+  <name>Air  Cond Mi 2 </name>
+    <path>Cockpit/Engineer/mi-wopen-valve.xml</path>
+    <overlay>
+      <params>
+  <open-status>/controls/fuel/tank[1]/inlet-standby</open-status>        
+  		<defined-status>/systems/electrical/power/specific</defined-status>
+ </params>
+    </overlay>
+    <offsets>
+    <x-m>-21.84</x-m>
+      <y-m>0.495</y-m>
+      <z-m>1.427</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+  
+  <model>
+  <name>Air  Cond Mi 2 </name>
+    <path>Cockpit/Engineer/mi-wopen-valve.xml</path>
+    <overlay>
+      <params>
+  <open-status>/controls/fuel/tank[1]/inlet-standby</open-status>        
+  		<defined-status>/systems/electrical/power/specific</defined-status>
+ </params>
+    </overlay>
+    <offsets>
+    <x-m>-21.84</x-m>
+      <y-m>0.495</y-m>
+      <z-m>1.427</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+  
+  <model>
+  <name>Air  Cond Mi 3 </name>
+    <path>Cockpit/Engineer/mi-wopen-valve.xml</path>
+    <overlay>
+      <params>
+  <open-status>/controls/fuel/tank[2]/inlet-standby</open-status>        
+  		<defined-status>/systems/electrical/power/specific</defined-status>
+ </params>
+    </overlay>
+    <offsets>
+    <x-m>-21.682</x-m>
+      <y-m>0.495</y-m>
+      <z-m>1.427</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+  
+  <model>
+  <name>Air  Cond Mi 4 </name>
+    <path>Cockpit/Engineer/mi-wopen-valve.xml</path>
+    <overlay>
+      <params>
+  <open-status>/controls/fuel/tank[3]/inlet-standby</open-status>        
+  		<defined-status>/systems/electrical/power/specific</defined-status>
+ </params>
+    </overlay>
+    <offsets>
+    <x-m>-21.664</x-m>
+      <y-m>0.495</y-m>
+      <z-m>1.427</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+
+
+<model>
+  <name>Air  Cond Mi 10 </name>
+    <path>Cockpit/Engineer/mi-wopen-valve.xml</path>
+    <overlay>
+      <params>
+  <open-status>/controls/fuel/tank[9]/inlet-standby</open-status>        
+  		<defined-status>/systems/electrical/power/specific</defined-status>
+ </params>
+    </overlay>
+    <offsets>
+    <x-m>-21.646</x-m>
+      <y-m>0.495</y-m>
+      <z-m>1.427</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+
+
+
+
+
 
 
 
@@ -4169,6 +4288,45 @@
      <pitch-deg>25</pitch-deg>
     </offsets>
   </model>
+  
+  <model>
+<name>Fuel inletvalve 1 Tank 9 Mi </name>
+    <path>Cockpit/Engineer/mi-horizontal-valve.xml</path>
+    <overlay>
+      <params>
+        <connect-status>/controls/fuel/tank[8]/inlet-valve[0]</connect-status>
+    <defined-status>/controls/fuel/tank[8]/inlet-static[0]</defined-status>
+      </params>
+    </overlay>
+    <offsets>
+    <x-m>-21.813</x-m>
+      <y-m>0.46</y-m>
+      <z-m>1.50</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+    <model>
+<name>Fuel inletvalve 2 Tank 9 Mi </name>
+    <path>Cockpit/Engineer/mi-horizontal-valve.xml</path>
+    <overlay>
+      <params>
+       <connect-status>/controls/fuel/tank[8]/inlet-valve[1]</connect-status>
+    <defined-status>/controls/fuel/tank[8]/inlet-static[1]</defined-status>
+      </params>
+    </overlay>
+    <offsets>
+    <x-m>-21.705</x-m>
+      <y-m>0.46</y-m>
+      <z-m>1.50</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
 
 
 
@@ -4182,7 +4340,7 @@
       </params>
     </overlay>
     <offsets>
-      <x-m>-21.811</x-m>
+      <x-m>-21.813</x-m>
       <y-m>0.474</y-m>
       <z-m>1.472</z-m>
       
@@ -4201,7 +4359,7 @@
       </params>
     </overlay>
     <offsets>
-      <x-m>-21.707</x-m>
+      <x-m>-21.705</x-m>
       <y-m>0.474</y-m>
       <z-m>1.472</z-m>
       
@@ -4490,6 +4648,83 @@
   </model>
   
   
+   <model>
+<name>Jettison Valve 1 Mi </name>
+    <path>Cockpit/Engineer/mi-horizontal-valve.xml</path>
+    <overlay>
+      <params>
+        <connect-status>/controls/fuel/tank[0]/jettison</connect-status>
+    <defined-status>/systems/electrical/power/specific</defined-status>
+      </params>
+    </overlay>
+    <offsets>
+     <x-m>-21.620</x-m>
+      <y-m>0.461</y-m>
+      <z-m>1.501</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+   <model>
+<name>Jettison Valve 2 Mi </name>
+    <path>Cockpit/Engineer/mi-horizontal-valve.xml</path>
+    <overlay>
+      <params>
+        <connect-status>/controls/fuel/tank[1]/jettison</connect-status>
+    <defined-status>/systems/electrical/power/specific</defined-status>
+      </params>
+    </overlay>
+    <offsets>
+   <x-m>-21.620</x-m>
+      <y-m>0.474</y-m>
+      <z-m>1.472</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+   <model>
+<name>Jettison Valve 3 Mi </name>
+    <path>Cockpit/Engineer/mi-horizontal-valve.xml</path>
+    <overlay>
+      <params>
+        <connect-status>/controls/fuel/tank[2]/jettison</connect-status>
+    <defined-status>/systems/electrical/power/specific</defined-status>
+      </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.567</x-m>
+      <y-m>0.474</y-m>
+      <z-m>1.472</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+   <model>
+<name>Jettison Valve 4 Mi </name>
+    <path>Cockpit/Engineer/mi-horizontal-valve.xml</path>
+    <overlay>
+      <params>
+        <connect-status>/controls/fuel/tank[3]/jettison</connect-status>
+    <defined-status>/systems/electrical/power/specific</defined-status>
+      </params>
+    </overlay>
+    <offsets>
+  <x-m>-21.567</x-m>
+      <y-m>0.46</y-m>
+      <z-m>1.501</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  
+  
+  
   <model>
     <name>Jettison Valve 1</name>
     <path>Cockpit/Engineer/jettison-valve-1.xml</path>
@@ -4597,7 +4832,7 @@
  </params>
     </overlay>
    <offsets>
-      <x-m>-21.618</x-m>
+      <x-m>-21.620</x-m>
       <y-m>0.484</y-m>
       <z-m>1.448</z-m>
       
@@ -4627,7 +4862,44 @@
     </offsets>
   </model>
   
+  <model>
+<name>Jettison Master Valve 1 Mi </name>
+    <path>Cockpit/Engineer/mi-horizontal-valve.xml</path>
+    <overlay>
+      <params>
+        <connect-status>/controls/fuel/jettison/valve[0]/flow</connect-status>
+    <defined-status>/controls/fuel/tank[8]/inlet-static[0]</defined-status>
+      </params>
+    </overlay>
+    <offsets>
+    <x-m>-21.596</x-m>
+      <y-m>0.485</y-m>
+      <z-m>1.446</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
   
+  
+    <model>
+<name>Jettison Master Valve 2 Mi </name>
+    <path>Cockpit/Engineer/mi-horizontal-valve.xml</path>
+    <overlay>
+      <params>
+       <connect-status>/controls/fuel/jettison/valve[1]/flow</connect-status>
+    <defined-status>/controls/fuel/tank[8]/inlet-static[1]</defined-status>
+      </params>
+    </overlay>
+    <offsets>
+     <x-m>-21.583</x-m>
+      <y-m>0.485</y-m>
+      <z-m>1.446</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
   
   
   
