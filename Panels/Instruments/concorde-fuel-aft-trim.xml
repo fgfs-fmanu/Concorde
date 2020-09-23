@@ -11,36 +11,7 @@
 
  <layers>
 
-  <layer>
-   <name>Trans valve</name>
-   <type>switch</type>
-   <layer>
-    <condition>
-     <and>
-      <not>
-       <property>/controls/fuel/tank[0]/aft-trim</property>
-      </not>
-      <not>
-       <property>/controls/fuel/tank[3]/aft-trim</property>
-      </not>
-     </and>
-    </condition>
-    <name>on</name>
-    <texture>
-     <path>Aircraft/Concorde/Panels/Instruments/Textures/concorde-black-norm.png</path>
-    </texture>
-    <w>25</w>
-    <h>25</h>
-   </layer>
-   <layer>
-    <name>off</name>
-    <texture>
-     <path>Aircraft/Concorde/Panels/Instruments/Textures/concorde-white-aft.png</path>
-    </texture>
-    <w>25</w>
-    <h>25</h>
-   </layer>
-  </layer>
+ 
 
   <layer>
    <name>Title</name>

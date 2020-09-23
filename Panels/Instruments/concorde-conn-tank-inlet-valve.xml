@@ -15,53 +15,7 @@
 
 
  <layers>
-  <layer>
-   <name>Connection flag</name>
-   <type>switch</type>
-
-   <layer>
-    <name>undefined</name>
-    <condition>
-     <not>
-      <property alias="../../../../../../params/inlet-static"/>
-     </not>
-    </condition>
-    <texture>
-     <path>Aircraft/Concorde/Panels/Instruments/Textures/concorde-hatched-bg.png</path>
-    </texture>
-    <w>25</w>
-    <h>25</h>
-   </layer>
-
-   <layer>
-    <name>on</name>
-    <condition>
-     <and>
-      <property alias="../../../../../../params/inlet-valve"/>
-     </and>
-    </condition>
-    <texture>
-     <path>Aircraft/Concorde/Panels/Instruments/Textures/concorde-bar-horizontal-bg.png</path>
-    </texture>
-    <w>25</w>
-    <h>25</h>
-   </layer>
-
-   <layer>
-    <name>off</name>
-    <texture>
-     <path>Aircraft/Concorde/Panels/Instruments/Textures/concorde-bar-vertical-bg.png</path>
-    </texture>
-    <w>25</w>
-    <h>25</h>
-   </layer>
-   <transformations>
-    <transformation>
-     <type>y-shift</type>
-     <offset>-15</offset>
-    </transformation>
-   </transformations>
-  </layer>
+ 
 
   <layer>
    <name>Title</name>

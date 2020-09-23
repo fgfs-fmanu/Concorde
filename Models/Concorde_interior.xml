@@ -3527,6 +3527,178 @@
   
   
   
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <model>
+  <name>Fuel Tank 1 Crossfeed Mi  </name>
+    <path>Cockpit/Engineer/mi-vertical-valve.xml</path>
+    <overlay>
+      <params>
+  <connect-status>/controls/fuel/tank[0]/cross-feed-valve</connect-status>        
+  		<defined-status>/systems/electrical/power/specific</defined-status>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.922</x-m>
+      <y-m>0.547</y-m>
+      <z-m>0.966</z-m>
+      
+      <heading-deg>-90</heading-deg>
+    </offsets>
+  </model>
+  
+  <model>
+  <name>Fuel Tank 2 Crossfeed Mi  </name>
+    <path>Cockpit/Engineer/mi-vertical-valve.xml</path>
+    <overlay>
+      <params>
+  <connect-status>/controls/fuel/tank[1]/cross-feed-valve</connect-status>        
+  		<defined-status>/systems/electrical/power/specific</defined-status>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.901</x-m>
+      <y-m>0.547</y-m>
+      <z-m>0.966</z-m>
+      
+      <heading-deg>-90</heading-deg>
+    </offsets>
+  </model>
+  
+  <model>
+  <name>Fuel Tank 3 Crossfeed Mi  </name>
+    <path>Cockpit/Engineer/mi-vertical-valve.xml</path>
+    <overlay>
+      <params>
+  <connect-status>/controls/fuel/tank[2]/cross-feed-valve</connect-status>        
+  		<defined-status>/systems/electrical/power/specific</defined-status>
+ </params>
+    </overlay>
+    <offsets>
+   <x-m>-21.65</x-m>
+      <y-m>0.547</y-m>
+      <z-m>0.966</z-m>
+      
+      <heading-deg>-90</heading-deg>
+    </offsets>
+  </model>
+  
+  <model>
+  <name>Fuel Tank 4 Crossfeed Mi  </name>
+    <path>Cockpit/Engineer/mi-vertical-valve.xml</path>
+    <overlay>
+      <params>
+  <connect-status>/controls/fuel/tank[3]/cross-feed-valve</connect-status>        
+  		<defined-status>/systems/electrical/power/specific</defined-status>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.627</x-m>
+      <y-m>0.547</y-m>
+      <z-m>0.966</z-m>
+      
+      <heading-deg>-90</heading-deg>
+    </offsets>
+  </model>
+  
+  
+  
+  
+  
+  
+  
+  
+  <model>
+  <name>Fuel Tank 1 LP Valve Mi  </name>
+    <path>Cockpit/Engineer/mi-vertical-valve.xml</path>
+    <overlay>
+      <params>
+  <connect-status>/controls/fuel/tank[0]/lp-valve</connect-status>        
+  		<defined-status>/systems/electrical/power/specific</defined-status>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.962</x-m>
+      <y-m>0.547</y-m>
+      <z-m>0.98</z-m>
+      
+      <heading-deg>-90</heading-deg>
+    </offsets>
+  </model>
+  
+  <model>
+  <name>Fuel Tank 2 LP Valve Mi  </name>
+    <path>Cockpit/Engineer/mi-vertical-valve.xml</path>
+    <overlay>
+      <params>
+  <connect-status>/controls/fuel/tank[1]/lp-valve</connect-status>        
+  		<defined-status>/systems/electrical/power/specific</defined-status>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.866</x-m>
+      <y-m>0.547</y-m>
+      <z-m>0.98</z-m>
+      
+      <heading-deg>-90</heading-deg>
+    </offsets>
+  </model>
+  
+  <model>
+  <name>Fuel Tank 3 LP Valve Mi  </name>
+    <path>Cockpit/Engineer/mi-vertical-valve.xml</path>
+    <overlay>
+      <params>
+  <connect-status>/controls/fuel/tank[2]/lp-valve</connect-status>        
+  		<defined-status>/systems/electrical/power/specific</defined-status>
+ </params>
+    </overlay>
+    <offsets>
+   <x-m>-21.684</x-m>
+      <y-m>0.547</y-m>
+      <z-m>0.98</z-m>
+      
+      <heading-deg>-90</heading-deg>
+    </offsets>
+  </model>
+  
+  <model>
+  <name>Fuel Tank 4 LP Valve Mi  </name>
+    <path>Cockpit/Engineer/mi-vertical-valve.xml</path>
+    <overlay>
+      <params>
+  <connect-status>/controls/fuel/tank[3]/cross-feed-valve</connect-status>        
+  		<defined-status>/systems/electrical/power/specific</defined-status>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.587</x-m>
+      <y-m>0.547</y-m>
+      <z-m>0.98</z-m>
+      
+      <heading-deg>-90</heading-deg>
+    </offsets>
+  </model>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
 
 
 <model>
@@ -4411,7 +4583,43 @@
 
 
 
-
+<model>
+  <name>Fuel inletvalve 1 Tank 11 Mi  </name>
+    <path>Cockpit/Engineer/mi-horizontal-valve.xml</path>
+    <overlay>
+      <params>
+  <connect-status>/controls/fuel/tank[10]/inlet-valve[0]</connect-status>        
+  		<defined-status>/controls/fuel/tank[10]/inlet-static[0]</defined-status>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.80</x-m>
+      <y-m>0.55</y-m>
+      <z-m>1.14</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>-5</pitch-deg>
+    </offsets>
+  </model>
+  
+  <model>
+  <name>Fuel inletvalve 2 Tank 11 Mi  </name>
+    <path>Cockpit/Engineer/mi-horizontal-valve.xml</path>
+    <overlay>
+      <params>
+  <connect-status>/controls/fuel/tank[10]/inlet-valve[1]</connect-status>        
+  		<defined-status>/controls/fuel/tank[10]/inlet-static[1]</defined-status>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.740</x-m>
+      <y-m>0.55</y-m>
+      <z-m>1.14</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>-5</pitch-deg>
+    </offsets>
+  </model>
 
 
 
@@ -4532,7 +4740,43 @@
   </model>
 
 
-
+ <model>
+  <name>Fuel inletvalve trans Tank 5  </name>
+    <path>Cockpit/Engineer/mi-horizontal-valve.xml</path>
+    <overlay>
+      <params>
+  <connect-status>/controls/fuel/tank[11]/trans-valve</connect-status>        
+  		<defined-status>/systems/electrical/power/specific</defined-status>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.904</x-m>
+      <y-m>0.553</y-m>
+      <z-m>1.263</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>-5</pitch-deg>
+    </offsets>
+  </model>
+  
+  <model>
+  <name>Fuel inletvalve trans Tank 7  </name>
+    <path>Cockpit/Engineer/mi-horizontal-valve.xml</path>
+    <overlay>
+      <params>
+  <connect-status>/controls/fuel/tank[12]/trans-valve</connect-status>        
+  		<defined-status>/systems/electrical/power/specific</defined-status>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.631</x-m>
+      <y-m>0.553</y-m>
+      <z-m>1.263</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>-5</pitch-deg>
+    </offsets>
+  </model>
 
 
 
@@ -4581,10 +4825,88 @@
 
 
 
+<model>
+  <name>Fuel inletvalve inter Tank 5  Mi </name>
+    <path>Cockpit/Engineer/mi-wopen-valve.xml</path>
+    <overlay>
+      <params>
+  <open-status>/controls/fuel/tank[4]/interconnect-valve</open-status>        
+  		<defined-status>/systems/electrical/power/specific</defined-status>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.674</x-m>
+      <y-m>0.552</y-m>
+      <z-m>1.172</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>-5</pitch-deg>
+    </offsets>
+  </model>
+  
+  <model>
+  <name>Fuel inletvalve inter Tank 7  Mi </name>
+    <path>Cockpit/Engineer/mi-wopen-valve.xml</path>
+    <overlay>
+      <params>
+  <open-status>/controls/fuel/tank[6]/interconnect-valve</open-status>        
+  		<defined-status>/systems/electrical/power/specific</defined-status>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.865</x-m>
+      <y-m>0.551</y-m>
+      <z-m>1.172</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>-5</pitch-deg>
+    </offsets>
+  </model>
 
 
 
 
+
+
+
+
+<model>
+  <name>Fuel inletvalve Tank 5  Mi </name>
+    <path>Cockpit/Engineer/mi-horizontal-valve.xml</path>
+    <overlay>
+      <params>
+ <connect-status>/controls/fuel/tank[6]/inlet-valve</connect-status>        
+  		<defined-status>/controls/fuel/tank[6]/inlet-static</defined-status>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.682</x-m>
+      <y-m>0.552</y-m>
+      <z-m>1.258</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>-5</pitch-deg>
+    </offsets>
+  </model>
+  
+  <model>
+  <name>Fuel inter Tank 7  Mi </name>
+    <path>Cockpit/Engineer/mi-horizontal-valve.xml</path>
+    <overlay>
+      <params>
+ <connect-status>/controls/fuel/tank[4]/inlet-valve</connect-status>        
+  		<defined-status>/controls/fuel/tank[4]/inlet-static</defined-status>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.854</x-m>
+      <y-m>0.551</y-m>
+      <z-m>1.258</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>-5</pitch-deg>
+    </offsets>
+  </model>
 
 
 
@@ -4927,6 +5249,21 @@
     </offsets>
   </model>
   
+  
+  <model>
+  <name>Trans Valve 1 4  Mi </name>
+    <path>Cockpit/Engineer/mi-trans14.xml</path>
+    <overlay>
+    </overlay>
+    <offsets>
+     <x-m>-21.703</x-m>
+      <y-m>0.552</y-m>
+      <z-m>1.256</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>-5</pitch-deg>
+    </offsets>
+  </model>
   
   <model>
     <name>Trans Valve 1 4</name>
