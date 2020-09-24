@@ -1,0 +1,153 @@
+<?xml version="1.0"?>
+<PropertyList>
+  
+  <path>../Models/mi.ac</path>
+  
+<params>
+  <control-cutoff>/controls/engines/engine[0]/cutoff</control-cutoff>
+  <shut-pump>/controls/hydraulic/circuit[0]/valve[0]</shut-pump>
+ </params>
+ 
+<effect>
+    <inherits-from>Aircraft/Concorde/Models/Effects/interior</inherits-from>
+    
+    <object-name>Frame</object-name>
+    <object-name>Aft</object-name>
+    <object-name>Black</object-name>
+    <object-name>BR</object-name>
+    <object-name>Down</object-name>
+    <object-name>Five</object-name>
+    <object-name>H</object-name>
+    <object-name>HB</object-name>
+    <object-name>HY</object-name>
+    <object-name>Norm</object-name>
+    <object-name>Off</object-name>
+    <object-name>Open</object-name>
+    <object-name>Shut</object-name>
+    <object-name>TL</object-name>
+    <object-name>TR</object-name>
+    <object-name>Up</object-name>
+    <object-name>V</object-name>
+    <object-name>WOn</object-name>
+    <object-name>WOpen</object-name>
+    <object-name>WShut</object-name>
+    
+    
+</effect>
+
+
+
+  
+  
+  
+ 
+<animation>
+  <type>select</type>
+    <object-name>Shut</object-name>
+    <condition>
+    <and>
+    <property alias="/params/control-cutoff"/>
+    <property alias="/params/shut-pump"/>
+    <property>/systems/electrical/power/specific</property>
+      </and>
+    </condition>
+  </animation>
+  
+  <animation>
+  <type>select</type>  
+    <object-name>WOpen</object-name>
+   <condition>
+    <and>
+    <not>
+    <and>
+    <property alias="/params/control-cutoff"/>
+    <property alias="/params/shut-pump"/>
+      </and>
+    </not>
+   <property>/systems/electrical/power/specific</property>
+       </and>
+    </condition>
+  </animation>
+  
+  <animation>
+  <type>select</type>
+    <object-name>HB</object-name>    
+    <condition>
+ 
+    <not>
+      <property>/systems/electrical/power/specific</property>
+     </not>
+    </condition>
+  </animation>
+  
+  
+ 
+
+
+  <animation>
+  <type>select</type>  
+    <object-name>Off</object-name>  
+    <object-name>H</object-name>
+    <object-name>Down</object-name>   
+    <object-name>Up</object-name>    
+    <object-name>Aft</object-name>
+    <object-name>Black</object-name>
+    <object-name>BR</object-name>
+    <object-name>Five</object-name>
+    <object-name>HY</object-name>
+    <object-name>Norm</object-name>
+    <object-name>WShut</object-name> 
+    <object-name>TL</object-name>
+    <object-name>TR</object-name>
+    <object-name>V</object-name>      
+    <object-name>Open</object-name>
+    <object-name>WOn</object-name>
+    <condition>
+   
+    <equals>
+       <property>/sim/flaps/setting[1]</property>
+       <property>/sim/flaps/setting[0]</property>
+      </equals>
+     <!-- bug -->
+   
+     
+    </condition>
+  </animation>
+  
+  
+  
+  
+ 
+  
+ 
+  
+  <animation>
+    <type>material</type>
+    <object-name>Frame</object-name>
+    <object-name>Aft</object-name>
+    <object-name>Black</object-name>
+    <object-name>BR</object-name>
+    <object-name>Down</object-name>
+    <object-name>Five</object-name>
+    <object-name>H</object-name>
+    <object-name>HB</object-name>
+    <object-name>HY</object-name>
+    <object-name>Norm</object-name>
+    <object-name>Off</object-name>
+    <object-name>Open</object-name>
+    <object-name>Shut</object-name>
+    <object-name>TL</object-name>
+    <object-name>TR</object-name>
+    <object-name>Up</object-name>
+    <object-name>V</object-name>
+    <object-name>WOn</object-name>
+    <object-name>WOpen</object-name>
+    <object-name>WShut</object-name>
+  <emission>
+     <red>0.2</red>
+     <green>0.2</green>
+     <blue>0.2</blue>
+  </emission>
+</animation>
+
+</PropertyList>

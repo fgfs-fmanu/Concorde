@@ -5440,7 +5440,24 @@
     </offsets>
   </model>
 
-
+<model>
+<name> SSB Mi  </name>
+    <path>Cockpit/Engineer/mi-horizontal-valve.xml</path>
+    <overlay>
+      <params>
+        <connect-status>/controls/electric/ac/ssb</connect-status>        
+  		<defined-status>/systems/electrical/power/specific</defined-status>
+      </params>
+    </overlay>
+    <offsets>
+       <x-m>-21.380</x-m>
+      <y-m>0.519</y-m>
+      <z-m>1.338</z-m>
+      
+      <heading-deg>-95</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
 
 
 <model>
@@ -5451,7 +5468,7 @@
       <y-m>0.515</y-m>
       <z-m>1.338</z-m>
       
-      <heading-deg>-90</heading-deg>
+      <heading-deg>-95</heading-deg>
      <pitch-deg>25</pitch-deg>
     </offsets>
   </model>
@@ -5605,6 +5622,105 @@
      <pitch-deg>25</pitch-deg>
     </offsets>
   </model>
+
+
+
+
+
+
+
+
+
+<model>
+  <name>BTB  Mi 1 </name>
+    <path>Cockpit/Engineer/mi-vertical-valve.xml</path>
+    <overlay>
+      <params>
+  <connect-status>/controls/electric/ac/btb[0]</connect-status>        
+  		<defined-status>/systems/electrical/power/specific</defined-status>
+ </params>
+    </overlay>
+    <offsets>
+  <x-m>-21.485</x-m>
+      <y-m>0.52</y-m>
+      <z-m>1.368</z-m>
+      
+      <heading-deg>-95</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  <model>
+  <name>BTBMi 2 </name>
+    <path>Cockpit/Engineer/mi-vertical-valve.xml</path>
+    <overlay>
+      <params>
+  <connect-status>/controls/electric/ac/btb[1]</connect-status>        
+  		<defined-status>/systems/electrical/power/specific</defined-status>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.432</x-m>
+      <y-m>0.513</y-m>
+      <z-m>1.368</z-m>
+      
+      <heading-deg>-95</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  <model>
+  <name>BTB  Mi 3 </name>
+    <path>Cockpit/Engineer/mi-vertical-valve.xml</path>
+    <overlay>
+      <params>
+  <connect-status>/controls/electric/ac/btb[2]</connect-status>        
+  		<defined-status>/systems/electrical/power/specific</defined-status>
+ </params>
+    </overlay>
+    <offsets>
+          <x-m>-21.32</x-m>
+      <y-m>0.498</y-m>
+      <z-m>1.368</z-m>
+      
+      <heading-deg>-95</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  
+  <model>
+  <name>BTB  Mi 4 </name>
+    <path>Cockpit/Engineer/mi-vertical-valve.xml</path>
+    <overlay>
+      <params>
+  <connect-status>/controls/electric/ac/btb[3]</connect-status>        
+  		<defined-status>/systems/electrical/power/specific</defined-status>
+ </params>
+    </overlay>
+    <offsets>
+    <x-m>-21.263</x-m>
+      <y-m>0.491</y-m>
+      <z-m>1.368</z-m>
+      
+      <heading-deg>-95</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+
+
+
+
+
+
+
+
+
+
+
 
 
 <model>
@@ -5879,6 +5995,332 @@
   
   
   
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+   <model>
+  <name>Hyd Green 1 Open Mi  </name>
+    <path>Cockpit/Engineer/mi-hydopen-valve.xml</path>
+    <overlay>
+      <params>
+  <control-cutoff>/controls/engines/engine[0]/cutoff</control-cutoff>
+  <shut-pump>/controls/hydraulic/circuit[0]/valve[0]</shut-pump>
+ </params>
+    </overlay>
+    <offsets>
+     <x-m>-21.450</x-m>
+      <y-m>0.363</y-m>
+      <z-m>1.704</z-m>
+      
+      <heading-deg>-99</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+  
+  <model>
+  <name>Hyd Green 1 On Mi  </name>
+    <path>Cockpit/Engineer/mi-won-valve.xml</path>
+    <overlay>
+      <params>
+ <onload-pump>/controls/hydraulic/circuit[0]/onload[0]</onload-pump>
+  <shut-pump>/controls/hydraulic/circuit[0]/valve[0]</shut-pump>
+ </params>
+    </overlay>
+    <offsets>
+     <x-m>-21.450</x-m>
+      <y-m>0.369</y-m>
+      <z-m>1.692</z-m>
+      
+      <heading-deg>-99</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+  
+ 
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+   <model>
+  <name>Hyd Green 2 Open Mi  </name>
+    <path>Cockpit/Engineer/mi-hydopen-valve.xml</path>
+    <overlay>
+      <params>
+  <control-cutoff>/controls/engines/engine[0]/cutoff</control-cutoff>
+  <shut-pump>/controls/hydraulic/circuit[0]/valve[1]</shut-pump>
+ </params>
+    </overlay>
+    <offsets>
+     <x-m>-21.408</x-m>
+      <y-m>0.357</y-m>
+      <z-m>1.704</z-m>
+      
+      <heading-deg>-99</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+  
+  <model>
+  <name>Hyd Green 2 On Mi  </name>
+    <path>Cockpit/Engineer/mi-won-valve.xml</path>
+    <overlay>
+      <params>
+ <onload-pump>/controls/hydraulic/circuit[0]/onload[1]</onload-pump>
+  <shut-pump>/controls/hydraulic/circuit[0]/valve[1]</shut-pump>
+ </params>
+    </overlay>
+    <offsets>
+     <x-m>-21.408</x-m>
+      <y-m>0.363</y-m>
+      <z-m>1.692</z-m>
+      
+      <heading-deg>-99</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+  
+ 
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+   <model>
+  <name>Hyd Yellow 1 Open Mi  </name>
+    <path>Cockpit/Engineer/mi-hydopen-valve.xml</path>
+    <overlay>
+      <params>
+  <control-cutoff>/controls/engines/engine[1]/cutoff</control-cutoff>
+  <shut-pump>/controls/hydraulic/circuit[1]/valve[0]</shut-pump>
+ </params>
+    </overlay>
+    <offsets>
+     <x-m>-21.379</x-m>
+      <y-m>0.353</y-m>
+      <z-m>1.704</z-m>
+      
+      <heading-deg>-99</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+  
+  <model>
+  <name>Hyd Yellow 1 On Mi  </name>
+    <path>Cockpit/Engineer/mi-won-valve.xml</path>
+    <overlay>
+      <params>
+ <onload-pump>/controls/hydraulic/circuit[1]/onload[0]</onload-pump>
+  <shut-pump>/controls/hydraulic/circuit[1]/valve[0]</shut-pump>
+ </params>
+    </overlay>
+    <offsets>
+     <x-m>-21.379</x-m>
+      <y-m>0.359</y-m>
+      <z-m>1.692</z-m>
+      
+      <heading-deg>-99</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+  
+ 
+  
+  
+  
+  
+  
+  
+  
+  
+  <model>
+  <name>Hyd Yellow 2 Open Mi  </name>
+    <path>Cockpit/Engineer/mi-hydopen-valve.xml</path>
+    <overlay>
+      <params>
+  <control-cutoff>/controls/engines/engine[1]/cutoff</control-cutoff>
+  <shut-pump>/controls/hydraulic/circuit[1]/valve[1]</shut-pump>
+ </params>
+    </overlay>
+    <offsets>
+     <x-m>-21.314</x-m>
+      <y-m>0.345</y-m>
+      <z-m>1.704</z-m>
+      
+      <heading-deg>-99</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+  
+  <model>
+  <name>Hyd Yellow 2 On Mi  </name>
+    <path>Cockpit/Engineer/mi-won-valve.xml</path>
+    <overlay>
+      <params>
+ <onload-pump>/controls/hydraulic/circuit[1]/onload[1]</onload-pump>
+  <shut-pump>/controls/hydraulic/circuit[1]/valve[1]</shut-pump>
+ </params>
+    </overlay>
+    <offsets>
+     <x-m>-21.314</x-m>
+      <y-m>0.351</y-m>
+      <z-m>1.692</z-m>
+      
+      <heading-deg>-99</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+   <model>
+  <name>Hyd Blue 1 Open Mi  </name>
+    <path>Cockpit/Engineer/mi-hydopen-valve.xml</path>
+    <overlay>
+      <params>
+  <control-cutoff>/controls/engines/engine[2]/cutoff</control-cutoff>
+  <shut-pump>/controls/hydraulic/circuit[2]/valve[0]</shut-pump>
+ </params>
+    </overlay>
+    <offsets>
+     <x-m>-21.273</x-m>
+      <y-m>0.339</y-m>
+      <z-m>1.704</z-m>
+      
+      <heading-deg>-99</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+  
+  <model>
+  <name>Hyd Blue 1 On Mi  </name>
+    <path>Cockpit/Engineer/mi-won-valve.xml</path>
+    <overlay>
+      <params>
+ <onload-pump>/controls/hydraulic/circuit[2]/onload[0]</onload-pump>
+  <shut-pump>/controls/hydraulic/circuit[2]/valve[0]</shut-pump>
+ </params>
+    </overlay>
+    <offsets>
+     <x-m>-21.273</x-m>
+      <y-m>0.345</y-m>
+      <z-m>1.692</z-m>
+      
+      <heading-deg>-99</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+  
+ 
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+   <model>
+  <name>Hyd Blue 2 Open Mi  </name>
+    <path>Cockpit/Engineer/mi-hydopen-valve.xml</path>
+    <overlay>
+      <params>
+  <control-cutoff>/controls/engines/engine[2]/cutoff</control-cutoff>
+  <shut-pump>/controls/hydraulic/circuit[2]/valve[1]</shut-pump>
+ </params>
+    </overlay>
+    <offsets>
+     <x-m>-21.235</x-m>
+      <y-m>0.334</y-m>
+      <z-m>1.704</z-m>
+      
+      <heading-deg>-99</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+  
+  <model>
+  <name>Hyd Blue 2 On Mi  </name>
+    <path>Cockpit/Engineer/mi-won-valve.xml</path>
+    <overlay>
+      <params>
+ <onload-pump>/controls/hydraulic/circuit[2]/onload[1]</onload-pump>
+  <shut-pump>/controls/hydraulic/circuit[2]/valve[1]</shut-pump>
+ </params>
+    </overlay>
+    <offsets>
+     <x-m>-21.235</x-m>
+      <y-m>0.340</y-m>
+      <z-m>1.692</z-m>
+      
+      <heading-deg>-99</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+  
+ 
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+   
+  
+ 
   
 
 <model>
@@ -6413,6 +6855,89 @@
     </offsets>
   </model>
 
+
+<model>
+  <name>Gen  Mi 1 </name>
+    <path>Cockpit/Engineer/mi-vertical-valve.xml</path>
+    <overlay>
+      <params>
+  <connect-status>/controls/engines/engine[0]/master-alt</connect-status>        
+  		<defined-status>/systems/electrical/power/specific</defined-status>
+ </params>
+    </overlay>
+    <offsets>
+   <x-m>-21.484</x-m>
+      <y-m>0.498</y-m>
+      <z-m>1.415</z-m>
+      
+      <heading-deg>-99</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  <model>
+  <name>Gen Mi 2 </name>
+    <path>Cockpit/Engineer/mi-vertical-valve.xml</path>
+    <overlay>
+      <params>
+  <connect-status>/controls/engines/engine[1]/master-alt</connect-status>        
+  		<defined-status>/systems/electrical/power/specific</defined-status>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.429</x-m>
+      <y-m>0.491</y-m>
+      <z-m>1.415</z-m>
+      
+      <heading-deg>-99</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  <model>
+  <name>Gen  Mi 3 </name>
+    <path>Cockpit/Engineer/mi-vertical-valve.xml</path>
+    <overlay>
+      <params>
+  <connect-status>/controls/engines/engine[2]/master-alt</connect-status>        
+  		<defined-status>/systems/electrical/power/specific</defined-status>
+ </params>
+    </overlay>
+    <offsets>
+       <x-m>-21.314</x-m>
+      <y-m>0.476</y-m>
+      <z-m>1.415</z-m>
+      
+      <heading-deg>-99</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  
+  <model>
+  <name>Gen  Mi 4 </name>
+    <path>Cockpit/Engineer/mi-vertical-valve.xml</path>
+    <overlay>
+      <params>
+  <connect-status>/controls/engines/engine[3]/master-alt</connect-status>        
+  		<defined-status>/systems/electrical/power/specific</defined-status>
+ </params>
+    </overlay>
+    <offsets>
+       <x-m>-21.261</x-m>
+      <y-m>0.469</y-m>
+      <z-m>1.415</z-m>
+      
+      <heading-deg>-99</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+
+
+
 <model>
     <name>Gen 1</name>
     <path>Cockpit/Engineer/gen1.xml</path>
@@ -6730,6 +7255,28 @@
     </offsets>
   </model>
   
+  
+  
+   <model>
+<name>EMS A Mi </name>
+    <path>Cockpit/Engineer/mi-horizontal-valve.xml</path>
+    <overlay>
+      <params>
+        <connect-status>/controls/electric/dc/ems-a</connect-status>        
+  		<defined-status>/systems/electrical/power/specific</defined-status>
+      </params>
+    </overlay>
+    <offsets>
+       <x-m>-21.420</x-m>
+      <y-m>0.537</y-m>
+      <z-m>1.137</z-m>
+      
+      
+      <heading-deg>-99</heading-deg>
+     <pitch-deg>-5</pitch-deg>
+    </offsets>
+  </model>
+  
    <model>
     <name>DC Main Bus</name>
     <path>Cockpit/Engineer/dc-main-bus.xml</path>
@@ -6745,6 +7292,28 @@
       
       <heading-deg>-99</heading-deg>
      <pitch-deg>-3</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  
+   <model>
+<name>EMS B Mi </name>
+    <path>Cockpit/Engineer/mi-horizontal-valve.xml</path>
+    <overlay>
+      <params>
+        <connect-status>/controls/electric/dc/ems-b</connect-status>        
+  		<defined-status>/systems/electrical/power/specific</defined-status>
+      </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.318</x-m>
+      <y-m>0.524</y-m>
+      <z-m>1.137</z-m>
+      
+      
+      <heading-deg>-99</heading-deg>
+     <pitch-deg>-5</pitch-deg>
     </offsets>
   </model>
   
@@ -6769,7 +7338,45 @@
   
   
   
+   <model>
+<name>BATT A Mi </name>
+    <path>Cockpit/Engineer/mi-vertical-valve.xml</path>
+    <overlay>
+      <params>
+        <connect-status>/controls/electric/dc/master-bat[0]</connect-status>        
+  		<defined-status>/systems/electrical/power/specific</defined-status>
+      </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.470</x-m>
+      <y-m>0.544</y-m>
+      <z-m>1.117</z-m>
+      
+      
+      <heading-deg>-99</heading-deg>
+     <pitch-deg>-5</pitch-deg>
+    </offsets>
+  </model>
   
+   <model>
+<name>BATT B Mi </name>
+    <path>Cockpit/Engineer/mi-vertical-valve.xml</path>
+    <overlay>
+      <params>
+        <connect-status>/controls/electric/dc/master-bat[1]</connect-status>        
+  		<defined-status>/systems/electrical/power/specific</defined-status>
+      </params>
+    </overlay>
+    <offsets>
+     <x-m>-21.267</x-m>
+      <y-m>0.517</y-m>
+      <z-m>1.117</z-m>
+      
+      
+      <heading-deg>-99</heading-deg>
+     <pitch-deg>-5</pitch-deg>
+    </offsets>
+  </model>
   
   
   
@@ -6887,6 +7494,112 @@
      <pitch-deg>-5</pitch-deg>
     </offsets>
   </model>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <model>
+  <name>AC ESS Mi 1 </name>
+    <path>Cockpit/Engineer/mi-vertical-valve.xml</path>
+    <overlay>
+      <params>
+  <connect-status>/controls/electric/ac/essential[0]</connect-status>        
+  		<defined-status>/systems/electrical/power/specific</defined-status>
+ </params>
+    </overlay>
+    <offsets>
+   <x-m>-21.469</x-m>
+      <y-m>0.548</y-m>
+      <z-m>1.265</z-m>
+      
+      <heading-deg>-99</heading-deg>
+     <pitch-deg>-5</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  <model>
+  <name>AC ESS BMi 2 </name>
+    <path>Cockpit/Engineer/mi-vertical-valve.xml</path>
+    <overlay>
+      <params>
+  <connect-status>/controls/electric/ac/essential[1]</connect-status>        
+  		<defined-status>/systems/electrical/power/specific</defined-status>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.439</x-m>
+      <y-m>0.545</y-m>
+      <z-m>1.265</z-m>
+      
+      <heading-deg>-99</heading-deg>
+     <pitch-deg>-5</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  <model>
+  <name>AC ESS Mi 3 </name>
+    <path>Cockpit/Engineer/mi-vertical-valve.xml</path>
+    <overlay>
+      <params>
+  <connect-status>/controls/electric/ac/essential[2]</connect-status>        
+  		<defined-status>/systems/electrical/power/specific</defined-status>
+ </params>
+    </overlay>
+    <offsets>
+       <x-m>-21.284</x-m>
+      <y-m>0.523</y-m>
+      <z-m>1.265</z-m>
+      
+      <heading-deg>-99</heading-deg>
+     <pitch-deg>-5</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  
+  <model>
+  <name>AC ESS Mi 4 </name>
+    <path>Cockpit/Engineer/mi-vertical-valve.xml</path>
+    <overlay>
+      <params>
+  <connect-status>/controls/electric/ac/essential[3]</connect-status>        
+  		<defined-status>/systems/electrical/power/specific</defined-status>
+ </params>
+    </overlay>
+    <offsets>
+    <x-m>-21.254</x-m>
+      <y-m>0.519</y-m>
+      <z-m>1.265</z-m>
+      
+      <heading-deg>-99</heading-deg>
+     <pitch-deg>-5</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   
   
   
@@ -7149,7 +7862,7 @@
   
   
   <model>
-    <name>Red OHeat </name>
+    <name>Blue Selected </name>
     <path>Cockpit/Engineer/light-selected.xml</path>
    <overlay>
    
@@ -7219,6 +7932,29 @@
      <pitch-deg>-1</pitch-deg>
     </offsets>
   </model>
+  
+  
+  <model>
+<name>ASB Mi </name>
+    <path>Cockpit/Engineer/mi-horizontal-valve.xml</path>
+    <overlay>
+      <params>
+        <connect-status>/controls/electric/ac/emergency/asb</connect-status>        
+  		<defined-status>/systems/electrical/power/specific</defined-status>
+      </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.366</x-m>
+      <y-m>0.533</y-m>
+      <z-m>1.205</z-m>
+      
+      <heading-deg>-99</heading-deg>
+     <pitch-deg>-1</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  
   
   <model>
     <name>Light Fail</name>

@@ -363,8 +363,8 @@
     <main-b type="bool">true</main-b>
     <essential-a type="bool">true</essential-a>               <!-- AC essential to DC essential (TRU) -->
     <essential-b type="bool">true</essential-b>
-    <ems-a type="bool">true</ems-a>                           <!-- essential / main split -->
-    <ems-b type="bool">true</ems-b>
+    <ems-a type="bool">false</ems-a>                           <!-- essential / main split -->
+    <ems-b type="bool">false</ems-b>
     <voltmeter type="int">0</voltmeter>                       <!-- vertical -->
    </dc>
   </electric>

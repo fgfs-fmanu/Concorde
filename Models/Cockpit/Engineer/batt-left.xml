@@ -17,7 +17,7 @@
 
     <type>rotate</type>
     <object-name>Switch</object-name>
-    <property>/controls/electrical/dc/esma</property>
+    <property>/controls/electric/dc/ems-a</property>
 	<condition>
     <property>/controls/electric/dc/master-bat[0]</property>
   	</condition>
@@ -56,7 +56,7 @@
       <repeatable>false</repeatable>
       <binding>
         <command>property-toggle</command>
-        <property>/controls/electrical/dc/esma</property>
+        <property>/controls/electric/dc/ems-a</property>
         <step>1</step>
         <min>0</min>
         <max>1</max>
@@ -87,7 +87,7 @@
 
 	<condition>
 	<not>
-    <property>/controls/electrical/dc/esma</property>
+    <property>/controls/electric/dc/ems-a</property>
 	</not>
   </condition>
     <interpolation>
@@ -120,9 +120,7 @@
     <type>pick</type>
     <object-name>Switch</object-name>
 	<condition>
-	<not>
-    <property>/controls/electrical/dc/esma</property>
-	</not>
+	<not><property>/controls/electric/dc/ems-a</property></not>
   </condition>
     <action>
       <name>Auto-trim</name>

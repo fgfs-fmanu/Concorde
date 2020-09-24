@@ -484,71 +484,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
 
 <!-- GCB status -->
 
-  <instrument include="Instruments/concorde-connection-vertical.xml">
-   <name>GCB 1</name>
-   <condition>
-    <or>
-     <and>
-      <property>/sim/current-view/internal</property>
-      <property>/systems/seat/engineer</property>
-      <less-than>
-       <property>/sim/current-view/goal-heading-offset-deg</property>
-       <value>275</value>
-      </less-than>
-      <greater-than>
-       <property>/sim/current-view/goal-heading-offset-deg</property>
-       <value>205</value>
-      </greater-than>
-      <greater-than>
-       <property>/sim/current-view/goal-pitch-offset-deg</property>
-       <value>-35</value>
-      </greater-than>
-     </and>
-     <property>/controls/seat/all</property>
-    </or>
-   </condition>
-   <params>
-    <connect-status>/controls/engines/engine[0]/master-alt</connect-status>
-   </params>
-   <x>0</x>
-   <y>140</y>
-   <w>18</w>
-   <h>18</h>
-  </instrument>
-
  
-
-  <instrument include="Instruments/concorde-connection-vertical.xml">
-   <name>GCB 2</name>
-   <condition>
-    <or>
-     <and>
-      <property>/sim/current-view/internal</property>
-      <property>/systems/seat/engineer</property>
-      <less-than>
-       <property>/sim/current-view/goal-heading-offset-deg</property>
-       <value>270</value>
-      </less-than>
-      <greater-than>
-       <property>/sim/current-view/goal-heading-offset-deg</property>
-       <value>200</value>
-      </greater-than>
-      <greater-than>
-       <property>/sim/current-view/goal-pitch-offset-deg</property>
-       <value>-35</value>
-      </greater-than>
-     </and>
-     <property>/controls/seat/all</property>
-    </or>
-   </condition>
-   <params>
-    <connect-status>/controls/engines/engine[1]/master-alt</connect-status>
-   </params>
-   <x>100</x>
-   <y>140</y>
-   <w>18</w>
-   <h>18</h>
-  </instrument>
 
  
   <instrument include="Instruments/concorde-elec-gpb.xml">
@@ -583,71 +519,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
    <h>80</h>
   </instrument>
 
-  <instrument include="Instruments/concorde-connection-vertical.xml">
-   <name>GCB 3</name>
-   <condition>
-    <or>
-     <and>
-      <property>/sim/current-view/internal</property>
-      <property>/systems/seat/engineer</property>
-      <less-than>
-       <property>/sim/current-view/goal-heading-offset-deg</property>
-       <value>260</value>
-      </less-than>
-      <greater-than>
-       <property>/sim/current-view/goal-heading-offset-deg</property>
-       <value>195</value>
-      </greater-than>
-      <greater-than>
-       <property>/sim/current-view/goal-pitch-offset-deg</property>
-       <value>-35</value>
-      </greater-than>
-     </and>
-     <property>/controls/seat/all</property>
-    </or>
-   </condition>
-   <params>
-    <connect-status>/controls/engines/engine[2]/master-alt</connect-status>
-   </params>
-   <x>310</x>
-   <y>140</y>
-   <w>18</w>
-   <h>18</h>
-  </instrument>
-
   
-
-  <instrument include="Instruments/concorde-connection-vertical.xml">
-   <name>GCB 4</name>
-   <condition>
-    <or>
-     <and>
-      <property>/sim/current-view/internal</property>
-      <property>/systems/seat/engineer</property>
-      <less-than>
-       <property>/sim/current-view/goal-heading-offset-deg</property>
-       <value>260</value>
-      </less-than>
-      <greater-than>
-       <property>/sim/current-view/goal-heading-offset-deg</property>
-       <value>190</value>
-      </greater-than>
-      <greater-than>
-       <property>/sim/current-view/goal-pitch-offset-deg</property>
-       <value>-35</value>
-      </greater-than>
-     </and>
-     <property>/controls/seat/all</property>
-    </or>
-   </condition>
-   <params>
-    <connect-status>/controls/engines/engine[3]/master-alt</connect-status>
-   </params>
-   <x>410</x>
-   <y>140</y>
-   <w>18</w>
-   <h>18</h>
-  </instrument>
 
  
 
@@ -656,37 +528,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
   
 <!-- BTB -->
 
-  <instrument include="Instruments/concorde-connection-vertical.xml">
-   <name>BTB 1</name>
-   <condition>
-    <or>
-     <and>
-      <property>/sim/current-view/internal</property>
-      <property>/systems/seat/engineer</property>
-      <less-than>
-       <property>/sim/current-view/goal-heading-offset-deg</property>
-       <value>275</value>
-      </less-than>
-      <greater-than>
-       <property>/sim/current-view/goal-heading-offset-deg</property>
-       <value>205</value>
-      </greater-than>
-      <greater-than>
-       <property>/sim/current-view/goal-pitch-offset-deg</property>
-       <value>-40</value>
-      </greater-than>
-     </and>
-     <property>/controls/seat/all</property>
-    </or>
-   </condition>
-   <params>
-    <connect-status>/controls/electric/ac/btb[0]</connect-status>
-   </params>
-   <x>-10</x>
-   <y>50</y>
-   <w>18</w>
-   <h>18</h>
-  </instrument>
+  
 
   <instrument include="Instruments/concorde-elec-btb.xml">
    <name>BTB 1 selector</name>
@@ -721,37 +563,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
    <h>80</h>
   </instrument>
 
-  <instrument include="Instruments/concorde-connection-vertical.xml">
-   <name>BTB 2</name>
-   <condition>
-    <or>
-     <and>
-      <property>/sim/current-view/internal</property>
-      <property>/systems/seat/engineer</property>
-      <less-than>
-       <property>/sim/current-view/goal-heading-offset-deg</property>
-       <value>270</value>
-      </less-than>
-      <greater-than>
-       <property>/sim/current-view/goal-heading-offset-deg</property>
-       <value>200</value>
-      </greater-than>
-      <greater-than>
-       <property>/sim/current-view/goal-pitch-offset-deg</property>
-       <value>-40</value>
-      </greater-than>
-     </and>
-     <property>/controls/seat/all</property>
-    </or>
-   </condition>
-   <params>
-    <connect-status>/controls/electric/ac/btb[1]</connect-status>
-   </params>
-   <x>90</x>
-   <y>50</y>
-   <w>18</w>
-   <h>18</h>
-  </instrument>
+  
 
   <instrument include="Instruments/concorde-elec-btb.xml">
    <name>BTB 2 selector</name>
@@ -786,37 +598,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
    <h>80</h>
   </instrument>
 
-  <instrument include="Instruments/concorde-connection-vertical.xml">
-   <name>BTB 3</name>
-   <condition>
-    <or>
-     <and>
-      <property>/sim/current-view/internal</property>
-      <property>/systems/seat/engineer</property>
-      <less-than>
-       <property>/sim/current-view/goal-heading-offset-deg</property>
-       <value>265</value>
-      </less-than>
-      <greater-than>
-       <property>/sim/current-view/goal-heading-offset-deg</property>
-       <value>195</value>
-      </greater-than>
-      <greater-than>
-       <property>/sim/current-view/goal-pitch-offset-deg</property>
-       <value>-35</value>
-      </greater-than>
-     </and>
-     <property>/controls/seat/all</property>
-    </or>
-   </condition>
-   <params>
-    <connect-status>/controls/electric/ac/btb[2]</connect-status>
-   </params>
-   <x>300</x>
-   <y>50</y>
-   <w>18</w>
-   <h>18</h>
-  </instrument>
+ 
 
   <instrument include="Instruments/concorde-elec-btb.xml">
    <name>BTB 3 selector</name>
@@ -851,37 +633,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
    <h>80</h>
   </instrument>
 
-  <instrument include="Instruments/concorde-connection-vertical.xml">
-   <name>BTB 4</name>
-   <condition>
-    <or>
-     <and>
-      <property>/sim/current-view/internal</property>
-      <property>/systems/seat/engineer</property>
-      <less-than>
-       <property>/sim/current-view/goal-heading-offset-deg</property>
-       <value>260</value>
-      </less-than>
-      <greater-than>
-       <property>/sim/current-view/goal-heading-offset-deg</property>
-       <value>190</value>
-      </greater-than>
-      <greater-than>
-       <property>/sim/current-view/goal-pitch-offset-deg</property>
-       <value>-35</value>
-      </greater-than>
-     </and>
-     <property>/controls/seat/all</property>
-    </or>
-   </condition>
-   <params>
-    <connect-status>/controls/electric/ac/btb[3]</connect-status>
-   </params>
-   <x>400</x>
-   <y>50</y>
-   <w>18</w>
-   <h>18</h>
-  </instrument>
+  
 
   <instrument include="Instruments/concorde-elec-btb.xml">
    <name>BTB 4 selector</name>
@@ -918,37 +670,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
 
 <!-- SSB -->
 
-  <instrument include="Instruments/concorde-connection.xml">
-   <name>SSB</name>
-   <condition>
-    <or>
-     <and>
-      <property>/sim/current-view/internal</property>
-      <property>/systems/seat/engineer</property>
-      <less-than>
-       <property>/sim/current-view/goal-heading-offset-deg</property>
-       <value>265</value>
-      </less-than>
-      <greater-than>
-       <property>/sim/current-view/goal-heading-offset-deg</property>
-       <value>195</value>
-      </greater-than>
-      <greater-than>
-       <property>/sim/current-view/goal-pitch-offset-deg</property>
-       <value>-40</value>
-      </greater-than>
-     </and>
-     <property>/controls/seat/all</property>
-    </or>
-   </condition>
-   <params>
-    <connect-status>/controls/electric/ac/ssb</connect-status>
-   </params>
-   <x>175</x>
-   <y>0</y>
-   <w>18</w>
-   <h>18</h>
-  </instrument>
+
 
   <instrument include="Instruments/concorde-elec-ssb.xml">
    <name>SSB switch</name>
