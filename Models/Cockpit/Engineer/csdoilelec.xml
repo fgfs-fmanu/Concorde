@@ -42,24 +42,94 @@
     <type>select</type>
     <object-name>AlarmOn</object-name>
     <condition>
-    <not>
-        <less-than>
+       <and>
+     <greater-than>
+    <property>/systems/electrical/outputs/bulb</property>
+    <value>20.0</value>
+   </greater-than>
+      <or>
+       
+    <property>/controls/lighting/crew/engineer/aft/test</property>
+     <!-- bug -->
+     <greater-than>
           <property alias="/params/inlet-select"/>
           <value>150</value>
-        </less-than>
-        </not>
-    </condition>    
+        </greater-than>
+      </or>
+      
+      <not>
+    <property>/controls/lighting/crew/engineer/aft/low</property>
+    </not>
+     </and>
+     
+    </condition>
+
+ 
+  </animation>
+  
+  
+  <animation>
+    <type>material</type>
+    <object-name>AlarmOff</object-name>
+     <condition>
+       <and>
+     <greater-than>
+    <property>/systems/electrical/outputs/bulb</property>
+    <value>20.0</value>
+   </greater-than>
+      <or>
+       
+    <property>/controls/lighting/crew/engineer/aft/test</property>
+     <!-- bug -->
+      <greater-than>
+          <property alias="/params/inlet-select"/>
+          <value>150</value>
+        </greater-than>
+      </or>
+      
+      
+    <property>/controls/lighting/crew/engineer/aft/low</property>
+    
+     </and>
+     
+    </condition>
+
+    <emission>
+      <red>0.5</red>
+      <green>0.25</green>
+      <blue>0</blue>
+    </emission>
   </animation>
   
   <animation>
     <type>select</type>
     <object-name>AlarmOff</object-name>
     <condition>
-        <less-than>
+    <not>
+        <and>
+     <greater-than>
+    <property>/systems/electrical/outputs/bulb</property>
+    <value>20.0</value>
+   </greater-than>
+      <or>
+       
+    <property>/controls/lighting/crew/engineer/aft/test</property>
+     <!-- bug -->
+     <greater-than>
           <property alias="/params/inlet-select"/>
           <value>150</value>
-        </less-than>
-    </condition>    
+        </greater-than>
+      </or>
+      
+      <not>
+    <property>/controls/lighting/crew/engineer/aft/low</property>
+    </not>
+     </and>
+     
+     </not>
+    </condition>
+
+    
   </animation>
 
 

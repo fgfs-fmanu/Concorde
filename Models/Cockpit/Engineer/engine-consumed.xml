@@ -1,0 +1,205 @@
+<?xml version="1.0"?>
+<PropertyList>
+  <path>../Models/engine_consumed.ac</path>
+
+ <params>
+    <fuel-kg>/instrumentation/fuel-consumed[0]/total-kg</fuel-kg>
+    <reset-sel>/instrumentation/fuel-consumed[0]/reset</reset-sel>
+   </params>
+
+<effect>
+    <inherits-from>Aircraft/Concorde/Models/Effects/interior</inherits-from>
+    <object-name>Frame</object-name>
+    <object-name>AlarmOn</object-name>
+    <object-name>AlarmOff</object-name>
+</effect>
+
+<effect>
+    <inherits-from>Aircraft/Concorde/Models/Effects/flash</inherits-from>
+  
+</effect>
+
+
+<animation>
+    <type>select</type>
+    <object-name>FF</object-name>
+    <condition>
+      <or>
+	<not><property>/instrumentation/clock/serviceable</property></not>
+        <less-than>
+          <property>/systems/electrical/outputs/specific</property>
+          <value>20.0</value>
+        </less-than>
+      </or>
+    </condition>    
+  </animation>
+  
+  <animation>
+    <object-name>T1</object-name>
+   <type>textranslate</type>
+    <property alias="/params/fuel-kg"/>
+    <bias>0.01</bias>
+    <factor>0.00001</factor>
+    <step>10000</step>
+    <axis>
+      <x>1</x>
+      <y>0</y>
+    </axis>
+  </animation>
+  
+  <animation>
+    <object-name>T2</object-name>
+    <type>textranslate</type>
+    <property alias="/params/fuel-kg"/>
+    <bias>0.01</bias>
+    <factor>0.0001</factor>
+    <step>1000</step>
+    <axis>
+      <x>1</x>
+      <y>0</y>
+    </axis>
+  </animation>
+  
+  <animation>
+    <object-name>T3</object-name>
+    <type>textranslate</type>
+    <property alias="/params/fuel-kg"/>
+      <bias>0.01</bias>
+    <factor>0.001</factor>
+    <step>100</step>
+    <axis>
+      <x>1</x>
+      <y>0</y>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>textranslate</type>
+    <object-name>T4</object-name>
+    <property alias="/params/fuel-kg"/>
+    <bias>0.01</bias>
+    <factor>0.01</factor>
+    <step>10</step>
+    <axis>
+      <x>1</x>
+      <y>0</y>
+    </axis>
+  </animation>
+ 
+ 
+ 
+ 
+ <animation>
+    <type>select</type>
+    <object-name>AlarmOn</object-name>    
+    <object-name>AlarmOn.001</object-name>
+    <condition>
+       <and>
+     <greater-than>
+    <property>/systems/electrical/outputs/bulb</property>
+    <value>20.0</value>
+   </greater-than>
+       
+    <property>/controls/lighting/crew/engineer/center/test</property>
+     <!-- bug -->
+      
+      <not>
+    <property>/controls/lighting/crew/engineer/center/low</property>
+    </not>
+     </and>
+     
+    </condition>
+
+ 
+  </animation>
+  
+  
+ 
+  
+  <animation>
+    <type>select</type>    
+    <object-name>AlarmOff</object-name>
+    <object-name>AlarmOff.001</object-name>
+    <condition>
+    <not>
+        <and>
+     <greater-than>
+    <property>/systems/electrical/outputs/bulb</property>
+    <value>20.0</value>
+   </greater-than>
+       
+    <property>/controls/lighting/crew/engineer/center/test</property>
+     <!-- bug -->
+      
+      <not>
+    <property>/controls/lighting/crew/engineer/center/low</property>
+    </not>
+     </and>
+     
+     </not>
+    </condition>
+
+    
+  </animation>
+ 
+ 
+ 
+  
+  <animation>
+    <type>material</type>
+    <object-name>T1</object-name>
+    <object-name>T2</object-name>
+    <object-name>T3</object-name>
+    <object-name>T4</object-name>
+  <condition>
+  <and>
+    <property>controls/lighting/instrument-lights</property>
+        <greater-than>
+          <property>/systems/electrical/outputs/specific</property>
+          <value>20.0</value>
+        </greater-than>
+  </and>
+  </condition>
+  <emission>
+   <red>0.7</red>
+   <green>0.2</green>
+   <blue>0.2</blue>
+   <factor-prop>/controls/lighting/instruments-norm</factor-prop>
+  </emission>
+  </animation>
+  <animation>
+    <type>material</type>
+    <object-name>Cube</object-name>
+    <object-name>Cylinder</object-name>
+  <emission>
+     <red>0.2</red>
+     <green>0.2</green>
+     <blue>0.2</blue>
+  </emission>
+ </animation>
+ 
+ 
+ <animation>
+    <type>pick</type>
+    <object-name>Cylinder</object-name>
+    <action>
+      <name>Auto-trim</name>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+    <command>property-assign</command>
+    <property alias="../../../../params/fuel-kg"/>
+    <value>0.0</value>
+   </binding>
+   <binding>
+    <command>property-assign</command>
+    <property alias="../../../../params/reset-sel"/>
+    <value>true</value>
+   </binding>
+     <binding>
+        <command>property-toggle</command>
+        <property>/instrumentation/generic/click</property>
+      </binding>
+    </action>
+  </animation>
+</PropertyList>

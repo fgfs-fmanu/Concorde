@@ -3538,7 +3538,7 @@
   
   <model>
   <name>Fuel Tank 1 Crossfeed Mi  </name>
-    <path>Cockpit/Engineer/mi-vertical-valve.xml</path>
+    <path>Cockpit/Engineer/mi-horizontal-valve.xml</path>
     <overlay>
       <params>
   <connect-status>/controls/fuel/tank[0]/cross-feed-valve</connect-status>        
@@ -3556,7 +3556,7 @@
   
   <model>
   <name>Fuel Tank 2 Crossfeed Mi  </name>
-    <path>Cockpit/Engineer/mi-vertical-valve.xml</path>
+    <path>Cockpit/Engineer/mi-horizontal-valve.xml</path>
     <overlay>
       <params>
   <connect-status>/controls/fuel/tank[1]/cross-feed-valve</connect-status>        
@@ -3574,7 +3574,7 @@
   
   <model>
   <name>Fuel Tank 3 Crossfeed Mi  </name>
-    <path>Cockpit/Engineer/mi-vertical-valve.xml</path>
+    <path>Cockpit/Engineer/mi-horizontal-valve.xml</path>
     <overlay>
       <params>
   <connect-status>/controls/fuel/tank[2]/cross-feed-valve</connect-status>        
@@ -3592,7 +3592,7 @@
   
   <model>
   <name>Fuel Tank 4 Crossfeed Mi  </name>
-    <path>Cockpit/Engineer/mi-vertical-valve.xml</path>
+    <path>Cockpit/Engineer/mi-horizontal-valve.xml</path>
     <overlay>
       <params>
   <connect-status>/controls/fuel/tank[3]/cross-feed-valve</connect-status>        
@@ -3768,6 +3768,92 @@
       <heading-deg>-90</heading-deg>
     </offsets>
   </model>
+
+
+
+
+
+
+
+<model>
+    <name>Engine Consumed 1</name>
+    <path>Cockpit/Engineer/engine-consumed.xml</path>
+    <overlay>
+      <params>
+    <fuel-kg>/instrumentation/fuel-consumed[0]/total-kg</fuel-kg>
+    <reset-sel>/instrumentation/fuel-consumed[0]/reset</reset-sel>
+   </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.945</x-m>
+      <y-m>0.552</y-m>
+      <z-m>0.936</z-m>
+      
+      <heading-deg>-90</heading-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <name>Engine Consumed 2</name>
+    <path>Cockpit/Engineer/engine-consumed.xml</path>
+    <overlay>
+     <params>
+    <fuel-kg>/instrumentation/fuel-consumed[1]/total-kg</fuel-kg>
+    <reset-sel>/instrumentation/fuel-consumed[1]/reset</reset-sel>
+   </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.885</x-m>
+      <y-m>0.552</y-m>
+      <z-m>0.936</z-m>
+      
+      <heading-deg>-90</heading-deg>
+    </offsets>
+  </model>
+  
+   <model>
+    <name>Engine Consumed 3</name>
+    <path>Cockpit/Engineer/engine-consumed.xml</path>
+    <overlay>
+     <params>
+    <fuel-kg>/instrumentation/fuel-consumed[2]/total-kg</fuel-kg>
+    <reset-sel>/instrumentation/fuel-consumed[2]/reset</reset-sel>
+   </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.663</x-m>
+      <y-m>0.552</y-m>
+      <z-m>0.936</z-m>
+      
+      <heading-deg>-90</heading-deg>
+    </offsets>
+  </model>
+
+ <model>
+    <name>Engine Consumed 4</name>
+    <path>Cockpit/Engineer/engine-consumed.xml</path>
+    <overlay>
+     <params>
+    <fuel-kg>/instrumentation/fuel-consumed[3]/total-kg</fuel-kg>
+    <reset-sel>/instrumentation/fuel-consumed[3]/reset</reset-sel>
+   </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.600</x-m>
+      <y-m>0.552</y-m>
+      <z-m>0.936</z-m>
+      
+      <heading-deg>-90</heading-deg>
+    </offsets>
+  </model>
+
+
+
+
+
+
+
+
 
 
 
