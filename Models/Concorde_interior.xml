@@ -5473,12 +5473,25 @@
   </model>
   
   <model>
-    <name>Engineer COG</name>
+    <name>Engineer Channel COG</name>
     <path>Aircraft/Concorde/Models/Cockpit/Engineer/cogchannelengineer.xml</path>
     <offsets>
         <x-m>-21.777</x-m>
       <y-m>0.565</y-m>
       <z-m>1.225</z-m>
+      <heading-deg>-90</heading-deg>
+      <pitch-deg>-1</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  <model>
+    <name>Engineer Fuel AC</name>
+    <path>Aircraft/Concorde/Models/Cockpit/Engineer/ac-weight.xml</path>
+    <offsets>
+        <x-m>-21.717</x-m>
+      <y-m>0.564</y-m>
+      <z-m>1.167</z-m>
       <heading-deg>-90</heading-deg>
       <pitch-deg>-1</pitch-deg>
     </offsets>

@@ -268,34 +268,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
    <h>28</h>
   </instrument>
 
-  <instrument include="Instruments/concorde-fuel-ac-weight.xml">
-   <name>Aircraft weight</name>
-   <condition>
-    <or>
-     <and>
-      <property>/sim/current-view/internal</property>
-      <property>/systems/seat/engineer</property>
-      <less-than>
-       <property>/sim/current-view/goal-heading-offset-deg</property>
-       <value>300</value>
-      </less-than>
-      <greater-than>
-       <property>/sim/current-view/goal-heading-offset-deg</property>
-       <value>220</value>
-      </greater-than>
-      <less-than>
-       <property>/sim/current-view/goal-pitch-offset-deg</property>
-       <value>0</value>
-      </less-than>
-     </and>
-     <property>/controls/seat/all</property>
-    </or>
-   </condition>
-   <x>272</x>
-   <y>493</y>
-   <w>48</w>
-   <h>60</h>
-  </instrument>
+  
 
 <!-- main tanks left -->
 
