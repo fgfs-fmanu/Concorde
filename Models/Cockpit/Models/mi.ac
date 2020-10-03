@@ -4,24 +4,24 @@ MATERIAL "Material.002" rgb 0.640 0.640 0.640  amb 1.000 1.000 1.000  emis 0.000
 MATERIAL "Material.003" rgb 0.640 0.640 0.640  amb 1.000 1.000 1.000  emis 0.000 0.000 0.000  spec 0.500 0.500 0.500  shi 12 trans 0.000
 MATERIAL "Material.004" rgb 0.640 0.640 0.640  amb 1.000 1.000 1.000  emis 0.000 0.000 0.000  spec 0.500 0.500 0.500  shi 12 trans 0.000
 MATERIAL "Material.005" rgb 0.640 0.640 0.640  amb 1.000 1.000 1.000  emis 0.000 0.000 0.000  spec 0.500 0.500 0.500  shi 12 trans 0.000
+MATERIAL "Material.019" rgb 0.640 0.640 0.640  amb 1.000 1.000 1.000  emis 0.000 0.000 0.000  spec 0.500 0.500 0.500  shi 12 trans 0.000
 MATERIAL "Frame" rgb 1.000 1.000 1.000  amb 0.500 0.500 0.500  emis 0.000 0.000 0.000  spec 1.000 1.000 1.000  shi 128 trans 0.000
 MATERIAL "Material.006" rgb 0.640 0.640 0.640  amb 1.000 1.000 1.000  emis 0.000 0.000 0.000  spec 0.500 0.500 0.500  shi 12 trans 0.000
 MATERIAL "Material.007" rgb 0.640 0.640 0.640  amb 1.000 1.000 1.000  emis 0.000 0.000 0.000  spec 0.500 0.500 0.500  shi 12 trans 0.000
 MATERIAL "Material.008" rgb 0.640 0.640 0.640  amb 1.000 1.000 1.000  emis 0.000 0.000 0.000  spec 0.500 0.500 0.500  shi 12 trans 0.000
 MATERIAL "Material.009" rgb 0.640 0.640 0.640  amb 1.000 1.000 1.000  emis 0.000 0.000 0.000  spec 0.500 0.500 0.500  shi 12 trans 0.000
 MATERIAL "Material.010" rgb 0.640 0.640 0.640  amb 1.000 1.000 1.000  emis 0.000 0.000 0.000  spec 0.500 0.500 0.500  shi 12 trans 0.000
+MATERIAL "Material.017" rgb 0.640 0.640 0.640  amb 1.000 1.000 1.000  emis 0.000 0.000 0.000  spec 0.500 0.500 0.500  shi 12 trans 0.000
 MATERIAL "Material.011" rgb 0.640 0.640 0.640  amb 1.000 1.000 1.000  emis 0.000 0.000 0.000  spec 0.500 0.500 0.500  shi 12 trans 0.000
 MATERIAL "Material.012" rgb 0.640 0.640 0.640  amb 1.000 1.000 1.000  emis 0.000 0.000 0.000  spec 0.500 0.500 0.500  shi 12 trans 0.000
 MATERIAL "Material.013" rgb 0.640 0.640 0.640  amb 1.000 1.000 1.000  emis 0.000 0.000 0.000  spec 0.500 0.500 0.500  shi 12 trans 0.000
 MATERIAL "Material.014" rgb 0.640 0.640 0.640  amb 1.000 1.000 1.000  emis 0.000 0.000 0.000  spec 0.500 0.500 0.500  shi 12 trans 0.000
 MATERIAL "Material.015" rgb 0.640 0.640 0.640  amb 1.000 1.000 1.000  emis 0.000 0.000 0.000  spec 0.500 0.500 0.500  shi 12 trans 0.000
 MATERIAL "Material.016" rgb 0.640 0.640 0.640  amb 1.000 1.000 1.000  emis 0.000 0.000 0.000  spec 0.500 0.500 0.500  shi 12 trans 0.000
-MATERIAL "Material.017" rgb 0.640 0.640 0.640  amb 1.000 1.000 1.000  emis 0.000 0.000 0.000  spec 0.500 0.500 0.500  shi 12 trans 0.000
 MATERIAL "Material.018" rgb 0.640 0.640 0.640  amb 1.000 1.000 1.000  emis 0.000 0.000 0.000  spec 0.500 0.500 0.500  shi 12 trans 0.000
-MATERIAL "Material.019" rgb 0.640 0.640 0.640  amb 1.000 1.000 1.000  emis 0.000 0.000 0.000  spec 0.500 0.500 0.500  shi 12 trans 0.000
 OBJECT world
 name "Blender_exporter_v2.26__mi.ac"
-kids 20
+kids 23
 OBJECT poly
 name "Aft"
 data 9
@@ -128,6 +128,27 @@ refs 4
 2 0 1
 kids 0
 OBJECT poly
+name "FLT"
+data 9
+Plane.002
+crease 40.0
+texture "concorde-black-flt.png"
+texrep 1 1
+numvert 4
+0.00271 -0.00211 0.00448
+0.00271 -0.0021 -0.00448
+0.00271 0.00659 0.00448
+0.00271 0.00659 -0.00448
+numsurf 1
+SURF 0X0
+mat 5
+refs 4
+0 0 0
+1 1 0
+3 1 1
+2 0 1
+kids 0
+OBJECT poly
 name "Frame"
 data 5
 Frame
@@ -149,61 +170,82 @@ numvert 12
 0.00279 0.00636 0.00437
 numsurf 8
 SURF 0X20
-mat 5
+mat 6
 refs 4
 0 0.75757 0.671005
 4 0.736935 0.661457
 5 0.736935 0.489592
 1 0.75757 0.480044
 SURF 0X20
-mat 5
+mat 6
 refs 4
 3 0.779794 0.615309
 0 0.779794 0.480044
 4 0.802019 0.486807
 7 0.802019 0.608545
 SURF 0X20
-mat 5
+mat 6
 refs 4
 5 0.779794 0.608545
 1 0.75757 0.615309
 2 0.75757 0.480044
 6 0.779794 0.486807
 SURF 0X20
-mat 5
+mat 6
 refs 4
 6 0.716299 0.489592
 2 0.736935 0.480044
 3 0.736935 0.671005
 7 0.716299 0.661457
 SURF 0X20
-mat 5
+mat 6
 refs 4
 7 0.612901 0.731435
 11 0.628095 0.723253
 10 0.628094 0.436619
 6 0.612901 0.428439
 SURF 0X20
-mat 5
+mat 6
 refs 4
 7 0.612901 0.731435
 4 0.82752 0.731434
 8 0.812327 0.723253
 11 0.628095 0.723253
 SURF 0X20
-mat 5
+mat 6
 refs 4
 5 0.82752 0.428439
 4 0.82752 0.731434
 8 0.812327 0.723253
 9 0.812327 0.436619
 SURF 0X20
-mat 5
+mat 6
 refs 4
 6 0.612901 0.428439
 10 0.628094 0.436619
 9 0.812327 0.436619
 5 0.82752 0.428439
+kids 0
+OBJECT poly
+name "GRD"
+data 9
+Plane.001
+crease 40.0
+texture "concorde-black-flt.png"
+texrep 1 1
+numvert 4
+0.00271 -0.00211 0.00448
+0.00271 -0.0021 -0.00448
+0.00271 0.00659 0.00448
+0.00271 0.00659 -0.00448
+numsurf 1
+SURF 0X0
+mat 5
+refs 4
+0 0 0
+1 1 0
+3 1 1
+2 0 1
 kids 0
 OBJECT poly
 name "H"
@@ -219,7 +261,7 @@ numvert 4
 0.00271 0.00659 -0.00448
 numsurf 1
 SURF 0X0
-mat 6
+mat 7
 refs 4
 0 0 0
 1 1 0
@@ -240,7 +282,7 @@ numvert 4
 0.00271 0.00659 -0.00448
 numsurf 1
 SURF 0X0
-mat 7
+mat 8
 refs 4
 0 0 0
 1 1 0
@@ -261,7 +303,7 @@ numvert 4
 0.00271 0.00659 -0.00448
 numsurf 1
 SURF 0X0
-mat 8
+mat 9
 refs 4
 0 0 0
 1 1 0
@@ -282,7 +324,7 @@ numvert 4
 0.00271 0.00659 -0.00448
 numsurf 1
 SURF 0X0
-mat 9
+mat 10
 refs 4
 0 0 0
 1 1 0
@@ -303,7 +345,28 @@ numvert 4
 0.00271 0.00659 -0.00448
 numsurf 1
 SURF 0X0
-mat 10
+mat 11
+refs 4
+0 0 0
+1 1 0
+3 1 1
+2 0 1
+kids 0
+OBJECT poly
+name "On"
+data 9
+Plane.003
+crease 40.0
+texture "concorde-black-on.png"
+texrep 1 1
+numvert 4
+0.00271 -0.00211 0.00448
+0.00271 -0.0021 -0.00448
+0.00271 0.00659 0.00448
+0.00271 0.00659 -0.00448
+numsurf 1
+SURF 0X0
+mat 12
 refs 4
 0 0 0
 1 1 0
@@ -324,7 +387,7 @@ numvert 4
 0.00271 0.00659 -0.00448
 numsurf 1
 SURF 0X0
-mat 11
+mat 13
 refs 4
 0 0 0
 1 1 0
@@ -345,7 +408,7 @@ numvert 4
 0.00271 0.00659 -0.00448
 numsurf 1
 SURF 0X0
-mat 12
+mat 14
 refs 4
 0 0 0
 1 1 0
@@ -366,7 +429,7 @@ numvert 4
 0.00271 0.00659 -0.00448
 numsurf 1
 SURF 0X0
-mat 13
+mat 15
 refs 4
 0 0 0
 1 1 0
@@ -387,7 +450,7 @@ numvert 4
 0.00271 0.00659 -0.00448
 numsurf 1
 SURF 0X0
-mat 14
+mat 16
 refs 4
 0 0 0
 1 1 0
@@ -408,7 +471,7 @@ numvert 4
 0.00271 0.00659 -0.00448
 numsurf 1
 SURF 0X0
-mat 15
+mat 17
 refs 4
 0 0 0
 1 1 0
@@ -429,7 +492,7 @@ numvert 4
 0.00271 0.00659 -0.00448
 numsurf 1
 SURF 0X0
-mat 16
+mat 18
 refs 4
 0 0 0
 1 1 0
@@ -441,7 +504,7 @@ name "WOn"
 data 9
 Plane.036
 crease 40.0
-texture "concorde-white-on.png"
+texture "concorde-black-on.png"
 texrep 1 1
 numvert 4
 0.00271 -0.00211 0.00448
@@ -450,7 +513,7 @@ numvert 4
 0.00271 0.00659 -0.00448
 numsurf 1
 SURF 0X0
-mat 17
+mat 12
 refs 4
 0 0 0
 1 1 0
@@ -471,7 +534,7 @@ numvert 4
 0.00271 0.00659 -0.00448
 numsurf 1
 SURF 0X0
-mat 18
+mat 19
 refs 4
 0 0 0
 1 1 0
@@ -483,7 +546,7 @@ name "WShut"
 data 9
 Plane.038
 crease 40.0
-texture "concorde-white-shut.png"
+texture "concorde-black-flt.png"
 texrep 1 1
 numvert 4
 0.00271 -0.00211 0.00448
@@ -492,7 +555,7 @@ numvert 4
 0.00271 0.00659 -0.00448
 numsurf 1
 SURF 0X0
-mat 19
+mat 5
 refs 4
 0 0 0
 1 1 0

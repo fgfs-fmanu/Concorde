@@ -1899,6 +1899,23 @@
 <!-- ======== -->
 <!-- ENGINEERINSTRUMENTS -->
 <!-- ======== -->
+
+
+<model>
+  
+  <name>Mi LP FWD EXT</name>
+    <path>Cockpit/Engineer/mi-lpflow.xml</path>
+    <overlay>
+    </overlay>
+    <offsets>
+      <x-m>-21.974</x-m>
+      <y-m>0.469</y-m>
+      <z-m>1.48</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
 <model>
     <name>Flow Lights 1</name>
     <path>Cockpit/Engineer/red-flow.xml</path>
@@ -1937,7 +1954,51 @@
       
     </offsets>
   </model>
+  <model>
   
+  <name>Mi FWD  SUPPLY LH</name>
+    <path>Cockpit/Engineer/mi-lpflow.xml</path>
+    <overlay>
+    </overlay>
+    <offsets>
+      <x-m>-21.918</x-m>
+      <y-m>0.469</y-m>
+      <z-m>1.48</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model><model>
+  
+  <name>Mi FWD  SUPPLY RH</name>
+    <path>Cockpit/Engineer/mi-lpflow.xml</path>
+    <overlay>
+    </overlay>
+    <offsets>
+      <x-m>-21.906</x-m>
+      <y-m>0.469</y-m>
+      <z-m>1.48</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+  
+  <model>
+  
+  <name>Mi LP REAR LH</name>
+    <path>Cockpit/Engineer/mi-lpflow.xml</path>
+    <overlay>
+    </overlay>
+    <offsets>
+      <x-m>-21.885</x-m>
+      <y-m>0.469</y-m>
+      <z-m>1.48</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
   
   <model>
     <name>Flow Light 3</name>
@@ -1955,6 +2016,22 @@
       
      
       
+    </offsets>
+  </model>
+  
+  <model>
+  
+  <name>Mi LP REAR RH</name>
+    <path>Cockpit/Engineer/mi-lpflow.xml</path>
+    <overlay>
+    </overlay>
+    <offsets>
+      <x-m>-21.859</x-m>
+      <y-m>0.469</y-m>
+      <z-m>1.48</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>25</pitch-deg>
     </offsets>
   </model>
 
@@ -2071,6 +2148,25 @@
     </offsets>
   </model>
   
+  <model>
+<name>Mi Fwd Eextract </name>
+    <path>Cockpit/Engineer/mi-wopen-valve.xml</path>
+    <overlay>
+    <params>
+  <open-status>/systems/electrical/power/specific</open-status>        
+  		<defined-status>/systems/electrical/power/specific</defined-status>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.968</x-m>
+      <y-m>0.511</y-m>
+      <z-m>1.39</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+  
   
   <model>
 <name>Fwd Emerg Relief </name>
@@ -2081,6 +2177,70 @@
       <x-m>-21.98</x-m>
       <y-m>0.511</y-m>
       <z-m>1.39</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+  
+  <model>
+  
+  <name>Mi LP Protection 1</name>
+    <path>Cockpit/Engineer/mi-lpprotection.xml</path>
+    <overlay>
+    </overlay>
+    <offsets>
+      <x-m>-21.978</x-m>
+      <y-m>0.532</y-m>
+      <z-m>1.344</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+  
+  <model>
+  
+  <name>Mi LP Protection 2</name>
+    <path>Cockpit/Engineer/mi-lpprotection.xml</path>
+    <overlay>
+    </overlay>
+    <offsets>
+      <x-m>-21.964</x-m>
+      <y-m>0.532</y-m>
+      <z-m>1.344</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+  
+  <model>
+  
+  <name>Mi LP Protection 3</name>
+    <path>Cockpit/Engineer/mi-lpprotection.xml</path>
+    <overlay>
+    </overlay>
+    <offsets>
+      <x-m>-21.95</x-m>
+      <y-m>0.532</y-m>
+      <z-m>1.344</z-m>
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+  
+   <model>
+  
+  <name>Mi LP Protection 4</name>
+    <path>Cockpit/Engineer/mi-lpprotection.xml</path>
+    <overlay>
+    </overlay>
+    <offsets>
+      <x-m>-21.936</x-m>
+      <y-m>0.532</y-m>
+      <z-m>1.344</z-m>
       
       <heading-deg>-90</heading-deg>
      <pitch-deg>25</pitch-deg>
@@ -2100,6 +2260,26 @@
       
       <heading-deg>-90</heading-deg>
      <pitch-deg>25</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  <model>
+    <name>Mi Refuel </name>
+    <path>Cockpit/Engineer/mi-refuel.xml</path>
+    <overlay>
+    </overlay>
+    <offsets>
+      <x-m>-21.761</x-m>
+      <y-m>0.453</y-m>
+      <z-m>1.512</z-m>
+      
+      
+      <heading-deg>-90</heading-deg>
+     <pitch-deg>22</pitch-deg>
+      
+     
+      
     </offsets>
   </model>
   

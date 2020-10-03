@@ -31,6 +31,9 @@
     <object-name>WOn</object-name>
     <object-name>WOpen</object-name>
     <object-name>WShut</object-name>
+    <object-name>FLT</object-name>
+    <object-name>GRD</object-name>
+    <object-name>On</object-name> 
     
     
 </effect>
@@ -98,6 +101,9 @@
     <object-name>WOn</object-name>
     <object-name>Open</object-name>
     <object-name>WShut</object-name>
+    <object-name>FLT</object-name>
+    <object-name>GRD</object-name>
+    <object-name>On</object-name> 
     <condition>
    
     <equals>
@@ -152,6 +158,9 @@
     <object-name>WOn</object-name>
     <object-name>WOpen</object-name>
     <object-name>WShut</object-name>
+    <object-name>FLT</object-name>
+    <object-name>GRD</object-name>
+    <object-name>On</object-name> 
 
   <condition>
   <and>
