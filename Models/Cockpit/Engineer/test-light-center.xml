@@ -47,9 +47,7 @@
     <type>pick</type>
     <object-name>Switch</object-name>
 	<condition>
-	<not>
-    <property>/controls/lighting/crew/engineer/center/low</property>
-    </not>
+	<not><property>/controls/lighting/crew/engineer/center/low</property></not>
   	</condition>
   	
 	
@@ -89,9 +87,7 @@
     <property>/controls/lighting/crew/engineer/center/low</property>
 
 	<condition>
-	<not>
-    <property>/controls/lighting/crew/engineer/center/test</property>
-	</not>
+	<not><property>/controls/lighting/crew/engineer/center/test</property></not>
   </condition>
     <interpolation>
 	<entry>

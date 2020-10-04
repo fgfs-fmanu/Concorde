@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <PropertyList>
-   
+  
   <path>../Models/switch.ac</path>
 
 <effect>
@@ -47,9 +47,7 @@
     <type>pick</type>
     <object-name>Switch</object-name>
 	<condition>
-	<not>
-    <property>/controls/lighting/crew/engineer/forward/low</property>
-    </not>
+	<not><property>/controls/lighting/crew/engineer/forward/low</property></not>
   	</condition>
   	
 	
@@ -89,9 +87,7 @@
     <property>/controls/lighting/crew/engineer/forward/low</property>
 
 	<condition>
-	<not>
-    <property>/controls/lighting/crew/engineer/forward/test</property>
-	</not>
+	<not><property>/controls/lighting/crew/engineer/forward/test</property></not>
   </condition>
     <interpolation>
 	<entry>

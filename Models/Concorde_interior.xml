@@ -10197,6 +10197,18 @@
   </model>
   
   
+  
+  
+ 
+  
+  
+  
+  <!-- ======== -->
+<!-- Engineer foward foot-->
+<!-- ======== -->
+  
+  
+  
   <model>
     <name>Engine Relight Selector</name>
     <path>Cockpit/Engineer/engine-relight-selector.xml</path>
@@ -10215,17 +10227,36 @@
     </offsets>
   </model>
   
- 
   
+  <model>
+    <name>Light RH</name>
+    <path>Cockpit/Engineer/light-rh.xml</path>
+    <overlay>
+ </overlay>
+    <offsets>
+      <x-m>-22.349</x-m>
+      <y-m>0.5</y-m>
+      <z-m>0.655</z-m>
+      
+      <heading-deg>-85</heading-deg>
+     <pitch-deg>-5</pitch-deg>
+    </offsets>
+  </model>
   
-  
-  <!-- ======== -->
-<!-- Engineer foward foot-->
-<!-- ======== -->
-  
-  
-  
-  
+  <model>
+    <name>Light LH</name>
+    <path>Cockpit/Engineer/light-lh.xml</path>
+    <overlay>
+ </overlay>
+    <offsets>
+      <x-m>-22.429</x-m>
+      <y-m>0.494</y-m>
+      <z-m>0.655</z-m>
+      
+      <heading-deg>-85</heading-deg>
+     <pitch-deg>-5</pitch-deg>
+    </offsets>
+  </model>
   
   
   
