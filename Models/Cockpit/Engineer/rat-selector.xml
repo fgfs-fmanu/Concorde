@@ -1,8 +1,12 @@
 <?xml version="1.0"?>
 <PropertyList>
-  <path>../Models/switch_white.ac</path>
+  <path>../Models/switch_secure_red_rat.ac</path>
   
- 
+ <params>
+  <rat-on>/systems/hydraulic/rat/selector[0]/on</rat-on>
+  <rat-test>/systems/hydraulic/rat/selector[0]/test</rat-test>
+  <rat-guard>/systems/hydraulic/rat/selector[0]/guard</rat-guard>
+ </params>
 
 <effect>
     <inherits-from>Aircraft/Concorde/Models/Effects/interior</inherits-from>
@@ -22,13 +26,11 @@
     <value>35</value>
     
     <sum>
-    <sum>
+    <prod>
+    <property alias="/params/rat-on"/> 
     <value>-1</value>
-    <property>/controls/electric/ac/emergency/generator/ground-bypass</property>
-    </sum>
-    
-    
-    <property>/controls/electric/ac/emergency/generator/auto</property>
+    </prod>
+    <property alias="/params/rat-test"/>
     
     </sum>
     
@@ -52,7 +54,7 @@
     <type>pick</type>
     <object-name>Switch</object-name>
 	<condition>
-    <property>/controls/electric/ac/emergency/generator/auto</property>
+    <not><property alias="/params/rat-on"/></not>
   	</condition>
     <action>
       <name>Captain INS Switch</name>
@@ -60,12 +62,16 @@
       <repeatable>false</repeatable>
       <binding>
         <command>property-toggle</command>
-        <property>/controls/electric/ac/emergency/generator/ground-bypass</property>
+        <property alias="/params/rat-test"/>
         <step>1</step>
         <min>0</min>
         <max>1</max>
         <wrap>true</wrap>
       </binding>
+      <binding>
+    <command>nasal</command>
+    <script>globals.Concorde.hydraulicsystem.rattestexport();</script>
+   </binding>
      <binding>
         <command>property-toggle</command>
         <property>/instrumentation/generic/click</property>
@@ -86,9 +92,14 @@
     <type>pick</type>
     <object-name>Switch</object-name>
     <condition>
+    <and>
     <not>
-    <property>/controls/electric/ac/emergency/generator/auto-guard</property>
+    <property alias="/params/rat-guard"/>
     </not>
+    <not>
+    <property alias="/params/rat-test"/>
+    </not>
+    </and>
   	</condition>
     <action>
       <name>Auto-trim</name>
@@ -96,13 +107,17 @@
       <repeatable>false</repeatable>
       <binding>
         <command>property-toggle</command>
-        <property>/controls/electric/ac/emergency/generator/auto</property>
+        <property alias="/params/rat-on"/>
         <step>1</step>
         <min>0</min>
         <max>1</max>
         <wrap>true</wrap>
       </binding>
-     <binding>
+      <binding>
+    <command>nasal</command>
+    <script>globals.Concorde.hydraulicsystem.ratdeployexport();</script>
+   </binding>
+        <binding>
         <command>property-toggle</command>
         <property>/instrumentation/generic/click</property>
       </binding>
@@ -118,7 +133,7 @@
   
     <object-name>Guard</object-name>
     
-    <property>/controls/electric/ac/emergency/generator/auto-guard</property>
+    <property alias="/params/rat-guard"/>
     <interpolation>
    <entry>
     <ind> 1</ind>
@@ -146,7 +161,9 @@
     <type>pick</type>
     <object-name>Guard</object-name>
     <condition>
-    <property>/controls/electric/ac/emergency/generator/auto</property>
+    <not>
+    <property alias="/params/rat-test"/>
+    </not>
   	</condition>
     <action>
       <name>Auto-trim</name>
@@ -154,7 +171,7 @@
       <repeatable>false</repeatable>
       <binding>
         <command>property-toggle</command>
-        <property>/controls/electric/ac/emergency/generator/auto-guard</property>
+        <property alias="/params/rat-guard"/>
         <step>1</step>
         <min>0</min>
         <max>1</max>

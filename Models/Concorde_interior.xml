@@ -10344,6 +10344,48 @@
      <pitch-deg>-2</pitch-deg>
     </offsets>
   </model>
+  
+  
+  <model>
+    <name>RAT 1 Switch</name>
+    <path>Cockpit/Engineer/rat-selector.xml</path>
+    <overlay>
+    <params>
+  <rat-on>/systems/hydraulic/rat/selector[0]/on</rat-on>
+  <rat-test>/systems/hydraulic/rat/selector[0]/test</rat-test>
+  <rat-guard>/systems/hydraulic/rat/selector[0]/guard</rat-guard>
+ </params>
+ </overlay>
+    <offsets>
+      <x-m>-22.258</x-m>
+      <y-m>0.51</y-m>
+      <z-m>0.49</z-m>
+      
+      <heading-deg>-85</heading-deg>
+     <pitch-deg>-5</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  <model>
+    <name>RAT 2 Switch</name>
+    <path>Cockpit/Engineer/rat-selector.xml</path>
+    <overlay>
+    <params>
+  <rat-on>/systems/hydraulic/rat/selector[1]/on</rat-on>
+  <rat-test>/systems/hydraulic/rat/selector[1]/test</rat-test>
+  <rat-guard>/systems/hydraulic/rat/selector[1]/guard</rat-guard>
+ </params>
+ </overlay>
+    <offsets>
+      <x-m>-22.178</x-m>
+      <y-m>0.51</y-m>
+      <z-m>0.49</z-m>
+      
+      <heading-deg>-85</heading-deg>
+     <pitch-deg>-5</pitch-deg>
+    </offsets>
+  </model>
 
 
 <!-- ======== -->
