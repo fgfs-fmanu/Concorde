@@ -10366,6 +10366,36 @@
     </offsets>
   </model>
   
+  <model>
+    <name>RAT Green</name>
+    <path>Cockpit/Engineer/light-green-rat.xml</path>
+    <overlay>
+ </overlay>
+    <offsets>
+      <x-m>-22.218</x-m>
+      <y-m>0.51</y-m>
+      <z-m>0.50</z-m>
+      
+      <heading-deg>-85</heading-deg>
+     <pitch-deg>-5</pitch-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <name>RAT Test</name>
+    <path>Cockpit/Engineer/light-test-rat.xml</path>
+    <overlay>
+ </overlay>
+    <offsets>
+      <x-m>-22.218</x-m>
+      <y-m>0.51</y-m>
+      <z-m>0.48</z-m>
+      
+      <heading-deg>-85</heading-deg>
+     <pitch-deg>-5</pitch-deg>
+    </offsets>
+  </model>
+  
   
   <model>
     <name>RAT 2 Switch</name>
