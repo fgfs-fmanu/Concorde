@@ -1,0 +1,149 @@
+<?xml version="1.0"?>
+<PropertyList>
+  
+  <path>../Models/red_lamp.ac</path>
+
+  <params>
+  <mode-ctrl>/instrumentation/ins[0]/msu/mode</mode-ctrl>
+  <test-ctrl>/instrumentation/ins[0]/control/test</test-ctrl>
+  <service-select>/instrumentation/ins[0]/serviceable</service-select>
+ </params>
+ 
+<effect>
+    <inherits-from>Aircraft/Concorde/Models/Effects/interior</inherits-from>
+    <object-name>Off</object-name>
+    <object-name>On</object-name>
+</effect>
+
+
+
+
+  
+
+  
+   <animation>
+    <type>select</type>
+    <object-name>On</object-name>
+    <condition>
+       <and>
+     <greater-than>
+    <property>/systems/electrical/outputs/bulb</property>
+    <value>20.0</value>
+   </greater-than>
+      <or>
+       
+    <property>/controls/lighting/crew/engineer/forward/test</property>
+     <!-- bug -->
+     <and>
+     <not-equals>
+       <property alias="/params/mode-ctrl"/>
+       <value>-2</value>
+      </not-equals>
+      <or>       
+        <property alias="/params/test-ctrl"/>     
+       <not>
+       <property alias="/params/service-select"/>
+       </not>
+      </or>
+      </and>
+      </or>
+      
+      <not>
+    <property>/controls/lighting/crew/engineer/forward/low</property>
+    </not>
+     </and>
+     
+    </condition>
+
+ 
+  </animation>
+  
+  
+  <animation>
+    <type>material</type>
+    <object-name>Off</object-name>
+     <condition>
+       <and>
+     <greater-than>
+    <property>/systems/electrical/outputs/bulb</property>
+    <value>20.0</value>
+   </greater-than>
+      <or>
+       
+    <property>/controls/lighting/crew/engineer/forward/test</property>
+     <!-- bug -->
+    <and>
+     <not-equals>
+       <property alias="/params/mode-ctrl"/>
+       <value>-2</value>
+      </not-equals>
+      <or>       
+        <property alias="/params/test-ctrl"/>     
+       <not>
+       <property alias="/params/service-select"/>
+       </not>
+      </or>
+      </and>
+      </or>
+      
+      
+    <property>/controls/lighting/crew/engineer/forward/low</property>
+    
+     </and>
+     
+    </condition>
+
+    <emission>
+      <red>0.5</red>
+      <green>0.5</green>
+      <blue>0.5</blue>
+    </emission>
+  </animation>
+  
+  <animation>
+    <type>select</type>
+    <object-name>Off</object-name>
+    <condition>
+    <not>
+        <and>
+     <greater-than>
+    <property>/systems/electrical/outputs/bulb</property>
+    <value>20.0</value>
+   </greater-than>
+      <or>
+       
+    <property>/controls/lighting/crew/engineer/forward/test</property>
+     <!-- bug -->
+    <and>
+     <not-equals>
+       <property alias="/params/mode-ctrl"/>
+       <value>-2</value>
+      </not-equals>
+      <or>       
+        <property alias="/params/test-ctrl"/>     
+       <not>
+       <property alias="/params/service-select"/>
+       </not>
+      </or>
+      </and>
+      </or>
+      
+      <not>
+    <property>/controls/lighting/crew/engineer/forward/low</property>
+    </not>
+     </and>
+     
+     </not>
+    </condition>
+
+    
+  </animation>
+  
+
+    
+  
+  
+  
+ 
+ 
+</PropertyList>

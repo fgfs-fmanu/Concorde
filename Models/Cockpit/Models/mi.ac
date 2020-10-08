@@ -231,7 +231,7 @@ name "GRD"
 data 9
 Plane.001
 crease 40.0
-texture "concorde-black-flt.png"
+texture "concorde-white-grd.png"
 texrep 1 1
 numvert 4
 0.00271 -0.00211 0.00448
@@ -546,7 +546,7 @@ name "WShut"
 data 9
 Plane.038
 crease 40.0
-texture "concorde-black-flt.png"
+texture "concorde-white-shut.png"
 texrep 1 1
 numvert 4
 0.00271 -0.00211 0.00448

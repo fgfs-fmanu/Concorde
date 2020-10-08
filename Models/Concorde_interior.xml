@@ -172,6 +172,10 @@
       <pitch-deg>-10</pitch-deg>
     </offsets>
   </model>
+  
+  
+  
+  
 
   <model>
     <name>Copilot RAD/INS Switch</name>
@@ -10278,6 +10282,47 @@
     </offsets>
   </model>
   
+  
+  <model>
+    <name>INS 1 Green</name>
+    <path>Cockpit/Engineer/light-green-ins.xml</path>
+    <overlay>
+    <params>
+  <ready-select>/instrumentation/ins[0]/msu/ready</ready-select>
+  <test-ctrl>/instrumentation/ins[0]/control/test</test-ctrl>
+  <service-select>/instrumentation/ins[0]/serviceable</service-select>
+ </params>
+ </overlay>
+    <offsets>
+      <x-m>-22.355</x-m>
+      <y-m>0.506</y-m>
+      <z-m>0.589</z-m>
+      
+      <heading-deg>-85</heading-deg>
+     <pitch-deg>-5</pitch-deg>
+    </offsets>
+  </model>
+  
+   <model>
+    <name>INS 1 Red Battery</name>
+    <path>Cockpit/Engineer/light-red-ins-battery.xml</path>
+    <overlay>
+    <params>
+  <mode-ctrl>/instrumentation/ins[0]/msu/mode</mode-ctrl>
+  <test-ctrl>/instrumentation/ins[0]/control/test</test-ctrl>
+  <service-select>/instrumentation/ins[0]/serviceable</service-select>
+ </params>
+ </overlay>
+    <offsets>
+      <x-m>-22.335</x-m>
+      <y-m>0.507</y-m>
+      <z-m>0.589</z-m>
+      
+      <heading-deg>-85</heading-deg>
+     <pitch-deg>-5</pitch-deg>
+    </offsets>
+  </model>
+  
   <model>
     <name>INS 2 Mode</name>
     <path>Cockpit/Engineer/ins-2-mode.xml</path>
@@ -10296,6 +10341,51 @@
     </offsets>
   </model>
   
+  
+   <model>
+    <name>INS 2 Green</name>
+    <path>Cockpit/Engineer/light-green-ins.xml</path>
+    <overlay>
+    <params>
+  <ready-select>/instrumentation/ins[1]/msu/ready</ready-select>
+  <test-ctrl>/instrumentation/ins[1]/control/test</test-ctrl>
+  <service-select>/instrumentation/ins[1]/serviceable</service-select>
+ </params>
+ </overlay>
+    <offsets>
+      <x-m>-22.222</x-m>
+      <y-m>0.524</y-m>
+      <z-m>0.72</z-m>
+      
+      <heading-deg>-85</heading-deg>
+     <pitch-deg>-5</pitch-deg>
+    </offsets>
+  </model>
+  
+   <model>
+    <name>INS 2 Red Battery</name>
+    <path>Cockpit/Engineer/light-red-ins-battery.xml</path>
+    <overlay>
+    <params>
+  <mode-ctrl>/instrumentation/ins[1]/msu/mode</mode-ctrl>
+  <test-ctrl>/instrumentation/ins[1]/control/test</test-ctrl>
+  <service-select>/instrumentation/ins[1]/serviceable</service-select>
+ </params>
+ </overlay>
+    <offsets>
+      <x-m>-22.198</x-m>
+      <y-m>0.525</y-m>
+      <z-m>0.72</z-m>
+      
+      <heading-deg>-85</heading-deg>
+     <pitch-deg>-5</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  
+  
+  
   <model>
     <name>INS 3 Mode</name>
     <path>Cockpit/Engineer/ins-3-mode.xml</path>
@@ -10305,7 +10395,7 @@
  </params>
  </overlay>
     <offsets>
-      <x-m>-22.132</x-m>
+      <x-m>-22.125</x-m>
       <y-m>0.534</y-m>
       <z-m>0.729</z-m>
       
@@ -10313,6 +10403,52 @@
      <pitch-deg>-5</pitch-deg>
     </offsets>
   </model>
+  
+  
+  
+   <model>
+    <name>INS 3 Green</name>
+    <path>Cockpit/Engineer/light-green-ins.xml</path>
+    <overlay>
+    <params>
+  <ready-select>/instrumentation/ins[2]/msu/ready</ready-select>
+  <test-ctrl>/instrumentation/ins[2]/control/test</test-ctrl>
+  <service-select>/instrumentation/ins[2]/serviceable</service-select>
+ </params>
+ </overlay>
+    <offsets>
+      <x-m>-22.086</x-m>
+      <y-m>0.536</y-m>
+      <z-m>0.72</z-m>
+      
+      <heading-deg>-85</heading-deg>
+     <pitch-deg>-5</pitch-deg>
+    </offsets>
+  </model>
+  
+   <model>
+    <name>INS 3 Red Battery</name>
+    <path>Cockpit/Engineer/light-red-ins-battery.xml</path>
+    <overlay>
+    <params>
+  <mode-ctrl>/instrumentation/ins[2]/msu/mode</mode-ctrl>
+  <test-ctrl>/instrumentation/ins[2]/control/test</test-ctrl>
+  <service-select>/instrumentation/ins[2]/serviceable</service-select>
+ </params>
+ </overlay>
+    <offsets>
+      <x-m>-22.062</x-m>
+      <y-m>0.538</y-m>
+      <z-m>0.72</z-m>
+      
+      <heading-deg>-85</heading-deg>
+     <pitch-deg>-5</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  
+  
   
   
   <model>

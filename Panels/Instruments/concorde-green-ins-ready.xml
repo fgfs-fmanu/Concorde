@@ -19,77 +19,7 @@
 
  <layers>
 
-  <layer>
-   <name>lamp</name>
-   <type>switch</type>
-
-   <layer>
-    <name>off</name>
-    <type>group</type>
-    <condition>
-     <or>
-      <not include="concorde-cond-voltage-inst.xml"/>
-      <not>
-       <property alias="../../../../../../../params/service-select"/>
-      </not>
-      <and>
-       <not>
-        <property alias="../../../../../../../../params/test-ctrl"/>
-       </not>
-       <not>
-        <property alias="../../../../../../../../params/ready-select"/>
-       </not>
-      </and>
-     </or>
-    </condition>
-
-    <layer include="concorde-bulb-led-off.xml">
-     <w>40</w>
-     <h>40</h>
-    </layer>
-
-    <layer>
-     <name>led off</name>
-     <texture>
-      <path>Aircraft/Concorde/Panels/Instruments/Textures/led.png</path>
-      <x1>0.25</x1>
-      <y1>0.0</y1>
-      <x2>0.5</x2>
-      <y2>0.25</y2>
-     </texture>
-     <w>40</w>
-     <h>40</h>
-    </layer>
-   </layer>
-
-   <layer>
-    <name>on</name>
-    <type>group</type>
-
-    <layer include="concorde-bulb-led-on.xml">
-    <condition>
-     <and>
-      <not include="concorde-cond-voltage-bulb.xml"/>
-     </and>
-    </condition>
-     <w>40</w>
-     <h>40</h>
-    </layer>
-    <layer>
-     <name>led on</name>
-     <texture>
-      <path>Aircraft/Concorde/Panels/Instruments/Textures/led.png</path>
-      <x1>0.25</x1>
-      <y1>0.0</y1>
-      <x2>0.5</x2>
-      <y2>0.25</y2>
-     </texture>
-     <w>40</w>
-     <h>40</h>
-     <emissive>true</emissive>
-    </layer>
-   </layer>
-  </layer>
+ 
 
   <layer>
    <name>Title</name>
