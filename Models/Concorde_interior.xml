@@ -8325,6 +8325,41 @@
   </model>
   
   
+   <model>
+    <name>Compass DG Mag Light 1</name>
+    <path>Cockpit/Engineer/light-yellow-dg-compass.xml</path>
+    <overlay>
+   <params>
+  <mode-sel>/instrumentation/compass[0]/mode-dg</mode-sel>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.485</x-m>
+      <y-m>0.535</y-m>
+      <z-m>0.704</z-m>
+      
+      <heading-deg>-95</heading-deg>
+     <pitch-deg>-5</pitch-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <name>Compass DG Mag Light 2</name>
+    <path>Cockpit/Engineer/light-yellow-dg-compass.xml</path>
+    <overlay>
+   <params>
+  <mode-sel>/instrumentation/compass[1]/mode-dg</mode-sel>
+ </params>
+    </overlay>
+    <offsets>
+      <x-m>-21.442</x-m>
+      <y-m>0.530</y-m>
+      <z-m>0.704</z-m>
+      
+      <heading-deg>-95</heading-deg>
+     <pitch-deg>-5</pitch-deg>
+    </offsets>
+  </model>
   
   <model>
     <name>Compass DG Mag 1</name>

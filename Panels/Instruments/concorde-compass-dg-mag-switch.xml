@@ -14,73 +14,7 @@
  <layers>
 
 <!-- translucent lens -->  
-  <layer>
-   <name>Slaving cut-out indicator light</name>
-   <type>switch</type>
-
-   <layer>
-    <name>off</name>
-    <type>group</type>
-    <condition>
-     <or>
-      <not>
-       <property alias="../../../../../../../params/mode-sel"/>
-      </not>
-      <not include="concorde-cond-voltage-inst.xml"/>
-     </or>
-    </condition>
-
-    <layer include="concorde-bulb-led-off.xml">
-     <w>20</w>
-     <h>20</h>
-    </layer>
-    <layer>
-     <name>background off</name>
-     <texture>
-      <path>Aircraft/Concorde/Panels/Instruments/Textures/concorde-yellow-led.png</path>
-      <x1>0.0</x1>
-      <y1>0.0</y1>
-      <x2>1.0</x2>
-      <y2>1.0</y2>
-     </texture>
-     <w>20</w>
-     <h>20</h>
-    </layer>
-   </layer>
-
-   <layer>
-    <name>on</name>
-    <type>group</type>
-
-    <layer include="concorde-bulb-led-on.xml">
-     <w>20</w>
-     <h>20</h>
-    </layer>
-    <layer>
-     <name>background on</name>
-     <texture>
-      <path>Aircraft/Concorde/Panels/Instruments/Textures/concorde-yellow-led.png</path>
-      <x1>0.0</x1>
-      <y1>0.0</y1>
-      <x2>1.0</x2>
-      <y2>1.0</y2>
-     </texture>
-     <w>20</w>
-     <h>20</h>
-     <emissive>true</emissive>
-    </layer>
-   </layer>
-   <transformations>
-    <transformation>
-     <type>x-shift</type>
-     <offset>-5</offset>
-    </transformation>
-    <transformation>
-     <type>y-shift</type>
-     <offset>63</offset>
-    </transformation>
-   </transformations>
-  </layer>
+  
 
  
 
