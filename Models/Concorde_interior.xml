@@ -8335,8 +8335,8 @@
     </overlay>
     <offsets>
       <x-m>-21.485</x-m>
-      <y-m>0.535</y-m>
-      <z-m>0.704</z-m>
+      <y-m>0.531</y-m>
+      <z-m>0.706</z-m>
       
       <heading-deg>-95</heading-deg>
      <pitch-deg>-5</pitch-deg>
@@ -8353,8 +8353,8 @@
     </overlay>
     <offsets>
       <x-m>-21.442</x-m>
-      <y-m>0.530</y-m>
-      <z-m>0.704</z-m>
+      <y-m>0.526</y-m>
+      <z-m>0.706</z-m>
       
       <heading-deg>-95</heading-deg>
      <pitch-deg>-5</pitch-deg>
@@ -8371,8 +8371,8 @@
     </overlay>
     <offsets>
       <x-m>-21.485</x-m>
-      <y-m>0.531</y-m>
-      <z-m>0.676</z-m>
+      <y-m>0.525</y-m>
+      <z-m>0.678</z-m>
       
       <heading-deg>-95</heading-deg>
      <pitch-deg>-5</pitch-deg>
@@ -8389,8 +8389,8 @@
     </overlay>
     <offsets>
       <x-m>-21.442</x-m>
-      <y-m>0.527</y-m>
-      <z-m>0.676</z-m>
+      <y-m>0.521</y-m>
+      <z-m>0.678</z-m>
       
       <heading-deg>-95</heading-deg>
      <pitch-deg>-5</pitch-deg>
@@ -10309,7 +10309,7 @@
  </overlay>
     <offsets>
       <x-m>-22.401</x-m>
-      <y-m>0.506</y-m>
+      <y-m>0.50</y-m>
       <z-m>0.593</z-m>
       
       <heading-deg>-85</heading-deg>
@@ -10330,8 +10330,8 @@
  </overlay>
     <offsets>
       <x-m>-22.355</x-m>
-      <y-m>0.506</y-m>
-      <z-m>0.589</z-m>
+      <y-m>0.50</y-m>
+      <z-m>0.593</z-m>
       
       <heading-deg>-85</heading-deg>
      <pitch-deg>-5</pitch-deg>
@@ -10350,8 +10350,8 @@
  </overlay>
     <offsets>
       <x-m>-22.335</x-m>
-      <y-m>0.507</y-m>
-      <z-m>0.589</z-m>
+      <y-m>0.501</y-m>
+      <z-m>0.593</z-m>
       
       <heading-deg>-85</heading-deg>
      <pitch-deg>-5</pitch-deg>
@@ -10368,7 +10368,7 @@
  </overlay>
     <offsets>
       <x-m>-22.268</x-m>
-      <y-m>0.524</y-m>
+      <y-m>0.518</y-m>
       <z-m>0.729</z-m>
       
       <heading-deg>-85</heading-deg>
@@ -10389,8 +10389,8 @@
  </overlay>
     <offsets>
       <x-m>-22.222</x-m>
-      <y-m>0.524</y-m>
-      <z-m>0.72</z-m>
+      <y-m>0.518</y-m>
+      <z-m>0.726</z-m>
       
       <heading-deg>-85</heading-deg>
      <pitch-deg>-5</pitch-deg>
@@ -10409,8 +10409,8 @@
  </overlay>
     <offsets>
       <x-m>-22.198</x-m>
-      <y-m>0.525</y-m>
-      <z-m>0.72</z-m>
+      <y-m>0.519</y-m>
+      <z-m>0.726</z-m>
       
       <heading-deg>-85</heading-deg>
      <pitch-deg>-5</pitch-deg>
@@ -10431,7 +10431,7 @@
  </overlay>
     <offsets>
       <x-m>-22.125</x-m>
-      <y-m>0.534</y-m>
+      <y-m>0.528</y-m>
       <z-m>0.729</z-m>
       
       <heading-deg>-85</heading-deg>
@@ -10453,7 +10453,7 @@
  </overlay>
     <offsets>
       <x-m>-22.086</x-m>
-      <y-m>0.536</y-m>
+      <y-m>0.53</y-m>
       <z-m>0.72</z-m>
       
       <heading-deg>-85</heading-deg>
@@ -10472,8 +10472,8 @@
  </params>
  </overlay>
     <offsets>
-      <x-m>-22.062</x-m>
-      <y-m>0.538</y-m>
+      <x-m>-22.060</x-m>
+      <y-m>0.532</y-m>
       <z-m>0.72</z-m>
       
       <heading-deg>-85</heading-deg>
@@ -10508,7 +10508,7 @@
  </overlay>
     <offsets>
       <x-m>-22.058</x-m>
-      <y-m>0.540</y-m>
+      <y-m>0.536</y-m>
       <z-m>0.783</z-m>
       
       <heading-deg>-85</heading-deg>
@@ -10529,7 +10529,7 @@
  </overlay>
     <offsets>
       <x-m>-22.258</x-m>
-      <y-m>0.51</y-m>
+      <y-m>0.504</y-m>
       <z-m>0.49</z-m>
       
       <heading-deg>-85</heading-deg>
@@ -10544,7 +10544,7 @@
  </overlay>
     <offsets>
       <x-m>-22.218</x-m>
-      <y-m>0.51</y-m>
+      <y-m>0.504</y-m>
       <z-m>0.50</z-m>
       
       <heading-deg>-85</heading-deg>
@@ -10559,7 +10559,7 @@
  </overlay>
     <offsets>
       <x-m>-22.218</x-m>
-      <y-m>0.51</y-m>
+      <y-m>0.504</y-m>
       <z-m>0.48</z-m>
       
       <heading-deg>-85</heading-deg>
@@ -10580,7 +10580,7 @@
  </overlay>
     <offsets>
       <x-m>-22.178</x-m>
-      <y-m>0.51</y-m>
+      <y-m>0.504</y-m>
       <z-m>0.49</z-m>
       
       <heading-deg>-85</heading-deg>
@@ -14455,13 +14455,13 @@
 
   <model>
    <name>Audio 3</name>
-   <path>Aircraft/Concorde/Instruments/pedestal/audio.xml</path>
+   <path>Aircraft/Concorde/Instruments/pedestal/audio-engineer.xml</path>
    <offsets>
-    <x-m>-22.110</x-m>
-    <y-m> 0.529</y-m>
-    <z-m> 0.610</z-m>
-    <heading-deg>-85</heading-deg>
-    <pitch-deg>86</pitch-deg>
+    <x-m>-22.101</x-m>
+    <y-m> 0.517</y-m>
+    <z-m> 0.645</z-m>
+    <heading-deg>-84</heading-deg>
+    <pitch-deg>66</pitch-deg>
    </offsets>
    <overlay>
     <params>
