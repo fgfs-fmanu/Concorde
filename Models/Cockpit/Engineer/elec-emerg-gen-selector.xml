@@ -17,22 +17,21 @@
     <type>rotate</type>
     <object-name>Switch</object-name>
     <expression>
+    <sum>
+    <value>-35</value>
     
     <prod>
     <value>35</value>
     
     <sum>
-    <sum>
-    <value>-1</value>
-    <property>/controls/electric/ac/emergency/generator/ground-bypass</property>
-    </sum>
-    
-    
+    <property>/controls/electric/ac/emergency/generator/ground-bypass</property>    
+    <prod>
     <property>/controls/electric/ac/emergency/generator/auto</property>
-    
+    </prod>
     </sum>
     
     </prod>
+    </sum>
     
   </expression>
     <center>
@@ -86,9 +85,14 @@
     <type>pick</type>
     <object-name>Switch</object-name>
     <condition>
+    <and>
+     <not>
+    <property>/controls/electric/ac/emergency/generator/ground-bypass</property>
+    </not>
     <not>
     <property>/controls/electric/ac/emergency/generator/auto-guard</property>
     </not>
+    </and>
   	</condition>
     <action>
       <name>Auto-trim</name>

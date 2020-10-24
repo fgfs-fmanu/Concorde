@@ -3722,7 +3722,7 @@
   
   <model>
   <name>Fuel Tank 1 Crossfeed Mi  </name>
-    <path>Cockpit/Engineer/mi-horizontal-valve.xml</path>
+    <path>Cockpit/Engineer/mi-vertical-valve.xml</path>
     <overlay>
       <params>
   <connect-status>/controls/fuel/tank[0]/cross-feed-valve</connect-status>        
@@ -3740,7 +3740,7 @@
   
   <model>
   <name>Fuel Tank 2 Crossfeed Mi  </name>
-    <path>Cockpit/Engineer/mi-horizontal-valve.xml</path>
+    <path>Cockpit/Engineer/mi-vertical-valve.xml</path>
     <overlay>
       <params>
   <connect-status>/controls/fuel/tank[1]/cross-feed-valve</connect-status>        
@@ -3758,7 +3758,7 @@
   
   <model>
   <name>Fuel Tank 3 Crossfeed Mi  </name>
-    <path>Cockpit/Engineer/mi-horizontal-valve.xml</path>
+    <path>Cockpit/Engineer/mi-vertical-valve.xml</path>
     <overlay>
       <params>
   <connect-status>/controls/fuel/tank[2]/cross-feed-valve</connect-status>        
@@ -3776,7 +3776,7 @@
   
   <model>
   <name>Fuel Tank 4 Crossfeed Mi  </name>
-    <path>Cockpit/Engineer/mi-horizontal-valve.xml</path>
+    <path>Cockpit/Engineer/mi-vertical-valve.xml</path>
     <overlay>
       <params>
   <connect-status>/controls/fuel/tank[3]/cross-feed-valve</connect-status>        
