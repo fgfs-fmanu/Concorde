@@ -7,7 +7,7 @@ name "EngineerDeck"
 loc 21.802588 -0.858799 0.690863
 data 12
 EngineerDeck
-texture "concorde-flight-deck.png"
+texture "flight_engineer_texture.png"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 18
