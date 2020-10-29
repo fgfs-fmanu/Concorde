@@ -5749,7 +5749,7 @@
     <offsets>
       <x-m>-21.350</x-m>
       <y-m>0.515</y-m>
-      <z-m>1.338</z-m>
+      <z-m>1.337</z-m>
       
       <heading-deg>-95</heading-deg>
      <pitch-deg>25</pitch-deg>
@@ -5765,8 +5765,8 @@
 	</params>
     </overlay>
     <offsets>
-      <x-m>-21.495</x-m>
-      <y-m>0.483</y-m>
+      <x-m>-21.480</x-m>
+      <y-m>0.481</y-m>
       <z-m>1.450</z-m>
       
       <heading-deg>-95</heading-deg>
@@ -5785,8 +5785,8 @@
 	</params>
     </overlay>
     <offsets>
-      <x-m>-21.443</x-m>
-      <y-m>0.475</y-m>
+      <x-m>-21.423</x-m>
+      <y-m>0.474</y-m>
       <z-m>1.450</z-m>
       
       <heading-deg>-95</heading-deg>
@@ -5805,8 +5805,8 @@
 	</params>
     </overlay>
     <offsets>
-      <x-m>-21.33</x-m>
-      <y-m>0.46</y-m>
+      <x-m>-21.312</x-m>
+      <y-m>0.460</y-m>
       <z-m>1.450</z-m>
       
       <heading-deg>-95</heading-deg>
@@ -5824,8 +5824,8 @@
 	</params>
     </overlay>
     <offsets>
-      <x-m>-21.276</x-m>
-      <y-m>0.455</y-m>
+      <x-m>-21.255</x-m>
+      <y-m>0.452</y-m>
       <z-m>1.450</z-m>
       
       <heading-deg>-95</heading-deg>
