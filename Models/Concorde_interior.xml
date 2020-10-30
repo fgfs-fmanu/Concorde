@@ -7445,7 +7445,7 @@
       <z-m>1.052</z-m>
       
       
-      <heading-deg>-95</heading-deg>
+      <heading-deg>-99</heading-deg>
      <pitch-deg>-5</pitch-deg>
     </offsets>
   </model>
@@ -8229,7 +8229,7 @@
     <offsets>
       <x-m>-21.366</x-m>
       <y-m>0.533</y-m>
-      <z-m>1.205</z-m>
+      <z-m>1.21</z-m>
       
       <heading-deg>-99</heading-deg>
      <pitch-deg>-1</pitch-deg>
