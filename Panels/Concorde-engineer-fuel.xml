@@ -177,34 +177,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
    <h>28</h>
   </instrument>-->
 
-  <instrument include="Instruments/concorde-kg.xml">
-   <name>Fuel Total</name>
-   <condition>
-    <or>
-     <and>
-      <property>/sim/current-view/internal</property>
-      <property>/systems/seat/engineer</property>
-      <less-than>
-       <property>/sim/current-view/goal-heading-offset-deg</property>
-       <value>305</value>
-      </less-than>
-      <greater-than>
-       <property>/sim/current-view/goal-heading-offset-deg</property>
-       <value>230</value>
-      </greater-than>
-      <less-than>
-       <property>/sim/current-view/goal-pitch-offset-deg</property>
-       <value>-5</value>
-      </less-than>
-     </and>
-     <property>/controls/seat/all</property>
-    </or>
-   </condition>
-   <x>205</x>
-   <y>475</y>
-   <w>70</w>
-   <h>28</h>
-  </instrument>
+ 
 
   
 
@@ -455,137 +428,9 @@ override those by providing <w>..</w> and <h>..</h> properties with the
 
 <!-- interconnect -->
 
-  <instrument include="Instruments/concorde-fuel-interconnect-valve.xml">
-   <name>Interconnect tank 6</name>
-   <condition>
-    <or>
-     <and>
-      <property>/sim/current-view/internal</property>
-      <property>/systems/seat/engineer</property>
-      <less-than>
-       <property>/sim/current-view/goal-heading-offset-deg</property>
-       <value>315</value>
-      </less-than>
-      <greater-than>
-       <property>/sim/current-view/goal-heading-offset-deg</property>
-       <value>240</value>
-      </greater-than>
-      <less-than>
-       <property>/sim/current-view/goal-pitch-offset-deg</property>
-       <value>-5</value>
-      </less-than>
-     </and>
-     <property>/controls/seat/all</property>
-    </or>
-   </condition>
-   <params>
-    <inter-valve>/controls/fuel/tank[5]/interconnect-valve</inter-valve>
-    <name>/consumables/fuel/tank[5]/name</name>
-   </params>
-   <x>110</x>
-   <y>485</y>
-   <w>50</w>
-   <h>30</h>
-  </instrument>
+ 
 
-  <instrument include="Instruments/concorde-fuel-interconnect-switch.xml">
-   <name>Interconnect valve switch tank 6</name>
-   <condition>
-    <or>
-     <and>
-      <property>/sim/current-view/internal</property>
-      <property>/systems/seat/engineer</property>
-      <less-than>
-       <property>/sim/current-view/goal-heading-offset-deg</property>
-       <value>315</value>
-      </less-than>
-      <greater-than>
-       <property>/sim/current-view/goal-heading-offset-deg</property>
-       <value>240</value>
-      </greater-than>
-      <less-than>
-       <property>/sim/current-view/goal-pitch-offset-deg</property>
-       <value>-10</value>
-      </less-than>
-     </and>
-     <property>/controls/seat/all</property>
-    </or>
-   </condition>
-   <params>
-    <connect-valve>/controls/fuel/tank[5]/interconnect-valve</connect-valve>
-    <name>/consumables/fuel/tank[5]/name</name>
-   </params>
-   <x>110</x>
-   <y>460</y>
-   <w>40</w>
-   <h>30</h>
-  </instrument>
-
-  <instrument include="Instruments/concorde-fuel-interconnect-valve.xml">
-   <name>Interconnect tank 8</name>
-   <condition>
-    <or>
-     <and>
-      <property>/sim/current-view/internal</property>
-      <property>/systems/seat/engineer</property>
-      <less-than>
-       <property>/sim/current-view/goal-heading-offset-deg</property>
-       <value>295</value>
-      </less-than>
-      <greater-than>
-       <property>/sim/current-view/goal-heading-offset-deg</property>
-       <value>220</value>
-      </greater-than>
-      <less-than>
-       <property>/sim/current-view/goal-pitch-offset-deg</property>
-       <value>-5</value>
-      </less-than>
-     </and>
-     <property>/controls/seat/all</property>
-    </or>
-   </condition>
-   <params>
-    <inter-valve>/controls/fuel/tank[7]/interconnect-valve</inter-valve>
-    <name>/consumables/fuel/tank[7]/name</name>
-   </params>
-   <x>320</x>
-   <y>485</y>
-   <w>50</w>
-   <h>30</h>
-  </instrument>
-
-  <instrument include="Instruments/concorde-fuel-interconnect-switch.xml">
-   <name>Interconnect valve switch tank 8</name>
-   <condition>
-    <or>
-     <and>
-      <property>/sim/current-view/internal</property>
-      <property>/systems/seat/engineer</property>
-      <less-than>
-       <property>/sim/current-view/goal-heading-offset-deg</property>
-       <value>295</value>
-      </less-than>
-      <greater-than>
-       <property>/sim/current-view/goal-heading-offset-deg</property>
-       <value>220</value>
-      </greater-than>
-      <less-than>
-       <property>/sim/current-view/goal-pitch-offset-deg</property>
-       <value>-10</value>
-      </less-than>
-     </and>
-     <property>/controls/seat/all</property>
-    </or>
-   </condition>
-   <params>
-    <connect-valve>/controls/fuel/tank[7]/interconnect-valve</connect-valve>
-    <name>/consumables/fuel/tank[7]/name</name>
-   </params>
-   <x>320</x>
-   <y>460</y>
-   <w>40</w>
-   <h>30</h>
-  </instrument>
+ 
 
 <!-- main tanks right -->
 
