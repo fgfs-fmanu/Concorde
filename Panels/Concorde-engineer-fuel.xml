@@ -418,34 +418,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
 
 <!-- tank 11 -->
 
-  <instrument include="Instruments/concorde-title-fuel-pump-green.xml">
-   <name>Pump green</name>
-   <condition>
-    <or>
-     <and>
-      <property>/sim/current-view/internal</property>
-      <property>/systems/seat/engineer</property>
-      <less-than>
-       <property>/sim/current-view/goal-heading-offset-deg</property>
-       <value>310</value>
-      </less-than>
-      <greater-than>
-       <property>/sim/current-view/goal-heading-offset-deg</property>
-       <value>230</value>
-      </greater-than>
-      <less-than>
-       <property>/sim/current-view/goal-pitch-offset-deg</property>
-       <value>-15</value>
-      </less-than>
-     </and>
-     <property>/controls/seat/all</property>
-    </or>
-   </condition>
-   <x>168</x>
-   <y>392</y>
-   <w>40</w>
-   <h>40</h>
-  </instrument>
+  
 
   
 
@@ -482,34 +455,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
    <h>56</h>
   </instrument>
 
-  <instrument include="Instruments/concorde-title-fuel-pump-blue.xml">
-   <name>Pump blue</name>
-   <condition>
-    <or>
-     <and>
-      <property>/sim/current-view/internal</property>
-      <property>/systems/seat/engineer</property>
-      <less-than>
-       <property>/sim/current-view/goal-heading-offset-deg</property>
-       <value>300</value>
-      </less-than>
-      <greater-than>
-       <property>/sim/current-view/goal-heading-offset-deg</property>
-       <value>220</value>
-      </greater-than>
-      <less-than>
-       <property>/sim/current-view/goal-pitch-offset-deg</property>
-       <value>-15</value>
-      </less-than>
-     </and>
-     <property>/controls/seat/all</property>
-    </or>
-   </condition>
-   <x>248</x>
-   <y>392</y>
-   <w>40</w>
-   <h>40</h>
-  </instrument>
+
 
   
 
