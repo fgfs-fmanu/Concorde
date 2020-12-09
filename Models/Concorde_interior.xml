@@ -13754,24 +13754,6 @@
    </top-left>
   </panel>
 
-  <panel>
-   <path>Aircraft/Concorde/Panels/Concorde-engineer-fuel-top.xml</path>
-   <bottom-left>
-    <x-m>-21.945</x-m>
-    <y-m> 0.535</y-m>
-    <z-m> 1.338</z-m>
-   </bottom-left>
-   <bottom-right>
-    <x-m>-21.245</x-m>
-    <y-m> 0.535</y-m>
-    <z-m> 1.338</z-m>
-   </bottom-right>
-   <top-left>
-    <x-m>-21.945</x-m>
-    <y-m> 0.370</y-m>
-    <z-m> 1.698</z-m>
-   </top-left>
-  </panel>
 
 
 
