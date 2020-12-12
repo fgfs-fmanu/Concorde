@@ -13716,24 +13716,7 @@
 
  <!-- ENGINEER  2nd column -->
 
-  <panel>
-   <path>Aircraft/Concorde/Panels/Concorde-engineer-air.xml</path>
-   <bottom-left>
-    <x-m>-21.950</x-m>
-    <y-m> 0.440</y-m>
-    <z-m> 1.552</z-m>
-   </bottom-left>
-   <bottom-right>
-    <x-m>-21.400</x-m>
-    <y-m> 0.440</y-m>
-    <z-m> 1.552</z-m>
-   </bottom-right>
-   <top-left>
-    <x-m>-21.950</x-m>
-    <y-m> 0.32</y-m>
-    <z-m> 1.818</z-m>
-   </top-left>
-  </panel>
+  
 
   <panel>
    <path>Aircraft/Concorde/Panels/Concorde-engineer-temperature.xml</path>
