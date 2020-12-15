@@ -13727,24 +13727,7 @@
 
  <!-- ENGINEER  3rd column -->
 
-  <panel>
-   <path>Aircraft/Concorde/Panels/Concorde-engineer-hydraulic.xml</path>
-   <bottom-left>
-    <x-m>-21.480</x-m>
-    <y-m> 0.453</y-m>
-    <z-m> 1.518</z-m>
-   </bottom-left>
-   <bottom-right>
-    <x-m>-20.810</x-m>
-    <y-m> 0.362</y-m>
-    <z-m> 1.518</z-m>
-   </bottom-right>
-   <top-left>
-    <x-m>-21.480</x-m>
-    <y-m> 0.307</y-m>
-    <z-m> 1.833</z-m>
-   </top-left>
-  </panel>
+  
 
   <panel>
    <path>Aircraft/Concorde/Panels/Concorde-engineer-electric-top.xml</path>
