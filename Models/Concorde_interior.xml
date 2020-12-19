@@ -8371,10 +8371,10 @@
     </overlay>
     <offsets>
       <x-m>-21.485</x-m>
-      <y-m>0.525</y-m>
-      <z-m>0.678</z-m>
+      <y-m>0.529</y-m>
+      <z-m>0.684</z-m>
       
-      <heading-deg>-95</heading-deg>
+      <heading-deg>-99</heading-deg>
      <pitch-deg>-5</pitch-deg>
     </offsets>
   </model>
@@ -8389,10 +8389,10 @@
     </overlay>
     <offsets>
       <x-m>-21.442</x-m>
-      <y-m>0.521</y-m>
-      <z-m>0.678</z-m>
+      <y-m>0.525</y-m>
+      <z-m>0.684</z-m>
       
-      <heading-deg>-95</heading-deg>
+      <heading-deg>-99</heading-deg>
      <pitch-deg>-5</pitch-deg>
     </offsets>
   </model>
@@ -13732,24 +13732,7 @@
  
 
   
-  <panel>
-   <path>Aircraft/Concorde/Panels/Concorde-engineer-compass.xml</path>
-   <bottom-left>
-    <x-m>-21.495</x-m>
-    <y-m> 0.531</y-m>
-    <z-m> 0.441</z-m>
-   </bottom-left>
-   <bottom-right>
-    <x-m>-20.842</x-m>
-    <y-m> 0.448</y-m>
-    <z-m> 0.441</z-m>
-   </bottom-right>
-   <top-left>
-    <x-m>-21.495</x-m>
-    <y-m> 0.531</y-m>
-    <z-m> 0.904</z-m>
-   </top-left>
-  </panel>
+ 
 
 
 <!-- ============ -->
