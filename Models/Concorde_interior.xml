@@ -13668,7 +13668,24 @@
 
  
 
-
+ <panel>
+   <path>Aircraft/Concorde/Panels/Concorde-engineer-engine.xml</path>
+   <bottom-left>
+    <x-m>-22.430</x-m>
+    <y-m> 0.490</y-m>
+    <z-m> 0.441</z-m>
+   </bottom-left>
+   <bottom-right>
+    <x-m>-21.500</x-m>
+    <y-m> 0.580</y-m>
+    <z-m> 0.441</z-m>
+   </bottom-right>
+   <top-left>
+    <x-m>-22.430</x-m>
+    <y-m> 0.502</y-m>
+    <z-m> 0.904</z-m>
+   </top-left>
+  </panel>
 
 
 
