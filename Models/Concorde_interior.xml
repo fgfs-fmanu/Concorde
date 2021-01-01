@@ -13583,7 +13583,7 @@
     <offsets>
       <x-m>-22.511</x-m>
       <y-m>0.520</y-m>
-      <z-m>0.92</z-m>
+      <z-m>0.88</z-m>
       
       <heading-deg>-85</heading-deg>
      <pitch-deg>0</pitch-deg>
@@ -13598,7 +13598,7 @@
     <offsets>
       <x-m>-22.511</x-m>
       <y-m>0.520</y-m>
-      <z-m>0.845</z-m>
+      <z-m>0.805</z-m>
       
       <heading-deg>-85</heading-deg>
      <pitch-deg>0</pitch-deg>
@@ -13699,25 +13699,6 @@
  
 
  
-
-  <panel>
-   <path>Aircraft/Concorde/Panels/Concorde-engineer-lighting.xml</path>
-   <bottom-left>
-    <x-m>-22.572</x-m>
-    <y-m> 0.514</y-m>
-    <z-m> 0.743</z-m>
-   </bottom-left>
-   <bottom-right>
-    <x-m>-21.538</x-m>
-    <y-m> 0.514</y-m>
-    <z-m> 0.743</z-m>
-   </bottom-right>
-   <top-left>
-    <x-m>-22.572</x-m>
-    <y-m> 0.514</y-m>
-    <z-m> 1.258</z-m>
-   </top-left>
-  </panel>
 
 
  <!-- ENGINEER  2nd column -->
