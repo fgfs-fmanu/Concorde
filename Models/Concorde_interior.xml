@@ -10551,7 +10551,7 @@
  </overlay>
     <offsets>
       <x-m>-22.113</x-m>
-      <y-m>0.539</y-m>
+      <y-m>0.535</y-m>
       <z-m>0.81</z-m>
       
       <heading-deg>-85</heading-deg>
@@ -10566,7 +10566,7 @@
  </overlay>
     <offsets>
       <x-m>-22.058</x-m>
-      <y-m>0.54</y-m>
+      <y-m>0.536</y-m>
       <z-m>0.783</z-m>
       
       <heading-deg>-85</heading-deg>
@@ -13675,24 +13675,7 @@
  <!-- ======================================= -->
  <!-- panel models (X/Y/Z depth/width/height) -->
  <!-- ======================================= -->
-  <panel>
-   <path>Aircraft/Concorde/Panels/Concorde-pedestal-bottom.xml</path>
-   <bottom-left>
-    <x-m>-22.655</x-m>
-    <y-m>-0.165</y-m>
-    <z-m> 0.818</z-m>
-   </bottom-left>
-   <bottom-right>
-    <x-m>-22.655</x-m>
-    <y-m> 0.525</y-m>
-    <z-m> 0.818</z-m>
-   </bottom-right>
-   <top-left>
-    <x-m>-23.00</x-m>
-    <y-m>-0.165</y-m>
-    <z-m> 0.823</z-m>
-   </top-left>
-  </panel>
+
 
  <!-- ENGINEER  1st column -->
 
@@ -14000,6 +13983,16 @@
    </offsets>
   </model>
   
+  <model>
+   <name>Air Data</name>
+   <path>Aircraft/Concorde/Instruments/pedestal/AirData.xml</path>
+   <offsets>
+    <x-m>-22.697</x-m>
+    <y-m> 0.035</y-m>
+    <z-m> 0.818</z-m>
+   </offsets>
+  </model>
+  
   
   <model>
     <name>Test Light Center</name>
@@ -14013,7 +14006,7 @@
     <offsets>
       <x-m>-22.683</x-m>
     <y-m>0.143</y-m>
-    <z-m>0.817</z-m>
+    <z-m>0.821</z-m>
       
       <pitch-deg>-90</pitch-deg>
     </offsets>
@@ -14032,7 +14025,7 @@
     <offsets>
       <x-m>-22.683</x-m>
     <y-m>-0.07</y-m>
-    <z-m>0.817</z-m>
+    <z-m>0.821</z-m>
       
       <pitch-deg>-90</pitch-deg>
     </offsets>
@@ -14085,7 +14078,20 @@
     <offsets>
       <x-m>-22.683</x-m>
     <y-m>0.08</y-m>
-    <z-m>0.817</z-m>
+    <z-m>0.821</z-m>
+      
+      <pitch-deg>-90</pitch-deg>
+    </offsets>
+  </model>
+   <model>
+    <name>Test Center Horn</name>
+    <path>Cockpit/Instruments/gnd-test-center.xml</path>
+    <overlay>
+ </overlay>
+    <offsets>
+      <x-m>-22.683</x-m>
+    <y-m>0.12</y-m>
+    <z-m>0.822</z-m>
       
       <pitch-deg>-90</pitch-deg>
     </offsets>
@@ -14104,7 +14110,7 @@
     <offsets>
       <x-m>-22.710</x-m>
     <y-m>0.064</y-m>
-    <z-m>0.817</z-m>
+    <z-m>0.821</z-m>
       
       <pitch-deg>-90</pitch-deg>
     </offsets>
@@ -14121,7 +14127,7 @@
     <offsets>
       <x-m>-22.710</x-m>
       <y-m>-0.02</y-m>
-    <z-m>0.817</z-m>
+    <z-m>0.821</z-m>
       
       <pitch-deg>-90</pitch-deg>
     </offsets>
@@ -14138,7 +14144,7 @@
     <offsets>
       <x-m>-22.710</x-m>
     <y-m>0.022</y-m>    
-    <z-m>0.817</z-m>
+    <z-m>0.821</z-m>
       
       <pitch-deg>-90</pitch-deg>
     </offsets>
@@ -14155,7 +14161,7 @@
     <offsets>
       <x-m>-22.710</x-m>
     <y-m>-0.06</y-m>
-    <z-m>0.817</z-m>
+    <z-m>0.821</z-m>
       
       <pitch-deg>-90</pitch-deg>
     </offsets>
