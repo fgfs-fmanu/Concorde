@@ -71,7 +71,10 @@
   <type>material</type>
   <object-name>Light</object-name>
   <condition>
-   <not include="../../Panels/Instruments/concorde-cond-voltage-bulb.xml"/>
+   <greater-than>
+    <property>/systems/electrical/outputs/bulb</property>
+    <value>20.0</value>
+   </greater-than>
   </condition>
   <emission>
    <red>1.0</red>
@@ -93,7 +96,10 @@
   <type>material</type>
   <object-name>LightStandby</object-name>
   <condition>
-   <not include="../../Panels/Instruments/concorde-cond-voltage-bulb.xml"/>
+   <greater-than>
+    <property>/systems/electrical/outputs/bulb</property>
+    <value>20.0</value>
+   </greater-than>
   </condition>
   <emission>
    <red>1.0</red>

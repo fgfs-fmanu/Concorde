@@ -300,7 +300,10 @@
    <type>material</type>
    <object-name>RedThrottle1</object-name>
    <condition>
-    <not include="../../Panels/Instruments/concorde-cond-voltage-bulb.xml"/>
+    <greater-than>
+    <property>/systems/electrical/outputs/bulb</property>
+    <value>20.0</value>
+   </greater-than>
    </condition>
    <ambient>
     <red>1.0</red>
@@ -322,7 +325,10 @@
    <type>material</type>
    <object-name>RedThrottle2</object-name>
    <condition>
-    <not include="../../Panels/Instruments/concorde-cond-voltage-bulb.xml"/>
+    <greater-than>
+    <property>/systems/electrical/outputs/bulb</property>
+    <value>20.0</value>
+   </greater-than>
    </condition>
    <ambient>
     <red>1.0</red>
@@ -344,7 +350,10 @@
    <type>material</type>
    <object-name>RedThrottle3</object-name>
    <condition>
-    <not include="../../Panels/Instruments/concorde-cond-voltage-bulb.xml"/>
+    <greater-than>
+    <property>/systems/electrical/outputs/bulb</property>
+    <value>20.0</value>
+   </greater-than>
    </condition>
    <ambient>
     <red>1.0</red>
@@ -366,7 +375,10 @@
    <type>material</type>
    <object-name>RedThrottle4</object-name>
    <condition>
-    <not include="../../Panels/Instruments/concorde-cond-voltage-bulb.xml"/>
+    <greater-than>
+    <property>/systems/electrical/outputs/bulb</property>
+    <value>20.0</value>
+   </greater-than>
    </condition>
    <ambient>
     <red>1.0</red>

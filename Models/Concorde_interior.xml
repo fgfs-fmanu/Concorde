@@ -13675,7 +13675,24 @@
  <!-- ======================================= -->
  <!-- panel models (X/Y/Z depth/width/height) -->
  <!-- ======================================= -->
-
+ <panel>
+   <path>Aircraft/Concorde/Panels/Concorde-pedestal-bottom.xml</path>
+   <bottom-left>
+    <x-m>-22.655</x-m>
+    <y-m>-0.165</y-m>
+    <z-m> 0.818</z-m>
+   </bottom-left>
+   <bottom-right>
+    <x-m>-22.655</x-m>
+    <y-m> 0.525</y-m>
+    <z-m> 0.818</z-m>
+   </bottom-right>
+   <top-left>
+    <x-m>-23.00</x-m>
+    <y-m>-0.165</y-m>
+    <z-m> 0.823</z-m>
+   </top-left>
+  </panel>
 
  <!-- ENGINEER  1st column -->
 

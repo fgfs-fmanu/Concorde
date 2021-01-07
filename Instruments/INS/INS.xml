@@ -207,7 +207,11 @@
   <type>select</type>
   <object-name>text track</object-name>
   <condition>
-   <and include="../../Panels/Instruments/concorde-cond-voltage-inst.xml">
+   <and> 
+   <greater-than>
+    <property>/systems/electrical/outputs/specific</property>
+    <value>20.0</value>
+   </greater-than>
     <greater-than-equals>
      <property alias="../../../../../params/ins-selector"/>
      <value>-3</value>
@@ -536,7 +540,11 @@
   <type>select</type>
   <object-name>text position</object-name>
   <condition>
-   <and include="../../Panels/Instruments/concorde-cond-voltage-inst.xml">
+  <and> 
+   <greater-than>
+    <property>/systems/electrical/outputs/specific</property>
+    <value>20.0</value>
+   </greater-than>
     <greater-than-equals>
      <property alias="../../../../../params/ins-selector"/>
      <value>0</value>
@@ -657,7 +665,11 @@
   <type>select</type>
   <object-name>text time</object-name>
   <condition>
-   <and include="../../Panels/Instruments/concorde-cond-voltage-inst.xml">
+   <and> 
+   <greater-than>
+    <property>/systems/electrical/outputs/specific</property>
+    <value>20.0</value>
+   </greater-than>
     <equals>
      <property alias="../../../../../params/ins-selector"/>
      <value>2</value>
@@ -774,7 +786,11 @@
   <type>select</type>
   <object-name>text wind</object-name>
   <condition>
-   <and include="../../Panels/Instruments/concorde-cond-voltage-inst.xml">
+   <and> 
+   <greater-than>
+    <property>/systems/electrical/outputs/specific</property>
+    <value>20.0</value>
+   </greater-than>
     <equals>
      <property alias="../../../../../params/ins-selector"/>
      <value>3</value>
@@ -891,7 +907,11 @@
   <type>select</type>
   <object-name>text status</object-name>
   <condition>
-   <and include="../../Panels/Instruments/concorde-cond-voltage-inst.xml">
+   <and> 
+   <greater-than>
+    <property>/systems/electrical/outputs/specific</property>
+    <value>20.0</value>
+   </greater-than>
     <equals>
      <property alias="../../../../../params/ins-selector"/>
      <value>4</value>
@@ -1138,7 +1158,12 @@
  <animation>
   <type>select</type>
   <object-name>from indicator</object-name>
-  <condition include="../../Panels/Instruments/concorde-cond-voltage-inst.xml"/>
+  <condition> 
+   <greater-than>
+    <property>/systems/electrical/outputs/specific</property>
+    <value>20.0</value>
+   </greater-than>
+   </condition>
  </animation>
 
 <!-- DATA SELECTOR -->

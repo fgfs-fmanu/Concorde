@@ -97,7 +97,10 @@
   <type>material</type>
   <object-name>VHF1Rx</object-name>
   <condition>
-   <not include="../../Panels/Instruments/concorde-cond-voltage-bulb.xml"/>
+   <greater-than>
+    <property>/systems/electrical/outputs/bulb</property>
+    <value>20.0</value>
+   </greater-than>
   </condition>
   <emission>
    <red>0.71</red>
@@ -199,7 +202,10 @@
   <type>material</type>
   <object-name>VHF2Rx</object-name>
   <condition>
-   <not include="../../Panels/Instruments/concorde-cond-voltage-bulb.xml"/>
+   <greater-than>
+    <property>/systems/electrical/outputs/bulb</property>
+    <value>20.0</value>
+   </greater-than>
   </condition>
   <emission>
    <red>0.71</red>
@@ -301,7 +307,10 @@
   <type>material</type>
   <object-name>ADF1Rx</object-name>
   <condition>
-   <not include="../../Panels/Instruments/concorde-cond-voltage-bulb.xml"/>
+   <greater-than>
+    <property>/systems/electrical/outputs/bulb</property>
+    <value>20.0</value>
+   </greater-than>
   </condition>
   <emission>
    <red>0.71</red>
@@ -403,7 +412,10 @@
   <type>material</type>
   <object-name>ADF2Rx</object-name>
   <condition>
-   <not include="../../Panels/Instruments/concorde-cond-voltage-bulb.xml"/>
+   <greater-than>
+    <property>/systems/electrical/outputs/bulb</property>
+    <value>20.0</value>
+   </greater-than>
   </condition>
   <emission>
    <red>0.71</red>
@@ -505,7 +517,10 @@
   <type>material</type>
   <object-name>NAV1Rx</object-name>
   <condition>
-   <not include="../../Panels/Instruments/concorde-cond-voltage-bulb.xml"/>
+   <greater-than>
+    <property>/systems/electrical/outputs/bulb</property>
+    <value>20.0</value>
+   </greater-than>
   </condition>
   <emission>
    <red>0.71</red>
@@ -607,7 +622,10 @@
   <type>material</type>
   <object-name>NAV2Rx</object-name>
   <condition>
-   <not include="../../Panels/Instruments/concorde-cond-voltage-bulb.xml"/>
+   <greater-than>
+    <property>/systems/electrical/outputs/bulb</property>
+    <value>20.0</value>
+   </greater-than>
   </condition>
   <emission>
    <red>0.71</red>
