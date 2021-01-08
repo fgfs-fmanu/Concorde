@@ -1,0 +1,432 @@
+<?xml version="1.0" ?> 
+
+<!-- VHF :
+
+     - width is the same than INS.
+     - by day, digits are visible without internal lighting.
+     - by night, internal lighting of digits is lightly red.
+
+
+     Known problems :
+     ==============
+     - if no voltage, off light becomes less darker.
+-->
+
+<PropertyList> 
+
+ <params>
+  <trans-code>/instrumentation/transponder/id-code</trans-code>
+  <center-light>/controls/lighting/instrument-lights</center-light>
+ </params>
+
+
+ <path>Transponder.ac</path> 
+
+<effect>
+  <inherits-from>Aircraft/Concorde/Models/Effects/interior</inherits-from>
+  <object-name>Plate</object-name>
+  <object-name>Selector</object-name>
+  <object-name>SelectorDecimal</object-name>
+  <object-name>SelectorDecimalStandby</object-name>
+  <object-name>SelectorStandby</object-name>
+</effect>
+<!-- ROOF FLUORESCENT LIGHTING -->
+
+ <animation>
+  <name>Transponder</name>
+  <object-name>Plate</object-name>
+  <object-name>Selector</object-name>
+  <object-name>SelectorDecimal</object-name>
+  <object-name>SelectorDecimalStandby</object-name>
+  <object-name>SelectorStandby</object-name>
+ </animation>
+
+ <animation>
+  <type>material</type>
+  <object-name>Transponder</object-name>
+  <emission>
+   <red>0.71</red>
+   <green>0.79</green>
+   <blue>0.87</blue>
+   <factor-prop>systems/lighting/level/roof</factor-prop>
+  </emission> 
+ </animation> 
+
+<!-- GREEN LIGHT -->
+
+<!-- dark ambient enables to distinguish the emission, with mininal value by roof lighting -->
+
+ <animation>
+  <type>material</type>
+  <object-name>Light</object-name>
+  <condition>
+  <and>
+   <greater-than>
+    <property>/systems/electrical/outputs/bulb</property>
+    <value>20.0</value>
+   </greater-than>
+   <or>
+   <property>/controls/transponder/test</property>
+   <property>/instrumentation/transponder/serviceable</property>
+   </or>
+   </and>
+  </condition>
+  <emission>
+   <red>1.0</red>
+   <green>1.0</green>
+   <blue>0.2</blue>
+   <offset-prop>systems/lighting/level/roof-ambient</offset-prop>
+  </emission> 
+  <ambient>
+   <red>1.0</red>
+   <green>1.0</green>
+   <blue>0.2</blue>
+   <offset-prop>systems/lighting/level/roof-ambient</offset-prop>
+  </ambient>
+ </animation> 
+
+ 
+
+<!-- DISPLAY -->
+
+ <text>
+  <name>Code</name>
+  <type type="string">number-value</type>
+  <property alias="/params/trans-code"/>
+  <format>%04.0f</format>
+  <draw-text type="bool">true</draw-text>
+  <font>led.txf</font>
+  <character-size type="double">0.009</character-size>
+  <character-aspect-ratio type="double">1.0</character-aspect-ratio>
+  <font-resolution>
+   <width type="int">32</width>
+   <height type="int">32</height>
+  </font-resolution>
+  <alignment>left-center</alignment>
+  <axis-alignment>yz-plane</axis-alignment>
+  <offsets>
+   <pitch-deg>-90</pitch-deg>
+   <x-m>-0.007</x-m>
+   <y-m>-0.01</y-m>
+   <z-m> 0.006</z-m>
+  </offsets>
+ </text>
+
+ 
+
+
+ 
+
+<!-- KNOBS -->
+
+ 
+
+  <animation>
+    <type>pick</type>
+    <object-name>SelectorStandby</object-name>
+    <action>
+      <name>Up</name>
+      <button>3</button>
+      
+      <binding>
+        <command>property-adjust</command>
+        <property alias="/params/trans-code"/>
+    <step>10</step>
+    <min>0</min>
+    <max>9999</max>
+    <wrap>true</wrap>
+   </binding>
+   
+  
+   
+   <binding>
+    <command>property-toggle</command>
+    <property>/instrumentation/generic/click</property>
+   </binding>
+    </action>
+    </animation>
+    
+    
+    <animation>
+    <type>pick</type>
+    <object-name>SelectorStandby</object-name>
+    <action>
+      <name>Dwn</name>
+      <button>4</button>
+      
+      <binding>
+      <command>property-adjust</command>
+       <property alias="/params/trans-code"/>
+    <step>-10</step>
+    <min>0</min>
+    <max>9999</max>
+    <wrap>true</wrap>
+   </binding>
+   
+   
+   
+   <binding>
+    <command>property-toggle</command>
+    <property>/instrumentation/generic/click</property>
+   </binding>
+    </action>
+    
+   
+    
+    </animation>
+
+
+
+
+
+
+
+<animation>
+    <type>pick</type>
+    <object-name>SelectorDecimalStandby</object-name>
+    <action>
+      <name>Up</name>
+      <button>3</button>
+      
+      <binding>
+        <command>property-adjust</command>
+        <property alias="/params/trans-code"/>
+    <step>1</step>
+    <min>0</min>
+    <max>9999</max>
+    <wrap>true</wrap>
+   </binding>
+   
+  
+   
+   <binding>
+    <command>property-toggle</command>
+    <property>/instrumentation/generic/click</property>
+   </binding>
+    </action>
+    </animation>
+    
+    
+    <animation>
+    <type>pick</type>
+    <object-name>SelectorDecimalStandby</object-name>
+    <action>
+      <name>Dwn</name>
+      <button>4</button>
+      
+      <binding>
+      <command>property-adjust</command>
+       <property alias="/params/trans-code"/>
+    <step>-1</step>
+    <min>0</min>
+    <max>9999</max>
+    <wrap>true</wrap>
+   </binding>
+   
+   
+   
+   <binding>
+    <command>property-toggle</command>
+    <property>/instrumentation/generic/click</property>
+   </binding>
+    </action>
+    
+   
+    
+    </animation>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <animation>
+    <type>pick</type>
+    <object-name>Selector</object-name>
+    <action>
+      <name>Up</name>
+      <button>3</button>
+      
+      <binding>
+        <command>property-adjust</command>
+        <property alias="/params/trans-code"/>
+    <step>1000</step>
+    <min>0</min>
+    <max>10000</max>
+    <wrap>true</wrap>
+   </binding>
+   
+  
+   
+   <binding>
+    <command>property-toggle</command>
+    <property>/instrumentation/generic/click</property>
+   </binding>
+    </action>
+    </animation>
+    
+    
+    <animation>
+    <type>pick</type>
+    <object-name>Selector</object-name>
+    <action>
+      <name>Dwn</name>
+      <button>4</button>
+      
+      <binding>
+      <command>property-adjust</command>
+       <property alias="/params/trans-code"/>
+    <step>-1000</step>
+    <min>0</min>
+    <max>10000</max>
+    <wrap>true</wrap>
+   </binding>
+   
+   
+   
+   <binding>
+    <command>property-toggle</command>
+    <property>/instrumentation/generic/click</property>
+   </binding>
+    </action>
+    
+   
+    
+    </animation>
+
+
+
+
+
+
+
+<animation>
+    <type>pick</type>
+    <object-name>SelectorDecimal</object-name>
+    <action>
+      <name>Up</name>
+      <button>3</button>
+      
+      <binding>
+        <command>property-adjust</command>
+        <property alias="/params/trans-code"/>
+    <step>100</step>
+    <min>0</min>
+    <max>9999</max>
+    <wrap>true</wrap>
+   </binding>
+   
+  
+   
+   <binding>
+    <command>property-toggle</command>
+    <property>/instrumentation/generic/click</property>
+   </binding>
+    </action>
+    </animation>
+    
+    
+    <animation>
+    <type>pick</type>
+    <object-name>SelectorDecimal</object-name>
+    <action>
+      <name>Dwn</name>
+      <button>4</button>
+      
+      <binding>
+      <command>property-adjust</command>
+       <property alias="/params/trans-code"/>
+    <step>-100</step>
+    <min>0</min>
+    <max>9999</max>
+    <wrap>true</wrap>
+   </binding>
+   
+   
+   
+   <binding>
+    <command>property-toggle</command>
+    <property>/instrumentation/generic/click</property>
+   </binding>
+    </action>
+    
+   
+    
+    </animation>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <animation>
+    <type>pick</type>
+    <object-name>SelectorStandby</object-name>
+    <action>
+      <name>Test</name>
+      <button>0</button>
+      
+      <binding>
+    <command>nasal</command>
+    <script>globals.Concorde.transponderinstrument.testexport();</script>
+   </binding>
+   
+   
+   
+   <binding>
+    <command>property-toggle</command>
+    <property>/instrumentation/generic/click</property>
+   </binding>
+    </action>
+    
+   
+    
+    </animation>
+    
+
+
+
+
+</PropertyList>
