@@ -270,7 +270,7 @@
 
 
 <!-- CAPTAIN -->
-
+<!--
   <animation>
    <name>captain</name>
    <object-name>Captain location</object-name>
@@ -288,10 +288,10 @@
      <property>controls/seat/all</property>
     </or>
    </condition>
-  </animation>
+  </animation>-->
 
 <!-- BOTH -->
-
+<!--
   <animation>
    <name>both</name>
    <object-name>Overhead instruments</object-name>
@@ -315,9 +315,9 @@
     </or>
    </condition>
   </animation>
-
+-->
 <!-- COPILOT -->
-
+<!-- 
   <animation>
    <name>copilot</name>
    <object-name>Copilot location</object-name>
@@ -354,9 +354,9 @@
     </or>
    </condition>
   </animation>
-
+-->
 <!-- ENGINEER -->
-
+<!-- 
   <animation>
    <name>engineer</name>
    <object-name>Engineer location</object-name>
@@ -375,9 +375,9 @@
     </or>
    </condition>
   </animation>
-
+-->
 <!-- seat is visible in engineer view, except if moved. -->
-
+<!--
   <animation>
    <type>select</type>
    <object-name>Engineer Seat</object-name>
@@ -415,9 +415,9 @@
     </or>
    </condition>
   </animation>
-
+-->
 <!-- OBSERVER -->
-
+<!--
   <animation>
    <name>observer</name>
    <object-name>Observer Seat</object-name>
@@ -436,9 +436,9 @@
     </or>
    </condition>
   </animation>
-
+-->
 <!-- OBSERVER 2 -->
-
+<!--
   <animation>
    <name>observer 2</name>
    <object-name>Observer 2 Seat</object-name>
@@ -456,7 +456,7 @@
      <property>controls/seat/all</property>
     </or>
    </condition>
-  </animation>
+  </animation>-->
 
 <!-- hide side windows in cockpit view -->
 

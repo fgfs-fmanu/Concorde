@@ -38,7 +38,21 @@
   <type>select</type>
   <object-name>procedural_light</object-name>
   <condition>
-   <and include="../../../Panels/Instruments/concorde-cond-voltage-light.xml">
+    <and>
+   <or>
+    <greater-than>
+     <property>systems/electrical/outputs/specific</property>
+     <value>20.0</value>
+    </greater-than>
+    <greater-than>
+     <property>systems/electrical/outputs/probe/ac-ground-flight[0]</property>
+     <value>20.0</value>
+    </greater-than>
+    <greater-than>
+     <property>systems/electrical/outputs/probe/ac-ground-flight[1]</property>
+     <value>20.0</value>
+    </greater-than>
+   </or>
     <greater-than-equals>
      <property>controls/lighting/external/main-landing[0]/norm</property>
      <property n="1">/controls/lighting/external/interpolate/on</property>
