@@ -237,20 +237,20 @@
 
    <object-name>Cockpit</object-name>
    <object-name>Pillar</object-name>
-   <object-name>CeilingEdge</object-name>
+   <!--<object-name>CeilingEdge</object-name>-->
 
-   <object-name>RoofLight1</object-name>
-   <object-name>RoofLight2</object-name>
+   <!-- <object-name>RoofLight1</object-name>-->
+   <!--<object-name>RoofLight2</object-name>-->
 
-   <object-name>RoofLight1</object-name>
-   <object-name>RoofLight2</object-name>
+    <!-- <object-name>RoofLight1</object-name>-->
+   <!--<object-name>RoofLight2</object-name>-->
    <object-name>UpperPanel</object-name>
-   <object-name>ConsoleLeft</object-name>
-   <object-name>ConsoleRight</object-name>
+   <!-- <object-name>ConsoleLeft</object-name>-->
+   <!--<object-name>ConsoleRight</object-name>-->
    <object-name>TopConsoleLeft</object-name>
    <object-name>TopConsoleRight</object-name>
    <object-name>CeilingPanel</object-name>
-   <object-name>Dash lighting</object-name>
+   <!--<object-name>Dash lighting</object-name>-->
    <object-name>MainPanel_1</object-name>
   </animation>
 
@@ -2377,7 +2377,7 @@
   </transparency>
  </animation>
 
-<!-- Burner Flame -->
+<!-- Burner Flame 
 
  <animation>
   <type>select</type>
@@ -2425,7 +2425,7 @@
    <value>2</value>
    </equals>
   </condition>
- </animation>
+ </animation>-->
 
 <!-- secondary nozzles -->
 
@@ -2655,16 +2655,16 @@
    <object-name>Cockpit</object-name>
    <object-name>Cube.001</object-name>
    <object-name>CeilingPanel</object-name>
-   <object-name>ConsoleLeft</object-name>
-   <object-name>ConsoleRight</object-name>
+   <!-- <object-name>ConsoleLeft</object-name>-->
+   <!--<object-name>ConsoleRight</object-name>-->
    <object-name>ConsoleForward</object-name>
    <object-name>ConsoleForward.001</object-name>
-   <object-name>ConsoleAft</object-name>
+   <!--<object-name>ConsoleAft</object-name>-->
    <object-name>Pillar</object-name>
    <object-name>CeilingPanel.001</object-name>
-   <object-name>CeilingEdge</object-name>
-   <object-name>Dashboard</object-name>
-   <object-name>Dashboard.001</object-name>
+   <!--<object-name>CeilingEdge</object-name>-->
+   <!--<object-name>Dashboard</object-name>-->
+  <!-- <object-name>Dashboard.001</object-name>-->
    <object-name>Cylinder</object-name>
    <object-name>Tablet_dummy</object-name>
    <object-name>Screen_0.001</object-name>
@@ -2787,10 +2787,10 @@
 
  <animation>
   <type>material</type>
-  <object-name>CeilingEdge</object-name>
-  <object-name>Dashboard</object-name>
-  <object-name>Dashboard.001</object-name>
-  <object-name>Rack lighting</object-name>
+  <!--<object-name>CeilingEdge</object-name>-->
+  <!--<object-name>Dashboard</object-name>-->
+ <!-- <object-name>Dashboard.001</object-name>-->
+  <!--<object-name>Rack lighting</object-name>-->
   <condition>
 	<greater-than>
 	  <property>systems/lighting/level/roof</property>
@@ -2832,7 +2832,7 @@
 
  <animation>
   <type>material</type>
-  <object-name>engineer</object-name>
+  <!-- <object-name>engineer</object-name>-->
   <condition>
 	<greater-than>
 	  <property>systems/lighting/level/roof</property>
@@ -2849,7 +2849,7 @@
 
  <animation>
   <type>material</type>
-  <object-name>observer</object-name>
+  <!--<object-name>observer</object-name>-->
   <condition>
 	<greater-than>
 	  <property>systems/lighting/level/roof</property>
@@ -2866,8 +2866,8 @@
 
  <animation>
   <type>material</type>
-  <object-name>RoofLight1</object-name>
-  <object-name>RoofLight2</object-name>
+ <!-- <object-name>RoofLight1</object-name>-->
+  <!--<object-name>RoofLight2</object-name>-->
   <condition>
     <and>
 	<greater-than>
@@ -2890,9 +2890,9 @@
 
  <animation>
   <type>material</type>
-  <object-name>ConsoleLeft</object-name>
-  <object-name>ConsoleRight</object-name>
-  <object-name>Dash lighting</object-name>
+   <!-- <object-name>ConsoleLeft</object-name>-->
+  <!--<object-name>ConsoleRight</object-name>-->
+ <!-- <object-name>Dash lighting</object-name>-->
   <condition>
 	<greater-than>
 	  <property>systems/lighting/level/roof</property>
@@ -2943,8 +2943,8 @@
 
  <animation>
   <type>material</type>
-  <object-name>ConsoleForward</object-name>
-  <object-name>ConsoleAft</object-name>
+ <!-- <object-name>ConsoleForward</object-name>-->
+  <!--<object-name>ConsoleAft</object-name>-->
   <condition>
 	<greater-than>
 	  <property>systems/lighting/level/panel/console</property>
