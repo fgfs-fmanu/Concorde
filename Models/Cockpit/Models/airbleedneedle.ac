@@ -7,7 +7,7 @@ OBJECT world
 name "Blender_exporter_v2.26__airbleedneedle.ac"
 kids 4
 OBJECT poly
-name "Circle"
+name "Frame"
 data 6
 Circle
 crease 40.0

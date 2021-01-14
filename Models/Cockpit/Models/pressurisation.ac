@@ -8950,7 +8950,7 @@ numvert 48
 0.01036 0.02827 0.00387
 kids 0
 OBJECT poly
-name "Cube"
+name "Frame"
 data 8
 Cube.001
 crease 40.0

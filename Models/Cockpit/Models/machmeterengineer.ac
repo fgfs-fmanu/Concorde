@@ -7,7 +7,7 @@ OBJECT world
 name "Blender_exporter_v2.26__machmeterengineer.ac"
 kids 7
 OBJECT poly
-name "Cube"
+name "Frame"
 data 8
 Cube.001
 crease 40.0

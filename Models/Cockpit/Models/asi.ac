@@ -90,7 +90,7 @@ refs 4
 3 0.295015 0.500819
 kids 0
 OBJECT poly
-name "FrameC"
+name "Frame"
 data 11
 FrameC.mesh
 crease 40.0

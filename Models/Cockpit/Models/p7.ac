@@ -12,7 +12,7 @@ OBJECT world
 name "Blender_exporter_v2.26__p7.ac"
 kids 14
 OBJECT poly
-name "Cube"
+name "Frame"
 data 8
 Cube.001
 crease 40.0

@@ -5,7 +5,7 @@ OBJECT world
 name "Blender_exporter_v2.19__compass.ac"
 kids 2
 OBJECT poly
-name "Cube"
+name "Frame"
 data 4
 Cube
 crease 40.0

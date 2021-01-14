@@ -6,7 +6,7 @@ OBJECT world
 name "Blender_export__radinsbase.ac"
 kids 2
 OBJECT poly
-name "Cube"
+name "Frame"
 loc 0.0000000 0.0000000 0.0000000
 numvert 8
 0.0000000 -0.0150000 0.0600000

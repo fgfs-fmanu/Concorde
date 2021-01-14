@@ -7,7 +7,7 @@ OBJECT world
 name "Blender_exporter_v2.26__battamps.ac"
 kids 4
 OBJECT poly
-name "Circle"
+name "Frame"
 data 10
 Circle.001
 crease 40.0
