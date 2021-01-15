@@ -11,7 +11,7 @@
 
 <effect>
     <inherits-from>Aircraft/Concorde/Models/Effects/flash</inherits-from>
-    <object-name>Cube</object-name>
+    <object-name>Frame</object-name>
     <object-name>FF1</object-name>
     <object-name>FF2</object-name>
     <object-name>FF3</object-name>
@@ -165,7 +165,7 @@
   <!--Default Lighting-->
   <animation>
     <type>material</type>
-    <object-name>Cube</object-name>
+    <object-name>Frame</object-name>
   <emission>
      <red>0.2</red>
      <green>0.2</green>

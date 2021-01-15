@@ -28,23 +28,7 @@
 
  
 
-  <animation>
-    <type>rotate</type>
-    <object-name>FuelAdjust</object-name>
-    <object-name>FuelAdjust.001</object-name>
-    <property alias="/params/bug-select"/>
-    <factor>0.1</factor>
-    <center>
-      <x-m>0.00855</x-m>
-      <y-m>0.02084</y-m>
-      <z-m>-0.02499</z-m>
-    </center>
-    <axis>
-      <x>-1</x>
-      <y>0</y>
-      <z>0</z>
-    </axis>
-  </animation>
+  
 
   <animation>
     
