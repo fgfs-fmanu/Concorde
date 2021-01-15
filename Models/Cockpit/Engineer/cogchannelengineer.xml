@@ -18,7 +18,7 @@
     <object-name>CG</object-name>
     <object-name>FWD</object-name>
     <object-name>AFT</object-name>
-    <object-name>Guage</object-name>
+    <object-name>Frame</object-name>
     <object-name>FF</object-name>
 </effect>
 
@@ -132,7 +132,7 @@
   </animation>
   <animation>
     <type>material</type>
-    <object-name>Cube</object-name>
+    <object-name>Frame</object-name>
     <object-name>Cylinder</object-name>
     <object-name>Cylinder.001</object-name>
     <object-name>Cylinder.002</object-name>
