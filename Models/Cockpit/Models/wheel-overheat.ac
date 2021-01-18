@@ -5,7 +5,7 @@ OBJECT world
 name "Blender_exporter_v2.19__wheel-overheat.ac"
 kids 2
 OBJECT poly
-name "LightFrame"
+name "Frame"
 data 10
 LightFrame
 crease 40.0

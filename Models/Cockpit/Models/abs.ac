@@ -3458,7 +3458,7 @@ refs 4
 4 0 0
 kids 0
 OBJECT poly
-name "GreenFrame.001"
+name "GreenFrame"
 data 19
 GreenFrame.mesh.005
 crease 40.0

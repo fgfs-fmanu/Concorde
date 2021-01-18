@@ -4,7 +4,7 @@
 
 <effect>
     <inherits-from>Aircraft/Concorde/Models/Effects/interior</inherits-from>
-    <object-name>Frame.001</object-name>
+    <object-name>Frame</object-name>
 </effect>
 
 <effect>

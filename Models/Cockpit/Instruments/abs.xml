@@ -7,7 +7,7 @@
 	   <object-name>Frame</object-name>
   <object-name>GreenFrame.003</object-name>
   <object-name>GreenFrame.000</object-name>
-  <object-name>GreenFrame.001</object-name>
+  <object-name>GreenFrame</object-name>
   <object-name>GreenFrame.002</object-name>
   <object-name>GreenFrame.004</object-name>
   <object-name>GreenFrame.005</object-name>
@@ -212,7 +212,7 @@
   <type>material</type>
   <object-name>GreenFrame.003</object-name>
   <object-name>GreenFrame.000</object-name>
-  <object-name>GreenFrame.001</object-name>
+  <object-name>GreenFrame</object-name>
   <object-name>GreenFrame.002</object-name>
   <object-name>GreenFrame.004</object-name>
   <object-name>GreenFrame.005</object-name>

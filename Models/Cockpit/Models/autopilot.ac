@@ -18637,7 +18637,7 @@ refs 4
 4 0 0
 kids 0
 OBJECT poly
-name "LightFrame.001"
+name "LightFrame"
 data 19
 LightFrame.mesh.011
 crease 40.0

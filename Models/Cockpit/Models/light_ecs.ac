@@ -11,7 +11,7 @@ kids 64
 OBJECT poly
 name "FrameHI1"
 data 9
-Frame.001
+Frame
 crease 40.0
 texture "flaps.png"
 texrep 1 1

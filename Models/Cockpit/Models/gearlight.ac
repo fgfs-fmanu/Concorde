@@ -68,9 +68,9 @@ refs 4
 4 0 1
 kids 0
 OBJECT poly
-name "GreenFrame.001"
+name "GreenFrame"
 data 14
-GreenFrame.001
+GreenFrame
 crease 40.0
 texture "green_plastic.png"
 texrep 1 1
@@ -548,9 +548,9 @@ refs 4
 4 0 1
 kids 0
 OBJECT poly
-name "OrangeFrame.001"
+name "OrangeFrame"
 data 15
-OrangeFrame.001
+OrangeFrame
 crease 40.0
 texture "red_pastic.png"
 texrep 1 1
@@ -788,9 +788,9 @@ refs 4
 4 0 1
 kids 0
 OBJECT poly
-name "RedFrame.001"
+name "RedFrame"
 data 12
-RedFrame.001
+RedFrame
 crease 40.0
 texture "amber_plastic.png"
 texrep 1 1

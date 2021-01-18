@@ -167,7 +167,7 @@ refs 4
 4 0 0
 kids 0
 OBJECT poly
-name "Frame.001"
+name "Frame"
 data 14
 Frame.mesh.024
 crease 40.0

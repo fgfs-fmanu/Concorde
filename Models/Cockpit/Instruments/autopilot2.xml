@@ -18,7 +18,7 @@
     <inherits-from>Aircraft/Concorde/Models/Effects/interior</inherits-from>
     <object-name>Cube.003</object-name>
     <object-name>Frame</object-name>
-    <object-name>Frame.001</object-name>
+    <object-name>Frame</object-name>
     <object-name>ALL</object-name>
     <object-name>ALR</object-name>
     <object-name>MH</object-name>

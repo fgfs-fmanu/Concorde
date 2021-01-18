@@ -4,19 +4,19 @@
 
 <effect>
     <inherits-from>Aircraft/Concorde/Models/Effects/interior</inherits-from>
-    <object-name>Frame.001</object-name>
+    <object-name>Frame</object-name>
     <object-name>RedFrame</object-name>
-    <object-name>RedFrame.001</object-name>
+    <object-name>RedFrame</object-name>
     <object-name>RedFrame.002</object-name>
     <object-name>RedLight</object-name>
     <object-name>RedLight.001</object-name>
     <object-name>RedLight.002</object-name>
     <object-name>OrangeFrame</object-name>
-    <object-name>OrangeFrame.001</object-name>
+    <object-name>OrangeFrame</object-name>
     <object-name>OrangeFrame.002</object-name>
     <object-name>OrangeFrame.003</object-name>
     <object-name>GreenFrame</object-name>
-    <object-name>GreenFrame.001</object-name>
+    <object-name>GreenFrame</object-name>
     <object-name>GreenFrame.002</object-name>
     <object-name>GreenFrame.003</object-name>
     <object-name>GreenLight</object-name>
@@ -54,7 +54,7 @@
 
   <animation>
     <type>material</type>
-    <object-name>OrangeFrame.001</object-name>
+    <object-name>OrangeFrame</object-name>
     <object-name>OrangeLight.001</object-name>
     <condition>
     <or>
@@ -162,7 +162,7 @@
 
   <animation>
     <type>material</type>
-    <object-name>RedFrame.001</object-name>
+    <object-name>RedFrame</object-name>
     <condition>
     <or>
      <not include="concorde-cond-test-copilot.xml"/>
@@ -256,7 +256,7 @@
 
   <animation>
     <type>material</type>
-    <object-name>GreenFrame.001</object-name>
+    <object-name>GreenFrame</object-name>
     <condition>
      <or>
       <not include="concorde-cond-test-copilot.xml"/>
@@ -324,16 +324,16 @@
   <!--Default Lighting-->
   <animation>
     <type>material</type>
-    <object-name>Frame.001</object-name>
+    <object-name>Frame</object-name>
     <object-name>RedFrame</object-name>
-    <object-name>RedFrame.001</object-name>
+    <object-name>RedFrame</object-name>
     <object-name>RedFrame.002</object-name>
     <object-name>OrangeFrame</object-name>
-    <object-name>OrangeFrame.001</object-name>
+    <object-name>OrangeFrame</object-name>
     <object-name>OrangeFrame.002</object-name>
     <object-name>OrangeFrame.003</object-name>
     <object-name>GreenFrame</object-name>
-    <object-name>GreenFrame.001</object-name>
+    <object-name>GreenFrame</object-name>
     <object-name>GreenFrame.002</object-name>
     <object-name>GreenFrame.003</object-name>
   <emission>
