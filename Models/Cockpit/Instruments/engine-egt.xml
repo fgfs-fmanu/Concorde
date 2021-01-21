@@ -5,11 +5,7 @@
     <egt>/engines/engine[0]/egt-degf</egt>
   </params>
 
-<effect>
-    <inherits-from>Aircraft/Concorde/Models/Effects/interior</inherits-from>
-    <object-name>Frame</object-name>
 
-</effect>
 
 <effect>
     <inherits-from>Aircraft/Concorde/Models/Effects/flash</inherits-from>
@@ -258,14 +254,7 @@
    <factor-prop>/controls/lighting/instruments-norm</factor-prop>
   </emission>
   </animation>
-  <animation>
-    <type>material</type>
-    <object-name>Frame</object-name>
-  <emission>
-     <red>0.2</red>
-     <green>0.2</green>
-     <blue>0.2</blue>
-  </emission>
+ 
  </animation>
 
 </PropertyList>

@@ -29,13 +29,7 @@
     <ground-speed-fps>/instrumentation/ins[0]/computed/ground-speed-fps</ground-speed-fps>
   </params>
 
-<effect>
-    <inherits-from>Aircraft/Concorde/Models/Effects/interior</inherits-from>
-    <object-name>MilesFrame</object-name>
-    <object-name>SpeedFrame</object-name>
-    <object-name>Frame</object-name>
 
-</effect>
 
 <effect>
     <inherits-from>Aircraft/Concorde/Models/Effects/flash</inherits-from>
@@ -634,17 +628,7 @@
     </axis>
   </animation>
   <!--Default Lighting-->
-  <animation>
-    <type>material</type>
-    <object-name>MilesFrame</object-name>
-    <object-name>SpeedFrame</object-name>
-    <object-name>Frame</object-name>
-  <emission>
-     <red>0.2</red>
-     <green>0.2</green>
-     <blue>0.2</blue>
-  </emission>
- </animation>
+
   <animation>
     <type>material</type>
     <object-name>GsGuage</object-name>

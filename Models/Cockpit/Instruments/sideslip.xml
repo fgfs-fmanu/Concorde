@@ -6,11 +6,7 @@
     <angle-sel>/instrumentation/side-slip[0]/angle-deg</angle-sel>
   </params>
 
-<effect>
-    <inherits-from>Aircraft/Concorde/Models/Effects/interior</inherits-from>
-    <object-name>Frame</object-name>
 
-</effect>
 
 <effect>
     <inherits-from>Aircraft/Concorde/Models/Effects/flash</inherits-from>
@@ -76,15 +72,7 @@
     </axis>
   </animation>
   <!--Default Lighting-->
-  <animation>
-    <type>material</type>
-    <object-name>Frame</object-name>
-  <emission>
-     <red>0.2</red>
-     <green>0.2</green>
-     <blue>0.2</blue>
-  </emission>
- </animation>
+ 
   <animation>
     <type>material</type>
     <object-name>Slip</object-name>

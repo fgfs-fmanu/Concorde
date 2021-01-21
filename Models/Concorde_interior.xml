@@ -13626,20 +13626,6 @@
 <!-- LIGHTING -->
 <!-- ======== -->
 
-  <animation>
-   <name>Panel lighting</name>
-   <object-name>MainPanel_1</object-name>
-   <object-name>MainPanel_0</object-name>
-
-  <emission>
-   <red>0.83</red>
-   <green>0.74</green>
-   <blue>0.38</blue>
-   <factor-prop>systems/lighting/level/panel/main</factor-prop>
-  </emission>
-
-
-  </animation>
  
   <animation>
    <name>Dash lighting</name>
@@ -13660,7 +13646,6 @@
 
   <animation>
    <name>Console lighting</name>
-   <object-name>Pedestal</object-name>
   </animation>
 
   <animation>

@@ -4,7 +4,6 @@
 
 <effect>
     <inherits-from>Aircraft/Concorde/Models/Effects/interior</inherits-from>
-    <object-name>Frame</object-name>
     <object-name>RedFrame</object-name>
     <object-name>OrangeFrame</object-name>
     <object-name>GreenFrame</object-name>
@@ -103,13 +102,5 @@
     </emission>
   </animation>
   <!--Default Lighting-->
-  <animation>
-    <type>material</type>
-    <object-name>Frame</object-name>
-  <emission>
-     <red>0.2</red>
-     <green>0.2</green>
-     <blue>0.2</blue>
-  </emission>
- </animation>
+  
 </PropertyList>

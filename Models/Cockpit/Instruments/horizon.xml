@@ -30,7 +30,6 @@
     <inherits-from>Aircraft/Concorde/Models/Effects/interior</inherits-from>
     <object-name>ATT</object-name>
     <object-name>DH</object-name>
-    <object-name>Frame</object-name>
     <object-name>Test</object-name>
 </effect>
 
@@ -548,15 +547,7 @@
     </action>
   </animation>
   <!--Default Lighting-->
-  <animation>
-    <type>material</type>
-    <object-name>Frame</object-name>
-  <emission>
-     <red>0.2</red>
-     <green>0.2</green>
-     <blue>0.2</blue>
-  </emission>
- </animation>
+ 
 
  
   <animation>

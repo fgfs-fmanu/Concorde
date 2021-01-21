@@ -11,7 +11,6 @@
 
 <effect>
     <inherits-from>Aircraft/Concorde/Models/Effects/interior</inherits-from>
-    <object-name>Frame</object-name>
     <object-name>GO</object-name>
     <object-name>CON</object-name>
     <object-name>REV</object-name>
@@ -103,13 +102,5 @@
     </emission>
   </animation>
   <!--Default Lighting-->
-  <animation>
-    <type>material</type>
-    <object-name>Frame</object-name>
-  <emission>
-     <red>0.2</red>
-     <green>0.2</green>
-     <blue>0.2</blue>
-  </emission>
- </animation>
+ 
 </PropertyList>

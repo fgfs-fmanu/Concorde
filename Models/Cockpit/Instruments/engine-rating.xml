@@ -4,7 +4,6 @@
 
 <effect>
     <inherits-from>Aircraft/Concorde/Models/Effects/interior</inherits-from>
-    <object-name>Frame</object-name>
     <object-name>CTY</object-name>
     <object-name>TO</object-name>
     <object-name>CLB</object-name>
@@ -161,13 +160,5 @@
     </emission>
   </animation>
   <!--Default Lighting-->
-  <animation>
-    <type>material</type>
-    <object-name>Frame</object-name>
-  <emission>
-     <red>0.2</red>
-     <green>0.2</green>
-     <blue>0.2</blue>
-  </emission>
- </animation>
+  
 </PropertyList>
