@@ -12,6 +12,7 @@
 <effect>
 	   <inherits-from>Aircraft/Concorde/Models/Effects/interior</inherits-from>
   <object-name>EngineerLeft</object-name>
+  <object-name>EngineerLeft.001</object-name>
   <object-name>EngineerRight</object-name>
   <object-name>Engineer</object-name>
   <object-name>EngineerAft</object-name>
@@ -29,6 +30,7 @@
  <animation>
   <name>EngineerPanel</name> 
   <object-name>EngineerLeft</object-name>
+  <object-name>EngineerLeft.001</object-name>
   <object-name>EngineerRight</object-name>
   <object-name>Engineer</object-name>
   <object-name>EngineerAft</object-name>
@@ -37,6 +39,7 @@
  <animation>
   <type>material</type>
   <object-name>EngineerPanel</object-name>
+  <object-name>EngineerLeft.001</object-name>
    <object-name>Plane</object-name>
    <object-name>Plane.001</object-name>   
    <object-name>Plane.002</object-name>
